@@ -4,7 +4,6 @@ import json
 import os.path
 
 def etm_merge_ingredient(node, sequence, ingredient_dict):
-    
     # 조리 동작 한줄
     is_etm = False
     etm_id = -1
@@ -17,15 +16,28 @@ def etm_merge_ingredient(node, sequence, ingredient_dict):
                 etm_id = m_ele['id'] - 1
                 if w_ele['begin'] <= etm_id and w_ele['end'] >= etm_id:
                     merge_ingre = w_ele['text'] + " " + m_ele['lemma']
-                    
                     for ingre in sequence['ingre']:
                         if m_ele['lemma'] == ingre:
                             ingre = merge_ingre
             is_etm = False  
             
         return sequence
-             
-        
+    
+# 화구존, 전처리존 분리             
+def select_cooking_zone(sequence):
+    #for sequence in seq_list:
+    if sequence['act'] in fire_zone:
+        sequence['zone'] = "화구존"
+    for tool in sequence['tool']:
+        if tool in fire_tool:
+            sequence['zone'] = "화구존"
+    if sequence['act'] in preprocess_zone:
+        sequence['zone'] = "전처리존"
+    for tool in sequence['tool']:
+        if tool in preprocess_tool:
+            sequence['zone'] = "전처리존"
+    return sequence
+    
 
 def get_list_from_file(file_path):
     file_exists = os.path.exists(file_path)
@@ -169,6 +181,8 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
                     for i_ele in ingredient_dict:
                         if i_ele in w_ele['text']:
                             seq_dict['ingre'].append(i_ele)
+                            
+                
 
                 if len(seq_dict['tool']) == 0 and act in act_to_tool_dict:
                     seq_dict['tool'] = act_to_tool_dict[act]
@@ -183,6 +197,8 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
                     sequence['ingre'].append(ne['text'])
         # 수식어 + 재료 바꾸기
         etm_merge_ingredient(node, sequence, ingredient_dict)
+        # 화구존/전처리존 분리
+        select_cooking_zone(sequence)
     return remove_unnecessary_verb(node, seq_list)
 
 
@@ -224,7 +240,7 @@ def main():
     analysis_code = "SRL"
 
     # get cooking component list & dictionary from files
-    global seasoning_list, volume_list, time_list, temperature_list, cooking_act_dict, act_to_tool_dict, tool_list
+    global seasoning_list, volume_list, time_list, temperature_list, cooking_act_dict, act_to_tool_dict, tool_list, fire_tool, fire_zone, preprocess_tool, preprocess_zone
     seasoning_list = get_list_from_file("labeling/seasoning.txt")
     volume_list = get_list_from_file("labeling/volume.txt")
     time_list = get_list_from_file("labeling/time.txt")
@@ -232,6 +248,10 @@ def main():
     cooking_act_dict = parse_cooking_act_dict("labeling/cooking_act.txt")
     act_to_tool_dict = parse_act_to_tool_dict("labeling/act_to_tool.txt")
     tool_list = get_list_from_file("labeling/tool.txt")
+    fire_zone = get_list_from_file("labeling/fire_zone.txt")
+    preprocess_zone = get_list_from_file("labeling/preprocess_zone.txt")
+    fire_tool = get_list_from_file("labeling/fire_tool.txt")
+    preprocess_tool = get_list_from_file("labeling/preprocess_tool.txt")
 
     # recipe extraction
     file_path = input("레시피 파일 경로를 입력해 주세요 : ")
