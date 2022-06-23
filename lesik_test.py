@@ -346,7 +346,7 @@ def sentence_print(node_list, sequence_list):
                     if begin != end_id:
                         seq['sentence'] += " "
             prev_seq_id = seq['end_id']
-            
+
     print(str(json.dumps(sequence_list, ensure_ascii=False)))
 
 def process_cond(node,seq_dict):
@@ -379,7 +379,7 @@ def main():
 
     # recipe extraction
     file_path = input("레시피 파일 경로를 입력해 주세요 : ")
-    f = open(file_path, 'r')
+    f = open(file_path, 'r', encoding="utf-8")
     original_recipe = str.join("\n", f.readlines())
 
     srl_input = input("SRL 사용 여부를 입력해주세요 (1 : O, 2 : X) : ")
