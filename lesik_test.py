@@ -1,4 +1,5 @@
 from typing import final
+from xmlrpc.client import FastMarshaller
 import urllib3
 import json
 import os.path
@@ -90,6 +91,7 @@ def remove_unnecessary_verb(node, seq_list):
             for i in range(1, len(seq_list)):
                 if seq_list[i] is not None and seq_list[i]['start_id'] <= morp_id <= seq_list[i]['end_id']:
                     merge_dictionary(seq_list[i-1], seq_list[i])
+                    seq_list[i]['start_id'] = seq_list[i-1]['start_id']
                     del_seq_list.append(seq_list[i-1])
         flag = False
 
@@ -101,7 +103,7 @@ def remove_unnecessary_verb(node, seq_list):
 def merge_dictionary(src_dict, dst_dict):
     for key in src_dict.keys():
         if key in dst_dict:
-            if key == 'tool' or key == 'ingre' or key == 'seasoning' or key == 'volume':
+            if key in ['tool', 'ingre', 'seasoning', 'volume']:
                 if src_dict.get(key) != []:
                     for value in src_dict.get(key):
                         dst_dict[key].append(value)
@@ -214,9 +216,10 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
             if act in cooking_act_dict:
                 # 6가지 요소
                 # 이걸 line에 넣을 것
-                seq_dict = {'act': act, 'tool': [], 'ingre': [], 'seasoning': [], 'volume': [],
-                            'zone': "", "start_id" : prev_seq_id + 1, "end_id": act_id}
+                seq_dict = {'cond' : "", 'act': act, 'tool': [], 'ingre': [], 'seasoning': [], 'volume': [],
+                            'zone': "", "start_id" : prev_seq_id + 1, "end_id" : act_id, "sentence" : ""}
 
+                process_cond(node, seq_dict)
                 # insert act
                 # find and insert tool
                 for w_ele in node['word']:
@@ -318,6 +321,41 @@ def parse_node_section(node_list, srl_input):
                 sequence_list.append(seq_dict)
     return sequence_list
 
+def sentence_print(node_list, sequence_list):
+    is_dir = False
+    for node in node_list:
+        if node['text'] == '[조리방법]':
+            is_dir = True
+            continue
+        if not is_dir:
+            continue
+
+        prev_seq_id = 0
+        for seq in sequence_list:
+            if seq['sentence'] != "":
+                continue
+            start_id = seq['start_id']
+            end_id = seq['end_id']
+            if start_id < prev_seq_id:
+                break
+            for w_ele in node['word']:
+                text = w_ele['text']
+                begin = w_ele['begin']
+                if start_id <= begin and begin <= end_id:
+                    seq['sentence'] += text
+                    if begin != end_id:
+                        seq['sentence'] += " "
+            prev_seq_id = seq['end_id']
+            
+    print(str(json.dumps(sequence_list, ensure_ascii=False)))
+
+def process_cond(node,seq_dict):
+    
+    for i in range(0, len(node['morp']) - 1):
+        if node['morp'][i]['type'] == 'VV':
+            if node['morp'][i+1]['lemma'] == "면":
+                seq_dict['cond'] = node['morp'][i]['lemma'] + node['morp'][i+1]['lemma']
+    return seq_dict
 
 def main():
     # static params
@@ -367,8 +405,8 @@ def main():
     json_object = json.loads(response.data)
     node_list = json_object.get("return_object").get("sentence")
     sequence_list = parse_node_section(node_list, srl_input)
-    print(str(json.dumps(sequence_list, ensure_ascii=False)))
 
+    sentence_print(node_list, sequence_list)
 
 if __name__ == "__main__":
     main()
