@@ -346,7 +346,7 @@ def sentence_print(node_list, sequence_list):
                     if begin != end_id:
                         seq['sentence'] += " "
             prev_seq_id = seq['end_id']
-            
+
     print(str(json.dumps(sequence_list, ensure_ascii=False)))
 
 # 조건문 처리 
