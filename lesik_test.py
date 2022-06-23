@@ -349,12 +349,19 @@ def sentence_print(node_list, sequence_list):
             
     print(str(json.dumps(sequence_list, ensure_ascii=False)))
 
+# 조건문 처리 
 def process_cond(node,seq_dict):
     
-    for i in range(0, len(node['morp']) - 1):
+    for i in range(0, len(node['morp'])-1):
         if node['morp'][i]['type'] == 'VV':
-            if node['morp'][i+1]['lemma'] == "면":
-                seq_dict['cond'] = node['morp'][i]['lemma'] + node['morp'][i+1]['lemma']
+            if node['morp'][i+1]['lemma'] == "면" or node['morp'][i+1]['lemma'] == "으면":
+                seq_dict['cond'] = node['morp'][i]['lemma']
+                if seq_dict['cond'] == seq_dict['act']:
+                    seq_dict['cond'] = node['morp'][i]['lemma']+node['morp'][i+1]['lemma']
+                    seq_dict['act'] = ""
+                else: 
+                    seq_dict['cond'] = ""
+                    
     return seq_dict
 
 def main():
@@ -379,7 +386,7 @@ def main():
 
     # recipe extraction
     file_path = input("레시피 파일 경로를 입력해 주세요 : ")
-    f = open(file_path, 'r')
+    f = open(file_path, 'r', encoding="utf-8")
     original_recipe = str.join("\n", f.readlines())
 
     srl_input = input("SRL 사용 여부를 입력해주세요 (1 : O, 2 : X) : ")
