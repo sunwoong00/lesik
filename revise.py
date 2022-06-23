@@ -1,43 +1,9 @@
-#etm 재료 데이터 가져올수 있을지 /코드 이해/ 수식어 처리/ 시즈닝이랑 재료 분리  
+from tkinter import W
+from typing import final
 import urllib3
 import json
 import os.path
 
-def etm_merge_ingredient(node, sequence, ingredient_dict):
-    # 조리 동작 한줄
-    is_etm = False
-    etm_id = -1
-    for m_ele in node['morp']:
-        if m_ele['type'] == 'ETM':
-            is_etm = True
-            continue
-        if is_etm and m_ele['type'] == 'NNG' and m_ele['lemma'] in ingredient_dict:
-            for w_ele in node['word']:
-                etm_id = m_ele['id'] - 1
-                if w_ele['begin'] <= etm_id and w_ele['end'] >= etm_id:
-                    merge_ingre = w_ele['text'] + " " + m_ele['lemma']
-                    for ingre in sequence['ingre']:
-                        if m_ele['lemma'] == ingre:
-                            ingre = merge_ingre
-            is_etm = False  
-            
-        return sequence
-    
-# 화구존, 전처리존 분리             
-def select_cooking_zone(sequence):
-    #for sequence in seq_list:
-    if sequence['act'] in fire_zone:
-        sequence['zone'] = "화구존"
-    for tool in sequence['tool']:
-        if tool in fire_tool:
-            sequence['zone'] = "화구존"
-    if sequence['act'] in preprocess_zone:
-        sequence['zone'] = "전처리존"
-    for tool in sequence['tool']:
-        if tool in preprocess_tool:
-            sequence['zone'] = "전처리존"
-    return sequence
-    
 
 def get_list_from_file(file_path):
     file_exists = os.path.exists(file_path)
@@ -143,23 +109,164 @@ def merge_dictionary(src_dict, dst_dict):
         else:
             dst_dict[key] = src_dict[key]
 
+def find_omitted_ingredient(node, seq_list, ingredient_dict):
+    for sequence in seq_list:
+        seq_ing = sequence['ingre']
+        seq_seas = sequence['seasoning']
+        if len(seq_ing) == 0 and len(seq_seas) == 0:
+            for srl in node['SRL']:
+                s_arg = srl['argument']
+                if srl['verb'] == sequence['act']:
+                    for s_ele in s_arg:
+                        s_text = s_ele['text']
+                        s_type = s_ele['type']
+                        if s_type == 'ARG1' or s_type == 'ARGM-MNR':
+                            for ing_dict_key in ingredient_dict.keys():
+                                if ing_dict_key in s_text:
+                                    sequence['ingre'].append(ing_dict_key)
 
-def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_list):
+    return seq_list
+
+
+def mod_recursive(node, d_ele):
+    mod_result = ""
+    for mod in d_ele['mod']:
+        mod_result += mod_recursive(node, node['dependency'][int(mod)])
+        mod_result += " "
+    return mod_result + d_ele['text']
+
+def mod_check(node, d_ele):
+    add_ingre_list = []
+    mod_result = None
+    for d_element in d_ele['mod']:
+        mod_node = node['dependency'][int(d_element)]
+        if mod_node['label'] == 'VP_MOD':
+            mod_result = mod_recursive(node, mod_node)
+        elif mod_node['label'] == 'NP_CNJ':
+            add_ingre_list.append(mod_node['text'])
+    return mod_result, add_ingre_list
+
+def find_ing_dependency(node, seq_list):
+    mod_result = None
+    add_ingre_list = []
+    for d_ele in node['dependency']:
+        text = d_ele['text']
+        for sequence in seq_list:
+            for i in range(0, len(sequence['ingre'])):
+                if sequence['ingre'][i] in text:
+                    mod_result, add_ingre_list = mod_check(node, d_ele)
+                    if mod_result is not None:
+                        sequence['ingre'][i] = mod_result + " " + sequence['ingre'][i]
+        if len(add_ingre_list) != 0:
+            for ingre in add_ingre_list:
+                for sequence in seq_list:
+                    for i in range(0, len(sequence['ingre'])):
+                        if sequence['ingre'][i] in ingre and mod_result is not None:
+                            sequence['ingre'][i] = mod_result + " " + sequence['ingre'][i]              
+
+    return seq_list
+
+def etm_merge_ingredient(node, sequence, ingredient_dict):
+    # 조리 동작 한줄
+    is_etm = False
+    etm_id = -1
+    for m_ele in node['morp']:
+        if m_ele['type'] == 'ETM':
+            is_etm = True
+            continue
+        if is_etm and m_ele['type'] == 'NNG' and m_ele['lemma'] in ingredient_dict:
+            for w_ele in node['word']:
+                etm_id = m_ele['id'] - 1
+                if w_ele['begin'] <= etm_id and w_ele['end'] >= etm_id:
+                    merge_ingre = w_ele['text'] + " " + m_ele['lemma']
+                    for ingre in sequence['ingre']:
+                        if m_ele['lemma'] == ingre:
+                            ingre = merge_ingre
+            is_etm = False  
+            
+        return sequence
+    
+# 화구존, 전처리존 분리             
+def select_cooking_zone(sequence):
+    #for sequence in seq_list:
+    if sequence['act'] in fire_zone:
+        sequence['zone'] = "화구존"
+    for tool in sequence['tool']:
+        if tool in fire_tool:
+            sequence['zone'] = "화구존"
+    if sequence['act'] in preprocess_zone:
+        sequence['zone'] = "전처리존"
+    for tool in sequence['tool']:
+        if tool in preprocess_tool:
+            sequence['zone'] = "전처리존"
+    return sequence
+
+# 조건문 처리 
+def process_cond(node,seq_dict):
+    
+    for i in range(0, len(node['morp'])-1):
+        if node['morp'][i]['type'] == 'VV':
+            if node['morp'][i+1]['lemma'] == "면" or node['morp'][i+1]['lemma'] == "으면":
+                seq_dict['cond'] = node['morp'][i]['lemma']
+                print(seq_dict['cond'])
+                print(seq_dict['act'])
+                if seq_dict['cond'] == seq_dict['act']:
+                    seq_dict['cond'] = node['morp'][i]['lemma']+node['morp'][i+1]['lemma']
+                    seq_dict['act'] = ""
+                else: 
+                    seq_dict['cond'] = ""
+                    
+    return seq_dict
+
+# 원문텍스트 출력
+def sentence_print(node_list, recipe, sequence_list):
+
+    direction_recipe = ""
+    is_dir = False
+    for element in recipe:
+        if is_dir == True:
+            direction_recipe += element
+        if element == '[조리방법]\n' and is_dir == False:
+            is_dir = True
+
+    line_recipe = direction_recipe.split("\n")
+    line = 0
+    
+    for dict in sequence_list:
+        start_id = dict['start_id']
+        end_id = dict['end_id']
+        for node in node_list:
+            for w_ele in node['word']:
+                text = w_ele['text']
+                begin = w_ele['begin']
+                end = w_ele['end']
+                if start_id <= begin and end <= end_id and text in line_recipe[line] and line < len(line_recipe):
+                    dict['sentence'] = line_recipe[line]
+                else:
+                    line += 1
+                    break
+
+    print(str(json.dumps(sequence_list, ensure_ascii=False)))    
+  
+ 
+
+def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_list, srl_input):
     # 한 문장
     seq_list = []
-
     # 조리 동작 한줄
-    prev_seq_id = -1
+    prev_seq_id = -1 
     for m_ele in node['morp']:
         if m_ele['type'] == 'VV':
             act = m_ele['lemma']
             act_id = m_ele['id']
+            cond = ""
             if act in cooking_act_dict:
                 # 6가지 요소
                 # 이걸 line에 넣을 것
-                seq_dict = {'act': cooking_act_dict[act], 'tool': [], 'ingre': [], 'seasoning': [], 'volume': [],
+                seq_dict = {'cond' : cond, 'act': act, 'tool': [], 'ingre': [], 'seasoning': [], 'volume': [],
                             'zone': "", "start_id" : prev_seq_id + 1, "end_id": act_id}
-
+                # 조건문 처리
+                process_cond(node, seq_dict)
                 # insert act
                 # find and insert tool
                 for w_ele in node['word']:
@@ -181,28 +288,60 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
                     for i_ele in ingredient_dict:
                         if i_ele in w_ele['text']:
                             seq_dict['ingre'].append(i_ele)
-                            
                 
-
                 if len(seq_dict['tool']) == 0 and act in act_to_tool_dict:
                     seq_dict['tool'] = act_to_tool_dict[act]
 
                 seq_list.append(seq_dict)
                 prev_seq_id = act_id
+                
 
     for sequence in seq_list:
         for ne in node['NE']:
             if ne['type'] in ingredient_type_list and ne['begin'] >= sequence['start_id'] and ne['end'] < sequence['end_id']:
                 if ne['text'] not in sequence['ingre']:
                     sequence['ingre'].append(ne['text'])
-        # 수식어 + 재료 바꾸기
-        etm_merge_ingredient(node, sequence, ingredient_dict)
-        # 화구존/전처리존 분리
-        select_cooking_zone(sequence)
-    return remove_unnecessary_verb(node, seq_list)
 
+    ##############################  원본 (dependency SRL 사용 X)  #################################
+    '''
+    remove_unnecessary_verb_list = remove_unnecessary_verb(node, seq_list)
+    find_omitted_ingredient_list = find_omitted_ingredient(node, remove_unnecessary_verb_list, ingredient_dict)
+    for sequence in find_omitted_ingredient_list:
+        sequence['act'] = cooking_act_dict[sequence['act']]
+    return find_omitted_ingredient_list
+    '''
 
-def parse_node_section(node_list):
+    remove_unnecessary_verb_list = remove_unnecessary_verb(node, seq_list)
+
+    if srl_input == '1': 
+        find_omitted_ingredient_list = find_omitted_ingredient(node, remove_unnecessary_verb_list, ingredient_dict)
+        for sequence in find_omitted_ingredient_list:
+            sequence['act'] = cooking_act_dict[sequence['act']]
+        find_ing_dependency_list = find_ing_dependency(node, find_omitted_ingredient_list)
+
+        for sequence in find_ing_dependency_list:
+            # 수식어 + 재료 바꾸기
+            etm_merge_ingredient(node, sequence, ingredient_dict)
+            # 화구존/전처리존 분리
+            select_cooking_zone(sequence)
+        
+        return find_ing_dependency_list
+    
+    elif srl_input == '2':
+        for sequence in remove_unnecessary_verb_list:
+            
+            sequence['act'] = cooking_act_dict[sequence['act']]
+            
+
+        for sequence in remove_unnecessary_verb_list:
+            # 수식어 + 재료 바꾸기
+            etm_merge_ingredient(node, sequence, ingredient_dict)
+            # 화구존/전처리존 분리
+            select_cooking_zone(sequence)
+
+        return remove_unnecessary_verb_list
+
+def parse_node_section(node_list, srl_input):
     coreference_dict = {}
     volume_type_list = ["QT_SIZE", "QT_COUNT", "QT_OTHERS", "QT_WEIGHT", "QT_PERCENTAGE"]
     ingredient_type_list = ["CV_FOOD", "CV_DRINK", "PT_GRASS", "PT_FRUIT", "PT_OTHERS", "AM_FISH"]
@@ -224,7 +363,7 @@ def parse_node_section(node_list):
                 coreference_dict[sub_type].update(sub_ingredient_dict)
             ingredient_dict.update(sub_ingredient_dict)
         else:
-            sequence = create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_list)
+            sequence = create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_list, srl_input)
             for seq_dict in sequence:
                 for ingre in seq_dict['ingre']:
                     if ingre in ingredient_dict:
@@ -255,8 +394,10 @@ def main():
 
     # recipe extraction
     file_path = input("레시피 파일 경로를 입력해 주세요 : ")
-    f = open(file_path, 'r', encoding='utf-8')
+    f = open(file_path, 'r', encoding="utf-8")
     original_recipe = str.join("\n", f.readlines())
+
+    srl_input = input("SRL 사용 여부를 입력해주세요 (1 : O, 2 : X) : ")
     f.close()
 
     # ETRI open api
@@ -278,7 +419,7 @@ def main():
 
     json_object = json.loads(response.data)
     node_list = json_object.get("return_object").get("sentence")
-    sequence_list = parse_node_section(node_list)
+    sequence_list = parse_node_section(node_list, srl_input)
     print(str(json.dumps(sequence_list, ensure_ascii=False)))
 
 
