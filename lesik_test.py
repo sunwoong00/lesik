@@ -180,12 +180,12 @@ def etm_merge_ingredient(node, sequence, ingredient_dict):
                 etm_id = m_ele['id'] - 1
                 if w_ele['begin'] <= etm_id and w_ele['end'] >= etm_id:
                     merge_ingre = w_ele['text'] + " " + m_ele['lemma']
-                    for ingre in sequence['ingre']:
-                        if m_ele['lemma'] == ingre:
-                            ingre = merge_ingre
+                    for i in range(0, len(sequence['ingre'])):
+                        if m_ele['lemma'] == sequence['ingre'][i]:
+                            sequence['ingre'][i] = merge_ingre
             is_etm = False  
             
-        return sequence
+    return sequence
     
 # 화구존, 전처리존 분리             
 def select_cooking_zone(sequence):
