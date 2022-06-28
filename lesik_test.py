@@ -183,7 +183,7 @@ def etm_merge_ingredient(node, sequence, ingredient_dict):
                     for i in range(0, len(sequence['ingre'])):
                         if m_ele['lemma'] == sequence['ingre'][i]:
                             sequence['ingre'][i] = merge_ingre
-            is_etm = False  
+        is_etm = False  
             
     return sequence
     
