@@ -82,9 +82,10 @@ def remove_unnecessary_verb(node, seq_list):
     flag = False
     del_seq_list = []
     for morp in node['morp']:
-        if morp['type'] == 'VV' and morp['lemma'] == "넣":
-            flag = True
-            continue
+        if morp['type'] == 'VV':
+            if morp['lemma'] == "넣" or morp['lemma'] == "놓":
+                flag = True
+                continue
 
         if flag and morp['type'] == 'EC':
             morp_id = morp['id']
@@ -254,14 +255,7 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
                 if ne['text'] not in sequence['ingre']:
                     sequence['ingre'].append(ne['text'])
 
-    ##############################  원본 (dependency SRL 사용 X)  #################################
-    '''
-    remove_unnecessary_verb_list = remove_unnecessary_verb(node, seq_list)
-    find_omitted_ingredient_list = find_omitted_ingredient(node, remove_unnecessary_verb_list, ingredient_dict)
-    for sequence in find_omitted_ingredient_list:
-        sequence['act'] = cooking_act_dict[sequence['act']]
-    return find_omitted_ingredient_list
-    '''
+
 
     remove_unnecessary_verb_list = remove_unnecessary_verb(node, seq_list)
 
@@ -346,6 +340,13 @@ def sentence_print(node_list, sequence_list):
                     if begin != end_id:
                         seq['sentence'] += " "
             prev_seq_id = seq['end_id']
+
+
+    '''# 후 ~~ 처리하는 코드
+    for seq in sequence_list:
+        if seq['sentence'][0] == "후" and seq['sentence'][1] == " ":'''
+            
+
 
     print(str(json.dumps(sequence_list, ensure_ascii=False)))
 
