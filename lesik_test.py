@@ -219,8 +219,7 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
                 # 이걸 line에 넣을 것
                 seq_dict = {'cond' : "", 'act': act, 'tool': [], 'ingre': [], 'seasoning': [], 'volume': [],
                             'zone': "", "start_id" : prev_seq_id + 1, "end_id" : act_id, "sentence" : ""}
-
-                process_cond(node, seq_dict)
+                
                 # insert act
                 # find and insert tool
                 for w_ele in node['word']:
@@ -248,15 +247,15 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
 
                 seq_list.append(seq_dict)
                 prev_seq_id = act_id
-
+    #조건문 처리함수추가
+    process_cond(node, seq_list)
+    
     for sequence in seq_list:
         for ne in node['NE']:
             if ne['type'] in ingredient_type_list and ne['begin'] >= sequence['start_id'] and ne['end'] < sequence['end_id']:
                 if ne['text'] not in sequence['ingre']:
                     sequence['ingre'].append(ne['text'])
-
-
-
+    
     remove_unnecessary_verb_list = remove_unnecessary_verb(node, seq_list)
 
     if srl_input == '1': 
@@ -350,21 +349,26 @@ def sentence_print(node_list, sequence_list):
 
     print(str(json.dumps(sequence_list, ensure_ascii=False)))
 
-# 조건문 처리 
-def process_cond(node,seq_dict):
-    
-    for i in range(0, len(node['morp'])-1):
-        if node['morp'][i]['type'] == 'VV':
-            if node['morp'][i+1]['lemma'] == "면" or node['morp'][i+1]['lemma'] == "으면":
-                seq_dict['cond'] = node['morp'][i]['lemma']
-                if seq_dict['cond'] == seq_dict['act']:
-                    seq_dict['cond'] = node['morp'][i]['lemma']+node['morp'][i+1]['lemma']
-                    seq_dict['act'] = ""
-                else: 
-                    seq_dict['cond'] = ""
-                    
-    return seq_dict
-
+# 조건문 처리
+'''
+def process_cond(node,seq_list):
+    del_seq_list = []
+    for i in range(0, len(seq_list)-1):
+        for j in range(0, len(node['morp'])-1):
+            if node['morp'][j]['type'] == 'VV':
+                if node['morp'][j+1]['lemma'] == "면" or node['morp'][j+1]['lemma'] == "으면":
+                    seq_list[i]['cond'] = node['morp'][j]['lemma']
+                    merge_dictionary(seq_list[i], seq_list[i+1])
+                    del_seq_list.append(seq_list[i])
+                    for k in range(0, len(seq_list[i]['act'])):    
+                        if seq_list[i]['cond'] == seq_list[i]['act'][k]:
+                            seq_list[i]['cond'] = node['morp'][j]['lemma']+node['morp'][j+1]['lemma']
+                            del seq_list[i]['act'][k]     
+    for seq in del_seq_list:
+        seq_list.remove(seq)
+          
+    return seq_list
+'''
 def main():
     # static params
     open_api_url = "http://aiopen.etri.re.kr:8000/WiseNLU"
