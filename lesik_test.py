@@ -79,22 +79,29 @@ def verify_pre_treated_ingredients(ingredient, pre_treated_ingredient_list):
 
 
 def remove_unnecessary_verb(node, seq_list):
-    flag = False
+    flag1 = False
+    flag2 = False
     del_seq_list = []
+    del_type_dict = {'NNG', 'VA', 'XPN', 'SP'}
     for morp in node['morp']:
         if morp['type'] == 'VV':
             if morp['lemma'] == "넣" or morp['lemma'] == "놓":
-                flag = True
+                flag1 = True
                 continue
 
-        if flag and morp['type'] == 'EC':
+        if flag1 and morp['type'] == 'EC':
+            flag2 = True
+            continue
+
+        if flag1 and flag2 and morp['type'] not in del_type_dict:
             morp_id = morp['id']
             for i in range(1, len(seq_list)):
                 if seq_list[i] is not None and seq_list[i]['start_id'] <= morp_id <= seq_list[i]['end_id']:
                     merge_dictionary(seq_list[i-1], seq_list[i])
                     seq_list[i]['start_id'] = seq_list[i-1]['start_id']
                     del_seq_list.append(seq_list[i-1])
-        flag = False
+        flag1 = False
+        flag2 = False
 
     for seq in del_seq_list:
         seq_list.remove(seq)
@@ -341,9 +348,10 @@ def sentence_print(node_list, sequence_list):
             prev_seq_id = seq['end_id']
 
 
-    '''# 후 ~~ 처리하는 코드
+    # 후 ~~ 처리하는 코드
     for seq in sequence_list:
-        if seq['sentence'][0] == "후" and seq['sentence'][1] == " ":'''
+        if seq['sentence'][0] == "후" and seq['sentence'][1] == " ":
+            seq['sentence'] = seq['sentence'][2:len(seq['sentence'])]
             
 
 
