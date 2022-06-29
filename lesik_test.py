@@ -358,25 +358,23 @@ def sentence_print(node_list, sequence_list):
     print(str(json.dumps(sequence_list, ensure_ascii=False)))
 
 # 조건문 처리
-'''
 def process_cond(node,seq_list):
     del_seq_list = []
-    for i in range(0, len(seq_list)-1):
-        for j in range(0, len(node['morp'])-1):
-            if node['morp'][j]['type'] == 'VV':
-                if node['morp'][j+1]['lemma'] == "면" or node['morp'][j+1]['lemma'] == "으면":
-                    seq_list[i]['cond'] = node['morp'][j]['lemma']
-                    merge_dictionary(seq_list[i], seq_list[i+1])
-                    del_seq_list.append(seq_list[i])
-                    for k in range(0, len(seq_list[i]['act'])):    
-                        if seq_list[i]['cond'] == seq_list[i]['act'][k]:
-                            seq_list[i]['cond'] = node['morp'][j]['lemma']+node['morp'][j+1]['lemma']
-                            del seq_list[i]['act'][k]     
+    i=0
+    for j in range(0, len(node['morp'])-1):
+        if node['morp'][j]['type'] == 'VV':
+            i=i+1
+            if node['morp'][j+1]['lemma'] == "면" or node['morp'][j+1]['lemma'] == "으면":
+                merge_dictionary(seq_list[i-1], seq_list[i])
+                seq_list[i]['cond'] = node['morp'][j]['lemma']
+                del_seq_list.append(seq_list[i-1])
+                seq_list[i]['cond'] = node['morp'][j]['lemma']+node['morp'][j+1]['lemma']
+                             
     for seq in del_seq_list:
         seq_list.remove(seq)
           
     return seq_list
-'''
+
 def main():
     # static params
     open_api_url = "http://aiopen.etri.re.kr:8000/WiseNLU"
