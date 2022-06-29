@@ -1,3 +1,4 @@
+from asyncio.windows_events import NULL
 from typing import final
 from xmlrpc.client import FastMarshaller
 import urllib3
@@ -258,7 +259,7 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
                                 keep1 = s_ele
                                 flag1 = True
                     if flag1:
-                        seq_dict['ingre'].append(keep1)    
+                        seq_dict['seasoning'].append(keep1)    
                     
                     keep2 = ""
                     flag2 = False
@@ -276,9 +277,8 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
 
                 seq_list.append(seq_dict)
                 prev_seq_id = act_id
-    #조건문 처리함수추가
-    process_cond(node, seq_list)
     
+
     for sequence in seq_list:
         for ne in node['NE']:
             if ne['type'] in ingredient_type_list and ne['begin'] >= sequence['start_id'] and ne['end'] < sequence['end_id']:
@@ -304,6 +304,16 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
     elif srl_input == '2':
         for sequence in remove_unnecessary_verb_list:
             sequence['act'] = cooking_act_dict[sequence['act']]
+        
+        #조건문 처리함수추가
+        process_cond(node, seq_list)
+        # 조건문 동사에 붙이기
+        '''
+        for sequence in seq_list:
+            if sequence['cond'] != "":
+                sequence['act'] = "(" + sequence['cond'] + ")" + sequence['act']
+                sequence['cond']=""
+                '''
 
         for sequence in remove_unnecessary_verb_list:
             # 수식어 + 재료 바꾸기
@@ -382,18 +392,24 @@ def sentence_print(node_list, sequence_list):
 # 조건문 처리
 def process_cond(node,seq_list):
     del_seq_list = []
-    i=0
     for j in range(0, len(node['morp'])-1):
         if node['morp'][j]['type'] == 'VV':
-            i=i+1
             if node['morp'][j+1]['lemma'] == "면" or node['morp'][j+1]['lemma'] == "으면":
-                merge_dictionary(seq_list[i-1], seq_list[i])
-                seq_list[i]['cond'] = node['morp'][j]['lemma']
-                del_seq_list.append(seq_list[i-1])
-                seq_list[i]['cond'] = node['morp'][j]['lemma']+node['morp'][j+1]['lemma']
+                #merge_dictionary(seq_list[i-1], seq_list[i])
+                cond_seq = None
+                for seq in seq_list:
+                    if seq['start_id'] <= j <= seq['end_id']:
+                        cond_seq = seq
+                        continue
+                    if cond_seq != None:
+                        if len(cond_seq['ingre']) != 0:
+                            seq['act'] =  "(" + cond_seq['ingre'][0] + ',' + node['morp'][j]['lemma']+node['morp'][j+1]['lemma']+")" + seq['act']
+                        else:
+                            seq['act'] = node['morp'][j]['lemma']+node['morp'][j+1]['lemma']
+                        seq_list.remove(cond_seq)         
+                        cond_seq = None
                              
-    for seq in del_seq_list:
-        seq_list.remove(seq)
+    
           
     return seq_list
 
