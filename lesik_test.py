@@ -129,7 +129,7 @@ def find_omitted_ingredient(node, seq_list, ingredient_dict):
                     for s_ele in s_arg:
                         s_text = s_ele['text']
                         s_type = s_ele['type']
-                        if s_type == 'ARG1' or s_type == 'ARGM-MNR':
+                        if s_type == 'ARG0' or s_type == 'ARG1' or s_type == 'ARGM-MNR':
                             for ing_dict_key in ingredient_dict.keys():
                                 if ing_dict_key in s_text:
                                     sequence['ingre'].append(ing_dict_key)
@@ -242,12 +242,34 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
                     for t_ele in tool_list:
                         if t_ele in w_ele['text']:
                             seq_dict['tool'].append(t_ele)
-                    for s_ele in seasoning_list:
+                    '''for s_ele in seasoning_list:
                         if s_ele in w_ele['text']:
                             seq_dict['seasoning'].append(s_ele)
+
                     for i_ele in ingredient_dict:
                         if i_ele in w_ele['text']:
-                            seq_dict['ingre'].append(i_ele)
+                            seq_dict['ingre'].append(i_ele)'''
+
+                    keep1 = ""
+                    flag1 = False
+                    for s_ele in seasoning_list:
+                        if s_ele in w_ele['text']:
+                            if len(s_ele) > len(keep1):
+                                keep1 = s_ele
+                                flag1 = True
+                    if flag1:
+                        seq_dict['ingre'].append(keep1)    
+                    
+                    keep2 = ""
+                    flag2 = False
+                    for i_ele in ingredient_dict:
+                        if i_ele in w_ele['text']:
+                            if len(i_ele) > len(keep2):
+                                keep2 = i_ele
+                                flag2 = True
+                    if flag2:
+                        seq_dict['ingre'].append(keep2)
+                        
 
                 if len(seq_dict['tool']) == 0 and act in act_to_tool_dict:
                     seq_dict['tool'] = act_to_tool_dict[act]
@@ -294,7 +316,7 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
 def parse_node_section(node_list, srl_input):
     coreference_dict = {}
     volume_type_list = ["QT_SIZE", "QT_COUNT", "QT_OTHERS", "QT_WEIGHT", "QT_PERCENTAGE"]
-    ingredient_type_list = ["CV_FOOD", "CV_DRINK", "PT_GRASS", "PT_FRUIT", "PT_OTHERS", "AM_FISH"]
+    ingredient_type_list = ["CV_FOOD", "CV_DRINK", "PT_GRASS", "PT_FRUIT", "PT_OTHERS", "AM_FISH", "AM_OTHERS"]
     ingredient_dict = {}
     sequence_list = []
     is_ingredient = True
