@@ -236,7 +236,7 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
                         break
                     for coref_key in coreference_dict.keys():
                         if coref_key in w_ele['text']:
-                            coref_sub_dict = coreference_dict.get(coref_key);
+                            coref_sub_dict = coreference_dict.get(coref_key)
                             for key in coref_sub_dict.keys():
                                 seq_dict['seasoning'].append(key + "(" + coref_sub_dict.get(key) + ")")
                     for t_ele in tool_list:
@@ -250,25 +250,22 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
                         if i_ele in w_ele['text']:
                             seq_dict['ingre'].append(i_ele)'''
 
-                    keep1 = ""
-                    flag1 = False
+                    seasoning = ""
                     for s_ele in seasoning_list:
                         if s_ele in w_ele['text']:
-                            if len(s_ele) > len(keep1):
-                                keep1 = s_ele
-                                flag1 = True
-                    if flag1:
-                        seq_dict['ingre'].append(keep1)    
+                            if len(s_ele) > len(seasoning):
+                                seasoning = s_ele
+                                
+                    if seasoning != "":
+                        seq_dict['seasoning'].append(seasoning)    
                     
-                    keep2 = ""
-                    flag2 = False
+                    ingre = ""
                     for i_ele in ingredient_dict:
                         if i_ele in w_ele['text']:
-                            if len(i_ele) > len(keep2):
-                                keep2 = i_ele
-                                flag2 = True
-                    if flag2:
-                        seq_dict['ingre'].append(keep2)
+                            if len(i_ele) > len(ingre):
+                                ingre = i_ele
+                    if ingre != "" and ingre not in seq_dict['seasoning']:
+                        seq_dict['ingre'].append(ingre)
                         
 
                 if len(seq_dict['tool']) == 0 and act in act_to_tool_dict:
@@ -284,6 +281,11 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
             if ne['type'] in ingredient_type_list and ne['begin'] >= sequence['start_id'] and ne['end'] < sequence['end_id']:
                 if ne['text'] not in sequence['ingre']:
                     sequence['ingre'].append(ne['text'])
+                    # 재료에 달걀, 달걀프라이 중복 빼는 코드
+                    for seq_ing in sequence['ingre']:
+                        if seq_ing in ne['text']:
+                            sequence['ingre'].remove(seq_ing)
+                            break
     
     remove_unnecessary_verb_list = remove_unnecessary_verb(node, seq_list)
 
@@ -316,7 +318,7 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
 def parse_node_section(node_list, srl_input):
     coreference_dict = {}
     volume_type_list = ["QT_SIZE", "QT_COUNT", "QT_OTHERS", "QT_WEIGHT", "QT_PERCENTAGE"]
-    ingredient_type_list = ["CV_FOOD", "CV_DRINK", "PT_GRASS", "PT_FRUIT", "PT_OTHERS", "AM_FISH", "AM_OTHERS"]
+    ingredient_type_list = ["CV_FOOD", "CV_DRINK", "PT_GRASS", "PT_FRUIT", "PT_OTHERS", "PT_PART", "AM_FISH", "AM_OTHERS"]
     ingredient_dict = {}
     sequence_list = []
     is_ingredient = True
@@ -335,6 +337,25 @@ def parse_node_section(node_list, srl_input):
                 coreference_dict[sub_type].update(sub_ingredient_dict)
             ingredient_dict.update(sub_ingredient_dict)
         else:
+            # tip 부분 생략하는 조건문
+            if len(node['text']) == 0:
+                    node_list.remove(node)
+                    continue
+            if "tip" in node['text'].lower():
+                node_list.remove(node)
+                continue 
+            if "(" in node['text'] and ")" in node['text']:
+                start = node['text'].find('(')
+                end = node['text'].find(')')
+                if end >= len(node['text']) - 1:
+                    node['text'] = node['text'][0:start]
+                else:
+                    node['text'] = node['text'][0:start] + " " + node['text'][end:len(node['text'])]
+
+                if len(node['text']) == 0:
+                    node_list.remove(node)
+                    continue
+            
             sequence = create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_list, srl_input)
             for seq_dict in sequence:
                 for ingre in seq_dict['ingre']:
