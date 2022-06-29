@@ -243,13 +243,7 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
                     for t_ele in tool_list:
                         if t_ele in w_ele['text']:
                             seq_dict['tool'].append(t_ele)
-                    '''for s_ele in seasoning_list:
-                        if s_ele in w_ele['text']:
-                            seq_dict['seasoning'].append(s_ele)
-
-                    for i_ele in ingredient_dict:
-                        if i_ele in w_ele['text']:
-                            seq_dict['ingre'].append(i_ele)'''
+                   
 
                     keep1 = ""
                     flag1 = False
