@@ -1,4 +1,3 @@
-from asyncio.windows_events import NULL
 from typing import final
 from xmlrpc.client import FastMarshaller
 import urllib3
@@ -298,8 +297,6 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
         find_ing_dependency_list = find_ing_dependency(node, find_omitted_ingredient_list)
 
         for sequence in find_ing_dependency_list:
-            # 수식어 + 재료 바꾸기
-            #etm_merge_ingredient(node, sequence, ingredient_dict)
             # 화구존/전처리존 분리
             select_cooking_zone(sequence)
         
@@ -329,6 +326,7 @@ def parse_node_section(node_list, srl_input):
     sequence_list = []
     is_ingredient = True
     sub_type = None
+    remove_node_list = []
     for node in node_list:
         if "[" in node['text'] and "]" in node['text']:
             sub_type = node['text'][1:-1].replace(" ", "")
@@ -344,30 +342,31 @@ def parse_node_section(node_list, srl_input):
             ingredient_dict.update(sub_ingredient_dict)
         else:
             # tip 부분 생략하는 조건문
-            if len(node['text']) == 0:
-                    node_list.remove(node)
-                    continue
-            if "tip" in node['text'].lower():
-                node_list.remove(node)
-                continue 
-            if "(" in node['text'] and ")" in node['text']:
-                start = node['text'].find('(')
-                end = node['text'].find(')')
-                if end >= len(node['text']) - 1:
-                    node['text'] = node['text'][0:start]
-                else:
-                    node['text'] = node['text'][0:start] + " " + node['text'][end:len(node['text'])]
+            if len(node['text']) == 0 or "tip" in node['text'].lower():
+                remove_node_list.append(node)
+                continue
+            else:
+                if "(" in node['text'] and ")" in node['text']:
+                    start = node['text'].find('(')
+                    end = node['text'].find(')')
+                    if end >= len(node['text']) - 1:
+                        node['text'] = node['text'][0:start]
+                    else:
+                        node['text'] = node['text'][0:start] + " " + node['text'][end:len(node['text'])]
 
-                if len(node['text']) == 0:
-                    node_list.remove(node)
-                    continue
-            
+                    if len(node['text']) == 0:
+                        remove_node_list.append(node)
+                        continue
+                
             sequence = create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_list, srl_input)
             for seq_dict in sequence:
                 for ingre in seq_dict['ingre']:
                     if ingre in ingredient_dict:
                         seq_dict['volume'].append(ingredient_dict.get(ingre))
                 sequence_list.append(seq_dict)
+    
+    for node in remove_node_list:
+        node_list.remove(node)
     return sequence_list
 
 def sentence_print(node_list, sequence_list):
@@ -401,8 +400,6 @@ def sentence_print(node_list, sequence_list):
     for seq in sequence_list:
         if seq['sentence'][0] == "후" and seq['sentence'][1] == " ":
             seq['sentence'] = seq['sentence'][2:len(seq['sentence'])]
-            
-
 
     print(str(json.dumps(sequence_list, ensure_ascii=False)))
 
