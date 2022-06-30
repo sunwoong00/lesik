@@ -176,7 +176,6 @@ def find_ing_dependency(node, seq_list):
 
     return seq_list
 
-
 def etm_merge_ingredient(node,  remove_unnecessary_verb_list, ingredient_dict):
     # 조리 동작 한줄
     remove_list = []
@@ -196,8 +195,6 @@ def etm_merge_ingredient(node,  remove_unnecessary_verb_list, ingredient_dict):
                             if m_ele['lemma'] == remove_unnecessary_verb_list[i]['ingre'][j]:
                                 remove_unnecessary_verb_list[i]['ingre'][j] = merge_ingre
                                 remove_list.append(remove_unnecessary_verb_list[i-1])
-
-
             is_etm = False  
     for verb in remove_unnecessary_verb_list:
         if verb in remove_list:
