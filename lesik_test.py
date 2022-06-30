@@ -176,25 +176,33 @@ def find_ing_dependency(node, seq_list):
 
     return seq_list
 
-def etm_merge_ingredient(node, sequence, ingredient_dict):
+def etm_merge_ingredient(node,  remove_unnecessary_verb_list, ingredient_dict):
     # 조리 동작 한줄
-    is_etm = False
-    etm_id = -1
-    for m_ele in node['morp']:
-        if m_ele['type'] == 'ETM':
-            is_etm = True
-            continue
-        if is_etm and m_ele['type'] == 'NNG' and m_ele['lemma'] in ingredient_dict:
-            for w_ele in node['word']:
-                etm_id = m_ele['id'] - 1
-                if w_ele['begin'] <= etm_id and w_ele['end'] >= etm_id:
-                    merge_ingre = w_ele['text'] + " " + m_ele['lemma']
-                    for i in range(0, len(sequence['ingre'])):
-                        if m_ele['lemma'] == sequence['ingre'][i]:
-                            sequence['ingre'][i] = merge_ingre
-        is_etm = False  
+    remove_list=[]
+    for i in range(0, len(remove_unnecessary_verb_list)):
+        is_etm = False
+        etm_id = -1
+        for m_ele in node['morp']:
+            if m_ele['type'] == 'ETM':
+                is_etm = True
+                continue
+            if is_etm and m_ele['type'] == 'NNG' and m_ele['lemma'] in ingredient_dict:
+                for w_ele in node['word']:
+                    etm_id = m_ele['id'] - 1
+                    if w_ele['begin'] <= etm_id and w_ele['end'] >= etm_id:
+                        merge_ingre = w_ele['text'] + " " + m_ele['lemma']
+                        for j in range(0, len(remove_unnecessary_verb_list[i]['ingre'])):
+                            if m_ele['lemma'] == remove_unnecessary_verb_list[i]['ingre'][j]:
+                                remove_unnecessary_verb_list[i]['ingre'][j] = merge_ingre
+                                remove_list.append(remove_unnecessary_verb_list[i-1])
+                                
+                                
+            is_etm = False  
+    for list in remove_unnecessary_verb_list:
+        if list in remove_list:
+            remove_unnecessary_verb_list.remove(list)
             
-    return sequence
+    return remove_unnecessary_verb_list
     
 # 화구존, 전처리존 분리             
 def select_cooking_zone(sequence):
@@ -291,7 +299,7 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
 
         for sequence in find_ing_dependency_list:
             # 수식어 + 재료 바꾸기
-            etm_merge_ingredient(node, sequence, ingredient_dict)
+            #etm_merge_ingredient(node, sequence, ingredient_dict)
             # 화구존/전처리존 분리
             select_cooking_zone(sequence)
         
@@ -303,17 +311,11 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
         
         #조건문 처리함수추가
         process_cond(node, seq_list)
-        # 조건문 동사에 붙이기
-        '''
-        for sequence in seq_list:
-            if sequence['cond'] != "":
-                sequence['act'] = "(" + sequence['cond'] + ")" + sequence['act']
-                sequence['cond']=""
-                '''
+    
+        # 수식어 + 재료 바꾸기
+        etm_merge_ingredient(node, remove_unnecessary_verb_list, ingredient_dict)
 
         for sequence in remove_unnecessary_verb_list:
-            # 수식어 + 재료 바꾸기
-            etm_merge_ingredient(node, sequence, ingredient_dict)
             # 화구존/전처리존 분리
             select_cooking_zone(sequence)
 
