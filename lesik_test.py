@@ -175,7 +175,7 @@ def find_ing_dependency(node, seq_list):
 
     return seq_list
 
-def etm_merge_ingredient(node,  remove_unnecessary_verb_list, ingredient_dict):
+def etm_merge_ingredient(node, remove_unnecessary_verb_list, ingredient_dict):
     # 조리 동작 한줄
     remove_list=[]
     for i in range(0, len(remove_unnecessary_verb_list)):
@@ -194,7 +194,6 @@ def etm_merge_ingredient(node,  remove_unnecessary_verb_list, ingredient_dict):
                             if m_ele['lemma'] == remove_unnecessary_verb_list[i]['ingre'][j]:
                                 remove_unnecessary_verb_list[i]['ingre'][j] = merge_ingre
                                 remove_list.append(remove_unnecessary_verb_list[i-1])
-                                
                                 
             is_etm = False  
     for list in remove_unnecessary_verb_list:
@@ -217,6 +216,62 @@ def select_cooking_zone(sequence):
         if tool in preprocess_tool:
             sequence['zone'] = "전처리존"
     return sequence
+
+def sentence_print(node_list, sequence_list):
+    is_dir = False
+    for node in node_list:
+        if node['text'] == '[조리방법]':
+            is_dir = True
+            continue
+        if not is_dir:
+            continue
+
+        prev_seq_id = 0
+        for seq in sequence_list:
+            if seq['sentence'] != "":
+                continue
+            start_id = seq['start_id']
+            end_id = seq['end_id']
+            if start_id < prev_seq_id:
+                break
+            for w_ele in node['word']:
+                text = w_ele['text']
+                begin = w_ele['begin']
+                if start_id <= begin and begin <= end_id:
+                    seq['sentence'] += text
+                    if begin != end_id:
+                        seq['sentence'] += " "
+            prev_seq_id = seq['end_id']
+
+
+    # 후 ~~ 처리하는 코드
+    for seq in sequence_list:
+        if seq['sentence'][0] == "후" and seq['sentence'][1] == " ":
+            seq['sentence'] = seq['sentence'][2:len(seq['sentence'])]
+
+    print(str(json.dumps(sequence_list, ensure_ascii=False)))
+
+# 조건문 처리
+def process_cond(node,seq_list):
+    del_seq_list = []
+    for j in range(0, len(node['morp'])-1):
+        if node['morp'][j]['type'] == 'VV':
+            if node['morp'][j+1]['lemma'] == "면" or node['morp'][j+1]['lemma'] == "으면":
+                #merge_dictionary(seq_list[i-1], seq_list[i])
+                cond_seq = None
+                for seq in seq_list:
+                    if seq['start_id'] <= j <= seq['end_id']:
+                        cond_seq = seq
+                        continue
+                    if cond_seq != None:
+                        if len(cond_seq['ingre']) != 0:
+                            seq['act'] =  "(" + cond_seq['ingre'][0] + ',' + node['morp'][j]['lemma']+node['morp'][j+1]['lemma']+")" + seq['act']
+                        else:
+                            seq['act'] = node['morp'][j]['lemma']+node['morp'][j+1]['lemma']
+                        seq_list.remove(cond_seq)         
+                        cond_seq = None
+                            
+    return seq_list
  
 
 def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_list, srl_input):
@@ -368,64 +423,6 @@ def parse_node_section(node_list, srl_input):
     for node in remove_node_list:
         node_list.remove(node)
     return sequence_list
-
-def sentence_print(node_list, sequence_list):
-    is_dir = False
-    for node in node_list:
-        if node['text'] == '[조리방법]':
-            is_dir = True
-            continue
-        if not is_dir:
-            continue
-
-        prev_seq_id = 0
-        for seq in sequence_list:
-            if seq['sentence'] != "":
-                continue
-            start_id = seq['start_id']
-            end_id = seq['end_id']
-            if start_id < prev_seq_id:
-                break
-            for w_ele in node['word']:
-                text = w_ele['text']
-                begin = w_ele['begin']
-                if start_id <= begin and begin <= end_id:
-                    seq['sentence'] += text
-                    if begin != end_id:
-                        seq['sentence'] += " "
-            prev_seq_id = seq['end_id']
-
-
-    # 후 ~~ 처리하는 코드
-    for seq in sequence_list:
-        if seq['sentence'][0] == "후" and seq['sentence'][1] == " ":
-            seq['sentence'] = seq['sentence'][2:len(seq['sentence'])]
-
-    print(str(json.dumps(sequence_list, ensure_ascii=False)))
-
-# 조건문 처리
-def process_cond(node,seq_list):
-    del_seq_list = []
-    for j in range(0, len(node['morp'])-1):
-        if node['morp'][j]['type'] == 'VV':
-            if node['morp'][j+1]['lemma'] == "면" or node['morp'][j+1]['lemma'] == "으면":
-                #merge_dictionary(seq_list[i-1], seq_list[i])
-                cond_seq = None
-                for seq in seq_list:
-                    if seq['start_id'] <= j <= seq['end_id']:
-                        cond_seq = seq
-                        continue
-                    if cond_seq != None:
-                        if len(cond_seq['ingre']) != 0:
-                            seq['act'] =  "(" + cond_seq['ingre'][0] + ',' + node['morp'][j]['lemma']+node['morp'][j+1]['lemma']+")" + seq['act']
-                        else:
-                            seq['act'] = node['morp'][j]['lemma']+node['morp'][j+1]['lemma']
-                        seq_list.remove(cond_seq)         
-                        cond_seq = None
-                             
-    
-          
-    return seq_list
 
 def main():
     # static params
