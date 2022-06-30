@@ -1,5 +1,3 @@
-from typing import final
-from xmlrpc.client import FastMarshaller
 import urllib3
 import json
 import os.path
@@ -22,16 +20,16 @@ def parse_cooking_act_dict(file_path):
         return None
     f = open(file_path, 'r', encoding='utf-8')
     delim = ">"
-    cooking_act_dict = {}
+    act_dict = {}
     for line in f.readlines():
         line = line.replace("\n", "")
         if delim in line:
             sp_line = line.split(delim)
-            cooking_act_dict[sp_line[0]] = sp_line[1]
+            act_dict[sp_line[0]] = sp_line[1]
         else:
-            cooking_act_dict[line] = line
+            act_dict[line] = line
     f.close()
-    return cooking_act_dict
+    return act_dict
 
 
 def parse_act_to_tool_dict(file_path):
@@ -118,6 +116,7 @@ def merge_dictionary(src_dict, dst_dict):
         else:
             dst_dict[key] = src_dict[key]
 
+
 def find_omitted_ingredient(node, seq_list, ingredient_dict):
     for sequence in seq_list:
         seq_ing = sequence['ingre']
@@ -144,6 +143,7 @@ def mod_recursive(node, d_ele):
         mod_result += " "
     return mod_result + d_ele['text']
 
+
 def mod_check(node, d_ele):
     add_ingre_list = []
     mod_result = None
@@ -154,6 +154,7 @@ def mod_check(node, d_ele):
         elif mod_node['label'] == 'NP_CNJ':
             add_ingre_list.append(mod_node['text'])
     return mod_result, add_ingre_list
+
 
 def find_ing_dependency(node, seq_list):
     mod_result = None
@@ -175,9 +176,10 @@ def find_ing_dependency(node, seq_list):
 
     return seq_list
 
+
 def etm_merge_ingredient(node,  remove_unnecessary_verb_list, ingredient_dict):
     # 조리 동작 한줄
-    remove_list=[]
+    remove_list = []
     for i in range(0, len(remove_unnecessary_verb_list)):
         is_etm = False
         etm_id = -1
@@ -188,22 +190,26 @@ def etm_merge_ingredient(node,  remove_unnecessary_verb_list, ingredient_dict):
             if is_etm and m_ele['type'] == 'NNG' and m_ele['lemma'] in ingredient_dict:
                 for w_ele in node['word']:
                     etm_id = m_ele['id'] - 1
-                    if w_ele['begin'] <= etm_id and w_ele['end'] >= etm_id:
+                    if w_ele['begin'] <= etm_id <= w_ele['end']:
                         merge_ingre = w_ele['text'] + " " + m_ele['lemma']
                         for j in range(0, len(remove_unnecessary_verb_list[i]['ingre'])):
                             if m_ele['lemma'] == remove_unnecessary_verb_list[i]['ingre'][j]:
                                 remove_unnecessary_verb_list[i]['ingre'][j] = merge_ingre
                                 remove_list.append(remove_unnecessary_verb_list[i-1])
+
+
             is_etm = False  
-            
-    for list in remove_unnecessary_verb_list:
-        if list in remove_list:
-            remove_unnecessary_verb_list.remove(list)
+    for verb in remove_unnecessary_verb_list:
+        if verb in remove_list:
+            remove_unnecessary_verb_list.remove(verb)
+
             
     return remove_unnecessary_verb_list
-    
+
+
 # 화구존, 전처리존 분리             
 def select_cooking_zone(sequence):
+
     #for sequence in seq_list:
     if sequence['act'] in fire_zone:
         sequence['zone'] = "화구존"
@@ -216,7 +222,29 @@ def select_cooking_zone(sequence):
         if tool in preprocess_tool:
             sequence['zone'] = "전처리존"
     return sequence
- 
+
+
+# 조건문 처리
+def process_cond(node,seq_list):
+    del_seq_list = []
+    for j in range(0, len(node['morp'])-1):
+        if node['morp'][j]['type'] == 'VV':
+            if node['morp'][j+1]['lemma'] == "면" or node['morp'][j+1]['lemma'] == "으면":
+                #merge_dictionary(seq_list[i-1], seq_list[i])
+                cond_seq = None
+                for seq in seq_list:
+                    if seq['start_id'] <= j <= seq['end_id']:
+                        cond_seq = seq
+                        continue
+                    if cond_seq != None:
+                        if len(cond_seq['ingre']) != 0:
+                            seq['act'] =  "(" + cond_seq['ingre'][0] + ',' + node['morp'][j]['lemma']+node['morp'][j+1]['lemma']+")" + seq['act']
+                        else:
+                            seq['act'] = node['morp'][j]['lemma']+node['morp'][j+1]['lemma']
+                        seq_list.remove(cond_seq)
+                        cond_seq = None
+    return seq_list
+
 
 def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_list, srl_input):
     # 한 문장
@@ -249,7 +277,6 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
                     for t_ele in tool_list:
                         if t_ele in w_ele['text']:
                             seq_dict['tool'].append(t_ele)
-                   
 
                     seasoning = ""
                     for s_ele in seasoning_list:
@@ -267,14 +294,12 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
                                 ingre = i_ele
                     if ingre != "" and ingre not in seq_dict['seasoning']:
                         seq_dict['ingre'].append(ingre)
-                        
 
                 if len(seq_dict['tool']) == 0 and act in act_to_tool_dict:
                     seq_dict['tool'] = act_to_tool_dict[act]
 
                 seq_list.append(seq_dict)
                 prev_seq_id = act_id
-    
 
     for sequence in seq_list:
         for ne in node['NE']:
@@ -304,7 +329,7 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
     elif srl_input == '2':
         for sequence in remove_unnecessary_verb_list:
             sequence['act'] = cooking_act_dict[sequence['act']]
-        
+
         #조건문 처리함수추가
         process_cond(node, seq_list)
     
@@ -316,6 +341,7 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
             select_cooking_zone(sequence)
 
         return remove_unnecessary_verb_list
+
 
 def parse_node_section(node_list, srl_input):
     coreference_dict = {}
@@ -368,6 +394,7 @@ def parse_node_section(node_list, srl_input):
         node_list.remove(node)
     return sequence_list
 
+
 def sentence_print(node_list, sequence_list):
     is_dir = False
     for node in node_list:
@@ -388,12 +415,11 @@ def sentence_print(node_list, sequence_list):
             for w_ele in node['word']:
                 text = w_ele['text']
                 begin = w_ele['begin']
-                if start_id <= begin and begin <= end_id:
+                if start_id <= begin <= end_id:
                     seq['sentence'] += text
                     if begin != end_id:
                         seq['sentence'] += " "
             prev_seq_id = seq['end_id']
-
 
     # 후 ~~ 처리하는 코드
     for seq in sequence_list:
@@ -402,29 +428,6 @@ def sentence_print(node_list, sequence_list):
 
     print(str(json.dumps(sequence_list, ensure_ascii=False)))
 
-# 조건문 처리
-def process_cond(node,seq_list):
-    del_seq_list = []
-    for j in range(0, len(node['morp'])-1):
-        if node['morp'][j]['type'] == 'VV':
-            if node['morp'][j+1]['lemma'] == "면" or node['morp'][j+1]['lemma'] == "으면":
-                #merge_dictionary(seq_list[i-1], seq_list[i])
-                cond_seq = None
-                for seq in seq_list:
-                    if seq['start_id'] <= j <= seq['end_id']:
-                        cond_seq = seq
-                        continue
-                    if cond_seq != None:
-                        if len(cond_seq['ingre']) != 0:
-                            seq['act'] =  "(" + cond_seq['ingre'][0] + ',' + node['morp'][j]['lemma']+node['morp'][j+1]['lemma']+")" + seq['act']
-                        else:
-                            seq['act'] = node['morp'][j]['lemma']+node['morp'][j+1]['lemma']
-                        seq_list.remove(cond_seq)         
-                        cond_seq = None
-                             
-    
-          
-    return seq_list
 
 def main():
     # static params
@@ -476,6 +479,7 @@ def main():
     sequence_list = parse_node_section(node_list, srl_input)
 
     sentence_print(node_list, sequence_list)
+
 
 if __name__ == "__main__":
     main()
