@@ -227,7 +227,6 @@ def process_cond(node,seq_list):
     for j in range(0, len(node['morp'])-1):
         if node['morp'][j]['type'] == 'VV':
             if node['morp'][j+1]['lemma'] == "면" or node['morp'][j+1]['lemma'] == "으면":
-                #merge_dictionary(seq_list[i-1], seq_list[i])
                 cond_seq = None
                 for seq in seq_list:
                     if seq['start_id'] <= j <= seq['end_id']:
@@ -305,7 +304,7 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
                     sequence['ingre'].append(ne['text'])
                     # 재료에 달걀, 달걀프라이 중복 빼는 코드
                     for seq_ing in sequence['ingre']:
-                        if seq_ing in ne['text']:
+                        if seq_ing in ne['text'] and seq_ing is not ne['text']:
                             sequence['ingre'].remove(seq_ing)
                             break
     
@@ -316,6 +315,11 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
         for sequence in find_omitted_ingredient_list:
             sequence['act'] = cooking_act_dict[sequence['act']]
         find_ing_dependency_list = find_ing_dependency(node, find_omitted_ingredient_list)
+        
+        #조건문 처리함수추가
+        process_cond(node, seq_list)
+        #조리동작(용량)
+        volume_of_act(node, seq_list)
 
         for sequence in find_ing_dependency_list:
             # 화구존/전처리존 분리
@@ -329,6 +333,8 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
 
         #조건문 처리함수추가
         process_cond(node, seq_list)
+        #조리동작(용량)
+        volume_of_act(node, seq_list)
     
         # 수식어 + 재료 바꾸기
         etm_merge_ingredient(node, remove_unnecessary_verb_list, ingredient_dict)
@@ -339,6 +345,13 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
 
         return remove_unnecessary_verb_list
 
+# 조리동작에 용량 추가
+def volume_of_act(node, seq_list):
+    for seq in seq_list:
+        for i in range(0, len(node['morp'])-1):
+            if node['morp'][i]['lemma'] == 'cm' or node['morp'][i]['lemma'] == '센티':
+                seq['act'] = seq['act'] + "(" + node['morp'][i-1]['lemma'] + node['morp'][i]['lemma'] + ")"
+    return seq_list
 
 def parse_node_section(node_list, srl_input):
     coreference_dict = {}
@@ -390,7 +403,7 @@ def parse_node_section(node_list, srl_input):
     for node in remove_node_list:
         node_list.remove(node)
     return sequence_list
-
+        
 
 def sentence_print(node_list, sequence_list):
     is_dir = False
