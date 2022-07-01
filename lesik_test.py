@@ -202,6 +202,7 @@ def etm_merge_ingredient(node,  remove_unnecessary_verb_list, ingredient_dict):
     for verb in remove_unnecessary_verb_list:
         if verb in remove_list:
             remove_unnecessary_verb_list.remove(verb)
+
             
     return remove_unnecessary_verb_list
 
