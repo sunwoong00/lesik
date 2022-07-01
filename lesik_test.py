@@ -206,11 +206,25 @@ def etm_merge_ingredient(node,  remove_unnecessary_verb_list, ingredient_dict):
             
     return remove_unnecessary_verb_list
 
+# 전성어미 다음 '하고' 생략
+def verify_etn(node, seq_list):
+    for seq in seq_list:    
+        for j in range(0, len(node['morp'])-1):
+            if node['morp'][j]['type'] == 'ETN':
+                    cond_seq = None
+                    for seq in seq_list:
+                        if seq['start_id'] <= j-1 <= seq['end_id']:
+                            cond_seq = seq
+                            continue
+                        if seq['act'] == '하다':
+                            seq_list.remove(seq)
+                        cond_seq = None
+    return seq_list
+                    
 
 # 화구존, 전처리존 분리             
 def select_cooking_zone(sequence):
 
-    #for sequence in seq_list:
     if sequence['act'] in fire_zone:
         sequence['zone'] = "화구존"
     for tool in sequence['tool']:
@@ -323,7 +337,9 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
         process_cond(node, seq_list)
         #조리동작(용량)
         volume_of_act(node, seq_list)
-
+        # 전성어미 처리
+        verify_etn(node, seq_list)
+        
         for sequence in find_ing_dependency_list:
             # 화구존/전처리존 분리
             select_cooking_zone(sequence)
@@ -338,9 +354,10 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
         process_cond(node, seq_list)
         #조리동작(용량)
         volume_of_act(node, seq_list)
-    
         # 수식어 + 재료 바꾸기
         etm_merge_ingredient(node, remove_unnecessary_verb_list, ingredient_dict)
+        # 전성어미 처리
+        verify_etn(node, seq_list)
 
         for sequence in remove_unnecessary_verb_list:
             # 화구존/전처리존 분리
