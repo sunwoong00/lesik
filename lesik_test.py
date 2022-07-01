@@ -374,7 +374,7 @@ def parse_node_section(node_list, srl_input):
                 if "(" in node['text'] and ")" in node['text']:
                     start = node['text'].find('(')
                     end = node['text'].find(')')
-                    if end >= len(node['text']) - 1:
+                    if end >= len(node['text']) - 3: # ')'가 문장의 끝에 있을 때 단팥죽 레시피의 경우에 end = 80, len = 83으로 나온다.
                         node['text'] = node['text'][0:start]
                     else:
                         node['text'] = node['text'][0:start] + " " + node['text'][end:len(node['text'])]
