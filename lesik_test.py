@@ -456,7 +456,7 @@ def sentence_print(node_list, sequence_list):
         if seq['sentence'][0] == "후" and seq['sentence'][1] == " ":
             seq['sentence'] = seq['sentence'][2:len(seq['sentence'])]
 
-    print(str(json.dumps(sequence_list, ensure_ascii=False)))
+    return sequence_list
 
 
 def main():
@@ -507,8 +507,9 @@ def main():
     json_object = json.loads(response.data)
     node_list = json_object.get("return_object").get("sentence")
     sequence_list = parse_node_section(node_list, srl_input)
+    sequence_list = sentence_print(node_list, sequence_list)
 
-    sentence_print(node_list, sequence_list)
+    print(str(json.dumps(sequence_list, ensure_ascii=False)))
 
 
 if __name__ == "__main__":
