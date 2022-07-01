@@ -136,12 +136,15 @@ def find_omitted_ingredient(node, seq_list, ingredient_dict):
     return seq_list
 
 
+'''
 def mod_recursive(node, d_ele):
     mod_result = ""
-    for mod in d_ele['mod']:
-        mod_result += mod_recursive(node, node['dependency'][int(mod)])
-        mod_result += " "
+    if d_ele['label'] == "VP_MOD":
+        for mod in d_ele['mod']:
+            mod_result += mod_recursive(node, node['dependency'][int(mod)])
+            mod_result += " "
     return mod_result + d_ele['text']
+'''
 
 
 def mod_check(node, d_ele):
@@ -150,7 +153,7 @@ def mod_check(node, d_ele):
     for d_element in d_ele['mod']:
         mod_node = node['dependency'][int(d_element)]
         if mod_node['label'] == 'VP_MOD':
-            mod_result = mod_recursive(node, mod_node)
+            mod_result = mod_node['text']
         elif mod_node['label'] == 'NP_CNJ':
             add_ingre_list.append(mod_node['text'])
     return mod_result, add_ingre_list
@@ -384,7 +387,7 @@ def parse_node_section(node_list, srl_input):
                 if "(" in node['text'] and ")" in node['text']:
                     start = node['text'].find('(')
                     end = node['text'].find(')')
-                    if end >= len(node['text']) - 1:
+                    if end >= len(node['text']) - 3: # ')'가 문장의 끝에 있을 때 단팥죽 레시피의 경우에 end = 80, len = 83으로 나온다.
                         node['text'] = node['text'][0:start]
                     else:
                         node['text'] = node['text'][0:start] + " " + node['text'][end:len(node['text'])]
