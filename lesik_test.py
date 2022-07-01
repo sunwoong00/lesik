@@ -136,12 +136,15 @@ def find_omitted_ingredient(node, seq_list, ingredient_dict):
     return seq_list
 
 
+'''
 def mod_recursive(node, d_ele):
     mod_result = ""
-    for mod in d_ele['mod']:
-        mod_result += mod_recursive(node, node['dependency'][int(mod)])
-        mod_result += " "
+    if d_ele['label'] == "VP_MOD":
+        for mod in d_ele['mod']:
+            mod_result += mod_recursive(node, node['dependency'][int(mod)])
+            mod_result += " "
     return mod_result + d_ele['text']
+'''
 
 
 def mod_check(node, d_ele):
@@ -150,7 +153,7 @@ def mod_check(node, d_ele):
     for d_element in d_ele['mod']:
         mod_node = node['dependency'][int(d_element)]
         if mod_node['label'] == 'VP_MOD':
-            mod_result = mod_recursive(node, mod_node)
+            mod_result = mod_node['text']
         elif mod_node['label'] == 'NP_CNJ':
             add_ingre_list.append(mod_node['text'])
     return mod_result, add_ingre_list
@@ -304,7 +307,7 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
                     sequence['ingre'].append(ne['text'])
                     # 재료에 달걀, 달걀프라이 중복 빼는 코드
                     for seq_ing in sequence['ingre']:
-                        if seq_ing in ne['text']:
+                        if seq_ing in ne['text'] and seq_ing is not ne['text']:
                             sequence['ingre'].remove(seq_ing)
                             break
     
