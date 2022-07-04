@@ -318,12 +318,17 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
         for ne in node['NE']:
             if ne['type'] in ingredient_type_list and ne['begin'] >= sequence['start_id'] and ne['end'] < sequence['end_id']:
                 if ne['text'] not in sequence['ingre']:
+
+                    # 소금, 소금
+                    if ne['text'] in seasoning_list:
+                        break
                     sequence['ingre'].append(ne['text'])
                     # 재료에 달걀, 달걀프라이 중복 빼는 코드
                     for seq_ing in sequence['ingre']:
                         if seq_ing in ne['text'] and seq_ing is not ne['text']:
                             sequence['ingre'].remove(seq_ing)
                             break
+            
     
     remove_unnecessary_verb_list = remove_unnecessary_verb(node, seq_list)
 
@@ -423,10 +428,11 @@ def parse_node_section(node_list, srl_input):
     for node in remove_node_list:
         node_list.remove(node)
     return sequence_list
-        
+
 
 def sentence_print(node_list, sequence_list):
     is_dir = False
+    flag = False
     for node in node_list:
         if node['text'] == '[조리방법]':
             is_dir = True
@@ -446,9 +452,19 @@ def sentence_print(node_list, sequence_list):
                 text = w_ele['text']
                 begin = w_ele['begin']
                 if start_id <= begin <= end_id:
+                    if flag == True and start_id == begin:
+                        seq['sentence'] += " ) "
                     seq['sentence'] += text
                     if begin != end_id:
                         seq['sentence'] += " "
+                '''elif begin < start_id and prev_seq_id < begin:
+                    if flag == False:
+                        seq['sentence'] += "( " + text
+                        flag = True
+                        break
+                    seq['sentence'] += " " + text'''
+
+
             prev_seq_id = seq['end_id']
 
     # 후 ~~ 처리하는 코드
