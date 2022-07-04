@@ -48,6 +48,23 @@ def parse_act_to_tool_dict(file_path):
     f.close()
     return act_to_tool_dict
 
+def parse_act_depending_dict(file_path):
+    file_exists = os.path.exists(file_path)
+    if not file_exists:
+        return None
+    f = open(file_path, 'r', encoding='utf-8')
+    delim = ">"
+    t_delim = ","
+    act_depending_dict = {}
+    for line in f.readlines():
+        line = line.replace("\n", "")
+        if delim in line:
+            sp_line = line.split(delim)
+            act_depending_dict[sp_line[0]] = sp_line[1].split(t_delim)
+    f.close()
+    return act_depending_dict
+
+
 
 def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
     volume_node = None
@@ -258,6 +275,19 @@ def process_cond(node,seq_list):
                         cond_seq = None
     return seq_list
 
+#숙어처리
+def process_phrase(node,seq_list,act_depending_dict):
+    '''for seq in seq_list:    
+        for j in range(0, len(node['morp'])-1):
+            if node['morp'][j]['type'] == 'VV':
+                if node['morp'][j]['lemma'] in act_depending_dict.keys():
+                    for i in range(0,len(node['word'])-1):
+                        for k in range(0,len(list(act_depending_dict.keys()))):
+                            if node['word'][j-1]['text'] == list(act_depending_dict.keys())[k]:
+                                seq['act'] = node['word'][j-1]['text'] + seq['act']
+    return seq_list
+'''              
+                
 
 def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_list, srl_input):
     # 한 문장
@@ -363,6 +393,8 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
         etm_merge_ingredient(node, remove_unnecessary_verb_list, ingredient_dict)
         # 전성어미 처리
         verify_etn(node, seq_list)
+        # 숙어처리
+        process_phrase(node,seq_list,act_depending_dict)
 
         for sequence in remove_unnecessary_verb_list:
             # 화구존/전처리존 분리
@@ -482,7 +514,7 @@ def main():
     analysis_code = "SRL"
 
     # get cooking component list & dictionary from files
-    global seasoning_list, volume_list, time_list, temperature_list, cooking_act_dict, act_to_tool_dict, tool_list, fire_tool, fire_zone, preprocess_tool, preprocess_zone
+    global seasoning_list, volume_list, time_list, temperature_list, cooking_act_dict, act_to_tool_dict, tool_list, fire_tool, fire_zone, preprocess_tool, preprocess_zone, act_depending_dict
     seasoning_list = get_list_from_file("labeling/seasoning.txt")
     volume_list = get_list_from_file("labeling/volume.txt")
     time_list = get_list_from_file("labeling/time.txt")
@@ -494,6 +526,7 @@ def main():
     preprocess_zone = get_list_from_file("labeling/preprocess_zone.txt")
     fire_tool = get_list_from_file("labeling/fire_tool.txt")
     preprocess_tool = get_list_from_file("labeling/preprocess_tool.txt")
+    act_depending_dict = parse_act_depending_dict("labeling/act_depending.txt")
 
     # recipe extraction
     file_path = input("레시피 파일 경로를 입력해 주세요 : ")
