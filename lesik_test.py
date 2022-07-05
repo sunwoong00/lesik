@@ -397,7 +397,7 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
         # 전성어미 처리
         verify_etn_list = verify_etn(node, etm_merge_ingredient_list)
         # 숙어처리
-        # process_phrase_list = process_phrase(node, verify_etn_list, act_depending_dict)
+        process_phrase_list = process_phrase(node, verify_etn_list, act_depending_dict)
 
         for sequence in verify_etn_list:
             # 화구존/전처리존 분리
