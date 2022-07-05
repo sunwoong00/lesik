@@ -370,39 +370,40 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
         find_ing_dependency_list = find_ing_dependency(node, find_omitted_ingredient_list)
         
         #조건문 처리함수추가
-        process_cond(node, seq_list)
+        process_cond_list = process_cond(node, find_ing_dependency_list)
         #조리동작(용량)
-        volume_of_act(node, seq_list)
+        volume_of_act_list = volume_of_act(node, process_cond_list)
         # 전성어미 처리
-        verify_etn(node, seq_list)
+        verify_etn_list = verify_etn(node, volume_of_act_list)
         
-        for sequence in find_ing_dependency_list:
+        for sequence in verify_etn_list:
             # 화구존/전처리존 분리
             select_cooking_zone(sequence)
         
-        return find_ing_dependency_list
+        return verify_etn_list
     
     elif srl_input == '2':
         for sequence in remove_unnecessary_verb_list:
             sequence['act'] = cooking_act_dict[sequence['act']]
 
         #조건문 처리함수추가
-        process_cond(node, seq_list)
+        process_cond_list = process_cond(node, remove_unnecessary_verb_list)
         #조리동작(용량)
-        volume_of_act(node, seq_list)
+        volume_of_act_list = volume_of_act(node, process_cond_list)
         # 수식어 + 재료 바꾸기
-        etm_merge_ingredient(node, remove_unnecessary_verb_list, ingredient_dict)
+        etm_merge_ingredient_list = etm_merge_ingredient(node, volume_of_act_list, ingredient_dict)
         # 전성어미 처리
-        verify_etn(node, seq_list)
+        verify_etn_list = verify_etn(node, etm_merge_ingredient_list)
         # 숙어처리
-        process_phrase(node,seq_list,act_depending_dict)
+        # process_phrase_list = process_phrase(node, verify_etn_list, act_depending_dict)
 
-        for sequence in remove_unnecessary_verb_list:
+        for sequence in verify_etn_list:
             # 화구존/전처리존 분리
             select_cooking_zone(sequence)
 
-        return remove_unnecessary_verb_list
+        return verify_etn_list
 
+        
 # 조리동작에 용량 추가
 def volume_of_act(node, seq_list):
     for seq in seq_list:
