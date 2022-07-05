@@ -276,8 +276,8 @@ def process_cond(node,seq_list):
     return seq_list
 
 #숙어처리
-def process_phrase(node,seq_list,act_depending_dict):
-    '''for seq in seq_list:    
+def process_phrase(node, seq_list, act_depending_dict):
+    for seq in seq_list:
         for j in range(0, len(node['morp'])-1):
             if node['morp'][j]['type'] == 'VV':
                 if node['morp'][j]['lemma'] in act_depending_dict.keys():
@@ -285,8 +285,9 @@ def process_phrase(node,seq_list,act_depending_dict):
                         for k in range(0,len(list(act_depending_dict.keys()))):
                             if node['word'][j-1]['text'] == list(act_depending_dict.keys())[k]:
                                 seq['act'] = node['word'][j-1]['text'] + seq['act']
-    return seq_list
-'''              
+                
+
+    return seq_list            
                 
 
 def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_list, srl_input):
