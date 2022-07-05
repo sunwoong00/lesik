@@ -276,19 +276,21 @@ def process_cond(node,seq_list):
     return seq_list
 
 #숙어처리
-def process_phrase(node, seq_list, act_depending_dict):
-    for seq in seq_list:
-        for j in range(0, len(node['morp'])-1):
-            if node['morp'][j]['type'] == 'VV':
-                if node['morp'][j]['lemma'] in act_depending_dict.keys():
-                    for i in range(0,len(node['word'])-1):
-                        for k in range(0,len(list(act_depending_dict.keys()))):
-                            if node['word'][j-1]['text'] == list(act_depending_dict.keys())[k]:
-                                seq['act'] = node['word'][j-1]['text'] + seq['act']
-                
+def process_phrase(node,seq_list,act_depending_dict):
+    for m_ele in node['morp']:
+        if m_ele['type'] == 'VV':
+            if m_ele['lemma'] in act_depending_dict.keys():
+                for w_ele in node['word']:
+                    m_id = m_ele['id'] -1
+                    if w_ele['begin'] <= m_id <= w_ele['end']:
+                        for k in act_depending_dict.values():
+                            if w_ele['text'] in k:
+                                for seq in seq_list:
+                                    if seq['start_id'] <= m_ele['id'] <= seq['end_id']:
+                                        seq['act'] = w_ele['text'] + " " +seq['act'] 
 
-    return seq_list            
-                
+    return seq_list
+              
 
 def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_list, recipe_mode):
     # 한 문장
@@ -408,7 +410,7 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
 def volume_of_act(node, seq_list):
     for seq in seq_list:
         for i in range(0, len(node['morp'])-1):
-            if node['morp'][i]['lemma'] == 'cm' or node['morp'][i]['lemma'] == '센티':
+            if node['morp'][i]['lemma'] == 'cm' or node['morp'][i]['lemma'] == '센티' or node['morp'][i]['lemma'] == '센치':
                 seq['act'] = seq['act'] + "(" + node['morp'][i-1]['lemma'] + node['morp'][i]['lemma'] + ")"
     return seq_list
 
