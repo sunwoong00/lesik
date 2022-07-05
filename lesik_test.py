@@ -538,9 +538,9 @@ def main():
     original_recipe = str.join("\n", f.readlines())
 
     recipe_mode = input("SRL 사용 여부를 입력해주세요 (1 : O, 2 : X) : ")
-    if recipe_mode == 1:
+    if recipe_mode == '1':
         recipe_mode = 'srl'
-    elif recipe_mode == 2:
+    elif recipe_mode == '2':
         recipe_mode = 'base'
     else:
         recipe_mode = ''
