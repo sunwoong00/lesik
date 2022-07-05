@@ -410,7 +410,7 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
 def volume_of_act(node, seq_list):
     for seq in seq_list:
         for i in range(0, len(node['morp'])-1):
-            if node['morp'][i]['lemma'] == 'cm' or node['morp'][i]['lemma'] == '센티':
+            if node['morp'][i]['lemma'] == 'cm' or node['morp'][i]['lemma'] == '센티' or node['morp'][i]['lemma'] == '센치':
                 seq['act'] = seq['act'] + "(" + node['morp'][i-1]['lemma'] + node['morp'][i]['lemma'] + ")"
     return seq_list
 
@@ -538,9 +538,9 @@ def main():
     original_recipe = str.join("\n", f.readlines())
 
     recipe_mode = input("SRL 사용 여부를 입력해주세요 (1 : O, 2 : X) : ")
-    if recipe_mode == 1:
+    if recipe_mode == '1':
         recipe_mode = 'srl'
-    elif recipe_mode == 2:
+    elif recipe_mode == '2':
         recipe_mode = 'base'
     else:
         recipe_mode = ''
