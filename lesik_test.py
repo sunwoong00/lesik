@@ -275,7 +275,7 @@ def process_cond(node,seq_list):
     return seq_list
 
 #숙어처리
-def process_phrase(node,seq_list,act_depending_dict):
+def process_phrase(node,seq_list):
     for m_ele in node['morp']:
         if m_ele['type'] == 'VV':
             if m_ele['lemma'] in act_depending_dict.keys():
@@ -405,7 +405,7 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
         # 전성어미 처리
         verify_etn_list = verify_etn(node, etm_merge_ingredient_list)
         # 숙어처리
-        process_phrase_list = process_phrase(node, verify_etn_list, act_depending_dict)
+        process_phrase_list = process_phrase(node, verify_etn_list)
 
         for sequence in verify_etn_list:
             # 화구존/전처리존 분리
