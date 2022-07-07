@@ -1,7 +1,29 @@
-import urllib3
 import json
 import os.path
+
+import urllib3
 from flask import Flask, render_template, request, make_response
+import pymysql
+
+
+def insert_recipe(recipe_name, sentence, json_obj):
+    sql_format = "INSERT INTO 0_sentences (recipe_name, sentence, json) VALUES('{recipe_name}', '{sentence}', '{json}')"
+    conn = pymysql.connect(
+        host='lesik-db.cvjht8t9uwzy.ap-northeast-2.rds.amazonaws.com',
+        port=3306,
+        user='lesik_2022',
+        password='qnstjrgkwk10rodmlfptlvl!',
+        db='lesik_main',
+    )
+
+    with conn:
+        with conn.cursor() as cursor:
+            json_obj = conn.escape_string(str(json.dumps(json_obj)))
+            sentence = conn.escape_string(sentence)
+
+            query = sql_format.format(recipe_name=recipe_name, sentence=sentence, json=json_obj)
+            cursor.execute(query)
+            conn.commit()
 
 
 def get_list_from_file(file_path):
@@ -198,8 +220,8 @@ def find_ing_dependency(node, seq_list):
     return seq_list
 
 
+# 관형어 처리
 def etm_merge_ingredient(node, remove_unnecessary_verb_list, ingredient_dict):
-    # 조리 동작 한줄
     remove_list = []
     for i in range(0, len(remove_unnecessary_verb_list)):
         is_etm = False
@@ -279,16 +301,30 @@ def process_cond(node, seq_list):
 
 
 # 숙어처리
-def process_phrase(node, seq_list, act_depending_dict):
-    for seq in seq_list:
-        for j in range(0, len(node['morp']) - 1):
-            if node['morp'][j]['type'] == 'VV':
-                if node['morp'][j]['lemma'] in act_depending_dict.keys():
-                    for i in range(0, len(node['word']) - 1):
-                        for k in range(0, len(list(act_depending_dict.keys()))):
-                            if node['word'][j - 1]['text'] == list(act_depending_dict.keys())[k]:
-                                seq['act'] = node['word'][j - 1]['text'] + seq['act']
+def process_phrase(node, seq_list):
+    for m_ele in node['morp']:
+        if m_ele['type'] == 'VV':
+            if m_ele['lemma'] in act_depending_dict.keys():
+                for w_ele in node['word']:
+                    m_id = m_ele['id'] - 1
+                    if w_ele['begin'] <= m_id <= w_ele['end']:
+                        for k in act_depending_dict.values():
+                            if w_ele['text'] in k:
+                                for seq in seq_list:
+                                    if seq['start_id'] <= m_ele['id'] <= seq['end_id']:
+                                        seq['act'] = w_ele['text'] + " " + seq['act']
 
+    return seq_list
+
+
+# 조리동작에 용량 추가
+def volume_of_act(node, seq_list):
+    for i in range(0, len(node['morp']) - 1):
+        if node['morp'][i]['lemma'] == 'cm' or node['morp'][i]['lemma'] == '센티' or node['morp'][i]['lemma'] == '센치' or \
+                node['morp'][i]['lemma'] == '등분':
+            for seq in seq_list:
+                if seq['start_id'] <= node['morp'][i]['id'] <= seq['end_id']:
+                    seq['act'] = seq['act'] + "(" + node['morp'][i - 1]['lemma'] + node['morp'][i]['lemma'] + ")"
     return seq_list
 
 
@@ -397,22 +433,13 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
         # 전성어미 처리
         verify_etn_list = verify_etn(node, etm_merge_ingredient_list)
         # 숙어처리
-        # process_phrase_list = process_phrase(node, verify_etn_list, act_depending_dict)
+        process_phrase_list = process_phrase(node, verify_etn_list)
 
         for sequence in verify_etn_list:
             # 화구존/전처리존 분리
             select_cooking_zone(sequence)
 
         return verify_etn_list
-
-
-# 조리동작에 용량 추가
-def volume_of_act(node, seq_list):
-    for seq in seq_list:
-        for i in range(0, len(node['morp']) - 1):
-            if node['morp'][i]['lemma'] == 'cm' or node['morp'][i]['lemma'] == '센티':
-                seq['act'] = seq['act'] + "(" + node['morp'][i - 1]['lemma'] + node['morp'][i]['lemma'] + ")"
-    return seq_list
 
 
 def parse_node_section(recipe_mode, node_list):
@@ -523,9 +550,14 @@ def index():
 
 @app.route("/recipe", methods=['POST'])
 def recipe():
+    recipe_mode = 'base'
+    original_recipe = None
     if request.method == 'POST':
         original_recipe = request.form.get("recipe")
         recipe_mode = request.form.get("recipe_mode")
+
+    if original_recipe is None:
+        return make_response("Recipe is Blank", 406)
 
     # static params
     open_api_url = "http://aiopen.etri.re.kr:8000/WiseNLU"
@@ -570,9 +602,21 @@ def recipe():
     sequence_list = parse_node_section(recipe_mode, node_list)
     sequence_list = sentence_print(node_list, sequence_list)
 
-    print(json.dumps(sequence_list))
     response = json.dumps(sequence_list, ensure_ascii=False)
     return make_response(response)
+
+
+@app.route("/save", methods=['POST'])
+def save():
+    if request.method == 'POST':
+        data = request.form.get("data")
+        if data is not None:
+            json_object = json.loads(data)
+            for obj in json_object:
+                insert_recipe("", obj.get("sentence"), obj)
+            return make_response("Success", 200)
+
+    return make_response("Error while storing recipe", 406)
 
 
 if __name__ == '__main__':
