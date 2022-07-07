@@ -11,6 +11,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 
+
 def parse(token):
     recipe_name = token.find('h2', attrs={'class': 'RecipeDetailstyle__Title-q7sykd-4 kIVrZW'})
     if recipe_name is None:
@@ -33,7 +34,7 @@ def parse(token):
             sub_ingredient_list.append(ingredient_info[0].text + " " + ingredient_info[1].text)
         ingredient_list.append(sub_ingredient_list)
 
-    f = open("recipe/" + recipe_name.text + ".txt", "w")
+    f = open("recipe/en/" + recipe_name.text + ".txt", "w", encoding='utf-8')
     if recipe_serving is not None:
         f.write(recipe_name.text + "(" + recipe_serving + ")" + "\n")
     else:
@@ -52,14 +53,14 @@ def parse(token):
 def scroll():
     recipe_url = 'https://wtable.co.kr/recipes'
 
-    driver = webdriver.Safari()
+    driver = webdriver.Chrome("C:\Program Files\Google\Chrome\Application\chromedriver_win32\chromedriver.exe")
     driver.get(url=recipe_url)
     try:
         element = WebDriverWait(driver, 5).until(
             EC.presence_of_element_located((By.CLASS_NAME, 'RecipeListstyle__Categories-sc-1s9b4ly-16')))
         recipe_type_list = element.find_elements(By.CLASS_NAME, 'RecipeListstyle__Category-sc-1s9b4ly-17')
         for recipe_type in recipe_type_list:
-            if recipe_type.text == '한식':
+            if recipe_type.text == '양식':
                 recipe_type.click()
 
         last_height = driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
