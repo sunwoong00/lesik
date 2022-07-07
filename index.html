@@ -13,13 +13,14 @@
   <h2>레시피 입력</h2>
   <form id="insert-recipe" class="ajax-form" action="/recipe" method="POST">
     <textarea id="recipe-box" name="recipe"></textarea>
-    <br>
+    <div class="empty-block"></div>
     <input type="submit" value="디지털 레시피 생성">
-    <p>
+    <div class="empty-block"></div>
     <select name="recipe_mode">
       <option value="srl">SRL</option>
       <option value="base" selected>기본</option>
     </select>
+    <div class="empty-block"></div>
   </form>
   <div id="info"></div>
   <table>
