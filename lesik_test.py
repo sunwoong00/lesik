@@ -195,9 +195,8 @@ def find_ing_dependency(node, seq_list):
                             sequence['ingre'][i] = mod_result + " " + sequence['ingre'][i]              
 
     return seq_list
-
+# 관형어 처리
 def etm_merge_ingredient(node,  remove_unnecessary_verb_list, ingredient_dict):
-    # 조리 동작 한줄
     remove_list = []
     for i in range(0, len(remove_unnecessary_verb_list)):
         is_etm = False
@@ -276,7 +275,7 @@ def process_cond(node,seq_list):
     return seq_list
 
 #숙어처리
-def process_phrase(node,seq_list,act_depending_dict):
+def process_phrase(node,seq_list):
     for m_ele in node['morp']:
         if m_ele['type'] == 'VV':
             if m_ele['lemma'] in act_depending_dict.keys():
@@ -290,7 +289,16 @@ def process_phrase(node,seq_list,act_depending_dict):
                                         seq['act'] = w_ele['text'] + " " +seq['act'] 
 
     return seq_list
-              
+  
+# 조리동작에 용량 추가
+def volume_of_act(node, seq_list):
+    for i in range(0, len(node['morp'])-1):
+        if node['morp'][i]['lemma'] == 'cm' or node['morp'][i]['lemma'] == '센티' or node['morp'][i]['lemma'] == '센치' or node['morp'][i]['lemma'] == '등분':
+            for seq in seq_list:
+                if seq['start_id'] <= node['morp'][i]['id'] <= seq['end_id']:
+                    seq['act'] = seq['act'] + "(" + node['morp'][i-1]['lemma'] + node['morp'][i]['lemma'] + ")"
+    return seq_list
+            
 
 def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_list, recipe_mode):
     # 한 문장
@@ -397,7 +405,7 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
         # 전성어미 처리
         verify_etn_list = verify_etn(node, etm_merge_ingredient_list)
         # 숙어처리
-        process_phrase_list = process_phrase(node, verify_etn_list, act_depending_dict)
+        process_phrase_list = process_phrase(node, verify_etn_list)
 
         for sequence in verify_etn_list:
             # 화구존/전처리존 분리
@@ -406,13 +414,6 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
         return verify_etn_list
 
         
-# 조리동작에 용량 추가
-def volume_of_act(node, seq_list):
-    for seq in seq_list:
-        for i in range(0, len(node['morp'])-1):
-            if node['morp'][i]['lemma'] == 'cm' or node['morp'][i]['lemma'] == '센티' or node['morp'][i]['lemma'] == '센치':
-                seq['act'] = seq['act'] + "(" + node['morp'][i-1]['lemma'] + node['morp'][i]['lemma'] + ")"
-    return seq_list
 
 def parse_node_section(recipe_mode, node_list):
     coreference_dict = {}
