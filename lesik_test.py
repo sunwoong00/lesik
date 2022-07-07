@@ -144,9 +144,9 @@ def find_omitted_ingredient(node, seq_list, ingredient_dict):
                     for s_ele in s_arg:
                         s_text = s_ele['text']
                         s_type = s_ele['type']
-                        if s_type == 'ARG0' or s_type == 'ARG1' or s_type == 'ARGM-MNR':
+                        if s_type == 'ARG0' or s_type == 'ARG1' :
                             for ing_dict_key in ingredient_dict.keys():
-                                if ing_dict_key in s_text:
+                                if ing_dict_key in s_text and ing_dict_key not in sequence['ingre']:
                                     sequence['ingre'].append(ing_dict_key)
 
     return seq_list
@@ -508,10 +508,10 @@ def sentence_print(node_list, sequence_list):
 
             prev_seq_id = seq['end_id']
 
-    # 후 ~~ 처리하는 코드
+    '''# 후 ~~ 처리하는 코드
     for seq in sequence_list:
         if seq['sentence'][0] == "후" and seq['sentence'][1] == " ":
-            seq['sentence'] = seq['sentence'][2:len(seq['sentence'])]
+            seq['sentence'] = seq['sentence'][2:len(seq['sentence'])]'''
 
     return sequence_list
 
