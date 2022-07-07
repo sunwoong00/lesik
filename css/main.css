@@ -1,0 +1,19 @@
+body {
+  text-align: center;
+}
+
+textarea {
+  width: 60%;
+  height: 200px;
+}
+
+table {
+  border: 1px solid;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th,
+td {
+  border: 1px solid;
+}
