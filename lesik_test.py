@@ -65,7 +65,6 @@ def parse_act_depending_dict(file_path):
     return act_depending_dict
 
 
-
 def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
     volume_node = None
     ingredient_list = []
@@ -195,6 +194,7 @@ def find_ing_dependency(node, seq_list):
                             sequence['ingre'][i] = mod_result + " " + sequence['ingre'][i]              
 
     return seq_list
+
 # 관형어 처리
 def etm_merge_ingredient(node,  remove_unnecessary_verb_list, ingredient_dict):
     remove_list = []
@@ -238,7 +238,7 @@ def verify_etn(node, seq_list):
     return seq_list
                     
 
-# 화구존, 전처리존 분리             
+# 화구존, 전처리존 분리
 def select_cooking_zone(sequence):
 
     if sequence['act'] in fire_zone:
@@ -383,14 +383,18 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
         process_cond_list = process_cond(node, find_ing_dependency_list)
         #조리동작(용량)
         volume_of_act_list = volume_of_act(node, process_cond_list)
+         # 수식어 + 재료 바꾸기
+        etm_merge_ingredient_list = etm_merge_ingredient(node, volume_of_act_list, ingredient_dict)
         # 전성어미 처리
-        verify_etn_list = verify_etn(node, volume_of_act_list)
+        verify_etn_list = verify_etn(node, etm_merge_ingredient_list)
+        # 숙어처리
+        process_phrase_list = process_phrase(node, verify_etn_list)
         
-        for sequence in verify_etn_list:
+        for sequence in process_phrase_list:
             # 화구존/전처리존 분리
             select_cooking_zone(sequence)
         
-        return verify_etn_list
+        return process_phrase_list
     
     elif recipe_mode == 'base':
         for sequence in remove_unnecessary_verb_list:
@@ -407,11 +411,11 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
         # 숙어처리
         process_phrase_list = process_phrase(node, verify_etn_list)
 
-        for sequence in verify_etn_list:
+        for sequence in process_phrase_list:
             # 화구존/전처리존 분리
             select_cooking_zone(sequence)
 
-        return verify_etn_list
+        return process_phrase_list
 
         
 
