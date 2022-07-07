@@ -13,6 +13,10 @@ table {
   margin-right: auto;
 }
 
+.empty-block {
+  height : 1vw;
+}
+
 th,
 td {
   border: 1px solid;

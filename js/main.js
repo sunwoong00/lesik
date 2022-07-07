@@ -53,7 +53,7 @@ $(document).on('submit', '#insert-recipe', function() {
 
       if(!$("#save-sentence").length){
           var formDOM = "";
-          formDOM += "<form id='save-sentence' class='ajax-form' action='/save' method='POST' confirm-msg='해당 문장을 저장하시겠습니까?'>";
+          formDOM += "<div class='empty-block'></div><form id='save-sentence' class='ajax-form' action='/save' method='POST' confirm-msg='해당 문장을 저장하시겠습니까?'>";
           formDOM += "<input type='submit' value='저장'/>";
           formDOM += '</form>';
           $("#save_sentence-box").append(formDOM);
@@ -75,7 +75,7 @@ $(document).on('submit', "#save-sentence", function() {
 
   var confirm_msg = $this.attr('confirm-msg');
   if(confirm_msg !== undefined || confirm_msg !==''){
-      if(confirm(confirm_msg) === false){
+      if(!window.confirm(confirm_msg)){
           return false;
       }
   }
