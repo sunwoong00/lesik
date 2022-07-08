@@ -224,7 +224,7 @@ def etm_merge_ingredient(node,  remove_unnecessary_verb_list, ingredient_dict):
 
 # 전성어미 다음 '하고' 생략
 def verify_etn(node, seq_list):
-    for seq in seq_list:    
+    for seq in seq_list:
         for j in range(0, len(node['morp'])-1):
             if node['morp'][j]['type'] == 'ETN':
                     cond_seq = None
