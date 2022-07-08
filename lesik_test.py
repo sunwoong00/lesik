@@ -48,6 +48,7 @@ def parse_act_to_tool_dict(file_path):
     f.close()
     return act_to_tool_dict
 
+
 def parse_act_depending_dict(file_path):
     file_exists = os.path.exists(file_path)
     if not file_exists:
