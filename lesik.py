@@ -577,7 +577,7 @@ def recipe():
     preprocess_zone = get_list_from_file("labeling/preprocess_zone.txt")
     fire_tool = get_list_from_file("labeling/fire_tool.txt")
     preprocess_tool = get_list_from_file("labeling/preprocess_tool.txt")
-    act_depending_dict = parse_act_depending_dict("labeling/act_depending.txt")
+    act_depending_dict = parse_act_depending_dict("labeling/idiom.txt")
 
 
     # ETRI open api

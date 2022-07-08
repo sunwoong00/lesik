@@ -49,21 +49,21 @@ def parse_act_to_tool_dict(file_path):
     return act_to_tool_dict
 
 
-def parse_act_depending_dict(file_path):
+def parse_idiom_dict(file_path):
     file_exists = os.path.exists(file_path)
     if not file_exists:
         return None
     f = open(file_path, 'r', encoding='utf-8')
     delim = ">"
     t_delim = ","
-    act_depending_dict = {}
+    idiom_dict = {}
     for line in f.readlines():
         line = line.replace("\n", "")
         if delim in line:
             sp_line = line.split(delim)
-            act_depending_dict[sp_line[0]] = sp_line[1].split(t_delim)
+            idiom_dict[sp_line[0]] = sp_line[1].split(t_delim)
     f.close()
-    return act_depending_dict
+    return idiom_dict
 
 
 def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
@@ -125,10 +125,10 @@ def remove_unnecessary_verb(node, seq_list):
 
 def merge_dictionary(src_dict, dst_dict):
     for key in src_dict.keys():
-        if key in dst_dict:
-            if key in ['tool', 'ingre', 'seasoning', 'volume']:
-                if src_dict.get(key) != []:
-                    for value in src_dict.get(key):
+        if key in dst_dict and key in ['tool', 'ingre', 'seasoning', 'volume']:
+            if src_dict.get(key):
+                for value in src_dict.get(key):
+                    if value not in dst_dict[key]:
                         dst_dict[key].append(value)
         else:
             dst_dict[key] = src_dict[key]
@@ -279,17 +279,18 @@ def process_cond(node,seq_list):
 def process_phrase(node,seq_list):
     for m_ele in node['morp']:
         if m_ele['type'] == 'VV':
-            if m_ele['lemma'] in act_depending_dict.keys():
+            if m_ele['lemma'] in idiom_dict.keys():
                 for w_ele in node['word']:
                     m_id = m_ele['id'] -1
                     if w_ele['begin'] <= m_id <= w_ele['end']:
-                        for k in act_depending_dict.values():
+                        for k in idiom_dict.values():
                             if w_ele['text'] in k:
                                 for seq in seq_list:
                                     if seq['start_id'] <= m_ele['id'] <= seq['end_id']:
                                         seq['act'] = w_ele['text'] + " " +seq['act'] 
 
     return seq_list
+
   
 # 조리동작에 용량 추가
 def volume_of_act(node, seq_list):
@@ -299,40 +300,48 @@ def volume_of_act(node, seq_list):
                 if seq['start_id'] <= node['morp'][i]['id'] <= seq['end_id']:
                     seq['act'] = seq['act'] + "(" + node['morp'][i-1]['lemma'] + node['morp'][i]['lemma'] + ")"
     return seq_list
-            
 
-def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_list, recipe_mode):
+
+def verify_coref(coref_dict, w_ele):
+    return 0
+
+
+def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, recipe_mode):
     # 한 문장
     seq_list = []
 
-    # 조리 동작 한줄
+    # 형태소 이용한 조리 동작 추출
     prev_seq_id = -1
     for m_ele in node['morp']:
         if m_ele['type'] == 'VV':
             act = m_ele['lemma']
             act_id = m_ele['id']
+            # 조리 동작 판단
             if act in cooking_act_dict:
-                # 6가지 요소
-                # 이걸 line에 넣을 것
-                seq_dict = {'cond' : "", 'act': act, 'tool': [], 'ingre': [], 'seasoning': [], 'volume': [],
-                            'zone': "", "start_id" : prev_seq_id + 1, "end_id" : act_id, "sentence" : ""}
+                # 레시피 시퀀스 6가지 요소
+                seq_dict = {'cond': "", 'act': act, 'tool': [], 'ingre': [], 'seasoning': [], 'volume': [],
+                            'zone': "", "start_id": prev_seq_id + 1, "end_id": act_id, "sentence": ""}
                 
-                # insert act
-                # find and insert tool
+                # co-reference 및 dictionary를 통해 word에서 요소 추출
                 for w_ele in node['word']:
                     if w_ele['begin'] <= prev_seq_id:
                         continue
                     if w_ele['end'] > act_id:
                         break
-                    for coref_key in coreference_dict.keys():
+
+                    # co-reference 검증
+                    for coref_key in coref_dict.keys():
                         if coref_key in w_ele['text']:
-                            coref_sub_dict = coreference_dict.get(coref_key)
+                            coref_sub_dict = coref_dict.get(coref_key)
                             for key in coref_sub_dict.keys():
                                 seq_dict['seasoning'].append(key + "(" + coref_sub_dict.get(key) + ")")
+
+                    # 조리 도구 판단
                     for t_ele in tool_list:
                         if t_ele in w_ele['text']:
                             seq_dict['tool'].append(t_ele)
 
+                    # 시즈닝 판단
                     seasoning = ""
                     for s_ele in seasoning_list:
                         if s_ele in w_ele['text']:
@@ -341,37 +350,43 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
                                 
                     if seasoning != "":
                         seq_dict['seasoning'].append(seasoning)    
-                    
-                    ingre = ""
+
+                    # 식자재 판단
+                    ingredient = ""
                     for i_ele in ingredient_dict:
                         if i_ele in w_ele['text']:
-                            if len(i_ele) > len(ingre):
-                                ingre = i_ele
-                    if ingre != "" and ingre not in seq_dict['seasoning']:
-                        seq_dict['ingre'].append(ingre)
+                            if len(i_ele) > len(ingredient):
+                                ingredient = i_ele
+                    if ingredient != "" and ingredient not in seq_dict['seasoning'] and ingredient not in seq_dict['ingre']:
+                        seq_dict['ingre'].append(ingredient)
 
-                if len(seq_dict['tool']) == 0 and act in act_to_tool_dict:
+                # 조리 도구 명시 되어 있지 않을 때 조리 행위에서 도구 유추
+                if seq_dict['tool'] == [] and act in act_to_tool_dict:
                     seq_dict['tool'] = act_to_tool_dict[act]
 
                 seq_list.append(seq_dict)
                 prev_seq_id = act_id
 
+    # 개체명 추출을 이용한 시퀀스의 요소 보완
     for sequence in seq_list:
         for ne in node['NE']:
             if ne['type'] in ingredient_type_list and ne['begin'] >= sequence['start_id'] and ne['end'] < sequence['end_id']:
+                # 시즈닝과 식자재 중복 제거
                 if ne['text'] not in sequence['ingre']:
-
-                    # 소금, 소금
                     if ne['text'] in seasoning_list:
                         break
+
+                    # 개체명 인식을 통해 추출된 재료에 종속된 재료 삭제
+                    sub_ord_ingredient_list = []
+                    for ingredient in sequence['ingre']:
+                        if ingredient in ne['text']:
+                            sub_ord_ingredient_list.append(ingredient)
+
+                    for ingredient in sub_ord_ingredient_list:
+                        sequence['ingre'].remove(ingredient)
+
                     sequence['ingre'].append(ne['text'])
-                    # 재료에 달걀, 달걀프라이 중복 빼는 코드
-                    for seq_ing in sequence['ingre']:
-                        if seq_ing in ne['text'] and seq_ing is not ne['text']:
-                            sequence['ingre'].remove(seq_ing)
-                            break
-            
-    
+
     remove_unnecessary_verb_list = remove_unnecessary_verb(node, seq_list)
 
     if recipe_mode == 'srl':
@@ -418,10 +433,9 @@ def create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_lis
 
         return process_phrase_list
 
-        
 
 def parse_node_section(recipe_mode, node_list):
-    coreference_dict = {}
+    coref_dict = {}
     volume_type_list = ["QT_SIZE", "QT_COUNT", "QT_OTHERS", "QT_WEIGHT", "QT_PERCENTAGE"]
     ingredient_type_list = ["CV_FOOD", "CV_DRINK", "PT_GRASS", "PT_FRUIT", "PT_OTHERS", "PT_PART", "AM_FISH", "AM_OTHERS"]
     ingredient_dict = {}
@@ -435,12 +449,12 @@ def parse_node_section(recipe_mode, node_list):
             if sub_type == '조리방법':
                 is_ingredient = False
             else:
-                coreference_dict[sub_type] = {}
+                coref_dict[sub_type] = {}
             continue
         if is_ingredient:
             sub_ingredient_dict = extract_ingredient_from_node(ingredient_type_list, volume_type_list, node)
             if sub_type is not None:
-                coreference_dict[sub_type].update(sub_ingredient_dict)
+                coref_dict[sub_type].update(sub_ingredient_dict)
             ingredient_dict.update(sub_ingredient_dict)
         else:
             # tip 부분 생략하는 조건문
@@ -450,17 +464,17 @@ def parse_node_section(recipe_mode, node_list):
             else:
                 if "(" in node['text'] and ")" in node['text']:
                     start = node['text'].find('(')
-                    end = node['text'].find(')')
-                    if end >= len(node['text']) - 3: # ')'가 문장의 끝에 있을 때 단팥죽 레시피의 경우에 end = 80, len = 83으로 나온다.
+                    end = node['text'].rindex(')')
+                    if end >= len(node['text']):
                         node['text'] = node['text'][0:start]
                     else:
-                        node['text'] = node['text'][0:start] + " " + node['text'][end:len(node['text'])]
+                        node['text'] = node['text'][0:start] + " " + node['text'][end+1:len(node['text'])]
 
                     if len(node['text']) == 0:
                         remove_node_list.append(node)
                         continue
                 
-            sequence = create_sequence(node, coreference_dict, ingredient_dict, ingredient_type_list, recipe_mode)
+            sequence = create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, recipe_mode)
             for seq_dict in sequence:
                 for ingre in seq_dict['ingre']:
                     if ingre in ingredient_dict:
@@ -524,7 +538,7 @@ def main():
     analysis_code = "SRL"
 
     # get cooking component list & dictionary from files
-    global seasoning_list, volume_list, time_list, temperature_list, cooking_act_dict, act_to_tool_dict, tool_list, fire_tool, fire_zone, preprocess_tool, preprocess_zone, act_depending_dict
+    global seasoning_list, volume_list, time_list, temperature_list, cooking_act_dict, act_to_tool_dict, tool_list, fire_tool, fire_zone, preprocess_tool, preprocess_zone, idiom_dict
     seasoning_list = get_list_from_file("labeling/seasoning.txt")
     volume_list = get_list_from_file("labeling/volume.txt")
     time_list = get_list_from_file("labeling/time.txt")
@@ -536,7 +550,7 @@ def main():
     preprocess_zone = get_list_from_file("labeling/preprocess_zone.txt")
     fire_tool = get_list_from_file("labeling/fire_tool.txt")
     preprocess_tool = get_list_from_file("labeling/preprocess_tool.txt")
-    act_depending_dict = parse_act_depending_dict("labeling/act_depending.txt")
+    idiom_dict = parse_idiom_dict("labeling/idiom.txt")
 
     # recipe extraction
     file_path = input("레시피 파일 경로를 입력해 주세요 : ")
