@@ -100,7 +100,7 @@ def remove_redundant_sequence(node, seq_list):
     critical_type_dict = {'NNG', 'VA', 'XPN', 'SP'}
 
     for morp in node['morp']:
-        if morp['type'] == 'VV':
+        if morp['type'] == 'VV' and is_redundant == False:
             # 불필요한 조리 동작일 경우
             if morp['lemma'] in redundant_cooking_act_list:
                 is_redundant = True
@@ -110,20 +110,20 @@ def remove_redundant_sequence(node, seq_list):
             # 불필요한 조리 동작 뒤에 연결 어미가 이어질 경우
             if morp['type'] == 'EC':
                 continue
-            else:
+            elif morp['type'] in critical_type_dict:
                 is_redundant = False
-
-        # 불필요한 조리 동작을 제외하면 가능한 경우
-        if is_redundant and morp['type'] not in critical_type_dict:
-            morp_id = morp['id']
-            for i in range(1, len(seq_list)):
-                # 현재 형태소가 포함된 시퀀스를 찾아 이전 시퀀스와 병합
-                if seq_list[i]['start_id'] <= morp_id <= seq_list[i]['end_id']:
-                    merge_dictionary(seq_list[i-1], seq_list[i])
-                    seq_list[i]['start_id'] = seq_list[i-1]['start_id']
-                    del_seq_list.append(seq_list[i-1])
-                    is_redundant = False
-                    break
+                continue
+            else:
+                # 불필요한 조리 동작을 제외하면 가능한 경우
+                morp_id = morp['id']
+                for i in range(1, len(seq_list)):
+                    # 현재 형태소가 포함된 시퀀스를 찾아 이전 시퀀스와 병합
+                    if seq_list[i]['start_id'] <= morp_id <= seq_list[i]['end_id']:
+                        merge_dictionary(seq_list[i-1], seq_list[i])
+                        seq_list[i]['start_id'] = seq_list[i-1]['start_id']
+                        del_seq_list.append(seq_list[i-1])
+                        is_redundant = False
+                        break
 
     # 불필요한 시퀀스 제거
     for seq in del_seq_list:
@@ -139,8 +139,6 @@ def merge_dictionary(src_dict, dst_dict):
                 for value in src_dict.get(key):
                     if value not in dst_dict[key]:
                         dst_dict[key].append(value)
-        else:
-            dst_dict[key] = src_dict[key]
 
 
 def find_omitted_ingredient(node, seq_list, ingredient_dict):
@@ -420,6 +418,18 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, rec
 
     return sequence_list
 
+def delete_bracket(text):
+
+    while "(" in text and ")" in text:
+        start = text.find('(')
+        end = text.find(')')
+        if end >= len(text) - 1:
+            text = text[0:start]
+        else:
+            text = text[0:start] + " " + text[end+1:len(text)]
+        text = text.strip()
+
+    return text
 
 def parse_node_section(recipe_mode, node_list):
     coref_dict = {}
@@ -444,22 +454,17 @@ def parse_node_section(recipe_mode, node_list):
                 coref_dict[sub_type].update(sub_ingredient_dict)
             ingredient_dict.update(sub_ingredient_dict)
         else:
+            node['text'] = node['text'].strip()
             # tip 부분 생략하는 조건문
             if len(node['text']) == 0 or "tip" in node['text'].lower():
                 remove_node_list.append(node)
                 continue
             else:
-                if "(" in node['text'] and ")" in node['text']:
-                    start = node['text'].find('(')
-                    end = node['text'].rindex(')')
-                    if end >= len(node['text']):
-                        node['text'] = node['text'][0:start]
-                    else:
-                        node['text'] = node['text'][0:start] + " " + node['text'][end+1:len(node['text'])]
+                node['text'] = delete_bracket(node['text'])
 
-                    if len(node['text']) == 0:
-                        remove_node_list.append(node)
-                        continue
+                if len(node['text']) == 0:
+                    remove_node_list.append(node)
+                    continue
                 
             sequence = create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, recipe_mode)
             for seq_dict in sequence:
@@ -475,7 +480,6 @@ def parse_node_section(recipe_mode, node_list):
 
 def sentence_print(node_list, sequence_list):
     is_dir = False
-    flag = False
     for node in node_list:
         if node['text'] == '[조리방법]':
             is_dir = True
@@ -484,31 +488,39 @@ def sentence_print(node_list, sequence_list):
             continue
 
         prev_seq_id = 0
-        for seq in sequence_list:
-            if seq['sentence'] != "":
+        for i in range(0, len(sequence_list)):
+            if sequence_list[i]['sentence'] != "":
                 continue
-            start_id = seq['start_id']
-            end_id = seq['end_id']
+            start_id = sequence_list[i]['start_id']
+            end_id = sequence_list[i]['end_id']
             if start_id < prev_seq_id:
                 break
+
+            word_list = []
+            extra_word_list = []
             for w_ele in node['word']:
                 text = w_ele['text']
                 begin = w_ele['begin']
+                end = w_ele['end']
                 if start_id <= begin <= end_id:
-                    if flag == True and start_id == begin:
-                        seq['sentence'] += " ) "
-                    seq['sentence'] += text
-                    if begin != end_id:
-                        seq['sentence'] += " "
-                '''elif begin < start_id and prev_seq_id < begin:
-                    if flag == False:
-                        seq['sentence'] += "( " + text
-                        flag = True
-                        break
-                    seq['sentence'] += " " + text'''
+                    word_list.append(text)
+                else: 
+                    next_seq_start_id = end + 1
+                    if i < len(sequence_list) - 1:
+                        next_seq_start_id = sequence_list[i+1]['start_id']
+                    
+                    if sequence_list[i]['end_id'] < end < next_seq_start_id:
+                        if not extra_word_list:
+                            extra_word_list.append("(")
+                        extra_word_list.append(text)
+            
+            sequence_list[i]['sentence'] = " ".join(word_list)
+            sequence_list[i]['sentence'] = delete_bracket(sequence_list[i]['sentence'])
+            if extra_word_list != []:
+                extra_word_list.append(")")
+                sequence_list[i]['sentence'] += " ".join(extra_word_list)
+            prev_seq_id = sequence_list[i]['end_id']
 
-
-            prev_seq_id = seq['end_id']
 
     '''# 후 ~~ 처리하는 코드
     for seq in sequence_list:
