@@ -153,7 +153,7 @@ def find_omitted_ingredient(node, seq_list, ingredient_dict):
                         s_type = s_ele['type']
                         if s_type in critical_type_list:
                             for ingredient in ingredient_dict.keys():
-                                if ingredient in s_text and ingredient not in sequence['ingre']:
+                                if ingredient in s_text and ingredient not in sequence['ingre'] and ingredient not in sequence['seasoning']:
                                     sequence['ingre'].append(ingredient)
     return seq_list
 
@@ -197,10 +197,11 @@ def find_ingredient_dependency(node, seq_list):
 
     return seq_list
 
+
 # 관형어 처리
-def etm_merge_ingredient(node,  remove_redundant_sequence_list, ingredient_dict):
+def etm_merge_ingredient(node, sequence_list, ingredient_dict):
     remove_list = []
-    for i in range(0, len(remove_redundant_sequence_list)):
+    for i in range(0, len(sequence_list)):
         is_etm = False
         etm_id = -1
         for m_ele in node['morp']:
@@ -212,17 +213,17 @@ def etm_merge_ingredient(node,  remove_redundant_sequence_list, ingredient_dict)
                     etm_id = m_ele['id'] - 1
                     if w_ele['begin'] <= etm_id <= w_ele['end']:
                         merge_ingre = w_ele['text'] + " " + m_ele['lemma']
-                        for j in range(0, len(remove_redundant_sequence_list[i]['ingre'])):
-                            if m_ele['lemma'] == remove_redundant_sequence_list[i]['ingre'][j]:
-                                remove_redundant_sequence_list[i]['ingre'][j] = merge_ingre
-                                remove_list.append(remove_redundant_sequence_list[i-1])
+                        for j in range(0, len(sequence_list[i]['ingre'])):
+                            if m_ele['lemma'] == sequence_list[i]['ingre'][j]:
+                                sequence_list[i]['ingre'][j] = merge_ingre
+                                remove_list.append(sequence_list[i-1])
             is_etm = False  
-    for verb in remove_redundant_sequence_list:
+    for verb in sequence_list:
         if verb in remove_list:
-            remove_redundant_sequence_list.remove(verb)
-
+            sequence_list.remove(verb)
             
-    return remove_redundant_sequence_list
+    return sequence_list
+
 
 # 전성어미 다음 '하고' 생략
 def verify_etn(node, seq_list):
@@ -315,8 +316,11 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, rec
     prev_seq_id = -1
     for m_ele in node['morp']:
         if m_ele['type'] == 'VV':
+            act_id = int(m_ele['id'])
+            if node['morp'][act_id + 1]['type'] == 'ETM' and node['morp'][act_id + 2]['lemma'] != '후':
+                continue
             act = m_ele['lemma']
-            act_id = m_ele['id']
+        
             # 조리 동작 판단
             if act in cooking_act_dict:
                 # 레시피 시퀀스 6가지 요소
@@ -350,7 +354,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, rec
                                 seasoning = s_ele
                                 
                     if seasoning != "":
-                        seq_dict['seasoning'].append(seasoning)    
+                        seq_dict['seasoning'].append(seasoning)
 
                     # 식자재 판단
                     ingredient = ""
@@ -418,6 +422,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, rec
 
     return sequence_list
 
+
 def delete_bracket(text):
 
     while "(" in text and ")" in text:
@@ -430,6 +435,7 @@ def delete_bracket(text):
         text = text.strip()
 
     return text
+
 
 def parse_node_section(recipe_mode, node_list):
     coref_dict = {}
