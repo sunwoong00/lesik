@@ -167,6 +167,10 @@ def mod_check(node, d_ele):
         # 관형어
         if mod_node['label'] == 'VP_MOD':
             mod_result = mod_node['text']
+            for mod_element in mod_node['mod']:
+                if node['dependency'][int(mod_element)]['label'] == 'VP':
+                    mod_result = node['dependency'][int(mod_element)]['text'] + " " + mod_result
+                    break
         else:
             # 수평 관계에 있는 재료
             if mod_node['label'] == 'NP_CNJ':
