@@ -1,6 +1,7 @@
 import urllib3
 import json
 import os.path
+import re
 
 
 def get_list_from_file(file_path):
@@ -197,6 +198,7 @@ def find_ingredient_dependency(node, seq_list):
 
     return seq_list
 
+
 # 관형어 처리
 def etm_merge_ingredient(node,  remove_redundant_sequence_list, ingredient_dict):
     remove_list = []
@@ -221,8 +223,8 @@ def etm_merge_ingredient(node,  remove_redundant_sequence_list, ingredient_dict)
         if verb in remove_list:
             remove_redundant_sequence_list.remove(verb)
 
-            
     return remove_redundant_sequence_list
+
 
 # 전성어미 다음 '하고' 생략
 def verify_etn(node, seq_list):
@@ -276,6 +278,7 @@ def process_cond(node,seq_list):
                         cond_seq = None
     return seq_list
 
+
 #숙어처리
 def process_phrase(node,seq_list):
     for m_ele in node['morp']:
@@ -303,8 +306,17 @@ def volume_of_act(node, seq_list):
     return seq_list
 
 
-def verify_coref(coref_dict, w_ele):
-    return 0
+def verify_coref(coref_dict, word):
+    if word == '재료':
+        return None, None
+    for coref_key in coref_dict.keys():
+        if word == coref_key or coref_key in word:
+            print(coref_key, word, coref_dict[coref_key])
+            return coref_key, coref_dict[coref_key]
+        if word in coref_key:
+            return coref_key, None
+        continue
+    return None, None
 
 
 def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, recipe_mode):
@@ -324,6 +336,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, rec
                             'zone': "", "start_id": prev_seq_id + 1, "end_id": act_id, "sentence": ""}
                 
                 # co-reference 및 dictionary를 통해 word에서 요소 추출
+                coref_chk_str = None
                 for w_ele in node['word']:
                     if w_ele['begin'] <= prev_seq_id:
                         continue
@@ -331,11 +344,16 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, rec
                         break
 
                     # co-reference 검증
-                    for coref_key in coref_dict.keys():
-                        if coref_key in w_ele['text']:
-                            coref_sub_dict = coref_dict.get(coref_key)
-                            for key in coref_sub_dict.keys():
-                                seq_dict['seasoning'].append(key + "(" + coref_sub_dict.get(key) + ")")
+                    if coref_chk_str is None:
+                        coref_chk_str = w_ele['text']
+                    partial_chk_str, sub_ingredient_dict = verify_coref(coref_dict, coref_chk_str)
+                    if sub_ingredient_dict is not None:
+                        for key, value in sub_ingredient_dict.items():
+                            seq_dict['seasoning'].append(key + "(" + value + ")")
+                        coref_chk_str = None
+                    else:
+                        if partial_chk_str is not None:
+                            coref_chk_str += partial_chk_str
 
                     # 조리 도구 판단
                     for t_ele in tool_list:
@@ -418,6 +436,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, rec
 
     return sequence_list
 
+
 def delete_bracket(text):
 
     while "(" in text and ")" in text:
@@ -430,6 +449,7 @@ def delete_bracket(text):
         text = text.strip()
 
     return text
+
 
 def parse_node_section(recipe_mode, node_list):
     coref_dict = {}
@@ -467,6 +487,9 @@ def parse_node_section(recipe_mode, node_list):
                     continue
                 
             sequence = create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, recipe_mode)
+            if not sequence:
+                remove_node_list.append(node)
+
             for seq_dict in sequence:
                 for ingre in seq_dict['ingre']:
                     if ingre in ingredient_dict:
@@ -496,6 +519,10 @@ def sentence_print(node_list, sequence_list):
             if start_id < prev_seq_id:
                 break
 
+            next_seq_id = 0
+            if i < len(sequence_list) - 1:
+                next_seq_id = sequence_list[i + 1]['start_id']
+
             word_list = []
             extra_word_list = []
             for w_ele in node['word']:
@@ -504,19 +531,16 @@ def sentence_print(node_list, sequence_list):
                 end = w_ele['end']
                 if start_id <= begin <= end_id:
                     word_list.append(text)
-                else: 
-                    next_seq_start_id = end + 1
-                    if i < len(sequence_list) - 1:
-                        next_seq_start_id = sequence_list[i+1]['start_id']
-                    
-                    if sequence_list[i]['end_id'] < end < next_seq_start_id:
-                        if not extra_word_list:
-                            extra_word_list.append("(")
-                        extra_word_list.append(text)
+                else:
+                    if end_id < end:
+                        if next_seq_id < end_id or end < next_seq_id:
+                            if not extra_word_list:
+                                extra_word_list.append("(")
+                            extra_word_list.append(text)
             
             sequence_list[i]['sentence'] = " ".join(word_list)
             sequence_list[i]['sentence'] = delete_bracket(sequence_list[i]['sentence'])
-            if extra_word_list != []:
+            if extra_word_list:
                 extra_word_list.append(")")
                 sequence_list[i]['sentence'] += " ".join(extra_word_list)
             prev_seq_id = sequence_list[i]['end_id']
