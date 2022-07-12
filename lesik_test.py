@@ -1,7 +1,7 @@
 import urllib3
 import json
 import os.path
-import re
+import numpy as np
 
 
 def get_list_from_file(file_path):
@@ -66,6 +66,9 @@ def parse_idiom_dict(file_path):
     f.close()
     return idiom_dict
 
+
+def cosine_similarity(src, dst):
+    return np.dot(src, dst) / (np.linalg.norm(src) * np.linalg.norm(dst))
 
 def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
     volume_node = None
@@ -306,17 +309,35 @@ def volume_of_act(node, seq_list):
     return seq_list
 
 
-def verify_coref(coref_dict, word):
-    if word == '재료':
-        return None, None
-    for coref_key in coref_dict.keys():
-        if word == coref_key or coref_key in word:
-            print(coref_key, word, coref_dict[coref_key])
-            return coref_key, coref_dict[coref_key]
-        if word in coref_key:
-            return coref_key, None
-        continue
-    return None, None
+def verify_coref(coref_dict, node, word_id):
+    word = node['word'][int(word_id)]['text']
+    coref_keyword_list = ['밑간', '재료', '소스', '육수', '양념']
+    for keyword in coref_keyword_list:
+        if keyword in word:
+            coref_cand_list = []
+            for coref_key in coref_dict.keys():
+                if coref_key == '기본재료':
+                    continue
+                if keyword in coref_key:
+                    coref_cand_list.append(coref_key)
+            if len(coref_cand_list) == 1:
+                return coref_dict[coref_cand_list[0]]
+            elif len(coref_cand_list) > 1:
+                coref_cand = None
+                if word_id > 0:
+                    prev_word = node['word'][word_id - 1]['text']
+                    max_similarity = 0.0
+
+                    for cand in coref_cand_list:
+                        keyword_idx = cand.find(keyword)
+                        similarity = cosine_similarity(cand[0:keyword_idx], prev_word)
+                        if similarity > max_similarity:
+                            coref_cand = cand
+                if coref_cand is None:
+                    coref_cand = coref_cand_list[0]
+                return coref_dict[coref_cand]
+            else:
+                return None
 
 
 def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, recipe_mode):
@@ -339,7 +360,6 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, rec
                             'zone': "", "start_id": prev_seq_id + 1, "end_id": act_id, "sentence": ""}
                 
                 # co-reference 및 dictionary를 통해 word에서 요소 추출
-                coref_chk_str = None
                 for w_ele in node['word']:
                     if w_ele['begin'] <= prev_seq_id:
                         continue
@@ -347,16 +367,10 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, rec
                         break
 
                     # co-reference 검증
-                    if coref_chk_str is None:
-                        coref_chk_str = w_ele['text']
-                    partial_chk_str, sub_ingredient_dict = verify_coref(coref_dict, coref_chk_str)
+                    sub_ingredient_dict = verify_coref(coref_dict, node, w_ele['id'])
                     if sub_ingredient_dict is not None:
                         for key, value in sub_ingredient_dict.items():
                             seq_dict['seasoning'].append(key + "(" + value + ")")
-                        coref_chk_str = None
-                    else:
-                        if partial_chk_str is not None:
-                            coref_chk_str += partial_chk_str
 
                     # 조리 도구 판단
                     for t_ele in tool_list:
