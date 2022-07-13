@@ -387,10 +387,9 @@ def verify_coref(coref_dict, node, word_id):
                     continue
                 if keyword in coref_key:
                     coref_cand_list.append(coref_key)
-            if len(coref_cand_list) == 1:
-                return coref_dict[coref_cand_list[0]]
-            elif len(coref_cand_list) > 1:
-                coref_cand = None
+
+            coref_cand = None
+            if len(coref_cand_list) >= 1:
                 if word_id > 0:
                     prev_word = node['word'][word_id - 1]['text']
                     max_similarity = 0.0
@@ -400,11 +399,13 @@ def verify_coref(coref_dict, node, word_id):
                         similarity = find_similarity(comp_word, prev_word)
                         if similarity > max_similarity:
                             coref_cand = cand
-                if coref_cand is None:
-                    coref_cand = coref_cand_list[0]
-                return coref_dict[coref_cand]
-            else:
-                return None
+
+            if coref_cand is not None:
+                coref_ingredient_dict = coref_dict[coref_cand]
+                if coref_ingredient_dict != {}:
+                    coref_dict[coref_cand] = {}
+                    return coref_ingredient_dict
+                return {coref_cand: ""}
 
 
 def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, recipe_mode):
