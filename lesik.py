@@ -43,18 +43,18 @@ def parse_tool_dict(file_path):
         return None
     f = open(file_path, 'r', encoding='utf-8')
     delim = ">"
-    tool_list = []
-    zone_dict = {}
+    tools = []
+    tool_to_zone_dict = {}
     for line in f.readlines():
         line = line.replace("\n", "")
         if delim in line:
             sp_line = line.split(delim)
-            zone_dict[sp_line[0]] = sp_line[1]
-            tool_list.append(sp_line[0])
+            tool_to_zone_dict[sp_line[0]] = sp_line[1]
+            tools.append(sp_line[0])
         else:
-            tool_list.append(line)
+            tools.append(line)
     f.close()
-    return tool_list, zone_dict
+    return tools, tool_to_zone_dict
 
 
 def parse_cooking_act_dict(file_path):
@@ -64,18 +64,18 @@ def parse_cooking_act_dict(file_path):
     f = open(file_path, 'r', encoding='utf-8')
     delim = ">"
     act_dict = {}
-    zone_dict = {}
+    act_to_zone_dict = {}
     for line in f.readlines():
         line = line.replace("\n", "")
         if delim in line:
             sp_line = line.split(delim)
             act_dict[sp_line[0]] = sp_line[1]
             if len(sp_line) == 3:
-                zone_dict[sp_line[1]] = 'f'
+                act_to_zone_dict[sp_line[1]] = 'f'
         else:
             act_dict[line] = line
     f.close()
-    return act_dict, zone_dict
+    return act_dict, act_to_zone_dict
 
 
 def parse_act_to_tool_dict(file_path):
@@ -726,6 +726,7 @@ def recipe():
     sequence_list = sentence_print(node_list, sequence_list)
 
     response = json.dumps(sequence_list, ensure_ascii=False)
+    print(response)
     return make_response(response)
 
 
