@@ -330,22 +330,29 @@ def select_cooking_zone(sequence):
 
 # 조건문 처리
 def process_cond(node,seq_list):
-    del_seq_list = []
-    for j in range(0, len(node['morp'])-1):
-        if node['morp'][j]['type'] == 'VV':
-            if node['morp'][j+1]['lemma'] == "면" or node['morp'][j+1]['lemma'] == "으면":
-                cond_seq = None
-                for seq in seq_list:
-                    if seq['start_id'] <= j <= seq['end_id']:
-                        cond_seq = seq
-                        continue
-                    if cond_seq != None:
-                        if len(cond_seq['ingre']) != 0:
-                            seq['act'] =  "(" + cond_seq['ingre'][0] + ',' + node['morp'][j]['lemma']+node['morp'][j+1]['lemma']+")" + seq['act']
-                        else:
-                            seq['act'] = node['morp'][j]['lemma']+node['morp'][j+1]['lemma']
-                        seq_list.remove(cond_seq)
-                        cond_seq = None
+
+    for srl in node['SRL']:
+        s_arg = srl['argument']
+        for s_ele in s_arg:
+            act_plus_sentence = ""
+            if s_ele['type'] == "ARGM-CND":
+                s_word_id = int(s_ele['word_id'])
+                if node['dependency'][s_word_id]['label'] == 'VP':
+                    act_plus_sentence = node['dependency'][s_word_id]['text']
+                    mod_list = node['dependency'][s_word_id]['mod']
+                    for mod in mod_list:
+                        mod = int(mod)
+                        if node['dependency'][mod]['label'] == 'VP_OBJ':
+                            act_plus_sentence = node['dependency'][mod]['text'] + " " + act_plus_sentence
+                        if node['dependency'][mod]['label'] == 'NP_SBJ':
+                            act_plus_sentence = node['dependency'][mod]['text'] + " " + act_plus_sentence
+                    
+                    for seq in seq_list:
+                        word = node['word'][s_word_id]                       
+                        end = word['end']
+                        if seq['start_id'] <= end <= seq['end_id']:
+                            seq['act'] = "(" + act_plus_sentence + ")" + seq['act']
+
     return seq_list
 
 
@@ -500,9 +507,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, rec
     # 관형어 처리
     sequence_list = find_ingredient_dependency(node, sequence_list, recipe_mode)
         
-    #조건문 처리함수추가
-    #sequence_list = process_cond(node, sequence_list)
-    #조리동작(용량)
+    # 조리동작(용량)
     #sequence_list = volume_of_act(node, sequence_list)
     # 전성어미 처리
     sequence_list = verify_etn(node, sequence_list)
@@ -515,6 +520,9 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, rec
     # 화구존/전처리존 분리
     for sequence in sequence_list:
         select_cooking_zone(sequence)
+    
+    # 조건문 처리함수추가
+    sequence_list = process_cond(node, sequence_list)
 
     return sequence_list
 
