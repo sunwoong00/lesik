@@ -1,7 +1,6 @@
 import urllib3
 import json
 import os.path
-import numpy as np
 
 
 def get_list_from_file(file_path):
@@ -15,6 +14,26 @@ def get_list_from_file(file_path):
     return tmp_list
 
 
+def parse_tool_dict(file_path):
+    file_exists = os.path.exists(file_path)
+    if not file_exists:
+        return None
+    f = open(file_path, 'r', encoding='utf-8')
+    delim = ">"
+    tool_list = []
+    zone_dict = {}
+    for line in f.readlines():
+        line = line.replace("\n", "")
+        if delim in line:
+            sp_line = line.split(delim)
+            zone_dict[sp_line[0]] = sp_line[1]
+            tool_list.append(sp_line[0])
+        else:
+            tool_list.append(line)
+    f.close()
+    return tool_list, zone_dict
+
+
 def parse_cooking_act_dict(file_path):
     file_exists = os.path.exists(file_path)
     if not file_exists:
@@ -22,15 +41,18 @@ def parse_cooking_act_dict(file_path):
     f = open(file_path, 'r', encoding='utf-8')
     delim = ">"
     act_dict = {}
+    zone_dict = {}
     for line in f.readlines():
         line = line.replace("\n", "")
         if delim in line:
             sp_line = line.split(delim)
             act_dict[sp_line[0]] = sp_line[1]
+            if len(sp_line) == 3:
+                zone_dict[sp_line[1]] = 'f'
         else:
             act_dict[line] = line
     f.close()
-    return act_dict
+    return act_dict, zone_dict
 
 
 def parse_act_to_tool_dict(file_path):
@@ -290,16 +312,19 @@ def verify_etn(node, seq_list):
 # 화구존, 전처리존 분리
 def select_cooking_zone(sequence):
 
-    if sequence['act'] in fire_zone:
+    fire_act_check = False
+    fire_tool_check = False
+    if sequence['act'] in zone_dict['act'].keys():
+        fire_act_check = True
+    for tool in sequence['tool']:
+        if tool in zone_dict['tool'].keys():
+            fire_tool_check = True
+
+    if fire_act_check or fire_tool_check:
         sequence['zone'] = "화구존"
-    for tool in sequence['tool']:
-        if tool in fire_tool:
-            sequence['zone'] = "화구존"
-    if sequence['act'] in preprocess_zone:
+    else:
         sequence['zone'] = "전처리존"
-    for tool in sequence['tool']:
-        if tool in preprocess_tool:
-            sequence['zone'] = "전처리존"
+
     return sequence
 
 
@@ -484,12 +509,12 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, rec
     # 숙어처리
     #sequence_list = process_phrase(node, sequence_list)
 
-    #for sequence in sequence_list:
-        # 화구존/전처리존 분리
-        #select_cooking_zone(sequence)
-
     for sequence in sequence_list:
         sequence['act'] = cooking_act_dict[sequence['act']]
+    
+    # 화구존/전처리존 분리
+    for sequence in sequence_list:
+        select_cooking_zone(sequence)
 
     return sequence_list
 
@@ -618,19 +643,17 @@ def main():
     analysis_code = "SRL"
 
     # get cooking component list & dictionary from files
-    global seasoning_list, volume_list, time_list, temperature_list, cooking_act_dict, act_to_tool_dict, tool_list, fire_tool, fire_zone, preprocess_tool, preprocess_zone, idiom_dict
+    global seasoning_list, volume_list, time_list, temperature_list, cooking_act_dict, act_to_tool_dict, tool_list, idiom_dict, zone_dict
     seasoning_list = get_list_from_file("labeling/seasoning.txt")
     volume_list = get_list_from_file("labeling/volume.txt")
     time_list = get_list_from_file("labeling/time.txt")
     temperature_list = get_list_from_file("labeling/temperature.txt")
-    cooking_act_dict = parse_cooking_act_dict("labeling/cooking_act.txt")
+    cooking_act_dict, act_to_zone_dict = parse_cooking_act_dict("labeling/cooking_act.txt")
     act_to_tool_dict = parse_act_to_tool_dict("labeling/act_to_tool.txt")
-    tool_list = get_list_from_file("labeling/tool.txt")
-    fire_zone = get_list_from_file("labeling/fire_zone.txt")
-    preprocess_zone = get_list_from_file("labeling/preprocess_zone.txt")
-    fire_tool = get_list_from_file("labeling/fire_tool.txt")
-    preprocess_tool = get_list_from_file("labeling/preprocess_tool.txt")
+    tool_list, tool_to_zone_dict = parse_tool_dict("labeling/tool.txt")
     idiom_dict = parse_idiom_dict("labeling/idiom.txt")
+
+    zone_dict = {'act': act_to_zone_dict, 'tool': tool_to_zone_dict}
 
     # recipe extraction
     file_path = input("레시피 파일 경로를 입력해 주세요 : ")
