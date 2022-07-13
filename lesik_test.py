@@ -183,25 +183,32 @@ def mod_check(node, d_ele):
 
 def find_ingredient_dependency(node, seq_list, recipe_mode):
     remove_seq_list = []
+    ingredient_modifier_dict = {}
     for i in range(0, len(seq_list)):
         is_etm = False
         is_cooking_act = False
         for m_ele in node['morp']:
-            if m_ele['type'] == 'ETM':
+            morp_id = m_ele['id']
+            morp_type = m_ele['type']
+            if morp_id < seq_list[i]['start_id'] or morp_id > seq_list[i]['end_id']:
+                continue
+            if morp_type == 'ETM':
                 is_etm = True
-                if m_ele['id'] > 0:
-                    prev_morp = node['morp'][int(m_ele['id'] - 1)]
+                if morp_id > 0:
+                    prev_morp = node['morp'][int(morp_id - 1)]
                     if prev_morp['type'] == 'VV' and prev_morp['lemma'] in cooking_act_dict:
                         is_cooking_act = True
                 continue
-            if is_etm and m_ele['type'] == 'NNG' and m_ele['lemma'] in seq_list[i]['ingre']:
+            if is_etm and morp_type == 'NNG' and m_ele['lemma'] in seq_list[i]['ingre']:
                 for w_ele in node['word']:
-                    etm_id = m_ele['id'] - 1
+                    etm_id = morp_id - 1
                     if w_ele['begin'] <= etm_id <= w_ele['end']:
-                        merge_ingre = w_ele['text'] + " " + m_ele['lemma']
+                        modified_ingredient = w_ele['text'] + " " + m_ele['lemma']
                         for j in range(0, len(seq_list[i]['ingre'])):
                             if m_ele['lemma'] == seq_list[i]['ingre'][j]:
-                                seq_list[i]['ingre'][j] = merge_ingre
+                                if i not in ingredient_modifier_dict:
+                                    ingredient_modifier_dict[i] = {}
+                                ingredient_modifier_dict[i][j] = modified_ingredient
                                 if is_cooking_act:
                                     remove_seq_list.append(seq_list[i-1])
             is_etm = False
@@ -210,24 +217,34 @@ def find_ingredient_dependency(node, seq_list, recipe_mode):
     if recipe_mode == 'srl':
         for d_ele in node['dependency']:
             text = d_ele['text']
-            for sequence in seq_list:
-                for i in range(0, len(sequence['ingre'])):
-                    original_ingredient = sequence['ingre'][i]
+            for i in range(0, len(seq_list)):
+                sequence = seq_list[i]
+                for j in range(0, len(sequence['ingre'])):
+                    original_ingredient = sequence['ingre'][j]
                     if original_ingredient in text:
                         mod_result, additional_ingredient_list = mod_check(node, d_ele)
 
                         # 관형어
                         if mod_result is not None:
-                            sequence['ingre'][i] = mod_result + " " + original_ingredient
+                            modified_ingredient = mod_result + " " + original_ingredient
+                            if i not in ingredient_modifier_dict:
+                                ingredient_modifier_dict[i] = {}
+                            if j not in ingredient_modifier_dict[i] or len(ingredient_modifier_dict[i][j]) < len(modified_ingredient):
+                                ingredient_modifier_dict[i][j] = modified_ingredient
 
                             # 수평적 관계에 있는 재료 (2개면 둘 다 관형어를 붙혀주고, 이외에는 관형어를 처음에만 붙혀준다)
                             if additional_ingredient_list and len(additional_ingredient_list) == 1:
-                                for j in range(0, len(sequence['ingre'])):
-                                    additional_ingredient = sequence['ingre'][j]
+                                for l in range(0, len(sequence['ingre'])):
+                                    additional_ingredient = sequence['ingre'][l]
 
                                     # 시퀀스의 재료 리스트 중 현재 재료가 아니고 수평적 관계에 있는 재료일 때 관형어를 붙혀준다
-                                    if i != j and additional_ingredient in additional_ingredient_list[0]:
-                                        sequence['ingre'][j] = mod_result + " " + additional_ingredient
+                                    if j != l and additional_ingredient in additional_ingredient_list[0]:
+                                        sequence['ingre'][l] = mod_result + " " + additional_ingredient
+
+    for seq_id in ingredient_modifier_dict.keys():
+        sequence = seq_list[seq_id]
+        for ingredient_idx, modified_ingredient in ingredient_modifier_dict[seq_id].items():
+            sequence['ingre'][ingredient_idx] = modified_ingredient
 
     for seq in remove_seq_list:
         seq_list.remove(seq)
