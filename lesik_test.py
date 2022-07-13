@@ -182,8 +182,11 @@ def find_omitted_ingredient(node, seq_list, ingredient_dict):
     for sequence in seq_list:
         if not sequence['ingre']:
             for srl in node['SRL']:
+                if srl['verb'] != '씻':
+                    continue
                 s_arg = srl['argument']
-                if srl['verb'] == sequence['act']:
+                s_word = node['word'][int(srl['word_id'])]
+                if srl['verb'] == sequence['act'] and sequence['start_id'] <= s_word['begin'] <= sequence['end_id']:
                     for s_ele in s_arg:
                         s_text = s_ele['text']
                         s_type = s_ele['type']
@@ -334,7 +337,6 @@ def process_cond(node,seq_list):
     for srl in node['SRL']:
         s_arg = srl['argument']
         for s_ele in s_arg:
-            act_plus_sentence = ""
             if s_ele['type'] == "ARGM-CND":
                 s_word_id = int(s_ele['word_id'])
                 if node['dependency'][s_word_id]['label'] == 'VP':
@@ -349,8 +351,8 @@ def process_cond(node,seq_list):
                     
                     for seq in seq_list:
                         word = node['word'][s_word_id]                       
-                        end = word['end']
-                        if seq['start_id'] <= end <= seq['end_id']:
+                        begin = word['begin']
+                        if seq['start_id'] <= begin <= seq['end_id']:
                             seq['act'] = "(" + act_plus_sentence + ")" + seq['act']
 
     return seq_list
