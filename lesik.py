@@ -205,8 +205,6 @@ def find_omitted_ingredient(node, seq_list, ingredient_dict):
     for sequence in seq_list:
         if not sequence['ingre']:
             for srl in node['SRL']:
-                if srl['verb'] != '씻':
-                    continue
                 s_arg = srl['argument']
                 s_word = node['word'][int(srl['word_id'])]
                 if srl['verb'] == sequence['act'] and sequence['start_id'] <= s_word['begin'] <= sequence['end_id']:
@@ -215,8 +213,7 @@ def find_omitted_ingredient(node, seq_list, ingredient_dict):
                         s_type = s_ele['type']
                         if s_type in critical_type_list:
                             for ingredient in ingredient_dict.keys():
-                                if ingredient in s_text and ingredient not in sequence['ingre'] and ingredient not in \
-                                        sequence['seasoning']:
+                                if ingredient in s_text and ingredient not in sequence['ingre'] and ingredient not in sequence['seasoning']:
                                     sequence['ingre'].append(ingredient)
     return seq_list
 
