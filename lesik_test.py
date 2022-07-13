@@ -67,8 +67,18 @@ def parse_idiom_dict(file_path):
     return idiom_dict
 
 
-def cosine_similarity(src, dst):
-    return np.dot(src, dst) / (np.linalg.norm(src) * np.linalg.norm(dst))
+def find_similarity(src, dst):
+    similarity = 0
+    if len(src) > len(dst):
+        for d in dst:
+            if d in src:
+                similarity += 1
+    else:
+        for s in src:
+            if s in dst:
+                similarity += 1
+    return similarity
+
 
 def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
     volume_node = None
@@ -209,7 +219,7 @@ def find_ingredient_dependency(node, seq_list, recipe_mode):
                                 if i not in ingredient_modifier_dict:
                                     ingredient_modifier_dict[i] = {}
                                 ingredient_modifier_dict[i][j] = modified_ingredient
-                                if is_cooking_act:
+                                if is_cooking_act and i > 0:
                                     remove_seq_list.append(seq_list[i-1])
             is_etm = False
             is_cooking_act = False
@@ -234,12 +244,12 @@ def find_ingredient_dependency(node, seq_list, recipe_mode):
 
                             # 수평적 관계에 있는 재료 (2개면 둘 다 관형어를 붙혀주고, 이외에는 관형어를 처음에만 붙혀준다)
                             if additional_ingredient_list and len(additional_ingredient_list) == 1:
-                                for l in range(0, len(sequence['ingre'])):
-                                    additional_ingredient = sequence['ingre'][l]
+                                for k in range(0, len(sequence['ingre'])):
+                                    additional_ingredient = sequence['ingre'][k]
 
                                     # 시퀀스의 재료 리스트 중 현재 재료가 아니고 수평적 관계에 있는 재료일 때 관형어를 붙혀준다
-                                    if j != l and additional_ingredient in additional_ingredient_list[0]:
-                                        sequence['ingre'][l] = mod_result + " " + additional_ingredient
+                                    if j != k and additional_ingredient in additional_ingredient_list[0]:
+                                        sequence['ingre'][k] = mod_result + " " + additional_ingredient
 
     for seq_id in ingredient_modifier_dict.keys():
         sequence = seq_list[seq_id]
@@ -252,19 +262,28 @@ def find_ingredient_dependency(node, seq_list, recipe_mode):
     return seq_list
 
 
-# 전성어미 다음 '하고' 생략
+# 전성 어미를 통한 동작 추출
 def verify_etn(node, seq_list):
-    for seq in seq_list:
-        for j in range(0, len(node['morp'])-1):
-            if node['morp'][j]['type'] == 'ETN':
-                    cond_seq = None
-                    for seq in seq_list:
-                        if seq['start_id'] <= j-1 <= seq['end_id']:
-                            cond_seq = seq
-                            continue
-                        if seq['act'] == '하다':
-                            seq_list.remove(seq)
-                        cond_seq = None
+    remove_seq_list = []
+    for morp in node['morp']:
+        if morp['type'] == 'ETN':
+            morp_id = int(morp['id'])
+            if morp_id > 0:
+                prev_morp = node['morp'][morp_id - 1]
+                if prev_morp['type'] == 'VV' and prev_morp['lemma'] in cooking_act_dict:
+                    for seq_id in range(0, len(seq_list)):
+                        sequence = seq_list[seq_id]
+                        if sequence['start_id'] <= morp_id <= sequence['end_id']:
+                            remove_seq_list.append(sequence)
+                            if seq_id < len(seq_list) - 1:
+                                next_sequence = seq_list[seq_id + 1]
+                                if next_sequence['act'] == '하':
+                                    merge_dictionary(sequence, next_sequence)
+                                    next_sequence['start_id'] = sequence['start_id']
+
+    for sequence in remove_seq_list:
+        seq_list.remove(sequence)
+
     return seq_list
                     
 
@@ -333,7 +352,7 @@ def volume_of_act(node, seq_list):
 
 
 def verify_coref(coref_dict, node, word_id):
-    word = node['word'][int(word_id)]['text']
+    word = node['word'][word_id]['text']
     coref_keyword_list = ['밑간', '재료', '소스', '육수', '양념']
     for keyword in coref_keyword_list:
         if keyword in word:
@@ -352,8 +371,8 @@ def verify_coref(coref_dict, node, word_id):
                     max_similarity = 0.0
 
                     for cand in coref_cand_list:
-                        keyword_idx = cand.find(keyword)
-                        similarity = cosine_similarity(cand[0:keyword_idx], prev_word)
+                        comp_word = cand.replace(keyword, "").strip()
+                        similarity = find_similarity(comp_word, prev_word)
                         if similarity > max_similarity:
                             coref_cand = cand
                 if coref_cand is None:
@@ -390,7 +409,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, rec
                         break
 
                     # co-reference 검증
-                    sub_ingredient_dict = verify_coref(coref_dict, node, w_ele['id'])
+                    sub_ingredient_dict = verify_coref(coref_dict, node, int(w_ele['id']))
                     if sub_ingredient_dict is not None:
                         for key, value in sub_ingredient_dict.items():
                             seq_dict['seasoning'].append(key + "(" + value + ")")
@@ -461,7 +480,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, rec
     #조리동작(용량)
     #sequence_list = volume_of_act(node, sequence_list)
     # 전성어미 처리
-    #sequence_list = verify_etn(node, sequence_list)
+    sequence_list = verify_etn(node, sequence_list)
     # 숙어처리
     #sequence_list = process_phrase(node, sequence_list)
 
