@@ -1,3 +1,4 @@
+from transformers import WordpieceTokenizer
 import urllib3
 import json
 import os.path
@@ -155,23 +156,6 @@ def volume_of_act(node, seq_list):
 
 
 # function
-# 목적어 필수로 하는 조리 동작 처리
-def find_objective(node, seq_list):
-    for m_ele in node['morp']:
-        if m_ele['type'] == 'VV':
-            if m_ele['lemma'] in idiom_dict.keys():
-                for w_ele in node['word']:
-                    m_id = m_ele['id'] - 1
-                    if w_ele['begin'] <= m_id <= w_ele['end']:
-                        for k in idiom_dict.values():
-                            if w_ele['text'] in k:
-                                for seq in seq_list:
-                                    if seq['start_id'] <= m_ele['id'] <= seq['end_id']:
-                                        seq['act'] = w_ele['text'] + " " + seq['act']
-
-    return seq_list
-
-
 # 조건문 처리
 def find_condition(node, seq_list):
     for srl in node['SRL']:
@@ -194,49 +178,6 @@ def find_condition(node, seq_list):
                         begin = word['begin']
                         if seq['start_id'] <= begin <= seq['end_id']:
                             seq['act'] = "(" + act_plus_sentence + ")" + seq['act']
-
-    return seq_list
-
-
-# 화구존, 전처리존 분리
-def select_cooking_zone(sequence):
-    fire_act_check = False
-    fire_tool_check = False
-    if sequence['act'] in zone_dict['act'].keys():
-        fire_act_check = True
-    for tool in sequence['tool']:
-        if tool in zone_dict['tool'].keys():
-            fire_tool_check = True
-
-    if fire_act_check or fire_tool_check:
-        sequence['zone'] = "화구존"
-    else:
-        sequence['zone'] = "전처리존"
-
-    return sequence
-
-
-# 전성 어미를 통한 동작 추출
-def verify_etn(node, seq_list):
-    remove_seq_list = []
-    for morp in node['morp']:
-        if morp['type'] == 'ETN':
-            morp_id = int(morp['id'])
-            if morp_id > 0:
-                prev_morp = node['morp'][morp_id - 1]
-                if prev_morp['type'] == 'VV' and prev_morp['lemma'] in cooking_act_dict:
-                    for seq_id in range(0, len(seq_list)):
-                        sequence = seq_list[seq_id]
-                        if sequence['start_id'] <= morp_id <= sequence['end_id']:
-                            remove_seq_list.append(sequence)
-                            if seq_id < len(seq_list) - 1:
-                                next_sequence = seq_list[seq_id + 1]
-                                if next_sequence['act'] == '하':
-                                    merge_dictionary(sequence, next_sequence)
-                                    next_sequence['start_id'] = sequence['start_id']
-
-    for sequence in remove_seq_list:
-        seq_list.remove(sequence)
 
     return seq_list
 
@@ -309,6 +250,84 @@ def find_ingredient_dependency(node, seq_list, recipe_mode):
 
     for seq in remove_seq_list:
         seq_list.remove(seq)
+
+    return seq_list
+
+
+# 목적어 필수로 하는 조리 동작 처리
+def find_objective(node, seq_list):
+    for dep in node['dependency']:
+        if 'VP' in dep['label']:
+            # 추후 목적어의 해당되는 시퀀스의 조리동작에 해당하는 형태소 추출
+            word_dep = node['word'][int(dep['id'])]
+            start_id = word_dep['begin']
+            end_id = word_dep['end']
+
+            # 목적격 수식어 추출
+            mod_list = dep['mod']
+            for mod in mod_list:
+                mod_dep = node['dependency'][int(mod)]
+                if "OBJ" in mod_dep['label']:
+                    word = node['word'][int(mod_dep['id'])]
+                    end = word['end']
+                    for i in range (0, len(seq_list)):
+                        sequence = seq_list[i]
+                        if sequence['start_id'] <= end <= sequence['end_id'] and start_id <= sequence['end_id'] <= end_id:
+                            is_objective = True
+                            for ingre in sequence['ingre']:
+                                if ingre in word['text']:
+                                    is_objective = False
+                                    break
+                            if is_objective:
+                                for seasoning in sequence['seasoning']:
+                                    if seasoning in word['text']:
+                                        is_objective = False
+                                        break
+                            
+                            if is_objective:
+                                sequence['act'] = word['text'] + " " + sequence['act']
+    return seq_list
+
+
+# 화구존, 전처리존 분리
+def select_cooking_zone(sequence):
+    fire_act_check = False
+    fire_tool_check = False
+    if sequence['act'] in zone_dict['act'].keys():
+        fire_act_check = True
+    for tool in sequence['tool']:
+        if tool in zone_dict['tool'].keys():
+            fire_tool_check = True
+
+    if fire_act_check or fire_tool_check:
+        sequence['zone'] = "화구존"
+    else:
+        sequence['zone'] = "전처리존"
+
+    return sequence
+
+
+# 전성 어미를 통한 동작 추출
+def verify_etn(node, seq_list):
+    remove_seq_list = []
+    for morp in node['morp']:
+        if morp['type'] == 'ETN':
+            morp_id = int(morp['id'])
+            if morp_id > 0:
+                prev_morp = node['morp'][morp_id - 1]
+                if prev_morp['type'] == 'VV' and prev_morp['lemma'] in cooking_act_dict:
+                    for seq_id in range(0, len(seq_list)):
+                        sequence = seq_list[seq_id]
+                        if sequence['start_id'] <= morp_id <= sequence['end_id']:
+                            remove_seq_list.append(sequence)
+                            if seq_id < len(seq_list) - 1:
+                                next_sequence = seq_list[seq_id + 1]
+                                if next_sequence['act'] == '하':
+                                    merge_dictionary(sequence, next_sequence)
+                                    next_sequence['start_id'] = sequence['start_id']
+
+    for sequence in remove_seq_list:
+        seq_list.remove(sequence)
 
     return seq_list
 
@@ -494,9 +513,6 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, rec
         # 현재 시퀀스에 누락된 재료를 보완
         sequence_list = find_omitted_ingredient(node, sequence_list, ingredient_dict)
 
-    # 관형어 처리
-    sequence_list = find_ingredient_dependency(node, sequence_list, recipe_mode)
-
     # 조리동작(용량)
     # sequence_list = volume_of_act(node, sequence_list)
     # 전성어미 처리
@@ -511,6 +527,9 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, rec
 
     # 목적어를 필수로 하는 조리 동작 처리
     sequence_list = find_objective(node, sequence_list)
+
+    # 관형어 처리
+    sequence_list = find_ingredient_dependency(node, sequence_list, recipe_mode)
 
     # 조건문 처리함수추가
     sequence_list = find_condition(node, sequence_list)
