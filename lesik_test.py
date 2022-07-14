@@ -326,7 +326,8 @@ def find_omitted_ingredient(node, seq_list, ingredient_dict):
                         s_type = s_ele['type']
                         if s_type in critical_type_list:
                             for ingredient in ingredient_dict.keys():
-                                if ingredient in s_text and ingredient not in sequence['ingre'] and ingredient not in sequence['seasoning']:
+                                if ingredient in s_text and ingredient not in sequence['ingre'] and ingredient not in \
+                                        sequence['seasoning']:
                                     sequence['ingre'].append(ingredient)
     return seq_list
 
@@ -338,7 +339,7 @@ def remove_redundant_sequence(node, seq_list):
     critical_type_dict = {'NNG', 'VA', 'XPN', 'SP'}
 
     for morp in node['morp']:
-        if morp['type'] == 'VV' and is_redundant == False:
+        if morp['type'] == 'VV' and is_redundant is False:
             # 불필요한 조리 동작일 경우
             if morp['lemma'] in redundant_cooking_act_list:
                 is_redundant = True
@@ -455,8 +456,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, rec
                         if i_ele in w_ele['text']:
                             if len(i_ele) > len(ingredient):
                                 ingredient = i_ele
-                    if ingredient != "" and ingredient not in seq_dict['seasoning'] and ingredient not in seq_dict[
-                        'ingre']:
+                    if ingredient != "" and ingredient not in seq_dict['seasoning'] and ingredient not in seq_dict['ingre']:
                         seq_dict['ingre'].append(ingredient)
 
                 # 조리 도구 명시 되어 있지 않을 때 조리 행위에서 도구 유추
@@ -641,7 +641,7 @@ def find_sentence(node_list, sequence_list):
 
 def main():
     # static params
-    open_api_url = "http://aiopen.etri.re.kr:8000/WiseNLU"
+    open_api_url = "https://aiopen.etri.re.kr:8000/WiseNLU"
     access_key = "0714b8fe-21f0-44f9-b6f9-574bf3f4524a"
     analysis_code = "SRL"
 
