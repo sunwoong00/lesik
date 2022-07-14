@@ -1,4 +1,3 @@
-from transformers import WordpieceTokenizer
 import urllib3
 import json
 import os.path
