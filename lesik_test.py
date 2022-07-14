@@ -368,7 +368,7 @@ def process_phrase(node,seq_list):
                             if w_ele['text'] in k:
                                 for seq in seq_list:
                                     if seq['start_id'] <= m_ele['id'] <= seq['end_id']:
-                                        seq['act'] = w_ele['text'] + " " +seq['act'] 
+                                        seq['act'] = w_ele['text'] + " " +seq['act']
 
     return seq_list
 
