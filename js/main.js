@@ -38,6 +38,10 @@ $(document).on('submit', '#insert-recipe', function() {
           if (sequence['volume'].length > j) {
             insertTr += "(" + sequence['volume'][j] + ")";
           }
+
+          if(j !== sequence['ingre'].length - 1){
+              insertTr += "\n"
+          }
         }
         insertTr += "</td>";
         insertTr += "<td>" + sequence['seasoning'].join(",") + "</td>";
