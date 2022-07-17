@@ -515,7 +515,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, rec
     # 조리동작(용량)
     # sequence_list = volume_of_act(node, sequence_list)
     # 전성어미 처리
-    sequence_list = verify_etn(node, sequence_list)
+        sequence_list = verify_etn(node, sequence_list)
 
     for sequence in sequence_list:
         sequence['act'] = cooking_act_dict[sequence['act']]
@@ -524,14 +524,15 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, rec
     for sequence in sequence_list:
         select_cooking_zone(sequence)
 
-    # 목적어를 필수로 하는 조리 동작 처리
-    sequence_list = find_objective(node, sequence_list)
+    if recipe_mode == 'srl':
+        # 목적어를 필수로 하는 조리 동작 처리
+        sequence_list = find_objective(node, sequence_list)
 
-    # 관형어 처리
-    sequence_list = find_ingredient_dependency(node, sequence_list, recipe_mode)
+        # 관형어 처리
+        sequence_list = find_ingredient_dependency(node, sequence_list, recipe_mode)
 
-    # 조건문 처리함수추가
-    sequence_list = find_condition(node, sequence_list)
+        # 조건문 처리함수추가
+        sequence_list = find_condition(node, sequence_list)
 
     return sequence_list
 
