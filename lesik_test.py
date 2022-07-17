@@ -89,6 +89,14 @@ def parse_idiom_dict(file_path):
     return sub_idiom_dict
 
 
+def parse_parenthesis(line):
+    parenthesis_arr = line.split("(")
+    ingredient = parenthesis_arr[0]
+    volume = parenthesis_arr[1][0:-1]
+
+    return ingredient, volume
+
+
 def find_similarity(src, dst):
     similarity = 0
     if len(src) > len(dst):
@@ -439,6 +447,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, rec
                 # 레시피 시퀀스 6가지 요소
                 seq_dict = {'cond': "", 'act': act, 'tool': [], 'ingre': [], 'seasoning': [], 'volume': [],
                             'zone': "", "start_id": prev_seq_id + 1, "end_id": act_id, "sentence": ""}
+                
 
                 # co-reference 및 dictionary를 통해 word에서 요소 추출
                 for w_ele in node['word']:
@@ -465,7 +474,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, rec
                             if len(s_ele) > len(seasoning):
                                 seasoning = s_ele
 
-                    if seasoning != "":
+                    if seasoning != "" and seasoning not in seq_dict['seasoning']: # 상상코딩 - 시즈닝 중복 제거
                         seq_dict['seasoning'].append(seasoning)
 
                     # 식자재 판단
@@ -485,25 +494,26 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, rec
                 prev_seq_id = act_id
 
     # 개체명 추출을 이용한 시퀀스의 요소 보완
-    for sequence in seq_list:
-        for ne in node['NE']:
-            if ne['type'] in ingredient_type_list and ne['begin'] >= sequence['start_id'] and ne['end'] < \
-                    sequence['end_id']:
-                # 시즈닝과 식자재 중복 제거
-                if ne['text'] not in sequence['ingre']:
-                    if ne['text'] in seasoning_list:
-                        break
+    if recipe_mode != 'kobert':
+        for sequence in seq_list:
+            for ne in node['NE']:
+                if ne['type'] in ingredient_type_list and ne['begin'] >= sequence['start_id'] and ne['end'] < \
+                        sequence['end_id']:
+                    # 시즈닝과 식자재 중복 제거
+                    if ne['text'] not in sequence['ingre']:
+                        if ne['text'] in seasoning_list:
+                            break
 
-                    # 개체명 인식을 통해 추출된 재료에 종속된 재료 삭제
-                    sub_ord_ingredient_list = []
-                    for ingredient in sequence['ingre']:
-                        if ingredient in ne['text']:
-                            sub_ord_ingredient_list.append(ingredient)
+                        # 개체명 인식을 통해 추출된 재료에 종속된 재료 삭제
+                        sub_ord_ingredient_list = []
+                        for ingredient in sequence['ingre']:
+                            if ingredient in ne['text']:
+                                sub_ord_ingredient_list.append(ingredient)
 
-                    for ingredient in sub_ord_ingredient_list:
-                        sequence['ingre'].remove(ingredient)
+                        for ingredient in sub_ord_ingredient_list:
+                            sequence['ingre'].remove(ingredient)
 
-                    sequence['ingre'].append(ne['text'])
+                        sequence['ingre'].append(ne['text'])
 
     # 불필요한 시퀀스 제거 및 다음 시퀀스에 병합
     sequence_list = remove_redundant_sequence(node, seq_list)
@@ -536,9 +546,49 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, rec
     return sequence_list
 
 
+def extract_ingredient_from_kobert(node_list):
+
+    kobert_api_url = "http://ec2-43-200-8-183.ap-northeast-2.compute.amazonaws.com"
+    recipe = "\n".join(list(map(lambda node : node['text'] in node_list)))
+    
+    http = urllib3.PoolManager()
+    response = http.request(
+        "POST",
+        kobert_api_url,
+        headers={"Content-Type": "application/text; charset=UTF-8"},
+        body=recipe
+    )
+
+    json_object = json.loads(response.data)
+
+    kobert_pre_ingre_dict = json_object.get("pre_ingre_dict")
+    kobert_ingredient_list = kobert_pre_ingre_dict.get("ingredient")
+    kobert_seasoning_list = kobert_pre_ingre_dict.get("seasoning")
+
+    ingredient_dict = {}
+    for line in kobert_ingredient_list:
+        ingredient, volume = parse_parenthesis(line)
+        if volume is None:
+            volume = ""
+        
+        if ingredient is not None:
+            ingredient_dict[ingredient] = volume
+            
+    for line in kobert_seasoning_list:
+        seasoning, volume = parse_parenthesis(line)
+        if volume is None:
+            volume = ""
+        if seasoning is not None:
+            ingredient_dict[seasoning] = volume
+            seasoning_list.append(seasoning)
+
+    return ingredient_dict, seasoning_list
+
+
 def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
     volume_node = None
     ingredient_list = []
+
     for ne in node['NE']:
         if ne['type'] in volume_type_list:
             volume_node = ne
@@ -569,6 +619,10 @@ def parse_node_section(recipe_mode, node_list):
     is_ingredient = True
     sub_type = None
     remove_node_list = []
+
+    if recipe_mode == "kobert":
+        ingredient_dict, seasoning_list = extract_ingredient_from_kobert(node_list)
+
     for node in node_list:
         if "[" in node['text'] and "]" in node['text']:
             sub_type = node['text'][1:-1].replace(" ", "")
@@ -578,10 +632,13 @@ def parse_node_section(recipe_mode, node_list):
                 coref_dict[sub_type] = {}
             continue
         if is_ingredient:
-            sub_ingredient_dict = extract_ingredient_from_node(ingredient_type_list, volume_type_list, node)
-            if sub_type is not None:
-                coref_dict[sub_type].update(sub_ingredient_dict)
-            ingredient_dict.update(sub_ingredient_dict)
+            if recipe_mode == 'kobert':
+                continue
+            else:
+                sub_ingredient_dict = extract_ingredient_from_node(ingredient_type_list, volume_type_list, node)
+                if sub_type is not None:
+                    coref_dict[sub_type].update(sub_ingredient_dict)
+                ingredient_dict.update(sub_ingredient_dict)
         else:
             node['text'] = node['text'].strip()
             # tip 부분 생략하는 조건문
@@ -660,7 +717,7 @@ def find_sentence(node_list, sequence_list):
 def main():
     # static params
     open_api_url = "https://aiopen.etri.re.kr:8000/WiseNLU"
-    access_key = "0714b8fe-21f0-44f9-b6f9-574bf3f4524a"
+    access_key = "84666b2d-3e04-4342-890c-0db401319568"
     analysis_code = "SRL"
 
     # get cooking component list & dictionary from files
@@ -681,13 +738,13 @@ def main():
     f = open(file_path, 'r', encoding="utf-8")
     original_recipe = str.join("\n", f.readlines())
 
-    recipe_mode = input("SRL 사용 여부를 입력해주세요 (1 : O, 2 : X) : ")
+    recipe_mode = input("recipe mode를 선택해주세요 (1 : 기본, 2 : 기본 + SRL, 3 : 기본 + SRL + Kobert) : ")
     if recipe_mode == '1':
-        recipe_mode = 'srl'
-    elif recipe_mode == '2':
         recipe_mode = 'base'
-    else:
-        recipe_mode = ''
+    elif recipe_mode == '2':
+        recipe_mode = 'srl'
+    elif recipe_mode == '3':
+        recipe_mode = 'kobert'
 
     f.close()
 
