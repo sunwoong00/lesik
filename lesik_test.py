@@ -14,6 +14,7 @@ def get_list_from_file(file_path):
     return tmp_list
 
 
+# 상상코딩2
 def parse_tool_dict(file_path):
     file_exists = os.path.exists(file_path)
     if not file_exists:
@@ -21,19 +22,20 @@ def parse_tool_dict(file_path):
     f = open(file_path, 'r', encoding='utf-8')
     delim = ">"
     tools = []
-    tool_to_zone_dict = {}
+    tool_score_dict = {}
     for line in f.readlines():
         line = line.replace("\n", "")
         if delim in line:
             sp_line = line.split(delim)
-            tool_to_zone_dict[sp_line[0]] = sp_line[1]
+            tool_score_dict[sp_line[0]] = sp_line[1]
             tools.append(sp_line[0])
         else:
             tools.append(line)
     f.close()
-    return tools, tool_to_zone_dict
+    return tools, tool_score_dict
 
 
+#상상코딩3
 def parse_cooking_act_dict(file_path):
     file_exists = os.path.exists(file_path)
     if not file_exists:
@@ -41,18 +43,17 @@ def parse_cooking_act_dict(file_path):
     f = open(file_path, 'r', encoding='utf-8')
     delim = ">"
     act_dict = {}
-    act_to_zone_dict = {}
+    act_score_dict = {}
     for line in f.readlines():
         line = line.replace("\n", "")
         if delim in line:
             sp_line = line.split(delim)
             act_dict[sp_line[0]] = sp_line[1]
-            if len(sp_line) == 3:
-                act_to_zone_dict[sp_line[1]] = 'f'
+            act_score_dict[sp_line[1]] = sp_line[2]
         else:
             act_dict[line] = line
     f.close()
-    return act_dict, act_to_zone_dict
+    return act_dict, act_score_dict
 
 
 def parse_act_to_tool_dict(file_path):
@@ -296,22 +297,42 @@ def find_objective(node, seq_list):
     return seq_list
 
 
+# 상상코딩4
 # 화구존, 전처리존 분리
-def select_cooking_zone(sequence):
-    fire_act_check = False
-    fire_tool_check = False
-    if sequence['act'] in zone_dict['act'].keys():
-        fire_act_check = True
-    for tool in sequence['tool']:
-        if tool in zone_dict['tool'].keys():
-            fire_tool_check = True
+def select_cooking_zone(sequence_list):
+    score_board = []
+    period_check = []
+    for i in range(0, len(sequence_list)):
+        act_fire_score = 0
+        tool_fire_score = 0
+        if sequence_list[i]['act'] in zone_dict['act'].keys():
+            act_fire_score = int(zone_dict['act'].get(sequence_list[i]['act']))
+        for tool in sequence_list[i]['tool']:
+            if tool in zone_dict['tool'].keys():
+                tool_fire_score = int(zone_dict['tool'].get(tool))
 
-    if fire_act_check or fire_tool_check:
-        sequence['zone'] = "화구존"
-    else:
-        sequence['zone'] = "전처리존"
+        score_board[i] = act_fire_score + tool_fire_score
+        if score_board[i] >= 0.7:
+            sequence_list[i]['zone'] = "화구존"
+        else:
+            sequence_list[i]['zone'] = "전처리존"
 
-    return sequence
+        if sequence_list[i]['sentence'][-1] == '.' or sequence_list[i]['sentence'][-3] == '.':
+            period_check[i] = True
+        else:
+            period_check[i] = False
+
+    keep_i = -1
+    while keep_i == len(sequence_list[i] - 1):
+        for i in range(keep_i + 1, len(sequence_list)):
+            if period_check[i] == False:
+                if score_board[i] >= 0.2:
+                    sequence_list[i]['zone'] = "화구존"
+            elif period_check[i] == True:
+                keep_i = i
+                break
+        
+    return sequence_list
 
 
 # 전성 어미를 통한 동작 추출
@@ -474,7 +495,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, rec
                             if len(s_ele) > len(seasoning):
                                 seasoning = s_ele
 
-                    if seasoning != "" and seasoning not in seq_dict['seasoning']: # 상상코딩 - 시즈닝 중복 제거
+                    if seasoning != "" and seasoning not in seq_dict['seasoning']: # 상상코딩1 - 시즈닝 중복 제거
                         seq_dict['seasoning'].append(seasoning)
 
                     # 식자재 판단
@@ -529,10 +550,6 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, rec
 
     for sequence in sequence_list:
         sequence['act'] = cooking_act_dict[sequence['act']]
-
-    # 화구존/전처리존 분리
-    for sequence in sequence_list:
-        select_cooking_zone(sequence)
 
     if recipe_mode == 'srl':
         # 목적어를 필수로 하는 조리 동작 처리
@@ -727,12 +744,12 @@ def main():
     volume_list = get_list_from_file("labeling/volume.txt")
     time_list = get_list_from_file("labeling/time.txt")
     temperature_list = get_list_from_file("labeling/temperature.txt")
-    cooking_act_dict, act_to_zone_dict = parse_cooking_act_dict("labeling/cooking_act.txt")
+    cooking_act_dict, act_score_dict = parse_cooking_act_dict("labeling/cooking_act.txt")
     act_to_tool_dict = parse_act_to_tool_dict("labeling/act_to_tool.txt")
-    tool_list, tool_to_zone_dict = parse_tool_dict("labeling/tool.txt")
+    tool_list, tool_score_dict = parse_tool_dict("labeling/tool.txt")
     idiom_dict = parse_idiom_dict("labeling/idiom.txt")
 
-    zone_dict = {'act': act_to_zone_dict, 'tool': tool_to_zone_dict}
+    zone_dict = {'act': act_score_dict, 'tool': tool_score_dict}
 
     # recipe extraction
     file_path = input("레시피 파일 경로를 입력해 주세요 : ")
@@ -770,6 +787,8 @@ def main():
     node_list = json_object.get("return_object").get("sentence")
     sequence_list = parse_node_section(recipe_mode, node_list)
     sequence_list = find_sentence(node_list, sequence_list)
+    # 화구존/전처리존 분리
+    sequence_list = select_cooking_zone(sequence_list)
 
     print(str(json.dumps(sequence_list, ensure_ascii=False)))
 
