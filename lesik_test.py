@@ -720,7 +720,7 @@ def find_sentence(node_list, sequence_list):
 
 def main():
     # static params
-    open_api_url = "https://aiopen.etri.re.kr:8000/WiseNLU"
+    open_api_url = "http://aiopen.etri.re.kr:8000/WiseNLU"
     access_key = "84666b2d-3e04-4342-890c-0db401319568"
     analysis_code = "SRL"
 
