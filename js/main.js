@@ -1,21 +1,17 @@
-var sample_recipe = "간장 계란밥(2인분)\n" +
-    "[기본 재료]\n" +
-    "달걀 2개\n" +
-    "밥 2공기\n" +
-    "김가루 적당량\n" +
-    "간장 1큰술\n" +
-    "버터 2큰술\n" +
-    "통깨 약간\n" +
-    "쪽파 (대파로 대체 또는 생략 가능) 2줄기\n" +
-    "참기름(또는 들기름) 1큰술 \n" +
-    "[조리방법]\n" +
-    "1. 달군 팬에 버터를 두른 후 달걀프라이를 겉면이 타듯이 노릇하게 구워주세요.\n" +
-    "2. 쪽파는 송송 썰어주세요.\n" +
-    "3. 그릇에 따뜻한 밥을 담은 후 달걀프라이를 얹어주세요.\n" +
-    "4. 간장과 참기름을 둘러주고 통깨와 쪽파, 김가루를 뿌려 완성해주세요.\n"
+$(document).on('click', "#refresh-btn", function(){
+    $.get("/refresh")
+    .done(function(data) {
+        $("#recipe-box").val(data);
+    })
+    .fail(function(xhr, status, error) {
+      alert(xhr.responseText);
+    });
 
-$(document).ready(function(){
-  $("#recipe-box").val(sample_recipe);
+  return false;
+});
+
+$(document).on('click', "#manual", function(){
+    window.open("static/manual.html", "a", "width=800, height=800, left=100, top=50");
 });
 
 $(document).on('submit', '#insert-recipe', function() {
@@ -40,11 +36,11 @@ $(document).on('submit', '#insert-recipe', function() {
           }
 
           if(j !== sequence['ingre'].length - 1){
-              insertTr += "\n"
+              insertTr += "<br>"
           }
         }
         insertTr += "</td>";
-        insertTr += "<td>" + sequence['seasoning'].join(",") + "</td>";
+        insertTr += "<td>" + sequence['seasoning'].join("<br>") + "</td>";
         insertTr += "<td>" + sequence['act'] + "</td>";
 
         insertTr += "<td><input type='checkbox' form='save-sentence' name='save_sentence' value='";
@@ -101,4 +97,9 @@ $(document).on('submit', "#save-sentence", function() {
     });
 
   return false;
+});
+
+$(document).on('submit', "#insert-recipe", function() {
+  var checkbox = $("input[name=srl_mode]");
+  checkbox.val(checkbox.is(":checked"));
 });
