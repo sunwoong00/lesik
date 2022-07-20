@@ -11,15 +11,26 @@
 
 <body>
   <h2>레시피 입력</h2>
+  <button style="float:right;" id="manual" href="#">레시피 입력 방법</button>
+  <div style="clear:both;"></div>
   <form id="insert-recipe" class="ajax-form" action="/recipe" method="POST">
-    <textarea id="recipe-box" name="recipe"></textarea>
+    <textarea id="recipe-box" name="recipe">{{recipe}}</textarea>
+    <div class="empty-block"></div>
+    <label style="font-size:0.8em;" for="refresh-btn">레시피 변경</label>
+    <button type="button" id="refresh-btn"><img src="static/image/refresh_btn.png" height ="10vw" width="10vw" /></button>
+    <div class="empty-block"></div>
+    <div style="display:inline-block">
+      <label style="font-size:0.8em;" for="checkbox-recipe_srl-mode">개체명 인식 모드</label>
+      <select id="select-recipe_entity-mode" name="entity_mode">
+        <option value="etri" selected>ETRI</option>
+        <!--<option value="kobert">ko-BERT</option>-->
+      </select>
+    </div>
+    <div class="empty-block"></div>
+    <label style="font-size:0.8em;" for="checkbox-recipe_srl-mode">SRL 활성화</label>
+    <input id="checkbox-recipe_srl-mode" type="checkbox" name="srl_mode">
     <div class="empty-block"></div>
     <input type="submit" value="디지털 레시피 생성">
-    <div class="empty-block"></div>
-    <select name="recipe_mode">
-      <option value="srl">SRL</option>
-      <option value="base" selected>기본</option>
-    </select>
     <div class="empty-block"></div>
   </form>
   <div id="info"></div>
