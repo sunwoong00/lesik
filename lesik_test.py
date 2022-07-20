@@ -14,7 +14,6 @@ def get_list_from_file(file_path):
     return tmp_list
 
 
-# 상상코딩2
 def parse_tool_dict(file_path):
     file_exists = os.path.exists(file_path)
     if not file_exists:
@@ -35,7 +34,6 @@ def parse_tool_dict(file_path):
     return tools, tool_score_dict
 
 
-#상상코딩3
 def parse_cooking_act_dict(file_path):
     file_exists = os.path.exists(file_path)
     if not file_exists:
@@ -298,33 +296,50 @@ def find_objective(node, seq_list):
     return seq_list
 
 
+# 상상코딩5
+# 동사에 딸려있는 부사구까지 출력
+def find_adverb(node, sequence_list):
+    for m_ele in node['morp']:
+        m_id = int(m_ele['id'])
+        if m_ele['type'] == 'VV' and m_ele['morp'][m_id - 1] == "JKB":
+            for i in range(0, len(sequence_list)):
+                if sequence_list[i]['start_id'] <= m_id <= sequence_list[i]['end_id']:
+                    for w_ele in node['word']:
+                        if w_ele['begin'] <= m_id <= w_ele['end']:
+                            w_id = w_ele['id']
+                            sequence_list[i]['sentence'] = w_ele[w_id - 1] + sequence_list[i]['sentence']
+    
+    return 0
+
+
 # 상상코딩4
 # 화구존, 전처리존 분리
 def select_cooking_zone(sequence_list):
     score_board = []
     period_check = []
     for i in range(0, len(sequence_list)):
-        act_fire_score = 0
-        tool_fire_score = 0
+        act_fire_score = 0.0
+        tool_fire_score = 0.0
         if sequence_list[i]['act'] in zone_dict['act'].keys():
-            act_fire_score = int(zone_dict['act'].get(sequence_list[i]['act']))
+            act_fire_score = float(zone_dict['act'].get(sequence_list[i]['act']))
         for tool in sequence_list[i]['tool']:
             if tool in zone_dict['tool'].keys():
-                tool_fire_score = int(zone_dict['tool'].get(tool))
+                tool_fire_score = float(zone_dict['tool'].get(tool))
 
-        score_board[i] = act_fire_score + tool_fire_score
+        score_board.append(act_fire_score + tool_fire_score)
         if score_board[i] >= 0.7:
             sequence_list[i]['zone'] = "화구존"
         else:
             sequence_list[i]['zone'] = "전처리존"
-
+    '''
         if sequence_list[i]['sentence'][-1] == '.' or sequence_list[i]['sentence'][-3] == '.':
-            period_check[i] = True
+            period_check.append(True)
         else:
-            period_check[i] = False
+            period_check.append(False)
 
+    
     keep_i = -1
-    while keep_i == len(sequence_list[i] - 1):
+    while keep_i != len(sequence_list[i] - 1):
         for i in range(keep_i + 1, len(sequence_list)):
             if period_check[i] == False:
                 if score_board[i] >= 0.2:
@@ -332,7 +347,7 @@ def select_cooking_zone(sequence_list):
             elif period_check[i] == True:
                 keep_i = i
                 break
-        
+    '''
     return sequence_list
 
 
@@ -383,13 +398,19 @@ def find_omitted_ingredient(node, seq_list, ingredient_dict):
 def remove_redundant_sequence(node, seq_list):
     is_redundant = False
     del_seq_list = []
-    redundant_cooking_act_list = ['넣', '놓']
-    critical_type_dict = {'NNG', 'VA', 'XPN', 'SP'}
+    critical_type_dict = {'NNG', 'NNP', 'VA', 'XPN', 'SP'}
 
     for morp in node['morp']:
         if morp['type'] == 'VV' and is_redundant is False:
             # 불필요한 조리 동작일 경우
-            if morp['lemma'] in redundant_cooking_act_list:
+            if morp['lemma'] in cooking_act_dict:
+                continue
+            next_morp_id = int(morp['id']) + 1
+            if next_morp_id == len(node['morp']):
+                continue
+            
+            next_morp = node['morp'][next_morp_id]
+            if next_morp['type'] == 'EC':
                 is_redundant = True
                 continue
 
@@ -408,7 +429,8 @@ def remove_redundant_sequence(node, seq_list):
                     if seq_list[i]['start_id'] <= morp_id <= seq_list[i]['end_id']:
                         merge_dictionary(seq_list[i - 1], seq_list[i])
                         seq_list[i]['start_id'] = seq_list[i - 1]['start_id']
-                        del_seq_list.append(seq_list[i - 1])
+                        if seq_list[i - 1] not in del_seq_list:
+                            del_seq_list.append(seq_list[i - 1])
                         is_redundant = False
                         break
 
@@ -738,7 +760,8 @@ def find_sentence(node_list, sequence_list):
 def main():
     # static params
     open_api_url = "http://aiopen.etri.re.kr:8000/WiseNLU"
-    access_key = "84666b2d-3e04-4342-890c-0db401319568"
+    access_key = "0714b8fe-21f0-44f9-b6f9-574bf3f4524a"
+    # access_key = "84666b2d-3e04-4342-890c-0db401319568"
     analysis_code = "SRL"
 
     # recipe extraction
