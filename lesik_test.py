@@ -443,7 +443,7 @@ def remove_redundant_sequence(node, seq_list):
 
 def verify_coref(coref_dict, node, word_id):
     word = node['word'][word_id]['text']
-    coref_keyword_list = ['밑간', '재료', '소스', '육수', '양념']
+    coref_keyword_list = ['밑간', '소스', '육수', '양념']
     for keyword in coref_keyword_list:
         if keyword in word:
             coref_cand_list = []
@@ -503,7 +503,10 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
                     sub_ingredient_dict = verify_coref(coref_dict, node, int(w_ele['id']))
                     if sub_ingredient_dict is not None:
                         for key, value in sub_ingredient_dict.items():
-                            seq_dict['seasoning'].append(key + "(" + value + ")")
+                            if len(value) != 0:
+                                seq_dict['seasoning'].append(key + "(" + value + ")")
+                            else:
+                                seq_dict['seasoning'].append(key)
 
                     # 조리 도구 판단
                     for t_ele in tool_list:
