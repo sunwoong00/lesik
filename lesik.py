@@ -859,9 +859,6 @@ def make_recipe(original_recipe, entity_mode, is_srl):
     json_object = json.loads(response.data)
     node_list = json_object.get("return_object").get("sentence")
     sequence_list = parse_node_section(entity_mode, is_srl, node_list)
-    sequence_list = find_sentence(node_list, sequence_list)
-    # 화구존/전처리존 분리
-    sequence_list = select_cooking_zone(sequence_list)
     return sequence_list
 
 
