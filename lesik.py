@@ -11,10 +11,10 @@ import pymysql
 def insert_recipe(recipe_name, sentence, json_obj):
     sql_format = "INSERT INTO 0_sentences (recipe_name, sentence, json) VALUES('{recipe_name}', '{sentence}', '{json}')"
     conn = pymysql.connect(
-        host='lesik-db.cvjht8t9uwzy.ap-northeast-2.rds.amazonaws.com',
+        host='lesik-db.coqeactzlntd.ap-northeast-2.rds.amazonaws.com',
         port=3306,
-        user='lesik_2022',
-        password='qnstjrgkwk10rodmlfptlvl!',
+        user='lesik',
+        password='2022_lesik!',
         db='lesik_main',
     )
 
@@ -326,15 +326,29 @@ def find_objective(node, seq_list):
 def find_adverb(node, sequence_list):
     for m_ele in node['morp']:
         m_id = int(m_ele['id'])
-        if m_ele['type'] == 'VV' and m_ele['morp'][m_id - 1] == "JKB":
+        if m_id == 0:
+            continue
+        prev_morp = node['morp'][m_id - 1]
+        if m_ele['type'] == 'VV' and m_ele['lemma'] in cooking_act_dict and prev_morp['type'] == "JKB":
             for i in range(0, len(sequence_list)):
-                if sequence_list[i]['start_id'] <= m_id <= sequence_list[i]['end_id']:
+                sequence = sequence_list[i]
+                if sequence['start_id'] <= m_id <= sequence['end_id']:
                     for w_ele in node['word']:
-                        if w_ele['begin'] <= m_id <= w_ele['end']:
-                            w_id = w_ele['id']
-                            sequence_list[i]['sentence'] = w_ele[w_id - 1] + sequence_list[i]['sentence']
+                        w_begin = int(w_ele['begin'])
+                        w_end = int(w_ele['end'])
+                        if w_begin <= int(prev_morp['id']) <= w_end:
+                            chk_morp_list = node['morp'][w_begin:w_end + 1]
+                            for chk_morp in chk_morp_list:
+                                for j in range(0, len(sequence['ingre'])):
+                                    if chk_morp['lemma'] in sequence['ingre'][j]:
+                                        sequence['ingre'].remove(sequence['ingre'][j])
+                                for k in range(0, len(sequence['seasoning'])):
+                                    if chk_morp['lemma'] in sequence['seasoning'][k]:
+                                        sequence['seasoning'].remove(sequence['seasoning'][k])
+                            sequence_list[i]['act'] = node['word'][int(w_ele['id'])]['text'] + " " + sequence_list[i][
+                                'act']
 
-    return 0
+    return sequence_list
 
 
 # 상상코딩4
@@ -468,14 +482,14 @@ def remove_redundant_sequence(node, seq_list):
 
 def verify_coref(coref_dict, node, word_id):
     word = node['word'][word_id]['text']
-    coref_keyword_list = ['밑간', '소스', '육수', '양념']
+    coref_keyword_list = ['밑간', '재료', '소스', '육수', '양념']
     for keyword in coref_keyword_list:
         if keyword in word:
             coref_cand_list = []
             for coref_key in coref_dict.keys():
                 if coref_key == '기본재료':
                     continue
-                if keyword in coref_key:
+                if keyword in coref_key and coref_dict[coref_key] != {}:
                     coref_cand_list.append(coref_key)
 
             coref_cand = None
@@ -514,7 +528,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
             # 조리 동작 판단
             if act in cooking_act_dict:
                 # 레시피 시퀀스 6가지 요소
-                seq_dict = {'cond': "", 'act': act, 'tool': [], 'ingre': [], 'seasoning': [], 'volume': [],
+                seq_dict = {'duration': "", 'act': act, 'tool': [], 'ingre': [], 'seasoning': [], 'volume': [],
                             'zone': "", "start_id": prev_seq_id + 1, "end_id": act_id, "sentence": ""}
 
                 # co-reference 및 dictionary를 통해 word에서 요소 추출
@@ -539,14 +553,15 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
                             seq_dict['tool'].append(t_ele)
 
                     # 시즈닝 판단
-                    seasoning = ""
-                    for s_ele in seasoning_list:
-                        if s_ele in w_ele['text']:
-                            if len(s_ele) > len(seasoning):
-                                seasoning = s_ele
+                    if entity_mode != 'koelectra':
+                        seasoning = ""
+                        for s_ele in seasoning_list:
+                            if s_ele in w_ele['text']:
+                                if len(s_ele) > len(seasoning):
+                                    seasoning = s_ele
 
-                    if seasoning != "" and seasoning not in seq_dict['seasoning']:  # 상상코딩 - 시즈닝 중복 제거
-                        seq_dict['seasoning'].append(seasoning)
+                        if seasoning != "" and seasoning not in seq_dict['seasoning'] and seasoning not in ingredient_dict.keys():
+                            seq_dict['seasoning'].append(seasoning)
 
                     # 식자재 판단
                     ingredient = ""
@@ -554,8 +569,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
                         if i_ele in w_ele['text']:
                             if len(i_ele) > len(ingredient):
                                 ingredient = i_ele
-                    if ingredient != "" and ingredient not in seq_dict['seasoning'] and ingredient not in seq_dict[
-                        'ingre']:
+                    if ingredient != "" and ingredient not in seq_dict['seasoning'] and ingredient not in seq_dict['ingre']:
                         seq_dict['ingre'].append(ingredient)
 
                 # 조리 도구 명시 되어 있지 않을 때 조리 행위에서 도구 유추
@@ -566,26 +580,60 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
                 prev_seq_id = act_id
 
     # 개체명 추출을 이용한 시퀀스의 요소 보완
-    if entity_mode == 'kobert':
+    if entity_mode == 'koelectra':
+        koelectra_node = extract_ner_from_kobert(node['text'])
+        for sequence in seq_list:
+            seq_start_offset = len(" ".join(list(map(lambda word: word['text'],
+                                                     filter(lambda word: word['begin'] < sequence['start_id'],
+                                                            node['word'])))))
+            seq_end_offset = len(" ".join(list(map(lambda word: word['text'],
+                                                   filter(lambda word: word['begin'] <= sequence['end_id'],
+                                                          node['word'])))))
+            for ne in koelectra_node['NE']:
+                print(ne['text'], ne['begin'], ne['end'])
+                if ne['begin'] >= seq_start_offset and ne['end'] < seq_end_offset:
+                    # 시즈닝과 식자재 중복 제거
+                    if ne['type'] in ingredient_type_list:
+                        if ne['text'] not in sequence['ingre'] and ne['text'] not in sequence['seasoning']:
+                            # 개체명 인식을 통해 추출된 재료에 종속된 재료 삭제
+                            sub_ord_ingredient_list = []
+                            for ingredient in sequence['ingre']:
+                                if ingredient in ne['text']:
+                                    sub_ord_ingredient_list.append(ingredient)
+
+                            for ingredient in sub_ord_ingredient_list:
+                                sequence['ingre'].remove(ingredient)
+
+                            sequence['ingre'].append(ne['text'])
+                    if ne['type'] == 'CV_SEASONING':
+                        print("SEASONING : " + ne['text'])
+                        if ne['text'] not in sequence['seasoning']:
+                            sequence['seasoning'].append(ne['text'])
+                    if ne['type'] == 'TI_DURATION':
+                        sequence['duration'] = ne['text']
+    else:
         for sequence in seq_list:
             for ne in node['NE']:
-                if ne['type'] in ingredient_type_list and ne['begin'] >= sequence['start_id'] and ne['end'] < \
-                        sequence['end_id']:
-                    # 시즈닝과 식자재 중복 제거
-                    if ne['text'] not in sequence['ingre']:
-                        if ne['text'] in seasoning_list:
-                            break
+                if ne['begin'] >= sequence['start_id'] and ne['end'] < sequence['end_id']:
+                    if ne['type'] in ingredient_type_list:
+                        # 시즈닝과 식자재 중복 제거
+                        if ne['text'] not in sequence['ingre']:
+                            if ne['text'] in seasoning_list:
+                                break
 
-                        # 개체명 인식을 통해 추출된 재료에 종속된 재료 삭제
-                        sub_ord_ingredient_list = []
-                        for ingredient in sequence['ingre']:
-                            if ingredient in ne['text']:
-                                sub_ord_ingredient_list.append(ingredient)
+                            # 개체명 인식을 통해 추출된 재료에 종속된 재료 삭제
+                            sub_ord_ingredient_list = []
+                            for ingredient in sequence['ingre']:
+                                if ingredient in ne['text']:
+                                    sub_ord_ingredient_list.append(ingredient)
 
-                        for ingredient in sub_ord_ingredient_list:
-                            sequence['ingre'].remove(ingredient)
+                            for ingredient in sub_ord_ingredient_list:
+                                sequence['ingre'].remove(ingredient)
 
-                        sequence['ingre'].append(ne['text'])
+                            sequence['ingre'].append(ne['text'])
+                    else:
+                        if ne['type'] == 'TI_DURATION':
+                            sequence['duration'] = ne['text']
 
     # 불필요한 시퀀스 제거 및 다음 시퀀스에 병합
     sequence_list = remove_redundant_sequence(node, seq_list)
@@ -612,67 +660,57 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
         # 조건문 처리함수추가
         sequence_list = find_condition(node, sequence_list)
 
+    # sentence 찾기
+    sequence_list = find_sentence(node, sequence_list)
+
+    # 화구존/전처리존 분리
+    sequence_list = select_cooking_zone(sequence_list)
+
+    # 동작에 딸려오는 부사구 출력
+    sequence_list = find_adverb(node, sequence_list)
+
     return sequence_list
 
 
-def extract_ingredient_from_kobert(node_list):
+def extract_ner_from_kobert(sentence):
     kobert_api_url = "http://ec2-54-180-98-174.ap-northeast-2.compute.amazonaws.com:5000"
-    recipe_text = "\n".join(list(map(lambda node: node['text'], node_list)))
 
     http = urllib3.PoolManager()
     response = http.request(
         "POST",
         kobert_api_url,
         headers={"Content-Type": "application/text; charset=UTF-8"},
-        body=recipe_text.encode('utf-8')
+        body=sentence.encode('utf-8')
     )
 
     json_object = json.loads(response.data)
 
-    kobert_pre_ingre_dict = json_object.get("pre_ingre_dict")
-    kobert_ingredient_list = kobert_pre_ingre_dict.get("ingredient")
-    kobert_seasoning_list = kobert_pre_ingre_dict.get("seasoning")
-
-    ingredient_dict = {}
-    for line in kobert_ingredient_list:
-        ingredient, volume = parse_parenthesis(line)
-        if volume is None:
-            volume = ""
-
-        if ingredient is not None:
-            ingredient_dict[ingredient] = volume
-
-    for line in kobert_seasoning_list:
-        seasoning, volume = parse_parenthesis(line)
-        if volume is None:
-            volume = ""
-        if seasoning is not None:
-            ingredient_dict[seasoning] = volume
-            seasoning_list.append(seasoning)
-
-    return ingredient_dict, seasoning_list
+    return json_object
 
 
 def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
-    volume_node = None
+    volume_node = []
     ingredient_list = []
 
     for ne in node['NE']:
         if ne['type'] in volume_type_list:
-            volume_node = ne
+            volume_node.append(ne)
         if ne['type'] in ingredient_type_list:
-            if volume_node is not None and ne['begin'] < volume_node['end']:
+            if volume_node and ne['begin'] < volume_node[-1]['end']:
                 continue
             ingredient_list.append(ne)
-
-    for word in node['word']:
-        for volume in volume_list:
-            if volume in word['text']:
-                volume_node = word
-
+    if not volume_node:
+        if 'word' in node:
+            for word in node['word']:
+                for volume in volume_list:
+                    if volume in word['text']:
+                        volume_node.append(word)
     sub_ingredient_dict = {}
     if volume_node is not None:
-        sub_ingredient_dict = {ne['text']: volume_node['text'] for ne in ingredient_list}
+        volume_node_list = set()
+        for v_node in volume_node:
+            volume_node_list.add(v_node['text'])
+        sub_ingredient_dict = {ne['text']: "".join(list(map(lambda v: v, volume_node_list))) for ne in ingredient_list}
 
     return sub_ingredient_dict
 
@@ -681,18 +719,12 @@ def parse_node_section(entity_mode, is_srl, node_list):
     coref_dict = {}
     volume_type_list = ["QT_SIZE", "QT_COUNT", "QT_OTHERS", "QT_WEIGHT", "QT_PERCENTAGE"]
     ingredient_type_list = ["CV_FOOD", "CV_DRINK", "PT_GRASS", "PT_FRUIT", "PT_OTHERS", "PT_PART", "AM_FISH",
-                            "AM_OTHERS"]
+                            "AM_OTHERS", "CV_INGREDIENT", "CV_SEASONING"]
     ingredient_dict = {}
     sequence_list = []
     is_ingredient = True
     sub_type = None
     remove_node_list = []
-
-    if entity_mode == "kobert":
-        ingredient_dict, kobert_seasoning_list = extract_ingredient_from_kobert(node_list)
-
-        if not kobert_seasoning_list:
-            seasoning_list.extend(kobert_seasoning_list)
 
     for node in node_list:
         if "[" in node['text'] and "]" in node['text']:
@@ -703,11 +735,17 @@ def parse_node_section(entity_mode, is_srl, node_list):
                 coref_dict[sub_type] = {}
             continue
         if is_ingredient:
-            if entity_mode == 'kobert':
-                continue
+            if entity_mode == 'koelectra':
+                koelectra_node = extract_ner_from_kobert(node['text'])
+                if koelectra_node is not None:
+                    sub_ingredient_dict = extract_ingredient_from_node(ingredient_type_list, volume_type_list, koelectra_node)
+                else:
+                    sub_ingredient_dict = None
             else:
                 sub_ingredient_dict = extract_ingredient_from_node(ingredient_type_list, volume_type_list, node)
-                if sub_type is not None:
+
+            if sub_ingredient_dict:
+                if sub_type:
                     coref_dict[sub_type].update(sub_ingredient_dict)
                 ingredient_dict.update(sub_ingredient_dict)
         else:
@@ -731,6 +769,9 @@ def parse_node_section(entity_mode, is_srl, node_list):
                 for ingre in seq_dict['ingre']:
                     if ingre in ingredient_dict:
                         seq_dict['volume'].append(ingredient_dict.get(ingre))
+                for seasoning in seq_dict['seasoning']:
+                    if seasoning in ingredient_dict:
+                        seq_dict['volume'].append(ingredient_dict.get(seasoning))
                 sequence_list.append(seq_dict)
 
     for node in remove_node_list:
@@ -738,88 +779,46 @@ def parse_node_section(entity_mode, is_srl, node_list):
     return sequence_list
 
 
-def find_sentence(node_list, sequence_list):
-    is_dir = False
-    for node in node_list:
-        if node['text'] == '[조리방법]':
-            is_dir = True
+def find_sentence(node, sequence_list):
+    prev_seq_id = 0
+    for i in range(0, len(sequence_list)):
+        if sequence_list[i]['sentence'] != "":
             continue
-        if not is_dir:
-            continue
+        start_id = sequence_list[i]['start_id']
+        end_id = sequence_list[i]['end_id']
+        if start_id < prev_seq_id:
+            break
 
-        prev_seq_id = 0
-        for i in range(0, len(sequence_list)):
-            if sequence_list[i]['sentence'] != "":
-                continue
-            start_id = sequence_list[i]['start_id']
-            end_id = sequence_list[i]['end_id']
-            if start_id < prev_seq_id:
-                break
+        next_seq_id = 0
+        if i < len(sequence_list) - 1:
+            next_seq_id = sequence_list[i + 1]['start_id']
 
-            next_seq_id = 0
-            if i < len(sequence_list) - 1:
-                next_seq_id = sequence_list[i + 1]['start_id']
+        word_list = []
+        extra_word_list = []
+        for w_ele in node['word']:
+            text = w_ele['text']
+            begin = w_ele['begin']
+            end = w_ele['end']
+            if start_id <= begin <= end_id:
+                word_list.append(text)
+            else:
+                if end_id < end:
+                    if next_seq_id < end_id or end < next_seq_id:
+                        if not extra_word_list:
+                            extra_word_list.append("(")
+                        extra_word_list.append(text)
 
-            word_list = []
-            extra_word_list = []
-            for w_ele in node['word']:
-                text = w_ele['text']
-                begin = w_ele['begin']
-                end = w_ele['end']
-                if start_id <= begin <= end_id:
-                    word_list.append(text)
-                else:
-                    if end_id < end:
-                        if next_seq_id < end_id or end < next_seq_id:
-                            if not extra_word_list:
-                                extra_word_list.append("(")
-                            extra_word_list.append(text)
-
-            sequence_list[i]['sentence'] = " ".join(word_list)
-            sequence_list[i]['sentence'] = delete_bracket(sequence_list[i]['sentence'])
-            if extra_word_list:
-                extra_word_list.append(")")
-                sequence_list[i]['sentence'] += " ".join(extra_word_list)
-            prev_seq_id = sequence_list[i]['end_id']
+        sequence_list[i]['sentence'] = " ".join(word_list)
+        sequence_list[i]['sentence'] = delete_bracket(sequence_list[i]['sentence'])
+        if extra_word_list:
+            extra_word_list.append(")")
+            sequence_list[i]['sentence'] += " ".join(extra_word_list)
+        prev_seq_id = sequence_list[i]['end_id']
 
     return sequence_list
 
 
-app = Flask(__name__)
-
-
-@app.route('/')
-@app.route('/index')
-def index():
-    recipe_dir = "static/recipe/ko"
-    recipe_list = os.listdir(recipe_dir)
-    recipe_idx = random.randrange(0, len(recipe_dir))
-    recipe_text_list = get_list_from_file(recipe_dir + "/" + recipe_list[recipe_idx])
-    return render_template("index.html", recipe="\n".join(recipe_text_list))
-
-
-@app.route('/refresh')
-def refresh():
-    recipe_dir = "static/recipe/ko"
-    recipe_list = os.listdir(recipe_dir)
-    recipe_idx = random.randrange(0, len(recipe_dir))
-    recipe_text_list = get_list_from_file(recipe_dir + "/" + recipe_list[recipe_idx])
-    return make_response("\n".join(recipe_text_list))
-
-
-@app.route("/recipe", methods=['POST'])
-def recipe():
-    is_srl = False
-    entity_mode = "etri"
-    original_recipe = None
-    if request.method == 'POST':
-        original_recipe = request.form.get("recipe")
-        entity_mode = request.form.get("entity_mode")
-        is_srl = request.form.get("srl_mode")
-
-    if original_recipe is None:
-        return make_response("Recipe is Blank", 406)
-
+def make_recipe(original_recipe, entity_mode, is_srl):
     # static params
     open_api_url = "http://aiopen.etri.re.kr:8000/WiseNLU"
     access_key = "0714b8fe-21f0-44f9-b6f9-574bf3f4524a"
@@ -828,7 +827,7 @@ def recipe():
     # get cooking component list & dictionary from files
     global seasoning_list, volume_list, time_list, temperature_list, cooking_act_dict, act_to_tool_dict, tool_list, idiom_dict, zone_dict
     seasoning_list = []
-    if entity_mode != 'kobert':
+    if entity_mode != 'koelectra':
         seasoning_list = get_list_from_file("labeling/seasoning.txt")
     volume_list = get_list_from_file("labeling/volume.txt")
     time_list = get_list_from_file("labeling/time.txt")
@@ -861,12 +860,61 @@ def recipe():
     node_list = json_object.get("return_object").get("sentence")
     sequence_list = parse_node_section(entity_mode, is_srl, node_list)
     sequence_list = find_sentence(node_list, sequence_list)
+    # 화구존/전처리존 분리
+    sequence_list = select_cooking_zone(sequence_list)
+    return sequence_list
+
+
+app = Flask(__name__)
+
+
+@app.route('/')
+@app.route('/index')
+def index():
+    recipe_dir = "static/recipe/ko"
+    recipe_list = os.listdir(recipe_dir)
+    recipe_idx = random.randrange(0, len(recipe_dir))
+    recipe_text_list = get_list_from_file(recipe_dir + "/" + recipe_list[recipe_idx])
+    return render_template("index.html", recipe="\n".join(recipe_text_list))
+
+
+@app.route('/prompt', methods=['POST'])
+def prompt():
+    recipe_json = None
+    if request.method == 'POST':
+        recipe_json = request.form.get("recipe")
+    print(recipe_json)
+    return render_template("prompt.html", recipe=recipe_json)
+
+
+@app.route('/refresh')
+def refresh():
+    recipe_dir = "static/recipe/ko"
+    recipe_list = os.listdir(recipe_dir)
+    recipe_idx = random.randrange(0, len(recipe_dir))
+    recipe_text_list = get_list_from_file(recipe_dir + "/" + recipe_list[recipe_idx])
+    return make_response("\n".join(recipe_text_list))
+
+
+@app.route("/recipe", methods=['POST'])
+def recipe():
+    is_srl = False
+    entity_mode = "etri"
+    original_recipe = None
+    if request.method == 'POST':
+        original_recipe = request.form.get("recipe")
+        entity_mode = request.form.get("entity_mode")
+        is_srl = request.form.get("srl_mode")
+
+    if original_recipe is None:
+        return make_response("Recipe is Blank", 406)
+
+    sequence_list = make_recipe(original_recipe, entity_mode, is_srl)
 
     if not sequence_list:
         return make_response("레시피 분석에 실패했습니다", 406)
 
     response = json.dumps(sequence_list, ensure_ascii=False)
-    print(response)
     return make_response(response)
 
 

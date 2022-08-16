@@ -554,7 +554,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
                 prev_seq_id = act_id
 
     # 개체명 추출을 이용한 시퀀스의 요소 보완
-    if entity_mode == 'kobert':
+    if entity_mode != 'kobert':
         for sequence in seq_list:
             for ne in node['NE']:
                 if ne['type'] in ingredient_type_list and ne['begin'] >= sequence['start_id'] and ne['end'] < \

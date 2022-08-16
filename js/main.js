@@ -19,6 +19,7 @@ $(document).on('submit', '#insert-recipe', function() {
 
   $.post($this.attr('action'), $this.serialize())
     .done(function(data) {
+        $("#prompt-recipe_json").val(data);
       $("#memDiv").empty();
       var sequence_list = JSON.parse(data);
       for (var i = 0; i < sequence_list.length; i++) {
@@ -26,6 +27,7 @@ $(document).on('submit', '#insert-recipe', function() {
         var insertTr = "";
         insertTr += "<tr>";
         insertTr += "<td>" + sequence['sentence'] + "</td>";
+        insertTr += "<td>" + sequence['duration'] + "</td>";
         insertTr += "<td>" + sequence['zone'] + "</td>";
         insertTr += "<td>" + sequence['tool'].join(",") + "</td>";
         insertTr += "<td>";
@@ -60,7 +62,12 @@ $(document).on('submit', '#insert-recipe', function() {
       }
     })
     .fail(function(xhr, status, error) {
-      alert(xhr.responseText);
+        if(status === 406){
+            alert(xhr.responseText);
+        }else{
+            alert("서버 내부 오류가 발생했습니다.");
+        }
+
     });
 
   return false;

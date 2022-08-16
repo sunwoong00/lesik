@@ -13,6 +13,10 @@
   <h2>레시피 입력</h2>
   <button style="float:right;" id="manual" href="#">레시피 입력 방법</button>
   <div style="clear:both;"></div>
+  <form id="move-to-prompt" style="float:right;" action="/prompt" method="POST">
+    <input id="prompt-recipe_json" type="hidden" name="recipe"/>
+    <input type="submit" value="프롬프트 이동"/>
+  </form>
   <form id="insert-recipe" class="ajax-form" action="/recipe" method="POST">
     <textarea id="recipe-box" name="recipe">{{recipe}}</textarea>
     <div class="empty-block"></div>
@@ -23,7 +27,7 @@
       <label style="font-size:0.8em;" for="checkbox-recipe_srl-mode">개체명 인식 모드</label>
       <select id="select-recipe_entity-mode" name="entity_mode">
         <option value="etri" selected>ETRI</option>
-        <!--<option value="kobert">ko-BERT</option>-->
+        <option value="koelectra">ko-ELECTRA</option>
       </select>
     </div>
     <div class="empty-block"></div>
@@ -37,11 +41,12 @@
   <table>
     <colgroup>
       <col span=1 width="400">
-      <col span=5 width="150">
+      <col span=6 width="150">
     </colgroup>
     <thead>
       <tr>
         <th>원문</th>
+        <th>시간</th>
         <th>설비</th>
         <th>도구</th>
         <th>재료</th>
