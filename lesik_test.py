@@ -590,6 +590,9 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
     for sequence in sequence_list:
         sequence['act'] = cooking_act_dict[sequence['act']]
 
+    # 화구존/전처리존 분리
+    sequence_list = select_cooking_zone(sequence_list)
+
     if is_srl:
         # 목적어를 필수로 하는 조리 동작 처리
         sequence_list = find_objective(node, sequence_list)
@@ -602,9 +605,6 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
     
     # sentence 찾기
     sequence_list = find_sentence(node, sequence_list)
-
-    # 화구존/전처리존 분리
-    sequence_list = select_cooking_zone(sequence_list)
     
     # 동작에 딸려오는 부사구 출력
     sequence_list = find_adverb(node, sequence_list)
@@ -613,7 +613,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
 
 
 def extract_ingredient_from_kobert(node_list):
-    kobert_api_url = "http://ec2-54-180-98-174.ap-northeast-2.compute.amazonaws.com:5000"
+    kobert_api_url = "http://ec2-13-209-68-59.ap-northeast-2.compute.amazonaws.com:5000"
     recipe_text = "\n".join(list(map(lambda node: node['text'], node_list)))
 
     http = urllib3.PoolManager()
@@ -625,6 +625,7 @@ def extract_ingredient_from_kobert(node_list):
     )
 
     json_object = json.loads(response.data)
+    print(json_object);
 
     kobert_pre_ingre_dict = json_object.get("pre_ingre_dict")
     kobert_ingredient_list = kobert_pre_ingre_dict.get("ingredient")
