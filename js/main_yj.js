@@ -43,7 +43,10 @@ $(document).on('submit', '#insert-recipe', function() {
         }
         insertTr += "</td>";
         insertTr += "<td>" + sequence['seasoning'].join("<br>") + "</td>";
-        insertTr += "<td>" + sequence['standard'] + "</td>";
+        if (sequence['standard'].length != 0) {
+          insertTr += "<td>" + sequence['standard'] + "</td>";
+        }
+        
         insertTr += "<td>" + sequence['act'] + "</td>";
 
         insertTr += "<td><input type='checkbox' form='save-sentence' name='save_sentence' value='";
