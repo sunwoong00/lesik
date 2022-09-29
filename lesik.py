@@ -316,7 +316,7 @@ def find_objective(node, seq_list):
                                         is_objective = False
                                         break
 
-                            if is_objective:
+                            if is_objective and word['text'] != "재료를":
                                 sequence['act'] = word['text'] + " " + sequence['act']
     return seq_list
 
@@ -324,6 +324,7 @@ def find_objective(node, seq_list):
 # 상상코딩5
 # 동사에 딸려있는 부사구까지 출력
 def find_adverb(node, sequence_list):
+    no_plus_adverb = ['정도', '크기로', '길이로', '등에']
     for m_ele in node['morp']:
         m_id = int(m_ele['id'])
         if m_id == 0:
@@ -345,7 +346,9 @@ def find_adverb(node, sequence_list):
                                 for k in range(0, len(sequence['seasoning'])):
                                     if chk_morp['lemma'] in sequence['seasoning'][k]:
                                         sequence['seasoning'].remove(sequence['seasoning'][k])
-                            sequence_list[i]['act'] = node['word'][int(w_ele['id'])]['text'] + " " + sequence_list[i][
+                            if node['word'][int(w_ele['id'])]['text'] not in no_plus_adverb:
+                                print(node['word'][int(w_ele['id'])]['text'])
+                                sequence_list[i]['act'] = node['word'][int(w_ele['id'])]['text'] + " " + sequence_list[i][
                                 'act']
 
     return sequence_list
@@ -590,7 +593,6 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
                                                    filter(lambda word: word['begin'] <= sequence['end_id'],
                                                           node['word'])))))
             for ne in koelectra_node['NE']:
-                print(ne['text'], ne['begin'], ne['end'])
                 if ne['begin'] >= seq_start_offset and ne['end'] < seq_end_offset:
                     # 시즈닝과 식자재 중복 제거
                     if ne['type'] in ingredient_type_list:
@@ -606,8 +608,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
 
                             sequence['ingre'].append(ne['text'])
                     if ne['type'] == 'CV_SEASONING':
-                        print("SEASONING : " + ne['text'])
-                        if ne['text'] not in sequence['seasoning']:
+                        if ne['text'] not in sequence['seasoning'] and ne['text'] not in sequence['ingre']:
                             sequence['seasoning'].append(ne['text'])
                     if ne['type'] == 'TI_DURATION':
                         sequence['duration'] = ne['text']
@@ -617,7 +618,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
                 if ne['begin'] >= sequence['start_id'] and ne['end'] < sequence['end_id']:
                     if ne['type'] in ingredient_type_list:
                         # 시즈닝과 식자재 중복 제거
-                        if ne['text'] not in sequence['ingre']:
+                        if ne['text'] not in sequence['ingre'] and ne['text'] not in sequence['seasoning']:
                             if ne['text'] in seasoning_list:
                                 break
 
@@ -689,6 +690,7 @@ def extract_ner_from_kobert(sentence):
 
 
 def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
+    
     volume_node = []
     ingredient_list = []
 
@@ -714,7 +716,6 @@ def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
 
     return sub_ingredient_dict
 
-
 def parse_node_section(entity_mode, is_srl, node_list):
     coref_dict = {}
     volume_type_list = ["QT_SIZE", "QT_COUNT", "QT_OTHERS", "QT_WEIGHT", "QT_PERCENTAGE"]
@@ -735,14 +736,14 @@ def parse_node_section(entity_mode, is_srl, node_list):
                 coref_dict[sub_type] = {}
             continue
         if is_ingredient:
-            if entity_mode == 'koelectra':
+            '''if entity_mode == 'koelectra': 재료,첨가물에 대한 용량 추출
                 koelectra_node = extract_ner_from_kobert(node['text'])
                 if koelectra_node is not None:
                     sub_ingredient_dict = extract_ingredient_from_node(ingredient_type_list, volume_type_list, koelectra_node)
                 else:
                     sub_ingredient_dict = None
-            else:
-                sub_ingredient_dict = extract_ingredient_from_node(ingredient_type_list, volume_type_list, node)
+            else:'''
+            sub_ingredient_dict = extract_ingredient_from_node(ingredient_type_list, volume_type_list, node)
 
             if sub_ingredient_dict:
                 if sub_type:
@@ -880,7 +881,6 @@ def prompt():
     recipe_json = None
     if request.method == 'POST':
         recipe_json = request.form.get("recipe")
-    print(recipe_json)
     return render_template("prompt.html", recipe=recipe_json)
 
 
