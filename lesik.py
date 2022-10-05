@@ -608,6 +608,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
                             sequence['ingre'].append(ne['text'])
                     if ne['type'] == 'CV_SEASONING':
                         if ne['text'] not in sequence['seasoning'] and ne['text'] not in sequence['ingre']:
+                            print(ne['text'])
                             sequence['seasoning'].append(ne['text'])
                     if ne['type'] == 'TI_DURATION':
                         if len(sequence['duration'])!= 0:
