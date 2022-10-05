@@ -606,7 +606,10 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
                                 sequence['ingre'].remove(ingredient)
 
                             sequence['ingre'].append(ne['text'])
+
                     if ne['type'] == 'CV_SEASONING':
+                        print(ne['text'])
+                        # 여기서 출력
                         if ne['text'] not in sequence['seasoning'] and ne['text'] not in sequence['ingre']:
                             sequence['seasoning'].append(ne['text'])
                     if ne['type'] == 'TI_DURATION':
@@ -730,7 +733,7 @@ def parse_node_section(entity_mode, is_srl, node_list):
     is_ingredient = True
     sub_type = None
     remove_node_list = []
-
+    
     for node in node_list:
         if "[" in node['text'] and "]" in node['text']:
             sub_type = node['text'][1:-1].replace(" ", "")
@@ -752,7 +755,10 @@ def parse_node_section(entity_mode, is_srl, node_list):
             if sub_ingredient_dict:
                 if sub_type:
                     coref_dict[sub_type].update(sub_ingredient_dict)
-                ingredient_dict.update(sub_ingredient_dict)
+                    if extract_ingredient_from_node(list(sub_ingredient_dict.keys())[0]) == 'CV_INGREDIENT':
+                        ingredient_dict.update(sub_ingredient_dict)
+                    elif extract_ingredient_from_node(list(sub_ingredient_dict.keys())[0]) == 'CV_SEASONING':
+                        seasoning_dict.update(sub_ingredient_dict)
         else:
             node['text'] = node['text'].strip()
             # tip 부분 생략하는 조건문
@@ -781,6 +787,7 @@ def parse_node_section(entity_mode, is_srl, node_list):
 
     for node in remove_node_list:
         node_list.remove(node)
+    
     return sequence_list
 
 
