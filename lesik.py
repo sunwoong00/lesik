@@ -347,7 +347,6 @@ def find_adverb(node, sequence_list):
                                     if chk_morp['lemma'] in sequence['seasoning'][k]:
                                         sequence['seasoning'].remove(sequence['seasoning'][k])
                             if node['word'][int(w_ele['id'])]['text'] not in no_plus_adverb:
-                                print(node['word'][int(w_ele['id'])]['text'])
                                 sequence_list[i]['act'] = node['word'][int(w_ele['id'])]['text'] + " " + sequence_list[i][
                                 'act']
 
@@ -611,7 +610,11 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
                         if ne['text'] not in sequence['seasoning'] and ne['text'] not in sequence['ingre']:
                             sequence['seasoning'].append(ne['text'])
                     if ne['type'] == 'TI_DURATION':
-                        sequence['duration'] = ne['text']
+                        if len(sequence['duration'])!= 0:
+                            if '0' <= sequence['duration'][-1] and sequence['duration'][-1] <= '9':
+                                sequence['duration'] += "~" + ne['text']
+                        else:
+                            sequence['duration'] += ne['text']
     else:
         for sequence in seq_list:
             for ne in node['NE']:
@@ -685,6 +688,7 @@ def extract_ner_from_kobert(sentence):
     )
 
     json_object = json.loads(response.data)
+    print(json_object)
 
     return json_object
 
