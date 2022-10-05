@@ -514,7 +514,7 @@ def verify_coref(coref_dict, node, word_id):
                 return {coref_cand: ""}
 
 
-def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, entity_mode, is_srl):
+def create_sequence(node, coref_dict, ingredient_dict, seasoning_dict, ingredient_type_list, entity_mode, is_srl):
     # 한 문장
     seq_list = []
 
@@ -533,6 +533,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
                 seq_dict = {'duration': "", 'act': act, 'tool': [], 'ingre': [], 'seasoning': [], 'volume': [],
                             'zone': "", "start_id": prev_seq_id + 1, "end_id": act_id, "sentence": ""}
 
+                
                 # co-reference 및 dictionary를 통해 word에서 요소 추출
                 for w_ele in node['word']:
                     if w_ele['begin'] <= prev_seq_id:
@@ -594,7 +595,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
             for ne in koelectra_node['NE']:
                 if ne['begin'] >= seq_start_offset and ne['end'] < seq_end_offset:
                     # 시즈닝과 식자재 중복 제거
-                    if ne['type'] in ingredient_type_list:
+                    if ne['type'] == 'CV_INGREDIENT':
                         if ne['text'] not in sequence['ingre'] and ne['text'] not in sequence['seasoning']:
                             # 개체명 인식을 통해 추출된 재료에 종속된 재료 삭제
                             sub_ord_ingredient_list = []
@@ -688,7 +689,6 @@ def extract_ner_from_kobert(sentence):
     )
 
     json_object = json.loads(response.data)
-    print(json_object)
 
     return json_object
 
@@ -717,7 +717,7 @@ def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
         for v_node in volume_node:
             volume_node_list.add(v_node['text'])
         sub_ingredient_dict = {ne['text']: "".join(list(map(lambda v: v, volume_node_list))) for ne in ingredient_list}
-
+        
     return sub_ingredient_dict
 
 def parse_node_section(entity_mode, is_srl, node_list):
@@ -726,6 +726,7 @@ def parse_node_section(entity_mode, is_srl, node_list):
     ingredient_type_list = ["CV_FOOD", "CV_DRINK", "PT_GRASS", "PT_FRUIT", "PT_OTHERS", "PT_PART", "AM_FISH",
                             "AM_OTHERS", "CV_INGREDIENT", "CV_SEASONING"]
     ingredient_dict = {}
+    seasoning_dict = {}
     sequence_list = []
     is_ingredient = True
     sub_type = None
@@ -752,7 +753,11 @@ def parse_node_section(entity_mode, is_srl, node_list):
             if sub_ingredient_dict:
                 if sub_type:
                     coref_dict[sub_type].update(sub_ingredient_dict)
-                ingredient_dict.update(sub_ingredient_dict)
+                    koelec_result = extract_ner_from_kobert(list(sub_ingredient_dict.keys())[0])
+                    if koelec_result['NE'][0]['type'] == 'CV_INGREDIENT':
+                        ingredient_dict.update(sub_ingredient_dict)
+                    elif koelec_result['NE'][0]['type'] == 'CV_SEASONING':
+                        seasoning_dict.update(sub_ingredient_dict)
         else:
             node['text'] = node['text'].strip()
             # tip 부분 생략하는 조건문
@@ -766,7 +771,7 @@ def parse_node_section(entity_mode, is_srl, node_list):
                     remove_node_list.append(node)
                     continue
 
-            sequence = create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, entity_mode, is_srl)
+            sequence = create_sequence(node, coref_dict, ingredient_dict, seasoning_dict, ingredient_type_list, entity_mode, is_srl)
             if not sequence:
                 remove_node_list.append(node)
 
@@ -775,12 +780,14 @@ def parse_node_section(entity_mode, is_srl, node_list):
                     if ingre in ingredient_dict:
                         seq_dict['volume'].append(ingredient_dict.get(ingre))
                 for seasoning in seq_dict['seasoning']:
-                    if seasoning in ingredient_dict:
-                        seq_dict['volume'].append(ingredient_dict.get(seasoning))
+                    if seasoning in seasoning_dict:
+                        seq_dict['volume'].append(seasoning_dict.get(seasoning))
                 sequence_list.append(seq_dict)
 
     for node in remove_node_list:
         node_list.remove(node)
+
+
     return sequence_list
 
 
