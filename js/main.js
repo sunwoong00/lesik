@@ -41,6 +41,7 @@ $(document).on('submit', '#insert-recipe', function() {
               insertTr += "<br>"
           }
         }
+
         insertTr += "</td>";
         insertTr += "<td>" + sequence['seasoning'].join("<br>") + "</td>";
         insertTr += "<td>" + sequence['act'] + "</td>";
