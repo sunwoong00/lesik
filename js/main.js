@@ -31,18 +31,39 @@ $(document).on('submit', '#insert-recipe', function() {
         insertTr += "<td>" + sequence['zone'] + "</td>";
         insertTr += "<td>" + sequence['tool'].join(",") + "</td>";
         insertTr += "<td>";
-        for (var j = 0; j < sequence['ingre'].length; j++) {
+        
+        var j = 0;
+        /* 식자재 용량 추출 */
+        for (; j < sequence['ingre'].length; j++) {
           insertTr += sequence['ingre'][j];
           if (sequence['volume'].length > j) {
-            insertTr += "(" + sequence['volume'][j] + ")";
+            if ( sequence['volume'][j] !== '' ){
+              insertTr += "(" + sequence['volume'][j] + ")";
+            }
           }
-
           if(j !== sequence['ingre'].length - 1){
               insertTr += "<br>"
           }
         }
-        insertTr += "</td>";
-        insertTr += "<td>" + sequence['seasoning'].join("<br>") + "</td>";
+        insertTr += "</td>"; /* finish ingre section*/
+        
+
+        insertTr += "<td>"; /* start seasoning section */
+        /*박지연 첨가물 수정 코드*/
+        for (; j < (sequence['ingre'].length + sequence['seasoning'].length); j++) {
+          insertTr += sequence['seasoning'][j-sequence['ingre'].length];
+          if ( (sequence['volume'].length + sequence['ingre'].length) > j) {
+            if ( sequence['volume'][j] !== '' ){
+              insertTr += "(" + sequence['volume'][j] + ")";
+            }
+          }
+          if(j !== sequence['ingre'].length + sequence['seasoning'].length - 1){
+              insertTr += "<br>"
+          }
+        }
+        /*박지연 첨가물 수정 코드*/
+        insertTr += "</td>"; /* finish seasoning section */
+
         insertTr += "<td>" + sequence['act'] + "</td>";
 
         insertTr += "<td><input type='checkbox' form='save-sentence' name='save_sentence' value='";
