@@ -431,7 +431,7 @@ def find_omitted_ingredient(node, seq_list, ingredient_dict):
                             for ingredient in ingredient_dict.keys():
                                 if ingredient in s_text and ingredient not in sequence['ingre'] and ingredient not in \
                                         sequence['seasoning']:
-                                    sequence['ingre'].append(ingredient)
+                                    sequence['ingre'].append(ingredient) # 박지연 대체 왜 여기로감?? 얘가 시즈닝이면 어쩌려고
     return seq_list
 
 
@@ -659,7 +659,7 @@ def find_NP_OBJ(node, seq_list):
     return seq_list
 
 
-def create_sequence(node, coref_dict, ingredient_dict, seasoning_dict, ingredient_type_list, entity_mode, is_srl):
+def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, entity_mode, is_srl):
     # 한 문장
     seq_list = []
 
@@ -752,6 +752,7 @@ def create_sequence(node, coref_dict, ingredient_dict, seasoning_dict, ingredien
                                 sequence['ingre'].remove(ingredient)
 
                             sequence['ingre'].append(ne['text'])
+                    # 박지연
                     if ne['type'] == 'CV_SEASONING':
                         if ne['text'] not in sequence['seasoning'] and ne['text'] not in sequence['ingre']:
                             sequence['seasoning'].append(ne['text'])
@@ -848,6 +849,8 @@ def extract_ner_from_kobert(sentence):
     return json_object
 
 
+# 박지연 이 코드 이상함
+# 기본 재료에서 재료랑 용량을 매핑하는 코드
 def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
     
     volume_node = []
@@ -860,6 +863,8 @@ def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
             if volume_node and ne['begin'] < volume_node[-1]['end']:
                 continue
             ingredient_list.append(ne)
+        print("volume node", volume_node)
+        print("ingre node", ingredient_list)
     if not volume_node:
         if 'word' in node:
             for word in node['word']:
@@ -881,7 +886,7 @@ def parse_node_section(entity_mode, is_srl, node_list):
     ingredient_type_list = ["CV_FOOD", "CV_DRINK", "PT_GRASS", "PT_FRUIT", "PT_OTHERS", "PT_PART", "AM_FISH",
                             "AM_OTHERS", "CV_INGREDIENT", "CV_SEASONING"]
     ingredient_dict = {}
-    seasoning_dict = {}
+    mixed_dict = {}
     sequence_list = []
     is_ingredient = True
     sub_type = None
@@ -905,14 +910,14 @@ def parse_node_section(entity_mode, is_srl, node_list):
             else:'''
             sub_ingredient_dict = extract_ingredient_from_node(ingredient_type_list, volume_type_list, node)
 
+            # 박지연
+            # 기본 재료가 모두 식자재 딕셔너리로 들어가는 문제 해결하는 코드
             if sub_ingredient_dict:
                 if sub_type:
                     coref_dict[sub_type].update(sub_ingredient_dict)
-                    koelec_result = extract_ner_from_kobert(list(sub_ingredient_dict.keys())[0])
-                    if koelec_result['NE'][0]['type'] == 'CV_INGREDIENT':
-                        ingredient_dict.update(sub_ingredient_dict)
-                    elif koelec_result['NE'][0]['type'] == 'CV_SEASONING':
-                        seasoning_dict.update(sub_ingredient_dict)
+                    # sub_ingredient_dict 이상함
+                    mixed_dict.update(sub_ingredient_dict)
+            print("mixed_dict", mixed_dict)
         else:
             node['text'] = node['text'].strip()
             # tip 부분 생략하는 조건문
@@ -926,18 +931,24 @@ def parse_node_section(entity_mode, is_srl, node_list):
                     remove_node_list.append(node)
                     continue
 
-            sequence = create_sequence(node, coref_dict, ingredient_dict, seasoning_dict, ingredient_type_list, entity_mode, is_srl)
+            sequence = create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, entity_mode, is_srl)
             if not sequence:
                 remove_node_list.append(node)
 
+            # 박지연
             for seq_dict in sequence:
+                # 기본 재료에 나오는 식자재와 용량 매핑
                 for ingre in seq_dict['ingre']:
-                    if ingre in ingredient_dict:
-                        seq_dict['volume'].append(ingredient_dict.get(ingre))
+                    if ingre in mixed_dict:
+                        seq_dict['volume'].append(mixed_dict.get(ingre))
+                    else: seq_dict['volume'].append('')
+                # 기본 재료에 나오는 첨가물과 용량 매핑
                 for seasoning in seq_dict['seasoning']:
-                    if seasoning in seasoning_dict:
-                        seq_dict['volume'].append(seasoning_dict.get(seasoning))
+                    if seasoning in mixed_dict:
+                        seq_dict['volume'].append(mixed_dict.get(seasoning))
+                    else: seq_dict['volume'].append('')
                 sequence_list.append(seq_dict)
+                print("seq dict", seq_dict)
 
     for node in remove_node_list:
         node_list.remove(node)
