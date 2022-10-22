@@ -672,6 +672,7 @@ def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
     if volume_node is not None:
         sub_ingredient_dict = {ne['text']: volume_node['text'] for ne in ingredient_list}
 
+    print(sub_ingredient_dict)
     return sub_ingredient_dict
 
 
