@@ -819,9 +819,12 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
     # sentence 찾기
     sequence_list = find_sentence(node, sequence_list)
     
+    # 동사 분류
+    sequence_list = classify(seq_list)
+    
     # 소분류 규격 추가
     sequence_list = add_standard(node, seq_list)
-    
+
     # put, remove, make 대상격 찾는 함수
     sequence_list = find_NP_OBJ(node, seq_list)
     
