@@ -29,9 +29,6 @@ $(document).on('submit', '#insert-recipe', function() {
         insertTr += "<td>" + sequence['sentence'] + "</td>";
         insertTr += "<td>" + sequence['duration'] + "</td>";
         insertTr += "<td>" + sequence['zone'] + "</td>";
-        /*if(sequence['standard'].length !=0){
-          insertTr += "<td>" + sequence['standard'] + "</td>";
-        }유정 코드*/
         insertTr += "<td>" + sequence['tool'].join(",") + "</td>";
         insertTr += "<td>";
         
@@ -66,6 +63,12 @@ $(document).on('submit', '#insert-recipe', function() {
         }
         /*박지연 첨가물 수정 코드*/
         insertTr += "</td>"; /* finish seasoning section */
+
+        /* 서유정 */
+        insertTr += "<td>" + sequence['seasoning'].join("<br>") + "</td>";
+        if(sequence['standard'].length !=0){
+          insertTr += "<td>" + sequence['standard'] + "</td>";
+        }
 
         insertTr += "<td>" + sequence['act'] + "</td>";
 
