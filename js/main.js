@@ -63,9 +63,8 @@ $(document).on('submit', '#insert-recipe', function() {
         }
         /*박지연 첨가물 수정 코드*/
         insertTr += "</td>"; /* finish seasoning section */
-
+        
         /* 서유정 */
-        insertTr += "<td>" + sequence['seasoning'].join("<br>") + "</td>";
         if(sequence['standard'].length !=0){
           insertTr += "<td>" + sequence['standard'] + "</td>";
         }
