@@ -72,7 +72,6 @@ def parse_cooking_act_dict(file_path):
         if delim in line:
             sp_line = line.split(delim)
             act_dict[sp_line[0]] = sp_line[1]
-            act_score_dict[sp_line[1]] = sp_line[2]
         else:
             act_dict[line] = line
     f.close()
