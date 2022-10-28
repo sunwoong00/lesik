@@ -67,7 +67,9 @@ $(document).on('submit', '#insert-recipe', function() {
         /* 서유정 */
         if(sequence['standard'].length !=0){
           insertTr += "<td>" + sequence['standard'] + "</td>";
-        }
+        }else{
+          insertTr += "<td></td>";
+        } 
 
         insertTr += "<td>" + sequence['act'] + "</td>";
 
