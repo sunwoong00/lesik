@@ -495,12 +495,14 @@ def add_standard(node, seq_list):
                     
     for sequence in seq_list:
         for ne in node['NE']:
-            if ne['type'] == 'QT_LENGTH' or ne['type'] == 'QT_OTHERS':
+            if ne['type'] == "QT_LENGTH" or ne['type'] == "QT_OTHERS":
                 n_begin = int(ne['begin'])
                 n_end=int(ne['end'])
-                sequence['standard']=ne['text']
-            if ne['type'] == 'QT_ORDER' and '등분' in ne['text']:
-                sequence['standard']=ne['text']            
+                if ne['text'] in sequence['sentence']:
+                    sequence['standard']=ne['text']
+            if ne['type'] == "QT_ORDER" and '등분' in ne['text']:
+                if ne['text'] in sequence['sentence']:
+                    sequence['standard']=ne['text']           
     '''
     for m_ele in node['morp']:
         m_id = int(m_ele['id'])
@@ -539,7 +541,7 @@ def find_NP_OBJ(node, seq_list):
     for dep in node['dependency']:
         if 'VP' in dep['label']:
             # 추후 목적어의 해당되는 시퀀스의 조리동작에 해당하는 형태소 추출
-            word_dep = node['word'][int(dep['id'7])]
+            word_dep = node['word'][int(dep['id'])]
             start_id = word_dep['begin']
             end_id = word_dep['end']
 
@@ -828,13 +830,13 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
     sequence_list = find_sentence(node, sequence_list)
     
     # 동사 분류
-    sequence_list = classify(seq_list)
+    sequence_list = classify(sequence_list)
     
     # 소분류 규격 추가
-    sequence_list = add_standard(node, seq_list)
+    sequence_list = add_standard(node, sequence_list)
 
     # put, remove, make 대상격 찾는 함수
-    sequence_list = find_NP_OBJ(node, seq_list)
+    sequence_list = find_NP_OBJ(node, sequence_list)
     
     # 조건문 처리함수추가
     sequence_list = find_condition(node, sequence_list)
