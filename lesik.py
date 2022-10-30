@@ -499,10 +499,10 @@ def add_standard(node, seq_list):
                 n_begin = int(ne['begin'])
                 n_end=int(ne['end'])
                 if ne['text'] in sequence['sentence']:
-                    sequence['standard']=ne['text']
+                    sequence['standard']=sequence['standard']+","+ne['text']
             if ne['type'] == "QT_ORDER" and '등분' in ne['text']:
                 if ne['text'] in sequence['sentence']:
-                    sequence['standard']=ne['text']           
+                    sequence['standard']=sequence['standard']+","+ne['text']        
     '''
     for m_ele in node['morp']:
         m_id = int(m_ele['id'])
