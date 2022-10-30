@@ -1,22 +1,17 @@
-<!DOCTYPE html>
-
 <html>
 
 <head>
-  <title> test UI </title>
+  <title>Foodi's Digital Recipe</title>
   <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="{{ url_for('static', filename='js/prompt.js') }}"></script>
-  <script>
-    $(document).ready(function(){
-      var data = JSON.parse('{{recipe}}'.replaceAll('&#34;', '\"'));
-      console.log(data);
-      initPrompt(data);
-    });
-  </script>
-  <link rel="stylesheet" text="text/css" href="{{ url_for('static', filename='css/prompt.css') }}"> </head>
+  <link rel="stylesheet" text="text/css" href="{{ url_for('static', filename='css/prompt.css') }}">
+</head>
+
 <body>
-  <div id="hidden-recipe_area" style="display: none"></div>
-  <h1 id="header">PROMPT</h1>
+  <img id="logo_icon" src="{{ url_for('static', filename='image/cooksup.png') }}">
+  <div class ="header">
+    <h1 id="title">쿠킹 프롬프트 디스플레이</h1>
+    <img id="icon_img" src="{{ url_for('static', filename='image/foodi_logo.jpg') }}">
+  </div>
   <div class="page">
     <div class>
       <table id="preprocessing_table">
@@ -37,14 +32,14 @@
         <tbody id="memDiv1">
         </tbody>
       </table>
-      <div class="container">
-          <div class="prog">
-              <div class="progs" id="progressing_p">0%</div>
-          </div>
-        </div>
     </div>
     <div>
-      <div id="total_ti"></div>
+      <div class="container">
+        <div id="total_ti"></div>
+        <div class="prog">
+          <div class="progs" id="progressing_f">0%</div>
+        </div>
+      </div>
       <table id="fire_table">
         <thead class="box_name">
           <tr>
@@ -63,13 +58,16 @@
         <tbody id="memDiv2">
         </tbody>
       </table>
-      <div class="container">
-          <div class="prog">
-              <div class="progs" id="progressing_f">0%</div>
-          </div>
-        </div>
+
     </div>
   </div>
+  <script src="{{ url_for('static', filename='js/prompt.js') }}"></script>
+  <script>
+    $(document).ready(function(){
+      var data = '{{recipe}}';
+      initPrompt(JSON.parse(data.replaceAll('&#34;', '\"')));
+    });
+  </script>
 </body>
 
 </html>

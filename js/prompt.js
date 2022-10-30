@@ -87,7 +87,7 @@ function initPrompt(data) {
   } else if (zone == "화구존") {
     if (data[i].duration == "") {
       f_pre_duration = f_duration;
-      f_duration = f_duration + 3;
+      f_duration = f_duration + 120;
     } else {
       f_pre_duration = f_duration;
       var str = data[i].duration.replace(/[0-9]/g, "");

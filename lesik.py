@@ -72,6 +72,7 @@ def parse_cooking_act_dict(file_path):
         if delim in line:
             sp_line = line.split(delim)
             act_dict[sp_line[0]] = sp_line[1]
+            act_score_dict[sp_line[1]] = sp_line[2]
         else:
             act_dict[line] = line
     f.close()
@@ -356,7 +357,6 @@ def find_adverb(node, sequence_list):
 # 화구존, 전처리존 분리
 def select_cooking_zone(sequence_list):
     score_board = []
-    period_check = []
     for i in range(0, len(sequence_list)):
         act_fire_score = 0.0
         tool_fire_score = 0.0
@@ -367,7 +367,7 @@ def select_cooking_zone(sequence_list):
                 tool_fire_score = float(zone_dict['tool'].get(tool))
 
         score_board.append(act_fire_score + tool_fire_score)
-        if score_board[i] >= 0.7:
+        if score_board[i] > 0:
             sequence_list[i]['zone'] = "화구존"
         else:
             sequence_list[i]['zone'] = "전처리존"
