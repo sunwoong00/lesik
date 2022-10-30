@@ -538,7 +538,7 @@ def add_standard(node, seq_list):
         
 # put, remove, make 대상격 찾는 함수
 def find_NP_OBJ(node, seq_list):
-    no_plus_NP_OBJ = ['정도', '크기로', '길이로', '등에']
+    no_plus_NP_OBJ = ['정도', '크기로', '길이로', '등에', '재료를']
     for dep in node['dependency']:
         if 'VP' in dep['label']:
             # 추후 목적어의 해당되는 시퀀스의 조리동작에 해당하는 형태소 추출
@@ -770,12 +770,12 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
                     if ne['type'] == 'CV_SEASONING':
                         if ne['text'] not in sequence['seasoning'] and ne['text'] not in sequence['ingre']:
                             sequence['seasoning'].append(ne['text'])
-                    '''if ne['type'] == 'TI_DURATION':
+                    if ne['type'] == 'TI_DURATION':
                         if len(sequence['duration'])!= 0:
                             if '0' <= sequence['duration'][-1] and sequence['duration'][-1] <= '9':
                                 sequence['duration'] += "~" + ne['text']
                         else:
-                            sequence['duration'] += ne['text']'''
+                            sequence['duration'] += ne['text']
     else:
         for sequence in seq_list:
             for ne in node['NE']:
@@ -831,23 +831,30 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
     # sentence 찾기
     sequence_list = find_sentence(node, sequence_list)
 
-    
-    # 온도 판단 - 선웅 수정
-    for ne in koelectra_node['NE']:
-        if ne['type'] == 'QT_TEMPERATURE':
-            for sequence in seq_list:
-                if ne['text'] in sequence['sentence']:
-                    sequence['temperature'] = ne['text']
-
-    # 시간 판단 - 선웅 수정
-    for sequence in seq_list:
+    if entity_mode == 'koelectra':
+        '''seq_start_offset = len(" ".join(list(map(lambda word: word['text'],
+                                                     filter(lambda word: word['begin'] < sequence['start_id'],
+                                                            node['word'])))))
+        seq_end_offset = len(" ".join(list(map(lambda word: word['text'],
+                                                   filter(lambda word: word['begin'] <= sequence['end_id'],
+                                                          node['word'])))))'''
+        # 온도 판단 - 선웅 수정
         for ne in koelectra_node['NE']:
-            if ne['type'] == 'TI_DURATION' and ne['text'] in sequence['sentence']:
-                    if len(sequence['duration'])!= 0:
-                        if '0' <= sequence['duration'][-1] and sequence['duration'][-1] <= '9':
-                            sequence['duration'] += "~" + ne['text']
-                    else:
-                        sequence['duration'] += ne['text']
+            if ne['type'] == 'QT_TEMPERATURE':
+                for sequence in seq_list:
+                    if ne['text'] in sequence['sentence']:
+                        sequence['temperature'] = ne['text']
+
+        '''# 시간 판단 - 선웅 수정
+        for sequence in seq_list:
+            for ne in koelectra_node['NE']:
+                if ne['begin'] >= seq_start_offset and ne['end'] < seq_end_offset:
+                    if ne['type'] == 'TI_DURATION' and ne['text'] in sequence['sentence']:
+                            if len(sequence['duration'])!= 0:
+                                if '0' <= sequence['duration'][-1] and sequence['duration'][-1] <= '9':
+                                    sequence['duration'] += "~" + ne['text']
+                            else:
+                                sequence['duration'] += ne['text']'''
     
     # 동사 분류
     sequence_list = classify(sequence_list)
