@@ -332,7 +332,7 @@ def find_adverb(node, sequence_list):
         if m_ele['type'] == 'VV' and m_ele['lemma'] in cooking_act_dict and prev_morp['type'] == "JKB":
             for i in range(0, len(sequence_list)):
                 sequence = sequence_list[i]
-                if sequence['start_id'] <= m_id <= sequence['end_id'] and sequence['top_class'] == "make":
+                if sequence['start_id'] <= m_id <= sequence['end_id'] and sequence['top_class'] == "put": # 선웅 수정
                     for w_ele in node['word']:
                         w_begin = int(w_ele['begin'])
                         w_end = int(w_ele['end'])
@@ -536,10 +536,11 @@ def add_standard(node, seq_list):
         
 # put, remove, make 대상격 찾는 함수
 def find_NP_OBJ(node, seq_list):
+    no_plus_NP_OBJ = ['정도', '크기로', '길이로', '등에']
     for dep in node['dependency']:
         if 'VP' in dep['label']:
             # 추후 목적어의 해당되는 시퀀스의 조리동작에 해당하는 형태소 추출
-            word_dep = node['word'][int(dep['id'7])]
+            word_dep = node['word'][int(dep['id'])]
             start_id = word_dep['begin']
             end_id = word_dep['end']
 
@@ -567,7 +568,8 @@ def find_NP_OBJ(node, seq_list):
                                             break
 
                                 if is_objective:
-                                    sequence['act'] = word['text'] + " " + sequence['act']
+                                    if word['text'] not in no_plus_NP_OBJ:  # 선웅 수정
+                                        sequence['act'] = word['text'] + " " + sequence['act']
     return seq_list
 
 
@@ -766,12 +768,12 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
                     if ne['type'] == 'CV_SEASONING':
                         if ne['text'] not in sequence['seasoning'] and ne['text'] not in sequence['ingre']:
                             sequence['seasoning'].append(ne['text'])
-                    if ne['type'] == 'TI_DURATION':
+                    '''if ne['type'] == 'TI_DURATION':
                         if len(sequence['duration'])!= 0:
                             if '0' <= sequence['duration'][-1] and sequence['duration'][-1] <= '9':
                                 sequence['duration'] += "~" + ne['text']
                         else:
-                            sequence['duration'] += ne['text']
+                            sequence['duration'] += ne['text']'''
     else:
         for sequence in seq_list:
             for ne in node['NE']:
@@ -795,14 +797,6 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
                     else:
                         if ne['type'] == 'TI_DURATION':
                             sequence['duration'] = ne['text']
-
-    '''
-    # 온도 판단
-    print(node['NE'])
-    for ne in node['NE']:
-        for ne_type in ne['type']:
-            if ne_type == 'QT_TEMPURATURE':
-    '''
 
     # 불필요한 시퀀스 제거 및 다음 시퀀스에 병합
     sequence_list = remove_redundant_sequence(node, seq_list)
@@ -834,6 +828,24 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
 
     # sentence 찾기
     sequence_list = find_sentence(node, sequence_list)
+
+    
+    # 온도 판단 - 선웅 수정
+    for ne in koelectra_node['NE']:
+        if ne['type'] == 'QT_TEMPERATURE':
+            for sequence in seq_list:
+                if ne['text'] in sequence['sentence']:
+                    sequence['temperature'] = ne['text']
+
+    # 시간 판단 - 선웅 수정
+    for sequence in seq_list:
+        for ne in koelectra_node['NE']:
+            if ne['type'] == 'TI_DURATION' and ne['text'] in sequence['sentence']:
+                    if len(sequence['duration'])!= 0:
+                        if '0' <= sequence['duration'][-1] and sequence['duration'][-1] <= '9':
+                            sequence['duration'] += "~" + ne['text']
+                    else:
+                        sequence['duration'] += ne['text']
     
     # 동사 분류
     sequence_list = classify(seq_list)
