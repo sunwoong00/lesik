@@ -332,7 +332,7 @@ def find_adverb(node, sequence_list):
         if m_ele['type'] == 'VV' and m_ele['lemma'] in cooking_act_dict and prev_morp['type'] == "JKB":
             for i in range(0, len(sequence_list)):
                 sequence = sequence_list[i]
-                if sequence['start_id'] <= m_id <= sequence['end_id']:
+                if sequence['start_id'] <= m_id <= sequence['end_id'] and sequence['top_class'] == "make":
                     for w_ele in node['word']:
                         w_begin = int(w_ele['begin'])
                         w_end = int(w_ele['end'])
@@ -554,7 +554,7 @@ def find_NP_OBJ(node, seq_list):
                     end = word['end']
                     for i in range(0, len(seq_list)):
                         sequence = seq_list[i]
-                        if sequence['top_class'] == "remove" or sequence['top_class'] == "make":
+                        if sequence['top_class'] == "remove" or sequence['top_class'] == "put":
                             if sequence['start_id'] <= end <= sequence['end_id'] and start_id <= sequence[
                                 'end_id'] <= end_id:
                                 is_objective = True
@@ -686,7 +686,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
             # 조리 동작 판단
             if act in cooking_act_dict:
                 # 레시피 시퀀스 6가지 요소
-                seq_dict = {'duration': "", 'act': act, 'tool': [], 'ingre': [], 'seasoning': [], 'volume': [],
+                seq_dict = {'duration': "", 'act': act, 'tool': [], 'ingre': [], 'seasoning': [], 'volume': [], 'temperature': [],
                             'zone': "", "start_id": prev_seq_id + 1, "end_id": act_id, "sentence": "", "standard":"", "top_class":""}
 
                 
@@ -798,6 +798,14 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
                         if ne['type'] == 'TI_DURATION':
                             sequence['duration'] = ne['text']
 
+    '''
+    # 온도 판단
+    print(node['NE'])
+    for ne in node['NE']:
+        for ne_type in ne['type']:
+            if ne_type == 'QT_TEMPURATURE':
+    '''
+
     # 불필요한 시퀀스 제거 및 다음 시퀀스에 병합
     sequence_list = remove_redundant_sequence(node, seq_list)
 
@@ -842,7 +850,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
     sequence_list = find_condition(node, sequence_list)
 
     # 동작에 딸려오는 부사구 출력
-    #sequence_list = find_adverb(node, sequence_list)
+    sequence_list = find_adverb(node, sequence_list)
 
     return sequence_list
 
