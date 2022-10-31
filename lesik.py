@@ -321,36 +321,7 @@ def find_objective(node, seq_list):
     return seq_list
 
 
-# 상상코딩5
-# 동사에 딸려있는 부사구까지 출력
-def find_adverb(node, sequence_list):
-    no_plus_adverb = ['정도', '크기로', '길이로', '등에']
-    for m_ele in node['morp']:
-        m_id = int(m_ele['id'])
-        if m_id == 0:
-            continue
-        prev_morp = node['morp'][m_id - 1]
-        if m_ele['type'] == 'VV' and m_ele['lemma'] in cooking_act_dict and prev_morp['type'] == "JKB":
-            for i in range(0, len(sequence_list)):
-                sequence = sequence_list[i]
-                if sequence['start_id'] <= m_id <= sequence['end_id'] and sequence['top_class'] == "put": # 선웅 수정
-                    for w_ele in node['word']:
-                        w_begin = int(w_ele['begin'])
-                        w_end = int(w_ele['end'])
-                        if w_begin <= int(prev_morp['id']) <= w_end:
-                            chk_morp_list = node['morp'][w_begin:w_end + 1]
-                            for chk_morp in chk_morp_list:
-                                for j in range(0, len(sequence['ingre'])):
-                                    if chk_morp['lemma'] in sequence['ingre'][j]:
-                                        sequence['ingre'].remove(sequence['ingre'][j])
-                                for k in range(0, len(sequence['seasoning'])):
-                                    if chk_morp['lemma'] in sequence['seasoning'][k]:
-                                        sequence['seasoning'].remove(sequence['seasoning'][k])
-                            if node['word'][int(w_ele['id'])]['text'] not in no_plus_adverb:
-                                sequence_list[i]['act'] = node['word'][int(w_ele['id'])]['text'] + " " + sequence_list[i][
-                                'act']
 
-    return sequence_list
 
 
 # 상상코딩4
@@ -463,7 +434,7 @@ def classify(seq_list):
 
 def add_standard(node, seq_list):
     slice_low_class=[ "나박하게", "길게", "얇게", "깍둑", "먹기좋은 크기로", "먹기 좋은 두께로", "도톰하게", "격자로", "잘게", "세로로", "가로로", "도톰한 두께로", "링으로", "반으로", "채", "한입 크기로", "큼직하게", "동그란 모양으로", "굵게", "적당한 길이로", "반달모양으로", "나무젓가락 두께로","곱게","마름모 모양으로", "길죽한 모양으로","반을","어슷","가늘게", "한마디 크기", "주사위 모양으로", "반 정도만", "길이 방향으로", "결 따라","바둑판 모양으로", "큼지막하게","비스듬하게","깍뚝", "편", "같은 크기로"]
-    useFire_low_class=["퍼질때까지","자작하게","농도가 적당해질 때까지","한번 더","뭉근하게", "약간의 기포가 올라올 때까지","물기가 날아갈 정도로", "가볍게", "재빨리","바삭하게","튀기듯이","빠르게","투명해 질때까지", "부드러워질 때까지", "숨이 죽을 때까지","졸이듯이","브라운 색이 나도록","물기가 없어질 때까지", "되직하게","수분이 없게", "앞뒤로", "겉면이 타듯이", "앞 뒤로", "바삭하게", "양면을", "동그랗게", "돌려가며", "튀기듯이", "국물이 자작해 질 떄까지", "물기가 없어질 때까지","윤기나게","끈적한 농도가 날 때 까지", "숨이 죽을 정도로", "양이 반으로 줄어들 때까지","반쯤", "속까지", "투명하게", "뒤집어","은근히","겉만","한쪽면만","진한 갈색이 날 때까지","윤기나게","부드럽게","익을 때까지","굴려가며","반숙으로","반숙상태로", "팥이 무르도록","노릇하게", "얇게","두툼하게"]
+    useFire_low_class=["퍼질때까지","자작하게","농도가 적당해질 때까지","한번 더","뭉근하게", "약간의 기포가 올라올 때까지","물기가 날아갈 정도로", "가볍게", "재빨리","바삭하게","튀기듯이","빠르게","투명해 질때까지", "부드러워질 때까지", "숨이 죽을 때까지","졸이듯이","브라운 색이 나도록","물기가 없어질 때까지", "되직하게","수분이 없게", "앞뒤로", "겉면이 타듯이", "앞 뒤로", "바삭하게", "양면을", "동그랗게", "돌려가며", "튀기듯이", "국물이 자작해 질 떄까지","윤기나게","끈적한 농도가 날 때 까지", "숨이 죽을 정도로", "양이 반으로 줄어들 때까지","반쯤", "속까지", "투명하게", "뒤집어","은근히","겉만","한쪽면만","진한 갈색이 날 때까지","윤기나게","부드럽게","익을 때까지","굴려가며","반숙으로","반숙상태로", "팥이 무르도록","노릇하게", "얇게","두툼하게"]
     put_low_class=["차곡차곡", "한쪽 방향으로","정갈하게","켜켜이 돌려가며","층층이","넉넉히", "잠길정도로","반복해서","자작하게","잠길 만큼","가지런히"]
     mix_low_class=["빠르게","가볍게","면끼리 달라붙지 않도록","망울없이","서로 달라붙지 않도록","한 방향으로만"]
     make_low_class=[ "동글동글","동그랗게","동그란 모양으로","시계방향으로","타원형으로","돌돌","단단하게","부채꼴 모양으로","납작하게","반을 접어","한 덩이로","일자로","얇게"]
@@ -562,6 +533,7 @@ def add_standard(node, seq_list):
         
 # put, remove, make 대상격 찾는 함수
 def find_NP_OBJ(node, seq_list):
+    
     no_plus_NP_OBJ = ['정도', '크기로', '길이로', '등에', '재료를']
     for dep in node['dependency']:
         if 'VP' in dep['label']:
@@ -579,25 +551,69 @@ def find_NP_OBJ(node, seq_list):
                     end = word['end']
                     for i in range(0, len(seq_list)):
                         sequence = seq_list[i]
-                        if sequence['top_class'] == "remove" or sequence['top_class'] == "put":
+                        if sequence['top_class'] == "remove" or sequence['top_class'] == "make":
                             if sequence['start_id'] <= end <= sequence['end_id'] and start_id <= sequence[
                                 'end_id'] <= end_id:
                                 is_objective = True
                                 for ingre in sequence['ingre']:
-                                    if ingre in word['text']:
+                                    if word['text'] in ingre:
                                         is_objective = False
                                         break
                                 if is_objective:
                                     for seasoning in sequence['seasoning']:
-                                        if seasoning in word['text']:
+                                        if word['text'] in seasoning:
                                             is_objective = False
                                             break
-
+                                
                                 if is_objective:
                                     if word['text'] not in no_plus_NP_OBJ:  # 선웅 수정
                                         sequence['act'] = word['text'] + " " + sequence['act']
+                                
     return seq_list
 
+# 상상코딩5
+# 동사에 딸려있는 부사구까지 출력
+def find_adverb(node, sequence_list):
+    no_plus_adverb = ['정도', '크기로', '길이로', '등에']
+    for m_ele in node['morp']:
+        m_id = int(m_ele['id'])
+        if m_id == 0:
+            continue
+        prev_morp = node['morp'][m_id - 1]
+        if m_ele['type'] == 'VV' and m_ele['lemma'] in cooking_act_dict and prev_morp['type'] == "JKB":
+            for i in range(0, len(sequence_list)):
+                sequence = sequence_list[i]
+                if sequence['start_id'] <= m_id <= sequence['end_id'] and sequence['top_class'] == "put": # 선웅 수정
+                    for w_ele in node['word']:
+                        w_begin = int(w_ele['begin'])
+                        w_end = int(w_ele['end'])
+                        if w_begin <= int(prev_morp['id']) <= w_end:
+                            chk_morp_list = node['morp'][w_begin:w_end + 1]
+                            for chk_morp in chk_morp_list:
+                                for j in range(0, len(sequence['ingre'])):
+                                    if chk_morp['lemma'] in sequence['ingre'][j]:
+                                        sequence['ingre'].remove(sequence['ingre'][j])
+                                for k in range(0, len(sequence['seasoning'])):
+                                    if chk_morp['lemma'] in sequence['seasoning'][k]:
+                                        sequence['seasoning'].remove(sequence['seasoning'][k])
+                            if node['word'][int(w_ele['id'])]['text'] not in no_plus_adverb:
+                                for s_tool in sequence_list[i]['tool']:
+                                    if s_tool not in node['word'][int(w_ele['id'])]['text']: 
+                                        is_adverb = True
+                                        for ingre in sequence['ingre']:
+                                            if node['word'][int(w_ele['id'])]['text'] in ingre:
+                                                is_adverb = False
+                                                break
+                                        if is_adverb:
+                                            for seasoning in sequence['seasoning']:
+                                                if node['word'][int(w_ele['id'])]['text'] in seasoning:
+                                                    is_adverb = False
+                                                    break
+
+                                        if is_adverb:
+                                            sequence_list[i]['act'] = node['word'][int(w_ele['id'])]['text'] + " " + sequence_list[i]['act']
+
+    return sequence_list
 
 def find_omitted_ingredient(node, seq_list, ingredient_dict, mixed_dict):
     critical_type_list = ['ARG0', 'ARG1']
