@@ -599,7 +599,7 @@ def find_NP_OBJ(node, seq_list):
     return seq_list
 
 
-def find_omitted_ingredient(node, seq_list, ingredient_dict):
+def find_omitted_ingredient(node, seq_list, ingredient_dict, mixed_dict):
     critical_type_list = ['ARG0', 'ARG1']
     for sequence in seq_list:
         if not sequence['ingre']:
@@ -611,9 +611,11 @@ def find_omitted_ingredient(node, seq_list, ingredient_dict):
                         s_text = s_ele['text']
                         s_type = s_ele['type']
                         if s_type in critical_type_list:
-                            for ingredient in ingredient_dict.keys():
+                            print("mixed_dict : ", mixed_dict)
+                            for ingredient in mixed_dict.keys():
                                 if ingredient in s_text and ingredient not in sequence['ingre'] and ingredient not in \
                                         sequence['seasoning']:
+                                    print("ingredient : ", ingredient)
                                     sequence['ingre'].append(ingredient) # 박지연 대체 왜 여기로감?? 얘가 시즈닝이면 어쩌려고
     return seq_list
 
@@ -696,7 +698,7 @@ def verify_coref(coref_dict, node, word_id):
                 return {coref_cand: ""}
 
 
-def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, entity_mode, is_srl):
+def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mixed_dict, entity_mode, is_srl):
     # 한 문장
     seq_list = []
 
@@ -829,7 +831,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
 
     if is_srl:
         # 현재 시퀀스에 누락된 재료를 보완
-        sequence_list = find_omitted_ingredient(node, sequence_list, ingredient_dict)
+        sequence_list = find_omitted_ingredient(node, sequence_list, ingredient_dict, mixed_dict)
 
         # 조리동작(용량)
         # sequence_list = volume_of_act(node, sequence_list)
@@ -894,6 +896,12 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, ent
 
     # 동작에 딸려오는 부사구 출력
     sequence_list = find_adverb(node, sequence_list)
+
+    # rule로 (끓으면)끓다 없애기 - 선웅 / 돼지갈비찜
+    for sequence in sequence_list:
+        if sequence['act'] == "(끓으면)끓다":
+            sequence_list.remove(sequence)
+
 
     return sequence_list
 
@@ -1001,7 +1009,7 @@ def parse_node_section(entity_mode, is_srl, node_list):
                     remove_node_list.append(node)
                     continue
 
-            sequence = create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, entity_mode, is_srl)
+            sequence = create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mixed_dict, entity_mode, is_srl)
             if not sequence:
                 remove_node_list.append(node)
 
