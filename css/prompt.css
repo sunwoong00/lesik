@@ -1,10 +1,25 @@
 body {
-  background-color: #e6e6e6;
+  background-color: #eafafa;
 }
 
-#header{
-  margin-top: 5%;
+#logo_icon{
+  height:40px;
+  margin-bottom: 2%;
+}
+
+.header{
+  display: flex;
   text-align: center;
+  justify-content: center;
+}
+
+#icon_img{
+  width: 80px;
+}
+
+#title{
+  color: #229191;
+  text-shadow: #004d4d 0px 0px 1px;
 }
 
 table {
@@ -19,7 +34,7 @@ table {
 }
 
 #preprocessing_table{
-  margin-top: 8%;
+  margin-top: 10%;
 }
 
 .box_name {
@@ -45,11 +60,18 @@ td {
   margin-top: 3%;
 }
 
+
+.container {
+  display: flex;
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+}
+
 #total_ti {
   border-style: double;
-  margin-bottom: 3%;
   padding: 5px;
-  width: fit-content;
+  width: 140px;
   border-radius: 5%;
   text-align: left;
   font-size: 15px;
@@ -57,13 +79,10 @@ td {
   font-weight: bold;
 }
 
-.container {
-  margin-top: 10px;
-  background: rgb(255, 254, 254);
-}
-
 .prog {
-  width: 600px;
+  margin-left: 8px;
+  width: 440px;
+  height: 30px;
   background: rgb(189, 177, 177);
 }
 
