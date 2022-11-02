@@ -388,7 +388,7 @@ def verify_etn(node, seq_list):
 
 # 대분류, 중분류
 def classify(seq_list):
-    slice = ["썰다","채썰다" "슬라이스", "다이스", "가르다", "다지다","자르다","쪼개다","가르다","뜯다","찢다","부수다","으깨다","내다","길다"]
+    slice = ["썰다","채썰다" "슬라이스", "다이스", "가르다", "다지다","자르다","쪼개다","가르다","뜯다","찢다","부수다","으깨다","내다","갈다"]
     prepare_ingre = ["밑간하다", "재우다", "숙성시키다", "불리다", "밀봉하다", "절이다","손질하다","냉장보관하다","다듬다","씻다","맞추다","헹구다"]
     use_fire = ["짓다","돌리다","끓이다","끓다", "끄다", "켜다", "가열하다", "볶다", "끓어오르다", "가열하다", "예열하다", "굽다", "삶다", "조리다", "졸이다", "데치다", "찌다", "튀기다", "지지다", "부치다", "익히다", "데우다", "쑤다","프라이하다","삶다","우리다","켜다","끄다"]
     put = ["깔다","붙이다","채우다","끼얹다","담그다","얹다","붓다","덮다","두르다","감싸다","곁들이다","뿌리다","올리다","입히다","풀다","넣다", "첨가하다", "담다"]
@@ -559,9 +559,15 @@ def find_NP_OBJ(node, seq_list):
                                     if word['text'] in ingre:
                                         is_objective = False
                                         break
+                                    if ingre in word['text']:
+                                        is_objective = False
+                                        break
                                 if is_objective:
                                     for seasoning in sequence['seasoning']:
                                         if word['text'] in seasoning:
+                                            is_objective = False
+                                            break
+                                        if seasoning in word['text']:
                                             is_objective = False
                                             break
                                 
