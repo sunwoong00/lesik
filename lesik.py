@@ -1246,6 +1246,7 @@ app = Flask(__name__)
 def index():
     recipe_dir = "static/recipe/ko"
     recipe_list = os.listdir(recipe_dir)
+    print(recipe_list)
     recipe_idx = random.randrange(0, len(recipe_dir))
     recipe_text_list = get_list_from_file(recipe_dir + "/" + recipe_list[recipe_idx])
     return render_template("index.html", recipe="\n".join(recipe_text_list))
@@ -1263,8 +1264,8 @@ def prompt():
 def refresh():
     recipe_dir = "static/recipe/ko"
     recipe_list = os.listdir(recipe_dir)
-    recipe_idx = random.randrange(0, len(recipe_dir))
-    recipe_text_list = get_list_from_file(recipe_dir + "/" + recipe_list[recipe_idx])
+    recipe_title = random.choice(recipe_list)
+    recipe_text_list = get_list_from_file(recipe_dir + "/" + recipe_title)
     return make_response("\n".join(recipe_text_list))
 
 

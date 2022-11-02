@@ -36,10 +36,15 @@ function initPrompt(data) {
     var volume = data[i].volume;
     var act = data[i].act;
 
+    var insertTr = "";
+    insertTr += "<tr>";
+
+
     if (zone == "전처리존") {
       if (data[i].duration == "") {
         p_pre_duration = p_duration;
-        p_duration = p_duration + 3;
+        p_duration = p_duration + 2;
+        //insertTr += "<td>" + "</td>";
       } else {
         p_pre_duration = p_duration;
         var str = data[i].duration.replace(/[0-9]/g, "");
@@ -59,10 +64,27 @@ function initPrompt(data) {
           result = (parseInt(found[0]) + parseInt(found[1])) / 2;
           p_duration = p_duration + result * ti;
         }
+        /*
+        var p_time = p_duration-p_pre_duration;
+        if(p_time<60){
+            insertTr += "<td>" + p_time + "초" + "</td>";
+        }
+        else{
+          insertTr += "<td>" + p_time/60 + "분" + "</td>";
+        }*/
       }
+
       var insertTr = "";
       insertTr += "<tr>";
-      insertTr += "<td>" + p_pre_duration + "-" + p_duration + "</td>";
+      var p_time = p_duration-p_pre_duration;
+      if(p_time<60){
+          insertTr += "<td>" + p_time + "초" + "</td>";
+      }
+      else{
+        insertTr += "<td>" + p_time/60 + "분" + "</td>";
+      }
+
+
       insertTr += "<td>" + tools.join(", ") + "</td>";
       insertTr += "<td>";
       for (var j = 0; j < ingredient.length; j++) {
@@ -87,7 +109,7 @@ function initPrompt(data) {
   } else if (zone == "화구존") {
     if (data[i].duration == "") {
       f_pre_duration = f_duration;
-      f_duration = f_duration + 120;
+      f_duration = f_duration + 2;
     } else {
       f_pre_duration = f_duration;
       var str = data[i].duration.replace(/[0-9]/g, "");
@@ -108,9 +130,15 @@ function initPrompt(data) {
         f_duration = f_duration + result * ti;
       }
     }
+    var f_time = f_duration-f_pre_duration;
     var insertTr = "";
     insertTr += "<tr>";
-    insertTr += "<td>" + f_pre_duration + "-" + f_duration + "</td>";
+    if(f_time<60){
+        insertTr += "<td>" + f_time + "초" + "</td>";
+    }
+    else{
+      insertTr += "<td>" + f_time/60 + "분" + "</td>";
+    }
     insertTr += "<td>" + tools.join(", ") + "</td>";
     insertTr += "<td>";
     for (var j = 0; j < ingredient.length; j++) {
@@ -147,9 +175,11 @@ function initPrompt(data) {
 
       f_total = total_time;
 
-      var hour = parseInt(total_time / 3600);
-      var min = parseInt((total_time % 3600) / 60);
-      var sec = total_time % 60;
+      var fp_total = f_total + p_total;
+
+      var hour = parseInt(fp_total / 3600);
+      var min = parseInt((fp_total % 3600) / 60);
+      var sec = fp_total % 60;
 
       if (hour == 0 && min == 0) {
         $('#total_ti').text('총 예상 시간: ' + sec + '초');
