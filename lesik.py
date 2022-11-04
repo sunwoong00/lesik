@@ -1172,7 +1172,7 @@ def prompt():
         recipe_json = request.form.get("recipe")
     return render_template("prompt.html", recipe=recipe_json)
 
-
+# 레시피 랜덤으로 바꾸는 코드
 @app.route('/refresh')
 def refresh():
     recipe_dir = "static/recipe/ko"
