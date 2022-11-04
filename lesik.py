@@ -1172,7 +1172,6 @@ def prompt():
         recipe_json = request.form.get("recipe")
     return render_template("prompt.html", recipe=recipe_json)
 
-
 @app.route('/refresh')
 def refresh():
     recipe_dir = "static/recipe/ko"
