@@ -922,7 +922,7 @@ def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
 
     for ne in node['NE']:
    
-        if ne['type'] in volume_type_list:
+        if ne['type'] in volume_type_list and len(volume_node) == 0: # 선웅 추가 (용량 1가지만 나오게)
             volume_node.append(ne)
         if ne['type'] in ingredient_type_list:
             if volume_node and ne['begin'] < volume_node[-1]['end']:
@@ -933,9 +933,9 @@ def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
     if not volume_node:
         if 'word' in node:
             for word in node['word']:
-                for volume in volume_list:
-                    if volume in word['text'] and word['text'] not in ingredient_text_list:
-                        volume_node.append(word)
+                    for volume in volume_list:
+                        if volume in word['text'] and word['text'] not in ingredient_text_list and len(volume_node) == 0: # 선웅 추가 (용량 1가지만 나오게)
+                            volume_node.append(word)
 
     sub_ingredient_dict = {}
     if volume_node is not None:
@@ -957,6 +957,8 @@ def parse_node_section(entity_mode, is_srl, node_list):
     is_ingredient = True
     sub_type = None
     remove_node_list = []
+
+    
 
     for node in node_list:
         if "[" in node['text'] and "]" in node['text']:
@@ -1030,6 +1032,26 @@ def parse_node_section(entity_mode, is_srl, node_list):
                                 break
                         if flag==0: 
                             seq_dict['volume'].append('')
+                
+                #원문 용량 추가 - 선웅
+                hasNumber = lambda stringVal: any(elem.isdigit() for elem in stringVal)
+                for i in range(0, len(node['word'])):
+                    if seq_dict['start_id'] <= node['word'][i]['begin'] and node['word'][i]['end'] <= seq_dict['end_id']:
+                        for vol_ele in volume_list:
+                            if vol_ele in node['word'][i]['text'] and hasNumber(node['word'][i]['text']):
+                                replace = node['word'][i]['text'].replace(",", "")
+                                node['word'][i]['text'] = replace
+                                for j in range(0, len(seq_dict['ingre'])):
+                                    if node['word'][i-1]['text'] == seq_dict['ingre'][j]:
+                                        volume_text = node['word'][i]['text'].split(vol_ele)
+                                        seq_dict['volume'][j] = volume_text[0] + vol_ele
+                                for j in range(0, len(seq_dict['seasoning'])):
+                                    if node['word'][i-1]['text'] == seq_dict['seasoning'][j]:
+                                        volume_text = node['word'][i]['text'].split(vol_ele)
+                                        seq_dict['volume'][len(seq_dict['ingre']) + j] = volume_text[0] + vol_ele
+                                
+                                
+
                 sequence_list.append(seq_dict)
 
     for node in remove_node_list:
