@@ -2,12 +2,12 @@ import json
 import os.path
 import urllib3
 
+
 def get_list_from_file(file_path):
-    pwd = os.getcwd() + "/lesik/"
-    file_exists = os.path.exists(pwd + file_path)
+    file_exists = os.path.exists(file_path)
     if not file_exists:
         return None
-    f = open(pwd + file_path, 'r', encoding='utf-8')
+    f = open(os.getcwd() + "/" + file_path, 'r', encoding='utf-8')
     tmp_list = f.readlines()
     tmp_list = list(map(lambda elem: elem.replace("\n", ""), tmp_list))
     f.close()
@@ -15,11 +15,10 @@ def get_list_from_file(file_path):
 
 
 def parse_tool_dict(file_path):
-    pwd = os.getcwd() + "/lesik/"
-    file_exists = os.path.exists(pwd + file_path)
+    file_exists = os.path.exists(file_path)
     if not file_exists:
         return None
-    f = open(pwd + file_path, 'r', encoding='utf-8')
+    f = open(file_path, 'r', encoding='utf-8')
     delim = ">"
     tools = []
     tool_score_dict = {}
@@ -36,11 +35,10 @@ def parse_tool_dict(file_path):
 
 
 def parse_cooking_act_dict(file_path):
-    pwd = os.getcwd() + "/lesik/"
-    file_exists = os.path.exists(pwd + file_path)
+    file_exists = os.path.exists(file_path)
     if not file_exists:
         return None
-    f = open(pwd + file_path, 'r', encoding='utf-8')
+    f = open(file_path, 'r', encoding='utf-8')
     delim = ">"
     act_dict = {}
     act_score_dict = {}
@@ -57,11 +55,10 @@ def parse_cooking_act_dict(file_path):
 
 
 def parse_act_to_tool_dict(file_path):
-    pwd = os.getcwd() + "/lesik/"
-    file_exists = os.path.exists(pwd + file_path)
+    file_exists = os.path.exists(file_path)
     if not file_exists:
         return None
-    f = open(pwd + file_path, 'r', encoding='utf-8')
+    f = open(file_path, 'r', encoding='utf-8')
     delim = ">"
     t_delim = ","
     act_tool_dict = {}
@@ -75,11 +72,10 @@ def parse_act_to_tool_dict(file_path):
 
 
 def parse_idiom_dict(file_path):
-    pwd = os.getcwd() + "/lesik/"
-    file_exists = os.path.exists(pwd + file_path)
+    file_exists = os.path.exists(file_path)
     if not file_exists:
         return None
-    f = open(pwd + file_path, 'r', encoding='utf-8')
+    f = open(file_path, 'r', encoding='utf-8')
     delim = ">"
     t_delim = ","
     sub_idiom_dict = {}
@@ -365,8 +361,26 @@ def verify_etn(node, seq_list):
 
 # 대분류, 중분류
 def classify(seq_list):
+    
+    slice = ["나누다","썰다","채썰다" "슬라이스", "다이스", "가르다", "다지다","자르다","쪼개다","가르다","뜯다","찢다","부수다","으깨다","내다","갈다"]
+    prepare_ingre = ["밑간하다", "재우다", "숙성시키다", "불리다", "밀봉하다", "절이다","손질하다","냉장보관하다","다듬다","씻다","맞추다","헹구다"]
+    use_fire = ["짓다","돌리다","끓이다","끓다", "끄다", "켜다", "가열하다", "볶다", "끓어오르다", "가열하다", "예열하다", "굽다", "삶다", "조리다", "졸이다", "데치다", "찌다", "튀기다", "지지다", "부치다", "익히다", "데우다", "쑤다","프라이하다","삶다","우리다","켜다","끄다"]
+    put = ["깔다","붙이다","채우다","끼얹다","담그다","얹다","붓다","덮다","두르다","감싸다","곁들이다","뿌리다","올리다","입히다","풀다","넣다", "첨가하다", "담다"]
+    mix = ["버무리다","휘핑하다","섞다","젓다","치대다","무치다","묻히다"]
+    make = ["접다","빚는다","말다","누르다","뭉치다","만들다","주무르다","펴다","두드리다","말다"]
+    remove = ["털다","털어내다","걷어내다","걷다","건지다","거르다","떼다","도려내다","파내다","제거하다","잘라내다","꺼내다","발라내다","닦다","뜨다","빼다"]
+    
+   
+    middle_class=[]
+    top_class_slice=[]
+    top_class_prepare_ingre=[]
+    top_class_put=[]
+    top_class_useFire=[]
+    top_class_mix=[]
+    top_class_make=[]
+    low_class=[]
     for sequence in seq_list:
-        if sequence['act'] in slice_act:
+        if sequence['act'] in slice:
             #sequence['act'] = sequence['act']+"(대분류:slice)"
             sequence['top_class']="slice"
         elif sequence['act'] in prepare_ingre:
@@ -457,6 +471,38 @@ def add_standard(node, seq_list):
                     else:
                         sequence['standard']=sequence['standard']+","+i     
     
+         
+    '''
+    for m_ele in node['morp']:
+        m_id = int(m_ele['id'])
+        if m_id == 0:
+            continue
+        prev_morp = node['morp'][m_id - 1]
+        if m_ele['type'] == 'VV' and m_ele['lemma'] in cooking_act_dict:
+            if prev_morp['type']=="EC" or prev_morp['type']=="MAG":
+                for i in range(0, len(seq_list)):
+                    sequence = seq_list[i]
+                    if sequence['start_id'] <= m_id <= sequence['end_id']:
+                        for w_ele in node['word']:
+                            w_begin = int(w_ele['begin'])
+                            w_end = int(w_ele['end'])
+                            if w_begin <= int(prev_morp['id']) <= w_end:
+                                seq_list[i]['standard'] = node['word'][int(w_ele['id'])]['text'] 
+        
+            
+            if prev_morp['type']=="JKB":
+                for i in range(0, len(seq_list)):
+                    sequence = seq_list[i]
+                    if sequence['start_id'] <= m_id <= sequence['end_id']:
+                        for w_ele in node['word']:
+                            w_begin = int(w_ele['begin'])
+                            w_end = int(w_ele['end'])
+                            w_id=int(w_ele[id])
+                            prev_word = node['word'][w_id - 1]
+                            if w_begin <= int(prev_morp['id']) <= w_end:
+                                if node['word'][int(w_ele['id'])]['text']=="두께로":
+                                    seq_list[i]['standard'] =prev_word['text']+node['word'][int(w_ele['id'])]['text']
+        '''    
     return seq_list
         
 # put, remove, make 대상격 찾는 함수
@@ -792,7 +838,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
         sequence['act'] = cooking_act_dict[sequence['act']]
 
     # 화구존/전처리존 분리
-    #sequence_list = select_cooking_zone(sequence_list)
+    sequence_list = select_cooking_zone(sequence_list)
 
     if is_srl:
         # 목적어를 필수로 하는 조리 동작 처리
@@ -837,21 +883,18 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
     
     # 소분류 규격 추가
     sequence_list = add_standard(node, sequence_list)
-
-    # 시퀀스 병합
-    sequence_list = merge_sequence(sequence_list)
     
     # put, remove, make 대상격 찾는 함수
     sequence_list = find_NP_OBJ(node, sequence_list)
     
+    # 시퀀스 병합
+    sequence_list = merge_sequence(sequence_list)
+
     # 조건문 처리함수추가
     sequence_list = find_condition(node, sequence_list)
 
     # 동작에 딸려오는 부사구 출력
     sequence_list = find_adverb(node, sequence_list)
-    
-    # 화구존/전처리존 분리
-    sequence_list = select_cooking_zone(sequence_list)
 
     return sequence_list
 
@@ -929,6 +972,7 @@ def merge_sequence(sequence_list):
             sequence_list.append([]) # list index out of range 방지 위해 마지막에 빈 시퀀스 삽입
     
     sequence_list = list(filter(None, sequence_list))
+
     return sequence_list
 
 def extract_ner_from_kobert(sentence):
@@ -1164,7 +1208,7 @@ def main():
     f.close()
 
     # get cooking component list & dictionary from files
-    global seasoning_list, volume_list, time_list, temperature_list, cooking_act_dict, act_to_tool_dict, tool_list, idiom_dict, zone_dict, slice_act, prepare_ingre, use_fire, put, mix, make, remove
+    global seasoning_list, volume_list, time_list, temperature_list, cooking_act_dict, act_to_tool_dict, tool_list, idiom_dict, zone_dict
     seasoning_list = []
     if entity_mode != 'koelectra':
         seasoning_list = get_list_from_file("labeling/seasoning.txt")
@@ -1175,14 +1219,6 @@ def main():
     act_to_tool_dict = parse_act_to_tool_dict("labeling/act_to_tool.txt")
     tool_list, tool_to_zone_dict = parse_tool_dict("labeling/tool.txt")
     idiom_dict = parse_idiom_dict("labeling/idiom.txt")
-    slice_act = get_list_from_file("labeling/topclass_dict/slice_act.txt")
-    prepare_ingre = get_list_from_file("labeling/topclass_dict/prepare_act.txt")
-    use_fire = get_list_from_file("labeling/topclass_dict/useFire_act.txt")
-    put = get_list_from_file("labeling/topclass_dict/put_act.txt")
-    mix = get_list_from_file("labeling/topclass_dict/mix_act.txt")
-    make = get_list_from_file("labeling/topclass_dict/mix_act.txt")
-    remove = get_list_from_file("labeling/topclass_dict/remove_act.txt")
-    
 
     zone_dict = {'act': act_to_zone_dict, 'tool': tool_to_zone_dict}
 
