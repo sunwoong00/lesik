@@ -321,8 +321,6 @@ def select_cooking_zone(sequence_list):
             period_check.append(True)
         else:
             period_check.append(False)
-
-
     keep_i = -1
     while keep_i != len(sequence_list[i] - 1):
         for i in range(keep_i + 1, len(sequence_list)):
@@ -613,7 +611,7 @@ def find_omitted_ingredient(node, seq_list, ingredient_dict, mixed_dict):
                                     sequence['ingre'].append(ingredient) # 박지연 대체 왜 여기로감?? 얘가 시즈닝이면 어쩌려고
     return seq_list
 
-
+'''
 def remove_redundant_sequence(node, seq_list):
     is_redundant = False
     del_seq_list = []
@@ -658,7 +656,7 @@ def remove_redundant_sequence(node, seq_list):
         seq_list.remove(seq)
 
     return seq_list
-
+'''
 
 def verify_coref(coref_dict, node, word_id):
     word = node['word'][word_id]['text']
@@ -821,7 +819,8 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
                             sequence['duration'] = ne['text']
 
     # 불필요한 시퀀스 제거 및 다음 시퀀스에 병합
-    sequence_list = remove_redundant_sequence(node, seq_list)
+    # sequence_list = remove_redundant_sequence(node, seq_list)
+    sequence_list = seq_list
 
     if is_srl:
         # 현재 시퀀스에 누락된 재료를 보완
@@ -878,6 +877,9 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
     
     # 동사 분류
     sequence_list = classify(sequence_list)
+
+     # 시퀀스 병합
+    sequence_list = merge_sequence(sequence_list)
     
     # 소분류 규격 추가
     sequence_list = add_standard(node, sequence_list)
@@ -893,6 +895,83 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
 
     return sequence_list
 
+# 조리 시퀀스 병합 (넣다와 넣다 뒤에 나오는 동사 병합) - 박지연
+def merge_sequence(sequence_list):
+    print("**************************************")
+    print(sequence_list)
+    
+    '''
+    sequence example: {'duration': '', 'act': '썰다', 'tool': ['도마', '칼'], 'ingre': ['어묵', '양파', '청피망'], 'seasoning': [], 'volume': [], 
+                        'temperature': [], 'zone': '전처리존', 'start_id': 0, 'end_id': 11, 'sentence': '1. 어묵과 양파, 청피망은 얇게 채 썰고', 
+                        'standard': '얇게,채', 'top_class': 'slice'}
+    1. 동사가 똑같으면 합침: duration, ingre, seasoning, volume, temperature를 앞쪽 시퀀스에 넣음 (도구는 그대로)
+    2. 
+    '''
+
+    len_of_list = len(sequence_list)
+    for seq_idx in range(len_of_list - 1):
+        # 동사가 똑같은 경우 (보류 - 논의 필요)
+        if sequence_list[seq_idx] and sequence_list[seq_idx + 1] and sequence_list[seq_idx]["act"] == sequence_list[seq_idx + 1]["act"]:
+            if sequence_list[seq_idx + 1]["duration"] != '': # 시간 병합
+                sequence_list[seq_idx]["duration"] = sequence_list[seq_idx]["duration"] + "\n" + sequence_list[seq_idx + 1]["duration"]
+
+            if sequence_list[seq_idx + 1]["ingre"]: # 식자재 병합
+                [sequence_list[seq_idx]["ingre"].append(ingre_part) for ingre_part in sequence_list[seq_idx + 1]["ingre"]]
+
+            if sequence_list[seq_idx + 1]["seasoning"]: # 첨가물 병합
+                [sequence_list[seq_idx]["seasoning"].append(sea_part) for sea_part in sequence_list[seq_idx + 1]["seasoning"]]
+
+            if sequence_list[seq_idx + 1]["volume"]: # 용량 병합
+                [sequence_list[seq_idx]["volume"].append(vol_part) for vol_part in sequence_list[seq_idx + 1]["volume"]]
+
+            if sequence_list[seq_idx + 1]["temperature"]: # 온도 병합
+                [sequence_list[seq_idx]["temperature"].append(tem_part) for tem_part in sequence_list[seq_idx + 1]["temperature"]]
+            
+            sequence_list[seq_idx]["end_id"] = sequence_list[seq_idx + 1]["end_id"] # end_id update
+            sequence_list[seq_idx]["sentence"] = sequence_list[seq_idx]["sentence"] + " " + sequence_list[seq_idx + 1]["sentence"] # 원문 update
+
+            #if sequence_list[seq_idx + 1]["standard"] != '': # 규격 병합
+            #    sequence_list[seq_idx]["standard"] = sequence_list[seq_idx]["standard"] + "\n" + sequence_list[seq_idx + 1]["standard"]
+
+            del sequence_list[seq_idx + 1] # 리스트 요소 삭제
+            sequence_list.append([]) # list index out of range 방지 위해 마지막에 빈 시퀀스 삽입
+
+        # 현 동사가 "넣다"이고, 이후 동사가 다른 동사인 경우
+        if sequence_list[seq_idx] and sequence_list[seq_idx + 1] and sequence_list[seq_idx]["act"] == "넣다" and sequence_list[seq_idx]["sentence"].find("요.") == -1:
+            sequence_list[seq_idx]["act"] = "넣고 " + sequence_list[seq_idx + 1]["act"] # 동사 병합
+            
+            if sequence_list[seq_idx + 1]["tool"]: # 도구 병합
+                [sequence_list[seq_idx]["tool"].append(tool_part) for tool_part in sequence_list[seq_idx + 1]["tool"]]
+
+            if sequence_list[seq_idx + 1]["duration"] != '': # 시간 병합
+                sequence_list[seq_idx]["duration"] = sequence_list[seq_idx]["duration"] + " " + sequence_list[seq_idx + 1]["duration"]
+
+            if sequence_list[seq_idx + 1]["ingre"]: # 식자재 병합
+                [sequence_list[seq_idx]["ingre"].append(ingre_part) for ingre_part in sequence_list[seq_idx + 1]["ingre"]]
+
+            if sequence_list[seq_idx + 1]["seasoning"]: # 첨가물 병합
+                [sequence_list[seq_idx]["seasoning"].append(sea_part) for sea_part in sequence_list[seq_idx + 1]["seasoning"]]
+
+            if sequence_list[seq_idx + 1]["volume"]: # 용량 병합
+                [sequence_list[seq_idx]["volume"].append(vol_part) for vol_part in sequence_list[seq_idx + 1]["volume"]]
+
+            if sequence_list[seq_idx + 1]["temperature"]: # 온도 병합
+                [sequence_list[seq_idx]["temperature"].append(tem_part) for tem_part in sequence_list[seq_idx + 1]["temperature"]]
+
+            sequence_list[seq_idx]["end_id"] = sequence_list[seq_idx + 1]["end_id"] # end_id update
+
+            sequence_list[seq_idx]["sentence"] = sequence_list[seq_idx]["sentence"] + " " + sequence_list[seq_idx + 1]["sentence"] # 원문 update
+
+            sequence_list[seq_idx]["top_class"] = sequence_list[seq_idx + 1]["top_class"] # 대분류 update
+            
+            del sequence_list[seq_idx + 1] # 리스트 요소 삭제
+            sequence_list.append([]) # list index out of range 방지 위해 마지막에 빈 시퀀스 삽입
+
+    sequence_list = list(filter(None, sequence_list))
+    print("==================")
+    print(sequence_list)
+    print("==================")
+    return sequence_list
 
 def extract_ner_from_kobert(sentence):
     kobert_api_url = "http://ec2-13-209-68-59.ap-northeast-2.compute.amazonaws.com:5000"
