@@ -329,36 +329,50 @@ def find_objective(node, seq_list):
 def select_cooking_zone(sequence_list):
     score_board = []
     for i in range(0, len(sequence_list)):
-        act_fire_score = 0.0
+        if sequence_list[i]['top_class'] == "use_fire":
+            sequence_list[i]['zone'] = "화구존"
+        elif sequence_list[i]['top_class'] == "prepare_ingre" or sequence_list[i]['top_class'] == "make" or sequence_list[i]['top_class'] == "slice":
+            sequence_list[i]['zone'] = "전처리존"
+        else:
+            sequence_list[i]['zone'] = ""
+        
         tool_fire_score = 0.0
-        if sequence_list[i]['act'] in zone_dict['act'].keys():
-            act_fire_score = float(zone_dict['act'].get(sequence_list[i]['act']))
         for tool in sequence_list[i]['tool']:
             if tool in zone_dict['tool'].keys():
                 tool_fire_score = float(zone_dict['tool'].get(tool))
-
-        score_board.append(act_fire_score + tool_fire_score)
-        if score_board[i] > 0:
+        score_board.append(tool_fire_score)
+        if score_board[i] >= 1:
             sequence_list[i]['zone'] = "화구존"
-        else:
+        
+    for i in range(0, len(sequence_list)):
+        if sequence_list[i]['zone']=="":
+            if i == 0:
+                j=i
+                if i != len(sequence_list)-1:
+                    
+                    while(j<len(sequence_list)-1):
+                        if j==len(sequence_list)-1:
+                            if sequence_list[j+1]['zone']=="":
+                                sequence_list[i]['zone'] = "전처리존"
+                        elif sequence_list[j+1]['zone']=="":
+                            j=j+1
+                        else:
+                            sequence_list[i]['zone']=sequence_list[j+1]['zone']
+                            break
+                          
+                    if sequence_list[i]['zone'] == "":
+                        sequence_list[i]['zone'] = "전처리존"
+                else:
+                    sequence_list[i]['zone'] = "전처리존"
+            elif i==len(sequence_list)-1:
+                sequence_list[i]['zone'] = sequence_list[i-1]['zone']
+            
+            else:
+                sequence_list[i]['zone'] = sequence_list[i-1]['zone']
+                
+        if sequence_list[i]['zone'] == "":
             sequence_list[i]['zone'] = "전처리존"
-    '''
-        if sequence_list[i]['sentence'][-1] == '.' or sequence_list[i]['sentence'][-3] == '.':
-            period_check.append(True)
-        else:
-            period_check.append(False)
-
-
-    keep_i = -1
-    while keep_i != len(sequence_list[i] - 1):
-        for i in range(keep_i + 1, len(sequence_list)):
-            if period_check[i] == False:
-                if score_board[i] >= 0.2:
-                    sequence_list[i]['zone'] = "화구존"
-            elif period_check[i] == True:
-                keep_i = i
-                break
-    '''
+        
     return sequence_list
 
 
@@ -388,7 +402,7 @@ def verify_etn(node, seq_list):
 
 # 대분류, 중분류
 def classify(seq_list):
-    slice = ["나누다","썰다","채썰다" "슬라이스", "다이스", "가르다", "다지다","자르다","쪼개다","가르다","뜯다","찢다","부수다","으깨다","내다","갈다"]
+    slice = ["나누다","썰다","채썰다", "슬라이스", "다이스", "가르다", "다지다","자르다","쪼개다","가르다","뜯다","찢다","부수다","으깨다","내다","갈다"]
     prepare_ingre = ["밑간하다", "재우다", "숙성시키다", "불리다", "밀봉하다", "절이다","손질하다","냉장보관하다","다듬다","씻다","맞추다","헹구다"]
     use_fire = ["짓다","돌리다","끓이다","끓다", "끄다", "켜다", "가열하다", "볶다", "끓어오르다", "가열하다", "예열하다", "굽다", "삶다", "조리다", "졸이다", "데치다", "찌다", "튀기다", "지지다", "부치다", "익히다", "데우다", "쑤다","프라이하다","삶다","우리다","켜다","끄다"]
     put = ["깔다","붙이다","채우다","끼얹다","담그다","얹다","붓다","덮다","두르다","감싸다","곁들이다","뿌리다","올리다","입히다","풀다","넣다", "첨가하다", "담다"]
@@ -396,15 +410,6 @@ def classify(seq_list):
     make = ["접다","빚는다","말다","누르다","뭉치다","만들다","주무르다","펴다","두드리다","말다"]
     remove = ["털다","털어내다","걷어내다","걷다","건지다","거르다","떼다","도려내다","파내다","제거하다","잘라내다","꺼내다","발라내다","닦다","뜨다","빼다"]
     
-   
-    middle_class=[]
-    top_class_slice=[]
-    top_class_prepare_ingre=[]
-    top_class_put=[]
-    top_class_useFire=[]
-    top_class_mix=[]
-    top_class_make=[]
-    low_class=[]
     for sequence in seq_list:
         if sequence['act'] in slice:
             #sequence['act'] = sequence['act']+"(대분류:slice)"
@@ -531,8 +536,8 @@ def add_standard(node, seq_list):
         '''    
     return seq_list
         
-# put, remove, make 대상격 찾는 함수
-def find_NP_OBJ(node, seq_list):
+# remove, make 대상격 찾는 함수
+def find_NP_OBJ(node, seq_list): #지은 수정됨
     
     no_plus_NP_OBJ = ['정도', '크기로', '길이로', '등에', '재료를']
     for dep in node['dependency']:
@@ -551,7 +556,7 @@ def find_NP_OBJ(node, seq_list):
                     end = word['end']
                     for i in range(0, len(seq_list)):
                         sequence = seq_list[i]
-                        if sequence['top_class'] == "remove" or sequence['top_class'] == "make":
+                        if sequence['top_class'] == "remove" or sequence['top_class'] == "make" or sequence['top_class'] == "prepare_ingre" or sequence['act']=="자르다":
                             if sequence['start_id'] <= end <= sequence['end_id'] and start_id <= sequence[
                                 'end_id'] <= end_id:
                                 is_objective = True
@@ -574,12 +579,13 @@ def find_NP_OBJ(node, seq_list):
                                 if is_objective:
                                     if word['text'] not in no_plus_NP_OBJ:  # 선웅 수정
                                         sequence['act'] = word['text'] + " " + sequence['act']
-                                
+                        
     return seq_list
 
 # 상상코딩5
-# 동사에 딸려있는 부사구까지 출력
-def find_adverb(node, sequence_list):
+# 동사에 딸려있는 부사구까지 출력 put
+def find_adverb(node, sequence_list): #지은 수정됨
+    
     no_plus_adverb = ['정도', '크기로', '길이로', '등에']
     for m_ele in node['morp']:
         m_id = int(m_ele['id'])
@@ -589,7 +595,8 @@ def find_adverb(node, sequence_list):
         if m_ele['type'] == 'VV' and m_ele['lemma'] in cooking_act_dict and prev_morp['type'] == "JKB":
             for i in range(0, len(sequence_list)):
                 sequence = sequence_list[i]
-                if sequence['start_id'] <= m_id <= sequence['end_id'] and sequence['top_class'] == "put": # 선웅 수정
+                is_adverb = True
+                if sequence['start_id'] <= m_id <= sequence['end_id'] and sequence['top_class'] == "put":   
                     for w_ele in node['word']:
                         w_begin = int(w_ele['begin'])
                         w_end = int(w_ele['end'])
@@ -602,23 +609,43 @@ def find_adverb(node, sequence_list):
                                 for k in range(0, len(sequence['seasoning'])):
                                     if chk_morp['lemma'] in sequence['seasoning'][k]:
                                         sequence['seasoning'].remove(sequence['seasoning'][k])
+
                             if node['word'][int(w_ele['id'])]['text'] not in no_plus_adverb:
-                                for s_tool in sequence_list[i]['tool']:
-                                    if s_tool not in node['word'][int(w_ele['id'])]['text']: 
-                                        is_adverb = True
-                                        for ingre in sequence['ingre']:
-                                            if node['word'][int(w_ele['id'])]['text'] in ingre:
+                                if is_adverb:
+                                    for ingre in sequence['ingre']:
+                                        if node['word'][int(w_ele['id'])]['text'] in ingre:
+                                            is_adverb = False
+                                            break
+                                if is_adverb:
+                                        for seasoning in sequence['seasoning']:
+                                            if node['word'][int(w_ele['id'])]['text'] in seasoning:
                                                 is_adverb = False
                                                 break
-                                        if is_adverb:
-                                            for seasoning in sequence['seasoning']:
-                                                if node['word'][int(w_ele['id'])]['text'] in seasoning:
-                                                    is_adverb = False
-                                                    break
+                                        for s_tool in sequence_list[i]['tool']:
+                                            if s_tool in node['word'][int(w_ele['id'])]['text']:
+                                                is_adverb = False
+                                                break
+                                if is_adverb:
+                                    sequence_list[i]['act'] = node['word'][int(w_ele['id'])]['text'] + " " + sequence_list[i]['act']
+    
+    return sequence_list
 
-                                        if is_adverb:
-                                            sequence_list[i]['act'] = node['word'][int(w_ele['id'])]['text'] + " " + sequence_list[i]['act']
 
+def find_idiom(node, sequence_list): #지은 수정됨
+    for m_ele in node['morp']:
+        m_id = int(m_ele['id'])
+        if m_id == 0:
+            continue
+        prev_morp = node['morp'][m_id - 1]
+        if m_ele['type'] == 'VV' and m_ele['lemma'] in idiom_dict.keys():
+            for i in range(0, len(sequence_list)):
+                sequence = sequence_list[i]
+                if sequence['start_id'] <= m_id <= sequence['end_id']:
+                    for w_ele in node['word']:
+                        w_begin = int(w_ele['begin'])
+                        w_end = int(w_ele['end'])
+                        if w_begin <= int(prev_morp['id']) <= w_end:
+                            sequence_list[i]['act'] = node['word'][int(w_ele['id'])]['text'] + " " + sequence_list[i]['act']
     return sequence_list
 
 def find_omitted_ingredient(node, seq_list, ingredient_dict, mixed_dict):
@@ -864,7 +891,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
         sequence['act'] = cooking_act_dict[sequence['act']]
 
     # 화구존/전처리존 분리
-    sequence_list = select_cooking_zone(sequence_list)
+    #sequence_list = select_cooking_zone(sequence_list)
 
     if is_srl:
         # 목적어를 필수로 하는 조리 동작 처리
@@ -909,9 +936,18 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
 
     # 소분류 규격 추가
     sequence_list = add_standard(node, sequence_list)
+    
+    # 화구존/전처리존 분리
+    sequence_list = select_cooking_zone(sequence_list)
 
     # put, remove, make 대상격 찾는 함수
     sequence_list = find_NP_OBJ(node, sequence_list)
+    
+    # 동작에 딸려오는 부사구 출력
+    sequence_list = find_adverb(node, sequence_list)
+    
+    # 숙어
+    sequence_list = find_idiom(node, sequence_list)
     
     # 시퀀스 병합
     sequence_list = merge_sequence(sequence_list)
@@ -919,8 +955,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
     # 조건문 처리함수추가
     sequence_list = find_condition(node, sequence_list)
 
-    # 동작에 딸려오는 부사구 출력
-    sequence_list = find_adverb(node, sequence_list)
+    
 
     return sequence_list
 
