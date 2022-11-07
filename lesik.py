@@ -940,7 +940,7 @@ def merge_sequence(sequence_list):
         # 동사가 똑같은 경우 (보류 - 논의 필요)
         if sequence_list[seq_idx] and sequence_list[seq_idx + 1] and sequence_list[seq_idx]["act"] == sequence_list[seq_idx + 1]["act"]:
             if sequence_list[seq_idx + 1]["duration"] != '': # 시간 병합
-                sequence_list[seq_idx]["duration"] = sequence_list[seq_idx]["duration"] + "\n" + sequence_list[seq_idx + 1]["duration"]
+                sequence_list[seq_idx]["duration"] = sequence_list[seq_idx]["duration"] + "<br>" + sequence_list[seq_idx + 1]["duration"]
 
             if sequence_list[seq_idx + 1]["ingre"]: # 식자재 병합
                 [sequence_list[seq_idx]["ingre"].append(ingre_part) for ingre_part in sequence_list[seq_idx + 1]["ingre"]]
@@ -958,7 +958,7 @@ def merge_sequence(sequence_list):
             sequence_list[seq_idx]["sentence"] = sequence_list[seq_idx]["sentence"] + " " + sequence_list[seq_idx + 1]["sentence"] # 원문 update
 
             if sequence_list[seq_idx + 1]["standard"] != '': # 규격 병합
-                sequence_list[seq_idx]["standard"] = sequence_list[seq_idx]["standard"] + "\n" + sequence_list[seq_idx + 1]["standard"]
+                sequence_list[seq_idx]["standard"] = sequence_list[seq_idx]["standard"] + "<br>" + sequence_list[seq_idx + 1]["standard"]
 
             del sequence_list[seq_idx + 1] # 리스트 요소 삭제
             sequence_list.append([]) # list index out of range 방지 위해 마지막에 빈 시퀀스 삽입
@@ -986,8 +986,8 @@ def merge_sequence(sequence_list):
                 [sequence_list[seq_idx]["temperature"].append(tem_part) for tem_part in sequence_list[seq_idx + 1]["temperature"]]
 
             if sequence_list[seq_idx + 1]["standard"] != '': # 규격 병합
-                sequence_list[seq_idx]["standard"] = sequence_list[seq_idx]["standard"] + "\n" + sequence_list[seq_idx + 1]["standard"]
-                
+                sequence_list[seq_idx]["standard"] = sequence_list[seq_idx]["standard"] + "<br>" + sequence_list[seq_idx + 1]["standard"]
+
             sequence_list[seq_idx]["end_id"] = sequence_list[seq_idx + 1]["end_id"] # end_id update
 
             sequence_list[seq_idx]["sentence"] = sequence_list[seq_idx]["sentence"] + " " + sequence_list[seq_idx + 1]["sentence"] # 원문 update
