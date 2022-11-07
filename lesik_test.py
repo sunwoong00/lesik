@@ -3,11 +3,10 @@ import os.path
 import urllib3
 
 def get_list_from_file(file_path):
-    pwd = os.getcwd() + "/lesik/"
-    file_exists = os.path.exists(pwd + file_path)
+    file_exists = os.path.exists(file_path)
     if not file_exists:
         return None
-    f = open(pwd + file_path, 'r', encoding='utf-8')
+    f = open(os.getcwd() + "/" + file_path, 'r', encoding='utf-8')
     tmp_list = f.readlines()
     tmp_list = list(map(lambda elem: elem.replace("\n", ""), tmp_list))
     f.close()
@@ -15,11 +14,10 @@ def get_list_from_file(file_path):
 
 
 def parse_tool_dict(file_path):
-    pwd = os.getcwd() + "/lesik/"
-    file_exists = os.path.exists(pwd + file_path)
+    file_exists = os.path.exists(file_path)
     if not file_exists:
         return None
-    f = open(pwd + file_path, 'r', encoding='utf-8')
+    f = open(file_path, 'r', encoding='utf-8')
     delim = ">"
     tools = []
     tool_score_dict = {}
@@ -36,11 +34,10 @@ def parse_tool_dict(file_path):
 
 
 def parse_cooking_act_dict(file_path):
-    pwd = os.getcwd() + "/lesik/"
-    file_exists = os.path.exists(pwd + file_path)
+    file_exists = os.path.exists(file_path)
     if not file_exists:
         return None
-    f = open(pwd + file_path, 'r', encoding='utf-8')
+    f = open(file_path, 'r', encoding='utf-8')
     delim = ">"
     act_dict = {}
     act_score_dict = {}
@@ -57,11 +54,10 @@ def parse_cooking_act_dict(file_path):
 
 
 def parse_act_to_tool_dict(file_path):
-    pwd = os.getcwd() + "/lesik/"
-    file_exists = os.path.exists(pwd + file_path)
+    file_exists = os.path.exists(file_path)
     if not file_exists:
         return None
-    f = open(pwd + file_path, 'r', encoding='utf-8')
+    f = open(file_path, 'r', encoding='utf-8')
     delim = ">"
     t_delim = ","
     act_tool_dict = {}
@@ -75,11 +71,10 @@ def parse_act_to_tool_dict(file_path):
 
 
 def parse_idiom_dict(file_path):
-    pwd = os.getcwd() + "/lesik/"
-    file_exists = os.path.exists(pwd + file_path)
+    file_exists = os.path.exists(file_path)
     if not file_exists:
         return None
-    f = open(pwd + file_path, 'r', encoding='utf-8')
+    f = open(file_path, 'r', encoding='utf-8')
     delim = ">"
     t_delim = ","
     sub_idiom_dict = {}
@@ -886,13 +881,13 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
     
     # 소분류 규격 추가
     sequence_list = add_standard(node, sequence_list)
-
-    # 시퀀스 병합
-    sequence_list = merge_sequence(sequence_list)
     
     # put, remove, make 대상격 찾는 함수
     sequence_list = find_NP_OBJ(node, sequence_list)
     
+    # 시퀀스 병합
+    sequence_list = merge_sequence(sequence_list)
+
     # 조건문 처리함수추가
     sequence_list = find_condition(node, sequence_list)
 
