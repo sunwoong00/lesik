@@ -825,6 +825,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
     if is_srl:
         # 현재 시퀀스에 누락된 재료를 보완
         sequence_list = find_omitted_ingredient(node, sequence_list, ingredient_dict, mixed_dict)
+        # 가리비 칼국수 멸치, 새우, 다시마 문제
 
         # 조리동작(용량)
         # sequence_list = volume_of_act(node, sequence_list)
@@ -897,8 +898,6 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
 
 # 조리 시퀀스 병합 (넣다와 넣다 뒤에 나오는 동사 병합) - 박지연
 def merge_sequence(sequence_list):
-    print("**************************************")
-    print(sequence_list)
     
     '''
     sequence example: {'duration': '', 'act': '썰다', 'tool': ['도마', '칼'], 'ingre': ['어묵', '양파', '청피망'], 'seasoning': [], 'volume': [], 
@@ -971,9 +970,6 @@ def merge_sequence(sequence_list):
             sequence_list.append([]) # list index out of range 방지 위해 마지막에 빈 시퀀스 삽입
     
     sequence_list = list(filter(None, sequence_list))
-    print("==================")
-    print(sequence_list)
-    print("==================")
     return sequence_list
 
 def extract_ner_from_kobert(sentence):
