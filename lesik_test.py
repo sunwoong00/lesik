@@ -303,10 +303,14 @@ def find_objective(node, seq_list):
 # 화구존, 전처리존 분리
 def select_cooking_zone(sequence_list):
     score_board = []
+    #print("total")
+    #print(total_sequencelist)
+    #print("sequencelist")
+    #print(sequence_list)
     for i in range(0, len(sequence_list)):
         if sequence_list[i]['top_class'] == "use_fire":
             sequence_list[i]['zone'] = "화구존"
-        elif sequence_list[i]['top_class'] == "prepare_ingre" or sequence_list[i]['top_class'] == "make" or sequence_list[i]['top_class'] == "slice":
+        elif sequence_list[i]['top_class'] == "prepare_ingre" or sequence_list[i]['top_class'] == "slice":  #make 뻄
             sequence_list[i]['zone'] = "전처리존"
         else:
             sequence_list[i]['zone'] = ""
@@ -318,7 +322,58 @@ def select_cooking_zone(sequence_list):
         score_board.append(tool_fire_score)
         if score_board[i] >= 1:
             sequence_list[i]['zone'] = "화구존"
-        
+            
+    for i in range(0, len(sequence_list)):
+        if sequence_list[i]['zone']=="":
+            if i == 0:
+                j=i
+                if i != len(sequence_list)-1:
+                    while(j<len(sequence_list)-1):
+                        if j==len(sequence_list)-1:
+                            if sequence_list[j+1]['zone']=="":
+                                sequence_list[i]['zone'] = ""
+                                break
+                        elif sequence_list[j+1]['zone']=="":
+                            j=j+1
+                        else:
+                            sequence_list[i]['zone']=sequence_list[j+1]['zone']
+                            break
+                    if sequence_list[i]['zone'] == "":
+                        for k in range(0, len(total_sequencelist)):
+                            # print(total_sequencelist[k])
+                            if total_sequencelist[k][0]['sentence'] == sequence_list[i]['sentence']:
+                                while(k>0):
+                                    #print(f"sequence_list len: {len(sequence_list)}")
+                                    #print(f"k is {k}")
+                                    if total_sequencelist[k-1][0]['zone']=="":
+                                        k=k-1
+                                    else:
+                                        sequence_list[i]['zone']=total_sequencelist[k-1][0]['zone']
+                                        break
+                                    if k==0:
+                                        sequence_list[i]['zone']="전처리존"
+                                        break
+                else:
+                    for k in range(0, len(total_sequencelist)):
+                        if total_sequencelist[k][0]['sentence'] == sequence_list[i]['sentence']:
+                            while(k>0):
+                                    if total_sequencelist[k-1][0]['zone']=="":
+                                        k=k-1
+                                    else:
+                                        sequence_list[i]['zone']=total_sequencelist[k-1][0]['zone']
+                                        break
+                                    if k==0:
+                                        sequence_list[i]['zone']="전처리존"
+                                        break
+            elif i==len(sequence_list)-1:
+                sequence_list[i]['zone'] = sequence_list[i-1]['zone']
+            
+            else:
+                sequence_list[i]['zone'] = sequence_list[i-1]['zone']
+                
+        if sequence_list[i]['zone'] == "":
+            sequence_list[i]['zone'] = "전처리존"
+    '''
     for i in range(0, len(sequence_list)):
         if sequence_list[i]['zone']=="":
             if i == 0:
@@ -347,36 +402,8 @@ def select_cooking_zone(sequence_list):
                 
         if sequence_list[i]['zone'] == "":
             sequence_list[i]['zone'] = "전처리존"
-        '''
-        score_board = []
-        tool_fire_score = 0.0
-        for tool in sequence_list[i]['tool']:
-            if tool in zone_dict['tool'].keys():
-                tool_fire_score = float(zone_dict['tool'].get(tool))
-        score_board.append(tool_fire_score)
-        if score_board[i] > 0:
-            sequence_list[i]['zone'] = "화구존"
-        else:
-            sequence_list[i]['zone'] = "전처리존"       
-        '''
-    '''
-    score_board = []
-    for i in range(0, len(sequence_list)):
-        act_fire_score = 0.0
-        tool_fire_score = 0.0
-        if sequence_list[i]['act'] in zone_dict['act'].keys():
-            act_fire_score = float(zone_dict['act'].get(sequence_list[i]['act']))
-        for tool in sequence_list[i]['tool']:
-            if tool in zone_dict['tool'].keys():
-                tool_fire_score = float(zone_dict['tool'].get(tool))
 
-        score_board.append(act_fire_score + tool_fire_score)
-        if score_board[i] > 0:
-            sequence_list[i]['zone'] = "화구존"
-        else:
-            sequence_list[i]['zone'] = "전처리존"
     '''
-    
     return sequence_list
 
 
@@ -516,37 +543,6 @@ def add_standard(node, seq_list):
                     else:
                         sequence['standard']=sequence['standard']+","+i   
          
-    '''
-    for m_ele in node['morp']:
-        m_id = int(m_ele['id'])
-        if m_id == 0:
-            continue
-        prev_morp = node['morp'][m_id - 1]
-        if m_ele['type'] == 'VV' and m_ele['lemma'] in cooking_act_dict:
-            if prev_morp['type']=="EC" or prev_morp['type']=="MAG":
-                for i in range(0, len(seq_list)):
-                    sequence = seq_list[i]
-                    if sequence['start_id'] <= m_id <= sequence['end_id']:
-                        for w_ele in node['word']:
-                            w_begin = int(w_ele['begin'])
-                            w_end = int(w_ele['end'])
-                            if w_begin <= int(prev_morp['id']) <= w_end:
-                                seq_list[i]['standard'] = node['word'][int(w_ele['id'])]['text'] 
-        
-            
-            if prev_morp['type']=="JKB":
-                for i in range(0, len(seq_list)):
-                    sequence = seq_list[i]
-                    if sequence['start_id'] <= m_id <= sequence['end_id']:
-                        for w_ele in node['word']:
-                            w_begin = int(w_ele['begin'])
-                            w_end = int(w_ele['end'])
-                            w_id=int(w_ele[id])
-                            prev_word = node['word'][w_id - 1]
-                            if w_begin <= int(prev_morp['id']) <= w_end:
-                                if node['word'][int(w_ele['id'])]['text']=="두께로":
-                                    seq_list[i]['standard'] =prev_word['text']+node['word'][int(w_ele['id'])]['text']
-        '''    
     return seq_list
         
 # put, remove, make 대상격 찾는 함수
@@ -639,7 +635,6 @@ def find_adverb(node, sequence_list): #지은 수정됨
                                                 is_adverb = False
                                                 break
                                 if is_adverb:
-                                    print("yyyyyyyyyyyyyyyyyyy",sequence_list[i])
                                     sequence_list[i]['act'] = node['word'][int(w_ele['id'])]['text'] + " " + sequence_list[i]['act']
     
     return sequence_list
@@ -778,7 +773,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
             if act in cooking_act_dict:
                 # 레시피 시퀀스 6가지 요소
                 seq_dict = {'duration': "", 'act': act, 'tool': [], 'ingre': [], 'seasoning': [], 'volume': [], 'temperature': [],
-                            'zone': "", "start_id": prev_seq_id + 1, "end_id": act_id, "sentence": "", "standard":"", "top_class":""}
+                            'zone': "", "start_id": prev_seq_id + 1, "end_id": act_id, "sentence": "", "standard":"", "top_class":"","pre_sequnce":[]}
 
                 
                 # co-reference 및 dictionary를 통해 word에서 요소 추출
@@ -949,22 +944,26 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
     
     # 동사 분류
     sequence_list = classify(sequence_list)
-    
+
     # 소분류 규격 추가
     sequence_list = add_standard(node, sequence_list)
+    total_sequencelist.append(sequence_list)
     
     # 화구존/전처리존 분리
     sequence_list = select_cooking_zone(sequence_list)
-    
+
     # put, remove, make 대상격 찾는 함수
     sequence_list = find_NP_OBJ(node, sequence_list)
-
+ 
     # 동작에 딸려오는 부사구 출력
     sequence_list = find_adverb(node, sequence_list)
+    
+    # 숙어
+    sequence_list = find_idiom(node, sequence_list)
 
     # 조건문 처리함수추가
     sequence_list = find_condition(node, sequence_list)
-    
+
     # 시퀀스 병합
     sequence_list = merge_sequence(sequence_list)
 
@@ -1153,6 +1152,8 @@ def parse_node_section(entity_mode, is_srl, node_list):
                     continue
 
             sequence = create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mixed_dict, entity_mode, is_srl)
+            #print(sequence)
+            
             if not sequence:
                 remove_node_list.append(node)
 
@@ -1189,6 +1190,7 @@ def parse_node_section(entity_mode, is_srl, node_list):
                 #원문 용량 추가 - 선웅
                 hasNumber = lambda stringVal: any(elem.isdigit() for elem in stringVal)
                 for i in range(0, len(node['word'])):
+                    flag=0
                     if seq_dict['start_id'] <= node['word'][i]['begin'] and node['word'][i]['end'] <= seq_dict['end_id']:
                         for vol_ele in volume_list:
                             if vol_ele in node['word'][i]['text'] and hasNumber(node['word'][i]['text']):
@@ -1196,17 +1198,27 @@ def parse_node_section(entity_mode, is_srl, node_list):
                                 node['word'][i]['text'] = replace
                                 for j in range(0, len(seq_dict['ingre'])):
                                     if node['word'][i-1]['text'] == seq_dict['ingre'][j]:
+                                        flag=1
                                         volume_text = node['word'][i]['text'].split(vol_ele)
                                         seq_dict['volume'][j] = volume_text[0] + vol_ele
                                 for j in range(0, len(seq_dict['seasoning'])):
                                     if node['word'][i-1]['text'] == seq_dict['seasoning'][j]:
+                                        flag=1
                                         volume_text = node['word'][i]['text'].split(vol_ele)
                                         seq_dict['volume'][len(seq_dict['ingre']) + j] = volume_text[0] + vol_ele
                                 
-                                
+                                if flag == 0:
+                                    for k in range(0, len(seq_dict['ingre'])):
+                                        if node['word'][i-1]['text'] in seq_dict['ingre'][k]:
+                                            volume_text = node['word'][i]['text'].split(vol_ele)
+                                            seq_dict['volume'][k] = volume_text[0] + vol_ele
+                                    for k in range(0, len(seq_dict['seasoning'])):
+                                        if node['word'][i-1]['text'] in seq_dict['seasoning'][k]:
+                                            volume_text = node['word'][i]['text'].split(vol_ele)
+                                            seq_dict['volume'][len(seq_dict['ingre']) + k] = volume_text[0] + vol_ele
 
                 sequence_list.append(seq_dict)
-
+    
     for node in remove_node_list:
         node_list.remove(node)
 
@@ -1256,8 +1268,8 @@ def find_sentence(node, sequence_list):
 def main():
     # static params
     open_api_url = "http://aiopen.etri.re.kr:8000/WiseNLU"
-    access_key = "0714b8fe-21f0-44f9-b6f9-574bf3f4524a"
-    # access_key = "84666b2d-3e04-4342-890c-0db401319568"
+    access_key = "84666b2d-3e04-4342-890c-0db401319568"
+    # access_key = "0714b8fe-21f0-44f9-b6f9-574bf3f4524a"
     analysis_code = "SRL"
 
     # recipe extraction
@@ -1280,8 +1292,9 @@ def main():
     f.close()
 
     # get cooking component list & dictionary from files
-    global seasoning_list, volume_list, time_list, temperature_list, cooking_act_dict, act_to_tool_dict, tool_list, idiom_dict, zone_dict
+    global seasoning_list, volume_list, time_list, temperature_list, cooking_act_dict, act_to_tool_dict, tool_list, idiom_dict, zone_dict, total_sequencelist
     seasoning_list = []
+    total_sequencelist = []
     if entity_mode != 'koelectra':
         seasoning_list = get_list_from_file("labeling/seasoning.txt")
     volume_list = get_list_from_file("labeling/volume.txt")
