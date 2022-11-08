@@ -937,6 +937,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
 
     # 소분류 규격 추가
     sequence_list = add_standard(node, sequence_list)
+    total_sequencelist.append(sequence_list)
     
     # 화구존/전처리존 분리
     sequence_list = select_cooking_zone(sequence_list)
