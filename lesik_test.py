@@ -597,17 +597,19 @@ def find_NP_OBJ(node, seq_list):
 
 # 상상코딩5
 # 동사에 딸려있는 부사구까지 출력
-def find_adverb(node, sequence_list):
-    no_plus_adverb = ['정도', '크기로', '길이로', '등에']
+def find_adverb(node, sequence_list): #지은 수정됨
+    
+    no_plus_adverb = ['정도', '크기로', '길이로', '등에', '후에'] 
     for m_ele in node['morp']:
         m_id = int(m_ele['id'])
         if m_id == 0:
             continue
         prev_morp = node['morp'][m_id - 1]
-        if m_ele['type'] == 'VV' and m_ele['lemma'] in cooking_act_dict and prev_morp['type'] == "JKB":
+        if m_ele['type'] == 'VV' and m_ele['lemma'] in cooking_act_dict and prev_morp['type'] == "JKB" and prev_morp['lemma'] != "과": ##*바꿈과
             for i in range(0, len(sequence_list)):
                 sequence = sequence_list[i]
-                if sequence['start_id'] <= m_id <= sequence['end_id'] and sequence['top_class'] == "put": # 선웅 수정
+                is_adverb = True
+                if sequence['start_id'] <= m_id <= sequence['end_id'] and sequence['top_class'] == "put":   
                     for w_ele in node['word']:
                         w_begin = int(w_ele['begin'])
                         w_end = int(w_ele['end'])
@@ -620,24 +622,47 @@ def find_adverb(node, sequence_list):
                                 for k in range(0, len(sequence['seasoning'])):
                                     if chk_morp['lemma'] in sequence['seasoning'][k]:
                                         sequence['seasoning'].remove(sequence['seasoning'][k])
+
                             if node['word'][int(w_ele['id'])]['text'] not in no_plus_adverb:
-                                for s_tool in sequence_list[i]['tool']:
-                                    if s_tool not in node['word'][int(w_ele['id'])]['text']: 
-                                        is_adverb = True
-                                        for ingre in sequence['ingre']:
-                                            if node['word'][int(w_ele['id'])]['text'] in ingre:
+                                if is_adverb:
+                                    for ingre in sequence['ingre']:
+                                        if node['word'][int(w_ele['id'])]['text'] in ingre:
+                                            is_adverb = False
+                                            break
+                                if is_adverb:
+                                        for seasoning in sequence['seasoning']:
+                                            if node['word'][int(w_ele['id'])]['text'] in seasoning:
                                                 is_adverb = False
                                                 break
-                                        if is_adverb:
-                                            for seasoning in sequence['seasoning']:
-                                                if node['word'][int(w_ele['id'])]['text'] in seasoning:
-                                                    is_adverb = False
-                                                    break
-
-                                        if is_adverb:
-                                            sequence_list[i]['act'] = node['word'][int(w_ele['id'])]['text'] + " " + sequence_list[i]['act']
-
+                                        for s_tool in sequence_list[i]['tool']:
+                                            if s_tool in node['word'][int(w_ele['id'])]['text']:
+                                                is_adverb = False
+                                                break
+                                if is_adverb:
+                                    print("yyyyyyyyyyyyyyyyyyy",sequence_list[i])
+                                    sequence_list[i]['act'] = node['word'][int(w_ele['id'])]['text'] + " " + sequence_list[i]['act']
+    
     return sequence_list
+
+def find_idiom(node, sequence_list): #지은 수정됨 ##*고침
+    for m_ele in node['morp']:
+        m_id = int(m_ele['id'])
+        if m_id == 0:
+            continue
+        prev_morp = node['morp'][m_id - 1]
+        if m_ele['type'] == 'VV' and m_ele['lemma'] in idiom_dict.keys():
+            for i in range(0, len(sequence_list)):
+                sequence = sequence_list[i]
+                if sequence['start_id'] <= m_id <= sequence['end_id']:
+                    for w_ele in node['word']:
+                        w_begin = int(w_ele['begin'])
+                        w_end = int(w_ele['end'])
+                        if w_begin <= int(prev_morp['id']) <= w_end:
+                            for dic_val in idiom_dict[m_ele['lemma']]:
+                                if node['word'][int(w_ele['id'])]['text'] == dic_val:
+                                    sequence_list[i]['act'] = node['word'][int(w_ele['id'])]['text'] + " " + sequence_list[i]['act']
+    return sequence_list
+
 
 def find_omitted_ingredient(node, seq_list, ingredient_dict, mixed_dict):
     critical_type_list = ['ARG0', 'ARG1']
