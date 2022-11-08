@@ -1033,6 +1033,8 @@ def merge_sequence(sequence_list):
             if sequence_list[seq_idx + 1]["standard"] != '': # 규격 병합
                 sequence_list[seq_idx]["standard"] = sequence_list[seq_idx]["standard"] + "<br>" + sequence_list[seq_idx + 1]["standard"]
 
+            sequence_list[seq_idx]["zone"] = sequence_list[seq_idx + 1]["zone"] # zone update
+            
             sequence_list[seq_idx]["end_id"] = sequence_list[seq_idx + 1]["end_id"] # end_id update
 
             sequence_list[seq_idx]["sentence"] = sequence_list[seq_idx]["sentence"] + " " + sequence_list[seq_idx + 1]["sentence"] # 원문 update
