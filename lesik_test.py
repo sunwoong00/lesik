@@ -949,24 +949,27 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
     
     # 동사 분류
     sequence_list = classify(sequence_list)
-    
+
     # 소분류 규격 추가
     sequence_list = add_standard(node, sequence_list)
     
     # 화구존/전처리존 분리
     sequence_list = select_cooking_zone(sequence_list)
-    
+
     # put, remove, make 대상격 찾는 함수
     sequence_list = find_NP_OBJ(node, sequence_list)
+ 
+    # 동작에 딸려오는 부사구 출력
+    sequence_list = find_adverb(node, sequence_list)
     
-    # 시퀀스 병합
-    sequence_list = merge_sequence(sequence_list)
+    # 숙어
+    sequence_list = find_idiom(node, sequence_list)
 
     # 조건문 처리함수추가
     sequence_list = find_condition(node, sequence_list)
 
-    # 동작에 딸려오는 부사구 출력
-    sequence_list = find_adverb(node, sequence_list)
+    # 시퀀스 병합
+    sequence_list = merge_sequence(sequence_list)
 
     return sequence_list
 
@@ -1204,10 +1207,7 @@ def parse_node_section(entity_mode, is_srl, node_list):
                                     if node['word'][i-1]['text'] == seq_dict['seasoning'][j]:
                                         volume_text = node['word'][i]['text'].split(vol_ele)
                                         seq_dict['volume'][len(seq_dict['ingre']) + j] = volume_text[0] + vol_ele
-                                
-                                
-                print(seq_dict)
-                print("\n")
+
                 sequence_list.append(seq_dict)
                 
 
@@ -1260,8 +1260,8 @@ def find_sentence(node, sequence_list):
 def main():
     # static params
     open_api_url = "http://aiopen.etri.re.kr:8000/WiseNLU"
-    access_key = "0714b8fe-21f0-44f9-b6f9-574bf3f4524a"
-    # access_key = "84666b2d-3e04-4342-890c-0db401319568"
+    access_key = "84666b2d-3e04-4342-890c-0db401319568"
+    # access_key = "0714b8fe-21f0-44f9-b6f9-574bf3f4524a"
     analysis_code = "SRL"
 
     # recipe extraction

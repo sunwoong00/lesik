@@ -942,20 +942,18 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
 
     # put, remove, make 대상격 찾는 함수
     sequence_list = find_NP_OBJ(node, sequence_list)
-    
+ 
     # 동작에 딸려오는 부사구 출력
     sequence_list = find_adverb(node, sequence_list)
     
     # 숙어
     sequence_list = find_idiom(node, sequence_list)
-    
-    # 시퀀스 병합
-    sequence_list = merge_sequence(sequence_list)
-    
+
     # 조건문 처리함수추가
     sequence_list = find_condition(node, sequence_list)
 
-    
+    # 시퀀스 병합
+    sequence_list = merge_sequence(sequence_list)
 
     return sequence_list
 
@@ -1241,7 +1239,7 @@ def find_sentence(node, sequence_list):
 def make_recipe(original_recipe, entity_mode, is_srl):
     # static params
     open_api_url = "http://aiopen.etri.re.kr:8000/WiseNLU"
-    access_key = "0714b8fe-21f0-44f9-b6f9-574bf3f4524a"
+    access_key = "84666b2d-3e04-4342-890c-0db401319568"
     analysis_code = "SRL"
 
     # get cooking component list & dictionary from files
@@ -1305,7 +1303,7 @@ def prompt():
 
 @app.route('/refresh')
 def refresh():
-    recipe_dir = "static/recipe/ko"
+    recipe_dir = "static/recipe/korean/test"
     recipe_list = os.listdir(recipe_dir)
     recipe_title = random.choice(recipe_list)
     recipe_text_list = get_list_from_file(recipe_dir + "/" + recipe_title)
