@@ -635,7 +635,6 @@ def find_adverb(node, sequence_list): #지은 수정됨
                                                 is_adverb = False
                                                 break
                                 if is_adverb:
-                                    print("yyyyyyyyyyyyyyyyyyy",sequence_list[i])
                                     sequence_list[i]['act'] = node['word'][int(w_ele['id'])]['text'] + " " + sequence_list[i]['act']
     
     return sequence_list
@@ -1191,6 +1190,7 @@ def parse_node_section(entity_mode, is_srl, node_list):
                 #원문 용량 추가 - 선웅
                 hasNumber = lambda stringVal: any(elem.isdigit() for elem in stringVal)
                 for i in range(0, len(node['word'])):
+                    flag=0
                     if seq_dict['start_id'] <= node['word'][i]['begin'] and node['word'][i]['end'] <= seq_dict['end_id']:
                         for vol_ele in volume_list:
                             if vol_ele in node['word'][i]['text'] and hasNumber(node['word'][i]['text']):
@@ -1198,16 +1198,26 @@ def parse_node_section(entity_mode, is_srl, node_list):
                                 node['word'][i]['text'] = replace
                                 for j in range(0, len(seq_dict['ingre'])):
                                     if node['word'][i-1]['text'] == seq_dict['ingre'][j]:
+                                        flag=1
                                         volume_text = node['word'][i]['text'].split(vol_ele)
                                         seq_dict['volume'][j] = volume_text[0] + vol_ele
                                 for j in range(0, len(seq_dict['seasoning'])):
                                     if node['word'][i-1]['text'] == seq_dict['seasoning'][j]:
+                                        flag=1
                                         volume_text = node['word'][i]['text'].split(vol_ele)
                                         seq_dict['volume'][len(seq_dict['ingre']) + j] = volume_text[0] + vol_ele
+                                
+                                if flag == 0:
+                                    for k in range(0, len(seq_dict['ingre'])):
+                                        if node['word'][i-1]['text'] in seq_dict['ingre'][k]:
+                                            volume_text = node['word'][i]['text'].split(vol_ele)
+                                            seq_dict['volume'][k] = volume_text[0] + vol_ele
+                                    for k in range(0, len(seq_dict['seasoning'])):
+                                        if node['word'][i-1]['text'] in seq_dict['seasoning'][k]:
+                                            volume_text = node['word'][i]['text'].split(vol_ele)
+                                            seq_dict['volume'][len(seq_dict['ingre']) + k] = volume_text[0] + vol_ele
 
                 sequence_list.append(seq_dict)
-                #print(seq_dict)
-                #print("\n")
     
     for node in remove_node_list:
         node_list.remove(node)
