@@ -2,12 +2,12 @@ import json
 import os.path
 import urllib3
 
-
 def get_list_from_file(file_path):
-    file_exists = os.path.exists(file_path)
+    pwd = os.getcwd() + "/lesik/"
+    file_exists = os.path.exists(pwd + file_path)
     if not file_exists:
         return None
-    f = open(os.getcwd() + "/" + file_path, 'r', encoding='utf-8')
+    f = open(pwd + file_path, 'r', encoding='utf-8')
     tmp_list = f.readlines()
     tmp_list = list(map(lambda elem: elem.replace("\n", ""), tmp_list))
     f.close()
@@ -15,10 +15,11 @@ def get_list_from_file(file_path):
 
 
 def parse_tool_dict(file_path):
-    file_exists = os.path.exists(file_path)
+    pwd = os.getcwd() + "/lesik/"
+    file_exists = os.path.exists(pwd + file_path)
     if not file_exists:
         return None
-    f = open(file_path, 'r', encoding='utf-8')
+    f = open(pwd + file_path, 'r', encoding='utf-8')
     delim = ">"
     tools = []
     tool_score_dict = {}
@@ -35,10 +36,11 @@ def parse_tool_dict(file_path):
 
 
 def parse_cooking_act_dict(file_path):
-    file_exists = os.path.exists(file_path)
+    pwd = os.getcwd() + "/lesik/"
+    file_exists = os.path.exists(pwd + file_path)
     if not file_exists:
         return None
-    f = open(file_path, 'r', encoding='utf-8')
+    f = open(pwd + file_path, 'r', encoding='utf-8')
     delim = ">"
     act_dict = {}
     act_score_dict = {}
@@ -55,10 +57,11 @@ def parse_cooking_act_dict(file_path):
 
 
 def parse_act_to_tool_dict(file_path):
-    file_exists = os.path.exists(file_path)
+    pwd = os.getcwd() + "/lesik/"
+    file_exists = os.path.exists(pwd + file_path)
     if not file_exists:
         return None
-    f = open(file_path, 'r', encoding='utf-8')
+    f = open(pwd + file_path, 'r', encoding='utf-8')
     delim = ">"
     t_delim = ","
     act_tool_dict = {}
@@ -72,10 +75,11 @@ def parse_act_to_tool_dict(file_path):
 
 
 def parse_idiom_dict(file_path):
-    file_exists = os.path.exists(file_path)
+    pwd = os.getcwd() + "/lesik/"
+    file_exists = os.path.exists(pwd + file_path)
     if not file_exists:
         return None
-    f = open(file_path, 'r', encoding='utf-8')
+    f = open(pwd + file_path, 'r', encoding='utf-8')
     delim = ">"
     t_delim = ","
     sub_idiom_dict = {}
@@ -981,7 +985,7 @@ def merge_sequence(sequence_list):
 
     len_of_list = len(sequence_list)
     for seq_idx in range(len_of_list - 1):
-        # 동사가 똑같은 경우 (보류 - 논의 필요)
+        # 동사가 똑같은 경우
         if sequence_list[seq_idx] and sequence_list[seq_idx + 1] and sequence_list[seq_idx]["act"] == sequence_list[seq_idx + 1]["act"]:
             if sequence_list[seq_idx + 1]["duration"] != '': # 시간 병합
                 sequence_list[seq_idx]["duration"] = sequence_list[seq_idx]["duration"] + "<br>" + sequence_list[seq_idx + 1]["duration"]
@@ -1009,7 +1013,7 @@ def merge_sequence(sequence_list):
 
         # 현 동사가 "넣다"이고, 이후 동사가 다른 동사인 경우
         if sequence_list[seq_idx] and sequence_list[seq_idx + 1] and sequence_list[seq_idx]["act"] == "넣다" and sequence_list[seq_idx]["sentence"].find("요.") == -1:
-            sequence_list[seq_idx]["act"] = "넣고 " + sequence_list[seq_idx + 1]["act"] # 동사 병합
+            sequence_list[seq_idx]["act"] = sequence_list[seq_idx + 1]["act"] # 뒤의 동사만 남김
             
             if sequence_list[seq_idx + 1]["tool"]: # 도구 병합
                 [sequence_list[seq_idx]["tool"].append(tool_part) for tool_part in sequence_list[seq_idx + 1]["tool"]]
@@ -1033,7 +1037,7 @@ def merge_sequence(sequence_list):
                 sequence_list[seq_idx]["standard"] = sequence_list[seq_idx]["standard"] + "<br>" + sequence_list[seq_idx + 1]["standard"]
 
             sequence_list[seq_idx]["zone"] = sequence_list[seq_idx + 1]["zone"] # zone update
-            
+
             sequence_list[seq_idx]["end_id"] = sequence_list[seq_idx + 1]["end_id"] # end_id update
 
             sequence_list[seq_idx]["sentence"] = sequence_list[seq_idx]["sentence"] + " " + sequence_list[seq_idx + 1]["sentence"] # 원문 update
@@ -1044,7 +1048,6 @@ def merge_sequence(sequence_list):
             sequence_list.append([]) # list index out of range 방지 위해 마지막에 빈 시퀀스 삽입
     
     sequence_list = list(filter(None, sequence_list))
-
     return sequence_list
 
 def extract_ner_from_kobert(sentence):
