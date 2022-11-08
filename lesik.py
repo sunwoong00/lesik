@@ -331,7 +331,7 @@ def select_cooking_zone(sequence_list):
     for i in range(0, len(sequence_list)):
         if sequence_list[i]['top_class'] == "use_fire":
             sequence_list[i]['zone'] = "화구존"
-        elif sequence_list[i]['top_class'] == "prepare_ingre" or sequence_list[i]['top_class'] == "make" or sequence_list[i]['top_class'] == "slice":
+        elif sequence_list[i]['top_class'] == "prepare_ingre" or sequence_list[i]['top_class'] == "slice":  #make 뻄
             sequence_list[i]['zone'] = "전처리존"
         else:
             sequence_list[i]['zone'] = ""
@@ -343,27 +343,49 @@ def select_cooking_zone(sequence_list):
         score_board.append(tool_fire_score)
         if score_board[i] >= 1:
             sequence_list[i]['zone'] = "화구존"
-        
+            
     for i in range(0, len(sequence_list)):
         if sequence_list[i]['zone']=="":
             if i == 0:
                 j=i
                 if i != len(sequence_list)-1:
-                    
                     while(j<len(sequence_list)-1):
                         if j==len(sequence_list)-1:
                             if sequence_list[j+1]['zone']=="":
-                                sequence_list[i]['zone'] = "전처리존"
+                                sequence_list[i]['zone'] = ""
+                                break
                         elif sequence_list[j+1]['zone']=="":
                             j=j+1
                         else:
                             sequence_list[i]['zone']=sequence_list[j+1]['zone']
                             break
-                          
                     if sequence_list[i]['zone'] == "":
-                        sequence_list[i]['zone'] = "전처리존"
+                        for k in range(0, len(total_sequencelist)):
+                            # print(total_sequencelist[k])
+                            if total_sequencelist[k][0]['sentence'] == sequence_list[i]['sentence']:
+                                while(k>0):
+                                    #print(f"sequence_list len: {len(sequence_list)}")
+                                    #print(f"k is {k}")
+                                    if total_sequencelist[k-1][0]['zone']=="":
+                                        k=k-1
+                                    else:
+                                        sequence_list[i]['zone']=total_sequencelist[k-1][0]['zone']
+                                        break
+                                    if k==0:
+                                        sequence_list[i]['zone']="전처리존"
+                                        break
                 else:
-                    sequence_list[i]['zone'] = "전처리존"
+                    for k in range(0, len(total_sequencelist)):
+                        if total_sequencelist[k][0]['sentence'] == sequence_list[i]['sentence']:
+                            while(k>0):
+                                    if total_sequencelist[k-1][0]['zone']=="":
+                                        k=k-1
+                                    else:
+                                        sequence_list[i]['zone']=total_sequencelist[k-1][0]['zone']
+                                        break
+                                    if k==0:
+                                        sequence_list[i]['zone']="전처리존"
+                                        break
             elif i==len(sequence_list)-1:
                 sequence_list[i]['zone'] = sequence_list[i-1]['zone']
             
@@ -1256,8 +1278,9 @@ def make_recipe(original_recipe, entity_mode, is_srl):
     analysis_code = "SRL"
 
     # get cooking component list & dictionary from files
-    global seasoning_list, volume_list, time_list, temperature_list, cooking_act_dict, act_to_tool_dict, tool_list, idiom_dict, zone_dict
+    global seasoning_list, volume_list, time_list, temperature_list, cooking_act_dict, act_to_tool_dict, tool_list, idiom_dict, zone_dict, total_sequencelist
     seasoning_list = []
+    total_sequencelist = []
     if entity_mode != 'koelectra':
         seasoning_list = get_list_from_file("labeling/seasoning.txt")
     volume_list = get_list_from_file("labeling/volume.txt")
