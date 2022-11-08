@@ -1021,7 +1021,7 @@ def merge_sequence(sequence_list):
                 [sequence_list[seq_idx]["temperature"].append(tem_part) for tem_part in sequence_list[seq_idx + 1]["temperature"]]
 
             if sequence_list[seq_idx + 1]["standard"] != '': # 규격 병합
-                sequence_list[seq_idx]["standard"] = sequence_list[seq_idx]["standard"] + "<br>" + sequence_list[seq_idx + 1]["standard"]
+                sequence_list[seq_idx]["standard"] = sequence_list[seq_idx]["standard"] + sequence_list[seq_idx + 1]["standard"]
 
             sequence_list[seq_idx]["zone"] = sequence_list[seq_idx + 1]["zone"] # zone update
 
