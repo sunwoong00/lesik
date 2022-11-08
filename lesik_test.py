@@ -778,7 +778,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
             if act in cooking_act_dict:
                 # 레시피 시퀀스 6가지 요소
                 seq_dict = {'duration': "", 'act': act, 'tool': [], 'ingre': [], 'seasoning': [], 'volume': [], 'temperature': [],
-                            'zone': "", "start_id": prev_seq_id + 1, "end_id": act_id, "sentence": "", "standard":"", "top_class":""}
+                            'zone': "", "start_id": prev_seq_id + 1, "end_id": act_id, "sentence": "", "standard":"", "top_class":"","pre_sequnce":[]}
 
                 
                 # co-reference 및 dictionary를 통해 word에서 요소 추출
@@ -1153,6 +1153,8 @@ def parse_node_section(entity_mode, is_srl, node_list):
                     continue
 
             sequence = create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mixed_dict, entity_mode, is_srl)
+            #print(sequence)
+            
             if not sequence:
                 remove_node_list.append(node)
 
@@ -1204,8 +1206,10 @@ def parse_node_section(entity_mode, is_srl, node_list):
                                         seq_dict['volume'][len(seq_dict['ingre']) + j] = volume_text[0] + vol_ele
                                 
                                 
-
+                print(seq_dict)
+                print("\n")
                 sequence_list.append(seq_dict)
+                
 
     for node in remove_node_list:
         node_list.remove(node)
