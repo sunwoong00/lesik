@@ -304,6 +304,64 @@ def find_objective(node, seq_list):
 def select_cooking_zone(sequence_list):
     score_board = []
     for i in range(0, len(sequence_list)):
+        if sequence_list[i]['top_class'] == "use_fire":
+            sequence_list[i]['zone'] = "화구존"
+        elif sequence_list[i]['top_class'] == "prepare_ingre" or sequence_list[i]['top_class'] == "make" or sequence_list[i]['top_class'] == "slice":
+            sequence_list[i]['zone'] = "전처리존"
+        else:
+            sequence_list[i]['zone'] = ""
+        
+        tool_fire_score = 0.0
+        for tool in sequence_list[i]['tool']:
+            if tool in zone_dict['tool'].keys():
+                tool_fire_score = float(zone_dict['tool'].get(tool))
+        score_board.append(tool_fire_score)
+        if score_board[i] >= 1:
+            sequence_list[i]['zone'] = "화구존"
+        
+    for i in range(0, len(sequence_list)):
+        if sequence_list[i]['zone']=="":
+            if i == 0:
+                j=i
+                if i != len(sequence_list)-1:
+                    
+                    while(j<len(sequence_list)-1):
+                        if j==len(sequence_list)-1:
+                            if sequence_list[j+1]['zone']=="":
+                                sequence_list[i]['zone'] = "전처리존"
+                        elif sequence_list[j+1]['zone']=="":
+                            j=j+1
+                        else:
+                            sequence_list[i]['zone']=sequence_list[j+1]['zone']
+                            break
+                          
+                    if sequence_list[i]['zone'] == "":
+                        sequence_list[i]['zone'] = "전처리존"
+                else:
+                    sequence_list[i]['zone'] = "전처리존"
+            elif i==len(sequence_list)-1:
+                sequence_list[i]['zone'] = sequence_list[i-1]['zone']
+            
+            else:
+                sequence_list[i]['zone'] = sequence_list[i-1]['zone']
+                
+        if sequence_list[i]['zone'] == "":
+            sequence_list[i]['zone'] = "전처리존"
+        '''
+        score_board = []
+        tool_fire_score = 0.0
+        for tool in sequence_list[i]['tool']:
+            if tool in zone_dict['tool'].keys():
+                tool_fire_score = float(zone_dict['tool'].get(tool))
+        score_board.append(tool_fire_score)
+        if score_board[i] > 0:
+            sequence_list[i]['zone'] = "화구존"
+        else:
+            sequence_list[i]['zone'] = "전처리존"       
+        '''
+    '''
+    score_board = []
+    for i in range(0, len(sequence_list)):
         act_fire_score = 0.0
         tool_fire_score = 0.0
         if sequence_list[i]['act'] in zone_dict['act'].keys():
@@ -318,20 +376,7 @@ def select_cooking_zone(sequence_list):
         else:
             sequence_list[i]['zone'] = "전처리존"
     '''
-        if sequence_list[i]['sentence'][-1] == '.' or sequence_list[i]['sentence'][-3] == '.':
-            period_check.append(True)
-        else:
-            period_check.append(False)
-    keep_i = -1
-    while keep_i != len(sequence_list[i] - 1):
-        for i in range(keep_i + 1, len(sequence_list)):
-            if period_check[i] == False:
-                if score_board[i] >= 0.2:
-                    sequence_list[i]['zone'] = "화구존"
-            elif period_check[i] == True:
-                keep_i = i
-                break
-    '''
+    
     return sequence_list
 
 
@@ -362,7 +407,7 @@ def verify_etn(node, seq_list):
 # 대분류, 중분류
 def classify(seq_list):
     
-    slice = ["나누다","썰다","채썰다" "슬라이스", "다이스", "가르다", "다지다","자르다","쪼개다","가르다","뜯다","찢다","부수다","으깨다","내다","갈다"]
+    slice = ["나누다","썰다","채썰다","슬라이스", "다이스", "가르다", "다지다","자르다","쪼개다","가르다","뜯다","찢다","부수다","으깨다","내다","갈다"]
     prepare_ingre = ["밑간하다", "재우다", "숙성시키다", "불리다", "밀봉하다", "절이다","손질하다","냉장보관하다","다듬다","씻다","맞추다","헹구다"]
     use_fire = ["짓다","돌리다","끓이다","끓다", "끄다", "켜다", "가열하다", "볶다", "끓어오르다", "가열하다", "예열하다", "굽다", "삶다", "조리다", "졸이다", "데치다", "찌다", "튀기다", "지지다", "부치다", "익히다", "데우다", "쑤다","프라이하다","삶다","우리다","켜다","끄다"]
     put = ["깔다","붙이다","채우다","끼얹다","담그다","얹다","붓다","덮다","두르다","감싸다","곁들이다","뿌리다","올리다","입히다","풀다","넣다", "첨가하다", "담다"]
@@ -370,15 +415,6 @@ def classify(seq_list):
     make = ["접다","빚는다","말다","누르다","뭉치다","만들다","주무르다","펴다","두드리다","말다"]
     remove = ["털다","털어내다","걷어내다","걷다","건지다","거르다","떼다","도려내다","파내다","제거하다","잘라내다","꺼내다","발라내다","닦다","뜨다","빼다"]
     
-   
-    middle_class=[]
-    top_class_slice=[]
-    top_class_prepare_ingre=[]
-    top_class_put=[]
-    top_class_useFire=[]
-    top_class_mix=[]
-    top_class_make=[]
-    low_class=[]
     for sequence in seq_list:
         if sequence['act'] in slice:
             #sequence['act'] = sequence['act']+"(대분류:slice)"
@@ -407,11 +443,12 @@ def classify(seq_list):
 #소분류 규격추가
 
 def add_standard(node, seq_list):
-    slice_low_class=["꽃모양","큐브모양", "작게","웨지모양","나박","기다란 모양" "길게", "얇게", "깍둑", "도톰", "격자", "잘게", "세로", "가로", "링", "반", "채", "한입 크기", "큼직", "동그란 모양", "굵게", "적당한 길이", "반달모양", "나무젓가락 두께","곱게","마름모 모양", "길죽한 모양", "어슷","가늘게", "한마디 크기", "주사위 모양", "길이 방향", "결 따라","바둑판 모양", "큼지막하게","비스듬하게","깍뚝", "편", "같은 크기"]
+    slice_low_class=["한 입 크기","꽃모양","큐브모양", "작게","웨지모양","나박","기다란 모양" "길게", "얇게", "깍둑", "도톰", "격자", "잘게", "세로", "가로", "링", "반", "채를", "한입 크기", "큼직", "동그란 모양", "굵게", "적당한 길이", "반달모양", "나무젓가락 두께","곱게","마름모 모양", "길죽한 모양", "어슷","가늘게", "한마디 크기", "주사위 모양", "길이 방향", "결 따라","바둑판 모양", "큼지막하게","비스듬하게","깍뚝", "편", "같은 크기"]
     useFire_low_class=["퍼질때까지","자작하게","농도가 적당해질 때까지","한번 더","뭉근하게", "약간의 기포가 올라올 때까지","물기가 날아갈 정도", "가볍게", "재빨리","바삭하게","튀기듯이","빠르게","투명해 질때까지", "부드러워질 때까지", "숨이 죽을 때까지","졸이듯이","브라운 색이 나도록","물기가 없어질 때까지", "되직하게","수분이 없게", "앞뒤로", "겉면이 타듯이", "앞 뒤로", "양면", "동그랗게", "돌려가며", "튀기듯이", "국물이 자작해 질 떄까지","윤기나게","끈적한 농도가 날 때 까지", "숨이 죽을 정도로", "양이 반으로 줄어들 때까지","반", "속까지", "투명하게", "뒤집어","은근히","겉만","한쪽면만","진한 갈색이 날 때까지","윤기나게","부드럽게","익을 때까지","굴려가며","반숙으로","반숙상태로", "팥이 무르도록","노릇", "얇게","두툼하게"]
     put_low_class=["차곡차곡", "한쪽 방향","정갈하게","켜켜이 돌려가며","층층이","넉넉히", "잠길정도","반복해서","자작하게","잠길 만큼","가지런히"]
     mix_low_class=["빠르게","가볍게","면끼리 달라붙지 않도록","망울없이","서로 달라붙지 않도록","한 방향"]
     make_low_class=[ "동글동글","동그랗게","동그란 모양으로","둥글게","시계방향","타원형","돌돌","단단하게","부채꼴 모양","납작하게","반을 접어","한 덩이로","일자로","얇게"]
+    prepare_low_class = ["숨이 죽을 정도"]
     
     for sequence in seq_list:
         for ne in node['NE']:
@@ -470,7 +507,14 @@ def add_standard(node, seq_list):
                         sequence['standard']=i
                     else:
                         sequence['standard']=sequence['standard']+","+i     
-    
+                        
+        if sequence['top_class'] == "prepare_ingre":
+            for i in prepare_low_class:
+                if i in sequence['sentence']:
+                    if sequence['standard']=="":
+                        sequence['standard']=i
+                    else:
+                        sequence['standard']=sequence['standard']+","+i   
          
     '''
     for m_ele in node['morp']:
@@ -838,7 +882,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
         sequence['act'] = cooking_act_dict[sequence['act']]
 
     # 화구존/전처리존 분리
-    sequence_list = select_cooking_zone(sequence_list)
+    #sequence_list = select_cooking_zone(sequence_list)
 
     if is_srl:
         # 목적어를 필수로 하는 조리 동작 처리
@@ -883,6 +927,9 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
     
     # 소분류 규격 추가
     sequence_list = add_standard(node, sequence_list)
+    
+    # 화구존/전처리존 분리
+    sequence_list = select_cooking_zone(sequence_list)
     
     # put, remove, make 대상격 찾는 함수
     sequence_list = find_NP_OBJ(node, sequence_list)
