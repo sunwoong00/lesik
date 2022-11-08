@@ -1239,7 +1239,7 @@ def find_sentence(node, sequence_list):
 def make_recipe(original_recipe, entity_mode, is_srl):
     # static params
     open_api_url = "http://aiopen.etri.re.kr:8000/WiseNLU"
-    access_key = "0714b8fe-21f0-44f9-b6f9-574bf3f4524a"
+    access_key = "84666b2d-3e04-4342-890c-0db401319568"
     analysis_code = "SRL"
 
     # get cooking component list & dictionary from files

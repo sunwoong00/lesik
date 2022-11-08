@@ -1256,8 +1256,8 @@ def find_sentence(node, sequence_list):
 def main():
     # static params
     open_api_url = "http://aiopen.etri.re.kr:8000/WiseNLU"
-    access_key = "0714b8fe-21f0-44f9-b6f9-574bf3f4524a"
-    # access_key = "84666b2d-3e04-4342-890c-0db401319568"
+    access_key = "84666b2d-3e04-4342-890c-0db401319568"
+    # access_key = "0714b8fe-21f0-44f9-b6f9-574bf3f4524a"
     analysis_code = "SRL"
 
     # recipe extraction
