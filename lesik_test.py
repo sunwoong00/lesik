@@ -884,15 +884,15 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
     
     # put, remove, make 대상격 찾는 함수
     sequence_list = find_NP_OBJ(node, sequence_list)
-    
-    # 시퀀스 병합
-    sequence_list = merge_sequence(sequence_list)
 
     # 조건문 처리함수추가
     sequence_list = find_condition(node, sequence_list)
 
     # 동작에 딸려오는 부사구 출력
     sequence_list = find_adverb(node, sequence_list)
+
+    # 시퀀스 병합
+    sequence_list = merge_sequence(sequence_list)
 
     return sequence_list
 
