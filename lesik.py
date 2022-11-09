@@ -951,11 +951,11 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
     # 숙어
     sequence_list = find_idiom(node, sequence_list)
 
-    # 조건문 처리함수추가
-    sequence_list = find_condition(node, sequence_list)
-
     # 시퀀스 병합
     sequence_list = merge_sequence(sequence_list)
+    
+    # 조건문 처리함수추가
+    sequence_list = find_condition(node, sequence_list)
 
     return sequence_list
 
