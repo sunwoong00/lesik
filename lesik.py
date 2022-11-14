@@ -327,23 +327,27 @@ def find_objective(node, seq_list):
 # 상상코딩4
 # 화구존, 전처리존 분리
 def select_cooking_zone(sequence_list):
-    score_board = []
+    fire_tool = ["강판","구이판","압력솥","냄비","찜기","압력솥","냄비","찜기","국자","웍","익덕션","가스레인지","가스렌지","전자레인지","전자렌지","그물국자","돌솥","뒤짚개","배기후드","베이킹 스톤","스테인리스 팬","스킬렛","튀김기","후라이팬","프라이팬","팬","밥솥"]
+    preprocess_tool=["도마","볼","접시","거품기","믹싱볼","과자틀","김밥말이","제면기","피자커터","핸드블렌더","믹서기","믹서"]
+    preprocess_act = ["곁들이다","뿌리다","빚는다","만들다","주무르다","두드리다","밀다"]
+    #확실한 동작 존 분리
     for i in range(0, len(sequence_list)):
         if sequence_list[i]['top_class'] == "use_fire":
             sequence_list[i]['zone'] = "화구존"
-        elif sequence_list[i]['top_class'] == "prepare_ingre" or sequence_list[i]['top_class'] == "slice":  #make 뻄
+        elif sequence_list[i]['top_class'] == "prepare_ingre" or sequence_list[i]['top_class'] == "slice":  
             sequence_list[i]['zone'] = "전처리존"
         else:
             sequence_list[i]['zone'] = ""
-        
-        tool_fire_score = 0.0
+        #전처리존 동작 딕셔너리 확인
+        if sequence_list[i]['act'] in preprocess_act:
+            sequence_list[i]['zone'] = "전처리존"
+        # 도구 매핑   
         for tool in sequence_list[i]['tool']:
-            if tool in zone_dict['tool'].keys():
-                tool_fire_score = float(zone_dict['tool'].get(tool))
-        score_board.append(tool_fire_score)
-        if score_board[i] >= 1:
-            sequence_list[i]['zone'] = "화구존"
-            
+            if tool in fire_tool:
+                sequence_list[i]['zone'] = "화구존"
+            elif tool in preprocess_tool:
+                sequence_list[i]['zone'] = "전처리존"
+    #애매한 동작 2차분리
     for i in range(0, len(sequence_list)):
         if sequence_list[i]['zone']=="":
             if i == 0:
@@ -469,11 +473,24 @@ def add_standard(node, seq_list):
             if ne['type'] == "QT_LENGTH" or ne['type'] == "QT_OTHERS":
                 n_begin = int(ne['begin'])
                 n_end=int(ne['end'])
-                if ne['text'] in sequence['sentence']:
+                if ne['text'] in sequence['sentence'] and "도" not in ne['text']:
                     if sequence['standard']=="":
                         sequence['standard']=ne['text']
                     else:
                         sequence['standard']=sequence['standard']+","+ne['text']
+                        
+            if ne['type'] == "QT_COUNT":
+                n_begin = int(ne['begin'])
+                n_end=int(ne['end'])
+                stand = ""
+                for wrd in node['word']:
+                    w_begin= int(wrd['begin'])
+                    if n_begin<=w_begin<=n_end:
+                        stand = stand + " " + wrd["text"]
+                if sequence['standard']=="":
+                        sequence['standard']=stand
+                else:
+                    sequence['standard']=sequence['standard']+","+stand
                         
             if ne['type'] == "QT_ORDER" and '등분' in ne['text']:
                 if ne['text'] in sequence['sentence']:

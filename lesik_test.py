@@ -301,7 +301,6 @@ def find_objective(node, seq_list):
 # 상상코딩4
 # 화구존, 전처리존 분리
 def select_cooking_zone(sequence_list):
-    score_board = []
     fire_tool = ["강판","구이판","압력솥","냄비","찜기","압력솥","냄비","찜기","국자","웍","익덕션","가스레인지","가스렌지","전자레인지","전자렌지","그물국자","돌솥","뒤짚개","배기후드","베이킹 스톤","스테인리스 팬","스킬렛","튀김기","후라이팬","프라이팬","팬","밥솥"]
     preprocess_tool=["도마","볼","접시","거품기","믹싱볼","과자틀","김밥말이","제면기","피자커터","핸드블렌더","믹서기","믹서"]
     preprocess_act = ["곁들이다","뿌리다","빚는다","만들다","주무르다","두드리다","밀다"]
@@ -436,6 +435,7 @@ def verify_etn(node, seq_list):
 
 # 대분류, 중분류
 def classify(seq_list):
+    
     slice = ["나누다","썰다","채썰다","슬라이스", "다이스", "가르다", "다지다","자르다","쪼개다","가르다","뜯다","찢다","부수다","으깨다","내다","갈다"]
     prepare_ingre = ["밑간하다", "재우다", "숙성시키다", "불리다", "밀봉하다", "절이다","손질하다","냉장보관하다","다듬다","씻다","맞추다","헹구다"]
     use_fire = ["녹이다","줄이다","짓다","돌리다","끓이다","끓다", "끄다", "켜다", "가열하다", "볶다", "끓어오르다", "가열하다", "예열하다", "굽다", "삶다", "조리다", "졸이다", "데치다", "찌다", "튀기다", "지지다", "부치다", "익히다", "데우다", "쑤다","프라이하다","삶다","우리다","켜다","끄다"]
@@ -466,7 +466,7 @@ def classify(seq_list):
         elif sequence['act'] in mix:
             #sequence['act'] = sequence['act']+"(대분류:mix)"
             sequence['top_class']="mix"
-       
+     
     return seq_list
 
 #소분류 규격추가
@@ -481,14 +481,25 @@ def add_standard(node, seq_list):
     
     for sequence in seq_list:
         for ne in node['NE']:
-            if ne['type'] == "QT_LENGTH" or ne['type'] == "QT_OTHERS":
-                n_begin = int(ne['begin'])
-                n_end=int(ne['end'])
-                if ne['text'] in sequence['sentence']:
+            if ne['type'] == "QT_LENGTH" or ne['type'] == "QT_OTHERS" :
+                if ne['text'] in sequence['sentence'] and "도" not in ne['text']:
                     if sequence['standard']=="":
                         sequence['standard']=ne['text']
                     else:
                         sequence['standard']=sequence['standard']+","+ne['text']
+            if ne['type'] == "QT_COUNT":
+                n_begin = int(ne['begin'])
+                n_end=int(ne['end'])
+                stand = ""
+                for wrd in node['word']:
+                    w_begin= int(wrd['begin'])
+                    if n_begin<=w_begin<=n_end:
+                        stand = stand + " " + wrd["text"]
+                if sequence['standard']=="":
+                        sequence['standard']=stand
+                else:
+                    sequence['standard']=sequence['standard']+","+stand
+                        
                         
             if ne['type'] == "QT_ORDER" and '등분' in ne['text']:
                 if ne['text'] in sequence['sentence']:
@@ -1304,7 +1315,7 @@ def main():
     f.close()
 
     # get cooking component list & dictionary from files
-    global seasoning_list, volume_list, time_list, temperature_list, cooking_act_dict, act_to_tool_dict, tool_list, idiom_dict, zone_dict, total_sequencelist
+    global seasoning_list, volume_list, time_list, temperature_list, cooking_act_dict, act_to_tool_dict, tool_list, idiom_dict, zone_dict, total_sequencelist, slice_act, prepare_ingre, use_fire, put, mix, make, remove
     seasoning_list = []
     total_sequencelist = []
     if entity_mode != 'koelectra':
@@ -1316,7 +1327,16 @@ def main():
     act_to_tool_dict = parse_act_to_tool_dict("labeling/act_to_tool.txt")
     tool_list, tool_to_zone_dict = parse_tool_dict("labeling/tool.txt")
     idiom_dict = parse_idiom_dict("labeling/idiom.txt")
+    '''
+    slice_act = get_list_from_file("labeling/topclass_dict/slice_act.txt")
+    prepare_ingre = get_list_from_file("labeling/topclass_dict/prepare_act.txt")
+    use_fire = get_list_from_file("labeling/topclass_dict/useFire_act.txt")
+    put = get_list_from_file("labeling/topclass_dict/put_act.txt")
+    mix = get_list_from_file("labeling/topclass_dict/mix_act.txt")
+    make = get_list_from_file("labeling/topclass_dict/make_act.txt")
+    remove = get_list_from_file("labeling/topclass_dict/remove_act.txt")
 
+    '''
     zone_dict = {'act': act_to_zone_dict, 'tool': tool_to_zone_dict}
 
     # ETRI open api
