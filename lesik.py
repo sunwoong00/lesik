@@ -948,11 +948,11 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
     # 숙어
     sequence_list = find_idiom(node, sequence_list)
 
-    # 조건문 처리함수추가
-    sequence_list = find_condition(node, sequence_list)
-
     # 시퀀스 병합
     sequence_list = merge_sequence(sequence_list)
+    
+    # 조건문 처리함수추가
+    sequence_list = find_condition(node, sequence_list)
 
     return sequence_list
 
@@ -997,7 +997,7 @@ def merge_sequence(sequence_list):
 
         # 현 동사가 "넣다"이고, 이후 동사가 다른 동사인 경우
         if sequence_list[seq_idx] and sequence_list[seq_idx + 1] and sequence_list[seq_idx]["act"] == "넣다" and sequence_list[seq_idx]["sentence"].find("요.") == -1:
-            sequence_list[seq_idx]["act"] = "넣고 " + sequence_list[seq_idx + 1]["act"] # 동사 병합
+            sequence_list[seq_idx]["act"] = sequence_list[seq_idx + 1]["act"] # 뒤의 동사만 남김
             
             if sequence_list[seq_idx + 1]["tool"]: # 도구 병합
                 [sequence_list[seq_idx]["tool"].append(tool_part) for tool_part in sequence_list[seq_idx + 1]["tool"]]
@@ -1018,7 +1018,7 @@ def merge_sequence(sequence_list):
                 [sequence_list[seq_idx]["temperature"].append(tem_part) for tem_part in sequence_list[seq_idx + 1]["temperature"]]
 
             if sequence_list[seq_idx + 1]["standard"] != '': # 규격 병합
-                sequence_list[seq_idx]["standard"] = sequence_list[seq_idx]["standard"] + "<br>" + sequence_list[seq_idx + 1]["standard"]
+                sequence_list[seq_idx]["standard"] = sequence_list[seq_idx]["standard"] + sequence_list[seq_idx + 1]["standard"]
 
             sequence_list[seq_idx]["zone"] = sequence_list[seq_idx + 1]["zone"] # zone update
 
@@ -1141,7 +1141,7 @@ def parse_node_section(entity_mode, is_srl, node_list):
             if not sequence:
                 remove_node_list.append(node)
 
-            # 박지연-----------수정중--------------
+            # 방선웅-----------수정중--------------
             for seq_dict in sequence:
                 # 기본 재료에 나오는 식자재와 용량 매핑
                 for ingre in seq_dict['ingre']:
@@ -1150,7 +1150,7 @@ def parse_node_section(entity_mode, is_srl, node_list):
                     else:
                         flag=0
                         for mix_key, mix_value in mixed_dict.items():
-                            if mix_key in ingre:
+                            if mix_key in ingre and not ingre.isalpha():
                                 seq_dict['volume'].append(mix_value)
                                 flag=1
                                 break
@@ -1161,14 +1161,14 @@ def parse_node_section(entity_mode, is_srl, node_list):
                 for seasoning in seq_dict['seasoning']:
                     if seasoning in mixed_dict:
                         seq_dict['volume'].append(mixed_dict.get(seasoning))
-                    else:
+                    else: 
                         flag=0
                         for mix_key, mix_value in mixed_dict.items():
-                            if mix_key in seasoning:
+                            if mix_key in seasoning and not seasoning.isalpha():
                                 seq_dict['volume'].append(mix_value)
                                 flag=1
                                 break
-                        if flag==0:
+                        if flag==0: 
                             seq_dict['volume'].append('')
 
                 #원문 용량 추가 - 선웅
