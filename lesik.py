@@ -1144,7 +1144,7 @@ def parse_node_section(entity_mode, is_srl, node_list):
             if not sequence:
                 remove_node_list.append(node)
 
-            # 박지연-----------수정중--------------
+            # 방선웅-----------수정중--------------
             for seq_dict in sequence:
                 # 기본 재료에 나오는 식자재와 용량 매핑
                 for ingre in seq_dict['ingre']:
@@ -1153,7 +1153,7 @@ def parse_node_section(entity_mode, is_srl, node_list):
                     else:
                         flag=0
                         for mix_key, mix_value in mixed_dict.items():
-                            if mix_key in ingre:
+                            if mix_key in ingre and not ingre.isalpha():
                                 seq_dict['volume'].append(mix_value)
                                 flag=1
                                 break
@@ -1164,14 +1164,14 @@ def parse_node_section(entity_mode, is_srl, node_list):
                 for seasoning in seq_dict['seasoning']:
                     if seasoning in mixed_dict:
                         seq_dict['volume'].append(mixed_dict.get(seasoning))
-                    else:
+                    else: 
                         flag=0
                         for mix_key, mix_value in mixed_dict.items():
-                            if mix_key in seasoning:
+                            if mix_key in seasoning and not seasoning.isalpha():
                                 seq_dict['volume'].append(mix_value)
                                 flag=1
                                 break
-                        if flag==0:
+                        if flag==0: 
                             seq_dict['volume'].append('')
 
                 #원문 용량 추가 - 선웅

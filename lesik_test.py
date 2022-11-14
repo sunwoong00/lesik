@@ -336,11 +336,8 @@ def select_cooking_zone(sequence_list):
                             break
                     if sequence_list[i]['zone'] == "":
                         for k in range(0, len(total_sequencelist)):
-                            # print(total_sequencelist[k])
                             if total_sequencelist[k][0]['sentence'] == sequence_list[i]['sentence']:
                                 while(k>0):
-                                    #print(f"sequence_list len: {len(sequence_list)}")
-                                    #print(f"k is {k}")
                                     if total_sequencelist[k-1][0]['zone']=="":
                                         k=k-1
                                     else:
@@ -400,9 +397,7 @@ def select_cooking_zone(sequence_list):
             sequence_list[i]['zone'] = "전처리존"
 
     '''
-    #확인용
-    print(sequence_list)
-    print()
+    
     return sequence_list
 
 
@@ -1131,6 +1126,8 @@ def parse_node_section(entity_mode, is_srl, node_list):
             else:'''
             sub_ingredient_dict = extract_ingredient_from_node(ingredient_type_list, volume_type_list, node)
 
+            print("sub_ingredient dict : ", sub_ingredient_dict)
+
             # 박지연
             # 기본 재료가 모두 식자재 딕셔너리로 들어가는 문제 해결하는 코드
             if sub_ingredient_dict:
@@ -1138,6 +1135,8 @@ def parse_node_section(entity_mode, is_srl, node_list):
                     coref_dict[sub_type].update(sub_ingredient_dict)
                     # sub_ingredient_dict 이상함
                     mixed_dict.update(sub_ingredient_dict)
+
+            print("mixed_dict : ", mixed_dict)
 
         else:
             node['text'] = node['text'].strip()
@@ -1153,12 +1152,11 @@ def parse_node_section(entity_mode, is_srl, node_list):
                     continue
 
             sequence = create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mixed_dict, entity_mode, is_srl)
-            #print(sequence)
             
             if not sequence:
                 remove_node_list.append(node)
 
-            # 박지연-----------수정중--------------
+            # 방선웅-----------수정중--------------
             for seq_dict in sequence:
                 # 기본 재료에 나오는 식자재와 용량 매핑
                 for ingre in seq_dict['ingre']:
@@ -1167,7 +1165,7 @@ def parse_node_section(entity_mode, is_srl, node_list):
                     else:
                         flag=0
                         for mix_key, mix_value in mixed_dict.items():
-                            if mix_key in ingre:
+                            if mix_key in ingre and not ingre.isalpha():
                                 seq_dict['volume'].append(mix_value)
                                 flag=1
                                 break
@@ -1181,7 +1179,7 @@ def parse_node_section(entity_mode, is_srl, node_list):
                     else: 
                         flag=0
                         for mix_key, mix_value in mixed_dict.items():
-                            if mix_key in seasoning:
+                            if mix_key in seasoning and not seasoning.isalpha():
                                 seq_dict['volume'].append(mix_value)
                                 flag=1
                                 break
