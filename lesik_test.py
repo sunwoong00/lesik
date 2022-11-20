@@ -302,8 +302,8 @@ def find_objective(node, seq_list):
 # 화구존, 전처리존 분리
 def select_cooking_zone(sequence_list):
     fire_tool = ["강판","구이판","압력솥","냄비","찜기","압력솥","냄비","찜기","국자","웍","익덕션","가스레인지","가스렌지","전자레인지","전자렌지","그물국자","돌솥","뒤짚개","배기후드","베이킹 스톤","스테인리스 팬","스킬렛","튀김기","후라이팬","프라이팬","팬","밥솥"]
-    preprocess_tool=["도마","볼","접시","거품기","믹싱볼","과자틀","김밥말이","제면기","피자커터","핸드블렌더","믹서기","믹서"]
-    preprocess_act = ["곁들이다","뿌리다","빚는다","만들다","주무르다","두드리다","밀다"]
+    preprocess_tool=["냉장고","칼","그릇","도마","볼","접시","거품기","믹싱볼","과자틀","김밥말이","제면기","피자커터","핸드블렌더","믹서기","믹서"]
+    preprocess_act = ["즐기다","곁들이다","뿌리다","빚는다","주무르다","두드리다","밀다"]
     for i in range(0, len(sequence_list)):
         if sequence_list[i]['top_class'] == "use_fire":
             sequence_list[i]['zone'] = "화구존"
@@ -439,7 +439,7 @@ def classify(seq_list):
     slice = ["나누다","썰다","채썰다","슬라이스", "다이스", "가르다", "다지다","자르다","쪼개다","가르다","뜯다","찢다","부수다","으깨다","내다","갈다"]
     prepare_ingre = ["밑간하다", "재우다", "숙성시키다", "불리다", "밀봉하다", "절이다","손질하다","냉장보관하다","다듬다","씻다","맞추다","헹구다"]
     use_fire = ["녹이다","줄이다","짓다","돌리다","끓이다","끓다", "끄다", "켜다", "가열하다", "볶다", "끓어오르다", "가열하다", "예열하다", "굽다", "삶다", "조리다", "졸이다", "데치다", "찌다", "튀기다", "지지다", "부치다", "익히다", "데우다", "쑤다","프라이하다","삶다","우리다","켜다","끄다"]
-    put = ["깔다","붙이다","채우다","끼얹다","담그다","얹다","붓다","덮다","두르다","감싸다","곁들이다","뿌리다","올리다","입히다","풀다","넣다", "첨가하다", "담다"]
+    put = ["깔다","붙이다","채우다","끼얹다","담그다","얹다","붓다","두르다","감싸다","곁들이다","뿌리다","올리다","입히다","풀다","넣다", "첨가하다", "담다"]
     mix = ["버무리다","휘핑하다","섞다","젓다","치대다","무치다","묻히다"]
     make = ["접다","빚는다","말다","누르다","뭉치다","만들다","주무르다","펴다","두드리다","말다"]
     remove = ["털다","털어내다","걷어내다","걷다","건지다","거르다","떼다","도려내다","파내다","제거하다","잘라내다","꺼내다","발라내다","닦다","뜨다","빼다"]
@@ -493,13 +493,15 @@ def add_standard(node, seq_list):
                 stand = ""
                 for wrd in node['word']:
                     w_begin= int(wrd['begin'])
-                    if n_begin<=w_begin<=n_end:
-                        stand = stand + " " + wrd["text"]
-                if sequence['standard']=="":
-                        sequence['standard']=stand
-                else:
-                    sequence['standard']=sequence['standard']+","+stand
-                        
+                    if wrd not in sequence['volume']:
+                        if n_begin<=w_begin<=n_end:
+                            stand = stand + " " + wrd["text"]
+                if stand in sequence['sentence']:
+                    if sequence['standard']=="":
+                            sequence['standard']=stand
+                    else:
+                        sequence['standard']=sequence['standard']+","+stand
+                            
                         
             if ne['type'] == "QT_ORDER" and '등분' in ne['text']:
                 if ne['text'] in sequence['sentence']:
