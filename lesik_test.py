@@ -684,7 +684,7 @@ def find_omitted_ingredient(node, seq_list, ingredient_dict, mixed_dict):
                         s_text = s_ele['text']
                         s_type = s_ele['type']
                         if s_type in critical_type_list:
-                            for ingredient in mixed_dict.keys():
+                            for ingredient in ingredient_dict.keys():
                                 if ingredient in s_text and ingredient not in sequence['ingre'] and ingredient not in \
                                         sequence['seasoning']:
                                     sequence['ingre'].append(ingredient) # 박지연 대체 왜 여기로감?? 얘가 시즈닝이면 어쩌려고
@@ -903,7 +903,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
 
     if is_srl:
         # 현재 시퀀스에 누락된 재료를 보완
-        sequence_list = find_omitted_ingredient(node, sequence_list, ingredient_dict, mixed_dict)
+        sequence_list = find_omitted_ingredient(node, sequence_list, ingredient_dict, ingredient_dict)
         # 가리비 칼국수 멸치, 새우, 다시마 문제
 
         # 조리동작(용량)
@@ -1071,6 +1071,7 @@ def merge_sequence(sequence_list):
     return sequence_list
 
 def extract_ner_from_kobert(sentence):
+
     kobert_api_url = "http://ec2-13-209-68-59.ap-northeast-2.compute.amazonaws.com:5000"
 
     http = urllib3.PoolManager()
@@ -1082,6 +1083,15 @@ def extract_ner_from_kobert(sentence):
     )
 
     json_object = json.loads(response.data)
+
+    print("ne : ", json_object['NE'])
+    for ne in json_object['NE']:
+        if ne['type'] == 'CV_INGREDIENT':
+            ing_list.append(ne['text'])
+            print(ing_list)
+        elif ne['type'] == 'CV_SEASONING':
+            ssn_list.append(ne['text'])
+
 
     return json_object
 
@@ -1162,6 +1172,8 @@ def parse_node_section(entity_mode, is_srl, node_list):
                     # sub_ingredient_dict 이상함
                     mixed_dict.update(sub_ingredient_dict)
 
+            print("mixed_dict :  {'주재료': {'배추김치': '1/6포기', '밥': '2공기', '베이컨슬라이스': '5장', '달걀': '2개', '양파': '1/4개', '실파': '1대'}, '첨가물': {'참기름': '1큰술', '식용유': ''}}")
+
         else:
             node['text'] = node['text'].strip()
             # tip 부분 생략하는 조건문
@@ -1184,11 +1196,11 @@ def parse_node_section(entity_mode, is_srl, node_list):
             for seq_dict in sequence:
                 # 기본 재료에 나오는 식자재와 용량 매핑
                 for ingre in seq_dict['ingre']:
-                    if ingre in mixed_dict:
-                        seq_dict['volume'].append(mixed_dict.get(ingre))
+                    if ingre in ingredient_dict:
+                        seq_dict['volume'].append(sub_ingredient_dict.get(ingre))
                     else:
                         flag=0
-                        for mix_key, mix_value in mixed_dict.items():
+                        for mix_key, mix_value in sub_ingredient_dict.items():
                             if mix_key in ingre and not ingre.isalpha():
                                 seq_dict['volume'].append(mix_value)
                                 flag=1
@@ -1198,11 +1210,11 @@ def parse_node_section(entity_mode, is_srl, node_list):
                 
                 # 기본 재료에 나오는 첨가물과 용량 매핑                    
                 for seasoning in seq_dict['seasoning']:
-                    if seasoning in mixed_dict:
-                        seq_dict['volume'].append(mixed_dict.get(seasoning))
+                    if seasoning in sub_ingredient_dict:
+                        seq_dict['volume'].append(sub_ingredient_dict.get(seasoning))
                     else: 
                         flag=0
-                        for mix_key, mix_value in mixed_dict.items():
+                        for mix_key, mix_value in sub_ingredient_dict.items():
                             if mix_key in seasoning and not seasoning.isalpha():
                                 seq_dict['volume'].append(mix_value)
                                 flag=1
@@ -1337,6 +1349,9 @@ def main():
     remove = get_list_from_file("labeling/topclass_dict/remove_act.txt")
 
     '''
+    global ing_list, ssn_list
+    ing_list = []
+    ssn_list = []
     zone_dict = {'act': act_to_zone_dict, 'tool': tool_to_zone_dict}
 
     # ETRI open api
@@ -1361,6 +1376,8 @@ def main():
     sequence_list = parse_node_section(entity_mode, is_srl, node_list)
 
     print(str(json.dumps(sequence_list, ensure_ascii=False)))
+    print("ingredient_dict : ", ing_list)
+    print("seasoning_dict : ", ssn_list)
 
 
 if __name__ == "__main__":
