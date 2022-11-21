@@ -1265,9 +1265,10 @@ def parse_node_section(entity_mode, is_srl, node_list):
     combine_logic = toolmatchwverb.matchresult(sequence_list)
     for kk in range(len(sequence_list)):
         sequence_list[kk]["tool"] = list(combine_logic[0][kk])
-        print(sequence_list[kk]["tool"],combine_logic[0][kk])
+        #print(sequence_list[kk]["tool"],combine_logic[0][kk])
 
-    print(sequence_list)
+    #print(sequence_list)
+    #print(mixed_dict.keys())
 
     return sequence_list
 
