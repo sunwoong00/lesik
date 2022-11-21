@@ -904,9 +904,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
 
     if is_srl:
         # 현재 시퀀스에 누락된 재료를 보완
-        print("전 : ", sequence_list)
         sequence_list = find_omitted_ingredient(node, sequence_list, ingredient_dict, ingredient_dict)
-        print("후 : ", sequence_list)
 
         # 조리동작(용량)
         # sequence_list = volume_of_act(node, sequence_list)
@@ -956,7 +954,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
                                     sequence['duration'] += "~" + ne['text']
                             else:
                                 sequence['duration'] += ne['text']'''
-    
+
     # 동사 분류
     sequence_list = classify(sequence_list)
 
@@ -1024,6 +1022,7 @@ def merge_sequence(sequence_list):
 
             del sequence_list[seq_idx + 1] # 리스트 요소 삭제
             sequence_list.append([]) # list index out of range 방지 위해 마지막에 빈 시퀀스 삽입
+
 
         # 현 동사가 "넣다"이고, 이후 동사가 다른 동사인 경우
         if sequence_list[seq_idx] and sequence_list[seq_idx + 1] and sequence_list[seq_idx]["act"] == "넣다" and sequence_list[seq_idx]["sentence"].find("요.") == -1:

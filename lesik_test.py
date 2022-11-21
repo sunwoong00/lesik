@@ -914,9 +914,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
 
     if is_srl:
         # 현재 시퀀스에 누락된 재료를 보완
-        print("전 : ", sequence_list)
         sequence_list = find_omitted_ingredient(node, sequence_list, ingredient_dict, ingredient_dict)
-        print("후 : ", sequence_list)
         # 가리비 칼국수 멸치, 새우, 다시마 문제
 
         # 조리동작(용량)
@@ -1365,6 +1363,7 @@ def main():
     act_to_tool_dict = parse_act_to_tool_dict("labeling/act_to_tool.txt")
     tool_list, tool_to_zone_dict = parse_tool_dict("labeling/tool.txt")
     idiom_dict = parse_idiom_dict("labeling/idiom.txt")
+    
     '''
     slice_act = get_list_from_file("labeling/topclass_dict/slice_act.txt")
     prepare_ingre = get_list_from_file("labeling/topclass_dict/prepare_act.txt")
@@ -1373,8 +1372,9 @@ def main():
     mix = get_list_from_file("labeling/topclass_dict/mix_act.txt")
     make = get_list_from_file("labeling/topclass_dict/make_act.txt")
     remove = get_list_from_file("labeling/topclass_dict/remove_act.txt")
-
     '''
+
+    
     global ing_list, ssn_list
     ing_list = []
     ssn_list = []
