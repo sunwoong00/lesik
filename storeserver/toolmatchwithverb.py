@@ -94,22 +94,27 @@ def isWordPresent(sentence, word):
 ###############################################################
 
 ###단어의 일부만 아니라 전체가 일치하는 확인 하기 위한 함수 예: 양파를 채썰다, 썰다 X, 채썰다 O ###
-def isActualTool(word, sentence, ingreCollectList):
+def isActualTool(word, sentence, ingreCollectList, listofingre):
     detection = sentence.split(" ")
     #print("detection", detection)
     for checkdetect in range(len(detection)):
         if word in detection[checkdetect]:
             #print("hi", checkdetect, ingreCollectList, detection[checkdetect])
             for ingredetect in range(len(ingreCollectList)):
-                print(ingreCollectList[ingredetect])
+                #print(ingreCollectList[ingredetect])
                 if str(ingreCollectList[ingredetect]) in detection[checkdetect]:
+                    #print("found error", detection[checkdetect])
+                    return False
+            for ingredetect in range(len(listofingre)):
+                #print(listofingre[ingredetect])
+                if str(listofingre[ingredetect]) in detection[checkdetect]:
                     #print("found error", detection[checkdetect])
                     return False
     return True
 ###############################################################
 
 ###조리도구/위치 매칭 함수###
-def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, checktoolsub):
+def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, checktoolsub, listofingre):
     keylist = []
     valuelist = []
     current_action_tool = []
@@ -148,6 +153,7 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
     for i in range(len(array)):
         sentences = array[i]["sentence"]
         ingreCollectList = array[i]["ingre"]
+        seasoningCollect = array[i]["seasoning"]
         act = array[i]["act"]
         if_extra_tool = []
         select_if_else = 0
@@ -160,7 +166,7 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
         for checksubtool in range(len(subtool_k_list)):
             if subtool_k_list[checksubtool] in sentences:
                 #print(str(subtool_k_list[checksubtool]), str(sentences))
-                if(isActualTool(str(subtool_k_list[checksubtool]), str(sentences), ingreCollectList) == False):
+                if(isActualTool(str(subtool_k_list[checksubtool]), str(sentences), ingreCollectList, seasoningCollect) == False):
                     #print("\n\n\n")
                     break
 
@@ -332,13 +338,14 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
 
 ############################################################################################################################################
 
-def matchresult(array):
+def matchresult(array, listofingre):
     #print(array["sentence"])
     cooking_act_dict, act_score_dict = parse_cooking_act_dict("./hajong/action_number.txt")
     tool_match_main_dic, tool_match_sub_dic = divide_tool_num_text("./hajong/tool_number.txt")
 
-    #print(cooking_act_dict)
-    matchtoolwithactionresult = matchtoolwithaction(array, cooking_act_dict, act_score_dict, tool_match_main_dic, tool_match_sub_dic)
+    #print(listofingre)
+    listofingre = list(listofingre)
+    matchtoolwithactionresult = matchtoolwithaction(array, cooking_act_dict, act_score_dict, tool_match_main_dic, tool_match_sub_dic, listofingre)
     #print(matchtoolwithactionresult)
     return matchtoolwithactionresult
 

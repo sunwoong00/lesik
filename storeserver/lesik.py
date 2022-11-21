@@ -1269,13 +1269,13 @@ def parse_node_section(entity_mode, is_srl, node_list):
     for node in remove_node_list:
         node_list.remove(node)
 
-    combine_logic = toolmatchwverb.matchresult(sequence_list)
+    combine_logic = toolmatchwverb.matchresult(sequence_list, mixed_dict.keys())
     for kk in range(len(sequence_list)):
         sequence_list[kk]["tool"] = list(combine_logic[0][kk])
         #print(sequence_list[kk]["tool"],combine_logic[0][kk])
 
     #print(sequence_list)
-    #print(mixed_dict.keys())
+    print(mixed_dict.keys(), ingredient_dict)
     
     return sequence_list
 
