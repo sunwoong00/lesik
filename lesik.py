@@ -433,7 +433,6 @@ def verify_etn(node, seq_list):
 
 # 대분류, 중분류
 def classify(seq_list):
-    
     for sequence in seq_list:
         if sequence['act'] in slice_act:
             #sequence['act'] = sequence['act']+"(대분류:slice)"
@@ -946,7 +945,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
     sequence_list = classify(sequence_list)
 
     # 소분류 규격 추가
-    #sequence_list = add_standard(node, sequence_list)
+    sequence_list = add_standard(node, sequence_list)
     for sequence in sequence_list:
         total_sequencelist.append(sequence)
     
@@ -1243,8 +1242,7 @@ def parse_node_section(entity_mode, is_srl, node_list):
     for node in remove_node_list:
         node_list.remove(node)
 
-    #소분류 규격추가
-    sequence_list = add_standard(node, sequence_list)
+    
     
     return sequence_list
 
