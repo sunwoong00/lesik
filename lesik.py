@@ -464,22 +464,21 @@ def add_standard(node, seq_list):
    
     for sequence in seq_list:
         for ne in node['NE']:
-            if ne['type'] == "QT_LENGTH" or ne['type'] == "QT_OTHERS":
-                n_begin = int(ne['begin'])
-                n_end=int(ne['end'])
+            if ne['type'] == "QT_LENGTH" or ne['type'] == "QT_OTHERS" :
                 if ne['text'] in sequence['sentence'] and "도" not in ne['text']:
                     if sequence['standard']=="":
                         sequence['standard']=ne['text']
                     else:
                         sequence['standard']=sequence['standard']+","+ne['text']
-            '''            
+            '''
             if ne['type'] == "QT_COUNT":
                 n_begin = int(ne['begin'])
                 n_end=int(ne['end'])
                 stand = ""
                 for wrd in node['word']:
                     w_begin= int(wrd['begin'])
-                    if wrd not in sequence['volume']:
+                    print(ne['text'], sequence['volume'])
+                    if ne['text'] not in sequence['volume']:
                         if n_begin<=w_begin<=n_end:
                             stand = stand + " " + wrd["text"]
                 if stand in sequence['sentence']:
@@ -487,7 +486,8 @@ def add_standard(node, seq_list):
                             sequence['standard']=stand
                     else:
                         sequence['standard']=sequence['standard']+","+stand
-            '''            
+            '''
+                        
             if ne['type'] == "QT_ORDER" and '등분' in ne['text']:
                 if ne['text'] in sequence['sentence']:
                     if sequence['standard']=="":
@@ -498,50 +498,68 @@ def add_standard(node, seq_list):
         if sequence['top_class'] == "slice":
             for i in slice_low_class:
                 if i in sequence['sentence']:
-                    if sequence['standard']=="":
-                        sequence['standard']=i
-                    else:
-                        sequence['standard']=sequence['standard']+","+i
+                    for ing in sequence['ingre']:
+                        if i not in ing:
+                            for sea in sequence['seasoning']:
+                                if sequence['standard']=="":
+                                    sequence['standard']=i
+                                else:
+                                    sequence['standard']=sequence['standard']+","+i
     
         if sequence['top_class'] == "use_fire":
             for i in useFire_low_class:
                 if i in sequence['sentence']:
-                    if sequence['standard']=="":
-                        sequence['standard']=i
-                    else:
-                        sequence['standard']=sequence['standard']+","+i
+                    for ing in sequence['ingre']:
+                        if i not in ing:
+                            for sea in sequence['seasoning']:
+                                if sequence['standard']=="":
+                                    sequence['standard']=i
+                                else:
+                                    sequence['standard']=sequence['standard']+","+i
     
         if sequence['top_class'] == "put":
             for i in put_low_class:
                 if i in sequence['sentence']:
-                    if sequence['standard']=="":
-                        sequence['standard']=i
-                    else:
-                        sequence['standard']=sequence['standard']+","+i
+                    for ing in sequence['ingre']:
+                        if i not in ing:
+                            for sea in sequence['seasoning']:
+                                if sequence['standard']=="":
+                                    sequence['standard']=i
+                                else:
+                                    sequence['standard']=sequence['standard']+","+i
     
         if sequence['top_class'] == "mix":
             for i in mix_low_class:
                 if i in sequence['sentence']:
-                    if sequence['standard']=="":
-                        sequence['standard']=i
-                    else:
-                        sequence['standard']=sequence['standard']+","+i
+                    for ing in sequence['ingre']:
+                        if i not in ing:
+                            for sea in sequence['seasoning']:
+                                if sequence['standard']=="":
+                                    sequence['standard']=i
+                                else:
+                                    sequence['standard']=sequence['standard']+","+i
     
         if sequence['top_class'] == "make":
             for i in make_low_class:
                 if i in sequence['sentence']:
-                    if sequence['standard']=="":
-                        sequence['standard']=i
-                    else:
-                        sequence['standard']=sequence['standard']+","+i     
+                    for ing in sequence['ingre']:
+                        if i not in ing:
+                            for sea in sequence['seasoning']:
+                                if sequence['standard']=="":
+                                    sequence['standard']=i
+                                else:
+                                    sequence['standard']=sequence['standard']+","+i  
                         
         if sequence['top_class'] == "prepare_ingre":
             for i in prepare_low_class:
                 if i in sequence['sentence']:
-                    if sequence['standard']=="":
-                        sequence['standard']=i
-                    else:
-                        sequence['standard']=sequence['standard']+","+i  
+                    for ing in sequence['ingre']:
+                        if i not in ing:
+                            for sea in sequence['seasoning']:
+                                if sequence['standard']=="":
+                                    sequence['standard']=i
+                                else:
+                                    sequence['standard']=sequence['standard']+","+i
     
          
     
