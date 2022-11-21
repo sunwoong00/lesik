@@ -222,7 +222,7 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
                             maxvalue = int(check_if_used_tool[int(findmax)])
                             saveindex = int(findmax)
 
-                    if("칼집" in sentences):
+                    if("칼집" in sentences and "넣다" in act):
                         #print("\n\nhi]n]n")
                         saveindex = 1
                         maxvalue = 1
@@ -303,10 +303,15 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
                     tool_used_in_sentence_final_array[i] += ", " + if_extra_tool[kk]
                 
             if select_if_else == 1:
-                current_action_tool[int(saveindex)] = if_extra_tool[0]
-                #print("test if changed", current_action_tool[int(saveindex)],if_extra_tool[0] )
+                #current_action_tool[int(saveindex)] = if_extra_tool[0]
+                #check_if_used_tool[int(saveindex)] = counttrackoftoolnum.getmostrecenttool
+                #counttrackoftoolnum.getmostrecenttool += 1
+                print("test if changed", current_action_tool[int(saveindex)],if_extra_tool )
             else:
-                current_action_tool[int(numbermatch)] = if_extra_tool[0]
+                #current_action_tool[int(numbermatch)] = if_extra_tool[0]
+                #check_if_used_tool[int(numbermatch)] = counttrackoftoolnum.getmostrecenttool
+                #counttrackoftoolnum.getmostrecenttool += 1
+                actat = check_more_than_one
                 ###############################################################
 
     #print("\n", tool_used_in_sentence_final_array, "\n", just_test_track_if_none, "\n")
