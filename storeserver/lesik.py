@@ -462,18 +462,7 @@ def classify(seq_list):
 #소분류 규격추가
 
 def add_standard(node, seq_list):
-<<<<<<< HEAD
-    
-    slice_low_class=["한 입 크기","꽃모양","큐브모양", "작게","웨지모양","나박","기다란 모양", "길게", "얇게", "깍둑", "도톰", "격자", "잘게", "세로", "가로", "링", "반", "채를", "한입 크기", "큼직", "동그란 모양", "굵게", "반달모양", "나무젓가락 두께","곱게","마름모 모양", "길죽한 모양", "어슷","가늘게", "한마디 크기", "주사위 모양", "길이 방향", "결 따라","바둑판 모양", "큼지막하게","비스듬하게","깍뚝", "편", "같은 크기"]
-    useFire_low_class=["퍼질때까지","자작하게","농도가 적당해질 때까지","한번 더","뭉근하게", "약간의 기포가 올라올 때까지","물기가 날아갈 정도", "가볍게", "재빨리","바삭하게","빠르게","투명해 질때까지", "부드러워질 때까지", "숨이 죽을 때까지","졸이듯이","브라운 색이 나도록","물기가 없어질 때까지", "되직하게","수분이 없게", "앞뒤로", "겉면이 타듯이", "앞 뒤로", "양면", "동그랗게", "돌려가며", "튀기듯이", "국물이 자작해 질 때까지","윤기나게","끈적한 농도가 날 때 까지", "숨이 죽을 정도로", "양이 반으로 줄어들 때까지","반", "속까지", "투명하게", "뒤집어","은근히","겉만","한쪽면만","진한 갈색이 날 때까지","윤기나게","부드럽게","익을 때까지","굴려가며","반숙으로","반숙상태로", "팥이 무르도록","노릇", "얇게","두툼하게"]
-    put_low_class=["차곡차곡", "한쪽 방향","정갈하게","켜켜이 돌려가며","층층이","넉넉히", "잠길정도","반복해서","자작하게","잠길 만큼","가지런히"]
-    mix_low_class=["빠르게","가볍게","면끼리 달라붙지 않도록","망울없이","서로 달라붙지 않도록","한 방향"]
-    make_low_class=[ "동글동글","동그랗게","동그란 모양으로","둥글게","시계방향","타원형","돌돌","단단하게","부채꼴 모양","납작하게","반을 접어","한 덩이로","일자로","얇게"]
-    prepare_low_class = ["숨이 죽을 정도"]
-    
-=======
    
->>>>>>> 9b02f6bd51892959eb0707bee9a91e7192a5db7a
     for sequence in seq_list:
         for ne in node['NE']:
             if ne['type'] == "QT_LENGTH" or ne['type'] == "QT_OTHERS" :
@@ -513,10 +502,12 @@ def add_standard(node, seq_list):
                     for ing in sequence['ingre']:
                         if i not in ing:
                             for sea in sequence['seasoning']:
-                                if sequence['standard']=="":
-                                    sequence['standard']=i
-                                else:
-                                    sequence['standard']=sequence['standard']+","+i
+                                if i not in sea:
+                                    if i not in sequence['act']:
+                                        if sequence['standard']=="":
+                                            sequence['standard']=i
+                                        else:
+                                            sequence['standard']=sequence['standard']+","+i
     
         if sequence['top_class'] == "use_fire":
             for i in useFire_low_class:
@@ -524,10 +515,11 @@ def add_standard(node, seq_list):
                     for ing in sequence['ingre']:
                         if i not in ing:
                             for sea in sequence['seasoning']:
-                                if sequence['standard']=="":
-                                    sequence['standard']=i
-                                else:
-                                    sequence['standard']=sequence['standard']+","+i
+                                if i not in sea:
+                                    if sequence['standard']=="":
+                                        sequence['standard']=i
+                                    else:
+                                        sequence['standard']=sequence['standard']+","+i
     
         if sequence['top_class'] == "put":
             for i in put_low_class:
@@ -535,10 +527,11 @@ def add_standard(node, seq_list):
                     for ing in sequence['ingre']:
                         if i not in ing:
                             for sea in sequence['seasoning']:
-                                if sequence['standard']=="":
-                                    sequence['standard']=i
-                                else:
-                                    sequence['standard']=sequence['standard']+","+i
+                                if i not in sea:
+                                    if sequence['standard']=="":
+                                        sequence['standard']=i
+                                    else:
+                                        sequence['standard']=sequence['standard']+","+i
     
         if sequence['top_class'] == "mix":
             for i in mix_low_class:
@@ -546,10 +539,11 @@ def add_standard(node, seq_list):
                     for ing in sequence['ingre']:
                         if i not in ing:
                             for sea in sequence['seasoning']:
-                                if sequence['standard']=="":
-                                    sequence['standard']=i
-                                else:
-                                    sequence['standard']=sequence['standard']+","+i
+                                if i not in sea:
+                                    if sequence['standard']=="":
+                                        sequence['standard']=i
+                                    else:
+                                        sequence['standard']=sequence['standard']+","+i
     
         if sequence['top_class'] == "make":
             for i in make_low_class:
@@ -557,10 +551,11 @@ def add_standard(node, seq_list):
                     for ing in sequence['ingre']:
                         if i not in ing:
                             for sea in sequence['seasoning']:
-                                if sequence['standard']=="":
-                                    sequence['standard']=i
-                                else:
-                                    sequence['standard']=sequence['standard']+","+i  
+                                if i not in sea:
+                                    if sequence['standard']=="":
+                                        sequence['standard']=i
+                                    else:
+                                        sequence['standard']=sequence['standard']+","+i
                         
         if sequence['top_class'] == "prepare_ingre":
             for i in prepare_low_class:
@@ -568,11 +563,11 @@ def add_standard(node, seq_list):
                     for ing in sequence['ingre']:
                         if i not in ing:
                             for sea in sequence['seasoning']:
-                                if sequence['standard']=="":
-                                    sequence['standard']=i
-                                else:
-                                    sequence['standard']=sequence['standard']+","+i
-    
+                                if i not in sea:
+                                    if sequence['standard']=="":
+                                        sequence['standard']=i
+                                    else:
+                                        sequence['standard']=sequence['standard']+","+i
          
     
     return seq_list
@@ -1028,8 +1023,9 @@ def merge_sequence(sequence_list):
                 [sequence_list[seq_idx]["volume"].append(vol_part) for vol_part in sequence_list[seq_idx + 1]["volume"]]
 
             if sequence_list[seq_idx + 1]["temperature"]: # 온도 병합
-                [sequence_list[seq_idx]["temperature"].append(tem_part) for tem_part in sequence_list[seq_idx + 1]["temperature"]]
-            
+                #[sequence_list[seq_idx]["temperature"].append(tem_part) for tem_part in sequence_list[seq_idx + 1]["temperature"]]
+                sequence_list[seq_idx]["temperature"] = sequence_list[seq_idx + 1]["temperature"]
+                
             sequence_list[seq_idx]["end_id"] = sequence_list[seq_idx + 1]["end_id"] # end_id update
             sequence_list[seq_idx]["sentence"] = sequence_list[seq_idx]["sentence"] + " " + sequence_list[seq_idx + 1]["sentence"] # 원문 update
 
@@ -1062,8 +1058,9 @@ def merge_sequence(sequence_list):
                 [sequence_list[seq_idx]["volume"].append(vol_part) for vol_part in sequence_list[seq_idx + 1]["volume"]]
 
             if sequence_list[seq_idx + 1]["temperature"]: # 온도 병합
-                [sequence_list[seq_idx]["temperature"].append(tem_part) for tem_part in sequence_list[seq_idx + 1]["temperature"]]
-            
+                #[sequence_list[seq_idx]["temperature"].append(tem_part) for tem_part in sequence_list[seq_idx + 1]["temperature"]]
+                sequence_list[seq_idx]["temperature"] = sequence_list[seq_idx + 1]["temperature"]
+                
             if sequence_list[seq_idx + 1]["standard"] != '': # 규격 병합
                 sequence_list[seq_idx]["standard"] = sequence_list[seq_idx]["standard"] + sequence_list[seq_idx + 1]["standard"]
 
@@ -1279,7 +1276,7 @@ def parse_node_section(entity_mode, is_srl, node_list):
 
     #print(sequence_list)
     #print(mixed_dict.keys())
-
+    
     return sequence_list
 
 
