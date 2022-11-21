@@ -82,12 +82,13 @@ def isWordPresent(sentence, word):
     #return True
     # To break the sentence in words
     s = sentence.split(" ")
- 
+    #s = str(sentence[0])
+    #print("isWordPresent", sentence, word)
     for i in s:
  
         # Comparing the current word
         # with the word to be searched
-        if (i == word):
+        if (word in i):
             return True
     return False
 ###############################################################
@@ -95,14 +96,14 @@ def isWordPresent(sentence, word):
 ###단어의 일부만 아니라 전체가 일치하는 확인 하기 위한 함수 예: 양파를 채썰다, 썰다 X, 채썰다 O ###
 def isActualTool(word, sentence, ingreCollectList):
     detection = sentence.split(" ")
-    print("detection", detection)
+    #print("detection", detection)
     for checkdetect in range(len(detection)):
         if word in detection[checkdetect]:
-            print("hi", checkdetect, ingreCollectList, detection[checkdetect])
+            #print("hi", checkdetect, ingreCollectList, detection[checkdetect])
             for ingredetect in range(len(ingreCollectList)):
                 print(ingreCollectList[ingredetect])
                 if str(ingreCollectList[ingredetect]) in detection[checkdetect]:
-                    print("found error", detection[checkdetect])
+                    #print("found error", detection[checkdetect])
                     return False
     return True
 ###############################################################
@@ -151,15 +152,16 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
         if_extra_tool = []
         select_if_else = 0
         check_more_than_one = 0
+        check_if_tool_found = 0
         tool_used_in_sentence_final_array.append("")
         zone_divide.append("")
         just_test_track_if_none.append("")
         ###만약에 문단에 도구가 새로 등장하면 기본도구를 등장한 도구로 바꾸기###
         for checksubtool in range(len(subtool_k_list)):
             if subtool_k_list[checksubtool] in sentences:
-                print(str(subtool_k_list[checksubtool]), str(sentences))
+                #print(str(subtool_k_list[checksubtool]), str(sentences))
                 if(isActualTool(str(subtool_k_list[checksubtool]), str(sentences), ingreCollectList) == False):
-                    print("\n\n\n")
+                    #print("\n\n\n")
                     break
 
                 if subtool_k_list[int(checksubtool)] == "냉장":
@@ -173,20 +175,26 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
                 save_previous_used_sentence = int(subtool_v_list[checksubtool])
                 counttrackoftoolnum.getmostrecenttool += 1
                 check_more_than_one += 1
+                check_if_tool_found = 1
                 #print(check_if_used_tool)
         check_knife = 0
-        if(check_more_than_one >= 2):
-            print("this is correct", sentences, if_extra_tool)  
+        #if(check_more_than_one >= 2):
+            #print("this is correct", sentences, if_extra_tool)  
         ###현재 저장된 도구정보로 행동과 매칭해 도구-행동 각 문단마다 진행###
+        
         for k in valuelist:
-
             if k in act and (isWordPresent(str(act), str(k)) == True):
 
-                if(act == "물기를 빼다"):
-                    current_action_tool[1] = "싱크대"
-                    check_if_used_tool[save_previous_used_sentence] = -1
+                if((act == "물기를 빼다" or "헹구다") and (check_if_tool_found == 0)):
+                    current_action_tool[0] = "싱크대"
+                    if current_action_tool[save_previous_used_sentence] != "싱크대":
+                        check_if_used_tool[save_previous_used_sentence] -= 1
                     check_knife = 1
                     print(sentences)
+                elif("자르다" in act):
+                    current_action_tool[1] = "가위"
+                    check_knife = 1
+                    #print(sentences)
 
                 ###행동의 번호를 가지고 오는 함수 및 변수###
                 numbermatch = checkifexist(k, checkaction)
@@ -209,9 +217,10 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
                             saveindex = int(findmax)
 
                     if("칼집" in sentences):
-                        print("\n\nhi]n]n")
+                        #print("\n\nhi]n]n")
                         saveindex = 1
                         maxvalue = 1
+                        check_if_used_tool[1] -= 1
                     #print(current_action_tool[int(two_option[0])])
                     #print(maxvalue)
                     if(maxvalue == 0):
@@ -225,8 +234,8 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
                             else:
                                 zone_divide[i] += "전처리"
                     else:
-                        #print(maxvalue)
-                        #print(current_action_tool)
+                        print(saveindex, act)
+                        print(current_action_tool, check_if_used_tool)
         
                         tool_used_in_sentence = current_action_tool[int(saveindex)]
                         if tool_used_in_sentence not in tool_used_in_sentence_final_array[i]:
@@ -242,7 +251,7 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
                                 check_knife = 0
                             if int(saveindex) == 1:
                                 check_knife = 1
-                                print("\nkk\n")
+                                #print("\nkk\n")
                     ###아래 코드는 위 max와 같으나 혹시 모른 상황을 위해 백업으로 남겨둠###
                     #if(check_if_used_tool[int(two_option[0])] > check_if_used_tool[int(two_option[1])]):
                         #tool_used_in_sentence = current_action_tool[int(two_option[0])]
@@ -264,6 +273,7 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
                     counttrackoftoolnum.getmostrecenttool += 1
                     ###만약에 행동 번호가 하나인 경우는 그냥 인덱스에 도구를 추가함####
                     tool_used_in_sentence = current_action_tool[int(numbermatch)]
+                    #print("check one", tool_used_in_sentence)
                     if tool_used_in_sentence not in tool_used_in_sentence_final_array[i]:
                         keep_action_num.append(numbermatch)
                         tool_used_in_sentence_final_array[i] += tool_used_in_sentence
@@ -288,7 +298,7 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
                 
             if select_if_else == 1:
                 current_action_tool[int(saveindex)] = if_extra_tool[0]
-                print("test if changed", current_action_tool[int(saveindex)],if_extra_tool[0] )
+                #print("test if changed", current_action_tool[int(saveindex)],if_extra_tool[0] )
             else:
                 current_action_tool[int(numbermatch)] = if_extra_tool[0]
                 ###############################################################
@@ -303,13 +313,13 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
             recorded_tool = tool_used_in_sentence_final_array[i]
             #print(track_count+i)
             for j in range((i-track_count), i):
-                print(tool_used_in_sentence_final_array[j])
+                #print(tool_used_in_sentence_final_array[j])
                 tool_used_in_sentence_final_array[j] = recorded_tool
             track_count = 0
 
     for i in range(len(tool_used_in_sentence_final_array)):
         tool_used_in_sentence_final_array[i] = list(tool_used_in_sentence_final_array[i].split("\n"))        
-    print(tool_used_in_sentence_final_array)
+    #print(tool_used_in_sentence_final_array)
 
 
     return (tool_used_in_sentence_final_array, zone_divide)
@@ -329,7 +339,7 @@ def matchresult(array):
 
     #print(cooking_act_dict)
     matchtoolwithactionresult = matchtoolwithaction(array, cooking_act_dict, act_score_dict, tool_match_main_dic, tool_match_sub_dic)
-    print(matchtoolwithactionresult)
+    #print(matchtoolwithactionresult)
     return matchtoolwithactionresult
 
 
