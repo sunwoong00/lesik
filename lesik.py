@@ -1320,7 +1320,7 @@ def make_recipe(original_recipe, entity_mode, is_srl):
     
     slice_low_class = get_list_from_file("labeling/lowclass_dict/slice_low.txt")
     prepare_low_class = get_list_from_file("labeling/lowclass_dict/prepare_low.txt")
-    useFire_low_class = get_list_from_file("labeling/lowclass_dict/useFIre_low.txt")
+    useFire_low_class = get_list_from_file("labeling/lowclass_dict/useFire_low.txt")
     put_low_class = get_list_from_file("labeling/lowclass_dict/put_low.txt")
     mix_low_class = get_list_from_file("labeling/lowclass_dict/mix_low.txt")
     make_low_class = get_list_from_file("labeling/lowclass_dict/make_low.txt")
