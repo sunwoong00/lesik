@@ -443,15 +443,15 @@ def verify_etn(node, seq_list):
 
 # 대분류, 중분류
 def classify(seq_list):
-    '''
-    slice = ["나누다","썰다","채썰다","슬라이스", "다이스", "가르다", "다지다","자르다","쪼개다","가르다","뜯다","찢다","부수다","으깨다","내다","갈다"]
-    prepare_ingre = ["밑간하다", "재우다", "숙성시키다", "불리다", "밀봉하다", "절이다","손질하다","냉장보관하다","다듬다","씻다","맞추다","헹구다"]
-    use_fire = ["녹이다","줄이다","짓다","돌리다","끓이다","끓다", "끄다", "켜다", "가열하다", "볶다", "끓어오르다", "가열하다", "예열하다", "굽다", "삶다", "조리다", "졸이다", "데치다", "찌다", "튀기다", "지지다", "부치다", "익히다", "데우다", "쑤다","프라이하다","삶다","우리다","켜다","끄다"]
-    put = ["깔다","붙이다","채우다","끼얹다","담그다","얹다","붓다","두르다","감싸다","곁들이다","뿌리다","올리다","입히다","풀다","넣다", "첨가하다", "담다"]
-    mix = ["버무리다","휘핑하다","섞다","젓다","치대다","무치다","묻히다"]
-    make = ["접다","빚는다","말다","누르다","뭉치다","만들다","주무르다","펴다","두드리다","말다"]
-    remove = ["털다","털어내다","걷어내다","걷다","건지다","거르다","떼다","도려내다","파내다","제거하다","잘라내다","꺼내다","발라내다","닦다","뜨다","빼다"]
-    '''
+    
+    #slice = ["나누다","썰다","채썰다","슬라이스", "다이스", "가르다", "다지다","자르다","쪼개다","가르다","뜯다","찢다","부수다","으깨다","내다","갈다"]
+    #prepare_ingre = ["밑간하다", "재우다", "숙성시키다", "불리다", "밀봉하다", "절이다","손질하다","냉장보관하다","다듬다","씻다","맞추다","헹구다"]
+    #use_fire = ["녹이다","줄이다","짓다","돌리다","끓이다","끓다", "끄다", "켜다", "가열하다", "볶다", "끓어오르다", "가열하다", "예열하다", "굽다", "삶다", "조리다", "졸이다", "데치다", "찌다", "튀기다", "지지다", "부치다", "익히다", "데우다", "쑤다","프라이하다","삶다","우리다","켜다","끄다"]
+    #put = ["깔다","붙이다","채우다","끼얹다","담그다","얹다","붓다","두르다","감싸다","곁들이다","뿌리다","올리다","입히다","풀다","넣다", "첨가하다", "담다"]
+    #mix = ["버무리다","휘핑하다","섞다","젓다","치대다","무치다","묻히다"]
+    #make = ["접다","빚는다","말다","누르다","뭉치다","만들다","주무르다","펴다","두드리다","말다"]
+    #remove = ["털다","털어내다","걷어내다","걷다","건지다","거르다","떼다","도려내다","파내다","제거하다","잘라내다","꺼내다","발라내다","닦다","뜨다","빼다"]
+    
     for sequence in seq_list:
         if sequence['act'] in slice_act:
             #sequence['act'] = sequence['act']+"(대분류:slice)"
@@ -496,13 +496,15 @@ def add_standard(node, seq_list):
                         sequence['standard']=ne['text']
                     else:
                         sequence['standard']=sequence['standard']+","+ne['text']
+            
             if ne['type'] == "QT_COUNT":
                 n_begin = int(ne['begin'])
                 n_end=int(ne['end'])
                 stand = ""
                 for wrd in node['word']:
                     w_begin= int(wrd['begin'])
-                    if wrd not in sequence['volume']:
+                    print(ne['text'], sequence['volume'])
+                    if ne['text'] not in sequence['volume']:
                         if n_begin<=w_begin<=n_end:
                             stand = stand + " " + wrd["text"]
                 if stand in sequence['sentence']:
@@ -510,7 +512,7 @@ def add_standard(node, seq_list):
                             sequence['standard']=stand
                     else:
                         sequence['standard']=sequence['standard']+","+stand
-                            
+              
                         
             if ne['type'] == "QT_ORDER" and '등분' in ne['text']:
                 if ne['text'] in sequence['sentence']:
@@ -971,7 +973,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
     sequence_list = classify(sequence_list)
 
     # 소분류 규격 추가
-    sequence_list = add_standard(node, sequence_list)
+    #sequence_list = add_standard(node, sequence_list)
     
     for sequence in sequence_list:
         total_sequencelist.append(sequence)
@@ -1274,6 +1276,9 @@ def parse_node_section(entity_mode, is_srl, node_list):
     
     for node in remove_node_list:
         node_list.remove(node)
+        
+    #소분류 규격추가
+    sequence_list = add_standard(node, sequence_list)
 
     return sequence_list
 
@@ -1359,13 +1364,13 @@ def main():
     idiom_dict = parse_idiom_dict("labeling/idiom.txt")
 
    
-    slice_act = get_list_from_file("labeling/slice_act.txt")
-    prepare_ingre = get_list_from_file("labeling/prepare_act.txt")
-    use_fire = get_list_from_file("labeling/useFire_act.txt")
-    put = get_list_from_file("labeling/put_act.txt")
-    mix = get_list_from_file("labeling/mix_act.txt")
-    make = get_list_from_file("labeling/make_act.txt")
-    remove = get_list_from_file("labeling/remove_act.txt")
+    slice_act = get_list_from_file("labeling/topclass_dict/slice_act.txt")
+    prepare_ingre = get_list_from_file("labeling/topclass_dict/prepare_act.txt")
+    use_fire = get_list_from_file("labeling/topclass_dict/useFire_act.txt")
+    put = get_list_from_file("labeling/topclass_dict/put_act.txt")
+    mix = get_list_from_file("labeling/topclass_dict/mix_act.txt")
+    make = get_list_from_file("labeling/topclass_dict/make_act.txt")
+    remove = get_list_from_file("labeling/topclass_dict/remove_act.txt")
     
     slice_low_class = get_list_from_file("labeling/lowclass_dict/slice_low.txt")
     prepare_low_class = get_list_from_file("labeling/lowclass_dict/prepare_low.txt")

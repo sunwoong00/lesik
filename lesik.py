@@ -473,7 +473,7 @@ def add_standard(node, seq_list):
                         sequence['standard']=ne['text']
                     else:
                         sequence['standard']=sequence['standard']+","+ne['text']
-                        
+            '''            
             if ne['type'] == "QT_COUNT":
                 n_begin = int(ne['begin'])
                 n_end=int(ne['end'])
@@ -488,7 +488,7 @@ def add_standard(node, seq_list):
                             sequence['standard']=stand
                     else:
                         sequence['standard']=sequence['standard']+","+stand
-                        
+            '''            
             if ne['type'] == "QT_ORDER" and '등분' in ne['text']:
                 if ne['text'] in sequence['sentence']:
                     if sequence['standard']=="":
@@ -946,7 +946,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
     sequence_list = classify(sequence_list)
 
     # 소분류 규격 추가
-    sequence_list = add_standard(node, sequence_list)
+    #sequence_list = add_standard(node, sequence_list)
     for sequence in sequence_list:
         total_sequencelist.append(sequence)
     
@@ -1243,6 +1243,9 @@ def parse_node_section(entity_mode, is_srl, node_list):
     for node in remove_node_list:
         node_list.remove(node)
 
+    #소분류 규격추가
+    sequence_list = add_standard(node, sequence_list)
+    
     return sequence_list
 
 
