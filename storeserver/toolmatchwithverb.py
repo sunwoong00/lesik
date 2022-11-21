@@ -185,10 +185,10 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
         for k in valuelist:
             if k in act and (isWordPresent(str(act), str(k)) == True):
 
-                if(act == "물기를 빼다" and (check_if_tool_found == 0)):
-                    current_action_tool[1] = "싱크대"
+                if((act == "물기를 빼다" or "헹구다") and (check_if_tool_found == 0)):
+                    current_action_tool[0] = "싱크대"
                     if current_action_tool[save_previous_used_sentence] != "싱크대":
-                        check_if_used_tool[save_previous_used_sentence] = -1
+                        check_if_used_tool[save_previous_used_sentence] -= 1
                     check_knife = 1
                     print(sentences)
                 elif("자르다" in act):
@@ -220,7 +220,7 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
                         #print("\n\nhi]n]n")
                         saveindex = 1
                         maxvalue = 1
-                        check_if_used_tool[1] = -1
+                        check_if_used_tool[1] -= 1
                     #print(current_action_tool[int(two_option[0])])
                     #print(maxvalue)
                     if(maxvalue == 0):
@@ -234,8 +234,8 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
                             else:
                                 zone_divide[i] += "전처리"
                     else:
-                        #print(maxvalue)
-                        #print(current_action_tool)
+                        print(saveindex, act)
+                        print(current_action_tool, check_if_used_tool)
         
                         tool_used_in_sentence = current_action_tool[int(saveindex)]
                         if tool_used_in_sentence not in tool_used_in_sentence_final_array[i]:
@@ -339,7 +339,7 @@ def matchresult(array):
 
     #print(cooking_act_dict)
     matchtoolwithactionresult = matchtoolwithaction(array, cooking_act_dict, act_score_dict, tool_match_main_dic, tool_match_sub_dic)
-    print(matchtoolwithactionresult)
+    #print(matchtoolwithactionresult)
     return matchtoolwithactionresult
 
 
