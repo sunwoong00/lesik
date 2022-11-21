@@ -1113,13 +1113,6 @@ def extract_ner_from_kobert(sentence):
 
     json_object = json.loads(response.data)
 
-    for ne in json_object['NE']:
-        if ne['type'] == 'CV_INGREDIENT':
-            ing_list.append(ne['text'])
-        elif ne['type'] == 'CV_SEASONING':
-            ssn_list.append(ne['text'])
-
-
     return json_object
 
 
