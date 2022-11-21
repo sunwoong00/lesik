@@ -178,12 +178,20 @@ def find_condition(node, seq_list):
                         if node['dependency'][mod]['label'] == 'NP_SBJ':
                             act_plus_sentence = node['dependency'][mod]['text'] + " " + act_plus_sentence
 
-                    for seq in seq_list:
+                    # 방선웅 - 조건문의 동사에서 조리시퀀스가 분리되는 것을 방지
+                    for i in range(0, len(seq_list)-1):
                         word = node['word'][s_word_id]
                         begin = word['begin']
-                        if seq['start_id'] <= begin <= seq['end_id']:
-                            seq['act'] = "(" + act_plus_sentence + ")" + seq['act']
-
+                        if seq_list[i]['start_id'] <= begin <= seq_list[i]['end_id']:
+                            if seq_list[i]['sentence'][-1] == "면":
+                                seq_list[i+1]['act'] = "(" + act_plus_sentence + ")" + seq_list[i+1]['act']
+                                seq_list[i+1]['sentence'] = seq_list[i]['sentence'] + " " + seq_list[i+1]['sentence']
+                                if seq_list[i]['zone'] == "화구존":
+                                    seq_list[i+1]['zone'] = "화구존"
+                                del seq_list[i]
+                            else:
+                                seq_list[i]['act'] = "(" + act_plus_sentence + ")" + seq_list[i]['act']
+                        
     return seq_list
 
 
@@ -781,6 +789,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
     for m_ele in node['morp']:
         if m_ele['type'] == 'VV':
             act_id = int(m_ele['id'])
+
             if node['morp'][act_id + 1]['type'] == 'ETM' and node['morp'][act_id + 2]['lemma'] != '후':
                 continue
             act = m_ele['lemma']
@@ -906,7 +915,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
 
     if is_srl:
         # 현재 시퀀스에 누락된 재료를 보완
-        sequence_list = find_omitted_ingredient(node, sequence_list, ingredient_dict, mixed_dict)
+        sequence_list = find_omitted_ingredient(node, sequence_list, ingredient_dict, ingredient_dict)
         # 가리비 칼국수 멸치, 새우, 다시마 문제
 
         # 조리동작(용량)
@@ -1035,7 +1044,9 @@ def merge_sequence(sequence_list):
             sequence_list[seq_idx]["act"] = sequence_list[seq_idx + 1]["act"] # 뒤의 동사만 남김
             
             if sequence_list[seq_idx + 1]["tool"]: # 도구 병합
-                [sequence_list[seq_idx]["tool"].append(tool_part) for tool_part in sequence_list[seq_idx + 1]["tool"]]
+                for tool in sequence_list[seq_idx + 1]["tool"]:
+                    if tool not in sequence_list[seq_idx]["tool"]:
+                        sequence_list[seq_idx]["tool"].append(tool)
 
             if sequence_list[seq_idx + 1]["duration"] != '': # 시간 병합
                 sequence_list[seq_idx]["duration"] = sequence_list[seq_idx]["duration"] + " " + sequence_list[seq_idx + 1]["duration"]
@@ -1064,6 +1075,21 @@ def merge_sequence(sequence_list):
             sequence_list[seq_idx]["sentence"] = sequence_list[seq_idx]["sentence"] + " " + sequence_list[seq_idx + 1]["sentence"] # 원문 update
 
             sequence_list[seq_idx]["top_class"] = sequence_list[seq_idx + 1]["top_class"] # 대분류 update
+
+
+            # merge 하는 시퀀스에 들어있는 재료, 첨가물이 겹칠 때 하나만 처리하게 해주는 코드 - 방선웅
+            if 2 <= len(sequence_list[seq_idx]["ingre"]):
+                for i in range(0, len(sequence_list[seq_idx]["ingre"])-1):
+                    for j in range(i+1, len(sequence_list[seq_idx]["ingre"])):
+                        if sequence_list[seq_idx]["ingre"][i] == sequence_list[seq_idx]["ingre"][j]:
+                            del sequence_list[seq_idx]["ingre"][j]
+
+            if 2 <= len(sequence_list[seq_idx]["seasoning"]):
+                for i in range(0, len(sequence_list[seq_idx]["seasoning"])-1):
+                    for j in range(i+1, len(sequence_list[seq_idx]["seasoning"])):
+                        if sequence_list[seq_idx]["seasoning"][i] == sequence_list[seq_idx]["seasoning"][j]:
+                            del sequence_list[seq_idx]["seasoning"][j]
+
             
             del sequence_list[seq_idx + 1] # 리스트 요소 삭제
             sequence_list.append([]) # list index out of range 방지 위해 마지막에 빈 시퀀스 삽입
@@ -1074,6 +1100,7 @@ def merge_sequence(sequence_list):
     return sequence_list
 
 def extract_ner_from_kobert(sentence):
+
     kobert_api_url = "http://ec2-13-209-68-59.ap-northeast-2.compute.amazonaws.com:5000"
 
     http = urllib3.PoolManager()
@@ -1085,6 +1112,13 @@ def extract_ner_from_kobert(sentence):
     )
 
     json_object = json.loads(response.data)
+
+    for ne in json_object['NE']:
+        if ne['type'] == 'CV_INGREDIENT':
+            ing_list.append(ne['text'])
+        elif ne['type'] == 'CV_SEASONING':
+            ssn_list.append(ne['text'])
+
 
     return json_object
 
@@ -1330,6 +1364,7 @@ def main():
     act_to_tool_dict = parse_act_to_tool_dict("labeling/act_to_tool.txt")
     tool_list, tool_to_zone_dict = parse_tool_dict("labeling/tool.txt")
     idiom_dict = parse_idiom_dict("labeling/idiom.txt")
+
    
     slice_act = get_list_from_file("labeling/slice_act.txt")
     prepare_ingre = get_list_from_file("labeling/prepare_act.txt")
@@ -1348,6 +1383,7 @@ def main():
     remove_low_class = get_list_from_file("labeling/lowclass_dict/remove_low.txt")
   
     
+
     zone_dict = {'act': act_to_zone_dict, 'tool': tool_to_zone_dict}
 
     # ETRI open api
@@ -1372,7 +1408,6 @@ def main():
     sequence_list = parse_node_section(entity_mode, is_srl, node_list)
 
     print(str(json.dumps(sequence_list, ensure_ascii=False)))
-
 
 if __name__ == "__main__":
     main()

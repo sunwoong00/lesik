@@ -204,11 +204,19 @@ def find_condition(node, seq_list):
                         if node['dependency'][mod]['label'] == 'NP_SBJ':
                             act_plus_sentence = node['dependency'][mod]['text'] + " " + act_plus_sentence
 
-                    for seq in seq_list:
+                    # 방선웅 - 조건문의 동사에서 조리시퀀스가 분리되는 것을 방지
+                    for i in range(0, len(seq_list)-1):
                         word = node['word'][s_word_id]
                         begin = word['begin']
-                        if seq['start_id'] <= begin <= seq['end_id']:
-                            seq['act'] = "(" + act_plus_sentence + ")" + seq['act']
+                        if seq_list[i]['start_id'] <= begin <= seq_list[i]['end_id']:
+                            if seq_list[i]['sentence'][-1] == "면":
+                                seq_list[i+1]['act'] = "(" + act_plus_sentence + ")" + seq_list[i+1]['act']
+                                seq_list[i+1]['sentence'] = seq_list[i]['sentence'] + " " + seq_list[i+1]['sentence']
+                                if seq_list[i]['zone'] == "화구존":
+                                    seq_list[i+1]['zone'] = "화구존"
+                                del seq_list[i]
+                            else:
+                                seq_list[i]['act'] = "(" + act_plus_sentence + ")" + seq_list[i]['act']
 
     return seq_list
 
@@ -677,11 +685,9 @@ def find_omitted_ingredient(node, seq_list, ingredient_dict, mixed_dict):
                         s_text = s_ele['text']
                         s_type = s_ele['type']
                         if s_type in critical_type_list:
-                            print("mixed_dict : ", mixed_dict)
                             for ingredient in mixed_dict.keys():
                                 if ingredient in s_text and ingredient not in sequence['ingre'] and ingredient not in \
                                         sequence['seasoning']:
-                                    print("ingredient : ", ingredient)
                                     sequence['ingre'].append(ingredient) # 박지연 대체 왜 여기로감?? 얘가 시즈닝이면 어쩌려고
     return seq_list
 
@@ -891,13 +897,14 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
                     else:
                         if ne['type'] == 'TI_DURATION':
                             sequence['duration'] = ne['text']
-
+    
     # 불필요한 시퀀스 제거 및 다음 시퀀스에 병합
     # sequence_list = remove_redundant_sequence(node, seq_list)
     sequence_list = seq_list
+
     if is_srl:
         # 현재 시퀀스에 누락된 재료를 보완
-        sequence_list = find_omitted_ingredient(node, sequence_list, ingredient_dict, mixed_dict)
+        sequence_list = find_omitted_ingredient(node, sequence_list, ingredient_dict, ingredient_dict)
 
         # 조리동작(용량)
         # sequence_list = volume_of_act(node, sequence_list)
@@ -947,7 +954,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
                                     sequence['duration'] += "~" + ne['text']
                             else:
                                 sequence['duration'] += ne['text']'''
-    
+
     # 동사 분류
     sequence_list = classify(sequence_list)
 
@@ -964,7 +971,6 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
  
     # 동작에 딸려오는 부사구 출력
     sequence_list = find_adverb(node, sequence_list)
-    
     # 숙어
     sequence_list = find_idiom(node, sequence_list)
 
@@ -988,8 +994,10 @@ def merge_sequence(sequence_list):
     '''
 
     len_of_list = len(sequence_list)
+    #print("수정 전")
+    #print(sequence_list)
     for seq_idx in range(len_of_list - 1):
-        # 동사가 똑같은 경우 (보류 - 논의 필요)
+        # 동사가 똑같은 경우
         if sequence_list[seq_idx] and sequence_list[seq_idx + 1] and sequence_list[seq_idx]["act"] == sequence_list[seq_idx + 1]["act"]:
             if sequence_list[seq_idx + 1]["duration"] != '': # 시간 병합
                 sequence_list[seq_idx]["duration"] = sequence_list[seq_idx]["duration"] + "<br>" + sequence_list[seq_idx + 1]["duration"]
@@ -1015,12 +1023,15 @@ def merge_sequence(sequence_list):
             del sequence_list[seq_idx + 1] # 리스트 요소 삭제
             sequence_list.append([]) # list index out of range 방지 위해 마지막에 빈 시퀀스 삽입
 
+
         # 현 동사가 "넣다"이고, 이후 동사가 다른 동사인 경우
         if sequence_list[seq_idx] and sequence_list[seq_idx + 1] and sequence_list[seq_idx]["act"] == "넣다" and sequence_list[seq_idx]["sentence"].find("요.") == -1:
             sequence_list[seq_idx]["act"] = sequence_list[seq_idx + 1]["act"] # 뒤의 동사만 남김
             
             if sequence_list[seq_idx + 1]["tool"]: # 도구 병합
-                [sequence_list[seq_idx]["tool"].append(tool_part) for tool_part in sequence_list[seq_idx + 1]["tool"]]
+                for tool in sequence_list[seq_idx + 1]["tool"]:
+                    if tool not in sequence_list[seq_idx]["tool"]:
+                        sequence_list[seq_idx]["tool"].append(tool)
 
             if sequence_list[seq_idx + 1]["duration"] != '': # 시간 병합
                 sequence_list[seq_idx]["duration"] = sequence_list[seq_idx]["duration"] + " " + sequence_list[seq_idx + 1]["duration"]
@@ -1036,22 +1047,41 @@ def merge_sequence(sequence_list):
 
             if sequence_list[seq_idx + 1]["temperature"]: # 온도 병합
                 [sequence_list[seq_idx]["temperature"].append(tem_part) for tem_part in sequence_list[seq_idx + 1]["temperature"]]
-
+            
             if sequence_list[seq_idx + 1]["standard"] != '': # 규격 병합
                 sequence_list[seq_idx]["standard"] = sequence_list[seq_idx]["standard"] + sequence_list[seq_idx + 1]["standard"]
 
+
             sequence_list[seq_idx]["zone"] = sequence_list[seq_idx + 1]["zone"] # zone update
+
 
             sequence_list[seq_idx]["end_id"] = sequence_list[seq_idx + 1]["end_id"] # end_id update
 
             sequence_list[seq_idx]["sentence"] = sequence_list[seq_idx]["sentence"] + " " + sequence_list[seq_idx + 1]["sentence"] # 원문 update
 
             sequence_list[seq_idx]["top_class"] = sequence_list[seq_idx + 1]["top_class"] # 대분류 update
+
+
+            # merge 하는 시퀀스에 들어있는 재료, 첨가물이 겹칠 때 하나만 처리하게 해주는 코드 - 방선웅
+            if 2 <= len(sequence_list[seq_idx]["ingre"]):
+                for i in range(0, len(sequence_list[seq_idx]["ingre"])-1):
+                    for j in range(i+1, len(sequence_list[seq_idx]["ingre"])):
+                        if sequence_list[seq_idx]["ingre"][i] == sequence_list[seq_idx]["ingre"][j]:
+                            del sequence_list[seq_idx]["ingre"][j]
+
+            if 2 <= len(sequence_list[seq_idx]["seasoning"]):
+                for i in range(0, len(sequence_list[seq_idx]["seasoning"])-1):
+                    for j in range(i+1, len(sequence_list[seq_idx]["seasoning"])):
+                        if sequence_list[seq_idx]["seasoning"][i] == sequence_list[seq_idx]["seasoning"][j]:
+                            del sequence_list[seq_idx]["seasoning"][j]
+
             
             del sequence_list[seq_idx + 1] # 리스트 요소 삭제
             sequence_list.append([]) # list index out of range 방지 위해 마지막에 빈 시퀀스 삽입
-
+    
     sequence_list = list(filter(None, sequence_list))
+    #print("수정 후")
+    #print(sequence_list)
     return sequence_list
 
 def extract_ner_from_kobert(sentence):
@@ -1323,7 +1353,6 @@ app = Flask(__name__)
 def index():
     recipe_dir = "static/recipe/ko"
     recipe_list = os.listdir(recipe_dir)
-    print(recipe_list)
     recipe_idx = random.randrange(0, len(recipe_dir))
     recipe_text_list = get_list_from_file(recipe_dir + "/" + recipe_list[recipe_idx])
     return render_template("index.html", recipe="\n".join(recipe_text_list))
