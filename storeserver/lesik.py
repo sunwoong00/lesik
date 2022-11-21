@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*- 
 import json
 import os.path
 import random
@@ -6,6 +5,8 @@ import random
 import urllib3
 from flask import Flask, render_template, request, make_response
 import pymysql
+
+import toolmatchwithverb as toolmatchwverb
 
 
 # util
@@ -956,8 +957,6 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
                             else:
                                 sequence['duration'] += ne['text']'''
 
-    print(sequence_list)
-
     # 동사 분류
     sequence_list = classify(sequence_list)
 
@@ -976,6 +975,10 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
     sequence_list = find_adverb(node, sequence_list)
     # 숙어
     sequence_list = find_idiom(node, sequence_list)
+
+    #print(sequence_list)
+    #for k in range(len(sequence_list)):
+        #matchtoolwithactionresult = toolmatchwverb.matchresult(sequence_list[k])
 
     # 시퀀스 병합
     sequence_list = merge_sequence(sequence_list)
@@ -1258,6 +1261,13 @@ def parse_node_section(entity_mode, is_srl, node_list):
 
     for node in remove_node_list:
         node_list.remove(node)
+
+    combine_logic = toolmatchwverb.matchresult(sequence_list)
+    for kk in range(len(sequence_list)):
+        sequence_list[kk]["tool"] = list(combine_logic[0][kk])
+        print(sequence_list[kk]["tool"],combine_logic[0][kk])
+
+    print(sequence_list)
 
     return sequence_list
 
