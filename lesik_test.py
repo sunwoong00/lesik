@@ -178,12 +178,20 @@ def find_condition(node, seq_list):
                         if node['dependency'][mod]['label'] == 'NP_SBJ':
                             act_plus_sentence = node['dependency'][mod]['text'] + " " + act_plus_sentence
 
-                    for seq in seq_list:
+                    # 방선웅 - 조건문의 동사에서 조리시퀀스가 분리되는 것을 방지
+                    for i in range(0, len(seq_list)-1):
                         word = node['word'][s_word_id]
                         begin = word['begin']
-                        if seq['start_id'] <= begin <= seq['end_id']:
-                            seq['act'] = "(" + act_plus_sentence + ")" + seq['act']
-
+                        if seq_list[i]['start_id'] <= begin <= seq_list[i]['end_id']:
+                            if seq_list[i]['sentence'][-1] == "면":
+                                seq_list[i+1]['act'] = "(" + act_plus_sentence + ")" + seq_list[i+1]['act']
+                                seq_list[i+1]['sentence'] = seq_list[i]['sentence'] + " " + seq_list[i+1]['sentence']
+                                if seq_list[i]['zone'] == "화구존":
+                                    seq_list[i+1]['zone'] = "화구존"
+                                del seq_list[i]
+                            else:
+                                seq_list[i]['act'] = "(" + act_plus_sentence + ")" + seq_list[i]['act']
+                        
     return seq_list
 
 
@@ -686,7 +694,7 @@ def find_omitted_ingredient(node, seq_list, ingredient_dict, mixed_dict):
                         s_text = s_ele['text']
                         s_type = s_ele['type']
                         if s_type in critical_type_list:
-                            for ingredient in ingredient_dict.keys():
+                            for ingredient in mixed_dict.keys():
                                 if ingredient in s_text and ingredient not in sequence['ingre'] and ingredient not in \
                                         sequence['seasoning']:
                                     sequence['ingre'].append(ingredient) # 박지연 대체 왜 여기로감?? 얘가 시즈닝이면 어쩌려고
@@ -780,6 +788,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
     for m_ele in node['morp']:
         if m_ele['type'] == 'VV':
             act_id = int(m_ele['id'])
+
             if node['morp'][act_id + 1]['type'] == 'ETM' and node['morp'][act_id + 2]['lemma'] != '후':
                 continue
             act = m_ele['lemma']
@@ -905,7 +914,9 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
 
     if is_srl:
         # 현재 시퀀스에 누락된 재료를 보완
+        print("전 : ", sequence_list)
         sequence_list = find_omitted_ingredient(node, sequence_list, ingredient_dict, ingredient_dict)
+        print("후 : ", sequence_list)
         # 가리비 칼국수 멸치, 새우, 다시마 문제
 
         # 조리동작(용량)
@@ -1034,7 +1045,9 @@ def merge_sequence(sequence_list):
             sequence_list[seq_idx]["act"] = sequence_list[seq_idx + 1]["act"] # 뒤의 동사만 남김
             
             if sequence_list[seq_idx + 1]["tool"]: # 도구 병합
-                [sequence_list[seq_idx]["tool"].append(tool_part) for tool_part in sequence_list[seq_idx + 1]["tool"]]
+                for tool in sequence_list[seq_idx + 1]["tool"]:
+                    if tool not in sequence_list[seq_idx]["tool"]:
+                        sequence_list[seq_idx]["tool"].append(tool)
 
             if sequence_list[seq_idx + 1]["duration"] != '': # 시간 병합
                 sequence_list[seq_idx]["duration"] = sequence_list[seq_idx]["duration"] + " " + sequence_list[seq_idx + 1]["duration"]
@@ -1063,6 +1076,21 @@ def merge_sequence(sequence_list):
             sequence_list[seq_idx]["sentence"] = sequence_list[seq_idx]["sentence"] + " " + sequence_list[seq_idx + 1]["sentence"] # 원문 update
 
             sequence_list[seq_idx]["top_class"] = sequence_list[seq_idx + 1]["top_class"] # 대분류 update
+
+
+            # merge 하는 시퀀스에 들어있는 재료, 첨가물이 겹칠 때 하나만 처리하게 해주는 코드 - 방선웅
+            if 2 <= len(sequence_list[seq_idx]["ingre"]):
+                for i in range(0, len(sequence_list[seq_idx]["ingre"])-1):
+                    for j in range(i+1, len(sequence_list[seq_idx]["ingre"])):
+                        if sequence_list[seq_idx]["ingre"][i] == sequence_list[seq_idx]["ingre"][j]:
+                            del sequence_list[seq_idx]["ingre"][j]
+
+            if 2 <= len(sequence_list[seq_idx]["seasoning"]):
+                for i in range(0, len(sequence_list[seq_idx]["seasoning"])-1):
+                    for j in range(i+1, len(sequence_list[seq_idx]["seasoning"])):
+                        if sequence_list[seq_idx]["seasoning"][i] == sequence_list[seq_idx]["seasoning"][j]:
+                            del sequence_list[seq_idx]["seasoning"][j]
+
             
             del sequence_list[seq_idx + 1] # 리스트 요소 삭제
             sequence_list.append([]) # list index out of range 방지 위해 마지막에 빈 시퀀스 삽입
@@ -1086,11 +1114,9 @@ def extract_ner_from_kobert(sentence):
 
     json_object = json.loads(response.data)
 
-    print("ne : ", json_object['NE'])
     for ne in json_object['NE']:
         if ne['type'] == 'CV_INGREDIENT':
             ing_list.append(ne['text'])
-            print(ing_list)
         elif ne['type'] == 'CV_SEASONING':
             ssn_list.append(ne['text'])
 
@@ -1174,8 +1200,6 @@ def parse_node_section(entity_mode, is_srl, node_list):
                     # sub_ingredient_dict 이상함
                     mixed_dict.update(sub_ingredient_dict)
 
-            print("mixed_dict :  {'주재료': {'배추김치': '1/6포기', '밥': '2공기', '베이컨슬라이스': '5장', '달걀': '2개', '양파': '1/4개', '실파': '1대'}, '첨가물': {'참기름': '1큰술', '식용유': ''}}")
-
         else:
             node['text'] = node['text'].strip()
             # tip 부분 생략하는 조건문
@@ -1198,11 +1222,11 @@ def parse_node_section(entity_mode, is_srl, node_list):
             for seq_dict in sequence:
                 # 기본 재료에 나오는 식자재와 용량 매핑
                 for ingre in seq_dict['ingre']:
-                    if ingre in ingredient_dict:
-                        seq_dict['volume'].append(sub_ingredient_dict.get(ingre))
+                    if ingre in mixed_dict:
+                        seq_dict['volume'].append(mixed_dict.get(ingre))
                     else:
                         flag=0
-                        for mix_key, mix_value in sub_ingredient_dict.items():
+                        for mix_key, mix_value in mixed_dict.items():
                             if mix_key in ingre and not ingre.isalpha():
                                 seq_dict['volume'].append(mix_value)
                                 flag=1
@@ -1212,11 +1236,11 @@ def parse_node_section(entity_mode, is_srl, node_list):
                 
                 # 기본 재료에 나오는 첨가물과 용량 매핑                    
                 for seasoning in seq_dict['seasoning']:
-                    if seasoning in sub_ingredient_dict:
-                        seq_dict['volume'].append(sub_ingredient_dict.get(seasoning))
+                    if seasoning in mixed_dict:
+                        seq_dict['volume'].append(mixed_dict.get(seasoning))
                     else: 
                         flag=0
-                        for mix_key, mix_value in sub_ingredient_dict.items():
+                        for mix_key, mix_value in mixed_dict.items():
                             if mix_key in seasoning and not seasoning.isalpha():
                                 seq_dict['volume'].append(mix_value)
                                 flag=1
@@ -1378,9 +1402,6 @@ def main():
     sequence_list = parse_node_section(entity_mode, is_srl, node_list)
 
     print(str(json.dumps(sequence_list, ensure_ascii=False)))
-    print("ingredient_dict : ", ing_list)
-    print("seasoning_dict : ", ssn_list)
-
 
 if __name__ == "__main__":
     main()
