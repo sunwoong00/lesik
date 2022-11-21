@@ -462,6 +462,10 @@ def classify(seq_list):
 #소분류 규격추가
 
 def add_standard(node, seq_list):
+<<<<<<< HEAD
+=======
+   
+>>>>>>> 76e86981e37c31d34a80ba257c10116088a3137a
     for sequence in seq_list:
         for ne in node['NE']:
             if ne['type'] == "QT_LENGTH" or ne['type'] == "QT_OTHERS" :
@@ -501,10 +505,12 @@ def add_standard(node, seq_list):
                     for ing in sequence['ingre']:
                         if i not in ing:
                             for sea in sequence['seasoning']:
-                                if sequence['standard']=="":
-                                    sequence['standard']=i
-                                else:
-                                    sequence['standard']=sequence['standard']+","+i
+                                if i not in sea:
+                                    if i not in sequence['act']:
+                                        if sequence['standard']=="":
+                                            sequence['standard']=i
+                                        else:
+                                            sequence['standard']=sequence['standard']+","+i
     
         if sequence['top_class'] == "use_fire":
             for i in useFire_low_class:
@@ -512,10 +518,11 @@ def add_standard(node, seq_list):
                     for ing in sequence['ingre']:
                         if i not in ing:
                             for sea in sequence['seasoning']:
-                                if sequence['standard']=="":
-                                    sequence['standard']=i
-                                else:
-                                    sequence['standard']=sequence['standard']+","+i
+                                if i not in sea:
+                                    if sequence['standard']=="":
+                                        sequence['standard']=i
+                                    else:
+                                        sequence['standard']=sequence['standard']+","+i
     
         if sequence['top_class'] == "put":
             for i in put_low_class:
@@ -523,10 +530,11 @@ def add_standard(node, seq_list):
                     for ing in sequence['ingre']:
                         if i not in ing:
                             for sea in sequence['seasoning']:
-                                if sequence['standard']=="":
-                                    sequence['standard']=i
-                                else:
-                                    sequence['standard']=sequence['standard']+","+i
+                                if i not in sea:
+                                    if sequence['standard']=="":
+                                        sequence['standard']=i
+                                    else:
+                                        sequence['standard']=sequence['standard']+","+i
     
         if sequence['top_class'] == "mix":
             for i in mix_low_class:
@@ -534,10 +542,11 @@ def add_standard(node, seq_list):
                     for ing in sequence['ingre']:
                         if i not in ing:
                             for sea in sequence['seasoning']:
-                                if sequence['standard']=="":
-                                    sequence['standard']=i
-                                else:
-                                    sequence['standard']=sequence['standard']+","+i
+                                if i not in sea:
+                                    if sequence['standard']=="":
+                                        sequence['standard']=i
+                                    else:
+                                        sequence['standard']=sequence['standard']+","+i
     
         if sequence['top_class'] == "make":
             for i in make_low_class:
@@ -545,10 +554,11 @@ def add_standard(node, seq_list):
                     for ing in sequence['ingre']:
                         if i not in ing:
                             for sea in sequence['seasoning']:
-                                if sequence['standard']=="":
-                                    sequence['standard']=i
-                                else:
-                                    sequence['standard']=sequence['standard']+","+i  
+                                if i not in sea:
+                                    if sequence['standard']=="":
+                                        sequence['standard']=i
+                                    else:
+                                        sequence['standard']=sequence['standard']+","+i
                         
         if sequence['top_class'] == "prepare_ingre":
             for i in prepare_low_class:
@@ -556,11 +566,11 @@ def add_standard(node, seq_list):
                     for ing in sequence['ingre']:
                         if i not in ing:
                             for sea in sequence['seasoning']:
-                                if sequence['standard']=="":
-                                    sequence['standard']=i
-                                else:
-                                    sequence['standard']=sequence['standard']+","+i
-    
+                                if i not in sea:
+                                    if sequence['standard']=="":
+                                        sequence['standard']=i
+                                    else:
+                                        sequence['standard']=sequence['standard']+","+i
          
     
     return seq_list
@@ -1016,8 +1026,9 @@ def merge_sequence(sequence_list):
                 [sequence_list[seq_idx]["volume"].append(vol_part) for vol_part in sequence_list[seq_idx + 1]["volume"]]
 
             if sequence_list[seq_idx + 1]["temperature"]: # 온도 병합
-                [sequence_list[seq_idx]["temperature"].append(tem_part) for tem_part in sequence_list[seq_idx + 1]["temperature"]]
-            
+                #[sequence_list[seq_idx]["temperature"].append(tem_part) for tem_part in sequence_list[seq_idx + 1]["temperature"]]
+                sequence_list[seq_idx]["temperature"] = sequence_list[seq_idx + 1]["temperature"]
+                
             sequence_list[seq_idx]["end_id"] = sequence_list[seq_idx + 1]["end_id"] # end_id update
             sequence_list[seq_idx]["sentence"] = sequence_list[seq_idx]["sentence"] + " " + sequence_list[seq_idx + 1]["sentence"] # 원문 update
 
@@ -1050,8 +1061,9 @@ def merge_sequence(sequence_list):
                 [sequence_list[seq_idx]["volume"].append(vol_part) for vol_part in sequence_list[seq_idx + 1]["volume"]]
 
             if sequence_list[seq_idx + 1]["temperature"]: # 온도 병합
-                [sequence_list[seq_idx]["temperature"].append(tem_part) for tem_part in sequence_list[seq_idx + 1]["temperature"]]
-            
+                #[sequence_list[seq_idx]["temperature"].append(tem_part) for tem_part in sequence_list[seq_idx + 1]["temperature"]]
+                sequence_list[seq_idx]["temperature"] = sequence_list[seq_idx + 1]["temperature"]
+                
             if sequence_list[seq_idx + 1]["standard"] != '': # 규격 병합
                 sequence_list[seq_idx]["standard"] = sequence_list[seq_idx]["standard"] + sequence_list[seq_idx + 1]["standard"]
 
@@ -1267,7 +1279,7 @@ def parse_node_section(entity_mode, is_srl, node_list):
 
     #print(sequence_list)
     #print(mixed_dict.keys())
-
+    
     return sequence_list
 
 
