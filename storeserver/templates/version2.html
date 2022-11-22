@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Ver2</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="{{ url_for('static', filename='/js/test.js') }}" type="text/javascript" defer></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/test.css') }}">
+</head>
+<body>
+    <div id="loadcontent">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <div style="display:inline-flex">
+        <h1 id="title">Foodi's Digital Recipe</h1>
+        <img id="logo_icon" src="static/image/foodi_logo.png">
+    </div>
+    <div style="clear:both;"></div>
+
+    <form id="move-to-prompt" style="float:right; margin-right: 50px;" action="/index">
+        <button id="changetype" type="submit" class="changetype zoom">Normal View</button>
+    </form>
+
+    <div class="container">
+        <div class="textbox column">
+            <form id="insert-recipe">
+                <div style="justify-content: center;">
+                    <div>
+                        <div class="empty-block"></div>
+                        <textarea id="recipe-box" name="recipe">{{recipe}}</textarea>
+                        <div class="empty-block"></div>
+                    </div>
+                    <div id="buttons_div">
+                        <button id="manual" href="#" style="font-size: 15px; font-weight: bold;">레시피 입력 방법</button>
+                        <label style="font-size: 15px; font-weight: bold;" for="refresh-btn">레시피 변경</label>
+                        <button type="button" id="refresh-btn"><img src="static/image/refresh_btn.png" height ="13vw" width="13vw" style="margin-top:5px;" /></button>
+                        <div class="empty-block"></div>
+                        <div style="display:inline">
+                            <input type="button" id = "btn_create" class="button button1" value="디지털 레시피 생성" style="margin-bottom:5px;">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="information column">
+            <div class="empty-block"></div>
+            <table>
+                <colgroup>
+                <col span=1>
+                <col span=7>
+                </colgroup>
+                <thead style="background-color:#f3f3f3;">
+                <tr>
+                    <th rowspan=2>문장 분리</th>
+                    <th rowspan=2>설비</th>
+                    <th rowspan=2>도구</th>
+                    <th rowspan=2>행동</th>
+                </tr>
+
+                </thead>
+                <tbody id="memDiv">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
