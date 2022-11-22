@@ -136,20 +136,3 @@ tbody, tr {
   background-color: #4CAF50;
   color: white;
 }
-
-.changetype {
-  line-height: 12px;
-  width: 58px;
-  font-size: 8pt;
-  font-family: tahoma;
-  margin-top: 1px;
-  margin-right: 2px;
-  position:absolute;
-  top:0;
-  right:30px;
-}
-
-.zoom:hover{
-  transform: scale(1.2);
-  transition-duration: 0.5s;
-}
