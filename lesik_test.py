@@ -1293,6 +1293,8 @@ def parse_node_section(entity_mode, is_srl, node_list):
     #소분류 규격추가
     #sequence_list = add_standard(node, sequence_list)
     
+    print("mixed_dict : ", mixed_dict)
+
     for node in remove_node_list:
         node_list.remove(node)
         
