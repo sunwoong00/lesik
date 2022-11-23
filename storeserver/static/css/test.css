@@ -160,4 +160,6 @@ tbody, tr {
   border: 2px outset #229191;
   color: darkblue;
   font-weight: bold;
+  position: fixed;
+  right: 1%;
 }
