@@ -1,6 +1,5 @@
 import urllib3
 import json
-from kss import split_sentences
 import os.path
 import re
 

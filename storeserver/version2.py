@@ -8,15 +8,9 @@ from flask import Flask, jsonify, render_template, request, make_response
 from datetime import date
 from io import StringIO
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ROOT_DIR = os.path.dirname(BASE_DIR)
-SECRETS_PATH = os.path.join(ROOT_DIR, '래식/lesik_ver2/secrets.json')
-
-secrets = json.loads(open(SECRETS_PATH).read())
-
 ###################Etri##########################################
 open_api_url = "http://aiopen.etri.re.kr:8000/WiseNLU"            
-access_key = str(secrets["access_key"])        
+access_key = "84666b2d-3e04-4342-890c-0db401319568"   
 analysis_code = "SRL"                                           
 #################################################################
 

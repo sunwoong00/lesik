@@ -153,3 +153,11 @@ tbody, tr {
   transform: scale(1.2);
   transition-duration: 0.5s;
 }
+
+#btn_movetomain{
+  background-color: white;
+  border-radius: 5px;
+  border: 2px outset #229191;
+  color: darkblue;
+  font-weight: bold;
+}
