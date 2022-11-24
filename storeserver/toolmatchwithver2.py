@@ -95,10 +95,12 @@ def isWordPresent(sentence, word):
 ###단어의 일부만 아니라 전체가 일치하는 확인 하기 위한 함수 예: 양파를 채썰다, 썰다 X, 채썰다 O ###
 def isActualTool(word, sentence, ingreCollectList):
     detection = sentence.split(" ")
-    print("detection", detection)
+    print("detection", detection, word)
     for checkdetect in range(len(detection)):
         if word in detection[checkdetect]:
             print("hi", checkdetect, ingreCollectList, detection[checkdetect])
+            if (word == "타월" or word == "타올") and ("종이" in detection[checkdetect] or "키친" in detection[checkdetect]):
+                return False
             for ingredetect in range(len(ingreCollectList)):
                 print(ingreCollectList[ingredetect])
                 if str(ingreCollectList[ingredetect]) in detection[checkdetect]:
@@ -154,7 +156,7 @@ def matchtoolwithaction(sentences, cooking_act_dict, checkaction, checktoolmain,
         ###만약에 문단에 도구가 새로 등장하면 기본도구를 등장한 도구로 바꾸기###
         for checksubtool in range(len(subtool_k_list)):
             if subtool_k_list[checksubtool] in sentences[i]["sentence"]:
-                print(str(subtool_k_list[checksubtool]), str(sentences[i]["sentence"]))
+                print("subtool_k_list", str(subtool_k_list[checksubtool]), str(sentences[i]["sentence"]))
                 if(isActualTool(str(subtool_k_list[checksubtool]), str(sentences[i]["sentence"]), ingreCollectList) == False):
                     print("\n\n\n")
                     break

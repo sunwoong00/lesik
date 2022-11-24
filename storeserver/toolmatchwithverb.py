@@ -99,6 +99,8 @@ def isActualTool(word, sentence, ingreCollectList, listofingre):
     #print("detection", detection)
     for checkdetect in range(len(detection)):
         if word in detection[checkdetect]:
+            if (word == "타월" or word == "타올") and ("종이" in detection[checkdetect] or "키친" in detection[checkdetect]):
+                return False
             #print("hi", checkdetect, ingreCollectList, detection[checkdetect])
             for ingredetect in range(len(ingreCollectList)):
                 #print(ingreCollectList[ingredetect])
@@ -154,6 +156,7 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
         sentences = array[i]["sentence"]
         ingreCollectList = array[i]["ingre"]
         seasoningCollect = array[i]["seasoning"]
+        checkzone = array[i]["zone"]
         act = array[i]["act"]
         if_extra_tool = []
         select_if_else = 0
@@ -190,7 +193,6 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
         
         for k in valuelist:
             if k in act and (isWordPresent(str(act), str(k)) == True):
-
                 if((act == "물기를 빼다" or "헹구다") and (check_if_tool_found == 0)):
                     current_action_tool[0] = "싱크대"
                     if current_action_tool[save_previous_used_sentence] != "싱크대":
@@ -200,6 +202,12 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
                 elif("자르다" in act):
                     current_action_tool[1] = "가위"
                     check_knife = 1
+                    #print(sentences)
+                #만약에 동사가 하다이면 정확히 어떤건지 잘 모름 (하다 특성상 아예 어디로 가야될지 모르기에 가장 최선은 전 문장을 따라 수정)
+                if("하다" in act):
+                    print("하다 is found")
+                    tool_used_in_sentence_final_array[i] += tool_used_in_sentence
+                    continue
                     #print(sentences)
 
                 ###행동의 번호를 가지고 오는 함수 및 변수###
@@ -222,7 +230,10 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
                             maxvalue = int(check_if_used_tool[int(findmax)])
                             saveindex = int(findmax)
 
-                    if("칼집" in sentences and "넣다" in act):
+                    if(checkzone == "화구존" and (saveindex != 3) and check_if_tool_found == 0):
+                        tool_used_in_sentence_final_array[i] = ""
+                        continue
+                    elif("칼집" in sentences and "넣다" in act):
                         #print("\n\nhi]n]n")
                         saveindex = 1
                         maxvalue = 1
