@@ -462,10 +462,6 @@ def classify(seq_list):
 #소분류 규격추가
 
 def add_standard(node, seq_list):
-<<<<<<< HEAD
-=======
-   
->>>>>>> 76e86981e37c31d34a80ba257c10116088a3137a
     for sequence in seq_list:
         for ne in node['NE']:
             if ne['type'] == "QT_LENGTH" or ne['type'] == "QT_OTHERS" :
