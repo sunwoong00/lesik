@@ -15,6 +15,7 @@
     <img id="logo_icon" src="static/image/foodi_logo.png">
   </div>
   <div style="clear:both;"></div>
+
   <form id="insert-recipe" class="ajax-form" action="/recipe" method="POST">
     <div style="display:flex; justify-content: center;">
       <div style="width:1000px; margin-right: 60px">
@@ -34,18 +35,20 @@
         <input id="recipe_mode" type="radio" name="entity_mode" value="koelectra">
 
         <div class="empty-block"></div>
-        <label style="font-size: 15px; font-weight: bold;" for="checkbox-recipe_srl-mode">ETRI 의미역 인식 API (SRL)</label>
-        <div style="height : 0.5vw;"></div>
-        <label style="font-size: 15px; font-weight: bold;" >적용</label>
+        <label style="font-size: 15px; font-weight: bold;" for="checkbox-recipe_srl-mode">ETRI 의미역 인식 API (SRL) 적용</label>
         <input id="checkbox-recipe_srl-mode" type="checkbox" name="srl_mode">
+        <div style="height : 0.5vw;"></div>
         <div class="empty-block"></div>
         <div style="display:inline">
           <input type="submit" id = "btn_create" value="디지털 레시피 생성" style="margin-bottom:5px;">
         </div>
       </div>
     </div>
-    <div class="empty-block"></div>
   </form>
+  <form id="move-to-prompt" style="float:right; margin-right: 50px;" action="/version2">
+    <input id="btn_prompt" type="submit" value="Micro Recipe (레시피 분해)"/>
+  </form>
+  <div class="empty-block"></div>
   <form id="move-to-prompt" style="float:right; margin-right: 50px;" action="/prompt" method="POST">
     <input id="prompt-recipe_json" type="hidden" name="recipe"/>
     <input id="btn_prompt" type="submit" value="프롬프트 이동"/>

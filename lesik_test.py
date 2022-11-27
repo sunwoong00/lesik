@@ -195,7 +195,12 @@ def find_condition(node, seq_list):
     return seq_list
 
 
-def find_ingredient_dependency(node, seq_list, is_srl):
+def find_ingredient_dependency(node, koelectra_node, seq_list):
+    '''print("koelectra_node : ", koelectra_node)
+    print("seq_list : ", seq_list)
+    for i in range(0, len(seq_list)):
+        a=0'''
+    
     remove_seq_list = []
     ingredient_modifier_dict = {}
     for i in range(0, len(seq_list)):
@@ -228,41 +233,42 @@ def find_ingredient_dependency(node, seq_list, is_srl):
             is_etm = False
             is_cooking_act = False
 
-    if is_srl:
-        for d_ele in node['dependency']:
-            text = d_ele['text']
-            for i in range(0, len(seq_list)):
-                sequence = seq_list[i]
-                for j in range(0, len(sequence['ingre'])):
-                    original_ingredient = sequence['ingre'][j]
-                    if original_ingredient in text:
-                        mod_result, additional_ingredient_list = mod_check(node, d_ele)
+    
+    for d_ele in node['dependency']:
+        text = d_ele['text']
+        for i in range(0, len(seq_list)):
+            sequence = seq_list[i]
+            for j in range(0, len(sequence['ingre'])):
+                original_ingredient = sequence['ingre'][j]
+                if original_ingredient in text:
+                    mod_result, additional_ingredient_list = mod_check(node, d_ele)
 
-                        # 관형어
-                        if mod_result is not None:
-                            modified_ingredient = mod_result + " " + original_ingredient
-                            if i not in ingredient_modifier_dict:
-                                ingredient_modifier_dict[i] = {}
-                            if j not in ingredient_modifier_dict[i] or len(ingredient_modifier_dict[i][j]) < len(
-                                    modified_ingredient):
-                                ingredient_modifier_dict[i][j] = modified_ingredient
+                    # 관형어
+                    if mod_result is not None:
+                        modified_ingredient = mod_result + " " + original_ingredient
+                        if i not in ingredient_modifier_dict:
+                            ingredient_modifier_dict[i] = {}
+                        if j not in ingredient_modifier_dict[i] or len(ingredient_modifier_dict[i][j]) < len(
+                                modified_ingredient):
+                            ingredient_modifier_dict[i][j] = modified_ingredient
 
-                            # 수평적 관계에 있는 재료 (2개면 둘 다 관형어를 붙혀주고, 이외에는 관형어를 처음에만 붙혀준다)
-                            if additional_ingredient_list and len(additional_ingredient_list) == 1:
-                                for k in range(0, len(sequence['ingre'])):
-                                    additional_ingredient = sequence['ingre'][k]
+                        # 수평적 관계에 있는 재료 (2개면 둘 다 관형어를 붙혀주고, 이외에는 관형어를 처음에만 붙혀준다)
+                        if additional_ingredient_list and len(additional_ingredient_list) == 1:
+                            for k in range(0, len(sequence['ingre'])):
+                                additional_ingredient = sequence['ingre'][k]
 
-                                    # 시퀀스의 재료 리스트 중 현재 재료가 아니고 수평적 관계에 있는 재료일 때 관형어를 붙혀준다
-                                    if j != k and additional_ingredient in additional_ingredient_list[0]:
-                                        sequence['ingre'][k] = mod_result + " " + additional_ingredient
+                                # 시퀀스의 재료 리스트 중 현재 재료가 아니고 수평적 관계에 있는 재료일 때 관형어를 붙혀준다
+                                if j != k and additional_ingredient in additional_ingredient_list[0]:
+                                    sequence['ingre'][k] = mod_result + " " + additional_ingredient
 
     for seq_id in ingredient_modifier_dict.keys():
         sequence = seq_list[seq_id]
         for ingredient_idx, modified_ingredient in ingredient_modifier_dict[seq_id].items():
             sequence['ingre'][ingredient_idx] = modified_ingredient
-
+    
     for seq in remove_seq_list:
         seq_list.remove(seq)
+    
 
     return seq_list
 
@@ -893,15 +899,14 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
     # 화구존/전처리존 분리
     #sequence_list = select_cooking_zone(sequence_list)
 
-    if is_srl:
         # 목적어를 필수로 하는 조리 동작 처리
         #sequence_list = find_objective(node, sequence_list)
 
-        # 관형어 처리
-        sequence_list = find_ingredient_dependency(node, sequence_list, is_srl)
-
         # 조건문 처리함수추가
         #sequence_list = find_condition(node, sequence_list)
+    
+    # 관형어 처리
+    sequence_list = find_ingredient_dependency(node, koelectra_node, sequence_list)
 
     # sentence 찾기
     sequence_list = find_sentence(node, sequence_list)
@@ -918,7 +923,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
             if ne['type'] == 'QT_TEMPERATURE':
                 for sequence in seq_list:
                     if ne['text'] in sequence['sentence']:
-                        sequence['temperature'] = ne['text']
+                        sequence['temperature'].append(ne['text'])
 
         '''# 시간 판단 - 선웅 수정
         for sequence in seq_list:
@@ -1078,6 +1083,7 @@ def extract_ner_from_kobert(sentence):
     )
 
     json_object = json.loads(response.data)
+    print(json_object)
 
     return json_object
 
@@ -1239,7 +1245,7 @@ def parse_node_section(entity_mode, is_srl, node_list):
                 sequence_list.append(seq_dict)
     #소분류 규격추가
     #sequence_list = add_standard(node, sequence_list)
-    
+
     for node in remove_node_list:
         node_list.remove(node)
         
