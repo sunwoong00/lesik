@@ -206,8 +206,19 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
                 #만약에 동사가 하다이면 정확히 어떤건지 잘 모름 (하다 특성상 아예 어디로 가야될지 모르기에 가장 최선은 전 문장을 따라 수정)
                 if("하다" in act):
                     print("하다 is found")
-                    tool_used_in_sentence_final_array[i] += tool_used_in_sentence
-                    continue
+                    if("밑동" in sentences and "제거" in act):
+                        #print("\n\nhi]n]n\n\n")
+                        saveindex = 1
+                        maxvalue = 1
+                        check_if_used_tool[1] -= 1
+                    elif("슬라이스" in act):
+                        #print("\n\nhi]n]n")
+                        saveindex = 1
+                        maxvalue = 1
+                        check_if_used_tool[1] -= 1
+                    else:
+                        tool_used_in_sentence_final_array[i] += tool_used_in_sentence
+                        break
                     #print(sentences)
 
                 ###행동의 번호를 가지고 오는 함수 및 변수###
@@ -233,6 +244,16 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
                     if(checkzone == "화구존" and (saveindex != 3) and check_if_tool_found == 0):
                         tool_used_in_sentence_final_array[i] = ""
                         continue
+                    if("밑동" in sentences and "제거" in act):
+                        #print("\n\nhi]n]n\n\n")
+                        saveindex = 1
+                        maxvalue = 1
+                        check_if_used_tool[1] -= 1
+                    elif("슬라이스" in act):
+                        #print("\n\nhi]n]n")
+                        saveindex = 1
+                        maxvalue = 1
+                        check_if_used_tool[1] -= 1
                     elif("칼집" in sentences and "넣다" in act):
                         #print("\n\nhi]n]n")
                         saveindex = 1
