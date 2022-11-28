@@ -7,6 +7,7 @@ from flask import Flask, render_template, request, make_response
 import pymysql
 
 import toolmatchwithverb as toolmatchwverb
+import version2 as v2
 
 # util
 def insert_recipe(recipe_name, sentence, json_obj):
@@ -462,7 +463,6 @@ def classify(seq_list):
 #소분류 규격추가
 
 def add_standard(node, seq_list):
-   
     for sequence in seq_list:
         for ne in node['NE']:
             if ne['type'] == "QT_LENGTH" or ne['type'] == "QT_OTHERS" :
@@ -1444,6 +1444,35 @@ def save():
 
     return make_response("Error while storing recipe", 406)
 
+@app.route('/version2', methods=["GET"])
+def version2():
+    recipe_dir = "static/recipe/ko"
+    recipe_list = os.listdir(recipe_dir)
+    recipe_idx = random.randrange(0, len(recipe_dir))
+    recipe_text_list = get_list_from_file(recipe_dir + "/" + recipe_list[recipe_idx])
+    return render_template("version2.html", recipe="\n".join(recipe_text_list))
+
+@app.route('/version2/refresh')
+def version2refresh():
+    recipe_dir = "static/recipe/ko"
+    recipe_list = os.listdir(recipe_dir)
+    recipe_title = random.choice(recipe_list)
+    recipe_text_list = get_list_from_file(recipe_dir + "/" + recipe_title)
+    return make_response({"refresh": "\n".join(recipe_text_list)})
+
+@app.route('/version2/returnjson', methods=["POST", "GET"])
+def root():
+    original_recipe = None
+    if request.method == 'POST':
+        original_recipe = request.get_json()
+        #print(original_recipe)
+    #print(original_recipe["description"])
+    if original_recipe is None:
+        return make_response("Recipe is Blank", 406)
+    #print(original_recipe)
+    resultdata = v2.finalresult(original_recipe["description"])
+    thisis = json.dumps(resultdata, ensure_ascii=False)
+    return thisis
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=5000, debug=True)
