@@ -627,7 +627,7 @@ def find_adverb(node, sequence_list): #지은 수정됨
         if m_id == 0:
             continue
         prev_morp = node['morp'][m_id - 1]
-        if m_ele['type'] == 'VV' and m_ele['lemma'] in cooking_act_dict and prev_morp['type'] == "JKB":
+        if m_ele['type'] == 'VV' and m_ele['lemma'] in cooking_act_dict and prev_morp['type'] == "JKB" and prev_morp['lemma'] != "과":
             for i in range(0, len(sequence_list)):
                 sequence = sequence_list[i]
                 is_adverb = True
@@ -1354,10 +1354,9 @@ def make_recipe(original_recipe, entity_mode, is_srl):
 
     # ETRI open api
     request_json = {
-        "access_key": access_key,
         "argument": {
-            "text": original_recipe,
-            "analysis_code": analysis_code
+            "analysis_code": analysis_code,
+            "text": original_recipe
         }
     }
 
@@ -1365,7 +1364,7 @@ def make_recipe(original_recipe, entity_mode, is_srl):
     response = http.request(
         "POST",
         open_api_url,
-        headers={"Content-Type": "application/json; charset=UTF-8"},
+        headers={"Content-Type": "application/json; charset=UTF-8", "Authorization" : access_key},
         body=json.dumps(request_json)
     )
 

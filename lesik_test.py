@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import json
 import os.path
 import urllib3
@@ -650,23 +651,27 @@ def find_NP_OBJ(node, seq_list):
 # 동사에 딸려있는 부사구까지 출력
 def find_adverb(node, sequence_list): #지은 수정됨
     
-    no_plus_adverb = ['정도', '크기로', '길이로', '등에', '후에'] 
+    no_plus_adverb = ['정도', '크기로', '길이로', '등에', '후에']
     for m_ele in node['morp']:
         m_id = int(m_ele['id'])
         if m_id == 0:
             continue
         prev_morp = node['morp'][m_id - 1]
+        #print("prev_morp :", prev_morp)
         if m_ele['type'] == 'VV' and m_ele['lemma'] in cooking_act_dict and prev_morp['type'] == "JKB" and prev_morp['lemma'] != "과": ##*바꿈과
             for i in range(0, len(sequence_list)):
                 sequence = sequence_list[i]
                 is_adverb = True
-                if sequence['start_id'] <= m_id <= sequence['end_id'] and sequence['top_class'] == "put":   
+                if sequence['start_id'] <= m_id <= sequence['end_id'] and sequence['top_class'] == "put":
                     for w_ele in node['word']:
                         w_begin = int(w_ele['begin'])
                         w_end = int(w_ele['end'])
                         if w_begin <= int(prev_morp['id']) <= w_end:
                             chk_morp_list = node['morp'][w_begin:w_end + 1]
+                            #print("chk_morp_list : ", chk_morp_list)
                             for chk_morp in chk_morp_list:
+                                #print("chk_morp : ", chk_morp)
+                                #print("sequence[ingre] : ", sequence['ingre'])
                                 for j in range(0, len(sequence['ingre'])):
                                     if chk_morp['lemma'] in sequence['ingre'][j]:
                                         sequence['ingre'].remove(sequence['ingre'][j])
@@ -1144,7 +1149,6 @@ def extract_ner_from_kobert(sentence):
     )
 
     json_object = json.loads(response.data)
-    print(json_object)
 
     return json_object
 
@@ -1418,10 +1422,9 @@ def main():
 
     # ETRI open api
     request_json = {
-        "access_key": access_key,
         "argument": {
-            "text": original_recipe,
-            "analysis_code": analysis_code
+            "analysis_code": analysis_code,
+            "text": original_recipe
         }
     }
 
@@ -1429,12 +1432,13 @@ def main():
     response = http.request(
         "POST",
         open_api_url,
-        headers={"Content-Type": "application/json; charset=UTF-8"},
+        headers={"Content-Type": "application/json; charset=UTF-8", "Authorization" : access_key},
         body=json.dumps(request_json)
     )
 
     json_object = json.loads(response.data)
     node_list = json_object.get("return_object").get("sentence")
+
     sequence_list = parse_node_section(entity_mode, is_srl, node_list)
 
     print(str(json.dumps(sequence_list, ensure_ascii=False)))
