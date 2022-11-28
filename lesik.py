@@ -1270,7 +1270,7 @@ def merge_sequence(sequence_list):
     return sequence_list
 
 def extract_ner_from_kobert(sentence):
-    kobert_api_url = "http://ec2-13-209-68-59.ap-northeast-2.compute.amazonaws.com:5000"
+    kobert_api_url = "http://ec2-52-79-43-45.ap-northeast-2.compute.amazonaws.com:5000"
 
     http = urllib3.PoolManager()
     response = http.request(
