@@ -1075,10 +1075,11 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
         #sequence_list = find_condition(node, sequence_list)
     
     # 관형어 처리
-    try:
+
+    if entity_mode == 'koelectra':
         sequence_list = find_ingredient_dependency(node, koelectra_node, sequence_list)
-    except:
-        pass
+
+
     # sentence 찾기
     sequence_list = find_sentence(node, sequence_list)
 
