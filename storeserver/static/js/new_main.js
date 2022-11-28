@@ -27,8 +27,6 @@ $(document).on('submit', '#insert-recipe', function() {
         var insertTr = "";
         insertTr += "<tr>";
         insertTr += "<td>" + sequence['sentence'] + "</td>";
-        insertTr += "<td>" + sequence['zone'] + "</td>";
-        insertTr += "<td>" + sequence['tool'].join(",") + "</td>";
         insertTr += "<td>" + sequence['duration'] + "</td>";
         insertTr += "<td>" + sequence['temperature'] + "</td>"; //선웅 수정
         insertTr += "<td>";
@@ -64,6 +62,9 @@ $(document).on('submit', '#insert-recipe', function() {
         }
         /*박지연 첨가물 수정 코드*/
         insertTr += "</td>"; /* finish seasoning section */
+
+        insertTr += "<td>" + sequence['zone'] + "</td>";
+        insertTr += "<td>" + sequence['tool'].join(",") + "</td>";
 
         /* 서유정 */
 

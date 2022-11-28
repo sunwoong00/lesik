@@ -218,6 +218,7 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
                         check_if_used_tool[1] -= 1
                     else:
                         tool_used_in_sentence_final_array[i] += tool_used_in_sentence
+                        check_knife = 1
                         break
                     #print(sentences)
 
@@ -271,6 +272,7 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
                                 zone_divide[i] += "화구"
                             else:
                                 zone_divide[i] += "전처리"
+                            check_knife = 1
                     else:
                         print(saveindex, act)
                         print(current_action_tool, check_if_used_tool)

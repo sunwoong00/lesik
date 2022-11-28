@@ -37,6 +37,10 @@ body {
     border: 2px solid #229191;
   }
 
+  #tool {
+    width: 8%;
+  }
+
   #buttons_div{
     margin-top: 50px;
   }
