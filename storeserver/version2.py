@@ -9,9 +9,9 @@ from datetime import date
 from io import StringIO
 
 ###################Etri##########################################
-open_api_url = "http://aiopen.etri.re.kr:8000/WiseNLU"            
-access_key = "84666b2d-3e04-4342-890c-0db401319568"   
-analysis_code = "SRL"                                           
+open_api_url = "http://aiopen.etri.re.kr:8000/WiseNLU"
+access_key = "84666b2d-3e04-4342-890c-0db401319568"
+analysis_code = "SRL"                                        
 #################################################################
 
 #global getmostrecenttool
@@ -31,11 +31,10 @@ def get_list_from_file(file_path):
 ###Etri 쓰는 코드 >> 먼저 전체 텍스트를 돌려야함.
 ###Etri 쓰는 코드 >> 먼저 전체 텍스트를 돌려야함.
 def get_etri(text):
-    requestJson = {
-        "access_key": access_key,
+    request_json = {
         "argument": {
-            "text": text,
-            "analysis_code": analysis_code
+            "analysis_code": analysis_code,
+            "text": text
         }
     }
 
@@ -43,11 +42,14 @@ def get_etri(text):
     response = http.request(
         "POST",
         open_api_url,
-        headers={"Content-Type": "application/json; charset=UTF-8"},
-        body=json.dumps(requestJson)
+        headers={"Content-Type": "application/json; charset=UTF-8", "Authorization" : access_key},
+        body=json.dumps(request_json)
     )
+
+    json_object = json.loads(response.data)
     json_object = json.loads(str(response.data ,"utf-8"))
     return json_object
+
 
 def extract_ner_from_kobert(sentence):
     kobert_api_url = "http://ec2-13-209-68-59.ap-northeast-2.compute.amazonaws.com:5000"
