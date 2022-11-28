@@ -1037,7 +1037,8 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
         #sequence_list = find_condition(node, sequence_list)
     
     # 관형어 처리
-    sequence_list = find_ingredient_dependency(node, koelectra_node, sequence_list)
+    if entity_mode == 'koelectra':
+        sequence_list = find_ingredient_dependency(node, koelectra_node, sequence_list)
 
     # sentence 찾기
     sequence_list = find_sentence(node, sequence_list)

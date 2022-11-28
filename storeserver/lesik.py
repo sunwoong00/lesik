@@ -1046,7 +1046,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
     # 화구존/전처리존 분리
     #sequence_list = select_cooking_zone(sequence_list)
 
-    if is_srl:
+    if is_srl and entity_mode == 'koelectra':
         # 목적어를 필수로 하는 조리 동작 처리
         #sequence_list = find_objective(node, sequence_list)
 
