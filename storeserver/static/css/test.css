@@ -163,3 +163,9 @@ tbody, tr {
   position: fixed;
   right: 1%;
 }
+
+#logo_icon{
+  height:50px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
