@@ -918,10 +918,13 @@ def verify_coref(coref_dict, node, word_id):
                     max_similarity = 0.0
 
                     for cand in coref_cand_list:
-                        comp_word = cand.replace(keyword, "").strip()
-                        similarity = find_similarity(comp_word, prev_word)
-                        if similarity > max_similarity:
+                        if cand.replace(" ", "") in coref_dict.keys() or cand in coref_dict.keys():
                             coref_cand = cand
+                        else:
+                            comp_word = cand.replace(keyword, "").strip()
+                            similarity = find_similarity(comp_word, prev_word)
+                            if similarity > max_similarity:
+                                coref_cand = cand
 
             if coref_cand is not None:
                 coref_ingredient_dict = coref_dict[coref_cand]
