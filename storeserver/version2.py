@@ -254,8 +254,8 @@ def adj_edit(sequence_list):
                                                         except:
                                                             pass
                                                 
-                                                if (val4['type'] != "SP" and val4['text'] != "와" and val4['text'] != "과") or cooking_act_dict[val2['text']] in put or cooking_act_dict[val2['text']] in use_fire  or cooking_act_dict[val2['text']] in mix:
-                                                    if(cooking_act_dict[val2['text']] in put or cooking_act_dict[val2['text']] in use_fire):
+                                                if (val4['type'] != "SP" and val4['text'] != "와" and val4['text'] != "과") or cooking_act_dict[val2['text']] in put or cooking_act_dict[val2['text']] in use_fire or cooking_act_dict[val2['text']] in mix:
+                                                    if(cooking_act_dict[val2['text']] in put or cooking_act_dict[val2['text']] in use_fire or cooking_act_dict[val2['text']] in mix):
                                                         if val2['text'] not in n_list:
                                                             n_list.append(val2['text'])
                                                         n_list.append(to + '에')
@@ -375,8 +375,8 @@ def find_sentence(node, sequence_list):
             end = w_ele['end']
             if start_id <= begin <= end_id:
 
-                if text == '후':
-                    continue
+                # if text == '후':
+                #     continue
                 
                 word_list.append(text)
             # else:
