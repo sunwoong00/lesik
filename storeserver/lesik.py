@@ -918,10 +918,13 @@ def verify_coref(coref_dict, node, word_id):
                     max_similarity = 0.0
 
                     for cand in coref_cand_list:
-                        comp_word = cand.replace(keyword, "").strip()
-                        similarity = find_similarity(comp_word, prev_word)
-                        if similarity > max_similarity:
+                        if cand.replace(" ", "") in coref_dict.keys() or cand in coref_dict.keys():
                             coref_cand = cand
+                        else:
+                            comp_word = cand.replace(keyword, "").strip()
+                            similarity = find_similarity(comp_word, prev_word)
+                            if similarity > max_similarity:
+                                coref_cand = cand
 
             if coref_cand is not None:
                 coref_ingredient_dict = coref_dict[coref_cand]
@@ -938,7 +941,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
     # 형태소 이용한 조리 동작 추출
     prev_seq_id = -1
     for m_ele in node['morp']:
-        if m_ele['type'] == 'VV' or m_ele['lemma'] == '제거':
+        if m_ele['type'] == 'VV' or m_ele['lemma'] == '제거' or m_ele['lemma'] == "슬라이스":
             if m_ele['type'] == 'VV':
                 act_id = int(m_ele['id'])
                 if node['morp'][act_id + 1]['type'] == 'ETM' and node['morp'][act_id + 2]['lemma'] != '후':
@@ -948,7 +951,12 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
                 act_id = int(m_ele['id']) 
                 if node['morp'][act_id + 2]['type'] == 'ETM' and node['morp'][act_id + 3]['lemma'] != '후':
                     continue
-                act = '제거하'
+                act = '제거하'  
+            elif m_ele['lemma'] == '슬라이스':
+                act_id = int(m_ele['id']) 
+                if node['morp'][act_id + 2]['type'] == 'ETM' and node['morp'][act_id + 3]['lemma'] != '후':
+                    continue
+                act = '슬라이스하'  
                 
             # 조리 동작 판단
             if act in cooking_act_dict:
