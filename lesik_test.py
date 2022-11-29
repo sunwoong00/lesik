@@ -901,10 +901,13 @@ def verify_coref(coref_dict, node, word_id):
                     max_similarity = 0.0
 
                     for cand in coref_cand_list:
-                        comp_word = cand.replace(keyword, "").strip()
-                        similarity = find_similarity(comp_word, prev_word)
-                        if similarity > max_similarity:
+                        if cand.replace(" ", "") in coref_dict.keys() or cand in coref_dict.keys():
                             coref_cand = cand
+                        else:
+                            comp_word = cand.replace(keyword, "").strip()
+                            similarity = find_similarity(comp_word, prev_word)
+                            if similarity > max_similarity:
+                                coref_cand = cand
 
             if coref_cand is not None:
                 coref_ingredient_dict = coref_dict[coref_cand]
@@ -1277,6 +1280,7 @@ def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
     for ne in node['NE']:
    
         if ne['type'] in volume_type_list and len(volume_node) == 0: # 선웅 추가 (용량 1가지만 나오게)
+            print(ne)
             volume_node.append(ne)
         if ne['type'] in ingredient_type_list:
             if volume_node and ne['begin'] < volume_node[-1]['end']:
@@ -1287,9 +1291,9 @@ def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
     if not volume_node:
         if 'word' in node:
             for word in node['word']:
-                    for volume in volume_list:
-                        if volume in word['text'] and word['text'] not in ingredient_text_list and len(volume_node) == 0: # 선웅 추가 (용량 1가지만 나오게)
-                            volume_node.append(word)
+                for volume in volume_list:
+                    if volume in word['text'] and word['text'] not in ingredient_text_list and len(volume_node) == 0: # 선웅 추가 (용량 1가지만 나오게)
+                        volume_node.append(word)
 
     sub_ingredient_dict = {}
     if volume_node is not None:

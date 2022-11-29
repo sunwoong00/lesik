@@ -8,10 +8,15 @@ from flask import Flask, jsonify, render_template, request, make_response
 from datetime import date
 from io import StringIO
 
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# ROOT_DIR = os.path.dirname(BASE_DIR)
+# SECRETS_PATH = "45ed1b22-c7b9-424a-b5a2-b81605797baa"
+# secrets = json.loads(open(SECRETS_PATH).read())
+
 ###################Etri##########################################
-open_api_url = "http://aiopen.etri.re.kr:8000/WiseNLU"
-access_key = "84666b2d-3e04-4342-890c-0db401319568"
-analysis_code = "SRL"                                        
+open_api_url = "http://aiopen.etri.re.kr:8000/WiseNLU"            
+access_key = "45ed1b22-c7b9-424a-b5a2-b81605797baa"        
+analysis_code = "SRL"                                           
 #################################################################
 
 #global getmostrecenttool
@@ -29,12 +34,12 @@ def get_list_from_file(file_path):
     return tmp_list
 
 ###Etri 쓰는 코드 >> 먼저 전체 텍스트를 돌려야함.
-###Etri 쓰는 코드 >> 먼저 전체 텍스트를 돌려야함.
 def get_etri(text):
-    request_json = {
+    requestJson = {
+        # "access_key": access_key,
         "argument": {
-            "analysis_code": analysis_code,
-            "text": text
+            "text": text,
+            "analysis_code": analysis_code
         }
     }
 
@@ -42,18 +47,14 @@ def get_etri(text):
     response = http.request(
         "POST",
         open_api_url,
-        headers={"Content-Type": "application/json; charset=UTF-8", "Authorization" : access_key},
-        body=json.dumps(request_json)
+        headers={"Content-Type": "application/json; charset=UTF-8", "Authorization" :  access_key},
+        body=json.dumps(requestJson)
     )
-
-    json_object = json.loads(response.data)
     json_object = json.loads(str(response.data ,"utf-8"))
     return json_object
 
-
 def extract_ner_from_kobert(sentence):
     kobert_api_url = "http://ec2-13-209-68-59.ap-northeast-2.compute.amazonaws.com:5000"
-
     http = urllib3.PoolManager()
     response = http.request(
         "POST",
@@ -61,7 +62,6 @@ def extract_ner_from_kobert(sentence):
         headers={"Content-Type": "application/text; charset=UTF-8"},
         body=sentence.encode('utf-8')
     )
-
     json_object = json.loads(response.data)
     return json_object
 
@@ -73,7 +73,6 @@ def before_sequencing(list):
     for sent in list:
         if sent[0].isdigit() == True:
             new_list.append(sent[3:len(sent)-1])
-    
     for sent in new_list:
         nnew_list.extend(sent.split(". "))
     return nnew_list
@@ -81,18 +80,14 @@ def before_sequencing(list):
 def before_ingre(list):
     remove_set = {'\n'}
     new_list = []
-
     list = [i for i in list if i not in remove_set]
-
     for ingre in list:
         temp = ingre.split(" ")
         ntemp = temp[0:len(temp)-1]
         new_list.append(' '.join(s for s in ntemp))
-
     return new_list
 
 def list_clean(list):
-
     for value in list:
         if value == "":
             list.remove("")
@@ -122,16 +117,27 @@ def parse_cooking_act_dict(file_path):
 def create_sequence(node_list):
     seq_list = []
     for node in node_list:
+        temp = 0
         prev_seq_id = -1
         for s_ele in node['WSD']:
             if s_ele['type'] == 'VV':
                 act_id = int(s_ele['id'])
-                if node['WSD'][act_id + 1]['type'] == 'ETM' and node['WSD'][act_id + 2]['text'] != '후':
+                for i in node['word']:
+                    if i['begin'] == s_ele['begin']:
+                        temp = int(i['end'])
+                for ss in node['WSD']:
+                    if ss['end'] == temp:
+                        next_id = int(ss['id'])
+                # print(temp, s_ele['text'])
+                if (node['WSD'][next_id]['type'] == 'ETM') and node['WSD'][next_id + 1]['text'] != '후':
                     continue
+                elif node['WSD'][next_id]['type'] == 'EC' and node['WSD'][next_id + 1]['type'] == 'VV':
+                    continue            
                 act = s_ele['text']
+
                 # print(act_id , act)
-                # print("11111111111111")
-                if act in cooking_act_dict:
+
+                if act in cooking_act_dict: 
                     # print(act)
                     for w_ele in node['word']:
                         if w_ele['begin'] <= s_ele['begin'] and s_ele['end'] <= w_ele['end']:
@@ -144,19 +150,36 @@ def create_sequence(node_list):
         find_sentence(node, seq_list)
 
     seq_list = adj_edit(seq_list)
+    # seq_list = same_time(seq_list)
     generalize(seq_list)
+    
+    v_generalize(seq_list)
+    print(seq_list)
     # print(seq_list)
     ## 관형어 처리해야하는 부분
     return(seq_list)
 
+def ingre_extract(sequence_list):
+    for value in sequence_list:
+        temp = value['sentence']
+        node = extract_ner_from_kobert(temp)
+        for val in node['NE']:
+            if val['type'] == 'CV_INGREDIENT':
+                value['ingre'].append(val['text'])
+            elif val['type'] =='CV_SEASONING':
+                value['seasoning'].append(val['text'])
+    return 0
 def adj_edit(sequence_list):
     slice = ["나누다","썰다","채썰다","슬라이스", "다이스", "가르다", "다지다","자르다","쪼개다","가르다","뜯다","찢다","부수다","으깨다","내다","갈다"]
     put = ["깔다","붙이다","채우다","끼얹다","담그다","얹다","붓다","덮다","두르다","감싸다","곁들이다","뿌리다","올리다","입히다","풀다","넣다", "첨가하다", "담다"]
+    use_fire = ["짓다","끓이다","끓다","끄다","켜다","가열하다","볶다","끓어오르다","가열하다","예열하다","굽다","삶다","조리다","조리다","데치다","찌다","튀기다","지지다","부치다","익히다","데우다","쑤다","프라이하다","삶다","우리다"]
+    mix = ["버무리다", "휘핑하다", "섞다", "젓다","치대다","무치다","묻히다"]
     nn_list = []
-    way = ""
-    what = ""
-    to = ""
+
     for value in sequence_list:
+        way = ""
+        what = ""
+        to = ""
         temps = []
         n_list = []
         t_list = []
@@ -165,7 +188,7 @@ def adj_edit(sequence_list):
         for val in temp['word']:
             begin = val['begin']
             for val2 in temp['WSD']:
-                if begin == val2['begin'] and val2['type'] == "VV" and val['id'] < len(value['sentence'].split())-2:
+                if begin == val2['begin'] and val2['type'] == "VV" and temp['WSD'][temp['WSD'].index(val2) + 1]['type'] == 'ETM' and val['id'] < len(value['sentence'].split())-2:
                     try:
                         cooking_act_dict[val2['text']]
                         break_po = 0
@@ -175,14 +198,13 @@ def adj_edit(sequence_list):
                                     if "NN" in val3['type']:
                                         for val4 in temp['WSD']:
                                             if temp['word'][idx]['end'] == val4['end']:
-
                                                 if cooking_act_dict[val2['text']] in slice:
                                                     for srl in temp['SRL']:
                                                         try:
                                                             if srl['verb'] == val2['text']:
                                                                 for arg in srl['argument']:
                                                                     try:
-                                                                        if arg['type'] == "ARGM-MNR":
+                                                                        if arg['type'] == "ARGM-MNR" or arg['type'] == "ARGM-EXT":
                                                                             way = arg['text']
                                                                     except:
                                                                         pass
@@ -203,9 +225,37 @@ def adj_edit(sequence_list):
                                                                         pass
                                                         except:
                                                             pass
-
-                                                if (val4['type'] != "SP" and val4['text'] != "와" and val4['text'] != "과") or cooking_act_dict[val2['text']] in put:
-                                                    if(cooking_act_dict[val2['text']] in put):
+                                                elif cooking_act_dict[val2['text']] in use_fire:
+                                                    for srl in temp['SRL']:
+                                                        try:
+                                                            if srl['verb'] == val2['text']:
+                                                                for arg in srl['argument']:
+                                                                    try:
+                                                                        if arg['type'] == "ARG1":
+                                                                            what = arg['text']
+                                                                        elif arg['type'] == "ARG2" or arg['type'] == "ARG0":
+                                                                            to = arg['text']
+                                                                    except:
+                                                                        pass
+                                                        except:
+                                                            pass
+                                                elif cooking_act_dict[val2['text']] in mix:
+                                                    for srl in temp['SRL']:
+                                                        try:
+                                                            if srl['verb'] == val2['text']:
+                                                                for arg in srl['argument']:
+                                                                    try:
+                                                                        if arg['type'] == "ARG1":
+                                                                            what = arg['text']
+                                                                        elif arg['type'] == "ARG2" or arg['type'] == "ARG0":
+                                                                            to = arg['text']
+                                                                    except:
+                                                                        pass
+                                                        except:
+                                                            pass
+                                                
+                                                if (val4['type'] != "SP" and val4['text'] != "와" and val4['text'] != "과") or cooking_act_dict[val2['text']] in put or cooking_act_dict[val2['text']] in use_fire  or cooking_act_dict[val2['text']] in mix:
+                                                    if(cooking_act_dict[val2['text']] in put or cooking_act_dict[val2['text']] in use_fire):
                                                         if val2['text'] not in n_list:
                                                             n_list.append(val2['text'])
                                                         n_list.append(to + '에')
@@ -264,11 +314,10 @@ def adj_edit(sequence_list):
         nn_list.append(value)
     return nn_list
 
-# def same_time(sequence_list):
-#     nn_list = []
-#     for value in sequence_list:
-
-
+def v_generalize(sequence_list):
+    for seq in sequence_list:
+        seq['act'] = cooking_act_dict[seq['act']]
+    return 0
 
 def generalize(sequence_list):
     for seq in sequence_list:
@@ -281,6 +330,29 @@ def generalize(sequence_list):
         sequence_list[sequence_list.index(seq)]['sentence'] = result
     return 0
 
+def same_time(sequence_list):
+    nn_list = []
+    for seq in sequence_list:
+        temp = seq['sentence']
+        node = extract_ner_from_kobert(temp)
+        ingre = []
+        for value in node['NE']:
+            if value['type'] == 'CV_INGREDIENT' or value['type'] =='CV_SEASONING':
+                ingre.append(value['text'])
+                if node['NE'][node['NE'].index(value)-1]['type'] == 'CV_STATE':
+                    ingre[-1] = node['NE'][node['NE'].index(value)-1]['text'] + " " + ingre[-1]
+        if len(ingre) >= 2:
+            for ing in ingre:
+                if len(j2hcj(h2j(ing[-1]))) == 3:
+                    name = ing + '을'
+                else:
+                    name = ing + '를'
+                temp2 = {'duration': "", 'act': seq['act'], 'tool': [], 'ingre': [], 'seasoning': [], 'volume': [], 'temperature': [],'zone': "", "start_id": 0, "end_id": 0, "act_id" : 0, "sentence": name + " " + seq['act'], "standard":"", "top_class":""}
+                nn_list.append(temp2)
+            continue
+        nn_list.append(seq)
+    return nn_list
+## STATE 관련 내용도 추가되면 동시에 넣을 예정
 
 def find_sentence(node, sequence_list):
     prev_seq_id = 0
@@ -302,6 +374,10 @@ def find_sentence(node, sequence_list):
             begin = w_ele['begin']
             end = w_ele['end']
             if start_id <= begin <= end_id:
+
+                if text == '후':
+                    continue
+                
                 word_list.append(text)
             # else:
             #     if end_id < end:
@@ -356,15 +432,7 @@ def divide_tool_num_text(file_path):
     f.close()
     return tool_dict_main, tool_dict_sub
 
-def make_dict(list):
-    dict = []
-    for i in range(len(list)):        
-        dict.append({'tool' : '', 'seq': list[i], 'time': ''})
-    return dict
-
 def finalresult(data):
-    #print("hi")
-
     global cooking_act_dict, act_score_dict , tool_match_main_dic, tool_match_sub_dic, newcooking_act_dict, newact_score_dict
     cooking_act_dict, act_score_dict = parse_cooking_act_dict("labeling/cooking_act.txt")
     newcooking_act_dict, newact_score_dict = parse_cooking_act_dict("hajong/action_number.txt")    
@@ -397,13 +465,9 @@ def finalresult(data):
             ingreCollectList.append(ingreSentenceSplit[0])
         #print(readingre)
 
-    print("ingreCollectList", ingreCollectList)
-
+    #print("ingreCollectList", ingreCollectList)
     index1 = lines.index("[조리방법]\n")
     seq = lines[index1 + 1: len(lines)]
-
-
-    indexes = []
     seq_list = []
     seq = before_sequencing(seq)
     list = list_clean(seq)
