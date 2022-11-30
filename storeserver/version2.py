@@ -432,7 +432,7 @@ def divide_tool_num_text(file_path):
     f.close()
     return tool_dict_main, tool_dict_sub
 
-def finalresult(data):
+def finalresult(data, ingreCollectList):
     global cooking_act_dict, act_score_dict , tool_match_main_dic, tool_match_sub_dic, newcooking_act_dict, newact_score_dict
     cooking_act_dict, act_score_dict = parse_cooking_act_dict("labeling/cooking_act.txt")
     newcooking_act_dict, newact_score_dict = parse_cooking_act_dict("hajong/action_number.txt")    
@@ -445,7 +445,7 @@ def finalresult(data):
     #print(lines)
     lines = [i.replace('\r','') for i in lines]
     #print(lines)
-    ingreCollectList = []
+    #ingreCollectList = []
     #print(lines)
     for readingre in lines:
         if("[기본 재료]" in readingre):
@@ -462,7 +462,7 @@ def finalresult(data):
             #print("hihihi")
             ingreSentenceSplit = str(readingre).split(" ")
             #print(ingreSentenceSplit)
-            ingreCollectList.append(ingreSentenceSplit[0])
+            #ingreCollectList.append(ingreSentenceSplit[0])
         #print(readingre)
 
     #print("ingreCollectList", ingreCollectList)
@@ -476,6 +476,7 @@ def finalresult(data):
     node_list = get_etri(result).get("return_object").get("sentence")
     # print(node_list)
     seq_list = create_sequence(node_list)
+    print(ingreCollectList)
     matchtoolwithactionresult, actionzone = toolmatchwverb.matchresult(seq_list, ingreCollectList)
     print(matchtoolwithactionresult)
     # C:\Users\hajon\OneDrive\성균관\산학협력프로젝트\래식\lesik_ver2\static\recipe\ko\가지 솥밥.txt
