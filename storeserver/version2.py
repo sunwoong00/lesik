@@ -446,7 +446,7 @@ def finalresult(data, ingreCollectList):
     lines = [i.replace('\r','') for i in lines]
     #print(lines)
     #ingreCollectList = []
-    #print(lines)
+    print(lines)
     for readingre in lines:
         if("[기본 재료]" in readingre):
             #print("found 기본재료")
@@ -464,6 +464,25 @@ def finalresult(data, ingreCollectList):
             #print(ingreSentenceSplit)
             #ingreCollectList.append(ingreSentenceSplit[0])
         #print(readingre)
+
+    if len(ingreCollectList) == 0: 
+        for readingre in lines:
+            if("[기본 재료]" in readingre):
+                #print("found 기본재료")
+                continue
+            elif("[기본재료]" in readingre):
+                #print("found 기본재료")
+                continue
+            elif("[" in readingre):
+                #print("found stop [", readingre)
+                break
+            else:
+                #print(readingre)
+                #print("hihihi")
+                ingreSentenceSplit = str(readingre).split(" ")
+                #print(ingreSentenceSplit)
+                ingreCollectList.append(ingreSentenceSplit[0])
+            #print(readingre)
 
     #print("ingreCollectList", ingreCollectList)
     index1 = lines.index("[조리방법]\n")

@@ -1652,10 +1652,14 @@ def root():
         #print(original_recipe)
     #print(original_recipe["description"])
     if original_recipe is None:
-        return make_response("Recipe is Blank", 406)
+        return make_response("Recipe is Blank", 403)
     #print(original_recipe)
-    resultdata = v2.finalresult(original_recipe["description"], version2send.ingredient)
-    thisis = json.dumps(resultdata, ensure_ascii=False)
+
+    try:
+        resultdata = v2.finalresult(original_recipe["description"], version2send.ingredient)
+        thisis = json.dumps(resultdata, ensure_ascii=False)
+    except:
+        return make_response("Error in recipe", 403)
     return thisis
 
 if __name__ == '__main__':
