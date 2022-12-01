@@ -54,7 +54,9 @@ def get_etri(text):
     return json_object
 
 def extract_ner_from_kobert(sentence):
-    kobert_api_url = "http://ec2-13-209-68-59.ap-northeast-2.compute.amazonaws.com:5000"
+
+    kobert_api_url = "http://ec2-52-79-43-45.ap-northeast-2.compute.amazonaws.com:5000"
+
     http = urllib3.PoolManager()
     response = http.request(
         "POST",
@@ -62,7 +64,9 @@ def extract_ner_from_kobert(sentence):
         headers={"Content-Type": "application/text; charset=UTF-8"},
         body=sentence.encode('utf-8')
     )
+
     json_object = json.loads(response.data)
+
     return json_object
 
 def before_sequencing(list):
@@ -72,7 +76,7 @@ def before_sequencing(list):
     nnew_list = []
     for sent in list:
         if sent[0].isdigit() == True:
-            new_list.append(sent[3:len(sent)-1])
+            new_list.append(sent[2:len(sent)-1])
     for sent in new_list:
         nnew_list.extend(sent.split(". "))
     return nnew_list
@@ -118,6 +122,7 @@ def create_sequence(node_list):
     seq_list = []
     for node in node_list:
         temp = 0
+        is_ec = 0
         prev_seq_id = -1
         for s_ele in node['WSD']:
             if s_ele['type'] == 'VV':
@@ -131,8 +136,9 @@ def create_sequence(node_list):
                 # print(temp, s_ele['text'])
                 if (node['WSD'][next_id]['type'] == 'ETM') and node['WSD'][next_id + 1]['text'] != '후':
                     continue
-                elif node['WSD'][next_id]['type'] == 'EC' and node['WSD'][next_id + 1]['type'] == 'VV':
-                    continue            
+                elif is_ec != 1 and node['WSD'][next_id]['type'] == 'EC' and node['WSD'][next_id + 1]['type'] == 'VV':
+                    is_ec = 1
+                    continue   
                 act = s_ele['text']
 
                 # print(act_id , act)
@@ -150,7 +156,7 @@ def create_sequence(node_list):
         find_sentence(node, seq_list)
 
     seq_list = adj_edit(seq_list)
-    # seq_list = same_time(seq_list)
+    seq_list = same_time(seq_list)
     generalize(seq_list)
     
     v_generalize(seq_list)
