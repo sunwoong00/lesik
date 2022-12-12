@@ -8,6 +8,7 @@ import re
 #가장 최근에 이루어진 조리도구, 행동 번호를 계속해서 트레킹 하기 위해서 사용
 class counttrackoftoolnum:
     getmostrecenttool = 1
+    foundtoolsentence = ""
 ###############################################################
 
 #행동 관련된 내용을 딕셔너리로 가져오는 부분
@@ -95,17 +96,27 @@ def isWordPresent(sentence, word):
 ###단어의 일부만 아니라 전체가 일치하는 확인 하기 위한 함수 예: 양파를 채썰다, 썰다 X, 채썰다 O ###
 def isActualTool(word, sentence, ingreCollectList):
     detection = sentence.split(" ")
-    print("detection", detection, word)
+    #print("detection", detection)
     for checkdetect in range(len(detection)):
         if word in detection[checkdetect]:
-            print("hi", checkdetect, ingreCollectList, detection[checkdetect])
             if (word == "타월" or word == "타올") and ("종이" in detection[checkdetect] or "키친" in detection[checkdetect]):
                 return False
-            for ingredetect in range(len(ingreCollectList)):
-                print(ingreCollectList[ingredetect])
-                if str(ingreCollectList[ingredetect]) in detection[checkdetect]:
-                    print("found error", detection[checkdetect])
+            elif len(word) == 1 or len(word) == 2 or len(word) == 3:
+                print(word, counttrackoftoolnum.foundtoolsentence)
+                if word in counttrackoftoolnum.foundtoolsentence:
+                    print("found repeat")
                     return False
+            #print("hi", checkdetect, ingreCollectList, detection[checkdetect])
+            for ingredetect in range(len(ingreCollectList)):
+                #print(ingreCollectList[ingredetect], "|", detection[checkdetect], "|", word)
+                if str(ingreCollectList[ingredetect]) in detection[checkdetect]:
+                    #print("found error", detection[checkdetect])
+                    return False
+                elif word in str(ingreCollectList[ingredetect]):
+                    #print("found error", detection[checkdetect])
+                    return False
+
+    counttrackoftoolnum.foundtoolsentence += word + " "
     return True
 ###############################################################
 
@@ -284,7 +295,9 @@ def matchtoolwithaction(sentences, cooking_act_dict, checkaction, checktoolmain,
                             print("\nchangedback\n", current_action_tool, sentences[i]["sentence"])
                             check_knife = 0
                             break
-
+        
+        counttrackoftoolnum.foundtoolsentence = ""
+        
         if(check_more_than_one >= 2):
             for kk in range(check_more_than_one):
                 if if_extra_tool[kk] not in tool_used_in_sentence_final_array[i]:

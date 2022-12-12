@@ -21,8 +21,15 @@ async function sendData() {
     "method": "POST",
     "headers": {"Content-Type": "application/json"},
     "body": JSON.stringify(data),
-  })
-  let sequence_list = await response.json();
+  });
+
+  let sequence_list = await response.json()
+  .catch(error => {
+    setload.style.display = "none"
+    alert('There was an error!', error);
+    return 0;
+  });
+  
   //.then(response => console.log(response.json()))
   //var sequence_list = await response.json();
   for (var i = 0; i < sequence_list["hi"].length; i++) 

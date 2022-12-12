@@ -9,6 +9,15 @@ import pymysql
 import toolmatchwithverb as toolmatchwverb
 import version2 as v2
 
+# version2 최적화를 위해 메인페이지의 결과값들을 저장해두고 한번에 v2에 전달
+class version2send:
+    recorded_recipe_v2 = "" #레시피 데이터를 전달
+    ingredient = []
+    seasoning = []
+    checkpoint = 0
+    resultdataofv2 = {}
+    checkifmainpost = 0
+
 # util
 def insert_recipe(recipe_name, sentence, json_obj):
     sql_format = "INSERT INTO 0_sentences (recipe_name, sentence, json) VALUES('{recipe_name}', '{sentence}', '{json}')"
@@ -1429,8 +1438,9 @@ def parse_node_section(entity_mode, is_srl, node_list):
         #print(sequence_list[kk]["tool"],combine_logic[0][kk])
 
     #print(sequence_list)
-    print(mixed_dict.keys(), ingredient_dict)
-    
+    #print(mixed_dict.keys(), ingredient_dict)
+    version2send.ingredient = list(mixed_dict.keys())
+    #print(version2send.ingredient, type(version2send.ingredient))
     return sequence_list
 
 
@@ -1545,6 +1555,7 @@ def index():
     recipe_list = os.listdir(recipe_dir)
     recipe_idx = random.randrange(0, len(recipe_dir))
     recipe_text_list = get_list_from_file(recipe_dir + "/" + recipe_list[recipe_idx])
+    version2send.recorded_recipe_v2 = recipe_text_list
     return render_template("index.html", recipe="\n".join(recipe_text_list))
 
 
@@ -1561,6 +1572,8 @@ def refresh():
     recipe_list = os.listdir(recipe_dir)
     recipe_title = random.choice(recipe_list)
     recipe_text_list = get_list_from_file(recipe_dir + "/" + recipe_title)
+    #print(type(recipe_text_list))
+    version2send.recorded_recipe_v2 = recipe_text_list
     return make_response("\n".join(recipe_text_list))
 
 
@@ -1576,12 +1589,14 @@ def recipe():
 
     if original_recipe is None:
         return make_response("Recipe is Blank", 406)
-
+    #print(original_recipe)
     sequence_list = make_recipe(original_recipe, entity_mode, is_srl)
+    version2send.recorded_recipe_v2 = original_recipe
+    version2send.checkpoint = 1
 
     if not sequence_list:
         return make_response("레시피 분석에 실패했습니다", 406)
-
+    
     response = json.dumps(sequence_list, ensure_ascii=False)
     return make_response(response)
 
@@ -1600,11 +1615,16 @@ def save():
 
 @app.route('/version2', methods=["GET"])
 def version2():
-    recipe_dir = "static/recipe/ko"
-    recipe_list = os.listdir(recipe_dir)
-    recipe_idx = random.randrange(0, len(recipe_dir))
-    recipe_text_list = get_list_from_file(recipe_dir + "/" + recipe_list[recipe_idx])
-    return render_template("version2.html", recipe="\n".join(recipe_text_list))
+    #recipe_dir = "static/recipe/ko"
+    #recipe_list = os.listdir(recipe_dir)
+    #recipe_idx = random.randrange(0, len(recipe_dir))
+    #recipe_text_list = get_list_from_file(recipe_dir + "/" + recipe_list[recipe_idx])
+    #print(version2send.recorded_recipe_v2)
+    if version2send.checkpoint == 1:
+        version2send.checkpoint = 0
+        return render_template("version2.html", recipe=version2send.recorded_recipe_v2)
+    else:
+        return render_template("version2.html", recipe="\n".join(version2send.recorded_recipe_v2))
 
 @app.route('/version2/refresh')
 def version2refresh():
@@ -1622,10 +1642,14 @@ def root():
         #print(original_recipe)
     #print(original_recipe["description"])
     if original_recipe is None:
-        return make_response("Recipe is Blank", 406)
+        return make_response("Recipe is Blank", 403)
     #print(original_recipe)
-    resultdata = v2.finalresult(original_recipe["description"])
-    thisis = json.dumps(resultdata, ensure_ascii=False)
+
+    try:
+        resultdata = v2.finalresult(original_recipe["description"], version2send.ingredient)
+        thisis = json.dumps(resultdata, ensure_ascii=False)
+    except:
+        return make_response("Error in recipe", 403)
     return thisis
 
 if __name__ == '__main__':
