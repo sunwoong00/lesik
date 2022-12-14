@@ -1266,12 +1266,22 @@ def extract_ner_from_kobert(sentence):
 def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
     
     # node에 재료부분 한줄한줄(청양고추 40개)에 대한 etri 분석 결과가 들어옴
-    volume_node = []
-    ingredient_list = []
     sub_ingredient_dict = {}
-    ingredient_text_list = []
+    food = ""
+    volume = ""
+
+    print("node : ", node)
 
     for ne in node['NE']:
+        if ne['type'] == 'CV_INGREDIENT' or ne['type'] == 'CV_SEASONING':
+            food = ne['text']
+        elif ne['type'] == 'QT_VOLUME':
+            volume = ne['text']
+    sub_ingredient_dict[food] = volume
+    print(sub_ingredient_dict)
+
+
+    '''for ne in node['NE']:
    
         if ne['type'] in volume_type_list and len(volume_node) == 0: # 선웅 추가 (용량 1가지만 나오게)
             volume_node.append(ne)
@@ -1293,7 +1303,7 @@ def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
         volume_node_list = set()
         for v_node in volume_node:
             volume_node_list.add(v_node['text'])
-        sub_ingredient_dict = {ne['text']: "".join(list(map(lambda v: v, volume_node_list))) for ne in ingredient_list}
+        sub_ingredient_dict = {ne['text']: "".join(list(map(lambda v: v, volume_node_list))) for ne in ingredient_list}'''
 
     return sub_ingredient_dict
 
