@@ -1312,15 +1312,12 @@ def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
     food = ""
     volume = ""
 
-    print("node : ", node)
-
     for ne in node['NE']:
         if ne['type'] == 'CV_INGREDIENT' or ne['type'] == 'CV_SEASONING':
             food = ne['text']
         elif ne['type'] == 'QT_VOLUME':
             volume = ne['text']
     sub_ingredient_dict[food] = volume
-    print(sub_ingredient_dict)
 
 
     '''for ne in node['NE']:
@@ -1380,8 +1377,7 @@ def parse_node_section(entity_mode, is_srl, node_list):
                     sub_ingredient_dict = None
             else:
                 sub_ingredient_dict = extract_ingredient_from_node(ingredient_type_list, volume_type_list, node)
-            print("sub_ingredient_dict : ", sub_ingredient_dict)
-
+                
             # 박지연
             # 기본 재료가 모두 식자재 딕셔너리로 들어가는 문제 해결하는 코드
             if sub_ingredient_dict:

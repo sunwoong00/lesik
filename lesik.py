@@ -1328,14 +1328,14 @@ def parse_node_section(entity_mode, is_srl, node_list):
                 coref_dict[sub_type] = {}
             continue
         if is_ingredient:
-            '''if entity_mode == 'koelectra': 재료,첨가물에 대한 용량 추출
+            if entity_mode == 'koelectra':
                 koelectra_node = extract_ner_from_kobert(node['text'])
                 if koelectra_node is not None:
                     sub_ingredient_dict = extract_ingredient_from_node(ingredient_type_list, volume_type_list, koelectra_node)
                 else:
                     sub_ingredient_dict = None
-            else:'''
-            sub_ingredient_dict = extract_ingredient_from_node(ingredient_type_list, volume_type_list, node)
+            else:
+                sub_ingredient_dict = extract_ingredient_from_node(ingredient_type_list, volume_type_list, node)
 
             # 박지연
             # 기본 재료가 모두 식자재 딕셔너리로 들어가는 문제 해결하는 코드
