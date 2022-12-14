@@ -1266,14 +1266,14 @@ def merge_sequence(sequence_list):
 
             # merge 하는 시퀀스에 들어있는 재료, 첨가물이 겹칠 때 하나만 처리하게 해주는 코드 - 방선웅
             if 2 <= len(sequence_list[seq_idx]["ingre"]):
-                for i in range(0, len(sequence_list[seq_idx]["ingre"])-1):
-                    for j in range(i+1, len(sequence_list[seq_idx]["ingre"])):
+                for i in range(0, len(sequence_list[seq_idx]["ingre"])-2):
+                    for j in range(i+1, len(sequence_list[seq_idx]["ingre"])-1):
                         if sequence_list[seq_idx]["ingre"][i] == sequence_list[seq_idx]["ingre"][j]:
                             del sequence_list[seq_idx]["ingre"][j]
 
             if 2 <= len(sequence_list[seq_idx]["seasoning"]):
-                for i in range(0, len(sequence_list[seq_idx]["seasoning"])-1):
-                    for j in range(i+1, len(sequence_list[seq_idx]["seasoning"])):
+                for i in range(0, len(sequence_list[seq_idx]["seasoning"])-2):
+                    for j in range(i+1, len(sequence_list[seq_idx]["seasoning"])-1):
                         if sequence_list[seq_idx]["seasoning"][i] == sequence_list[seq_idx]["seasoning"][j]:
                             del sequence_list[seq_idx]["seasoning"][j]
 
@@ -1377,7 +1377,8 @@ def parse_node_section(entity_mode, is_srl, node_list):
                     sub_ingredient_dict = None
             else:
                 sub_ingredient_dict = extract_ingredient_from_node(ingredient_type_list, volume_type_list, node)
-                
+
+            print("sub_ingredient_dict : ", sub_ingredient_dict)
             # 박지연
             # 기본 재료가 모두 식자재 딕셔너리로 들어가는 문제 해결하는 코드
             if sub_ingredient_dict:
@@ -1503,14 +1504,14 @@ def find_sentence(node, sequence_list):
             else:
                 if end_id < end:
                     if next_seq_id < end_id or end < next_seq_id:
-                        if not extra_word_list:
-                            extra_word_list.append("(")
+                        #if not extra_word_list:
+                            #extra_word_list.append("(")
                         extra_word_list.append(text)
 
         sequence_list[i]['sentence'] = " ".join(word_list)
         sequence_list[i]['sentence'] = delete_bracket(sequence_list[i]['sentence'])
         if extra_word_list:
-            extra_word_list.append(")")
+            #extra_word_list.append(")")
             sequence_list[i]['sentence'] += " ".join(extra_word_list)
         prev_seq_id = sequence_list[i]['end_id']
 

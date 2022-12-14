@@ -1225,14 +1225,14 @@ def merge_sequence(sequence_list):
 
             # merge 하는 시퀀스에 들어있는 재료, 첨가물이 겹칠 때 하나만 처리하게 해주는 코드 - 방선웅
             if 2 <= len(sequence_list[seq_idx]["ingre"]):
-                for i in range(0, len(sequence_list[seq_idx]["ingre"])-1):
-                    for j in range(i+1, len(sequence_list[seq_idx]["ingre"])):
+                for i in range(0, len(sequence_list[seq_idx]["ingre"])-2):
+                    for j in range(i+1, len(sequence_list[seq_idx]["ingre"])-1):
                         if sequence_list[seq_idx]["ingre"][i] == sequence_list[seq_idx]["ingre"][j]:
                             del sequence_list[seq_idx]["ingre"][j]
 
             if 2 <= len(sequence_list[seq_idx]["seasoning"]):
-                for i in range(0, len(sequence_list[seq_idx]["seasoning"])-1):
-                    for j in range(i+1, len(sequence_list[seq_idx]["seasoning"])):
+                for i in range(0, len(sequence_list[seq_idx]["seasoning"])-2):
+                    for j in range(i+1, len(sequence_list[seq_idx]["seasoning"])-1):
                         if sequence_list[seq_idx]["seasoning"][i] == sequence_list[seq_idx]["seasoning"][j]:
                             del sequence_list[seq_idx]["seasoning"][j]
 
