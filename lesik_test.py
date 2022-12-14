@@ -1247,6 +1247,7 @@ def merge_sequence(sequence_list):
 
 def extract_ner_from_kobert(sentence):
 
+    #sentence = "양배추 한포기"
     kobert_api_url = "http://ec2-52-79-43-45.ap-northeast-2.compute.amazonaws.com:5000"
 
     http = urllib3.PoolManager()
@@ -1258,6 +1259,7 @@ def extract_ner_from_kobert(sentence):
     )
 
     json_object = json.loads(response.data)
+    print("json_object : ", json_object)
 
     return json_object
 
