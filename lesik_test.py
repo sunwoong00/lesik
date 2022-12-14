@@ -1308,15 +1308,24 @@ def extract_ner_from_kobert(sentence):
 def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
     
     # node에 재료부분 한줄한줄(청양고추 40개)에 대한 etri 분석 결과가 들어옴
-    volume_node = []
-    ingredient_list = []
     sub_ingredient_dict = {}
-    ingredient_text_list = []
+    food = ""
+    volume = ""
+
+    print("node : ", node)
 
     for ne in node['NE']:
+        if ne['type'] == 'CV_INGREDIENT' or ne['type'] == 'CV_SEASONING':
+            food = ne['text']
+        elif ne['type'] == 'QT_VOLUME':
+            volume = ne['text']
+    sub_ingredient_dict[food] = volume
+    print(sub_ingredient_dict)
+
+
+    '''for ne in node['NE']:
    
         if ne['type'] in volume_type_list and len(volume_node) == 0: # 선웅 추가 (용량 1가지만 나오게)
-            print(ne)
             volume_node.append(ne)
         if ne['type'] in ingredient_type_list:
             if volume_node and ne['begin'] < volume_node[-1]['end']:
@@ -1336,7 +1345,7 @@ def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
         volume_node_list = set()
         for v_node in volume_node:
             volume_node_list.add(v_node['text'])
-        sub_ingredient_dict = {ne['text']: "".join(list(map(lambda v: v, volume_node_list))) for ne in ingredient_list}
+        sub_ingredient_dict = {ne['text']: "".join(list(map(lambda v: v, volume_node_list))) for ne in ingredient_list}'''
 
     return sub_ingredient_dict
 
@@ -1363,14 +1372,15 @@ def parse_node_section(entity_mode, is_srl, node_list):
                 coref_dict[sub_type] = {}
             continue
         if is_ingredient:
-            '''if entity_mode == 'koelectra': 재료,첨가물에 대한 용량 추출
+            if entity_mode == 'koelectra':
                 koelectra_node = extract_ner_from_kobert(node['text'])
                 if koelectra_node is not None:
                     sub_ingredient_dict = extract_ingredient_from_node(ingredient_type_list, volume_type_list, koelectra_node)
                 else:
                     sub_ingredient_dict = None
-            else:'''
-            sub_ingredient_dict = extract_ingredient_from_node(ingredient_type_list, volume_type_list, node)
+            else:
+                sub_ingredient_dict = extract_ingredient_from_node(ingredient_type_list, volume_type_list, node)
+            print("sub_ingredient_dict : ", sub_ingredient_dict)
 
             # 박지연
             # 기본 재료가 모두 식자재 딕셔너리로 들어가는 문제 해결하는 코드
@@ -1522,7 +1532,7 @@ def main():
     f = open(file_path, 'r', encoding="utf-8")
     original_recipe = str.join("\n", f.readlines())
 
-    entity_mode = input("개체명 인식 모드를 선택해 주세요 (1 : ETRI, 2 : ko-BERT) : ")
+    entity_mode = input("개체명 인식 모드를 선택해 주세요 (1 : ETRI, 2 : ko-ELECTRA) : ")
     is_srl = input("SRL on/off를 선택해 주세요 (1 : OFF, 2 : ON) : ")
     if entity_mode == '1':
         entity_mode = 'etri'
