@@ -358,9 +358,9 @@ def select_cooking_zone(sequence_list):
     #애매한 동작 2차분리
     for i in range(0, len(sequence_list)):
         if sequence_list[i]['zone']=="":
-            if i == 0:
-                j=i
+            if i==0:
                 if i != len(sequence_list)-1:
+                    j=i
                     while(j<len(sequence_list)-1):
                         if j==len(sequence_list)-1:
                             if sequence_list[j+1]['zone']=="":
@@ -371,38 +371,8 @@ def select_cooking_zone(sequence_list):
                         else:
                             sequence_list[i]['zone']=sequence_list[j+1]['zone']
                             break
-                    if sequence_list[i]['zone'] == "":
-                        for k in range(0, len(total_sequencelist)):
-                            if total_sequencelist[k]['sentence'] == sequence_list[i]['sentence']:
-                                while(k>0):
-                                        if total_sequencelist[k-1]['zone']=="":
-                                            k=k-1
-                                        else:
-                                            sequence_list[i]['zone']=total_sequencelist[k-1]['zone']
-                                            break
-                                        if k==0:
-                                            sequence_list[i]['zone']="전처리존"
-                                            break
-                else:
-                    for k in range(0, len(total_sequencelist)):
-                        if total_sequencelist[k]['sentence'] == sequence_list[i]['sentence']:
-                            while(k>0):
-                                    if total_sequencelist[k-1]['zone']=="":
-                                        k=k-1
-                                    else:
-                                        sequence_list[i]['zone']=total_sequencelist[k-1]['zone']
-                                        break
-                                    if k==0:
-                                        sequence_list[i]['zone']="전처리존"
-                                        break
-            elif i==len(sequence_list)-1:
-                sequence_list[i]['zone'] = sequence_list[i-1]['zone']
-            
             else:
                 sequence_list[i]['zone'] = sequence_list[i-1]['zone']
-                
-        if sequence_list[i]['zone'] == "":
-            sequence_list[i]['zone'] = "전처리존"
         
     return sequence_list
 
@@ -464,29 +434,12 @@ def add_standard(node, seq_list):
    
     for sequence in seq_list:
         for ne in node['NE']:
-            if ne['type'] == "QT_LENGTH" or ne['type'] == "QT_OTHERS" :
+            if ne['type'] == "QT_LENGTH" or ne['type'] == "QT_OTHERS" or ne['type'] == "QT_SIZE":
                 if ne['text'] in sequence['sentence'] and "도" not in ne['text']:
                     if sequence['standard']=="":
                         sequence['standard']=ne['text']
                     else:
                         sequence['standard']=sequence['standard']+","+ne['text']
-            '''
-            if ne['type'] == "QT_COUNT":
-                n_begin = int(ne['begin'])
-                n_end=int(ne['end'])
-                stand = ""
-                for wrd in node['word']:
-                    w_begin= int(wrd['begin'])
-                    print(ne['text'], sequence['volume'])
-                    if ne['text'] not in sequence['volume']:
-                        if n_begin<=w_begin<=n_end:
-                            stand = stand + " " + wrd["text"]
-                if stand in sequence['sentence']:
-                    if sequence['standard']=="":
-                            sequence['standard']=stand
-                    else:
-                        sequence['standard']=sequence['standard']+","+stand
-            '''
                         
             if ne['type'] == "QT_ORDER" and '등분' in ne['text']:
                 if ne['text'] in sequence['sentence']:
@@ -495,6 +448,7 @@ def add_standard(node, seq_list):
                     else:
                         sequence['standard']=sequence['standard']+","+ne['text']
                         
+        standard_act = ""
         if sequence['top_class'] == "slice":
             for i in slice_low_class:
                 if i in sequence['sentence']:
@@ -505,35 +459,35 @@ def add_standard(node, seq_list):
                                     if i not in sea:
                                         if i not in sequence['act']:
                                             if sequence['ingre'].index(ing) == len(sequence['ingre'])-1 and sequence['seasoning'].index(sea) == len(sequence['seasoning'])-1:
-                                                if sequence['standard']=="":
-                                                    sequence['standard']=i
+                                                if standard_act=="":
+                                                    standard_act=i
                                                 else:
-                                                    sequence['standard']=sequence['standard']+","+i
+                                                    standard_act = standard_act+","+i
                                 
                     elif sequence['ingre'] != [] and sequence['seasoning'] == []:
                         for ing in sequence['ingre']:
                             if i not in ing:
                                 if i not in sequence['act']:
                                     if sequence['ingre'].index(ing) == len(sequence['ingre'])-1:
-                                        if sequence['standard']=="":
-                                            sequence['standard']=i
+                                        if standard_act == "":
+                                            standard_act=i
                                         else:
-                                            sequence['standard']=sequence['standard']+","+i
+                                            standard_act=standard_act+","+i
                     elif sequence['ingre'] == [] and sequence['seasoning'] != []:
                         for sea in sequence['seasoning']:
                             if i not in sea:
                                 if i not in sequence['act']:
                                     if sequence['seasoning'].index(sea) == len(sequence['seasoning'])-1:
-                                        if sequence['standard']=="":
-                                            sequence['standard']=i
+                                        if standard_act=="":
+                                            standard_act=i
                                         else:
-                                            sequence['standard']=sequence['standard']+","+i
+                                            standard_act=standard_act+","+i
                     else:
                         if i not in sequence['act']:
-                            if sequence['standard']=="":
-                                sequence['standard']=i
+                            if standard_act=="":
+                                standard_act=i
                             else:
-                                sequence['standard']=sequence['standard']+","+i
+                                standard_act=standard_act+","+i
     
         if sequence['top_class'] == "use_fire":
             for i in useFire_low_class:
@@ -545,35 +499,35 @@ def add_standard(node, seq_list):
                                     if i not in sea:
                                         if i not in sequence['act']:
                                             if sequence['ingre'].index(ing) == len(sequence['ingre'])-1 and sequence['seasoning'].index(sea) == len(sequence['seasoning'])-1:
-                                                if sequence['standard']=="":
-                                                    sequence['standard']=i
+                                                if standard_act=="":
+                                                    standard_act=i
                                                 else:
-                                                    sequence['standard']=sequence['standard']+","+i
+                                                    standard_act=standard_act+","+i
                                 
                     elif sequence['ingre'] != [] and sequence['seasoning'] == []:
                         for ing in sequence['ingre']:
                             if i not in ing:
                                 if i not in sequence['act']:
                                     if sequence['ingre'].index(ing) == len(sequence['ingre'])-1:
-                                        if sequence['standard']=="":
-                                            sequence['standard']=i
+                                        if standard_act=="":
+                                            standard_act=i
                                         else:
-                                            sequence['standard']=sequence['standard']+","+i
+                                            standard_act=standard_act+","+i
                     elif sequence['ingre'] == [] and sequence['seasoning'] != []:
                         for sea in sequence['seasoning']:
                             if i not in sea:
                                 if i not in sequence['act']:
                                     if sequence['seasoning'].index(sea) == len(sequence['seasoning'])-1:
-                                        if sequence['standard']=="":
-                                            sequence['standard']=i
+                                        if standard_act=="":
+                                            standard_act=i
                                         else:
-                                            sequence['standard']=sequence['standard']+","+i
+                                            standard_act=standard_act+","+i
                     else:
                         if i not in sequence['act']:
-                            if sequence['standard']=="":
-                                sequence['standard']=i
+                            if standard_act=="":
+                                standard_act=i
                             else:
-                                sequence['standard']=sequence['standard']+","+i
+                                standard_act=standard_act+","+i
     
         if sequence['top_class'] == "put":
             for i in put_low_class:
@@ -585,35 +539,35 @@ def add_standard(node, seq_list):
                                     if i not in sea:
                                         if i not in sequence['act']:
                                             if sequence['ingre'].index(ing) == len(sequence['ingre'])-1 and sequence['seasoning'].index(sea) == len(sequence['seasoning'])-1:
-                                                if sequence['standard']=="":
-                                                    sequence['standard']=i
+                                                if standard_act=="":
+                                                    standard_act=i
                                                 else:
-                                                    sequence['standard']=sequence['standard']+","+i
+                                                    standard_act=standard_act+","+i
                                 
                     elif sequence['ingre'] != [] and sequence['seasoning'] == []:
                         for ing in sequence['ingre']:
                             if i not in ing:
                                 if i not in sequence['act']:
                                     if sequence['ingre'].index(ing) == len(sequence['ingre'])-1:
-                                        if sequence['standard']=="":
-                                            sequence['standard']=i
+                                        if standard_act=="":
+                                            standard_act=i
                                         else:
-                                            sequence['standard']=sequence['standard']+","+i
+                                            standard_act=standard_act+","+i
                     elif sequence['ingre'] == [] and sequence['seasoning'] != []:
                         for sea in sequence['seasoning']:
                             if i not in sea:
                                 if i not in sequence['act']:
                                     if sequence['seasoning'].index(sea) == len(sequence['seasoning'])-1:
-                                        if sequence['standard']=="":
-                                            sequence['standard']=i
+                                        if standard_act=="":
+                                            standard_act=i
                                         else:
-                                            sequence['standard']=sequence['standard']+","+i
+                                            standard_act=standard_act+","+i
                     else:
                         if i not in sequence['act']:
-                            if sequence['standard']=="":
-                                sequence['standard']=i
+                            if standard_act=="":
+                                standard_act=i
                             else:
-                                sequence['standard']=sequence['standard']+","+i
+                                standard_act=standard_act+","+i
     
         if sequence['top_class'] == "mix":
             for i in mix_low_class:
@@ -625,35 +579,35 @@ def add_standard(node, seq_list):
                                     if i not in sea:
                                         if i not in sequence['act']:
                                             if sequence['ingre'].index(ing) == len(sequence['ingre'])-1 and sequence['seasoning'].index(sea) == len(sequence['seasoning'])-1:
-                                                if sequence['standard']=="":
-                                                    sequence['standard']=i
+                                                if standard_act=="":
+                                                    standard_act=i
                                                 else:
-                                                    sequence['standard']=sequence['standard']+","+i
+                                                    standard_act=standard_act+","+i
                                 
                     elif sequence['ingre'] != [] and sequence['seasoning'] == []:
                         for ing in sequence['ingre']:
                             if i not in ing:
                                 if i not in sequence['act']:
                                     if sequence['ingre'].index(ing) == len(sequence['ingre'])-1:
-                                        if sequence['standard']=="":
-                                            sequence['standard']=i
+                                        if standard_act=="":
+                                            standard_act=i
                                         else:
-                                            sequence['standard']=sequence['standard']+","+i
+                                            standard_act=standard_act+","+i
                     elif sequence['ingre'] == [] and sequence['seasoning'] != []:
                         for sea in sequence['seasoning']:
                             if i not in sea:
                                 if i not in sequence['act']:
                                     if sequence['seasoning'].index(sea) == len(sequence['seasoning'])-1:
-                                        if sequence['standard']=="":
-                                            sequence['standard']=i
+                                        if standard_act=="":
+                                            standard_act=i
                                         else:
-                                            sequence['standard']=sequence['standard']+","+i
+                                            standard_act=standard_act+","+i
                     else:
                         if i not in sequence['act']:
-                            if sequence['standard']=="":
-                                sequence['standard']=i
+                            if standard_act=="":
+                                standard_act=i
                             else:
-                                sequence['standard']=sequence['standard']+","+i
+                                standard_act=standard_act+","+i
     
         if sequence['top_class'] == "make":
             for i in make_low_class:
@@ -665,18 +619,18 @@ def add_standard(node, seq_list):
                                     if i not in sea:
                                         if i not in sequence['act']:
                                             if sequence['ingre'].index(ing) == len(sequence['ingre'])-1 and sequence['seasoning'].index(sea) == len(sequence['seasoning'])-1:
-                                                if sequence['standard']=="":
-                                                    sequence['standard']=i
+                                                if standard_act=="":
+                                                    standard_act=i
                                                 else:
-                                                    sequence['standard']=sequence['standard']+","+i
+                                                    standard_act=standard_act+","+i
                                 
                     elif sequence['ingre'] != [] and sequence['seasoning'] == []:
                         for ing in sequence['ingre']:
                             if i not in ing:
                                 if i not in sequence['act']:
                                     if sequence['ingre'].index(ing) == len(sequence['ingre'])-1:
-                                        if sequence['standard']=="":
-                                            sequence['standard']=i
+                                        if standard_act=="":
+                                            standard_act=i
                                         else:
                                             sequence['standard']=sequence['standard']+","+i
                     elif sequence['ingre'] == [] and sequence['seasoning'] != []:
@@ -684,16 +638,16 @@ def add_standard(node, seq_list):
                             if i not in sea:
                                 if i not in sequence['act']:
                                     if sequence['seasoning'].index(sea) == len(sequence['seasoning'])-1:
-                                        if sequence['standard']=="":
-                                            sequence['standard']=i
+                                        if standard_act=="":
+                                            standard_act=i
                                         else:
-                                            sequence['standard']=sequence['standard']+","+i
+                                            standard_act=standard_act+","+i
                     else:
                         if i not in sequence['act']:
-                            if sequence['standard']=="":
-                                sequence['standard']=i
+                            if standard_act=="":
+                                standard_act=i
                             else:
-                                sequence['standard']=sequence['standard']+","+i
+                                standard_act=standard_act+","+i
                         
         if sequence['top_class'] == "prepare_ingre":
             for i in prepare_low_class:
@@ -705,35 +659,41 @@ def add_standard(node, seq_list):
                                     if i not in sea:
                                         if i not in sequence['act']:
                                             if sequence['ingre'].index(ing) == len(sequence['ingre'])-1 and sequence['seasoning'].index(sea) == len(sequence['seasoning'])-1:
-                                                if sequence['standard']=="":
-                                                    sequence['standard']=i
+                                                if standard_act=="":
+                                                    standard_act=i
                                                 else:
-                                                    sequence['standard']=sequence['standard']+","+i
+                                                    standard_act=standard_act+","+i
                                 
                     elif sequence['ingre'] != [] and sequence['seasoning'] == []:
                         for ing in sequence['ingre']:
                             if i not in ing:
                                 if i not in sequence['act']:
                                     if sequence['ingre'].index(ing) == len(sequence['ingre'])-1:
-                                        if sequence['standard']=="":
-                                            sequence['standard']=i
+                                        if standard_act=="":
+                                            standard_act=i
                                         else:
-                                            sequence['standard']=sequence['standard']+","+i
+                                            standard_act=standard_act+","+i
                     elif sequence['ingre'] == [] and sequence['seasoning'] != []:
                         for sea in sequence['seasoning']:
                             if i not in sea:
                                 if i not in sequence['act']:
                                     if sequence['seasoning'].index(sea) == len(sequence['seasoning'])-1:
-                                        if sequence['standard']=="":
-                                            sequence['standard']=i
+                                        if standard_act=="":
+                                            standard_act=i
                                         else:
-                                            sequence['standard']=sequence['standard']+","+i
+                                            standard_act=standard_act+","+i
                     else:
                         if i not in sequence['act']:
-                            if sequence['standard']=="":
-                                sequence['standard']=i
+                            if standard_act=="":
+                                standard_act=i
                             else:
-                                sequence['standard']=sequence['standard']+","+i
+                                standard_act=standard_act+","+i
+        if standard_act != "":
+            sequence['act'] = standard_act + " " + sequence['act']
+        '''
+        if standard_act != "":
+            sequence['act'] = sequence['act'] + "(" + standard_act + ")"
+        '''
          
     
     return seq_list
@@ -954,7 +914,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
     # 형태소 이용한 조리 동작 추출
     prev_seq_id = -1
     for m_ele in node['morp']:
-        if m_ele['type'] == 'VV' or m_ele['lemma'] == '제거':
+        if m_ele['type'] == 'VV' or m_ele['lemma'] == '제거' or m_ele['lemma'] == "슬라이스" or m_ele['lemma'] == "슬라이" or m_ele['lemma'] == "다이스하" or m_ele['lemma'] == "다이":
             if m_ele['type'] == 'VV':
                 act_id = int(m_ele['id'])
                 if node['morp'][act_id + 1]['type'] == 'ETM' and node['morp'][act_id + 2]['lemma'] != '후':
@@ -964,7 +924,23 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
                 act_id = int(m_ele['id']) 
                 if node['morp'][act_id + 2]['type'] == 'ETM' and node['morp'][act_id + 3]['lemma'] != '후':
                     continue
-                act = '제거하'
+                act = '제거하'  
+            elif m_ele['lemma'] == '슬라이스':
+                act_id = int(m_ele['id']) 
+                act = '슬라이스하'  
+            elif m_ele['lemma'] == '슬라이':
+                act_id = int(m_ele['id']) 
+                if node['morp'][act_id + 2]['type'] == 'ETM' and node['morp'][act_id + 3]['lemma'] != '후':
+                    continue
+                act = '슬라이스하'  
+            elif m_ele['lemma'] == '다이스하':
+                act_id = int(m_ele['id']) 
+                act = '다이스하'  
+            elif m_ele['lemma'] == '다이':
+                act_id = int(m_ele['id']) 
+                if node['morp'][act_id + 2]['type'] == 'ETM' and node['morp'][act_id + 3]['lemma'] != '후':
+                    continue
+                act = '다이스하' 
                 
             # 조리 동작 판단
             if act in cooking_act_dict:

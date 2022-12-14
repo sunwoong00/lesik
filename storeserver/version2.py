@@ -54,7 +54,9 @@ def get_etri(text):
     return json_object
 
 def extract_ner_from_kobert(sentence):
-    kobert_api_url = "http://ec2-13-209-68-59.ap-northeast-2.compute.amazonaws.com:5000"
+
+    kobert_api_url = "http://ec2-52-79-43-45.ap-northeast-2.compute.amazonaws.com:5000"
+
     http = urllib3.PoolManager()
     response = http.request(
         "POST",
@@ -62,7 +64,9 @@ def extract_ner_from_kobert(sentence):
         headers={"Content-Type": "application/text; charset=UTF-8"},
         body=sentence.encode('utf-8')
     )
+
     json_object = json.loads(response.data)
+
     return json_object
 
 def before_sequencing(list):
@@ -72,7 +76,7 @@ def before_sequencing(list):
     nnew_list = []
     for sent in list:
         if sent[0].isdigit() == True:
-            new_list.append(sent[3:len(sent)-1])
+            new_list.append(sent[2:len(sent)-1])
     for sent in new_list:
         nnew_list.extend(sent.split(". "))
     return nnew_list
@@ -118,6 +122,7 @@ def create_sequence(node_list):
     seq_list = []
     for node in node_list:
         temp = 0
+        is_ec = 0
         prev_seq_id = -1
         for s_ele in node['WSD']:
             if s_ele['type'] == 'VV':
@@ -131,8 +136,9 @@ def create_sequence(node_list):
                 # print(temp, s_ele['text'])
                 if (node['WSD'][next_id]['type'] == 'ETM') and node['WSD'][next_id + 1]['text'] != '후':
                     continue
-                elif node['WSD'][next_id]['type'] == 'EC' and node['WSD'][next_id + 1]['type'] == 'VV':
-                    continue            
+                elif is_ec != 1 and node['WSD'][next_id]['type'] == 'EC' and node['WSD'][next_id + 1]['type'] == 'VV':
+                    is_ec = 1
+                    continue   
                 act = s_ele['text']
 
                 # print(act_id , act)
@@ -150,7 +156,7 @@ def create_sequence(node_list):
         find_sentence(node, seq_list)
 
     seq_list = adj_edit(seq_list)
-    # seq_list = same_time(seq_list)
+    seq_list = same_time(seq_list)
     generalize(seq_list)
     
     v_generalize(seq_list)
@@ -254,8 +260,8 @@ def adj_edit(sequence_list):
                                                         except:
                                                             pass
                                                 
-                                                if (val4['type'] != "SP" and val4['text'] != "와" and val4['text'] != "과") or cooking_act_dict[val2['text']] in put or cooking_act_dict[val2['text']] in use_fire  or cooking_act_dict[val2['text']] in mix:
-                                                    if(cooking_act_dict[val2['text']] in put or cooking_act_dict[val2['text']] in use_fire):
+                                                if (val4['type'] != "SP" and val4['text'] != "와" and val4['text'] != "과") or cooking_act_dict[val2['text']] in put or cooking_act_dict[val2['text']] in use_fire or cooking_act_dict[val2['text']] in mix:
+                                                    if(cooking_act_dict[val2['text']] in put or cooking_act_dict[val2['text']] in use_fire or cooking_act_dict[val2['text']] in mix):
                                                         if val2['text'] not in n_list:
                                                             n_list.append(val2['text'])
                                                         n_list.append(to + '에')
@@ -375,8 +381,8 @@ def find_sentence(node, sequence_list):
             end = w_ele['end']
             if start_id <= begin <= end_id:
 
-                if text == '후':
-                    continue
+                # if text == '후':
+                #     continue
                 
                 word_list.append(text)
             # else:
@@ -432,7 +438,7 @@ def divide_tool_num_text(file_path):
     f.close()
     return tool_dict_main, tool_dict_sub
 
-def finalresult(data):
+def finalresult(data, ingreCollectList):
     global cooking_act_dict, act_score_dict , tool_match_main_dic, tool_match_sub_dic, newcooking_act_dict, newact_score_dict
     cooking_act_dict, act_score_dict = parse_cooking_act_dict("labeling/cooking_act.txt")
     newcooking_act_dict, newact_score_dict = parse_cooking_act_dict("hajong/action_number.txt")    
@@ -445,8 +451,8 @@ def finalresult(data):
     #print(lines)
     lines = [i.replace('\r','') for i in lines]
     #print(lines)
-    ingreCollectList = []
-    #print(lines)
+    #ingreCollectList = []
+    print(lines)
     for readingre in lines:
         if("[기본 재료]" in readingre):
             #print("found 기본재료")
@@ -462,8 +468,27 @@ def finalresult(data):
             #print("hihihi")
             ingreSentenceSplit = str(readingre).split(" ")
             #print(ingreSentenceSplit)
-            ingreCollectList.append(ingreSentenceSplit[0])
+            #ingreCollectList.append(ingreSentenceSplit[0])
         #print(readingre)
+
+    if len(ingreCollectList) == 0: 
+        for readingre in lines:
+            if("[기본 재료]" in readingre):
+                #print("found 기본재료")
+                continue
+            elif("[기본재료]" in readingre):
+                #print("found 기본재료")
+                continue
+            elif("[" in readingre):
+                #print("found stop [", readingre)
+                break
+            else:
+                #print(readingre)
+                #print("hihihi")
+                ingreSentenceSplit = str(readingre).split(" ")
+                #print(ingreSentenceSplit)
+                ingreCollectList.append(ingreSentenceSplit[0])
+            #print(readingre)
 
     #print("ingreCollectList", ingreCollectList)
     index1 = lines.index("[조리방법]\n")
@@ -476,6 +501,7 @@ def finalresult(data):
     node_list = get_etri(result).get("return_object").get("sentence")
     # print(node_list)
     seq_list = create_sequence(node_list)
+    print(ingreCollectList)
     matchtoolwithactionresult, actionzone = toolmatchwverb.matchresult(seq_list, ingreCollectList)
     print(matchtoolwithactionresult)
     # C:\Users\hajon\OneDrive\성균관\산학협력프로젝트\래식\lesik_ver2\static\recipe\ko\가지 솥밥.txt
