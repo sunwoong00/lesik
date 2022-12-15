@@ -1476,14 +1476,15 @@ def find_sentence(node, sequence_list):
             else:
                 if end_id < end:
                     if next_seq_id < end_id or end < next_seq_id:
-                        if not extra_word_list:
-                            extra_word_list.append("(")
+                        #if not extra_word_list:
+                            #extra_word_list.append("(")
                         extra_word_list.append(text)
 
         sequence_list[i]['sentence'] = " ".join(word_list)
         sequence_list[i]['sentence'] = delete_bracket(sequence_list[i]['sentence'])
         if extra_word_list:
-            extra_word_list.append(")")
+            #extra_word_list.append(")")
+            sequence_list[i]['sentence'] += " "
             sequence_list[i]['sentence'] += " ".join(extra_word_list)
         prev_seq_id = sequence_list[i]['end_id']
 

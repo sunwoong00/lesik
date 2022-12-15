@@ -1380,7 +1380,7 @@ def parse_node_section(entity_mode, is_srl, node_list):
 
             if next(iter(sub_ingredient_dict)) == "":
                 sub_ingredient_dict = {}
-                
+
             # 박지연
             # 기본 재료가 모두 식자재 딕셔너리로 들어가는 문제 해결하는 코드
             if sub_ingredient_dict:
@@ -1514,6 +1514,7 @@ def find_sentence(node, sequence_list):
         sequence_list[i]['sentence'] = delete_bracket(sequence_list[i]['sentence'])
         if extra_word_list:
             #extra_word_list.append(")")
+            sequence_list[i]['sentence'] += " "
             sequence_list[i]['sentence'] += " ".join(extra_word_list)
         prev_seq_id = sequence_list[i]['end_id']
 
