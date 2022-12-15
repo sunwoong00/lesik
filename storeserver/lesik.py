@@ -350,27 +350,27 @@ def select_cooking_zone(sequence_list):
     preprocess_tool=["냉장고","칼","그릇","도마","볼","접시","거품기","믹싱볼","과자틀","김밥말이","제면기","피자커터","핸드블렌더","믹서기","믹서"]
     preprocess_act = ["즐기다","곁들이다","뿌리다","빚는다","주무르다","두드리다","밀다"]
     #확실한 동작 존 분리
-    for i in range(0, len(sequence_list)):
-        if sequence_list[i]['top_class'] == "use_fire":
+    for i in range(0, len(sequence_list)):     
+        if sequence_list[i]['top_class'] == "use_fire": #use_fire이면 화구존, slice, prepare_ingre이면 전처리존
             sequence_list[i]['zone'] = "화구존"
         elif sequence_list[i]['top_class'] == "prepare_ingre" or sequence_list[i]['top_class'] == "slice":  
             sequence_list[i]['zone'] = "전처리존"
         else:
             sequence_list[i]['zone'] = ""
         #전처리존 동작 딕셔너리 확인
-        if sequence_list[i]['act'] in preprocess_act:
+        if sequence_list[i]['act'] in preprocess_act:   #전처리존 동작 딕셔너리 확인해서 전처리존 추가 분리
             sequence_list[i]['zone'] = "전처리존"
         # 도구 매핑   
-        for tool in sequence_list[i]['tool']:
-            if tool in fire_tool:
+        for tool in sequence_list[i]['tool']:  # 도구가 화구존 도구면 화구존, 전처리존 도구이면 전처리존
+            if tool in fire_tool:  
                 sequence_list[i]['zone'] = "화구존"
             elif tool in preprocess_tool:
                 sequence_list[i]['zone'] = "전처리존"
     #애매한 동작 2차분리
     for i in range(0, len(sequence_list)):
         if sequence_list[i]['zone']=="":
-            if i==0:
-                if i != len(sequence_list)-1:
+            if i==0: # 해당 문장의 가장 첫번째 시퀀스일때
+                if i != len(sequence_list)-1: # 해당 문장의 시퀀스가 1개일때
                     j=i
                     while(j<len(sequence_list)-1):
                         if j==len(sequence_list)-1:
@@ -382,7 +382,7 @@ def select_cooking_zone(sequence_list):
                         else:
                             sequence_list[i]['zone']=sequence_list[j+1]['zone']
                             break
-            else:
+            else: #해당 문장의 시퀀스가 n개 일때
                 sequence_list[i]['zone'] = sequence_list[i-1]['zone']
         
     return sequence_list
@@ -412,58 +412,50 @@ def verify_etn(node, seq_list):
 
     return seq_list
 
-# 대분류, 중분류
+# 대분류, 중분류 동작분류
 def classify(seq_list):
     for sequence in seq_list:
-        if sequence['act'] in slice_act:
-            #sequence['act'] = sequence['act']+"(대분류:slice)"
+        if sequence['act'] in slice_act:    # 조리동작이 slice_act안에 있는 동작일때
             sequence['top_class']="slice"
-        elif sequence['act'] in prepare_ingre:
-            #sequence['act'] = sequence['act']+"(대분류:pre_process)"
+        elif sequence['act'] in prepare_ingre:  # 조리동작이 prepare_ingre 안에 있는 동작일때
             sequence['top_class']="prepare_ingre"
-        elif sequence['act'] in use_fire:
-            #sequence['act'] = sequence['act']+"(대분류:use_fire)"
+        elif sequence['act'] in use_fire:   # 조리동작이 use_fire안에 있는 동작일때
             sequence['top_class']="use_fire"
-        elif sequence['act'] in put:
-            #sequence['act'] = sequence['act']+"(대분류:put)"
+        elif sequence['act'] in put:       # 조리동작이 put안에 있는 동작일때
             sequence['top_class']="put"
-        elif sequence['act'] in make:
-            #sequence['act'] = sequence['act']+"(대분류:make)"
+        elif sequence['act'] in make:    # 조리동작이 make안에 있는 동작일때
             sequence['top_class']="make"
-        elif sequence['act'] in remove:
-            #sequence['act'] = sequence['act']+"(대분류:remove)"
+        elif sequence['act'] in remove: # 조리동작이 remove안에 있는 동작일때
             sequence['top_class']="remove"
-        elif sequence['act'] in mix:
-            #sequence['act'] = sequence['act']+"(대분류:mix)"
+        elif sequence['act'] in mix:  # 조리동작이 mix안에 있는 동작일때
             sequence['top_class']="mix"
        
     return seq_list
 
 #소분류 규격추가
-
 def add_standard(node, seq_list):
     for sequence in seq_list:
         for ne in node['NE']:
-            if ne['type'] == "QT_LENGTH" or ne['type'] == "QT_OTHERS" or ne['type'] == "QT_SIZE":
+            if ne['type'] == "QT_LENGTH" or ne['type'] == "QT_OTHERS" or ne['type'] == "QT_SIZE":  # ne['type']이 다음 etri 태그에 해당하면 규격에 넣기
                 if ne['text'] in sequence['sentence'] and "도" not in ne['text']:
                     if sequence['standard']=="":
                         sequence['standard']=ne['text']
                     else:
                         sequence['standard']=sequence['standard']+","+ne['text']
                         
-            if ne['type'] == "QT_ORDER" and '등분' in ne['text']:
+            if ne['type'] == "QT_ORDER" and '등분' in ne['text']:  # ne['type']이 QT_ORDER이고 '등분'이 포함되어 있으면 규격에 넣기
                 if ne['text'] in sequence['sentence']:
                     if sequence['standard']=="":
                         sequence['standard']=ne['text']
                     else:
                         sequence['standard']=sequence['standard']+","+ne['text']
-                        
+        # 소분류 딕셔너리 돌기 - 식자재, 첨가물, 동작에 해당 소분류가 없을때, 조리동작에 소분류 붙이기
         standard_act = ""
-        if sequence['top_class'] == "slice":
-            for i in slice_low_class:
+        if sequence['top_class'] == "slice":    # slice에 해당하는 소분류 딕셔너리 확인
+            for i in slice_low_class:  
                 if i in sequence['sentence']:
-                    if sequence['ingre'] != [] and sequence['seasoning'] !=[]:
-                        for ing in sequence['ingre']:
+                    if sequence['ingre'] != [] and sequence['seasoning'] !=[]: # 첨가물과 식자재에 요소가 1개 이상 있을떄
+                        for ing in sequence['ingre']:                       
                             if i not in ing:
                                 for sea in sequence['seasoning']:
                                     if i not in sea:
@@ -474,7 +466,7 @@ def add_standard(node, seq_list):
                                                 else:
                                                     standard_act = standard_act+","+i
                                 
-                    elif sequence['ingre'] != [] and sequence['seasoning'] == []:
+                    elif sequence['ingre'] != [] and sequence['seasoning'] == []: # 식자재에만 요소가 1개이상 있을떄
                         for ing in sequence['ingre']:
                             if i not in ing:
                                 if i not in sequence['act']:
@@ -483,7 +475,7 @@ def add_standard(node, seq_list):
                                             standard_act=i
                                         else:
                                             standard_act=standard_act+","+i
-                    elif sequence['ingre'] == [] and sequence['seasoning'] != []:
+                    elif sequence['ingre'] == [] and sequence['seasoning'] != []: # 첨가물에만 요소가 1개이상 있을때
                         for sea in sequence['seasoning']:
                             if i not in sea:
                                 if i not in sequence['act']:
@@ -493,13 +485,13 @@ def add_standard(node, seq_list):
                                         else:
                                             standard_act=standard_act+","+i
                     else:
-                        if i not in sequence['act']:
+                        if i not in sequence['act']:   # 첨가물과 식자재가 모두 없을때 
                             if standard_act=="":
                                 standard_act=i
                             else:
                                 standard_act=standard_act+","+i
     
-        if sequence['top_class'] == "use_fire":
+        if sequence['top_class'] == "use_fire":   # use_fire에 해당하는 소분류 딕셔너리 확인
             for i in useFire_low_class:
                 if i in sequence['sentence']:
                     if sequence['ingre'] != [] and sequence['seasoning'] !=[]:
@@ -539,7 +531,7 @@ def add_standard(node, seq_list):
                             else:
                                 standard_act=standard_act+","+i
     
-        if sequence['top_class'] == "put":
+        if sequence['top_class'] == "put":  # put에 해당하는 소분류 딕셔너리 확인
             for i in put_low_class:
                 if i in sequence['sentence']:
                     if sequence['ingre'] != [] and sequence['seasoning'] !=[]:
@@ -579,7 +571,7 @@ def add_standard(node, seq_list):
                             else:
                                 standard_act=standard_act+","+i
     
-        if sequence['top_class'] == "mix":
+        if sequence['top_class'] == "mix":   # mix에 해당하는 소분류 딕셔너리 확인
             for i in mix_low_class:
                 if i in sequence['sentence']:
                     if sequence['ingre'] != [] and sequence['seasoning'] !=[]:
@@ -619,7 +611,7 @@ def add_standard(node, seq_list):
                             else:
                                 standard_act=standard_act+","+i
     
-        if sequence['top_class'] == "make":
+        if sequence['top_class'] == "make":  # make에 해당하는 소분류 딕셔너리 확인
             for i in make_low_class:
                 if i in sequence['sentence']:
                     if sequence['ingre'] != [] and sequence['seasoning'] !=[]:
@@ -659,7 +651,7 @@ def add_standard(node, seq_list):
                             else:
                                 standard_act=standard_act+","+i
                         
-        if sequence['top_class'] == "prepare_ingre":
+        if sequence['top_class'] == "prepare_ingre":  # prepare_ingre에 해당하는 소분류 딕셔너리 확인
             for i in prepare_low_class:
                 if i in sequence['sentence']:
                     if sequence['ingre'] != [] and sequence['seasoning'] !=[]:
@@ -700,11 +692,7 @@ def add_standard(node, seq_list):
                                 standard_act=standard_act+","+i
         if standard_act != "":
             sequence['act'] = standard_act + " " + sequence['act']
-        '''
-        if standard_act != "":
-            sequence['act'] = sequence['act'] + "(" + standard_act + ")"
-        '''
-                        
+               
         
          
     
@@ -730,6 +718,7 @@ def find_NP_OBJ(node, seq_list): #지은 수정됨
                     end = word['end']
                     for i in range(0, len(seq_list)):
                         sequence = seq_list[i]
+                        # 동작이 대분류 remove, make에 해당하거나 '자르다'일때 앞의 목적어를 동작에 붙여주기
                         if sequence['top_class'] == "remove" or sequence['top_class'] == "make" or sequence['top_class'] == "prepare_ingre" or sequence['act']=="자르다":
                             if sequence['start_id'] <= end <= sequence['end_id'] and start_id <= sequence[
                                 'end_id'] <= end_id:
@@ -758,7 +747,7 @@ def find_NP_OBJ(node, seq_list): #지은 수정됨
 
 # 상상코딩5
 # 동사에 딸려있는 부사구까지 출력 put
-def find_adverb(node, sequence_list): #지은 수정됨
+def find_adverb(node, sequence_list): 
     
     no_plus_adverb = ['정도', '크기로', '길이로', '등에']
     for m_ele in node['morp']:
@@ -770,6 +759,7 @@ def find_adverb(node, sequence_list): #지은 수정됨
             for i in range(0, len(sequence_list)):
                 sequence = sequence_list[i]
                 is_adverb = True
+                # 동작이 대분류 put에 해당할때 앞의 부사어 붙여주기
                 if sequence['start_id'] <= m_id <= sequence['end_id'] and sequence['top_class'] == "put":   
                     for w_ele in node['word']:
                         w_begin = int(w_ele['begin'])
@@ -804,8 +794,9 @@ def find_adverb(node, sequence_list): #지은 수정됨
     
     return sequence_list
 
-
-def find_idiom(node, sequence_list): #지은 수정됨
+# 숙어처리함수
+# '불을 끄다','모양을 내다'등의 조리동작은 '끄다'에 '불을'을 붙이기
+def find_idiom(node, sequence_list): 
     for m_ele in node['morp']:
         m_id = int(m_ele['id'])
         if m_id == 0:
@@ -1140,12 +1131,13 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
     # 화구존/전처리존 분리
     sequence_list = select_cooking_zone(sequence_list)
 
-    # put, remove, make 대상격 찾는 함수
+    # remove, make 대상격 찾는 함수
     sequence_list = find_NP_OBJ(node, sequence_list)
  
     # 동작에 딸려오는 부사구 출력
     sequence_list = find_adverb(node, sequence_list)
-    # 숙어
+   
+    # 숙어처리함수
     sequence_list = find_idiom(node, sequence_list)
 
     # 시퀀스 병합
