@@ -1378,7 +1378,9 @@ def parse_node_section(entity_mode, is_srl, node_list):
             else:
                 sub_ingredient_dict = extract_ingredient_from_node(ingredient_type_list, volume_type_list, node)
 
-            print("sub_ingredient_dict : ", sub_ingredient_dict)
+            if next(iter(sub_ingredient_dict)) == "":
+                sub_ingredient_dict = {}
+                
             # 박지연
             # 기본 재료가 모두 식자재 딕셔너리로 들어가는 문제 해결하는 코드
             if sub_ingredient_dict:
@@ -1520,8 +1522,8 @@ def find_sentence(node, sequence_list):
 def main():
     # static params
     open_api_url = "http://aiopen.etri.re.kr:8000/WiseNLU"
-    access_key = "84666b2d-3e04-4342-890c-0db401319568"
-    # access_key = "0714b8fe-21f0-44f9-b6f9-574bf3f4524a"
+    # access_key = "84666b2d-3e04-4342-890c-0db401319568"
+    access_key = "0714b8fe-21f0-44f9-b6f9-574bf3f4524a"
     analysis_code = "SRL"
 
     # recipe extraction
