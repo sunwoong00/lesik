@@ -145,6 +145,7 @@ def find_similarity(src, dst):
     return similarity
 
 
+# tip 혹은 ()로 되어있는 조리 방법 생략
 def delete_bracket(text):
     while "(" in text and ")" in text:
         start = text.find('(')
@@ -197,7 +198,6 @@ def volume_of_act(node, seq_list):
     return seq_list
 
 
-# function
 # 조건문 처리
 def find_condition(node, seq_list):
     for srl in node['SRL']:
@@ -215,7 +215,7 @@ def find_condition(node, seq_list):
                         if node['dependency'][mod]['label'] == 'NP_SBJ':
                             act_plus_sentence = node['dependency'][mod]['text'] + " " + act_plus_sentence
 
-                    # 방선웅 - 조건문의 동사에서 조리시퀀스가 분리되는 것을 방지
+                    # 조건문의 동사에서 조리시퀀스가 분리되는 것을 방지
                     for i in range(0, len(seq_list)-1):
                         word = node['word'][s_word_id]
                         begin = word['begin']
@@ -232,6 +232,7 @@ def find_condition(node, seq_list):
     return seq_list
 
 
+# 관형어 처리 함수
 def find_ingredient_dependency(node, seq_list, is_srl):
     remove_seq_list = []
     ingredient_modifier_dict = {}
@@ -340,10 +341,6 @@ def find_objective(node, seq_list):
     return seq_list
 
 
-
-
-
-# 상상코딩4
 # 화구존, 전처리존 분리
 def select_cooking_zone(sequence_list):
     fire_tool = ["강판","구이판","압력솥","냄비","찜기","압력솥","냄비","찜기","국자","웍","익덕션","가스레인지","가스렌지","전자레인지","전자렌지","그물국자","돌솥","뒤짚개","배기후드","베이킹 스톤","스테인리스 팬","스킬렛","튀김기","후라이팬","프라이팬","팬","밥솥"]
@@ -412,6 +409,7 @@ def verify_etn(node, seq_list):
 
     return seq_list
 
+
 # 대분류, 중분류 동작분류
 def classify(seq_list):
     for sequence in seq_list:
@@ -431,6 +429,7 @@ def classify(seq_list):
             sequence['top_class']="mix"
        
     return seq_list
+
 
 #소분류 규격추가
 def add_standard(node, seq_list):
@@ -692,11 +691,8 @@ def add_standard(node, seq_list):
                                 standard_act=standard_act+","+i
         if standard_act != "":
             sequence['act'] = standard_act + " " + sequence['act']
-               
-        
-         
-    
     return seq_list
+
         
 # remove, make 대상격 찾는 함수
 def find_NP_OBJ(node, seq_list): #지은 수정됨
@@ -745,7 +741,7 @@ def find_NP_OBJ(node, seq_list): #지은 수정됨
                         
     return seq_list
 
-# 상상코딩5
+
 # 동사에 딸려있는 부사구까지 출력 put
 def find_adverb(node, sequence_list): 
     
@@ -794,6 +790,7 @@ def find_adverb(node, sequence_list):
     
     return sequence_list
 
+
 # 숙어처리함수
 # '불을 끄다','모양을 내다'등의 조리동작은 '끄다'에 '불을'을 붙이기
 def find_idiom(node, sequence_list): 
@@ -813,6 +810,8 @@ def find_idiom(node, sequence_list):
                             sequence_list[i]['act'] = node['word'][int(w_ele['id'])]['text'] + " " + sequence_list[i]['act']
     return sequence_list
 
+
+# 현재 시퀀스에 누락된 재료를 보완하는 함수
 def find_omitted_ingredient(node, seq_list, ingredient_dict, mixed_dict):
     critical_type_list = ['ARG0', 'ARG1']
     for sequence in seq_list:
@@ -828,7 +827,7 @@ def find_omitted_ingredient(node, seq_list, ingredient_dict, mixed_dict):
                             for ingredient in mixed_dict.keys():
                                 if ingredient in s_text and ingredient not in sequence['ingre'] and ingredient not in \
                                         sequence['seasoning']:
-                                    sequence['ingre'].append(ingredient) # 박지연 대체 왜 여기로감?? 얘가 시즈닝이면 어쩌려고
+                                    sequence['ingre'].append(ingredient)
     return seq_list
 
 '''
@@ -878,6 +877,8 @@ def remove_redundant_sequence(node, seq_list):
     return seq_list
 '''
 
+
+# co-reference 검증
 def verify_coref(coref_dict, node, word_id):
     word = node['word'][word_id]['text']
     coref_keyword_list = ['밑간', '재료', '소스', '육수', '양념']
@@ -1029,7 +1030,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
                                 sequence['ingre'].remove(ingredient)
 
                             sequence['ingre'].append(ne['text'])
-                    # 박지연
+                    
                     if ne['type'] == 'CV_SEASONING':
                         if ne['text'] not in sequence['seasoning'] and ne['text'] not in sequence['ingre']:
                             sequence['seasoning'].append(ne['text'])
@@ -1102,14 +1103,14 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
         seq_end_offset = len(" ".join(list(map(lambda word: word['text'],
                                                    filter(lambda word: word['begin'] <= sequence['end_id'],
                                                           node['word'])))))'''
-        # 온도 판단 - 선웅 수정
+        # 온도 판단
         for ne in koelectra_node['NE']:
             if ne['type'] == 'QT_TEMPERATURE':
                 for sequence in seq_list:
                     if ne['text'] in sequence['sentence']:
                         sequence['temperature'] = ne['text']
 
-        '''# 시간 판단 - 선웅 수정
+        '''# 시간 판단
         for sequence in seq_list:
             for ne in koelectra_node['NE']:
                 if ne['begin'] >= seq_start_offset and ne['end'] < seq_end_offset:
@@ -1148,7 +1149,8 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
 
     return sequence_list
 
-# 조리 시퀀스 병합 (넣다와 넣다 뒤에 나오는 동사 병합) - 박지연
+
+# 조리 시퀀스 병합 (넣다와 넣다 뒤에 나오는 동사 병합)
 def merge_sequence(sequence_list):
     
     '''
@@ -1230,7 +1232,7 @@ def merge_sequence(sequence_list):
             sequence_list[seq_idx]["top_class"] = sequence_list[seq_idx + 1]["top_class"] # 대분류 update
 
 
-            # merge 하는 시퀀스에 들어있는 재료, 첨가물이 겹칠 때 하나만 처리하게 해주는 코드 - 방선웅
+            # merge 하는 시퀀스에 들어있는 재료, 첨가물이 겹칠 때 하나만 처리하게 해주는 코드
             if 2 <= len(sequence_list[seq_idx]["ingre"]):
                 for i in range(0, len(sequence_list[seq_idx]["ingre"])-2):
                     for j in range(i+1, len(sequence_list[seq_idx]["ingre"])-1):
@@ -1268,7 +1270,6 @@ def extract_ner_from_kobert(sentence):
     return json_object
 
 
-# 박지연 이 코드 이상함
 # 기본 재료에서 재료랑 용량을 매핑하는 코드
 def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
     
@@ -1290,7 +1291,7 @@ def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
 
     '''for ne in node['NE']:
    
-        if ne['type'] in volume_type_list and len(volume_node) == 0: # 선웅 추가 (용량 1가지만 나오게)
+        if ne['type'] in volume_type_list and len(volume_node) == 0: # (용량 1가지만 나오게)
             volume_node.append(ne)
         if ne['type'] in ingredient_type_list:
             if volume_node and ne['begin'] < volume_node[-1]['end']:
@@ -1313,6 +1314,7 @@ def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
         sub_ingredient_dict = {ne['text']: "".join(list(map(lambda v: v, volume_node_list))) for ne in ingredient_list}'''
 
     return sub_ingredient_dict
+
 
 def parse_node_section(entity_mode, is_srl, node_list):
     coref_dict = {}
@@ -1347,12 +1349,10 @@ def parse_node_section(entity_mode, is_srl, node_list):
             if next(iter(sub_ingredient_dict)) == "":
                 sub_ingredient_dict = {}
 
-            # 박지연
             # 기본 재료가 모두 식자재 딕셔너리로 들어가는 문제 해결하는 코드
             if sub_ingredient_dict:
                 if sub_type:
                     coref_dict[sub_type].update(sub_ingredient_dict)
-                    # sub_ingredient_dict 이상함
                     mixed_dict.update(sub_ingredient_dict)
 
         else:
@@ -1372,7 +1372,6 @@ def parse_node_section(entity_mode, is_srl, node_list):
             if not sequence:
                 remove_node_list.append(node)
 
-            # 방선웅-----------수정중--------------
             for seq_dict in sequence:
                 # 기본 재료에 나오는 식자재와 용량 매핑
                 for ingre in seq_dict['ingre']:
@@ -1402,7 +1401,7 @@ def parse_node_section(entity_mode, is_srl, node_list):
                         if flag==0: 
                             seq_dict['volume'].append('')
 
-                #원문 용량 추가 - 선웅
+                #원문에 나와있는 용량 추가
                 hasNumber = lambda stringVal: any(elem.isdigit() for elem in stringVal)
                 for i in range(0, len(node['word'])):
                     flag=0
@@ -1449,8 +1448,7 @@ def parse_node_section(entity_mode, is_srl, node_list):
     return sequence_list
 
 
-
-
+# 원문 문장을 매칭해주는 함수
 def find_sentence(node, sequence_list):
     prev_seq_id = 0
     for i in range(0, len(sequence_list)):
