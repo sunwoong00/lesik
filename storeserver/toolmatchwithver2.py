@@ -4,6 +4,10 @@ import os.path
 import re
 
 
+###############################################################
+#toolmatchwithbverb와 비슷한 로직을 가지고 있기 때문에 코드 변수등 어떤 로직으로 이루어져있는지 확인하고싶으면 toolmatchwithbverb을 확인하기 바람
+###############################################################
+
 #global getmostrecenttool
 #가장 최근에 이루어진 조리도구, 행동 번호를 계속해서 트레킹 하기 위해서 사용
 class counttrackoftoolnum:
