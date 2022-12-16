@@ -28,15 +28,15 @@
 ## 학습 모델
 1. 데이터셋 구성: 국어국립원 모두의 말뭉치(신문, 독백 600만 어절) + 우리의 식탁(482개) + 만개의 레시피(2171개)
 2. 데이터셋 비율: Train:Test = 5393:1348 (문장)
-3. 성능
-                   precision  recall   f1-score  
-  
- CV_INGREDIENT       0.91      0.96      0.93  
-  CV_SEASONING       0.89      0.93      0.91  
-      CV_STATE       0.87      0.94      0.90  
-QT_TEMPERATURE       0.96      0.99      0.97  
-     QT_VOLUME       0.91      0.94      0.93  
-   TI_DURATION       0.97      0.98      0.98  
-  
+3. 성능  
+                    precision  recall  f1-score   
+
+ CV_INGREDIENT    0.91   0.96   0.93      
+ CV_SEASONING    0.89   0.93   0.91      
+    CV_STATE    0.87   0.94   0.90      
+QT_TEMPERATURE    0.96   0.99   0.97       
+   QT_VOLUME    0.91   0.94   0.93       
+  TI_DURATION    0.97   0.98   0.98       
+
 Test Loss: 0.11209947447507428  
 Test Accuracy: 0.972023737294939
