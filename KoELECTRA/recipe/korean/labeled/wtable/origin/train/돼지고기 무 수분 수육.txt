@@ -1,0 +1,7 @@
+1. <사과:CV_INGREDIENT>는 씨를 <제거하:CV_ACT>고 <대파:CV_INGREDIENT>, <양파:CV_INGREDIENT>와 함께 큼직하게 <자르:CV_ACT>고, <마늘:CV_INGREDIENT>과 <생강:CV_INGREDIENT>은 편으로 <썰:CV_ACT>어주세요. 볼에 소스 재료를 <넣:CV_ACT>어 고루 <섞:CV_ACT>어주세요. 
+2. <돼지고기:CV_INGREDIENT>는 3등분으로 <자르:CV_ACT>고 고기 밑간 재료를 겉면에 <발라:CV_ACT> 준비해 주세요.
+3. 바닥이 두툼한 냄비에 <사과:CV_INGREDIENT>와 <양파:CV_INGREDIENT>를 <깔:CV_ACT>고 <돼지고기:CV_INGREDIENT>와 <대파:CV_INGREDIENT>, <마늘:CV_INGREDIENT>, <생강:CV_INGREDIENT>, <통후추:CV_SEASONING>, <월계수잎:CV_SEASONING>, <청주:CV_SEASONING>를 <넣:CV_ACT>고 뚜껑을 닫아 <2분:TI_DURATION> 정도 <익히:CV_ACT>다가 불을 <중약불:QT_TEMPERATURE>로 줄여 <1시간:TI_DURATION> 정도 <익혀:CV_ACT>주세요.
+(tip. 중간에 뚜껑을 열고 <돼지고기:CV_INGREDIENT>를 <뒤집:CV_ACT>어가며 고르게 <익혀:CV_ACT>주세요.)
+
+4. 불을 <끄:CV_ACT>고 뚜껑을 닫은 채로 <20분:TI_DURATION> 정도 뜸을 <들여:CV_ACT>주세요. 
+5. <돼지고기:CV_INGREDIENT>를 먹기 좋게 한 입 크기로 <썰:CV_ACT>고 <소스:CV_SEASONING>를 <곁들여:CV_ACT> 맛있게 즐겨주세요.

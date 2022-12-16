@@ -1,0 +1,7 @@
+1. <소금:CV_SEASONING>에 <절인:CV_STATE> <알배추:CV_INGREDIENT>와 <무:CV_INGREDIENT>를 <소금:CV_SEASONING>에 뒤적여가며 <30분:TI_DURATION> 정도 두고 찬물에 헹궈 물기를 빼주세요.
+2. 볼에 국물 재료를 한데 넣고 잘 섞은 뒤 <소금:CV_SEASONING>이 녹으면 <사과즙:CV_SEASONING>을 부어주세요.
+*Tip1. 시판용 <사과즙:CV_SEASONING>이 없으면 <사과:CV_INGREDIENT>를 강판에 갈아 즙을 만들어 사용해도 좋아요.
+*Tip2. 단맛을 더 내고 싶다면 <스테비아:CV_SEASONING> <1g:QT_VOLUME>을 넣어보세요!
+3. 순서 1과 나머지 재료를 넣고 <국물:CV_SEASONING>을 체에 밭쳐 유리병에 조금씩 부어주세요.
+*Tip, <미나리:CV_INGREDIENT>와 <쪽파:CV_INGREDIENT>는 3cm 길이로 썰기, <무:CV_INGREDIENT>는 나박 썰기, <오이:CV_INGREDIENT>와 <당근:CV_INGREDIENT>은 반달썰기 해주세요!
+4. 완성된 <사과즙나박김치:CV_INGREDIENT>는 실온에 두어 새콤하게 숙성시켜 드시거나 냉장고에 넣어 시원하게 드셔도 좋아요.

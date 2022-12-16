@@ -1,0 +1,4 @@
+1. <오이:CV_INGREDIENT>를 깨끗이 씻어 꽃소금에 문질러 가시를 제거해주세요. <오이:CV_INGREDIENT>의 양쪽 끝을 자르고 3~4등분 한 후 밑동을 1cm가량 남기고, 열십자 모양으로 칼집을 내주세요.
+2. 큰 볼에 오이 절임 재료를 섞고, <오이:CV_INGREDIENT>를 넣어 <1시간:TI_DURATION> 정도 절여주세요. <절인:CV_STATE> <오이:CV_INGREDIENT>는 물에 씻지 않고 그대로 체에 밭쳐 둔 후, 물기를 꽉 짜주세요.
+3. <부추:CV_INGREDIENT>, <파프리카:CV_INGREDIENT>, <양파:CV_INGREDIENT>를 4cm 길이로 채썰어주세요. <새우젓:CV_SEASONING>은 잘게 다져 큰 볼에 양념재료와 함께 고루 섞어 <양념장:CV_SEASONING>을 만들고, 썰어 놓은 재료를 <양념장:CV_SEASONING>에 살살 버무려 <양념소:CV_SEASONING>를 만들어주세요.
+4. <절인:CV_STATE> <오이:CV_INGREDIENT> 안에 <양념소:CV_INGREDIENT>를 고루 채워주세요. <남은:CV_STATE> <양념:CV_SEASONING>은 <오이:CV_INGREDIENT>의 겉에 발라준 후, 실온에 <반나절:TI_DURATION> 숙성시키고 냉장에 넣어드세요.

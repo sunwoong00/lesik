@@ -1,0 +1,5 @@
+1. <두부:CV_INGREDIENT>는 직경 2cm 크기로 썰고, 키친타월에 올려 물기를 제거해 주세요.
+2. <브로콜리:CV_INGREDIENT>는 먹기 좋게 잘라주세요. 끓는 물에 <소금:CV_SEASONING>을 약간 넣고 <브로콜리:CV_INGREDIENT>를 <1분:TI_DURATION>간 데쳐주세요.
+3. 달군 팬에 <기름:CV_SEASONING>을 두르고 <두부:CV_INGREDIENT>를 넣어 튀기듯 구운 후 접시에 덜어주세요.
+4. 팬에 <브로콜리:CV_INGREDIENT>를 넣어 볶다가 양념을 넣고 <구워둔:CV_STATE> <두부:CV_INGREDIENT>를 넣어 섞어주세요.
+5. <현미밥:CV_INGREDIENT>에 완성된 <두부 브로콜리 볶음:CV_INGREDIENT>을 얹고 기호에 따라 <통깨:CV_SEASONING>, <슬라이스 아몬드:CV_SEASONING> 등을 뿌려 맛있게 즐겨주세요.

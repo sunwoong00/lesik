@@ -1,0 +1,6 @@
+1. <쇠고기:CV_INGREDIENT>는 칼끝으로 칼집을 <넣:CV_ACT>고 적당한 크기로 <잘라:CV_ACT> 밑간재료에 <10분:TI_DURATION> 정도 <재워:CV_ACT>주세요. <표고버섯:CV_INGREDIENT>과 <미니 새송이 버섯:CV_INGREDIENT>은 먹기 좋은 두께로 <썰:CV_ACT>어주세요.
+2. <관자살:CV_INGREDIENT>에 붙어있는 날개부분과 내장을 <분리한:CV_ACT> 후 내장은 <제거하:CV_ACT>고 <관자살:CV_INGREDIENT>의 곁면을 둘러 싸고 있는 얇은 막을 <벗겨:CV_ACT>주세요.
+3. <관자살:CV_INGREDIENT>을 <소금물:CV_SEASONING>에 <흔들:CV_ACT>어 <씻:CV_ACT>은 후 물기를 <제거하:CV_ACT>고 0.3센치 두께로 <썰:CV_ACT>어주세요. (관자의 날개부분과 꼭지부분은 소금물에 <흔들:CV_ACT>어 <씻:CV_ACT>은 후 적당한 크기로 <잘라:CV_ACT> 찌개와 국에 이용하시면 좋답니다.)
+4. 달군 그릴팬에 <올리브유:CV_SEASONING>를 <두르:CV_ACT>고 <쇠고기:CV_INGREDIENT>를 <올린:CV_ACT> 후 앞 뒤로 익을 때까지 <굽:CV_ACT>고 <표고버섯:CV_INGREDIENT>, <미니 새송이 버섯:CV_INGREDIENT>, <관자:CV_INGREDIENT>를 <올리:CV_ACT>고 약간의 <소금:CV_SEASONING>, <후춧가루:CV_SEASONING>를 <뿌려:CV_ACT> <구워:CV_ACT>주세요.
+5. 접시에 <구운:CV_STATE> <쇠고기:CV_INGREDIENT>와 <관자:CV_INGREDIENT>, <표고버섯:CV_INGREDIENT>을 <담:CV_ACT>고 <명이나물:CV_INGREDIENT>을 <곁들여:CV_ACT> 주세요. 
+(기호에 따라 <명이나물:CV_INGREDIENT> 또는 <장아찌:CV_INGREDIENT>, <묵은지:CV_INGREDIENT> 등을 <곁들여:CV_ACT> 드셔도 맛있답니다.)

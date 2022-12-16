@@ -1,0 +1,4 @@
+1. <무:CV_INGREDIENT>는 껍질을 벗기고, 7센치 정도 길이로 썰어주세요. <토막낸:CV_STATE> <무:CV_INGREDIENT>를 세워 동그란면이 위로 향하게 놓고, 0.3센치 정도 두께로 편을 썰어주세요. <편으로 썬:CV_STATE> <무:CV_INGREDIENT>를 결방향으로 놓고 채썰어 주세요. (결방향으로 썰면 <무채:CV_INGREDIENT>가 끊어지지 않는답니다.) 
+2. 볼에 <무채:CV_INGREDIENT>와 <고춧가루:CV_SEASONING>를 넣고 버무려 <10분:TI_DURATION> 정도 <고춧가루물:CV_SEASONING>을 들여주세요. 
+3. <고춧가루에 물들인:CV_STATE> <무채:CV_INGREDIENT>에 양념재료를 넣고 조물조물 버무려주세요.
+4. 접시에 <무생채:CV_INGREDIENT>를 담고, <송송 썬:CV_STATE> <실파:CV_SEASONING>와 <통깨:CV_SEASONING>를 뿌려주세요.

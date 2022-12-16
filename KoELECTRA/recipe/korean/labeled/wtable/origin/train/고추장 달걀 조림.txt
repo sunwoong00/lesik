@@ -1,0 +1,16 @@
+1. 냄비에 <달걀:CV_INGREDIENT>이 잠길 정도의 <물:CV_SEASONING>을 <부어:CV_ACT>준 후 <소금:CV_SEASONING>과 <식초:CV_SEASONING>, <달걀:CV_INGREDIENT>을 <넣:CV_ACT>어 약 <15분:TI_DURATION> 정도 <삶:CV_ACT>아주세요. <삶아진:CV_STATE> <달걀:CV_INGREDIENT>은 찬물에 <담갔:CV_ACT>다가 껍질을 <벗겨:CV_ACT>주세요. 
+
+(실온 상태의 <달걀:CV_INGREDIENT>을 사용해야 <달걀:CV_INGREDIENT>이 터지지 않도록 <삶:CV_ACT>을 수 있어요)
+
+(<소금:CV_SEASONING>은 달걀 껍데기가 잘 벗겨지게 해주는 역할을 하며 <식초:CV_SEASONING>는 <달걀:CV_INGREDIENT>이 깨졌을 때 바로 응고시키는 역할을 한답니다)
+
+2. 볼에 <소스 양념:CV_SEASONING>을 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+
+3. <양파:CV_INGREDIENT>는 껍질을 벗긴 후 채를 <썰:CV_ACT>고 <쪽파:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요. <꽈리고추:CV_INGREDIENT>는 <양념:CV_SEASONING>이 잘 밸 수 있도록 가운데에 칼집을 <넣:CV_ACT>어주세요.
+
+4. 냄비에 <멸치육수:CV_SEASONING>를 <넣:CV_ACT>은 후 <양념:CV_SEASONING>을 <넣:CV_ACT>어 끓으면 <양파:CV_INGREDIENT>와 <꽈리고추:CV_INGREDIENT>, <달걀:CV_INGREDIENT>을 <넣:CV_ACT>어 <끓:CV_ACT>여주세요.
+
+5. 국물이 자작해질 때까지 <8분:TI_DURATION> 정도 <달걀:CV_INGREDIENT>에 <국물:CV_SEASONING>을 <끼얹:CV_ACT>어가며 <익혀:CV_ACT>주세요.
+
+6. 접시에 <담:CV_ACT>은 후 <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>, <쪽파:CV_SEASONING>를 <뿌려:CV_ACT> 맛있게 즐겨주세요.
+

@@ -1,0 +1,8 @@
+1. <두릅:CV_INGREDIENT>은 밑동을 <잘라내:CV_ACT>고 겉껍질을 <제거해:CV_ACT>주세요. 줄기의 잔가시를 <제거한:CV_ACT> 후 물에 <씻:CV_ACT>어 주세요.
+2. <소고기:CV_INGREDIENT>는 키친타월에 <올려:CV_ACT> 핏물을 <제거한:CV_ACT> 후 밑간 재료를 골고루 <발라:CV_ACT>주세요. 양념재료는 잘 <섞:CV_ACT>어주세요.
+3. 끓는 물에 <소금:CV_SEASONING> <1작은술:QT_VOLUME>을 <넣:CV_ACT>고 <두릅:CV_INGREDIENT>을 줄기 부터 <넣:CV_ACT>어 <30초:TI_DURATION> 정도 <데쳐:CV_ACT>세요. <데친:CV_STATE> <두릅:CV_INGREDIENT>은 찬물에 <헹궈:CV_ACT> 채반에서 물기를 <빼:CV_ACT>주세요.
+4. <소고기:CV_INGREDIENT>에 <전분:CV_SEASONING>을 약간 <뿌린:CV_ACT> 후 <데친:CV_STATE> <두릅:CV_INGREDIENT>을 <넣:CV_ACT>어 돌돌 <말:CV_ACT>아주세요.
+5. 달군 팬에 <기름:CV_SEASONING>을 약간 <두른:CV_ACT> 후 <소고기:CV_INGREDIENT>의 이음새 부분이 아래로 가도록 <올려:CV_ACT> 노릇하게 <구워:CV_ACT>주세요.
+6. 두릅을 구운 팬에 양념 재료를 <넣:CV_ACT>고 끓어오르면 <구워둔:CV_STATE> <두릅 소고기 말이:CV_INGREDIENT>를 <넣:CV_ACT>어 <졸여:CV_ACT>주세요.
+7. 완성된 <두릅 소고기 말이:CV_INGREDIENT>를 접시에 <담:CV_ACT>고 <고명:CV_SEASONING>을 <올려:CV_ACT> 장식한 후 맛있게 즐겨주세요.
+

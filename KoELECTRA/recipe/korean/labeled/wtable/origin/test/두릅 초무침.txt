@@ -1,0 +1,6 @@
+1. <두릅:CV_INGREDIENT> 밑동의 겉껍질을 <떼어내:CV_ACT>어 <두릅:CV_INGREDIENT>을 <손질해:CV_ACT> 주세요.
+2. 끓는 물에 <소금:CV_SEASONING>을 <넣:CV_ACT>고 <두릅:CV_INGREDIENT>을 <15~30초:TI_DURATION> 정도 <데친:CV_ACT> 후 찬물에 <헹구:CV_ACT>어 물기를 꽉 <짜:CV_ACT>주세요.
+3. <대파:CV_INGREDIENT>와 <청홍고추:CV_INGREDIENT>는 얇게 송송 <썰:CV_ACT>어주세요. <두꺼운:CV_STATE> <두릅:CV_INGREDIENT>은 반으로 <가르:CV_ACT>고 6cm 길이로 <잘라:CV_ACT>주세요.
+4. 볼에 양념 재료를 <섞:CV_ACT>어주세요.
+5. <데친:CV_STATE> <두릅:CV_INGREDIENT>과 <대파:CV_INGREDIENT>, <청홍고추:CV_INGREDIENT>를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요. 마지막에 <참기름:CV_SEASONING>을 <넣:CV_ACT>어 가볍게 <섞:CV_ACT>어주세요.
+6. 접시에 <담:CV_ACT>은 후 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 완성해 주세요.

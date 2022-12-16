@@ -1,0 +1,7 @@
+1. <낙지:CV_INGREDIENT>는 내장과 먹물을 <뺀:CV_ACT> 후 <굵은:CV_STATE> <소금:CV_SEASONING>과 <밀가루:CV_SEASONING>로 바락바락 <문질러:CV_ACT> <씻:CV_ACT>은 다음 약간의 소금을 넣은 끓는 물에 살짝 <데쳐:CV_ACT>주세요.
+2. <데친:CV_STATE> <낙지:CV_INGREDIENT>는 <양념:CV_SEASONING>이 잘 베어들 수 있게 빨판 뒤쪽에 가로로 칼집을 <넣:CV_ACT>고 6센치 길이로 <잘라:CV_ACT>주세요.
+3. <느타리버섯:CV_INGREDIENT>은 끓는 물에 살짝 <데쳐:CV_ACT> 찬물에 <헹궈:CV_ACT> 물기를 <제거하:CV_ACT>고 <꽈리고추:CV_INGREDIENT>는 <양념:CV_SEASONING>이 잘 <밸:CV_ACT> 수 있도록 꼬치로 구멍을 2~3군데 <뚫:CV_ACT>어 준비해주세요. 볼에 양념장 재료를 <넣:CV_ACT>어 고루 <섞:CV_ACT>어주세요.
+(tip 기호에 따라 <꽈리고추:CV_INGREDIENT> 대신 <쪽파:CV_INGREDIENT>를 사용해서 만드셔도 돼요.)
+4. <낙지:CV_INGREDIENT>-<느타리버섯:CV_INGREDIENT>-<꽈리고추:CV_INGREDIENT>-<낙지:CV_INGREDIENT> 순으로 두 번 반복해서 꼬치에 꿰어 <양념장:CV_SEASONING>을 앞 뒤로 골고루 <발라:CV_ACT>주세요.
+5. 달군 팬에 약간의 <식용유:CV_SEASONING>를 <두르:CV_ACT>고 <낙지꼬치:CV_INGREDIENT>를 <올려:CV_ACT> <중약불:QT_TEMPERATURE>로 <굽:CV_ACT>다가 <양념:CV_SEASONING>을 앞 뒤로 <덧발라:CV_ACT> 가며 <구워:CV_ACT>주세요.
+6. 뾰죡한 꼬치 양쪽 끝을 <자른:CV_ACT> 후 접시에 <낙지 꼬치구이:CV_INGREDIENT>를 <담:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.

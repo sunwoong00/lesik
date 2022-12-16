@@ -1,0 +1,12 @@
+1. <두부:CV_INGREDIENT>는 1cm 두께로 썰어 키친타월에 올려 물기를 뺀 후 <소금:CV_SEASONING>, <후추:CV_SEASONING>를 뿌려 간을 해주세요. <버섯:CV_INGREDIENT>은 적당한 두께로 썰어주세요.
+2. <세척한:CV_STATE> <파프리카:CV_INGREDIENT>는 적당한 두께로 채를 썰어 주세요. 볼에 양념장 재료를 넣고 섞어주세요.
+3. 볼에 <묵은지:CV_INGREDIENT>와 <비건 마요네즈:CV_SEASONING>, <통깨:CV_SEASONING> <1큰술:QT_VOLUME>, <올리고당:CV_SEASONING> <1작은술:QT_VOLUME>을 넣어 섞어주세요.
+(tip. <통깨:CV_SEASONING>를 부숴 넣으면 더욱 고소해요)
+4. <두부:CV_INGREDIENT>의 겉면에 <전분:CV_SEASONING>을 입혀주세요. 달군 팬에 <기름:CV_SEASONING>을 약간 두른 후 <두부:CV_INGREDIENT>와 <버섯:CV_INGREDIENT>을 넣고 노릇하게 구워주세요. <구운:CV_STATE> <두부:CV_INGREDIENT>와 <버섯:CV_INGREDIENT>에 만들어둔 <양념장:CV_SEASONING>을 넣어 졸여주세요.
+5. <현미밥:CV_INGREDIENT>에 <소금:CV_SEASONING> ½작은술, 식초½ <큰술:CV_SEASONING>을 넣어 골고루 섞어주세요.
+6. 가위로 <김:CV_INGREDIENT> 중앙까지 잘라 주세요. 4면에 <상추:CV_INGREDIENT>와 <두부:CV_INGREDIENT>, <상추:CV_INGREDIENT>와 <당근:CV_INGREDIENT>, <밥:CV_INGREDIENT>을 얇게 펼쳐 넣고 <버섯:CV_INGREDIENT>을 올린 후 시계방향으로 접어주세요.
+7. 김에 <상추:CV_INGREDIENT>와 <적양배추:CV_INGREDIENT> <피클:CV_INGREDIENT>, <상추:CV_INGREDIENT>와 <파프리카:CV_INGREDIENT>, <현미밥:CV_INGREDIENT>을 얇게 펼쳐 넣고 <묵은지 마요:CV_SEASONING>를 올린 후 시계방향으로 접어주세요.
+(tip. 김의 끝부분까지 재료가 들어가야 잘랐을 때 모양이 예뻐요)
+8. 랩으로 감싸 반으로 자른 후 맛있게 즐겨주세요.
+(tip. 랩을 최대한 단단하게 감싸면 내용물이 흘러내리지 않아 먹기 편리해요)
+(tip. 글래드 매직 랩을 사용했어요)

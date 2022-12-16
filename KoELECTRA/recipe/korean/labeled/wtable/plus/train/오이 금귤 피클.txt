@@ -1,0 +1,7 @@
+1. 냄비에 유리병을 거꾸로 세워 넣고 찬물부터 끓여 열탕 소독한 후 건조시켜주세요. 
+2. <오이:CV_INGREDIENT>와 <금귤:CV_INGREDIENT>은 베이킹소다를 풀은 물에 담가 소금으로 비벼 씻은 후 물에 헹궈 깨끗이 씻어 물기를 제거해주세요.
+3. <금귤:CV_INGREDIENT>은 꼭지를 떼고 반으로 잘라 씨를 빼고 <오이:CV_INGREDIENT>는 한 입 크기로 잘라주세요.
+4. 냄비에 <피클주스:CV_SEASONING> 재료를 넣고 끓이다가 <설탕:CV_SEASONING>과 <소금:CV_SEASONING>이 녹으면 마지막에 <화이트 발사믹식초:CV_SEASONING>를 넣어 살짝 끓여주세요.
+5. 소독한 유리병에 <오이:CV_INGREDIENT>와 <금귤:CV_INGREDIENT>, <딜:CV_INGREDIENT>을 넣고 <끓인:CV_STATE> <피클주스:CV_SEASONING>의 <피클링:CV_SEASONING> <스파이스:CV_SEASONING>를 걸러낸 후 뜨거울 때 부어주세요. 
+6. 한 김 식힌 후 뚜껑을 닫아 냉장보관해주세요. 
+(tip <오이 피클:CV_INGREDIENT>을 담근 후 <2~3일:TI_DURATION> 숙성 후 맛있게 즐겨주세요.)

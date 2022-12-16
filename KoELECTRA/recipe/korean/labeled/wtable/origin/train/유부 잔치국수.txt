@@ -1,0 +1,10 @@
+1. <채수:CV_SEASONING>에 국물 양념 재료와 <유부:CV_INGREDIENT>를 <넣:CV_ACT>고 한소끔 <끓여:CV_ACT> 주세요. 
+(채수를 내고 남은 <표고버섯:CV_INGREDIENT>은 채를 <썰:CV_ACT>어 <고명:CV_SEASONING>에 사용해도 좋아요)
+(<채수:CV_SEASONING>는 국물의 깊은 맛을 내줘요. 채수가 없다면 <다시마:CV_SEASONING>와 <표고를 끓인:CV_STATE> <물:CV_SEASONING>로 대체해 보세요)
+2. <깨끗이 씻은:CV_STATE> <미나리:CV_INGREDIENT>는 끓는 물에 <3분:TI_DURATION>간 <데친:CV_ACT> 후 찬물에 <헹궈:CV_ACT> 물기를 <짜:CV_ACT>주세요.
+3. <청,홍고추:CV_INGREDIENT>와 <양파:CV_INGREDIENT>는 송송<썰:CV_ACT>고 <당근:CV_INGREDIENT>은 채를 <썰:CV_ACT>어주세요. <데친:CV_STATE> <미나리:CV_INGREDIENT>는 4cm 길이로 <썰:CV_ACT>어주세요.
+4. 달군 팬에 <기름:CV_SEASONING>을 <두르:CV_ACT>고 <채를 썬:CV_STATE> <당근:CV_INGREDIENT>에 <소금:CV_SEASONING> 약간 <넣:CV_ACT>어 <볶:CV_ACT>아주세요.
+5. <끓는:CV_STATE> <물:CV_SEASONING>에 <소면:CV_INGREDIENT>을 <펼쳐:CV_ACT> <넣:CV_ACT>고 물이 끓어오르면 2~3번 <찬물:CV_SEASONING>을 <넣:CV_ACT>어 <국수:CV_INGREDIENT>를 <삶:CV_ACT>고 찬물에 <헹궈:CV_ACT> <사리:CV_INGREDIENT>를 <지어:CV_ACT>주세요.
+6. <송송 썬:CV_STATE> <고추:CV_INGREDIENT>와 <양파:CV_INGREDIENT>에 양념 간장 재료를 <섞:CV_ACT>어 <양념장:CV_SEASONING>을 <만들:CV_ACT>어주세요.
+7. <국수 사리:CV_INGREDIENT>를 그릇에 <담:CV_ACT>고 <미나리:CV_INGREDIENT>와 <당근:CV_INGREDIENT>, <양념장:CV_SEASONING>을 <올리:CV_ACT>고 <국물:CV_SEASONING>을 <부어:CV_ACT>주세요
+(기호에 따라 <김가루:CV_SEASONING>나 <송송 썬:CV_STATE> <김치:CV_INGREDIENT>를 <올려:CV_ACT> 먹어도 좋아요)

@@ -1,0 +1,4 @@
+1. <손질한:CV_STATE> <섬초:CV_INGREDIENT>를 살짝 <데친:CV_ACT> 뒤 3~4등분으로 <썰:CV_ACT>어 주세요.
+2. <멸치·다시마 육수:CV_SEASONING>에 <된장:CV_SEASONING>을 <풀:CV_ACT>어서 <넣:CV_ACT>고 <강불:QT_TEMPERATURE>에서 <5~6분:TI_DURATION>간 <끓여:CV_ACT>주세요.
+3. <섬초:CV_INGREDIENT>, <다진:CV_STATE> <마늘:CV_SEASONING>, <어슷하게 썬:CV_STATE> <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>고 <중약불:QT_TEMPERATURE>에서 <5분:TI_DURATION> 더 <끓여:CV_ACT>주세요.
+4. <섬초:CV_INGREDIENT>와 <된장:CV_SEASONING>이 잘 우러난 <국물:CV_SEASONING>에 <밥:CV_INGREDIENT>과 <김치:CV_INGREDIENT>를 <곁들이:CV_ACT>면 그 자체로 훌륭한 한 상의 완성이예요!

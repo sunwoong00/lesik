@@ -1,0 +1,7 @@
+1. 볼에 양념재료를 <넣:CV_ACT>어 <섞:CV_ACT>은 후 <돼지고기:CV_INGREDIENT>를 <넣:CV_ACT>고 <주물러:CV_ACT> <10분:TI_DURATION> 정도 <재워:CV_ACT>주세요.
+2. <양파:CV_INGREDIENT>는 굵게 <채썰:CV_ACT>고, <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요. <콩나물:CV_INGREDIENT>은 <다듬:CV_ACT>어 깨끗이 <씻:CV_ACT>어 주세요.
+(마지막에 토핑으로 올릴 <대파:CV_INGREDIENT>는 얇게 <채썰:CV_ACT>어 찬물에 <10분:TI_DURATION> 정도 <담가:CV_ACT> 매운맛을 <뺀:CV_ACT> 후 물기를 <제거해:CV_ACT>주세요.)
+
+3. 팬에 약간의 <기름:CV_SEASONING>을 <두르:CV_ACT>고, <양념한:CV_STATE> <돼지고기:CV_INGREDIENT>와 <양파:CV_INGREDIENT>를 <넣:CV_ACT>고 <볶:CV_ACT>아주세요.
+4. <돼지고기:CV_INGREDIENT>가 익으면 <콩나물:CV_INGREDIENT>과 <대파:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>어 콩나물의 비린내가 나지 않을 때까지 <볶:CV_ACT>다가 마지막에 <참기름:CV_SEASONING>을 <넣:CV_ACT>고 불을 <꺼:CV_ACT>주세요.
+5. 접시에 <콩나물불고기:CV_INGREDIENT>를 <담:CV_ACT>고 <파채:CV_SEASONING>와 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.

@@ -1,0 +1,5 @@
+1. <참치캔:CV_INGREDIENT>은 <기름:CV_SEASONING>을 뺴고, <양파:CV_INGREDIENT>는 잘게 다져주세요.
+(<참치:CV_INGREDIENT>와 <양파:CV_INGREDIENT>의 비율은 1:1이 좋아요)
+2. 볼에 <참치:CV_INGREDIENT>와 <양파:CV_INGREDIENT>, 양념 재료를 넣은 후 잘 섞어주세요.
+3. <양배추:CV_INGREDIENT> 심지는 제거하고, 잎의 두꺼운 부분은 포를 뜨듯 잘라낸 후 찜기에 올려 <7~10분간:TI_DURATION> 쪄주세요.
+4. <삶아진:CV_STATE> <양배추:CV_INGREDIENT>에 <밥:CV_INGREDIENT>과 <참치장:CV_SEASONING>을 넣어 <쌈:CV_INGREDIENT>으로 드시거나, <쌈채소:CV_INGREDIENT>에 곁들여 드시면 맛있게 즐기실 수 있어요.

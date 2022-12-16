@@ -1,0 +1,11 @@
+1. 깨끗이 씻은 <당근:CV_INGREDIENT>과 <우엉:CV_INGREDIENT>은 껍질을 <벗긴:CV_ACT> 후 가늘게 <채썰:CV_ACT>고, <오이:CV_INGREDIENT>도 <채썰:CV_ACT>어 주세요. <오이고추:CV_INGREDIENT>는 꼭지를 <자르:CV_ACT>고 반으로 <갈라:CV_ACT> 씨앗을 <제거하:CV_ACT>고 4등분으로 <잘라:CV_ACT>주세요.
+2. 달군 팬에 <기름:CV_SEASONING>을 <두르:CV_ACT>고 <당근:CV_INGREDIENT>에 <소금:CV_SEASONING>을 약간 <뿌린:CV_ACT> 후 <볶:CV_ACT>아 접시에 <덜:CV_ACT>어주세요. <우엉:CV_INGREDIENT>의 숨이 죽을 때까지 <볶:CV_ACT>다가 우엉조림 재료를 <넣:CV_ACT>어 물기가 없어질 때까지 <졸여:CV_ACT>주세요. 
+3. 볼에 <밥:CV_INGREDIENT>과 밥 양념 재료를 <넣:CV_ACT>어 골고루 <섞:CV_ACT>어주세요. 볼에 <쌈장 양념 재료:CV_SEASONING>를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+4. 달군 팬에 <삼겹살:CV_INGREDIENT>을 <올린:CV_ACT> 후 <소금:CV_SEASONING>, <후춧가루:CV_SEASONING>로 간을 <맞춰:CV_ACT> 노릇하게 <구워:CV_ACT>주세요.
+5. 김발에 <김:CV_INGREDIENT>을 <올리:CV_ACT>고 <밥:CV_INGREDIENT>을 고르게 <편:CV_ACT> 후 <청상추:CV_INGREDIENT>와 <깻잎:CV_INGREDIENT>을 <깔:CV_ACT>아주세요. <삼겹살:CV_INGREDIENT>과 준비한 재료, <쌈장:CV_SEASONING>을 <넣:CV_ACT>은 후 <김밥:CV_INGREDIENT>을 단단하게 <말:CV_ACT>아주세요.
+(기호에 따라 씻은 <묵은지:CV_INGREDIENT>, <쌈무:CV_INGREDIENT>, 구운 <마늘:CV_INGREDIENT> 등의 <재료:CV_SEASONING>를 추가로 <넣:CV_ACT>어 만들어 드셔도 맛있게 드실 수 있어요.)
+(tip. <쌈장:CV_SEASONING>은 소스통이나 짤주머니에 <넣:CV_ACT>어 사용하면 깔끔하게 넣을 수 있어요.)
+
+6. <삼겹살 김밥:CV_INGREDIENT>에 <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 <뿌린:CV_ACT> 후 먹기 좋은 크기로 <잘라:CV_ACT> 맛있게 즐겨주세요.
+(따뜻할 때 드시는 것이 더욱 맛있어요.)
+

@@ -1,0 +1,8 @@
+1. <쇠고기:CV_INGREDIENT>는 고기 양념 재료를 <넣:CV_ACT>어 <10분:TI_DURATION> 정도 <밑간해:CV_ACT> 주세요.
+(<당면:CV_INGREDIENT>은 찬물에 <담가:CV_ACT> <20분:TI_DURATION> 정도 <불려:CV_ACT>주세요.)
+2. <배추:CV_INGREDIENT>는 한입 크기로 <자르:CV_ACT>고 <느타리버섯:CV_INGREDIENT>은 먹기 좋게 가닥가닥 <찢:CV_ACT>어내어 준비해 주세요. <대파:CV_INGREDIENT>는 얇게 채를 <썰:CV_ACT>고, <부추:CV_INGREDIENT>는 6cm 길이로 <썰:CV_ACT>어주세요. <팽이버섯:CV_INGREDIENT>은 밑동을 <제거하:CV_ACT>고 <표고버섯:CV_INGREDIENT>과 <양파:CV_INGREDIENT>는 채를 <썰:CV_ACT>어 주세요.
+3. 전골냄비에 <배추:CV_INGREDIENT>와  <양파:CV_INGREDIENT>, <느타리버섯:CV_INGREDIENT>, <표고버섯:CV_INGREDIENT>을 돌려 <담:CV_ACT>은 후 가운데 <당면:CV_INGREDIENT>과 <쇠고기:CV_INGREDIENT>를 <얹:CV_ACT>어주세요.
+4. <다시마 육수:CV_SEASONING>와 국물 양념 재료를 <넣:CV_ACT>어 <끓여:CV_ACT>주세요.
+(tip <쇠고기:CV_INGREDIENT>가 뭉치지 않게 <풀:CV_ACT>고 끓이면서 생기는 거품을 <걷:CV_ACT>어주세요.)
+5. <쇠고기:CV_INGREDIENT>가 반쯤 익으면 <대파 채:CV_INGREDIENT>와 <부추:CV_INGREDIENT>와 <팽이버섯:CV_INGREDIENT>을 <올리:CV_ACT>고 한소끔 <끓인:CV_ACT> 후 맛있게 즐겨주세요.
+(tip 부족한 간은 구운 <소금:CV_SEASONING>을 <가감해:CV_ACT>서 간을 <맞혀:CV_ACT>주세요.)

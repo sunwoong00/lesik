@@ -1,0 +1,4 @@
+1. <표고버섯:CV_INGREDIENT>은 밑동 부분을 <제거한:CV_ACT> 후 0.5cm두께로 <슬라이스해:CV_ACT>주세요. <양파:CV_INGREDIENT>와 <당근:CV_INGREDIENT>은 <채썰:CV_ACT>고, <청양고추:CV_INGREDIENT>는 <어슷썰:CV_ACT>어주세요.
+2. 달군 팬에 <오일:CV_SEASONING>을 <두르:CV_ACT>고 <다진:CV_STATE><마늘:CV_INGREDIENT>과 <양파:CV_INGREDIENT>, <당근:CV_INGREDIENT>을 <볶:CV_ACT>다가, <양파:CV_INGREDIENT>가 투명해지면 <표고버섯:CV_INGREDIENT>을 <넣:CV_ACT>어 약 <3~4분:TI_DURATION> 같이 <볶:CV_ACT>아주세요
+3. <버섯볶음:CV_INGREDIENT>에 양념재료와 <청양고추:CV_INGREDIENT>를 <넣:CV_ACT>어 살짝 <볶:CV_ACT>아주세요. 불을 끄고 <참기름:CV_SEASONING>을 <둘러:CV_ACT>주세요. 
+4. 접시에 보기 좋게 담은 후 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 마무리해주세요.

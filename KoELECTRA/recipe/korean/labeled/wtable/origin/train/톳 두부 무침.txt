@@ -1,0 +1,7 @@
+1. <톳:CV_INGREDIENT>은 깨끗이 <씻:CV_ACT>어 불순물을 <제거해:CV_ACT>주세요. 끓는 물에 약간의 <소금:CV_SEASONING>과 <톳:CV_SEASONING>을 <넣:CV_ACT>은 후 색깔이 녹색으로 변하면 건져 내 찬물에 <헹궈:CV_ACT> 물기를 <빼:CV_ACT>주세요. 
+2. <데친:CV_STATE> <톳:CV_INGREDIENT>은 3~4cm 정도의 길이로 <자르:CV_ACT>고 <홍고추:CV_INGREDIENT>는 씨를 <뺀:CV_ACT> 후 2cm 길이로 얇게 채를 <썰:CV_ACT>어주세요. <쪽파:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요.
+3. <두부:CV_INGREDIENT>는 칼을 눕혀가며 <으깬:CV_ACT> 후 면 보자기에 <넣:CV_ACT>어 물기를 꼭 <짜:CV_ACT>주세요.
+4. 잔 <새우:CV_INGREDIENT>는 체에 <넣:CV_ACT>고 <흔들:CV_ACT>어 이물질을 <제거하:CV_ACT>고 마른 팬에 <볶:CV_ACT>아주세요.
+5. 볼에 <두부:CV_INGREDIENT>와 <톳:CV_INGREDIENT>, 양념재료를 <넣:CV_ACT>어 골고루 <섞:CV_ACT>고 <볶은:CV_STATE> <잔새우:CV_INGREDIENT>와 <쪽파:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>어 가볍게 <섞:CV_ACT>어주세요.
+(tip. 부족한 간은 기호에 따라 <소금:CV_SEASONING> 또는 <간장:CV_SEASONING>을 <가감해:CV_ACT>서 조절해 주세요.)
+6. 접시에 <톳나물 무침:CV_INGREDIENT>을 <담:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 맛있게 즐겨주세요.

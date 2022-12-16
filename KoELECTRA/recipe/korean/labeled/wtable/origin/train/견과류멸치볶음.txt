@@ -1,0 +1,4 @@
+1. <잔멸치:CV_INGREDIENT>는 굵은 체에 <담:CV_ACT>고 <흔들:CV_ACT>어 잔가루를 <제거해:CV_ACT>주세요.
+2. 마른팬에 <잔멸치:CV_INGREDIENT>와 <모듬견과류:CV_INGREDIENT>를 <넣:CV_ACT>고, <중약불:QT_TEMPERATURE>에서 <5~6분:TI_DURATION> 정도 바삭하게 <볶:CV_ACT>아주세요.
+3. 새로 달군 팬에 간장양념을 <넣:CV_ACT>고, <양념:CV_SEASONING>이 바글바글 <끓:CV_ACT>으면 불을 <약한불:QT_TEMPERATURE>로 <줄여:CV_ACT>주세요. <잔멸치:CV_INGREDIENT>와 <모듬견과류:CV_INGREDIENT>를 <넣:CV_ACT>고 빠르게 <섞:CV_ACT>은 후, 불을 <꺼:CV_ACT>주세요.
+4. <견과류멸치볶음:CV_INGREDIENT>에 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 마무리해 주세요.

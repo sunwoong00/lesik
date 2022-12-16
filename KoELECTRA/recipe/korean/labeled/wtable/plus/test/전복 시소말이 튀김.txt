@@ -1,0 +1,12 @@
+1. <전복:CV_INGREDIENT>은 깨끗이 손질하고 껍질에서 분리한 다음 쓸개 부분을 제거하고 내장과 살을 분리해 주세요. <손질된:CV_STATE> <전복:CV_INGREDIENT>에 시소를 붙이고 박력분을 바르고 말아 이쑤시개로 꽂아 줍니다. 내장은 그대로 박력분만 묻혀주세요.
+2. 달걀물에 <박력분:CV_INGREDIENT>을 넣어 <튀김 반죽:CV_INGREDIENT>을 만들고 순서 1에 묻혀주세요.
+*달걀물
+재료 : <물:CV_SEASONING> <5컵:QT_VOLUME>(<900ml:QT_VOLUME>), <달걀:CV_INGREDIENT> <1개:QT_VOLUME>, <탄산수:CV_SEASONING> <1큰술:QT_VOLUME>(<15ml:QT_VOLUME>)
+3. <160도:QT_TEMPERATURE>에서 <10초간:TI_DURATION> 튀긴 후 <180도:QT_TEMPERATURE>에서 한 번 더 튀겨주세요.
+4. 분량의 재료를 섞어 만든 <튀김:CV_SEASONING> <소스:CV_SEASONING>를 곁들여 맛있게 드세요.
+*Tip. 두 번 튀기면 더 바삭해요!
+5. 재료 : <물:CV_SEASONING> <10컵:QT_VOLUME>(<1800ml:QT_VOLUME>), <가쓰오부시:CV_SEASONING> <200g:QT_VOLUME>, <다시마:CV_SEASONING>(<5cmX5cm:QT_VOLUME>) <1장:QT_VOLUME>
+1. <물:CV_SEASONING>에 <다시마:CV_SEASONING>를 넣고 <1시간:TI_DURATION> 후 <불:QT_TEMPERATURE>에 올려주세요.
+2. 물이 끓으려고 하면 불을 줄이고 <20분간:TI_DURATION> 놔두세요.
+3. <다시마:CV_SEASONING>를 건지고 <가쓰오부시:CV_SEASONING>를 넣어주세요.
+4. 약한 불에 <10분간:TI_DURATION> 끓이고 거품을 제거한 뒤, 불을 끄고 <가쓰오부시:CV_INGREDIENT>가 가라않으면 체에 걸러주세요. 

@@ -1,0 +1,6 @@
+1. <닭다리살:CV_INGREDIENT>은 <우유:CV_SEASONING>에 <5분:TI_DURATION> 정도 <담갔:CV_ACT>다가 <물:CV_SEASONING>에 <씻:CV_ACT>어 한입 크기로 <자르:CV_ACT>고, 밑간재료에 <10분:TI_DURATION> 정도 <재워:CV_ACT>주세요. <땅콩:CV_INGREDIENT>은 굵게 <다져:CV_ACT>주세요.
+2. 볼에 가루반죽 재료를 <넣:CV_ACT>어 <섞:CV_ACT>은 후, 밑간한 <닭고기:CV_INGREDIENT>를 <넣:CV_ACT>어 <가루:CV_SEASONING>를 꾹꾹 눌러 <묻혀:CV_ACT>주세요.
+3. 냄비에 <식용유:CV_SEASONING>를 <붓:CV_ACT>고 <170도:QT_TEMPERATURE>로 <달군:CV_ACT> 후 <닭고기:CV_INGREDIENT>를 노릇하게 <튀겨:CV_ACT>주세요.
+(<닭고기:CV_INGREDIENT>를 두 번 튀겨내면 더욱 바삭한 맛을 살릴 수 있어요)
+4. 새로 달군 냄비에 소스 재료를 <넣:CV_ACT>고, <소스:CV_SEASONING>가 바글바글 끓으면 <닭튀김:CV_INGREDIENT>을 <넣:CV_ACT>어 <버무린:CV_ACT> 후 <땅콩:CV_INGREDIENT>을 <뿌려:CV_ACT>주세요.
+5. 접시에 <닭강정:CV_INGREDIENT>을 <담:CV_ACT>아 즐겨주세요.

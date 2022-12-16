@@ -1,0 +1,9 @@
+1. <우엉:CV_INGREDIENT>은 길게 어슷 썰어 일렬로 정리한 뒤 얇게 채 썰어주세요. <불린:CV_STATE> <목이버섯:CV_INGREDIENT>은 1cm 두께로 굵게 채 썰어주세요. 
+<통마늘:CV_INGREDIENT>은 편으로 썰고, <홍고추:CV_INGREDIENT>는 반으로 가른 뒤 씨를 제거하고 5cm 길이로 채 썰어주세요.
+2. <쑥갓:CV_INGREDIENT>은 <끓는:CV_STATE> <물:CV_SEASONING>에 <소금:CV_SEASONING> <한 꼬집:QT_VOLUME>을 넣어 데쳐 손으로 물기를 꽉 짠 뒤 5cm 길이로 썰어주세요.
+(<데친:CV_STATE> <쑥갓:CV_INGREDIENT>은 <간장:CV_SEASONING> 적량을 넣고 버무려 놓으세요.)
+3. 달군 팬에 <식용유:CV_SEASONING>를 두르고 <마늘:CV_INGREDIENT>-<우엉:CV_INGREDIENT>-<목이:CV_INGREDIENT>-<홍고추:CV_INGREDIENT> 순으로 넣어 볶다가 <간장:CV_SEASONING> 적량을 넣어주세요.
+4. <당면:CV_INGREDIENT>은 <물:CV_SEASONING> <2L:QT_VOLUME>에 <간장:CV_SEASONING> <2T:QT_VOLUME>, <포도씨유:CV_SEASONING> <1T:QT_VOLUME>을 넣고 <7분:TI_DURATION>간 삶은 후 먹기 좋은 길이로 잘라주세요.
+5. <채소:CV_INGREDIENT>를 볶았던 팬에 <당면:CV_INGREDIENT>을 올리고 수분기를 날려 주며 달달 볶으면서 <간장:CV_SEASONING>과 <조청:CV_SEASONING>으로 간을 해주세요.
+6. <잡채:CV_INGREDIENT> 위에 STEP3의 <볶은:CV_STATE> <채소:CV_INGREDIENT>들을 올려 골고루 섞어주세요.
+7. <잡채:CV_INGREDIENT> 위에 <통깨:CV_SEASONING>를 뿌리고 그릇에 담아 마무리하세요.

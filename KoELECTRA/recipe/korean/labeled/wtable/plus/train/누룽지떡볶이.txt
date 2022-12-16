@@ -1,0 +1,8 @@
+1. <떡:CV_INGREDIENT>은 물에 담가 <10분:TI_DURATION> 정도 불려주세요.
+2. <어묵:CV_INGREDIENT>과 <양배추:CV_INGREDIENT>는 3cm 크기로 썰고 <대파:CV_INGREDIENT>는 4cm 크기로 썰어주세요.
+3. <국물용 멸치:CV_INGREDIENT>와 <다시마:CV_INGREDIENT>를 <다시백:CV_SEASONING>에 담아주세요.
+4. 냄비에 <물:CV_SEASONING>과 순서 3의 <다시백:CV_SEASONING>을 넣어 <4분:TI_DURATION> 정도 끓이고 <다시백:CV_SEASONING>을 건져내 주세요.
+5. 순서 4의 <멸치 육수:CV_SEASONING>에 <고추장:CV_SEASONING>, <고춧가루:CV_SEASONING>, <설탕:CV_SEASONING>, <진간장:CV_SEASONING>을 넣어 <1분:TI_DURATION> 정도 끓여주세요.
+6. <떡:CV_INGREDIENT>, <어묵:CV_INGREDIENT>을 넣고 <5분:TI_DURATION> 정도 더 끓여주세요.
+7. <양배추:CV_INGREDIENT>, <대파:CV_INGREDIENT>를 넣고 <1분:TI_DURATION> 정도 더 끓인 뒤 <누룽지:CV_INGREDIENT>를 올려주세요.
+8. 그릇에 담아 맛있게 즐기세요. 누룽지를 떡볶이 국물에 푹 적셔 누룽지의 구수함과 매콤 달콤한 양념맛의 조화를 느껴보세요!

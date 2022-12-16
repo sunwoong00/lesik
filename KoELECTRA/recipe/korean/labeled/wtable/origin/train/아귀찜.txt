@@ -1,0 +1,8 @@
+1. <아귀:CV_INGREDIENT>는 주둥이와 아가미, 내장을 <제거한:CV_ACT> 후 먹 기좋은 크기로 <잘라:CV_ACT>서 깨끗이 <씻:CV_ACT>고 핏기를 <빼:CV_ACT>주세요. <미더덕:CV_INGREDIENT>은 <소금물:CV_SEASONING>에 <흔들:CV_ACT>어 <씻:CV_ACT>은 후 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT> 주세요.
+2. 냄비에 <아귀:CV_INGREDIENT>가 잠길 정도의 <물:CV_SEASONING>과 아구 밑간 재료를 <넣:CV_ACT>고 물이 끓으면 <아귀:CV_INGREDIENT>를 <넣:CV_ACT>고 <3분:TI_DURATION> 정도 <데친:CV_ACT> 후 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+3. <콩나물:CV_INGREDIENT>은 다듬어 <씻:CV_ACT>은 후 끓는 물에 <3분:TI_DURATION> 정도 <데치:CV_ACT>고 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요. <대파:CV_INGREDIENT>는 길이로 반 <가르:CV_ACT>고 6센치 길이로 <자르:CV_ACT>고 <홍고추:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>고, <미나리:CV_INGREDIENT>는 6센치 길이로 <썰:CV_ACT>어주세요.
+4. 볼에 양념장 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어 <양념장:CV_SEASONING>을 <만들:CV_ACT>고 녹말물 재료를 <섞:CV_ACT>어 <녹말물:CV_SEASONING>을 <만들:CV_ACT>어주세요.
+5. 냄비에 <멸치새우다시마 육수:CV_SEASONING>를 <넣:CV_ACT>고 <끓이:CV_ACT>다가 <아귀:CV_INGREDIENT>, <미더덕:CV_SEASONING>, <양념장:CV_SEASONING>을 <넣:CV_ACT>어 <3분:TI_DURATION> 정도 <끓이:CV_ACT>고 데친 <콩나물:CV_INGREDIENT>과 <대파:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>를 넣어 양념이 고루 섞이도록 <1분:TI_DURATION> 정도 <끓여:CV_ACT>주세요.
+6. 녹말물을 넣어 농도를 맞추고 불을 <약한 불:QT_TEMPERATURE>로 줄이고 <미나리:CV_INGREDIENT>를 <넣:CV_ACT>어 가볍게 섞고 <참기름:CV_SEASONING>을 뿌려주세요.
+(기호에 따라 약간의 구운 <소금:CV_SEASONING>을 <넣:CV_ACT>어 간을 <맞춰:CV_ACT>주세요.)
+7. 접시에 <아귀찜:CV_INGREDIENT>을 <담:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 주세요.

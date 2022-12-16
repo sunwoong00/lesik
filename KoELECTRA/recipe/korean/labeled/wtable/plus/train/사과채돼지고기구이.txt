@@ -1,0 +1,9 @@
+1. <돼지고기:CV_INGREDIENT>를 종이타월에 감싸 핏물을 뺀 후 1cm 두께가 되도록 반으로 저밀어주세요.
+2. <양파:CV_INGREDIENT>는 곱게 채 썰어 찬물에 담가 아린 맛을 빼준 후 물기를 제거해주세요.
+3. <사과:CV_INGREDIENT>는 껍질째 깨끗이 씻은 뒤 곱게 채 썰어주세요.
+갈변을 막기 위해 물에 담가두었다가 종이타월에 감싸 물기를 제거해주세요.
+4. 분량의 재료를 모두 넣어 고루 섞어 <양념장:CV_SEASONING>을 만들어주세요.
+5. <돼지고기:CV_INGREDIENT>에 <양념장:CV_SEASONING>을 넣어 버무리고 <20분:TI_DURATION>간 재워주세요.
+6. 팬에 <물:CV_SEASONING>을 두르고 <돼지고기:CV_INGREDIENT>를 올려 뚜껑을 덮고 앞뒤로 노릇하게 구워주세요.
+윤기가 흐르고 <양념:CV_SEASONING>이 거의 조려지면 불을 꺼주세요.
+7. <돼지고기:CV_INGREDIENT>를 먹기 좋은 크기로 썰어 접시에 담고 한쪽에 <사과채:CV_INGREDIENT>와 <양파채:CV_INGREDIENT>를 곁들여 내어 마무리해주세요.

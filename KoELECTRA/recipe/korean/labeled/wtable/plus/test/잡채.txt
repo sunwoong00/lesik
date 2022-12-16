@@ -1,0 +1,8 @@
+1. <건당면:CV_INGREDIENT>은 찬물에 담가 <30분:TI_DURATION>정도 불려주세요.
+<당근:CV_INGREDIENT>, <표고:CV_INGREDIENT>, <양파:CV_INGREDIENT>는 채를 썰고, <목이버섯:CV_INGREDIENT>은 불려서 먹기 좋은 크기로 4등분 해주세요. <쇠고기:CV_INGREDIENT>는 <간장양념:CV_SEASONING>에 넣어 <10분:TI_DURATION>정도 밑간해주세요. 
+2. <시금치:CV_INGREDIENT>는 <뿌리:CV_INGREDIENT>를 자르고 깨끗이 씻은 후, 끓는 물에 약간의 <소금:CV_SEASONING>을 넣어 살짝 데치고 찬물에 헹궈 물기를 제거해주세요. <데친:CV_STATE> <시금치:CV_INGREDIENT>에 <소금:CV_SEASONING> <한꼬집:QT_VOLUME>과 <참기름:CV_SEASONING>을 넣고 밑간을 해주세요.
+3. <달걀:CV_INGREDIENT>은 <흰자:CV_INGREDIENT>, <노른자:CV_INGREDIENT>를 분리하고 약간의 <소금:CV_SEASONING>을 넣어 푼 후 <약한불:QT_TEMPERATURE>에서 <지단:CV_INGREDIENT>을 만들어 채썰어주세요.
+4. 팬에 <양파:CV_INGREDIENT>, <당근:CV_INGREDIENT>, <목이버섯:CV_INGREDIENT>의 순으로 <소금:CV_SEASONING>을 약간 넣고 볶은 후 마지막에 <쇠고기:CV_INGREDIENT>와 <표고:CV_INGREDIENT>를 함께 볶아주세요.
+5. 끓는 물에 <당면:CV_INGREDIENT>을 넣어 <3분:TI_DURATION> 정도 <삶:CV_STATE>고, 물에 한 번 헹군 후 체에 밭쳐 물기를 빼주세요. 팬에 당면 양념 재료와 삶은 당면을 넣고, 양념이 골고루 섞이도록 <2분:TI_DURATION> 정도 <중약불:QT_TEMPERATURE>에서 볶은 후 먹기 좋은 길이로 잘라주세요.
+6. 볼에 한 김 <식힌:CV_STATE> <당면:CV_INGREDIENT>과 <볶은:CV_STATE> <야채:CV_INGREDIENT>, <참기름:CV_SEASONING>을 넣어 섞고, 마지막에 <지단:CV_INGREDIENT>을 넣어 살짝 버무려주세요. (기호에 따라 <간장:CV_SEASONING>을 가감해서 간을 조절해주세요.)
+7. 접시에 <잡채:CV_INGREDIENT>를 담고 <통깨:CV_SEASONING>를 뿌려주세요.

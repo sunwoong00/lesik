@@ -1,0 +1,7 @@
+1. 요리 시작 전, <검은콩:CV_INGREDIENT>은 <8시간:TI_DURATION>, <현미:CV_INGREDIENT>는 <2시간:TI_DURATION> 정도 <불려:CV_ACT>서 <검은콩:CV_INGREDIENT> <1/2컵:QT_VOLUME>, <현미:CV_INGREDIENT> <1컵:QT_VOLUME>을 <준비해:CV_ACT> 주세요.
+2. 믹서기에 <검은콩:CV_INGREDIENT>과 <현미:CV_INGREDIENT>를 모두 <넣:CV_ACT>고 곱게 <갈:CV_ACT>아 주세요.
+3. 2의 <갈아놓은:CV_STATE> <검은콩:CV_INGREDIENT>과 <현미:CV_INGREDIENT>, <항암육수:CV_SEASONING>를 냄비에 <붓:CV_ACT>고 <끓여:CV_ACT>줍니다. 
+4. <센 불:QT_TEMPERATURE>에서 <5분:TI_DURATION> 정도 <끓이:CV_ACT>다가 <약불:QT_TEMPERATURE>에서 <15~20분:TI_DURATION> 정도 더 <끓인:CV_ACT> 후 <죽염:CV_SEASONING>으로 간을 <맞춰:CV_ACT>주세요. 
+5. 그릇에 <덜:CV_ACT>어 구수하고 담백한 맛을 즐기세요.
+
+*Tip. 죽은 여러 번 간을 하는 것 보다 먹기 직전에 간하는 게 가장 좋답니다. 

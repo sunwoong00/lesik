@@ -1,0 +1,5 @@
+1. <어묵:CV_INGREDIENT>은 먹기 좋게 <썰:CV_ACT>어준 후, 체에 <밭쳐:CV_ACT> <끓는 물:CV_SEASONING>을 <뿌려:CV_ACT> 기름기를 <빼:CV_ACT>주세요.
+2. <양파:CV_INGREDIENT>는 채를 <썰:CV_ACT>고 <청양고추:CV_INGREDIENT>와 <대파:CV_INGREDIENT>는 어슷하게 <잘라:CV_ACT>주세요.
+3. 팬에 약간의 <기름:CV_SEASONING>을 <두르:CV_ACT>고 <어묵:CV_INGREDIENT>과 <양파:CV_INGREDIENT>를 <넣:CV_ACT>어 <볶:CV_ACT>아주세요.
+4. <양파:CV_INGREDIENT>가 반쯤 익으면 양념재료를 <넣:CV_ACT>어 <2분:TI_DURATION> 정도 더 <볶:CV_ACT>고, <청양고추:CV_INGREDIENT>와 <대파:CV_INGREDIENT>를 <넣:CV_ACT>어 살짝 <볶:CV_ACT>다가 마지막에 <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.
+5. 그릇에 <담:CV_ACT>아 반찬으로 <곁들여:CV_ACT>주세요.

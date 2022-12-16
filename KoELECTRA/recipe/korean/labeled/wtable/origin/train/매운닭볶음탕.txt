@@ -1,0 +1,5 @@
+1. 적당한 크기로 <자른:CV_STATE> <닭:CV_INGREDIENT>은 깨끗이 <씻:CV_ACT>은 후, <끓는 물:CV_SEASONING>에 살짝 <데치:CV_ACT>고 찬물에 <씻:CV_ACT>어 불순물을 <제거해:CV_ACT>주세요.
+2. <감자:CV_INGREDIENT>와 <당근:CV_INGREDIENT>, <양파:CV_INGREDIENT>는 큼직하게 <썰:CV_ACT>고 <대파:CV_INGREDIENT>와 <청고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요. 볼에 <양념재료:CV_SEASONING>를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요.
+3. 냄비에 데친 <닭고기:CV_INGREDIENT>와 <물:CV_SEASONING>, <감자:CV_INGREDIENT>, <당근:CV_INGREDIENT>, 양념재료를 <넣:CV_ACT>어 <30분:TI_DURATION> 정도 <센불:QT_TEMPERATURE>에서 <끓:CV_ACT>여주세요. (<감자:CV_INGREDIENT>크기에 따라 조리시간을 <조절해:CV_ACT>주세요.)
+4. <닭:CV_INGREDIENT>이 부드럽게 익으면 <중불:QT_TEMPERATURE>로 <줄여:CV_ACT> <양파:CV_INGREDIENT>를 <넣:CV_ACT>고 <5분:TI_DURATION> 정도 <끓이:CV_ACT>다가, <대파:CV_INGREDIENT>와 <청고추:CV_INGREDIENT>를 <넣:CV_ACT>어 <2분:TI_DURATION> 정도 더 <끓:CV_ACT>인 후 불을 <꺼:CV_ACT>주세요.
+5. 마지막에 약간의 <소금:CV_SEASONING>을 <가감해:CV_ACT>서 간을 <맞추:CV_ACT>고, 따뜻할 때 맛있게 즐겨주세요.

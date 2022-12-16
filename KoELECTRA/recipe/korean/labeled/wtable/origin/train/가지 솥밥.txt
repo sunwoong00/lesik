@@ -1,0 +1,10 @@
+1. <가지:CV_INGREDIENT>는 길게 반으로 <자른:CV_ACT> 후 먹기 좋은 크기로 <썰:CV_ACT>어주세요. <마늘:CV_INGREDIENT>은 편으로 <썰:CV_ACT>고, <쪽파:CV_INGREDIENT>는 <썰:CV_ACT>어주세요.
+(가지 껍질을 필러로 듬성듬성 벗겨주면 더 부드러운 식감으로 즐기실 수 있어요)
+2. <쇠고기:CV_INGREDIENT>는 핏물을 <제거한:CV_ACT> 후 볼에 <쇠고기:CV_INGREDIENT>와 고기 간장 양념 재료를 <넣:CV_ACT>고 조물조물 <버무려:CV_ACT> 밑간을 해주세요. 볼에 양념장 재료를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+
+3. 달군 팬에 <오일:CV_SEASONING>을 살짝 <두르:CV_ACT>고 <가지:CV_INGREDIENT>를 노릇하게 <구운:CV_ACT> 후 그릇에 <덜:CV_ACT>어놔주세요. <가지:CV_INGREDIENT>를 구운 팬에 <밑간 해둔:CV_STATE> <쇠고기:CV_INGREDIENT>를 <볶:CV_ACT>아주세요.
+(tip. <가지:CV_INGREDIENT>가 물러지지 않는 선에서 한 쪽 면씩 잘 <익혀:CV_ACT>주세요)
+
+4. 달군 냄비에 <오일:CV_SEASONING>을 두른 후 <마늘:CV_INGREDIENT>을 노릇하게 <볶:CV_ACT>다가 <불린:CV_STATE> <쌀:CV_INGREDIENT>을 <넣:CV_ACT>어 <볶:CV_ACT>아주세요. <다시마 육수:CV_SEASONING>를 <넣:CV_ACT>고 뚜껑을 <덮:CV_ACT>어 <중간불:QT_TEMPERATURE>에서 <끓:CV_ACT>여주세요.
+5. <밥 물:CV_INGREDIENT>이 <끓:CV_ACT>어오르면 불을 <약불:QT_TEMPERATURE>로 줄여 <15~20분:TI_DURATION> 정도 <익힌:CV_ACT> 후 불을 <끄:CV_ACT>고 <구운:CV_STATE> <가지:CV_INGREDIENT>와 <쇠고기:CV_INGREDIENT>를 <넣:CV_ACT>어 뚜껑을 <덮:CV_ACT>고 <5분:TI_DURATION> 정도 뜸을 <들여:CV_ACT> 완성해 주세요.
+6. 완성된 <솥밥:CV_INGREDIENT>에 <송송 썬:CV_STATE> <실파:CV_INGREDIENT>를 올리고 주걱으로 가볍게 <섞:CV_ACT>은 후 기호에 따라 <양념간장:CV_SEASONING>을 <곁들여:CV_ACT> 주세요.

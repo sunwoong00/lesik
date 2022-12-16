@@ -1,0 +1,17 @@
+1. 1.<게맛살:CV_INGREDIENT>은 길게 <가른:CV_ACT> 후 3등분 하고, <햄:CV_INGREDIENT>과 <쪽파:CV_INGREDIENT>도 <게맛살:CV_INGREDIENT>과 같은 길이로 <썰:CV_ACT>어주세요. <새송이버섯:CV_INGREDIENT>은 밑동을 <자른:CV_ACT> 후 삼등분하고, <게맛살:CV_INGREDIENT> 두께로 <잘라:CV_ACT>주세요.
+2. 나무꼬치에 <게맛살:CV_INGREDIENT>-<쪽파:CV_INGREDIENT>-<새송이버섯:CV_INGREDIENT>-<햄:CV_INGREDIENT>-<쪽파:CV_INGREDIENT>-<게맛살:CV_INGREDIENT> 순으로 <꽂:CV_ACT>아주세요.
+3. 볼에 <달걀:CV_INGREDIENT>과 약간의 <소금:CV_SEASONING>을 <섞:CV_ACT>어 <달걀물:CV_SEASONING>을 <만들:CV_ACT>어주세요. 꼬치에 <부침가루:CV_SEASONING>를 앞 뒤로 <묻힌:CV_ACT> 후 <털:CV_ACT>어내고, <달걀물:CV_SEASONING>을 <묻혀:CV_ACT>주세요.
+(tip. <꼬치전:CV_INGREDIENT>에 <부침가루:CV_SEASONING>를 한 쪽면에만 <묻히:CV_ACT>고 <달걀물:CV_SEASONING>을 골고루 <묻혀:CV_ACT> <전:CV_INGREDIENT>을 부치면, 꼬치의 색감이 예쁘게 나와요)
+4. 달군팬에 <기름:CV_SEASONING>을 <두르:CV_ACT>고, <사색꼬치전:CV_INGREDIENT>을 <중약불:QT_TEMPERATURE>에서 앞뒤로 <부쳐:CV_ACT>주세요.
+(tip. <꼬치전:CV_INGREDIENT>을 <만든:CV_ACT> 후 이쑤시개의 끝을 <잘라주:CV_ACT>면 가지런하고 예쁘게 담을 수 있답니다)
+2. 1. <쇠고기:CV_INGREDIENT>는 키친타올에 <올려:CV_ACT> 핏물을 <뺀:CV_ACT> 후 약간의 <소금:CV_SEASONING>, <후추:CV_SEASONING>를 <뿌리:CV_ACT>고 <참기름:CV_SEASONING>을 <발라:CV_ACT> <밑간 해:CV_ACT>주세요.
+2. <영양부추:CV_INGREDIENT>를 <나눠:CV_ACT> 전에 올릴 고명용은 1cm 길이로 <썰:CV_ACT>고, 곁들일 샐러드용은 5cm 길이로 <썰:CV_ACT>어주세요. <양파:CV_INGREDIENT>는 얇게 채를 <썰:CV_ACT>어주세요.
+3. 밑간한 <쇠고기:CV_INGREDIENT>에 <부침가루:CV_SEASONING>를 <묻혀:CV_ACT> 탁탁 <털:CV_ACT>어낸 후, 풀어 놓은 <달걀물:CV_SEASONING>을 <입혀:CV_ACT>주세요.
+4. 달군 팬에 약간의 <기름:CV_SEASONING>을 <두르:CV_ACT>고, <쇠고기:CV_INGREDIENT>를 <올려:CV_ACT> <달걀:CV_INGREDIENT>이 익을 정도로만 살짝 <익힌:CV_ACT> 후 <뒤집:CV_ACT>어주세요. <영양부추 고명:CV_SEASONING>을 <올려:CV_ACT> 다시 한 번 살짝 <뒤집:CV_ACT>어 <익힌:CV_ACT> 후 <꺼내:CV_ACT>주세요.
+5. 샐러드용으로 준비한 <영양부추:CV_INGREDIENT>와 <양파:CV_INGREDIENT>는 먹기직전에 <와사비간장 드레싱:CV_SEASONING>을 <부어:CV_ACT> <육전:CV_INGREDIENT>과 <곁들여:CV_ACT>주세요.
+(tip. <와사비간장 드레싱:CV_SEASONING>은 <간장:CV_SEASONING> <2큰술:QT_VOLUME>, <식초:CV_SEASONING> <2큰술:QT_VOLUME>, <올리고당:CV_SEASONING> <1큰술:QT_VOLUME>, <설탕:CV_SEASONING> <1/2큰술:QT_VOLUME>, <와사비:CV_SEASONING> <1/4작은술:QT_VOLUME>을 잘 <섞:CV_ACT>어 만드시면 돼요)
+3. 1. <양파:CV_INGREDIENT>와 <당근:CV_INGREDIENT>은 곱게 <다지:CV_ACT>고, <두부:CV_INGREDIENT>는 칼등으로 <으깬:CV_ACT> 후 면보에 <감싸:CV_ACT> 물기를 <짜:CV_ACT>주세요. 고명으로 사용할 <홍고추:CV_INGREDIENT>는 얇게 송송 <썰:CV_ACT>어주세요.
+2. 볼에 갈은 <돼지고기:CV_INGREDIENT>와 나머지 손질한 속재료를 <넣:CV_ACT>어 한 덩어리가 되도록 <반죽:CV_INGREDIENT>을 <만들어:CV_ACT>주세요.
+3. <고기반죽:CV_INGREDIENT>을 적당한 크기로 <떼:CV_ACT>어 동그랗게 <빚:CV_ACT>은 후 1cm두께로 납작하게 <만들어:CV_ACT>주세요.
+4. 볼에 <달걀:CV_INGREDIENT>과 약간의 <소금:CV_SEASONING>을 <섞:CV_ACT>어 <달걀물:CV_SEASONING>을 <만들어:CV_ACT>주세요. <동그랑땡:CV_INGREDIENT>에 <부침가루:CV_SEASONING>-<달걀물:CV_SEASONING>을 <묻혀:CV_ACT> 고명으로 썰어둔 <홍고추:CV_INGREDIENT>를 <올린:CV_ACT> 후 <중약불:QT_TEMPERATURE>에서 앞뒤로 <부쳐:CV_ACT>주세요. 
+(tip. <전:CV_INGREDIENT>의 밑면을 충분히 익히고 한 번만 뒤집어 주어야 기름도 많이 흡수하지 않으면서, 전의 색감도 예쁘게 나오게 된답니다. 또 고명을 올릴 때, <동그랑땡:CV_INGREDIENT> 가운데 부분에 <달걀물:CV_SEASONING>을 살짝 <묻힌:CV_ACT> 후 고명을 올려주면 떨어지지 않아서 좋아요)

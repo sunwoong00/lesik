@@ -1,0 +1,6 @@
+1. <다시마멸치육수:CV_SEASONING>에 국물양념 재료를 <넣:CV_ACT>고 <섞:CV_ACT>은 후 냉장고에 <넣:CV_ACT>어 차갑게 준비해주세요.
+2. <도토리묵:CV_INGREDIENT>은 길게 채를 <썰:CV_ACT>어주세요.
+(냉장고에 있던 단단한 묵을 사용하실 경우, 묵을 체에 <밭쳐:CV_ACT> 끓는 물에 살짝 담갔다가 빼서 준비해주세요)
+3. <오이:CV_INGREDIENT>와 <당근:CV_INGREDIENT>, <적채:CV_INGREDIENT>는 채를 <썰:CV_ACT>고 <배추김치:CV_INGREDIENT>는 잘게 <썰:CV_ACT>어 <김치양념:CV_SEASONING>에 넣어 조물조물 <섞:CV_ACT>어주세요. <실파:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요.
+4. 그릇에 <도토리묵:CV_INGREDIENT>과 <김치:CV_INGREDIENT>, <당근:CV_INGREDIENT>, <오이:CV_INGREDIENT>, <적채:CV_INGREDIENT>를 <담:CV_ACT>고 차게 준비한 <육수:CV_SEASONING>를 <부은:CV_ACT> 후 <송송 썰은:CV_STATE> <실파:CV_INGREDIENT>와 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.
+(<조미김:CV_INGREDIENT>을 <채썰:CV_ACT>어 <곁들여:CV_ACT>도 맛있답니다)

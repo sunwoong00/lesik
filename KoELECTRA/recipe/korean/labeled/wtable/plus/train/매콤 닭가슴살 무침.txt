@@ -1,0 +1,7 @@
+1. <닭가슴살:CV_INGREDIENT>은 내열 용기에 담아 <소금:CV_SEASONING>, <후춧가루:CV_SEASONING>를 뿌려 <10분:TI_DURATION>간 밑간해주세요.
+2. 법랑 접시에 내열 용기를 올려 1단에 넣고 광파오븐 수동 요리 스팀 찜에서 <30분간:TI_DURATION> 익혀주세요. * 광파오븐 스팀 물통에 <물:CV_SEASONING>을 채우고 시작해주세요.
+3. <새싹:CV_INGREDIENT>은 흐르는 물에 헹궈 준비해 주세요. <적채:CV_INGREDIENT>, <오이:CV_INGREDIENT>, <깻잎:CV_INGREDIENT>은 얇게 채 썰어주세요. <파인애플:CV_INGREDIENT>은 먹기 좋게 잘라주세요.
+4. <익힌:CV_STATE> <닭가슴살:CV_INGREDIENT>은 식혀서 가늘게 찢어주세요.
+5. 볼에 소스 재료를 넣어 섞어주세요.
+6. <손질한:CV_STATE> <채소:CV_INGREDIENT>와 <닭가슴살:CV_INGREDIENT>을 <소스:CV_SEASONING>에 버무려 맛있게 즐겨주세요.
+(tip. 접시에 <채소:CV_INGREDIENT>와 <닭가슴살:CV_INGREDIENT>을 가지런히 둘러 담으면 손님 상차림에 활용하기 좋아요)

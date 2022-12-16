@@ -1,0 +1,10 @@
+1. 깨끗이 씻은 <고구마줄기:CV_INGREDIENT>는 껍질을 <벗긴:CV_ACT> 후 끓는 물에 <소금:CV_SEASONING>을 <넣:CV_ACT>고 약 <7~10분:TI_DURATION> <삶:CV_ACT>은 후 체에 <밭쳐:CV_ACT> 찬물에 <헹궈:CV_ACT>주세요.
+(끓는 물에 살짝 데치면 껍질을 더 쉽게 벗길 수 있어요)
+
+2. <삶아진:CV_STATE> <고구마줄기:CV_INGREDIENT>를 적당한 길이로 <자르:CV_ACT>고 <양파:CV_INGREDIENT>는 채썰고, <마늘:CV_INGREDIENT>은 편을 <썰:CV_ACT>어주세요.
+3. 달군 팬에 <들기름:CV_SEASONING>을 <두른:CV_ACT> 후 <마늘:CV_INGREDIENT>, <양파:CV_INGREDIENT>를 <넣:CV_ACT>어 <1~2분:TI_DURATION> <볶:CV_ACT>다가 <고구마줄기:CV_INGREDIENT>를 <넣:CV_ACT>어 <볶:CV_ACT>아주세요.
+4. <들깨가루:CV_SEASONING>, <국간장:CV_SEASONING>, <물:CV_SEASONING>을 <넣:CV_ACT>은 후 살짝 더 <볶:CV_ACT>아 완성해주세요.
+
+
+5. 간은 기호에 맞게 <소금:CV_SEASONING>을 <넣:CV_ACT>어 맞춘 후 따뜻한 <밥:CV_INGREDIENT>과 함께 즐겨주세요.
+

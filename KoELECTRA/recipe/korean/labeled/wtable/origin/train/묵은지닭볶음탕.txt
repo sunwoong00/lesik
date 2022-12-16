@@ -1,0 +1,5 @@
+1. 끓는 물에 <청주:CV_SEASONING>와 <닭다리살:CV_INGREDIENT>을 <넣:CV_ACT>고 살짝 <데친:CV_ACT> 후 흐르는 물에 <씻:CV_ACT>고 군데군데 칼집을 <넣:CV_ACT>어주세요. 양념 재료를 <섞:CV_ACT>어 <닭다리살:CV_INGREDIENT>에 <버무려:CV_ACT> <10분간:TI_DURATION> <재우:CV_ACT>세요.
+2. <감자:CV_INGREDIENT>는 껍질을 <제거하:CV_ACT>고 <양파:CV_INGREDIENT>는 굵게 <채썰:CV_ACT>어주세요. <대파:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>고 <쪽파:CV_INGREDIENT>는 4cm 길이로 <썰:CV_ACT>어주세요.
+3. <묵은지:CV_INGREDIENT>는 양념소를 털어내주세요. 냄비에 <감자:CV_INGREDIENT>, <양파:CV_INGREDIENT>, <묵은지:CV_INGREDIENT>, <닭다리살:CV_INGREDIENT>, <다시마육수:CV_SEASONING>를 <넣:CV_ACT>고 <센불:QT_TEMPERATURE>에서 <끓여:CV_ACT>주세요.
+4. <감자:CV_INGREDIENT>가 익으면 불을 <약불:QT_TEMPERATURE>로 <줄이:CV_ACT>고 <대파:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>고 <5분간:TI_DURATION> <끓여:CV_ACT>주세요.
+5. 완성된 요리를 그릇에 <담:CV_ACT>고 <쪽파:CV_SEASONING>와 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.

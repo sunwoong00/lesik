@@ -1,0 +1,7 @@
+1. 볼에 양념장 재료를 <넣:CV_ACT>어 <섞:CV_ACT>고 냉장고에 <넣:CV_ACT>어 <30분:TI_DURATION> 정도 <숙성시켜:CV_ACT>주세요.
+2. <홍고추:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>고 <양파:CV_INGREDIENT>는 채를 <썰:CV_ACT>어주세요. <쪽파:CV_INGREDIENT>는 4센치 길이로 <썰:CV_ACT>어주세요.
+3. <꽃게:CV_INGREDIENT>는 조리용 솔로 <비벼:CV_ACT> 깨끗이 <씻:CV_ACT>고 등딱지를 <벗긴:CV_ACT> 후 배 쪽에 붙어 있는 아가미와 눈, 집게의 발 끝부분을 <제거해:CV_ACT>주세요. <꽃게:CV_INGREDIENT>는 먹기 좋게 4등분으로 <잘라:CV_ACT> 손질한 후 <청주:CV_SEASONING>를 <뿌려:CV_ACT> <섞:CV_ACT>고 채반에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>서 <준비해:CV_ACT>주세요.
+(tip. 살아 있는 게를 사용하실 때는 냉동실에 게를 하루 정도 꽁꽁 얼려 손질해서 사용하시면 게살이 탱탱하고 흘러내리지 않게 만들 수 있어요.)
+4. 볼에 <꽃게:CV_INGREDIENT>와 <양념장:CV_SEASONING>을 <넣:CV_ACT>어 먼저 <버무리:CV_ACT>고 <양파:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>, <쪽파:CV_INGREDIENT>를 <넣:CV_ACT>어 골고루 <섞:CV_ACT>어주세요.
+5. 맛있게 즐겨주세요.
+

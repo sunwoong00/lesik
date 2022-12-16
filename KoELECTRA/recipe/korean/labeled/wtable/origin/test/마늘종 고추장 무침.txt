@@ -1,0 +1,5 @@
+1. 깨끗이 씻은 <마늘종:CV_INGREDIENT>은 5cm길이로 <잘라:CV_ACT>주세요.
+2. 끓는 물에 <소금:CV_SEASONING>을 약간 <넣:CV_ACT>고, <마늘종:CV_INGREDIENT>을 <1분:TI_DURATION> 정도 <데쳐:CV_ACT> 찬물에 <헹궈:CV_ACT>주세요.
+3. 양념 재료를 모두 <섞:CV_ACT>어주세요.
+4. <데친:CV_STATE> <마늘종:CV_INGREDIENT>을 양념에 <넣:CV_ACT>고 <무친:CV_ACT> 후, <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.
+5. 알맞은 그릇에 <담:CV_ACT>아 맛있게 즐겨주세요.

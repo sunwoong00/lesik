@@ -1,0 +1,7 @@
+1. <검은콩:CV_INGREDIENT>은 깨끗이 <씻:CV_ACT>어 3시간 이상 <불려:CV_ACT>주세요.
+2. <불린:CV_STATE> <콩:CV_INGREDIENT>에 <물:CV_SEASONING>을 <붓:CV_ACT>고 <약한 불:QT_TEMPERATURE>에서 뚜껑을 열고 <20분:TI_DURATION> 정도 <삶:CV_ACT>아주세요.
+(<콩 불린:CV_STATE> <국물:CV_SEASONING>을 사용해서 조리면 영양 손실을 줄일 수 있답니다.)
+3. <콩:CV_INGREDIENT>이 말랑하게 삶아지면 양념 재료를 <넣:CV_ACT>고 <약한 불:QT_TEMPERATURE>에서 <15분:TI_DURATION> 정도 물기가 자작해질 때까지 <졸여:CV_ACT>주세요.
+4. 마지막에 <중약불:QT_TEMPERATURE>에서 <물엿:CV_SEASONING>을 <넣:CV_ACT>고 <섞:CV_ACT>은 후 불을 <꺼:CV_ACT>주세요.
+5. 접시에 <검은콩 자반:CV_INGREDIENT>을 <담:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요. 
+

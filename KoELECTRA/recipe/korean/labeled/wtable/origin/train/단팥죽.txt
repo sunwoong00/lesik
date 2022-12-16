@@ -1,0 +1,13 @@
+1. <멥쌀:CV_INGREDIENT>은 깨끗이 <씻:CV_ACT>어 <3시간:TI_DURATION>정도 <불린:CV_ACT> 후 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+
+2. <팥:CV_INGREDIENT>은 깨끗이 <씻:CV_ACT>은 후 냄비에 <팥:CV_INGREDIENT>이 잠길 정도로 <물:CV_SEASONING>을 <붓:CV_ACT>고 <5분:TI_DURATION>정도 <끓이:CV_ACT>다가 <물:CV_SEASONING>을 따라 <버리:CV_ACT>고 다시 냄비에 <물:CV_SEASONING> <10컵:QT_VOLUME>을 <붓:CV_ACT>고 <팥알:CV_INGREDIENT>이 푹 무르도록 <1시간:TI_DURATION> 정도 <삶:CV_ACT>아주세요.
+
+3. <삶은:CV_STATE> <팥:CV_INGREDIENT>은 뜨거울 때 <물:CV_SEASONING> <6컵:QT_VOLUME>을 조금씩 <부어:CV_ACT>가며 체에 <내려:CV_ACT> 껍질을 <거르:CV_ACT>고 걸러낸 <팥물:CV_SEASONING>은 <10분:TI_DURATION> 정도 두어 <팥앙금:CV_SEASONING>이 <가라앉:CV_ACT>도록 해주세요.
+
+4. 볼에 새알심 재료인 <찹쌀가루:CV_SEASONING>를 <넣:CV_ACT>고 조금씩 <뜨거운:CV_STATE> <물:CV_SEASONING>을 <부어:CV_ACT>가며 고루 섞이도록 <반죽:CV_INGREDIENT>을 <치댄:CV_ACT> 후 <새알심:CV_INGREDIENT>을 1센치 크기로 동글동글하게 <빚:CV_ACT>어주세요. 
+
+5. 냄비에 <팥물:CV_SEASONING>의 윗 맑은 <팥물:CV_SEASONING>만 <따라내:CV_ACT>고 <불린:CV_STATE> <멥쌀:CV_INGREDIENT>을 <넣:CV_ACT>어 <쌀알:CV_INGREDIENT>이 <퍼질:CV_ACT>때까지 <저어:CV_ACT>가며 <끓여:CV_ACT>주세요.
+(<멥쌀:CV_INGREDIENT>을 <팥앙금:CV_SEASONING>에 처음부터  <넣:CV_ACT>어 <끓이:CV_ACT>면 <멥쌀:CV_INGREDIENT>이 잘 퍼지지 않고 앙금이 눌러 붙을 수 있어 <멥쌀:CV_INGREDIENT>이 퍼진 후에 넣어 함께 <끓여:CV_ACT>주는 것이 좋답니다.)
+
+6. <쌀알:CV_INGREDIENT>이 푹 익으면 <팥물:CV_SEASONING>에 가라앉힌 <팥앙금:CV_INGREDIENT>을 <넣:CV_ACT>고 한소끔 <끓이:CV_ACT>고 <새알심:CV_INGREDIENT>을 <넣:CV_ACT>고 <새알심:CV_INGREDIENT>이 익어 떠오르면 <설탕:CV_SEASONING>과 <소금:CV_SEASONING>을 <가감해:CV_ACT>서 간을 맞쳐주세요.
+

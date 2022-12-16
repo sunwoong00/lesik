@@ -1,0 +1,6 @@
+1. <두부:CV_INGREDIENT>를 정사각형으로 썰어 <소금:CV_SEASONING>을 뿌리고 키친타월로 눌러서 수분을 제거해 주세요.
+2. <두부:CV_INGREDIENT>에 <전분:CV_SEASONING>을 묻힌 후 손으로 털어내 주세요. 구이 전용 팬에 <올리브 오일:CV_SEASONING> 을 약간 바르고 <두부:CV_INGREDIENT>를 올려주세요.
+3. 구이 전용 팬을 <4단:QT_VOLUME>에 넣고 광파오븐 수동 요리 구이에서 <20분:TI_DURATION>으로 설정 후 시작해 주세요. <15분:TI_DURATION>이 지났을 때 한번 뒤집어 준 후 계속 조리해 주세요.
+(tip. "오븐에 전송" 버튼으로 조리하면 <두부:CV_INGREDIENT>를 뒤집어야 할 시간에 멜로디가 울려요. 멜로디가 울리면 <5분:TI_DURATION> 내로 <두부:CV_INGREDIENT>를 뒤집은 후 다시 시작버튼을 눌러주면 연속 조리됩니다)
+4. <쪽파:CV_INGREDIENT>는 송송 썰고 <깻잎:CV_INGREDIENT>은 돌돌 말아 채 썰어 주세요. 볼에 소스 재료를 넣고 섞어주세요.
+5. <두부:CV_INGREDIENT>에 <소스:CV_SEASONING>를 뿌리고 <깻잎:CV_INGREDIENT>, <실파:CV_INGREDIENT>를 올려 완성해 주세요.

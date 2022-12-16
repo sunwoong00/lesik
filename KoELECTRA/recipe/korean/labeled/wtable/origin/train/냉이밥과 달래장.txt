@@ -1,0 +1,8 @@
+1. <냉이:CV_INGREDIENT>는 <손질하:CV_ACT>여 먹기 좋은 크기로 <자른:CV_ACT> 후 흐르는 물에 깨끗이 <씻:CV_ACT>어주세요. <달래:CV_INGREDIENT>는 <알뿌리:CV_INGREDIENT> 끝에 있는 흙을 <제거한:CV_ACT> 후 흐르는 물에 깨끗이 <씻:CV_ACT>어 잘게 <썰:CV_ACT>어주세요.
+(tip. <달래:CV_INGREDIENT>의 뿌리부분을 칼등으로 <으깬:CV_ACT> 후 <썰:CV_ACT>어 <넣:CV_ACT>으면 좀 더 진한 달래향을 느끼실 수 있답니다)
+
+2. 끓는 물에 <소금:CV_SEASONING>을 약간 <넣:CV_ACT>고, <냉이:CV_INGREDIENT>를 <30초:TI_DURATION> 정도 살짝 <데친:CV_ACT> 다음 찬물에 <헹궈:CV_ACT> 물기를 <짜:CV_ACT>주세요.
+3. <데친:CV_STATE> <냉이:CV_INGREDIENT>에 <들기름:CV_SEASONING>과 <소금:CV_SEASONING>을 <넣:CV_ACT>어 <무쳐:CV_ACT>주세요. 달래장 재료를 모두 <섞:CV_ACT>어주세요.
+4. 냄비에 <불린:CV_STATE> <쌀:CV_INGREDIENT>과 <불린:CV_STATE> <현미:CV_INGREDIENT>, <물:CV_SEASONING>을 <넣:CV_ACT>고 뚜껑을 <닫:CV_ACT>아 <센불:QT_TEMPERATURE>에서 <끓이:CV_ACT>다가 끓어오르면 <약불:QT_TEMPERATURE>로 <줄여:CV_ACT> <10~15분:TI_DURATION> 정도 더 <끓여:CV_ACT>주세요.
+5. <무쳐둔:CV_STATE> <냉이:CV_INGREDIENT>를 <얹:CV_ACT>어 뚜껑을 닫고, <약불:QT_TEMPERATURE>에서 <5분:TI_DURATION> 정도 후 불을 <끈:CV_ACT> 후 뜸을 <들여:CV_ACT>주세요.
+6. <달래장:CV_SEASONING>과 <곁들여:CV_ACT> <비벼:CV_ACT>드시면 향긋한 봄의 맛을 느낄 수 있어요.

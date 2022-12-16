@@ -1,0 +1,9 @@
+1. <차돌박이:CV_INGREDIENT>는 키친타올로 핏물을 제거해 주세요.
+2. <무:CV_INGREDIENT>는 반달 모양으로 얇게 썰어주세요. <부추:CV_INGREDIENT>와 <배추:CV_INGREDIENT>는 먹기 좋은 크기로 썰어 준비해 주세요.
+(tip. 2mm 정도 두께로 얇게 썰어야 <차돌박이:CV_INGREDIENT>와 함께 익힘 정도가 좋아요)
+3. 볼에 소스 재료를 담아 잘 섞어주세요. 
+4. <핏물을 제거한:CV_STATE> <차돌박이:CV_INGREDIENT>에 <무:CV_INGREDIENT>를 올려 돌돌 말아주세요.
+(tip. <차돌박이:CV_INGREDIENT>를 약간 늘려서 <무:CV_INGREDIENT>에 잘 감싸주어야 풀리지 않아요)
+5. 냄비에 <배추:CV_INGREDIENT>와 <숙주:CV_INGREDIENT>를 깔고 <차돌박이를 말아낸:CV_STATE> <무:CV_INGREDIENT>를 둥글게 올려주세요. <다시마 육수:CV_SEASONING>를 붓고 <7분:TI_DURATION> 정도 끓여주세요.
+(tip. 냄비의 크기에 따라 무 아랫부분까지 <육수:CV_SEASONING>가 잠기도록 양을 조절해 주세요)
+6. <무:CV_INGREDIENT>가 투명하게 익으면 가운데 <쪽파:CV_INGREDIENT>를 올리고 준비한 <소스:CV_SEASONING>를 뿌려 맛있게 즐겨주세요

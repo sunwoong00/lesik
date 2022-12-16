@@ -1,0 +1,14 @@
+1. 깨끗이 씻은 <부추:CV_INGREDIENT>는 4cm 길이로 <썰:CV_ACT>고, <청양고추:CV_INGREDIENT>는 얇게 송송 <썰:CV_ACT>어주세요. <홍고추:CV_INGREDIENT>는 굵게 <다져:CV_ACT>주세요.
+
+2. 볼에 <반죽 양념:CV_SEASONING>을 <넣:CV_ACT>고 잘 <섞:CV_ACT>어주세요. 초간장 재료는 모두 <섞:CV_ACT>어주세요.
+
+3. 반죽에 <썰:CV_ACT>어 둔 <부추:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요. 
+
+4. 달군 팬에 <굴:CV_INGREDIENT>을 <넣:CV_ACT>고 <강불:QT_TEMPERATURE>로 <1~2분:TI_DURATION>간 <볶:CV_ACT>아주세요.
+(tip. <굴:CV_INGREDIENT>이 익으면서 나온 물을 반죽에 모두 <부어:CV_ACT>주세요)
+
+5. 달군 팬에 <식용유:CV_SEASONING>를 넉넉히 <두르:CV_ACT>고 반죽을 <넣:CV_ACT>어 <펼친:CV_ACT> 후 <볶은:CV_STATE> <굴:CV_INGREDIENT>과 <홍고추:CV_INGREDIENT>를 얹고 반죽 물을 <2큰술:QT_VOLUME> <둘러:CV_ACT>주세요. 한쪽 면이 익으면 <뒤집:CV_ACT>어 <익혀:CV_ACT>주세요. 
+(tip. <기름:CV_SEASONING>이 충분히 달궈졌을 때 반죽을 올려야 바삭하게 구울 수 있어요.)
+
+6. <초간장:CV_SEASONING>을 <곁들여:CV_ACT> 따뜻할 때 즐겨주세요.
+

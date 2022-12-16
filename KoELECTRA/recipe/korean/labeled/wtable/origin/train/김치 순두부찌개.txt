@@ -1,0 +1,7 @@
+1. <돼지고기:CV_INGREDIENT>는 먹기 좋은 크기로 <썰:CV_ACT>고 고기 밑간 재료에 <10분:TI_DURATION> 정도 <재워:CV_ACT>주세요.
+2. <김치:CV_INGREDIENT>는 <소:CV_INGREDIENT>를 <털:CV_ACT>어 낸 후 한입 크기로 <썰:CV_ACT>고 <양파:CV_INGREDIENT>는 채를 <썰:CV_ACT>어주세요. <청양고추:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>, <대파:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요. 볼에 양념 재료를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+3. 냄비에 <고추기름:CV_SEASONING>과 <대파:CV_INGREDIENT> 반을 <넣:CV_ACT>고 <중약불:QT_TEMPERATURE>에서 달달 <볶:CV_ACT>아주세요. 파 향이 올라오면 <돼지고기:CV_INGREDIENT>를 <넣:CV_ACT>어 <볶:CV_ACT>고 <고기:CV_INGREDIENT>의 표면이 익으면, <김치:CV_INGREDIENT>와 <양파:CV_INGREDIENT>를 <넣:CV_ACT>어 한 번 더 <볶:CV_ACT>아주세요. 
+4. <멸치 다시마 육수:CV_SEASONING>를 <붓:CV_ACT>고 <양념장:CV_SEASONING>을 <넣:CV_ACT>어 <5분:TI_DURATION> 정도 <끓:CV_ACT>이다가 <순두부:CV_INGREDIENT>를 숟가락으로 큼직하게 떠 <넣:CV_ACT>어 <끓:CV_ACT>여주세요.
+5. 마지막에 <홍고추:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>, <대파:CV_INGREDIENT>를 <넣:CV_ACT>고  <달걀노른자:CV_INGREDIENT>를 <올린:CV_ACT> 후 한소끔 <끓:CV_ACT>여 맛있게 즐겨주세요.
+(tip 기호에 따라 <새우젓:CV_SEASONING> 또는 <소금:CV_SEASONING>을 <가감해:CV_ACT>서 간을 조절해 주세요)
+

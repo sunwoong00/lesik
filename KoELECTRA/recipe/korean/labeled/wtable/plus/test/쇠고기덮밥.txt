@@ -1,0 +1,7 @@
+1. <소고기:CV_INGREDIENT>는 먹기 좋게 썰어 키친타월에 올린 후 핏물을 빼고, <양파:CV_INGREDIENT>는 굵게 채썰고, <쪽파:CV_INGREDIENT>는 송송 썰어주세요. <느타리버섯:CV_INGREDIENT>은 밑동을 자른 후 가닥가닥 떼어주세요.
+2. 냄비에 <물:CV_SEASONING>과 <다시마:CV_SEASONING>를 넣고 <3분:TI_DURATION>간 끓이고 불을 끈 후, <가쓰오부시:CV_SEASONING>를 넣고 약 <3분:TI_DURATION> 정도 담궈 뒀다가 체에 걸러주세요.
+3. <끓인:CV_STATE> <다시물:CV_SEASONING>과 나머지 양념 재료를 냄비에 넣어 약 <3분:TI_DURATION>간 한소끔 끓인 후, <채썬:CV_STATE> <양파:CV_INGREDIENT>를 넣어 <양파:CV_INGREDIENT>가 투명해질 때까지 익혀주세요. <쇠고기:CV_INGREDIENT>와 <느타리버섯:CV_INGREDIENT>을 넣어 약 <2분:TI_DURATION>간 더 익혀주세요.
+(tip. <소고기:CV_INGREDIENT>는 오래 익히면 질겨지니 살짝만 익히는 게 좋아요)
+4. * 스타일링 팁!
+그릇에 <밥:CV_INGREDIENT>을 골고루 담고, <볶은:CV_STATE> <쇠고기:CV_INGREDIENT>를 올려주세요. <양파:CV_INGREDIENT>와 <버섯:CV_INGREDIENT>이 골고루 보이도록 해야 더 먹음직스럽게 보일 수 있어요~ 가운데 부분에 <달걀노른자:CV_INGREDIENT>가 들어갈 수 있는 공간을 만든 후 숟가락으로 조심스럽게 <달걀 노른자:CV_INGREDIENT>를 올려주세요. <초생강:CV_INGREDIENT>은 한쪽에 담고, <쪽파:CV_INGREDIENT>와 <통깨:CV_SEASONING>를 <노른자:CV_INGREDIENT> 주변으로 동그랗게 뿌려내 주세요.
+5. 그릇에 <밥:CV_INGREDIENT>을 담고 <볶은:CV_STATE> <쇠고기:CV_INGREDIENT>와 <달걀노른자:CV_INGREDIENT>, <초생강:CV_INGREDIENT>, <쪽파:CV_INGREDIENT>를 보기 좋게 얹어주세요. <통깨:CV_SEASONING>를 뿌려 마무리해주세요.

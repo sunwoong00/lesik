@@ -1,0 +1,9 @@
+1. <쇠고기:CV_INGREDIENT>는 키친타월로 핏물을 제거 후 약간의 <참기름:CV_SEASONING>과 <소금:CV_SEASONING>, <후춧가루:CV_SEASONING>로 밑간을 해주세요.
+2. 깻잎은 흐르는 물에 깨끗이 씻어 꼭지 부분을 자르고 2등분 해주세요. <팽이버섯:CV_INGREDIENT>은 밑동을 자른 후 5cm 길이로 자르고, <쪽파:CV_INGREDIENT>도 같은 길이로 잘라주세요. <깨끗이 씻은:CV_STATE> <연근:CV_INGREDIENT>과 <가지:CV_INGREDIENT>는 얇게 슬라이스 해주세요.
+3. 소스 재료는 각각 섞어 소스를 만들어주세요.
+4. <밑간한:CV_STATE> <쇠고기:CV_INGREDIENT>에 깻잎을 깔고 <팽이버섯:CV_INGREDIENT>과 <쪽파:CV_INGREDIENT>를 올려 돌돌 말아주세요.
+5. 내열 용기에 <연근:CV_INGREDIENT>을 넣은 후 법랑접시+석쇠 위에 올려 1단에 넣고 광파오븐 수동 요리 스팀 찜에서 <10분:TI_DURATION>간 익혀주세요. 
+ *광파오븐 스팀 물통에 물을 채우고 시작해주세요.
+6. <연근:CV_INGREDIENT>에 <가지:CV_INGREDIENT>와 <팽이버섯:CV_INGREDIENT>, <쪽파:CV_INGREDIENT>, <깨끗이 씻은:CV_STATE> <숙주:CV_INGREDIENT>를 올린 후 <쇠고기:CV_INGREDIENT> 깻잎말이를 가지런히 올려 <소금:CV_SEASONING>, <후춧가루:CV_SEASONING>를 뿌려주세요.
+7. 법랑 접시를 1단에 넣고 석쇠를 놓고 내열 용기를 올린 후 광파오븐 수동 요리 스팀 찜에서 <50분:TI_DURATION>간 익혀주세요.
+8. 접시에 <쇠고기 깻잎 말이 찜:CV_INGREDIENT>과 <찐:CV_STATE> <야채:CV_INGREDIENT>를 담고 <소스:CV_SEASONING>를 곁들여 맛있게 즐겨주세요.

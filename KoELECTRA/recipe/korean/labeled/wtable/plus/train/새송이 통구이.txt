@@ -1,0 +1,4 @@
+1. 법랑 접시에 깨끗이 <씻은:CV_STATE> <새송이버섯:CV_INGREDIENT>을 올려주세요.
+2. 볼에 양념 재료를 넣어 섞은 후 <새송이버섯:CV_INGREDIENT>에 골고루 발라주세요.
+3. 법랑 접시를 3단에 넣고 광파오븐 수동요리 오븐에서 <200도로:QT_TEMPERATURE> <15분:TI_DURATION>간 구워주세요.
+4. 접시에 <새송이 통구이:CV_INGREDIENT>를 담고 <소스:CV_SEASONING>를 한 번 더 바른 후 먹기 좋게 잘라 맛있게 즐겨주세요.

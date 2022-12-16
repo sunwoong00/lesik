@@ -1,0 +1,5 @@
+1. <마른 고추:CV_INGREDIENT>는 링으로 <썰:CV_ACT>고, <알감자:CV_INGREDIENT>는 껍질 째 깨끗이 <씻:CV_ACT>어주세요.
+2. 냄비에 <알감자:CV_INGREDIENT>를 <넣:CV_ACT>고, <알감자:CV_INGREDIENT>가 잠길 정도로 <물:CV_SEASONING>을 <부어:CV_ACT> <감자:CV_INGREDIENT>를 <10분:TI_DURATION> 정도 <삶:CV_ACT>아주세요.
+(<알감자:CV_INGREDIENT>의 크기에 따라 익히는 시간을 <가감해:CV_ACT>주세요. <알감자:CV_INGREDIENT>는 나무꼬치가 들어갈 정도로 <익혀:CV_ACT>주세요.)
+3. 팬에 약간의 <기름:CV_SEASONING>을 <두르:CV_ACT>고, <알감자:CV_INGREDIENT>를 살짝 <볶:CV_ACT>다가 간장 양념 재료와 <다시마:CV_SEASONING>, <마른고추:CV_SEASONING>를 <넣:CV_ACT>고 국물이 자작해 질때까지 <졸인:CV_ACT> 후 마지막에 <물엿:CV_SEASONING>을 <넣:CV_ACT>고 <섞:CV_ACT>어주세요.
+4. 그릇에 담고 <통깨:CV_SEASONING>를 뿌려주세요.

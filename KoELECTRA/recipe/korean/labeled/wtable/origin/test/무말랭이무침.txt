@@ -1,0 +1,5 @@
+1. <말린:CV_STATE> <고춧잎:CV_INGREDIENT>은 깨끗이 <씻:CV_ACT>어 미지근한 물에 <1시간:TI_DURATION>정도 <불린:CV_ACT> 후 물기를 꼭 <짜:CV_ACT>서 준비해주세요.
+(tip <말린:CV_STATE> <고춧잎:CV_INGREDIENT> 말려진 정도에 따라 시간을 가감해서 <불려:CV_ACT>주세요.)
+2. <무말랭이:CV_INGREDIENT>는 흐르는 물에 바락바락 <주물러:CV_ACT> <씻:CV_ACT>고 <10분:TI_DURATION>정도 물에 <불린:CV_ACT> 후 물기를 <짜:CV_ACT>서 준비해주세요.
+3. <무말랭이:CV_INGREDIENT>에 밑간 양념 재료를 <넣:CV_ACT>고 간이 배도록 <20분:TI_DURATION>정도 <재워:CV_ACT>주세요.
+4. <무말랭이:CV_INGREDIENT>와 <고춧잎:CV_INGREDIENT>, 양념장 재료를 <넣:CV_ACT>고 조물조물 <무치:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 완성해주세요.

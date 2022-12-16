@@ -1,0 +1,13 @@
+1. <찹쌀:CV_INGREDIENT>은 깨끗이 씻어 밥솥에 넣고 <물:CV_SEASONING>을 부어 고슬한 <찹쌀밥:CV_INGREDIENT>을 만들어 주세요.
+2. 법랑 접시에 종이 포일을 깔고 완성된 <찹쌀밥:CV_INGREDIENT>을 얇게 펼친 후 한 김 식혀주세요.
+(tip. 칼등으로 칼집을 넣으면 떼어내기 편리해요)
+3. 법랑 접시를 3단에 넣고 광파오븐 자동 요리 오븐에서 누룽지 0.2kg를 선택해 조리해 주세요. 조리가 끝나면 뒤집어서 한 번 더 누룽지 0.2kg를 선택해 조리해 주세요.
+(tip. "오븐에 전송" 버튼으로 조리하면 한번에 설정이 되고 누룽지를 뒤집어야 할 시간에 멜로디가 울려요. 멜로디가 울리면 <5분:TI_DURATION> 내로 <누룽지:CV_INGREDIENT>를 뒤집은 후 시작버튼을 눌러주면 연속조리 됩니다)
+4. <오징어:CV_INGREDIENT>는 칼집을 넣어 먹기 좋게 썰고 <새우:CV_INGREDIENT>는 껍질을 까고 등 부분에 칼집을 넣어 내장을 제거해 주세요.
+5. <새송이:CV_INGREDIENT>, <표고버섯:CV_INGREDIENT>은 도톰한 두께로 슬라이스하고 <청경채:CV_INGREDIENT>는 밑동을 제거해 흐르는 물에 헹궈주세요. <대파:CV_INGREDIENT>는 먹기 좋게 썰고 <마늘:CV_INGREDIENT>과 <생강:CV_INGREDIENT>은 편 썰어 준비해 주세요.
+6. <버섯:CV_INGREDIENT>과 <청경채:CV_INGREDIENT>를 끓는 물에 <2~3분:TI_DURATION>간 데쳐주세요.
+7. 달군 팬에 <기름:CV_SEASONING>을 두르고 <파:CV_INGREDIENT>와 <마늘:CV_INGREDIENT>, <생강:CV_INGREDIENT>을 넣고 볶다가 <데친:CV_STATE> <채소:CV_INGREDIENT>와 <간장:CV_SEASONING>, <청주:CV_SEASONING>, <굴소스:CV_SEASONING>와 <백 후춧가루:CV_SEASONING>를 넣고 간을 해주세요. <해물:CV_INGREDIENT>을 넣고 <2분:TI_DURATION>간 볶다가 <육수:CV_SEASONING>를 붓고 끓어오르면 불을 줄인 후 전분물 재료를 섞어 <1큰술:QT_VOLUME>씩 넣어가며 섞어주세요. 농도가 나면 <참기름:CV_SEASONING>을 넣어 <소스:CV_SEASONING>를 완성해 주세요.
+(tip. <해산물:CV_INGREDIENT>은 오래 볶으면 질겨지므로 짧게 볶아주세요)
+8. 180도의 기름에서 <누룽지:CV_INGREDIENT>를 <1~2분:TI_DURATION>간 튀겨주세요.
+(tip. <찹쌀:CV_INGREDIENT>이 불투명한 흰색으로 변하고 부풀어 오르면 다 튀겨진 거에요)
+9. <튀겨 둔:CV_STATE> <누룽지:CV_INGREDIENT>에 <소스:CV_SEASONING>를 부어 맛있게 즐겨주세요.

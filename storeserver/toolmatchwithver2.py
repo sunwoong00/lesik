@@ -126,15 +126,20 @@ def isActualTool(word, sentence, ingreCollectList):
 
 ###조리도구/위치 매칭 함수###
 def matchtoolwithaction(sentences, cooking_act_dict, checkaction, checktoolmain, checktoolsub, ingreCollectList):
-    keylist = []
-    valuelist = []
-    current_action_tool = []
-    check_if_used_tool = []
-    tool_used_in_sentence = ""
-    tool_used_in_sentence_final_array = []
-    just_test_track_if_none = []
-    zone_divide = []
+    
+    keylist = [] #cookingact.txt 추출 이후 행동 원 형태 저장을 위한 배열 "썰, 갈"
+    valuelist = [] #cookingact.txt 이후 행동 다듬은 형태 저장을 위한 배열 "썰다, 갈다"
+    current_action_tool = [] #현재 사용 도구를 저장하기 위한 배열, 총 5가지 번호:0,1,2,3,4가 존재, 그리고 그 번호에 해당하는 사용된 도구를 넣음 ("","","오븐","","")
+    check_if_used_tool = [] #번호 0,1,2,3,4를 0으로 세팅해두고 가장 최근에 사용된 번호에 해당하는 도구의 배열 숫자를 증가시킴 (0,0,1,0,0)
+    tool_used_in_sentence = "" #문장에서 사용된 도구를 저장
+    tool_used_in_sentence_final_array = [] #문장에서 사용된 도구를 string -> array 로 변환
+    just_test_track_if_none = [] 
+    zone_divide = [] #존 나누기 함수, 하지만 더 이상 사용 X
     keep_action_num = []
+    actRecordArray = []
+    save_previous_used_sentence = 0
+    remember_actNum_for_adding = [] #마지막 부분에 화구존이고 도구 인덱스가 3번이 아닌 경우에 뒷문장에서 도구가 발견된 경우에 그 도구로 지정을 하기 위해 동작 인덱스 번호를 기록해두는 배열
+    
     
     ###각 행동액션 번호와 매칭되는 도구를 기본설정 도구로 세팅해둔다###
     k_list = list(checktoolmain.keys())
@@ -168,6 +173,8 @@ def matchtoolwithaction(sentences, cooking_act_dict, checkaction, checktoolmain,
         zone_divide.append("")
         just_test_track_if_none.append("")
         check_if_tool_found = 0
+        remember_actNum_for_adding.append("") #260-270번쨰줄 도구 찾기 로직을 위해 공백 처리
+        actRecordArray.append("") #위와 같음
         ###만약에 문단에 도구가 새로 등장하면 기본도구를 등장한 도구로 바꾸기###
         for checksubtool in range(len(subtool_k_list)):
             if subtool_k_list[checksubtool] in sentences[i]["sentence"]:
@@ -175,8 +182,12 @@ def matchtoolwithaction(sentences, cooking_act_dict, checkaction, checktoolmain,
                 if(isActualTool(str(subtool_k_list[checksubtool]), str(sentences[i]["sentence"]), ingreCollectList) == False):
                     print("\n\n\n")
                     break
-
-                if subtool_k_list[int(checksubtool)] == "냉장":
+                    
+               #만약에 도구가 채인 경우에 "얇에 채를 썰다" 또는 "채에 담아주세요", 동작 채 또는 도구 채 2가지 경우가 존재, 이를 위해 판단하기 위한 if문
+                if((str(subtool_k_list[checksubtool]) == "채") and ("채 썰다" in sentences[i]["sentence"] or "채썰다" in sentences[i]["sentence"])): #만약에 도구가 채를 감지하고, 동작 부분에 채썰다 동작이 있는 경우
+                    continue #조리도구가 아닌것으로 판단하고 무시
+                print("act", sentences[i]["sentence"])
+                if subtool_k_list[int(checksubtool)] == "냉장": #만약에 조리도구가 냉장이면 냉장고로 변경
                     subtool_k_list[int(checksubtool)]  = "냉장고"
                     
                 just_test_track_if_none[i] = str(subtool_k_list[checksubtool])
@@ -207,9 +218,26 @@ def matchtoolwithaction(sentences, cooking_act_dict, checkaction, checktoolmain,
                     current_action_tool[1] = "가위"
                     check_knife = 1
                     #print(sentences)
+                if("하다" in sentences[i]["sentence"]):
+                    #print("하다 is found")
+                    if("밑동" in sentences and "제거" in sentences[i]["sentence"]): #만약에 하다 전에 밑동 제거가 나온다면
+                        #print("\n\nhi]n]n\n\n")
+                        saveindex = 1 #이와 관련된 조리행동은 인덱스1에 해당하기 때문에 추후 사용을 위해서 인덱스 접근을 위해 1로 설정
+                        maxvalue = 1 #위와 같음
+                        check_if_used_tool[1] -= 1 #직접배정이라 따로 트래킹 숫자를 증가 X
+                    elif("슬라이스" in sentences[i]["sentence"]): #위 밑동, 제거 예시와 같음. 조금더 코드 간편화를 위해 if-elif을 합쳐도 무관 X
+                        #print("\n\nhi]n]n")
+                        saveindex = 1 #이와 관련된 조리행동은 인덱스1에 해당하기 때문에 추후 사용을 위해서 인덱스 접근을 위해 1로 설정
+                        maxvalue = 1 #위와 같음
+                        check_if_used_tool[1] -= 1 #직접배정이라 따로 트래킹 숫자를 증가 X
+                    else: #이외 모든 경우가 아니라면 하다는 판단이 안되는 상태
+                        tool_used_in_sentence_final_array[i] += tool_used_in_sentence #저번 문장에서 사용했던 조리도구를 그대로 사용
+                        check_knife = 1 #check_knife를 1로 설정, 이는 인덱스 1번 같은 경우 따로 언급 없는 경우 도마,칼로 기본조리도구를 유지하기 위해서 사용
+                        break
 
                 ###행동의 번호를 가지고 오는 함수 및 변수###
                 numbermatch = checkifexist(k, checkaction)
+                #print(checkaction)
                 #print(k)
                 ###만약에 행동이 두가지의 도구가 가능한 경우 예:섞다###
                 if("," in numbermatch):
@@ -228,11 +256,20 @@ def matchtoolwithaction(sentences, cooking_act_dict, checkaction, checktoolmain,
                             maxvalue = int(check_if_used_tool[int(findmax)])
                             saveindex = int(findmax)
 
-                    if("칼집" in sentences[i]["sentence"]):
-                        print("\n\nhi]n]n")
+                    if("밑동" in sentences and "제거" in sentences[i]["sentence"]): #만약에 하다 전에 밑동 제거가 나온다면
+                        saveindex = 1 #이와 관련된 조리행동은 인덱스1에 해당하기 때문에 추후 사용을 위해서 인덱스 접근을 위해 1로 설정
+                        maxvalue = 1 #위와 같음
+                        check_if_used_tool[1] -= 1 #직접배정이라 따로 트래킹 숫자를 증가 X
+                    elif("슬라이스" in sentences[i]["sentence"]):
+                        saveindex = 1 #이와 관련된 조리행동은 인덱스1에 해당하기 때문에 추후 사용을 위해서 인덱스 접근을 위해 1로 설정
+                        maxvalue = 1 #위와 같음
+                        check_if_used_tool[1] -= 1 #직접배정이라 따로 트래킹 숫자를 증가 X
+                    elif("칼집" in sentences and "넣다" in sentences[i]["sentence"]): #넣다 라는 행동은 냄비에 넣다 그릇에 넣다등의 행동으로 이루어지는데 "칼집을 넣다"라는 특정 숙어?가 존재
+                        #만약에 칼집을 넣다 인 경우, 조리도구를 도마,칼로 배정 그리고 인덱스 값을 직접 배정이라 증가시키지 않음
+                        #print("\n\nhi]n]n")
                         saveindex = 1
                         maxvalue = 1
-                        check_if_used_tool[1] = -1
+                        check_if_used_tool[1] -= 1
                     #print(current_action_tool[int(two_option[0])])
                     #print(maxvalue)
                     if(maxvalue == 0):
@@ -316,16 +353,23 @@ def matchtoolwithaction(sentences, cooking_act_dict, checkaction, checktoolmain,
 
     print("\n", tool_used_in_sentence_final_array, "\n", just_test_track_if_none, "\n")
     track_count = 0
-    for i in range(len(tool_used_in_sentence_final_array)):
+    for i in range(len(tool_used_in_sentence_final_array)): #만약에 문장 내내 해당 조리도구 인덱스의 조리행동/조리도구가 발견디 안된 경우
         if(tool_used_in_sentence_final_array[i] == ""):
             track_count += 1
             #print(track_count)
         elif(tool_used_in_sentence_final_array[i] != "" and (track_count != 0)):
-            recorded_tool = tool_used_in_sentence_final_array[i]
+            recorded_tool = tool_used_in_sentence_final_array[i] #이후에 나오는 문장에서 조리도구를 찾기
             #print(track_count+i)
             for j in range((i-track_count), i):
-                print(tool_used_in_sentence_final_array[j])
-                tool_used_in_sentence_final_array[j] = recorded_tool
+                for checktool in range(len(subtool_v_list)): #도구 숫자만큼 for 룹
+                    if recorded_tool in subtool_k_list[checktool]: #만약에 비어있는 도구칸을 채울 도구가 도구딕션너리에서 발견된단다면
+                        print(subtool_v_list[checktool], actRecordArray[j], recorded_tool, subtool_k_list[checktool])
+                        if(str(subtool_v_list[checktool].split(",")[0]) in str(actRecordArray[j])): #만약에 발견된 도구와 행동 동작이 매칭한다면 채우기
+                            tool_used_in_sentence_final_array[j] = recorded_tool #비어있는 문장에 조리도구를 추가
+                        else: #만약에 발견된 도구가 행동 동작 인덱스 번호를 충족하지 못한다면 그냥 그 동작이 해당되는 기본 인덱스의 도구로 채우기
+                            tool_used_in_sentence_final_array[j] = current_action_tool[int(actRecordArray[j].split(",")[0])]
+
+                #print(tool_used_in_sentence_final_array[j], array[j]["act"])
             track_count = 0
     print(tool_used_in_sentence_final_array)
 

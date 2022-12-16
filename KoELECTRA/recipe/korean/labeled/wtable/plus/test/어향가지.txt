@@ -1,0 +1,9 @@
+1. <가지:CV_INGREDIENT>는 꼭지를 자른 후 길게 열십자 모양으로 칼집을 내고 먹기 좋은 크기로 등분해주세요. 볼에 <전분물:CV_SEASONING>과 <고추기름:CV_SEASONING>을 제외한 소스 재료를 넣어 섞어주세요.
+2. <청고추:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>는 반으로 갈라 씨를 뺀 후 잘게 다져주세요. <마늘:CV_INGREDIENT>은 편 썰고 <대파:CV_INGREDIENT>는 굵게 다져주세요. <건고추:CV_INGREDIENT>는 가위로 잘라주세요. 
+3. 볼에 튀김 반죽 재료를 섞은 후 <가지:CV_INGREDIENT>를 넣어 버무려주세요. 
+4. 170도로 예열된 기름에 <가지:CV_INGREDIENT>를 넣어 바삭하게 튀겨낸 후 채반에 펼쳐 한 김 식혀주세요. 
+5. 달군 팬에 <고추기름:CV_SEASONING>을 두르고 <마늘:CV_INGREDIENT>과 <대파:CV_INGREDIENT>, <건고추:CV_INGREDIENT>를 넣어 볶다가 <다진:CV_STATE> <청홍고추:CV_INGREDIENT>와 <소스:CV_SEASONING>를 넣어 <1~2분:TI_DURATION> 정도 끓여주세요. 마지막에 <전분물:CV_SEASONING>을 넣고 골고루 섞어주세요.
+(<전분물:CV_SEASONING>은 조금씩 부어가며 농도를 맞춰주세요)
+6. 완성된 <소스:CV_SEASONING>에 <튀겨 둔:CV_STATE> <가지:CV_INGREDIENT>를 넣어 재빠르게 버무려주세요.
+7. 접시에 담아 맛있게 즐겨주세요. 
+(기호에 따라 <땅콩가루:CV_SEASONING>를 뿌려 드셔도 좋아요)

@@ -1,0 +1,8 @@
+1. <쌀:CV_INGREDIENT>을 <씻:CV_ACT>어 <30분:TI_DURATION> 정도 <불린:CV_ACT> 후 체에 <받쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요. 
+(기호에 따라 <쌀:CV_INGREDIENT>과 <찹쌀:CV_INGREDIENT>을 <섞:CV_ACT>어 만들어도 좋답니다.)
+2. <쪽파:CV_INGREDIENT>는 송송 <썰:CV_ACT>고, <단호박:CV_INGREDIENT>은 껍질 째 얇게 <슬라이스해:CV_ACT>주세요. <명란:CV_INGREDIENT>은 한 입 크기로 <잘라:CV_ACT>주세요. 볼에 <간장 양념 재료:CV_SEASONING>를 모두 <섞:CV_ACT>어주세요.
+3. 냄비에 불린 <쌀:CV_INGREDIENT>과 <다시마 육수:CV_SEASONING>를 <넣:CV_ACT>고 맨 위에 <단호박:CV_INGREDIENT>을 <얹:CV_ACT>은 후 <중불:QT_TEMPERATURE>에서 <끓여:CV_ACT>주세요.
+4. <밥물:CV_SEASONING>이 끓어오르면 <약불:QT_TEMPERATURE>로 <줄여:CV_ACT> <10~15분:TI_DURATION> 정도 <익힌:CV_ACT> 후, 불을 <끄:CV_ACT>고 <명란:CV_INGREDIENT>을 <넣:CV_ACT>어 <5~10분:TI_DURATION> 정도 뜸을 <들여:CV_ACT>주세요.
+5. 솥밥에 <쪽파:CV_SEASONING>를 <뿌린:CV_ACT> 후 <간장 양념:CV_SEASONING>을 <곁들여:CV_ACT> 주세요.
+(tip. 기호에 따라 <은행:CV_SEASONING>, <버섯:CV_SEASONING> 등의 재료를 추가로 <넣:CV_ACT>어 <만들:CV_ACT>고 <김:CV_INGREDIENT>에 싸서 먹어도 좋아요.)
+

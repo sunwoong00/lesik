@@ -1,0 +1,6 @@
+1. <청상추:CV_INGREDIENT>는 흐르는 물에 씻은 뒤 물기를 털어내주고, <빨강 노랑 파프리카:CV_INGREDIENT>는 채 썰어주세요.
+2. 큰 볼에 <현미밥:CV_INGREDIENT>과 <참기름:CV_SEASONING>, <소금:CV_SEASONING>, <검은깨:CV_SEASONING>를 넣고 골고루 섞어 양념해주세요.
+3. 김발에 거친 면이 위로 올라오도록 <김밥 김:CV_INGREDIENT> <1장:QT_VOLUME>을 펼치고, <양념한:CV_STATE> <밥:CV_INGREDIENT>을 얇게 펴 올린 뒤 <김밥 김:CV_INGREDIENT> <1/2장:QT_VOLUME>을 덮어주세요.
+4. <청상추:CV_INGREDIENT>와 <닭가슴살:CV_INGREDIENT> <장조림:CV_INGREDIENT>, <파프리카:CV_INGREDIENT>를 올린 뒤 돌돌 말아주세요.
+5. <김밥:CV_INGREDIENT>을 펼친 뒤 한 입 크기로 썰어 밀폐용기에 담으면 완성이에요.
+*Tip. <양배추:CV_INGREDIENT>, <당근:CV_INGREDIENT> 등 다른 채소를 넣어도 좋아요.

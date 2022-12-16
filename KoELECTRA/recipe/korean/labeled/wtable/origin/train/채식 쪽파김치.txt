@@ -1,0 +1,9 @@
+1. 찹쌀풀 재료를 잘 <풀:CV_ACT>어준 후 냄비에 <넣:CV_ACT>어 <중불:QT_TEMPERATURE>에서 <저어:CV_ACT>가며 <풀:CV_ACT>고 기포가 올라오면서 농도가 나면 불을 <끄:CV_ACT>고 <식혀:CV_ACT>주세요.
+
+2. <쪽파:CV_INGREDIENT>는 <다듬:CV_ACT>어 깨끗이 <씻:CV_ACT>고 <국간장:CV_SEASONING>을 뿌리 쪽에 <부어:CV_ACT> <20분:TI_DURATION> 정도 살짝 <절여:CV_ACT>주세요.
+
+3. <절인:CV_STATE> <쪽파:CV_INGREDIENT>를 <건지:CV_ACT>고 남은 <간장 국물:CV_SEASONING>과 <식힌:CV_STATE> <찹쌀풀:CV_SEASONING>, <양념 재료:CV_SEASONING>를 <섞:CV_ACT>어 김치 양념을 <만들:CV_ACT>어주세요.
+
+4. <쪽파:CV_INGREDIENT>에 <김치 양념:CV_SEASONING>을 뿌리 쪽부터 잎 쪽으로 고루 <펴:CV_ACT> <발라:CV_ACT>주세요.
+
+5. 김치통에 <담:CV_ACT>고 <한나절:TI_DURATION> 실온에 <두:CV_ACT>었다가 냉장 보관 해주세요.

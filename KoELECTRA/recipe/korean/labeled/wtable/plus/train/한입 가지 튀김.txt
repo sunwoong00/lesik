@@ -1,0 +1,7 @@
+1. 깨끗이 <씻은:CV_STATE> <가지:CV_INGREDIENT>는 2cm 두께로 자른 후 큰 것은 반으로 잘라주세요. <소금:CV_SEASONING>을 뿌려 간을 해주세요. 
+2. <빵가루:CV_SEASONING>에 <파마산 치즈 가루:CV_SEASONING>, <파슬리 가루:CV_SEASONING>를 넣어 섞어주세요. 볼에 소스 재료를 넣어 섞어주세요.
+3. 가지에 생긴 수분을 키친타월로 닦은 후 <밀가루:CV_INGREDIENT> - <달걀:CV_SEASONING> - <빵가루:CV_SEASONING> 순으로 묻혀주세요.
+4. 170도로 달군 기름에 노릇하게 튀겨주세요.
+(tip. <가지:CV_INGREDIENT>를 두 번 튀기면 더욱 바삭한 식감으로 드실 수 있어요)
+5. <소스:CV_SEASONING>를 곁들여 맛있게 즐겨주세요.
+(기호에 따라 <시판 토마토소스:CV_SEASONING>를 곁들여 드셔도 좋아요)

@@ -1,0 +1,7 @@
+1. <오이:CV_INGREDIENT>는 <소금:CV_SEASONING>으로 <비벼:CV_ACT>서 <씻:CV_ACT>고 길이로 <이등분하:CV_ACT>여 <잘라:CV_ACT>주세요. 비스듬하게 0.5센치 정도 간격으로 일정하게 칼집을 세 번 <내:CV_ACT>고 네 번째에 토막을 내어 <잘라:CV_ACT> <소금물:CV_SEASONING>에 <20분:TI_DURATION> 정도 <절여:CV_ACT>주세요. <절인:CV_STATE> <오이:CV_INGREDIENT>는 흐르는 물에 <씻:CV_ACT>어 물기를 <제거해:CV_ACT>주세요.
+2. <쇠고기:CV_INGREDIENT>는 곱게 채를 <썰:CV_ACT>고 핏물을 <제거한:CV_ACT> 후 고기 양념 재료에 <10분:TI_DURATION> 정도 <재워:CV_ACT> <밑간을 해:CV_ACT>주세요.
+3. <홍고추:CV_INGREDIENT>와 <당근:CV_INGREDIENT>은 4센치 길이로 곱게 채를 <썰:CV_ACT>어주세요. 볼에 겨자 소스 재료를 고루 <섞:CV_ACT>어 소스를 <만들:CV_ACT>어 냉장고에 <넣:CV_ACT>어 차게 <준비해:CV_ACT>주세요.
+4. <달걀:CV_INGREDIENT>은 약간의 <소금:CV_SEASONING>을 <넣:CV_ACT>고 <섞:CV_ACT>은 후 체에 <내리:CV_ACT>고 <약한 불:QT_TEMPERATURE>에서 지단을 <만들:CV_ACT>어 4센치 길이로 곱게 채를 <썰:CV_ACT>어주세요.
+5. 달군 팬에 약간의 <식용유:CV_SEASONING> <두른:CV_ACT> 후 <물기를 제거 한:CV_STATE> <오이:CV_INGREDIENT>-<당근:CV_INGREDIENT>-<쇠고기:CV_INGREDIENT> 순으로 <센 불:QT_TEMPERATURE>에서 각각 <볶:CV_ACT>아 <식혀:CV_ACT>주세요. 
+(tip <센 불:QT_TEMPERATURE>에서 빠르게 볶아야 야채의 색이 선명하게 유지돼요.)
+6. <오이:CV_INGREDIENT>의 칼집을 넣은 사이사이에 <볶은:CV_STATE> <당근:CV_INGREDIENT>, <지단:CV_INGREDIENT>, <쇠고기:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>를 가지런하게 <채운:CV_ACT> 후 <겨자소스:CV_SEASONING>를 <뿌려:CV_ACT>주세요.

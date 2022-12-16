@@ -1,0 +1,10 @@
+1. <조선호박:CV_INGREDIENT>은 속을 <제거한:CV_ACT> 뒤 3cm 두께로 <썰:CV_ACT>어주세요.
+2. <대파:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>는 총총 <썰:CV_ACT>어주세요.
+3. 냄비에 순서 1과 <물:CV_SEASONING>을 <넣:CV_ACT>은 뒤 뚜껑을 덮고 한소끔 <끓여:CV_ACT>주세요.
+
+*Tip. <호박:CV_INGREDIENT>이 많고 <물:CV_SEASONING>이 다소 적은 듯 해야 맛있습니다.
+4. <새우젓:CV_SEASONING>을 <넣:CV_ACT>고 <5분:TI_DURATION> 정도 더 <끓여:CV_ACT>주세요.
+
+*Tip. <호박:CV_INGREDIENT>이 뭉근해질때까지 <끓:CV_ACT>여주세요!
+5. <대파:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>, <국간장:CV_SEASONING>을 <넣:CV_ACT>어 완성해 주세요.
+6. 따뜻할 때 국물을 음미하며 맛있게 즐겨보세요.

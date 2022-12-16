@@ -1,0 +1,6 @@
+1. <두부:CV_INGREDIENT>는 먹기 좋게 썰어 약간의 <소금:CV_SEASONING>, <후추:CV_SEASONING>를 뿌려 <10분:TI_DURATION> 정도 밑간을 해주세요.
+2. <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>는 어슷하게 썰고, <양파:CV_INGREDIENT>는 굵게 채를 썰어주세요. 볼에 양념재료를 넣고 섞어주세요.
+3. 달군 팬에 약간의 <기름:CV_SEASONING>을 두르고 <두부:CV_INGREDIENT>를 노릇하게 앞뒤로 구워 주세요.
+4. 냄비에 <채썬:CV_STATE> <양파:CV_INGREDIENT>를 깔고 <두부:CV_INGREDIENT>를 올린 후, <다시마멸치 육수:CV_SEASONING>와 <간장양념:CV_SEASONING>을 넣어 <5분:TI_DURATION> 정도 끓여주세요.
+5. <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>를 넣고 <5분:TI_DURATION> 정도 <중불:QT_TEMPERATURE>에서 졸여주세요.
+6. <깨:CV_SEASONING>를 뿌려 마무리해주세요.

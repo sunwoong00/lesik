@@ -1,0 +1,5 @@
+1. <해감한:CV_STATE> <꼬막:CV_INGREDIENT>은 깨끗이 <비벼:CV_ACT> <씻:CV_ACT>은 후 끓는물에 <청주:CV_SEASONING>를 <넣:CV_ACT>어 온도를 떨어뜨린 다음 <꼬막:CV_INGREDIENT>을 <넣:CV_ACT>고 한쪽 방향으로 <저어:CV_ACT>주면서 <삶:CV_ACT>다가 입이 벌어지기 시작하면 체로 <건져:CV_ACT> 살만 <발라:CV_ACT>주세요.
+(tip <꼬막:CV_INGREDIENT> 삶은 맑은 윗물은 버리지 않고 쌀뜨물과 함께 섞어 육수로 사용해 주셔도 돼요.)
+2. <시금치:CV_INGREDIENT>는 <다듬:CV_ACT>어 먹기좋게 <자르:CV_ACT>고 <씻:CV_ACT>은 후 <소금:CV_SEASONING>을 <넣:CV_ACT>은 끓는물에 살짝 <데쳐:CV_ACT> 찬물에 <헹궈:CV_ACT> 물기을 <빼:CV_ACT>주세요. <대파:CV_INGREDIENT>는 반<갈라:CV_ACT> 5센치 길이로 <자르:CV_ACT>고 <홍고추:CV_INGREDIENT>는 씨를 <빼:CV_ACT>고 채를 <썰:CV_ACT>어주세요. 
+3. 냄비에 <멸치다시마육수:CV_SEASONING>를 <붓:CV_ACT>고 끓기 시작하면 양념재료와 <시금치:CV_INGREDIENT>를 <넣:CV_ACT>어 <2분:TI_DURATION>정도 <끓여:CV_ACT>주세요. (tip <육수:CV_SEASONING>를 끓일 때 <건새우:CV_SEASONING>를 <더해:CV_ACT>주면 좀 더 감칠맛을 더해줄 수 있어요.)
+4. 마지막에 삶은 <꼬막:CV_INGREDIENT>과 <대파:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>어 한소끔 더 <끓:CV_ACT>여 완성해주세요.(tip 부족한 간은 약간의 <소금:CV_SEASONING>을 <가감해:CV_ACT>서 조절해주세요.)

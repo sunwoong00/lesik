@@ -1,0 +1,8 @@
+1. <대파:CV_INGREDIENT>는 송송 썰고 <마늘:CV_INGREDIENT>은 편으로 썰어주세요. <베이컨:CV_INGREDIENT>은 먹기 좋은 크기로 자르고 볼에 <달걀:CV_INGREDIENT>을 풀어 <달걀 물:CV_SEASONING>을 만들어 주세요.
+2. 달군 팬에 <기름:CV_SEASONING>을 두르고 <풀어놓은:CV_STATE> <달걀:CV_INGREDIENT>을 넣어 부드럽게 스크램블에그를 만들어 그릇에 덜어주세요.
+3. 달군 팬에 <기름:CV_SEASONING>을 두르고 <대파:CV_INGREDIENT>와 <마늘 편:CV_INGREDIENT>을 넣어 볶다가 <베이컨:CV_INGREDIENT>을 넣어 볶아주세요.
+(기호에 따라 <페페론치노:CV_SEASONING>를 넣어 매콤하게 만들어 드실 수 있답니다)
+
+4. <밥:CV_INGREDIENT>과 <양념:CV_SEASONING>을 넣어 고루 섞어가며 볶다가 <스크램블에그:CV_INGREDIENT>를 넣어 가볍게 섞어주세요. 마지막에 <참기름:CV_SEASONING>을 넣어주세요.
+5. 그릇에 <볶음밥:CV_INGREDIENT>을 담고 <통깨:CV_SEASONING>를 뿌려 완성해주세요.
+(기호에 따라 <김 가루:CV_SEASONING>를 뿌려 드셔도 맛있게 드실 수 있답니다)

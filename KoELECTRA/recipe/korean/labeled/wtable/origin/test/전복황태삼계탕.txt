@@ -1,0 +1,14 @@
+1. <생닭:CV_INGREDIENT>을 흐르는 물에 <씻:CV_ACT>고 지방과 꽁지, 날개 끝 부분을 가위로 <잘라:CV_ACT>주세요. <전복:CV_INGREDIENT>은 솔로 <문질러:CV_ACT> 깨끗하게 <씻:CV_ACT>고 전복의 이빨을 <제거해:CV_ACT>주세요.
+2. <당근:CV_INGREDIENT>과 <쥬키니 호박:CV_INGREDIENT>은 잘게 <다져:CV_ACT>주세요. 곁들임 양념장 재료는 모두 <섞:CV_ACT>어주세요.
+3. 닭 속에 <불린:CV_STATE> <찹쌀:CV_INGREDIENT>과 <불린:CV_STATE> <녹두:CV_INGREDIENT>를 <넣:CV_ACT>고 한방팩 재료를 <넣:CV_ACT>어주세요.
+
+4. <닭의 한쪽:CV_STATE> <다리:CV_INGREDIENT>에 칼집을 <내:CV_ACT>어 칼집 낸 곳에 <반대쪽:CV_STATE> <다리:CV_INGREDIENT>를 <넣:CV_ACT>어주세요.
+(tip.조리용 실로 묶어서 만들어도 좋아요.)
+5. 달군 냄비에 <참기름:CV_SEASONING>을 <두르:CV_ACT>고 <황태:CV_INGREDIENT>를 <넣:CV_ACT>어 <중불:QT_TEMPERATURE>에 <2분:TI_DURATION> 정도 <볶:CV_ACT>아주세요.
+ 
+6. <볶은:CV_STATE> <황태:CV_INGREDIENT>에 <물:CV_SEASONING>, <삼계닭:CV_INGREDIENT>과 <전복:CV_INGREDIENT>을 <넣:CV_ACT>고 뚜껑을 <덮:CV_ACT>어 <중불:QT_TEMPERATURE>에 <60분간:TI_DURATION> <끓여:CV_ACT>주세요.
+(tip. 기호에 맞게 국물에 <소금:CV_SEASONING> 한 작은술 정도를 넣어 간을 맞춰주시면 좋아요.)
+
+7. 곁들임 양념장과 <김치:CV_INGREDIENT>를 <삼계탕:CV_INGREDIENT>과 함께 먹으면 맛이 더욱 풍부해진답니다.
+
+8. 먹고 남은 국물에 죽야채 재료를 <넣:CV_ACT>고 <중불:QT_TEMPERATURE>에 <3~4분:TI_DURATION>간 <끓여:CV_ACT> <삼계죽:CV_INGREDIENT>도 <만들:CV_ACT>어 드셔도 좋아요.

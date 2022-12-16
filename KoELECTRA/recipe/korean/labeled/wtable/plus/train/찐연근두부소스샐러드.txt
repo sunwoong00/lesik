@@ -1,0 +1,5 @@
+1. <연근:CV_INGREDIENT>은 1cm두께로 동그랗게 썰어주세요.
+2. <김:CV_INGREDIENT> 오른 찜기에서 STEP1의 <연근:CV_INGREDIENT>을 <5분:TI_DURATION>간 쪄주세요.
+3. <부침용두부:CV_INGREDIENT>는 물기를 꼭 짜주세요.
+4. <두부:CV_INGREDIENT>와 <올리브유:CV_SEASONING>, <레몬즙:CV_SEASONING>을 같이 곱게 갈아주세요.
+5. <찐:CV_STATE> <연근:CV_INGREDIENT>은 그릇에 담고 <두부소스:CV_SEASONING>를 얹은 다음 <케이퍼:CV_SEASONING>와 <암염:CV_SEASONING>, <쑥:CV_INGREDIENT>을 얹어내세요.

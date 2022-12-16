@@ -1,0 +1,10 @@
+1. <통단무지:CV_INGREDIENT>는 굵직굵직하게 채 썰어 주세요.
+2. 순서 1을 <소금:CV_SEASONING>에 <5분간:TI_DURATION> 절여주세요.
+3. <대파:CV_INGREDIENT>는 총총 썰어주세요.
+4. <고추:CV_INGREDIENT>는 반으로 갈라 씨를 제거한 후 다져주세요.
+5. <마늘:CV_INGREDIENT>도 다져주세요.
+*Tip. 식감이 느껴지도록 굵게 다져야 맛이 더 좋답니다.
+6. 순서 2의 <절인:CV_STATE> <단무지:CV_INGREDIENT>를 면보에 넣어 물기를 짜주세요. 
+*Tip. 너무 꽉 자면 <단무지:CV_INGREDIENT>의 연한 맛이 없어지므로 살짝만 짜내는게 좋아요.
+7. 순서 6에 참기를과 순서 3,4,5, 그리고 <통깨:CV_SEASONING>와 <고춧가루:CV_SEASONING>를 넣어 버무려 완성해 주세요.
+8. <밥:CV_INGREDIENT>과 함께 맛있게 즐기세요!

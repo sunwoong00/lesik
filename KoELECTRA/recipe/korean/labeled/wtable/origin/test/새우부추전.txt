@@ -1,0 +1,6 @@
+1. <부추:CV_INGREDIENT>는 3cm 길이로 <잘라:CV_ACT>주세요.
+2. <새우:CV_INGREDIENT>는 흐르는 물에 <씻:CV_ACT>고 꼬리를 <제거한:CV_ACT> 뒤 키친타월에 <올려:CV_ACT> 물기를 <제거해:CV_ACT>주세요.
+3. <밀가루:CV_INGREDIENT>, <부침가루:CV_SEASONING>, <찬:CV_STATE><물:CV_SEASONING>, <소금:CV_SEASONING>, <후추:CV_SEASONING>를 <섞:CV_ACT>어서 반죽을 <만들:CV_ACT>어주세요.
+4. 순서 3의 반죽에 <부추:CV_INGREDIENT>를 <넣:CV_ACT>어 골고루 <섞:CV_ACT>어주세요.
+5. 달군 팬에 <식용유:CV_SEASONING>를 <두르:CV_ACT>고 순서 4의 반죽을 7cm 크기로 <올린:CV_ACT> 뒤 <새우:CV_INGREDIENT>를 하나씩 <올리:CV_ACT>고 <2~3분:TI_DURATION> 정도 <부쳐:CV_ACT>내주세요.
+6. 접시에 <담:CV_ACT>아 맛있게 드세요!

@@ -1,0 +1,5 @@
+1. <데친:CV_STATE> <쑥:CV_INGREDIENT>은 듬성듬성 <자르:CV_ACT>고 <양파:CV_INGREDIENT>는 채를 <썰:CV_ACT>어주세요. 볼에 <양념장 재료:CV_SEASONING>를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+(기호에 따라 <쑥:CV_INGREDIENT>을 <갈:CV_ACT>아 만드셔도 돼요)
+2. 볼에 <쑥:CV_INGREDIENT>과 <찹쌀가루:CV_SEASONING>, <소금:CV_SEASONING>을 <넣:CV_ACT>어 <섞:CV_ACT>은 후 <물:CV_SEASONING>을 <넣:CV_ACT>어가며 <반죽:CV_SEASONING>을 <만든:CV_ACT> 후 <양파:CV_INGREDIENT>를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+3. 달군 팬에 <식용유:CV_SEASONING>를 <두른:CV_ACT> 후 <쑥전 반죽:CV_INGREDIENT>을 <넣:CV_ACT>어 노릇하게 <구워:CV_ACT>주세요.
+4. <쑥 찹쌀전:CV_INGREDIENT>과 <양념장:CV_SEASONING>을 <곁들여:CV_ACT> 맛있게 즐겨주세요.

@@ -1,0 +1,7 @@
+1. <꽈리고추:CV_INGREDIENT>는 깨끗이 <씻:CV_ACT>어 꼭지를 <떼:CV_ACT>고, 포크로 구멍을 내주세요. 살짝 물기가 있는 상태에서 <밀가루:CV_SEASONING>를 얇고, 고르게 <묻혀:CV_ACT>주세요.
+(tip. 비닐봉지에 <밀가루:CV_SEASONING>를 <넣:CV_ACT>은 후 <꽈리고추:CV_INGREDIENT>를 <담:CV_ACT>아 <흔들:CV_ACT>어주면 고르게 <묻힐:CV_ACT> 수 있어요)
+
+2. 찜기에 김이 오르면 <꽈리고추:CV_INGREDIENT>를 <넣:CV_ACT>고 뚜껑을 덮어 <5분간:TI_DURATION> <찐:CV_ACT> 후 트레이에 <옮겨:CV_ACT> 한 김 <식혀:CV_ACT>주세요.
+(tip. 한 김 <식힌:CV_ACT> 후 <양념:CV_SEASONING>에 <버무려:CV_ACT>야 밀가루 옷이 벗겨지지 않아요)
+3. <홍고추:CV_INGREDIENT>는 반으로 <잘라:CV_ACT> 씨를 <뺀:CV_ACT> 후 2cm길이로 얇게 <채썰:CV_ACT>어주세요. 볼에 <양념재료:CV_SEASONING>를 모두 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+4. <찐:CV_STATE> <꽈리고추:CV_INGREDIENT>와 <양념:CV_SEASONING>, <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>어 골고루 <섞:CV_ACT>은 후 마지막에 <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 완성해주세요.

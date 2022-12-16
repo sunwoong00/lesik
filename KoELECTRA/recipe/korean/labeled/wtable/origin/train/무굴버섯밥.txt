@@ -1,0 +1,8 @@
+1. <쌀:CV_INGREDIENT>은 <씻:CV_ACT>어 <30분:TI_DURATION> 이상 <불린:CV_ACT> 후 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+2. 양념장 재료들을 모두 <섞:CV_ACT>어주세요.
+3. <무:CV_INGREDIENT>는 먹기 좋게 채를 <썰:CV_ACT>고, <자투리 무:CV_INGREDIENT>는 강판에 <갈:CV_ACT>아 즙을 <내:CV_ACT>주세요.
+<표고버섯:CV_INGREDIENT>은 밑동을 <뗀:CV_ACT> 후 먹기 좋은 크기로 <자르:CV_ACT>고, <느타리 버섯:CV_INGREDIENT>은 적당한 크기로 <찢:CV_ACT>어주세요.
+4. <굴:CV_INGREDIENT>은 체에 <밭쳐:CV_ACT> <소금물:CV_SEASONING>에 살살 흔들어 <씻:CV_ACT>은 후 <무즙:CV_SEASONING>에 <버무려:CV_ACT> <5분:TI_DURATION> 정도 <두:CV_ACT>어 비린내를 <제거해:CV_ACT>주세요.
+5. 냄비에 <불린:CV_STATE> <쌀:CV_INGREDIENT>과 <무:CV_INGREDIENT>, <버섯:CV_INGREDIENT>을 위에 <얹:CV_ACT>고, <쌀:CV_INGREDIENT>에 물이 잠길 만큼 <넣:CV_ACT>어 <약불:QT_TEMPERATURE>에서 <25분:TI_DURATION>간 <익혀:CV_ACT>주세요. <무:CV_INGREDIENT>와 <굴:CV_INGREDIENT>에서 수분이 생기므로 평소 밥물보다 물의 양을 적게 해주세요.
+6. <밥:CV_INGREDIENT>이 거의 익었을 때 <굴:CV_INGREDIENT>과 <은행:CV_INGREDIENT>을 <넣:CV_ACT>고 <5분:TI_DURATION>간 더 <끓:CV_ACT>이고 불을 <꺼:CV_ACT>주세요. <5분:TI_DURATION> 정도 뜸을 <들여:CV_ACT>주세요.
+7. 완성된 <무굴버섯밥:CV_INGREDIENT>에 <양념장:CV_SEASONING>을 <곁들여:CV_ACT> 맛있게 즐겨주세요.

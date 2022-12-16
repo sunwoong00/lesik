@@ -1,0 +1,6 @@
+1. <채썬:CV_STATE> <쇠고기:CV_INGREDIENT>는 키친타월에 <올려:CV_ACT> 핏물을 <빼:CV_ACT>고 고기양념에 <10분:TI_DURATION> 정도 <재워:CV_ACT>주세요.
+2. <오이:CV_INGREDIENT>는 깨끗이 <씻:CV_ACT>어 길이로 4등분하고, 길게 <12등분하:CV_ACT>여 씨 부분을 <도려 내:CV_ACT>고 <소금:CV_SEASONING>을 <뿌려:CV_ACT> <10분:TI_DURATION> 정도 <절인:CV_ACT> 후 면포에 <넣:CV_ACT>어 물기를 <짜:CV_ACT>주세요. <표고버섯:CV_INGREDIENT>은 기둥을 <떼:CV_ACT>고 채를 <썰:CV_ACT>고, <홍고추:CV_INGREDIENT>는 반으로 <갈라:CV_ACT> 씨를 <빼:CV_ACT>고 가늘게 <채썰:CV_ACT>어주세요. 
+3. 달군 팬에 <오이:CV_INGREDIENT>를 <넣:CV_ACT>고 선명한 녹색이 될 때까지 <센불:QT_TEMPERATURE>에서 살짝 <볶:CV_ACT>아주세요.
+4. 달군 팬에 <쇠고기:CV_INGREDIENT>와 <표고버섯:CV_INGREDIENT>을 <넣:CV_ACT>어 <볶:CV_ACT>다가 쇠고기가 익으면 <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>어 살짝 <볶:CV_ACT>아주세요.
+5. 볼에 <볶은:CV_STATE> <오이:CV_INGREDIENT>와 <쇠고기:CV_INGREDIENT>, <표고버섯:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>고 <참기름:CV_SEASONING>, <깨소금:CV_SEASONING>을 <넣:CV_ACT>어 고루 <버무려:CV_ACT>주세요.
+6. 그릇에 <오이갑장과:CV_INGREDIENT>를 <담:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 마무리해주세요.

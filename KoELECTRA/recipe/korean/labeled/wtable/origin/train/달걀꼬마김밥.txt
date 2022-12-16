@@ -1,0 +1,7 @@
+1. <스팸:CV_INGREDIENT>과 <오이:CV_INGREDIENT>는 나무젓가락 두께로 <잘라:CV_ACT>주세요.
+<오이:CV_INGREDIENT>는 약간의 <소금:CV_SEASONING>을 <뿌려:CV_ACT> <10분:TI_DURATION> 정도 <밑간 한:CV_ACT> 후 물기를 <제거해:CV_ACT>주세요.
+2. <스팸:CV_INGREDIENT>은 끓는 물에 살짝 <데친:CV_ACT> 후, 팬에 <스팸조림 소스:CV_SEASONING>를 <넣:CV_ACT>어 <2분:TI_DURATION> 정도 <졸여:CV_ACT>주세요.
+3. 고슬하게 지은 <밥:CV_INGREDIENT>에 밥 양념 재료를 <넣:CV_ACT>어 <밑간 해:CV_ACT>주세요.
+4. 4등분으로 자른 <구운:CV_STATE> <김:CV_INGREDIENT> 위에 <밥:CV_INGREDIENT>을 <1/4정도:QT_VOLUME> 고르게 <편:CV_ACT> 후 <오이:CV_INGREDIENT>, <단무지:CV_INGREDIENT>, <스팸:CV_INGREDIENT>, <적채피클:CV_INGREDIENT>을 각각 <넣:CV_ACT>어 돌돌 <말:CV_ACT>아주세요.
+5. 볼에 <달걀:CV_INGREDIENT>을 <넣:CV_ACT>고 <섞:CV_ACT>은 후 체에 <내리:CV_ACT>고, 달군 팬에 약간의 <기름:CV_SEASONING>을 <넣:CV_ACT>고 <달걀물:CV_SEASONING>을 김 크기로 얇게 <펴:CV_ACT>주세요. <달걀:CV_INGREDIENT>이 80%정도 익었을 때, <김밥:CV_INGREDIENT>을 <올려:CV_ACT> <달걀:CV_INGREDIENT>로 돌돌 <말:CV_ACT>아주세요.
+6. <달걀꼬마 김밥:CV_INGREDIENT>을 먹기좋은 크기로 <잘라:CV_ACT> 즐겨주세요.

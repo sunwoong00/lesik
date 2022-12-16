@@ -1,0 +1,9 @@
+1. <오징어채:CV_INGREDIENT>는 찬물에 살짝 <담갔:CV_ACT>다가 체에 <받쳐:CV_ACT> 물기를 <빼:CV_ACT>고 먹기 좋게 <잘라:CV_ACT>주세요.
+
+2. 볼에 양념재료를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요. 
+3. 달군 팬에 <식용유:CV_SEASONING>를 <두르:CV_ACT>고 <중약불:QT_TEMPERATURE>에서 양념재료를 <넣:CV_ACT>은 후, 끓어오르면 <약한불:QT_TEMPERATURE>로 <줄여:CV_ACT> <오징어채:CV_INGREDIENT>를 <넣:CV_ACT>어주세요. 
+4. 양념이 고루 섞이도록 <2분:TI_DURATION> 정도 <버무리:CV_ACT>고 불을 <끈:CV_ACT> 후 <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요. 
+(오징어채는 오래 볶으면 질겨질 수 있으니 <약한불:QT_TEMPERATURE>에서 짧은 시간 동안 빠르게 <볶:CV_ACT>아주세요.)
+5. 완성된 <오징어채볶음:CV_INGREDIENT>을 그릇에 <담:CV_ACT>아 내어주세요.
+
+*참고 : 오징어채를 물에 담그지 않고 바로 조리 하실 때는 <양념:CV_SEASONING>을 <끓인:CV_ACT> 후 불을 <끄:CV_ACT>고 <오징어채:CV_INGREDIENT>를 <넣:CV_ACT>어 남은 잔열로 <버무려:CV_ACT>주세요.

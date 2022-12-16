@@ -1,0 +1,12 @@
+1. <소고기:CV_INGREDIENT>는 <20분~1시간 동안:TI_DURATION> 물에 <담가:CV_ACT> 핏물을 <빼:CV_ACT>요. 
+2. <감자:CV_INGREDIENT>는 깨끗이 <씻:CV_ACT>어 껍질을 <벗긴:CV_ACT> 후 5mm 간격으로 <썬:CV_ACT> 다음, 찜기에 <넣:CV_ACT>어 <쪄:CV_ACT>주세요.
+
+*Tip. <감자:CV_INGREDIENT> 양은 딱 정확하게 맞추려고 할 필요없이, 아이 양만큼 눈대중으로 <넣:CV_ACT>어도 상관없어요. 젓가락으로 찔렀을 때 푹 들어갈 정도로 찌면 되는데 <10분:TI_DURATION> 정도라면 다 익어요.
+3. 핏물을 뺀 <소고기:CV_INGREDIENT>는 물을 넣은 냄비에 <담:CV_ACT>아 <강한 불:QT_TEMPERATURE>로 <끓여:CV_ACT>요. 끓기 시작하면 <약한 불:QT_TEMPERATURE>로 <줄여:CV_ACT> 익을 때까지 <끓인:CV_ACT> 후, 적당한 크기로 <손질해:CV_ACT>주세요.
+
+*Tip. 기름이나 불순물을 숟가락으로 걷어내면서 끓여요. <고기 삶은 물:CV_SEASONING>은 <육수:CV_SEASONING>로 사용하면 좋으니 잘 두어주세요.
+4. 믹서기에 <감자:CV_INGREDIENT>와 <불린:CV_STATE> <쌀:CV_INGREDIENT>, <소고기:CV_INGREDIENT>를 각각 <넣:CV_ACT>고 <물:CV_SEASONING>을 약간씩 <더해:CV_ACT> 곱게 <갈:CV_ACT>아주세요.
+5. 냄비에 <곱게 간:CV_STATE> <재료:CV_INGREDIENT>와 <고기 삶은:CV_STATE> <물:CV_SEASONING>을 모두 <부어:CV_ACT> <강한 불:QT_TEMPERATURE>로 <끓여:CV_ACT>요. 저어가며 끓이다가 끓기 시작하면 <약한 불:QT_TEMPERATURE>로 <줄여:CV_ACT> 농도를 보면서 <저어:CV_ACT>가며 <끓여:CV_ACT>요.
+
+*Tip. 믹서기에 물을 한번 <부어:CV_ACT> <헹군:CV_ACT> 후 냄비에 부으면 버리는 재료 없이 알뜰하게 만들 수 있어요.
+6. 아이가 먹기 좋도록 미음을 체에 <밭치:CV_ACT>고, 3회분을 용기에 <나눠:CV_ACT> 냉동실에 보관해주세요.

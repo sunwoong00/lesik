@@ -1,0 +1,6 @@
+1. <무:CV_INGREDIENT>는 5cm 길이의 손가락 굵기로 <썬:CV_ACT> 후 <굵은 소금:CV_SEASONING>과 <설탕:CV_SEASONING>을 <뿌려:CV_ACT> <30분:TI_DURATION>정도 <절여:CV_ACT>주세요. 
+(tip 다 <절여진:CV_STATE> <무:CV_INGREDIENT>는 물에 헹구지 않고 체에 <받쳐:CV_ACT> 두고 나온 물은 버리지 않고 따로 준비해 주세요.)
+2. <쪽파:CV_INGREDIENT>는 <다듬:CV_ACT>어 <씻:CV_ACT>어 <감:CV_ACT>아서 <묶:CV_ACT>고 <배:CV_INGREDIENT>는 껍질 채 깨끗이 <씻:CV_ACT>고 씨를 <뺀:CV_ACT> 후 큼직하게 <썰:CV_ACT>어주세요. <양파:CV_INGREDIENT>와 <대파:CV_INGREDIENT>는 깨끗이 <씻:CV_ACT>어 4등분하고 <마늘:CV_INGREDIENT>과 <생강:CV_INGREDIENT>은 <손질해:CV_ACT>서 편으로 <썬:CV_ACT> 후 <청양고추:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>는 2등분하고 씨를 <털:CV_ACT>어 준비해주세요.
+3. 국물 재료의 <마늘 편:CV_INGREDIENT>과 <생강 편:CV_INGREDIENT>은 베 보자기에 <넣:CV_ACT>고 <국물 재료:CV_SEASONING>와 <섞:CV_ACT>어 <동치미 국물:CV_SEASONING>을  준비해 주세요.
+4. 밀폐용기에 <절인:CV_STATE> <무:CV_INGREDIENT> (절이면서 나온 물), <배:CV_INGREDIENT>, <양파:CV_INGREDIENT>, <대파:CV_INGREDIENT>, <쪽파:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>고 <동치미 국물:CV_SEASONING>을 <부어:CV_ACT>주세요.
+5. 실온에서 <1~2일:TI_DURATION>정도 <익힌:CV_ACT> 후 냉장고에 <넣:CV_ACT>어 <숙성시켜:CV_ACT> 맛있게 즐겨주세요.

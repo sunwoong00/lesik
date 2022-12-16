@@ -1,0 +1,7 @@
+1. <양배추:CV_INGREDIENT>와 깻잎은 얇게 채 썰어주세요. 
+2. <물기를 제거한:CV_STATE> <두부:CV_INGREDIENT>를 칼등으로 으깨주세요.
+3. 볼에 <양배추:CV_INGREDIENT>, <깻잎:CV_INGREDIENT>, <으깬:CV_STATE> <두부:CV_INGREDIENT>, <기름을 뺀:CV_STATE> <참치:CV_INGREDIENT>를 넣고 <달걀:CV_INGREDIENT>, 양념 재료, <전분:CV_SEASONING>을 넣어 골고루 섞어주세요. 
+(두부의 물기와 <참치 기름:CV_SEASONING>을 최대한 제거해 주세요)
+4. <라이스 페이퍼:CV_INGREDIENT>를 물에 적셔 펼친 후 <만두소:CV_INGREDIENT>를 적당량 넣어 접어주세요. <라이스페이퍼:CV_INGREDIENT> <한 장:QT_VOLUME>을 더 적신 후 한 번 더 접어주세요. 
+5. 달군팬에 <기름:CV_SEASONING>을 넉넉히 두른 후 <만두:CV_INGREDIENT>를 서로 붙지 않게 올려 앞뒤로 노릇하게 구워주세요. 
+6. 접시에 담아 <소스:CV_SEASONING>를 곁들여 맛있게 즐겨주세요. 

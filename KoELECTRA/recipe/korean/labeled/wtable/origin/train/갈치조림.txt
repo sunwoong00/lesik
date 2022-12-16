@@ -1,0 +1,4 @@
+1. <갈치:CV_INGREDIENT>는 내장을 <제거하:CV_ACT>고 깨끗이 <씻:CV_ACT>어 밑간 재료에 <10분:TI_DURATION>간 <재워:CV_ACT>주세요. <감자:CV_INGREDIENT>는 1cm 두께로 <썰:CV_ACT>고 <양파:CV_INGREDIENT>는 굵게 채 <썰:CV_ACT>어주세요. <대파:CV_INGREDIENT>, <고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어줍니다.
+2. 냄비에 <양파:CV_INGREDIENT>-<감자:CV_INGREDIENT>-<갈치:CV_INGREDIENT> 순으로 <넣:CV_ACT>은 후 조림 양념 재료와 <다시마육수:CV_SEASONING>를 <붓:CV_ACT>고 뚜껑을 연 채로 <센 불:QT_TEMPERATURE>에서 <10~15분:TI_DURATION>간 <끓:CV_ACT>입니다.
+3. 감자가 다 익으면 <중간불:QT_TEMPERATURE>로 줄이고 <대파:CV_INGREDIENT>, <고추:CV_INGREDIENT>를 <넣:CV_ACT>고 <1~2분:TI_DURATION>간 더 <끓:CV_ACT>여주세요.
+4. 그릇에 먹기 좋기 내어 마무리 해줍니다.

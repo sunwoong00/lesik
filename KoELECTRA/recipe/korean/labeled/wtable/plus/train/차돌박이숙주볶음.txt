@@ -1,0 +1,5 @@
+1. <차돌박이:CV_INGREDIENT>는 키친타월에 올려 핏물을 제거한 후, 고기양념 재료에 <20분:TI_DURATION>정도 밑간해주세요.
+2. <숙주:CV_INGREDIENT>는 흐르는 물에 깨끗이 씻은 후 체에 밭쳐 물기를 빼고, <양파:CV_INGREDIENT>는 굵게 채썰어 주세요. <마늘:CV_INGREDIENT>은 편으로 썰고 <청양고추:CV_INGREDIENT>와 <실파:CV_INGREDIENT>는 송송 썰어주세요.
+3. 달군 팬에 <기름:CV_SEASONING>을 두르고, <마늘편:CV_INGREDIENT>과 <양파채:CV_INGREDIENT>를 넣어 <2분:TI_DURATION>정도 볶아주세요. 마늘향이 올라오면 <양념한:CV_STATE> <차돌박이:CV_INGREDIENT>를 넣어 볶아주세요
+4. <차돌박이:CV_INGREDIENT>가 익으면 <숙주:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>, <굴소스:CV_SEASONING>를 넣고 <숙주:CV_INGREDIENT>가 아삭하게 익을 정도로만 볶은 후 마지막에 <참기름:CV_SEASONING>을 넣고 불을 꺼주세요.
+5. <차돌박이:CV_INGREDIENT> <숙주볶음:CV_INGREDIENT>에 <통깨:CV_SEASONING>를 뿌린 후, <송송 썬:CV_STATE> <실파:CV_INGREDIENT>와 <무순:CV_INGREDIENT>을 올려 장식해주세요.

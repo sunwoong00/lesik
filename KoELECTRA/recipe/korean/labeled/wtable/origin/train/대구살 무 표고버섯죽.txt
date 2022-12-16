@@ -1,0 +1,10 @@
+1. 냄비에 <물:CV_SEASONING>을 반쯤 <담:CV_ACT>고 찜기를 <올려:CV_ACT> <대구살:CV_INGREDIENT>을 <찐:CV_ACT> 후, 살만 잘 <발라내:CV_ACT> 곱게 <다져:CV_ACT>주세요.
+2. <무:CV_INGREDIENT>는 껍질을 <벗겨:CV_ACT> <손질해:CV_ACT> 끓는 물에 <넣:CV_ACT>어 푹 <익혀:CV_ACT>주세요.
+
+*Tip. <무:CV_INGREDIENT>는 특유의 아린 맛 때문에 아기가 잘 먹지 못 할 수도 있어요. 그러니 부서질 정도로 푹 <익혀:CV_ACT>서 사용해주세요. <무 삶은 물:CV_SEASONING>은 죽 끓일 때 사용하면 좋아요.
+3. <표고버섯:CV_INGREDIENT>은 기둥을 최대한 바짝 <자른:CV_ACT> 후, 먼지를 <털:CV_ACT>어내고 흐르는 물에 <행군:CV_ACT> 다음 잘게 <다져:CV_ACT>주세요.
+
+*Tip. <버섯:CV_INGREDIENT>끼리 툭툭 부딪쳐가며 <털어내:CV_ACT>면 생각보다 쉽게 털어낼 수 있어요.
+4. 절구에 불린 <쌀:CV_INGREDIENT>과 <대구살:CV_INGREDIENT>, <무:CV_INGREDIENT>를 <넣:CV_ACT>고 잘게 <으깨:CV_ACT>주세요.
+5. 냄비에 모든 재료를 <넣:CV_ACT>고, <물:CV_SEASONING> 또는 <무 삶은 물:CV_SEASONING>에 <부어:CV_ACT> <강한 불:QT_TEMPERATURE>로 <저으:CV_ACT>며 <끓여:CV_ACT>요. 끓기 시작하면 <약한 불:QT_TEMPERATURE>로 <줄여:CV_ACT> 농도가 적당해질 때까지 <저어:CV_ACT>가며 <끓여:CV_ACT>주세요.
+6. 3회분으로 <나눠:CV_ACT> 용기에 <담:CV_ACT>아주세요.

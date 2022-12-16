@@ -1,0 +1,10 @@
+1. <배추:CV_INGREDIENT>의 밑동에 칼집을 <넣:CV_ACT>어 사 등분 한 후 깨끗이 <씻:CV_ACT>어 한입 크기로 <썰:CV_ACT>어주세요. <무:CV_INGREDIENT>는 나박 <썰:CV_ACT>어주세요. 
+(tip. <배추:CV_INGREDIENT>의 심지는 얇게 <저며:CV_ACT> 함께 <절여:CV_ACT>주세요)
+2. <배추:CV_INGREDIENT>와 <무:CV_INGREDIENT>에 <굵은:CV_STATE> <소금:CV_SEASONING> <2큰술:QT_VOLUME>을 <뿌려:CV_ACT> <20분:TI_DURATION> 정도 살짝 숨이 죽을 정도로 <절여:CV_ACT>주세요.
+3. 냄비에 <물:CV_SEASONING>과 <다시마:CV_SEASONING>를 <넣:CV_ACT>어 팔팔 <끓인:CV_ACT> 후 <다시마:CV_SEASONING>는 <건져낸:CV_ACT> 후 <식혀:CV_ACT>주세요.
+4. 냄비에 찹쌀풀 재료를 <넣:CV_ACT>고 잘 <섞:CV_ACT>어준 후 <중약불:QT_TEMPERATURE>에서 <저어:CV_ACT>가며 <끓이:CV_ACT>다가 묽고 끈적한 농도가 나면 불을 <끄:CV_ACT>고 <식혀:CV_ACT>주세요.
+5. <파프리카:CV_INGREDIENT>는 씨를 <빼:CV_ACT>고 얇게 채를 <썰:CV_ACT>어주세요. <배:CV_INGREDIENT>와 <사과:CV_INGREDIENT>는 껍질째 나박 <썰:CV_ACT>어주세요. <쪽파:CV_INGREDIENT>는 4cm 길이로 <썰:CV_ACT>어주세요. <마늘:CV_INGREDIENT>과 <생강:CV_INGREDIENT>은 <편썰:CV_ACT>어주세요.
+6. 볼에 <굵은:CV_STATE> <소금:CV_SEASONING> <2큰술:QT_VOLUME>과 <식힌:CV_STATE> <다시마 물:CV_INGREDIENT>과 <찹쌀풀:CV_SEASONING>을 <넣:CV_ACT>고 <섞:CV_ACT>어 <국물:CV_SEASONING>을 <만들:CV_ACT>어 주세요.
+7. 소독한 유리병에 <절인:CV_STATE> <배추:CV_INGREDIENT>와 <무:CV_INGREDIENT>, <배:CV_INGREDIENT>와 <사과:CV_INGREDIENT>, <마늘:CV_INGREDIENT>, <생강:CV_INGREDIENT>, <파프리카:CV_INGREDIENT>를 켜켜이 <넣:CV_ACT>은 후 <국물:CV_SEASONING>을 <부어:CV_ACT>주세요.
+8. 실온에서 하루 정도 <숙성시킨:CV_ACT> 후 냉장고에 <넣:CV_ACT>어주세요.
+(tip. <1~2달:TI_DURATION> 이내로 드시는 것이 좋아요)

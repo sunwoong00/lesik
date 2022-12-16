@@ -1,0 +1,5 @@
+1. <꽈리고추:CV_INGREDIENT>는 꼭지를 <떼:CV_ACT>고 <씻:CV_ACT>은 후 이등분해주세요. <마늘:CV_INGREDIENT>은 편으로 <썰:CV_ACT>고 <홍고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+2. 달군 팬에 <멸치:CV_INGREDIENT>를 바삭하게 <볶:CV_ACT>은 후 체에 <넣:CV_ACT>고 <흔들:CV_ACT>어 부스러기를 <털:CV_ACT>어주세요.
+3. 달군 팬에 <식용유:CV_SEASONING>를 <두르:CV_ACT>고 <마늘:CV_INGREDIENT>을 <볶:CV_ACT>아주세요.
+4. 양념 재료와 <꽈리고추:CV_INGREDIENT>, <멸치:CV_INGREDIENT>를 <넣:CV_ACT>은 후 <센불:QT_TEMPERATURE>에서 <2~3분:TI_DURATION>간 더 <볶:CV_ACT>아주세요. <홍고추:CV_INGREDIENT>, <참기름:CV_SEASONING>, <통깨:CV_SEASONING>를 <넣:CV_ACT>고 고루 <섞:CV_ACT>어 마무리해주세요.
+5. 완성된 요리를 그릇에 <담:CV_ACT>아 마무리해주세요.

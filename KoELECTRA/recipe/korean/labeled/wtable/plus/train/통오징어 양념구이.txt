@@ -1,0 +1,5 @@
+1. <통오징어:CV_INGREDIENT>는 다리 부분을 잡아당여 내장을 정리 한 후 껍질을 벗겨 칼집을 넣어 주세요.
+(tip. 오징어의 껍질은 마른 행주와 소금을 이용하면 쉽게 제거할 수 있어요)
+2. 분량대로 섞어 <양념장:CV_SEASONING>을 만들어 주세요. <양념장:CV_SEASONING>에 <오징어:CV_INGREDIENT>를 <2~30분:TI_DURATION> 정도 재워주세요.
+3. 구이 전용 팬에 <오징어:CV_INGREDIENT>와 남은 <야채:CV_INGREDIENT>를 함께 올린 후 4단에 넣고 광파오븐 수동요리 구이에서 <13~16분:TI_DURATION>정도 구워주세요.
+4. 완성된 <통오징어 양념구이:CV_INGREDIENT>를 접시에 담아 맛있게 즐겨주세요.

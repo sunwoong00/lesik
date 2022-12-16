@@ -1,0 +1,6 @@
+1. <쌀:CV_INGREDIENT>은 <씻:CV_ACT>어 <30분:TI_DURATION> 정도 <불린:CV_ACT> 후 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>고 <톳 장아찌:CV_INGREDIENT>는 체에 <밭쳐:CV_ACT> 준비해 주세요.
+2. <연근:CV_INGREDIENT>은 조리용 수세미로 문질러 깨끗이 <씻:CV_ACT>고 얇게 <썬:CV_ACT> 후 약간의 <식초를 넣은:CV_STATE> <물:CV_SEASONING>에 <10분:TI_DURATION> 정도 <담갔:CV_ACT>다가 물에 <씻:CV_ACT>어 준비해 주세요. <당근:CV_INGREDIENT>, <표고버섯:CV_INGREDIENT>은 한입 크기로 <자르:CV_ACT>고 <쪽파:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요. 볼에 양념간장 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요.
+3. 달군 냄비에 <참기름:CV_SEASONING>을 <두르:CV_ACT>고 <불린:CV_STATE> <쌀:CV_INGREDIENT>을 <넣:CV_ACT>어 <볶:CV_ACT>다가 <다시마 육수:CV_SEASONING>를 <부은:CV_ACT> 후 <톳 장아찌:CV_INGREDIENT>와 <연근:CV_INGREDIENT>, <당근:CV_INGREDIENT>, <표고:CV_INGREDIENT>를 <얹:CV_ACT>고 뚜껑을 닫고 <센 불:QT_TEMPERATURE>에서 <끓여:CV_ACT>주세요.
+(tip. <야채:CV_INGREDIENT>에서 수분이 나 올 수 있어 <다시마 육수:CV_SEASONING>의 양을 기호에 맞게 조금 줄여서 만드셔도 돼요)
+4. <밥물:CV_SEASONING>이 끓기 시작하면 불을 <약한 불:QT_TEMPERATURE>로 <줄여:CV_ACT> <15분:TI_DURATION>  정도 <익혀:CV_ACT>주세요.
+5. <밥:CV_INGREDIENT>이 다 지어지면 <5분:TI_DURATION> 정도 뜸을 <들인:CV_ACT> 후 <송송 썬:CV_STATE> <쪽파:CV_INGREDIENT>를 <올려:CV_ACT> 주걱으로 위아래 가볍게 <섞:CV_ACT>고 <양념간장:CV_SEASONING>을 <곁들여:CV_ACT> 맛있게 즐겨주세요.

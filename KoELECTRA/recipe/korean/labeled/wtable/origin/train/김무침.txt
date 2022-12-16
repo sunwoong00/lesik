@@ -1,0 +1,7 @@
+1. <마른:CV_STATE> <김:CV_INGREDIENT>은 달군 프라이팬에 <두 장:QT_VOLUME>을 겹쳐서 앞뒤로 <구워:CV_ACT>주세요.
+(Tip. <김:CV_INGREDIENT>을 <구워:CV_ACT>서 사용하면 <김:CV_INGREDIENT>의 비린내를 잡아주고 질기지 않아서 좋아요.)
+2. <김:CV_INGREDIENT>을 적당한 크기로 <자른:CV_ACT> 후 비닐봉지에 <넣:CV_ACT>어 <김:CV_INGREDIENT>을 <비벼:CV_ACT>서 잘게 <만들어:CV_ACT>주세요.
+3. <쪽파:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>는 송송 <썰:CV_ACT>고, 양념 재료는 모두 <섞:CV_ACT>어주세요.
+4. 볼에 <김:CV_INGREDIENT>과 <쪽파:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>, <섞어 둔:CV_STATE> <양념장:CV_SEASONING>을 <넣:CV_ACT>어 <김:CV_INGREDIENT>이 뭉치지 않게 <무쳐:CV_ACT>주세요. <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 완성해주세요.
+(Tip. <김:CV_INGREDIENT>은 뭉치지 않게 여러 번 나누어 <넣:CV_ACT>어주세요.)
+5. 맛있게 즐겨주세요.

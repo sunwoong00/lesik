@@ -1,0 +1,5 @@
+1. <양배추:CV_INGREDIENT>와 <양파:CV_INGREDIENT>는 채를 <썰:CV_ACT>어주세요. <마늘:CV_INGREDIENT>은 편으로 <썰:CV_ACT>고 <쪽파:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요. 밑동 부분을 자른 <팽이버섯:CV_INGREDIENT>은 먹기 좋게 <손질해:CV_ACT> 주세요. 
+2. 볼에 된장소스 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요.
+3. 달군 팬에 <식용유:CV_SEASONING>를 <두른:CV_ACT> 후 <마늘:CV_INGREDIENT>을 <넣:CV_ACT>어 <볶:CV_ACT>다가 향이 나면 <양파:CV_INGREDIENT>를 <넣:CV_ACT>고 <소금:CV_SEASONING>과 <후추:CV_SEASONING>를 <뿌려:CV_ACT> <볶:CV_ACT>아주세요.
+4. <양파:CV_INGREDIENT>가 반쯤 익으면 <양배추:CV_INGREDIENT>를 <넣:CV_ACT>고 <볶:CV_ACT>다가 마지막에 <팽이버섯:CV_INGREDIENT>을 <넣:CV_ACT>고 <소금:CV_SEASONING>과 <후춧가루:CV_SEASONING>를 <뿌려:CV_ACT> <볶:CV_ACT>아주세요.
+5. <밥:CV_INGREDIENT> 위에 <양배추 볶음:CV_INGREDIENT>을 <올리:CV_ACT>고 <된장소스:CV_SEASONING>를 <얹:CV_ACT>은 후 <실파:CV_SEASONING>와 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 맛있게 즐겨주세요.

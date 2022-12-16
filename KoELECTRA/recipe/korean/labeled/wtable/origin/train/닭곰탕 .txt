@@ -1,0 +1,12 @@
+1. <닭:CV_INGREDIENT>은 내장과 꽁지, 지방, 날개 끝을 <제거한:CV_ACT> 후 뱃속에 핏물이 없이 깨끗이 <씻:CV_ACT>어 냄비에 <넣:CV_ACT>고 닭 삶는 재료와 함께 <50분:TI_DURATION> 정도 <삶:CV_ACT>아주세요.
+
+2. <대파:CV_INGREDIENT>는 송송 <썰:CV_ACT>고 <달걀:CV_INGREDIENT>은 약간의 <소금:CV_SEASONING>을 <넣:CV_ACT>고 <섞:CV_ACT>어 약한 불에서 지단을 <부친:CV_ACT> 후 채를 <썰:CV_ACT>어주세요.
+
+3. <닭 육수:CV_SEASONING>에서 <닭:CV_INGREDIENT>을 <건져낸:CV_ACT> 후 한 김 <식혀:CV_ACT> 살과 뼈를 <분리하:CV_ACT>고 살은 결대로 먹기 좋게 <찢:CV_ACT>어 준비해 주세요.
+
+4. <닭 육수:CV_SEASONING>에 <닭뼈:CV_INGREDIENT>를 <넣:CV_ACT>어 <중불:QT_TEMPERATURE>에서 <30~40분:TI_DURATION> 정도 <끓여:CV_ACT>주세요. 국물이 진하게 우러나면 체에 <밭쳐:CV_ACT> 건더기를 <걸러내:CV_ACT>고 면포에 <걸러:CV_ACT> <닭곰탕육수:CV_SEASONING>를 <만들:CV_ACT>어주세요.
+(tip 뽀얀 국물이 우러날 때까지 물 <3컵:QT_VOLUME>을 <추가해:CV_ACT>서 <끓여:CV_ACT>주세요.)
+5. 냄비에 <닭곰탕 육수:CV_SEASONING>를 <붓:CV_ACT>고 <닭살:CV_INGREDIENT>을 <넣:CV_ACT>어 한소끔 <끓여:CV_ACT> 마무리해 주세요. 
+
+6. <지단:CV_INGREDIENT>과 <송송 썬:CV_STATE> <대파:CV_INGREDIENT>를 <얹:CV_ACT>고 기호에 따라 <소금장:CV_SEASONING>과 <다진:CV_STATE> <양념:CV_SEASONING>을 <곁들여:CV_ACT> 맛있게 즐겨주세요.
+

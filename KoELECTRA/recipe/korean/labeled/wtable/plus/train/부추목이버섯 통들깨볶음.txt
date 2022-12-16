@@ -1,0 +1,7 @@
+1. <부추:CV_INGREDIENT>는 3cm길이로 썰고, <목이버섯:CV_INGREDIENT>은 불려서 채를 썰어주세요.
+2. 냄비에 <들기름:CV_SEASONING>을 두르고 <목이버섯:CV_INGREDIENT>을 볶다가 <간장:CV_SEASONING>을 분량에서 반량만 쳐서 간을 맞추세요.
+3. <부추:CV_INGREDIENT>를 <볶은:CV_STATE> <목이버섯:CV_INGREDIENT> 위에 소복하게 얹고 <약불:QT_TEMPERATURE>로 줄여 뚜껑을 닫고 <10초:TI_DURATION> 정도 그대로 두세요.
+(<부추:CV_INGREDIENT>의 아삭함이 남아있도록 볶아야 맛있어요.)
+4. 뚜껑을 열고 남은 <간장:CV_SEASONING>을 쳐주고 <통들깨:CV_SEASONING>를 넣어 섞어준 다음 <불:QT_TEMPERATURE>에서 내려주세요.
+(<통들깨:CV_SEASONING>가 없으면 <통깨:CV_SEASONING>로 대체하고 <참기름:CV_SEASONING>을 사용하세요.)
+5. 완성된 요리를 그릇에 담아 마무리해주세요.

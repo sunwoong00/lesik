@@ -1,0 +1,6 @@
+1. <콩나물:CV_INGREDIENT>은 깨끗이 <씻:CV_ACT>어 준비하고 <두부:CV_INGREDIENT>는 먹기 좋게 <썰:CV_ACT>어 키친타올에 <올려:CV_ACT> 물기를 <빼:CV_ACT> 주세요.
+2. <대파:CV_INGREDIENT>는 반 <갈라:CV_ACT> 4cm 길이로 <썰:CV_ACT>고 <청양고추:CV_INGREDIENT>는 어슷하게 <썬:CV_ACT> 후 <양파:CV_INGREDIENT>는 굵게 채를 <썰:CV_ACT>어주세요. 볼에 양념장 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요.
+3. 달군 팬에 약간의 <기름:CV_SEASONING>을 <두르:CV_ACT>고 <두부:CV_INGREDIENT>를 앞뒤로 노릇하게 <구워:CV_ACT>주세요.
+4. 냄비에 <양파:CV_INGREDIENT>와 <콩나물:CV_INGREDIENT>을 바닥에 <깔:CV_ACT>고 <두부:CV_INGREDIENT>를 <올린:CV_ACT> 후 멸치 다시마 육수와 <양념장:CV_SEASONING>을 <넣:CV_ACT>고 <조려:CV_ACT>주세요.
+(tip <두부:CV_INGREDIENT>에 <양념 국물:CV_SEASONING>을 <끼얹:CV_ACT>어 가며 <조려:CV_ACT>주세요.)
+5. <콩나물:CV_INGREDIENT>이 익으면 <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>를 <넣:CV_ACT>고 한소끔 <끓여:CV_ACT> 준 후 맛있게 즐겨주세요.

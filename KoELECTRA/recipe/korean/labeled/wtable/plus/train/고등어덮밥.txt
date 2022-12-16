@@ -1,0 +1,5 @@
+1. <고등어:CV_INGREDIENT>는 밑간 재료에 <10분:TI_DURATION> 정도 재운 후 키친타올에 올려 물기를 제거해 주세요.
+2. <양배추:CV_INGREDIENT>는 얇게 채를 썰고 <적양파:CV_INGREDIENT>는 얇게 링으로 썰어 찬물에 <10분:TI_DURATION> 정도 담갔다가 물기를 빼주세요. <잎채소:CV_INGREDIENT>는 깨끗이 씻어 물기를 빼고 <실파:CV_INGREDIENT>는 송송 썰어주세요. 볼에 데리야키 소스 재료를 넣어 섞어주세요.
+3. 달군 팬에 약간의 <기름:CV_SEASONING>을 두르고 <고등어:CV_INGREDIENT>를 올려 앞 뒤로 노릇하게 구운 후 키친타올에 올려 기름을 빼 주세요.
+4. 팬에 <데리야키 소스:CV_SEASONING>를 넣고 바글바글 끓으면 <구운:CV_STATE> <고등어:CV_INGREDIENT>를 넣어 앞 뒤로 뒤집어가며 졸여주세요.
+5. 그릇에 <밥:CV_INGREDIENT>을 담고 <데리야키 소스:CV_SEASONING> <1큰술:QT_VOLUME>을 얹고 <고등어:CV_INGREDIENT>와 <양배추:CV_INGREDIENT>, <잎채소:CV_INGREDIENT>, <적양파:CV_INGREDIENT>, <연와사비:CV_SEASONING>, <레몬:CV_INGREDIENT>을 얹고 <송송 썬:CV_STATE> <실파:CV_INGREDIENT>를 뿌려주세요

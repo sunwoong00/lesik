@@ -1,0 +1,6 @@
+1. <오이:CV_INGREDIENT>는 <굵은:CV_STATE> <소금:CV_SEASONING>으로 문질러 물에 헹궈 주세요. 양 끝을 자른 후 사선으로 칼집을 내주세요. 반대쪽도 동일하게 칼집을 내주세요.
+2. 볼에 소금물 재료를 넣고 섞은 후 <손질한:CV_STATE> <오이:CV_INGREDIENT>를 넣어 <15분:TI_DURATION>간 절여주세요.
+3. <고추:CV_INGREDIENT>와 <양파:CV_INGREDIENT>는 굵게 다져주세요.
+4. 볼에 절임물 재료를 넣고 <설탕:CV_SEASONING>이 녹을 때 까지 저어주세요.
+5. <절인:CV_STATE> <오이:CV_INGREDIENT>와 <다진:CV_STATE> <고추:CV_INGREDIENT>, <양파:CV_INGREDIENT>를 병에 넣고 절임물 재료를 부어 실온에서 <30분:TI_DURATION>간 절여주세요.
+6. <절인:CV_STATE> <오이:CV_INGREDIENT>는 먹기 좋게 썰어 그릇에 담고 <통깨:CV_SEASONING>를 뿌려 맛있게 즐겨주세요.

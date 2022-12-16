@@ -1,0 +1,4 @@
+1. 깨끗이 <씻은:CV_STATE> <청경채:CV_INGREDIENT>는 밑동을 제거 후 세로로 반으로 잘라주세요. <마늘:CV_INGREDIENT>은 편으로 썰고, <페페론치노:CV_INGREDIENT>는 반으로 자르고, <땅콩:CV_INGREDIENT>은 잘게 다져주세요. 소스재료는 볼에 넣어 섞어주세요.
+2. 달군 팬에 <기름:CV_SEASONING>을 두르고 <마늘:CV_INGREDIENT>을 노릇하게 볶다가 <페페론치노:CV_SEASONING>를 넣어 볶아주세요.
+3. <청경채:CV_INGREDIENT>를 넣어 <센불:QT_TEMPERATURE>에서 볶다가 소스 재료를 넣어 <중불:QT_TEMPERATURE>에서 <2분:TI_DURATION> 정도 볶아주세요.
+4. 불을 끈 후 <다진:CV_STATE> <땅콩:CV_INGREDIENT>과 <참기름:CV_SEASONING>을 뿌려 완성해주세요.

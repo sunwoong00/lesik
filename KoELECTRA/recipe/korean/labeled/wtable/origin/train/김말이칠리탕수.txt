@@ -1,0 +1,5 @@
+1. <홍피망:CV_INGREDIENT>과 <청피망:CV_INGREDIENT>, <양파:CV_INGREDIENT>를 잘게 <썰:CV_ACT>고, 볼에 소스 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요.
+2. 팬에 <기름:CV_SEASONING>을 <넣:CV_ACT>고 <170도:QT_TEMPERATURE>로 달군 후 <김말이:CV_INGREDIENT>를 <넣:CV_ACT>어 바삭하게 <튀겨:CV_ACT>주세요.
+3. 달군 팬에 <고추기름:CV_SEASONING>을 <두르:CV_ACT>고 <양파:CV_INGREDIENT>를 <볶:CV_ACT>다가 소스 재료를 <넣:CV_ACT>고 <끓:CV_ACT>여주세요.
+4. <소스:CV_SEASONING>가 끓으면 <청피망:CV_INGREDIENT>, <파프리카:CV_INGREDIENT>를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요. <녹말물:CV_SEASONING>을 <넣:CV_ACT>어 걸쭉한 농도가 되면 불을 <꺼:CV_ACT>주세요.
+5. 접시에 <김말이:CV_INGREDIENT>를 <담:CV_ACT>고 <소스:CV_SEASONING>를 <곁들여:CV_ACT> 맛있게 즐겨주세요.

@@ -1,0 +1,6 @@
+1. <불린:CV_STATE> <찹쌀:CV_SEASONING>과 <통마늘:CV_INGREDIENT>을 <준비해:CV_ACT> 주세요.
+2. 팬에 <포도씨유:CV_SEASONING>를 <두르:CV_ACT>고 <통마늘:CV_INGREDIENT>을 골고루 <익혀:CV_ACT>주세요.
+3. 냄비에 <구운:CV_STATE> <마늘:CV_INGREDIENT>과 불린 <찹쌀:CV_INGREDIENT>, <우유:CV_INGREDIENT>, <물:CV_SEASONING>을 <넣:CV_ACT>고 <끓여:CV_ACT>주세요. 끓어오르면 <중불:QT_TEMPERATURE>로 <낮추:CV_ACT>고 <생크림:CV_SEASONING>을 <넣:CV_ACT>어 <찹쌀:CV_INGREDIENT>이 푹 익도록 더 <끓여:CV_ACT>줍니다.
+4. 블렌더나 핸드믹서를 사용하여 곱게 <갈:CV_ACT>아주고 <소금:CV_SEASONING>으로 간을 <맞춰:CV_ACT> 완성해 주세요.
+
+*Tip. <마늘 타락죽:CV_INGREDIENT>은 입자를 곱게 할수록 더 부드럽게 즐길수 있답니다.

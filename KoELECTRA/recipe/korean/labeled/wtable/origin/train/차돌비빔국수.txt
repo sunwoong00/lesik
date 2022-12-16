@@ -1,0 +1,8 @@
+1. <오이:CV_INGREDIENT>와 <대파:CV_INGREDIENT>는 5cm길이로 채를 <썬:CV_ACT> 후 <대파:CV_INGREDIENT>는 찬물에 <담가:CV_ACT>주세요. <청상추:CV_INGREDIENT>는 한 입 크기로 <자르:CV_ACT>고 <홍고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+2. <차돌박이:CV_INGREDIENT>는 키친타올에 <올려:CV_ACT> 핏물을 <제거해:CV_ACT>주세요. 볼에 양념 재료를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+3. 끓는 물에 <중면:CV_INGREDIENT>을 <펼쳐:CV_ACT> <넣:CV_ACT>고, 면끼리 달라붙지 않도록 젓가락으로 <저어:CV_ACT>주세요. 물이 끓어오르면 <찬물:CV_SEASONING> <반 컵:QT_VOLUME>을 3~4회 반복해서 <국수:CV_INGREDIENT>를 <삶:CV_ACT>아주세요.
+4. 흐르는 찬물에 <중면:CV_INGREDIENT>을 여러 번 <씻:CV_ACT>어 전분기를 <없애:CV_ACT>고, 채반에 <받쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+5. 달군 팬에 <차돌박이:CV_INGREDIENT>를 소금간을 하여 노릇하게 <구워:CV_ACT>주세요.
+6. <섞어둔:CV_STATE> <양념장:CV_SEASONING>에 <중면:CV_INGREDIENT>을 <넣:CV_ACT>고 고루 <버무려:CV_ACT>주세요. <청상추:CV_INGREDIENT>를 <넣:CV_ACT>어 가볍게 <버무려:CV_ACT>주세요.
+7. 완성 그릇에 <비빔국수:CV_INGREDIENT>를 <담:CV_ACT>고 <차돌박이:CV_INGREDIENT>와 <오이채:CV_INGREDIENT>, <대파채:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>, <깨:CV_SEASONING>를 <뿌려:CV_ACT> 완성해주세요. 
+(기호에 따라 <깻잎:CV_INGREDIENT>, <치커리:CV_INGREDIENT> 등의 <야채:CV_INGREDIENT>등을 <넣:CV_ACT>어 드셔도 좋아요.)

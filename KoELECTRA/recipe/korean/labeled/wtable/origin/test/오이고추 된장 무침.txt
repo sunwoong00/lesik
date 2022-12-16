@@ -1,0 +1,4 @@
+1. <오이고추:CV_INGREDIENT>는 2~3cm  길이로 <자르:CV_ACT>고 <올리브:CV_INGREDIENT>는 삼등분 <해:CV_ACT>주세요. 양념 재료를 볼에 <넣:CV_ACT>고 <섞:CV_ACT>어주세요
+(tip. <된장:CV_SEASONING>마다 염분이 조금씩 다르기 때문에 입맛에 맞게 <조절해:CV_ACT> 주세요)
+2. 양념에 <고추:CV_INGREDIENT>와 <올리브:CV_INGREDIENT>를 <넣:CV_ACT>어 <버무린:CV_ACT> 후 <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+3. 그릇에 <담:CV_ACT>아 맛있게 즐겨주세요.

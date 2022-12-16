@@ -1,0 +1,7 @@
+1. <조랭이떡:CV_INGREDIENT>은 찬물에 <담갔:CV_ACT>다가 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요. <대파:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+2. <달걀:CV_INGREDIENT>은 약간의 <소금:CV_SEASONING>을 <넣:CV_ACT>어 <황백지단:CV_SEASONING>을 <부쳐:CV_ACT> 가늘게 채를 <썰:CV_ACT>어주세요.
+3. 볼에 핏물을 <제거한:CV_ACT> <다진:CV_STATE> <쇠고기:CV_INGREDIENT>와 쇠고기 양념 재료를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+4. 팬에 <고기:CV_INGREDIENT>를 <볶:CV_ACT>은 후 <덜:CV_ACT>어주세요. 냄비에 <육수:CV_SEASONING>를 <넣:CV_ACT>어 <끓여:CV_ACT>주세요.
+5. <육수:CV_SEASONING>가 끓으면 <조랭이떡:CV_INGREDIENT>을 <넣:CV_ACT>고, <조랭이떡:CV_INGREDIENT>이 떠오르면 <대파:CV_INGREDIENT>와 국물 재료를 <넣:CV_ACT>어 주세요.
+6. 그릇에 <조랭이떡국:CV_INGREDIENT>을 <담:CV_ACT>고 <볶은:CV_STATE> <고기:CV_INGREDIENT>와 <달걀지단:CV_SEASONING>을 <올려:CV_ACT> 완성해주세요.
+(기호에 따라 <김 가루:CV_SEASONING> 등을 <곁들여:CV_ACT> 드셔도 좋아요.)

@@ -1,0 +1,7 @@
+1. <배추:CV_INGREDIENT> <반 통:QT_VOLUME>을 2등분 한 후 씻어주세요. <미나리:CV_INGREDIENT>와 <오이:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>는 깨끗이 씻어 준비하고 <무:CV_INGREDIENT>는 길게 4등분 내주세요. 
+2. <양파:CV_INGREDIENT>는 반으로 잘라 3등분 내주세요. <마늘:CV_INGREDIENT>과 <생강:CV_INGREDIENT>은 편썰고 <표고버섯:CV_INGREDIENT>은 기둥을 떼어내주세요.
+3. 냄비에 양념 재료를 넣고 팔팔 끓인 후 식혀주세요.
+4. <식은:CV_STATE> <양념:CV_SEASONING>을 손질한 재료에 넣고 <하루:TI_DURATION> 정도 절여주세요. 절인 재료를 뒤집어서 다시 <하루:TI_DURATION> 정도 절여주세요. 
+(tip. 무거운걸 올려 <채소:CV_INGREDIENT>가 <양념:CV_SEASONING>에 잠길 수 있도록 해주세요)
+5. 완성된 <장김치:CV_INGREDIENT>는 먹기 좋게 썰어주세요. 
+(tip. 밥 반찬으로 활용하시거나 메밀면에 <장김치 국물:CV_SEASONING>과 <채소:CV_INGREDIENT>를 넣어 <들기름 막국수:CV_INGREDIENT>로 드셔도 좋아요)

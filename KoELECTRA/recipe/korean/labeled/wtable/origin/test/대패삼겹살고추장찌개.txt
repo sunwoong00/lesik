@@ -1,0 +1,12 @@
+1. <대파:CV_INGREDIENT>는 1cm 크기로 송송 <썰:CV_ACT>고 <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+2. <양파:CV_INGREDIENT>는 <채 썰:CV_ACT>고 <감자:CV_INGREDIENT>는 껍질을 <벗기:CV_ACT>고 2cm 두께로 <슬라이스한:CV_ACT> 뒤 2등분 해주세요.
+3. <느타리버섯:CV_INGREDIENT>은 흐르는 물에 잘 <씻:CV_ACT>고 밑동을 <잘라:CV_ACT>주세요.
+4. 달군 냄비에 <식용유:CV_SEASONING>를 <두르:CV_ACT>고 <대파:CV_INGREDIENT>를 <넣:CV_ACT>어 파기름을 <낸:CV_ACT> 뒤 <대패삼겹살:CV_INGREDIENT>을 <넣:CV_ACT>어 <2~3분:TI_DURATION> 정도 <볶:CV_ACT>아주세요.
+
+*Tip. <고기류:CV_INGREDIENT>는 미리 한 번 <볶:CV_ACT>는 게 좋고 노릇하게 오랫동안 볶는 게 포인트예요!
+5. 대패삼겹살이 노릇하게 <익:CV_ACT>으면 <고춧가루:CV_SEASONING>를 <넣:CV_ACT>고 <30초:TI_DURATION> 정도 <볶:CV_ACT>아주세요.
+
+*Tip. <고춧가루:CV_SEASONING>를 넣으면 <고추기름:CV_SEASONING>이 생기면서 <고기:CV_INGREDIENT>에 간이 배어요!
+6. <물:CV_SEASONING>을 <넣:CV_ACT>고 보글보글 끓어오르면 <감자:CV_INGREDIENT>를 <넣:CV_ACT>어 <1분:TI_DURATION> 정도 <끓여:CV_ACT>주세요.
+7. <설탕:CV_SEASONING>, <국간장:CV_SEASONING>, <고추장:CV_SEASONING>, <마늘:CV_INGREDIENT>, <참기름:CV_SEASONING>을 <넣:CV_ACT>고 <1분:TI_DURATION> 정도 <끓여:CV_ACT>주세요.
+8. <느타리버섯:CV_INGREDIENT>, <양파:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>고 감자가 익을 때까지 <4분:TI_DURATION> 정도 더 <끓이:CV_ACT>면 완성이예요.

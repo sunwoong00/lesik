@@ -1,0 +1,11 @@
+1. <묵은지:CV_INGREDIENT>는 먹기 좋은 크기로 <썰:CV_ACT>고, <양파:CV_INGREDIENT>는 굵게 <다지:CV_ACT>고, <대파:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요. 
+2. 달군 팬에 <기름:CV_SEASONING>을 살짝 <두른:CV_ACT> 후 <양파:CV_INGREDIENT>를 <2분:TI_DURATION> 정도 <볶:CV_ACT>다가 <신김치:CV_INGREDIENT>와 <김치 양념재료:CV_SEASONING>를 넣어 <중약불:QT_TEMPERATURE>에서 <8분:TI_DURATION> 정도 더 <볶:CV_ACT>아주세요.
+(tip. <김치:CV_INGREDIENT>를 볶을 때, <물:CV_SEASONING>을 살짝 <넣:CV_ACT>어 <볶:CV_ACT>으면 훨씬 부드러워요. 취향에 따라 <돼지고기:CV_INGREDIENT>를 <넣:CV_ACT>어 함께 <볶:CV_ACT>아주셔도 맛있답니다)
+
+3. 물기가 어느 정도 없어지면, <썰어 둔:CV_STATE> <파:CV_SEASONING>와 <참기름:CV_SEASONING>을 <넣:CV_ACT>어 마무리해주세요.
+4. <끓는 물:CV_SEASONING>에 <소금:CV_SEASONING>을 약간 <넣:CV_ACT>은 후 <두부:CV_INGREDIENT>를 <2분:TI_DURATION> 정도 <데치:CV_ACT>고, 먹기 좋은 크기로 <썰:CV_ACT>어주세요.
+(tip.<두부:CV_INGREDIENT>를 데치게 되면 탱탱한 식감으로 즐기실 수 있어요.)
+5. 스타일링 tip!
+
+접시에 <두부김치:CV_INGREDIENT>를 <담:CV_ACT>을 때 <두부:CV_INGREDIENT>는 한쪽방향으로 가지런하게 <담:CV_ACT>고, <볶은:CV_STATE> <김치:CV_INGREDIENT>는 <두부:CV_INGREDIENT>에 닿지 않게 정갈하게 <담:CV_ACT>아주세요. 함께 볶은 <파:CV_INGREDIENT>가 <김치:CV_INGREDIENT> 윗쪽으로 <올라왔:CV_ACT>을 때 색감이 예쁘고 맛있어 보일 수 있어요. <두부:CV_INGREDIENT>의 한쪽은 <통깨:CV_SEASONING>, 한쪽은 <검은깨:CV_SEASONING>를 <뿌려내:CV_ACT>면 더 멋스럽답니다.
+6. 접시에 <두부:CV_INGREDIENT>와 <볶은 김치:CV_INGREDIENT>를 <담:CV_ACT>은 후 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.

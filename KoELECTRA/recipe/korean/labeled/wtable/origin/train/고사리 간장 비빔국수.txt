@@ -1,0 +1,5 @@
+1. <고사리:CV_INGREDIENT>는 3cm 길이로 <잘라:CV_ACT>주세요. <청양고추:CV_INGREDIENT>는 굵게 <다져:CV_ACT>주세요. <대파:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요. 볼에 국수 양념 재료를 모두 <섞:CV_ACT>어주세요.
+2. 달군 팬에 <참기름:CV_SEASONING>을 <두르:CV_ACT>고 송송 <썬:CV_ACT> <대파:CV_INGREDIENT>를 <넣:CV_ACT>고 <볶:CV_ACT>다가 <고사리:CV_INGREDIENT>와 <소금:CV_SEASONING> <한 꼬집:QT_VOLUME>을 <넣:CV_ACT>어 <2분간:TI_DURATION> <볶:CV_ACT>아주세요. 
+3. 끓는 물에 <소면:CV_INGREDIENT>을 펼쳐 <넣:CV_ACT>고 젓가락으로 <저어:CV_ACT> 면끼리 달라붙 지 않도록 <저어:CV_ACT>주고 <물:CV_SEASONING>이 끓어오르면 <찬물:CV_SEASONING> <반 컵:QT_VOLUME>을 2~3회 반복해서 <부어:CV_ACT> <국수:CV_INGREDIENT>를 <삶:CV_ACT>아주세요. 흐르는 찬물에 <소면:CV_INGREDIENT>을 여러 번 <씻:CV_ACT>어 전분기를 없애고 체반에 받쳐 물기를 <빼:CV_ACT>주세요. 
+4. 볼에 <삶은:CV_STATE> <국수:CV_INGREDIENT>와 <볶은:CV_STATE> <고사리:CV_INGREDIENT>, <양념장:CV_SEASONING>을 <넣:CV_ACT>고 골고루 <섞:CV_ACT>어주세요.
+5. 그릇에 <담:CV_ACT>아 <달걀노른자:CV_INGREDIENT>와 <다진:CV_STATE> <청양고추:CV_INGREDIENT>를 <넣:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.

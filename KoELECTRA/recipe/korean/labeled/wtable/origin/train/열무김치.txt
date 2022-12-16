@@ -1,0 +1,9 @@
+1. <얼갈이:CV_INGREDIENT>는 뿌리 부분을 <잘라내:CV_ACT>고 2~3등분으로 잘라 주세요. <열무:CV_INGREDIENT>는 뿌리 끝부분을 <자르:CV_ACT>고 <긁:CV_ACT>어 <다듬:CV_ACT>은 후 두꺼운 뿌리는 반으로 <가르:CV_ACT>고 길이로 2~3등분으로 <잘라:CV_ACT> <손질해:CV_ACT> 주세요.
+(tip. 잎이 큰 얼갈이는 반으로 <잘라:CV_ACT> 주세요)
+2. <손질한:CV_STATE> <얼갈이:CV_INGREDIENT>와 <열무:CV_INGREDIENT>는 물에 살살 <흔들:CV_ACT>어 <씻:CV_ACT>어 주세요. <굵은:CV_SEASONING> <소금:CV_SEASONING>을 <뿌려:CV_ACT> <30분:TI_DURATION> 정도 <절이:CV_ACT>고 위아래로 <뒤집:CV_ACT>어 <20분:TI_DURATION> 정도 더 <절여:CV_ACT> 주세요. 물에 흔들어 <씻:CV_ACT>어 채반에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+(tip. <열무:CV_INGREDIENT>는 씻을 때와 절일 때, 양념에 버무릴 때 살살 버무려야 풋내가 나지 않게 만들 수 있어요)
+3. 냄비에 <밀가루:CV_SEASONING> <풀 재료:CV_SEASONING>를 <넣:CV_ACT>고 잘 <섞어준:CV_ACT> 후 <중불:QT_TEMPERATURE>에서 <저어:CV_ACT>가며 <풀:CV_ACT>고 기포가 올라오면서 농도가 나면 불을 <끄:CV_ACT>고 <식혀:CV_ACT>주세요.
+4. <양파:CV_INGREDIENT>는 큼직하게 <썰:CV_ACT>고, <홍고추:CV_INGREDIENT>는 꼭지를 <제거:CV_ACT> 후 송송 <썰:CV_ACT>어주세요. <새우젓:CV_SEASONING>과 <생강:CV_INGREDIENT>을 함께 블렌더에 넣어 굵게 <갈:CV_ACT>아주세요. <쪽파:CV_INGREDIENT>는 5센티 길이로 <썰:CV_ACT>어주세요.
+5. 볼에 블렌더에서 간 재료와 <식힌:CV_STATE> <밀가루 풀:CV_SEASONING>, 양념 재료를 <넣:CV_ACT>고 고루 <섞:CV_ACT>어 김치 양념장을 <만들:CV_ACT>어주세요.
+6. <양념:CV_SEASONING>을 <절인:CV_STATE> <열무:CV_INGREDIENT>와 <얼갈이:CV_INGREDIENT>, <쪽파:CV_INGREDIENT>에 <넣:CV_ACT>고 숨이 살짝 죽으면 전체적으로 가볍게 <섞:CV_ACT>어 김치통에 <담:CV_ACT>아주세요. 상온에서 1~2일 정도 <숙성시켰:CV_ACT>다가 <냉장 보관해:CV_ACT> 주세요.
+(tip. <열무:CV_INGREDIENT>와 얼갈이의 절여진 염도에 따라 마지막에 <새우젓 국물:CV_SEASONING> 또는 <소금:CV_SEASONING>을 <가감해:CV_ACT>서 간을 맞춰주세요)

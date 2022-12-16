@@ -1,0 +1,8 @@
+1. <매생이:CV_INGREDIENT>는 고운 체에 <받쳐:CV_ACT> 물에 여러번 <헹궈:CV_ACT> 깨끗이 <씻:CV_ACT>고 먹기좋게 <잘라:CV_ACT>주세요.
+2. <굴:CV_INGREDIENT>은 연한 <소금물:CV_SEASONING>에 <넣:CV_ACT>고 이물질을 <제거하:CV_ACT>며 살살 <흔들:CV_ACT>어 <씻:CV_ACT>어 물기를 <빼:CV_ACT>고 <조랭이떡:CV_INGREDIENT>은 물에 <헹궈:CV_ACT> 준비해주세요.
+3. <달걀:CV_INGREDIENT>은 <황백 지단:CV_SEASONING>을 <만들:CV_ACT>어 마름모 모양으로 <썰:CV_ACT>어주세요.
+4. 냄비에 <멸치 다시마 육수:CV_SEASONING>를 <붓:CV_ACT>고 끓어오르면 <조랭이떡:CV_INGREDIENT>을 <넣:CV_ACT>고 <끓여:CV_ACT>주세요.
+5. <조랭이떡:CV_INGREDIENT>이 떠오르면 <국물 양념 재료:CV_SEASONING>와 <굴:CV_INGREDIENT>을 <넣:CV_ACT>고 <1분:TI_DURATION>정도 <끓여:CV_ACT>주세요.
+6. <매생이:CV_INGREDIENT>를 <넣:CV_ACT>고 한소끔 <끓:CV_ACT>인 후 <참기름:CV_SEASONING> <넣:CV_ACT>고 마무리해주세요. 
+(tip 기호에 따라 <소금:CV_SEASONING>을 <가감해:CV_ACT>서 간을 맞춰주세요.)
+7. 그릇에 <떡국:CV_INGREDIENT>을 <담:CV_ACT>고 <지단:CV_SEASONING>을 <올려:CV_ACT> 맛있게 즐겨주세요

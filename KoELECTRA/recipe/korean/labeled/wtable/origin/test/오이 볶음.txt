@@ -1,0 +1,5 @@
+1. <오이:CV_INGREDIENT>는 0.5cm 두께로 <썰:CV_ACT>어주세요. 볼에 <오이:CV_INGREDIENT>를 <담:CV_ACT>고 <소금:CV_SEASONING> <2큰술:QT_VOLUME>을 <넣:CV_ACT>어 <섞:CV_ACT>은 후 <10분간:TI_DURATION> <절여:CV_ACT>주세요.
+2. <홍고추:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요. <절인:CV_STATE> <오이:CV_INGREDIENT>는 면보에 <감싸:CV_ACT> 물기를 <짜:CV_ACT>주세요.
+(절인 오이를 먹어봤을 때 짜다면 <물:CV_SEASONING>에 가볍게 <헹궈:CV_ACT> <사용해:CV_ACT>주세요)
+3. 달군 팬에 <들기름:CV_SEASONING>을 <두른:CV_ACT> 후 <오이:CV_INGREDIENT>를 <넣:CV_ACT>고 <볶:CV_ACT>아주세요.
+4. <홍고추:CV_INGREDIENT>와 <다진:CV_STATE> <파:CV_INGREDIENT>를 <넣:CV_ACT>고 한번 더 <볶:CV_ACT>은 후 불을 <끄:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 완성해 주세요.

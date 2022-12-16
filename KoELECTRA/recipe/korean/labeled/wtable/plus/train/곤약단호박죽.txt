@@ -1,0 +1,9 @@
+1. <단호박:CV_INGREDIENT>은 반으로 잘라 속을 파내고 필러로 껍질을 벗긴 뒤 3cm 크기로 잘라주세요.
+*Tip. <단호박:CV_INGREDIENT> 껍질에 <물:CV_SEASONING>을 살짝 묻히고 전자레인지에서 <3분:TI_DURATION> 정도 익히면 좀 더 쉽게 손질할 수 있어요!
+2. <단호박:CV_INGREDIENT>과 <물:CV_SEASONING> <180ml:QT_VOLUME>를 믹서에 넣고 곱게 갈아주세요.
+3. <곤약:CV_INGREDIENT>은 1cm 두께로 잘라주세요.
+*Tip. 얇을수록 먹기 편하니 취향에 따라 더 얇게 잘라도 좋아요!
+4. <찹쌀가루:CV_SEASONING>와 <물:CV_SEASONING> <200ml:QT_VOLUME>를 잘 섞어주세요.
+5. 순서 2의 <단호박:CV_INGREDIENT>을 냄비에 넣고 <약중불:QT_TEMPERATURE>에서 <10분:TI_DURATION> 정도 끓여주세요. 내용물이 튈 수 있으니 계속 저으면서 끓여주세요.
+6. <설탕:CV_SEASONING>, <소금:CV_SEASONING>을 넣고 <3분:TI_DURATION> 정도 끓이다가 순서 4의 <찹쌀물:CV_SEASONING>을 넣어 <1분:TI_DURATION> 정도 끓인 뒤 <곤약:CV_INGREDIENT>을 넣어 <1분:TI_DURATION> 정도 더 끓여주세요.
+7. 그릇에 옮겨 담아 달콤하고 부드러운 곤약단호박죽의 맛을 즐겨보세요.

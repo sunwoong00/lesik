@@ -1,0 +1,8 @@
+1. <생강:CV_INGREDIENT>과 <마늘:CV_INGREDIENT>은 편 썰어주세요. 내열 용기에 통 <삼겹살:CV_INGREDIENT>을 올리고 <생강:CV_INGREDIENT>, <마늘:CV_INGREDIENT>, <월계수 잎:CV_INGREDIENT>, <청주:CV_SEASONING>를 넣어 <20분간:TI_DURATION> 재워주세요.
+2. <대파:CV_INGREDIENT>와 <양파:CV_INGREDIENT>는 얇게 채를 썰고 <부추:CV_INGREDIENT>는 4센치 길이로 썰어주세요. <묵은지:CV_INGREDIENT>는 물에 헹군 후 물기를 빼고 먹기 좋게 썰어주세요.
+(tip. 영양부추 대신 부추를 사용해도 좋아요.)
+3. <파무침 소스:CV_SEASONING>와 양념 재료를 각각 섞어주세요. 볼에 <파채:CV_INGREDIENT>와 <영양 부추:CV_INGREDIENT>, <양파:CV_INGREDIENT>를 넣고 <파무침 소스:CV_SEASONING>를 넣어 가볍게 버무려주세요.
+4. "법랑 접시 위에 석쇠를 놓고 내열 용기를 올려 1단에 넣고 광파오븐 수동 요리 스팀 레인지에서 <8분:TI_DURATION>으로 설정 후 시작해 주세요. 스팀레인지 종료 후 <삼겹살:CV_INGREDIENT>에 <양념:CV_SEASONING>을 바르고 법랑접시를 3단에 넣고 광파오븐 수동 요리 구이에서 <10분간:TI_DURATION> 구워주세요.
+ * 광파오븐 스팀 물통에 물을 채우고 시작해주세요."
+(tip. "오븐에 전송" 버튼으로 조리하면 <양념:CV_SEASONING>을 발라야 할 시간에 멜로디가 울려요. 멜로디가 울리면 오븐을 열어 <5분:TI_DURATION> 내로 <삼겹살:CV_INGREDIENT>에 <양념:CV_SEASONING>을 바른 후, 3단에 넣고 시작버튼을 누르면 연속 조리됩니다.)
+5. 먹기 좋게 <썬:CV_STATE> <삼겹살:CV_INGREDIENT>과 <묵은지:CV_INGREDIENT>, <부추:CV_INGREDIENT> <파무침:CV_INGREDIENT>을 곁들여 맛있게 즐겨주세요.

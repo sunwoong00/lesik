@@ -1,0 +1,8 @@
+1. <해초:CV_INGREDIENT>는 찬물에 <담가:CV_ACT> <3~4분:TI_DURATION>간 <불려:CV_ACT>주세요. <불린:CV_STATE> <해초:CV_INGREDIENT>는 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>고 <해초 양념:CV_SEASONING>에 <버무려:CV_ACT>주세요.
+(<해초:CV_INGREDIENT>는 물기를 꽉 짜야 <김밥:CV_INGREDIENT>을 <말:CV_ACT>을 때 물이 생기지 않아요)
+2. <두부:CV_INGREDIENT>는 면포에 <감싸:CV_ACT> 물기를 꽉 <짜:CV_ACT>주세요. 달군 팬에 <들기름:CV_SEASONING> <1큰술:QT_VOLUME>을 <두르:CV_ACT>고 <물기를 뺀:CV_STATE> <두부:CV_INGREDIENT>와 <두부 양념:CV_SEASONING>을 <넣:CV_ACT>고 <볶:CV_ACT>아주세요.
+3. <오이:CV_INGREDIENT>는 얇게 채를 <썰:CV_ACT>어 절임 물에 <10분간:TI_DURATION> 절인 후 물기를 꽉 <짜:CV_ACT>주세요. <당근:CV_INGREDIENT>도 채를 <썰:CV_ACT>어 주세요.
+4. 달군 팬에 <기름:CV_SEASONING>을 약간 <두르:CV_ACT>고 <당근:CV_INGREDIENT>을 <넣:CV_ACT>은 후 <소금:CV_SEASONING> 간을 해 <볶:CV_ACT>아주세요.
+5. <밥:CV_INGREDIENT>에 <밥 양념:CV_SEASONING>을 <넣:CV_ACT>고 잘 <섞:CV_ACT>어주세요.
+6. <김:CV_INGREDIENT>에 <밥:CV_INGREDIENT>을 얇게 <펼치:CV_ACT>고 <해초:CV_INGREDIENT>와 <두부:CV_INGREDIENT>, <당근:CV_INGREDIENT>, <오이:CV_INGREDIENT>를 <넣:CV_ACT>어 <김밥:CV_INGREDIENT>을 <말:CV_ACT>아주세요. 
+7. <김밥:CV_INGREDIENT>에 <들기름:CV_SEASONING>을 <바른:CV_ACT> 후 먹기 좋게 <썰:CV_ACT>어 맛있게 즐겨주세요.

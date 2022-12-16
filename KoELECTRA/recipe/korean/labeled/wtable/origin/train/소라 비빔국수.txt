@@ -1,0 +1,7 @@
+1. 볼에 <양념 소스:CV_SEASONING>를 <넣:CV_ACT>고 <섞:CV_ACT>어 <양념장:CV_SEASONING>을 <만들:CV_ACT>어주세요.
+2. <소라:CV_INGREDIENT>는 깨끗이 <비벼:CV_ACT> <씻:CV_ACT>은 후 냄비에 <넣:CV_ACT>고 소라가 잠길 정도의 <물:CV_SEASONING>과 국물 밑간 재료를 <넣:CV_ACT>어 <물:CV_ACT>이 끓으면 <10~15분:TI_DURATION> 정도 <삶:CV_ACT>아주세요.
+3. <양배추:CV_INGREDIENT>와 <당근:CV_INGREDIENT>, <양파:CV_INGREDIENT>, <대파:CV_INGREDIENT>는 채를 <썰:CV_ACT>어주세요. (<대파 채:CV_INGREDIENT>는 찬물에 <담갔:CV_ACT>다가 물기를 <빼:CV_ACT> 주세요) <오이:CV_INGREDIENT>는 길이로 반 <갈라:CV_ACT> 어슷하게 <슬라이스 해:CV_ACT> 주세요.
+4. <삶은:CV_STATE> <소라:CV_INGREDIENT>는 젓가락으로 <소라 살:CV_INGREDIENT>을 <빼내:CV_ACT>고 쓸개가 붙어있는 내장을 <제거한:CV_ACT> 후 반 <갈라:CV_ACT> 가운데 내장과 침샘을 <제거하:CV_ACT>고 먹기 좋은 크기로 <썰:CV_ACT>어주세요.
+5. 끓는물에 <소면:CV_INGREDIENT>을 펼쳐 <넣:CV_ACT>고 젓가락으로 저어 면끼리 달라붙지 않도록 <저어:CV_ACT>주고 물이 끓어오르면 <찬물:CV_SEASONING> <반 컵:QT_VOLUME>을 2~3번 정도 반복해서 <부어:CV_ACT> <국수:CV_INGREDIENT>를 <삶:CV_ACT>아주세요. 흐르는 찬물에 <소면:CV_INGREDIENT>을 여러 번 <씻:CV_ACT>어 전분기를 없애고 채반에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+6. 볼에 <삶은:CV_STATE> <소면:CV_INGREDIENT>과 <소라:CV_INGREDIENT>, <손질한:CV_STATE> <야채:CV_INGREDIENT>, <양념장:CV_SEASONING>을 <넣:CV_ACT>고 골고루 <섞:CV_ACT>어주세요.
+7. 그릇에 <소라 비빔국수:CV_INGREDIENT>를 <담:CV_ACT>고 <대파 채:CV_SEASONING>를 <올리:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 맛있게 즐겨주세요.

@@ -1,0 +1,9 @@
+1. <방울 양배추:CV_INGREDIENT>는 밑둥에 칼집을 깊숙히 넣어 끓는 물에 <소금:CV_SEASONING>을 조금 넣고 익혀주세요.
+2. <채식 함박스테이크:CV_INGREDIENT>는 <기름:CV_SEASONING>에 노릇노릇 구워주세요.
+3. <연근:CV_INGREDIENT>은 은행잎꼴로 얇게 저며 썰고 <당근:CV_INGREDIENT>은 채 썰어주세요. 
+<곤약:CV_INGREDIENT>과 <생유부:CV_INGREDIENT>도 채를 썰어주세요.
+4. 달군 팬에 <곤약:CV_INGREDIENT>을 먼저 넣고 볶아주세요.
+5. <당근:CV_INGREDIENT>과 <연근:CV_INGREDIENT>도 차례대로 넣어 볶고 <간장:CV_SEASONING>과 <조청:CV_SEASONING>으로 간을 해주세요.
+6. 불을 끄고 <현미밥:CV_INGREDIENT>을 넣은 후 섞어주세요.
+7. 완성된 <밥:CV_INGREDIENT>을 도시락통에 담아주세요.
+8. <익힌:CV_STATE> <방울양배추:CV_INGREDIENT>는 <매실장아찌:CV_INGREDIENT>를 다져서 같이 무치고 <사과:CV_INGREDIENT>는 먹기 좋게 썰어 도시락에 담아 마무리하세요.

@@ -1,0 +1,7 @@
+1. <갈비:CV_INGREDIENT>는 찬물에 <담가:CV_ACT> 핏물을 <빼:CV_ACT>고 끓는 물에 <데친:CV_ACT> 후 찬물에 <헹궈:CV_ACT> 기름을 <떼:CV_ACT> 내어 <손질해:CV_ACT>주세요. <납작 당면:CV_INGREDIENT>은 찬물에 <30분 이상:TI_DURATION> <불려:CV_ACT> 준비해주세요.
+2. 냄비에 육수 재료를 <넣:CV_ACT>고 <물:CV_SEASONING>이 끓으면 <손질한:CV_STATE> <갈비:CV_INGREDIENT>를 <넣:CV_ACT>어 <1시간:TI_DURATION> 이상 <갈비:CV_INGREDIENT>가 부드럽게 익을 때까지 <끓여:CV_ACT>주세요. <삶은:CV_STATE> <갈비:CV_INGREDIENT>는 <건져:CV_ACT>내고 <갈비 양념:CV_SEASONING>에 <재워:CV_ACT>주세요. 국물은 체에 <걸러:CV_ACT> <육수:CV_SEASONING>를 <준비해:CV_ACT>주세요. 
+3. <대파:CV_INGREDIENT>는 길이로 반을 <가른:CV_ACT> 후 6cm로 길이로 <자르:CV_ACT>고 <팽이버섯:CV_INGREDIENT>은 밑동을 <잘라:CV_ACT>주세요. <새송이버섯:CV_INGREDIENT>은 먹기 좋게 <자르:CV_ACT>고 <양파:CV_INGREDIENT>는 굵게 채를 <썰:CV_ACT>어주세요. <콩나물:CV_INGREDIENT>과 <미나리:CV_INGREDIENT>는 깨끗이 <씻:CV_ACT>고 <미나리:CV_INGREDIENT>는 6cm 길이로 <잘라:CV_ACT>주세요. 볼에 양념장 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어 <양념장:CV_SEASONING>을 <만들:CV_ACT>어주세요.
+4. 전골냄비에 <소갈비:CV_INGREDIENT>를 <담:CV_ACT>고 <양념장:CV_SEASONING>과 <버섯:CV_INGREDIENT>과 <대파:CV_INGREDIENT>, <콩나물:CV_INGREDIENT>과 <미나리:CV_INGREDIENT>, 불린 <납작 당면:CV_INGREDIENT> 순으로 <담:CV_ACT>은 후 <육수:CV_SEASONING> <5컵:QT_VOLUME>을 <부어:CV_ACT>주세요.
+5. <채소:CV_INGREDIENT> 위에 <쇠고기:CV_INGREDIENT>를 수북하게 <담:CV_ACT>은 후 한소끔 <끓여:CV_ACT> <쇠고기:CV_INGREDIENT>와 <야채:CV_INGREDIENT>가 익으면 맛있게 즐겨주세요.
+(tip 부족한 간은 <소금:CV_SEASONING>을 <가감해:CV_ACT>서 조절하고 기호에 따라 <고추냉이:CV_SEASONING> <간장:CV_SEASONING>을 <곁들여:CV_ACT> 드셔도 맛있답니다.)
+

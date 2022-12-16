@@ -1,0 +1,4 @@
+1. <떡볶이떡:CV_INGREDIENT>을 <4개:QT_VOLUME>씩 꼬치에 꽂고 <식용유:CV_SEASONING>를 넉넉히 두른 팬에 노릇하게 구워주세요.
+2. <땅콩:CV_INGREDIENT>을 키친타월 위에 올리고 칼로 다집니다.
+3. 소스 재료를 잘 섞어 <떡꼬치:CV_INGREDIENT>에 앞뒤로 발라주세요.
+4. <다진:CV_STATE> <땅콩:CV_INGREDIENT>을 뿌려 마무리해주세요.

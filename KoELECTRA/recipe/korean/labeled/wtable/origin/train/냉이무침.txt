@@ -1,0 +1,4 @@
+1. <냉이:CV_INGREDIENT>는 뿌리와 줄기를 연결하는 부분의 흙을 칼로 <긁어내:CV_ACT>고, <누런 잎:CV_SEASONING>은 <떼:CV_ACT>어내주세요. 굵은 것은 반으로 <쪼개:CV_ACT>고, 흐르는 물에 여러 번 <흔들:CV_ACT>어 <씻:CV_ACT>어주세요.
+2. 끓는 물에 약간의 <소금:CV_SEASONING>을 <넣:CV_ACT>고, 손질한 <냉이:CV_INGREDIENT>를 <넣:CV_ACT>어 <30초:TI_DURATION> 정도 <데쳐:CV_ACT> 찬물에 <헹궈:CV_ACT>주세요. 물기를 적당히 <짠:CV_ACT> 후 먹기 좋은 길이로 <잘라:CV_ACT>주세요.
+3. 볼에 <데친:CV_STATE> <냉이:CV_INGREDIENT>와 <양념:CV_SEASONING>을 <넣:CV_ACT>고 조물조물 <무쳐:CV_ACT>주세요.
+4. 접시에 <냉이무침:CV_INGREDIENT>을 <담:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 마무리해주세요.

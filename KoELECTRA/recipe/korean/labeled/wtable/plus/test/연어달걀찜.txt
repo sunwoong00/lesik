@@ -1,0 +1,9 @@
+1. <연어:CV_INGREDIENT>에 <소금:CV_SEASONING>, <후춧가루:CV_SEASONING>, <맛술:CV_SEASONING>을 뿌려 <5~10분:TI_DURATION> 정도 재워주세요.
+(tip. <연어 통조림:CV_INGREDIENT>이나 <훈제연어:CV_INGREDIENT>는 간이 되어있으니 <소금:CV_SEASONING>을 생략해도 좋아요)
+2. 냄비에 <물:CV_SEASONING>을 넣고 끓으면 <가쓰오부시:CV_SEASONING>를 넣어 불을 꺼주세요. <5분:TI_DURATION> 정도 우러나면 체에 밭쳐 <육수:CV_SEASONING>를 걸러 차갑게 식혀주세요.
+3. 볼에 <달걀:CV_INGREDIENT>을 풀어 곱게 체에 내린 후 <소금:CV_SEASONING>으로 간을 맞추고, <가쓰오부시:CV_SEASONING> <육수:CV_SEASONING>를 넣어 잘 섞어주세요.
+4. <연어:CV_INGREDIENT>는 한입 크기 (1~2cm 두께) 로 잘라 찜용 그릇에 담고 <달걀 물:CV_SEASONING>을 그릇의 5~60% 정도만  채워 랩을 씌워주세요.
+(tip. 표면의 거품이 없어야 매끄러운 <달걀찜:CV_INGREDIENT>이 되요. <달걀찜:CV_INGREDIENT> 위에 올릴 <연어:CV_INGREDIENT> <한 두조각:QT_VOLUME>을 빼두세요)
+5. 찜기에 그릇을 넣고 뚜껑을 닫은 후 <중약불:QT_TEMPERATURE>로 <8~10분:TI_DURATION> 정도 익혀주세요. 나머지 <달걀 물:CV_SEASONING>을 그릇의 8~90% 채워 찜기에 <8~10분:TI_DURATION> 정도 더 익혀 주세요.
+6. 작은 냄비에 소스 재료를 넣고 한번 끓어 오르면 불을 꺼 주세요.
+7. 완성된 <달걀찜:CV_INGREDIENT> 표면에 <소스:CV_SEASONING>를 <1~2큰술:QT_VOLUME> 두르고 기호에 따라 <레몬 슬라이스:CV_INGREDIENT>, <파슬리:CV_SEASONING> 등을 이용해 장식해 맛있게 즐겨주세요.

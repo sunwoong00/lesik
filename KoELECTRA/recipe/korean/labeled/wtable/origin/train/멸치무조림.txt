@@ -1,0 +1,5 @@
+1. <무:CV_INGREDIENT>는 2센치 두께로 동그랗게 <자른:CV_ACT> 후 모서리를 <다듬:CV_ACT>고 <홍고추:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>와 <대파:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+2. <멸치:CV_INGREDIENT>는 머리와 내장을 <제거한:CV_ACT> 후 전자레인지에 <40초:TI_DURATION> 정도 <돌려:CV_ACT>주세요.
+3. 냄비에 <무:CV_INGREDIENT>를 <깔:CV_ACT>고 <멸치:CV_INGREDIENT>와 <양념장:CV_SEASONING>, <다시마육수:CV_SEASONING>를 <넣:CV_ACT>어주세요. 국물이 끓으면 <중불:QT_TEMPERATURE>로 <줄여:CV_ACT> <30분:TI_DURATION> 정도 <무:CV_INGREDIENT>가 투명해질 때까지 <졸여:CV_ACT>주세요.
+4. <홍고추:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>, <대파:CV_INGREDIENT>를 <넣:CV_ACT>고 국물이 자작해지면 불을 <꺼:CV_ACT>주세요.
+5. 반찬과 안주로 맛있게 즐겨주세요.

@@ -1,0 +1,8 @@
+1. <건새우:CV_INGREDIENT>는 머리를 <떼:CV_ACT>고 찬물에 <5분:TI_DURATION> 정도 <불린:CV_ACT> 후 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+2. 깨끗이 씻은 <애호박:CV_INGREDIENT>, <양파:CV_INGREDIENT>, <당근:CV_INGREDIENT>은 채를 <썰:CV_ACT>어주세요. <청양고추:CV_INGREDIENT>는 얇게 송송 <썰:CV_ACT>어주세요. 
+3. 볼에 반죽 재료를 <넣:CV_ACT>고 잘 <섞:CV_ACT>어주세요. 초간장 재료는 분량대로 <섞:CV_ACT>어주세요.
+4. 반죽에 <건새우:CV_INGREDIENT>, <애호박:CV_INGREDIENT>, <양파:CV_INGREDIENT>, <당근:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+5. 달군 팬에 <식용유:CV_SEASONING>를 넉넉히 <두른:CV_ACT> 후, 반죽을 한 국자씩 떠서 동그랗게 <편:CV_ACT> 후 앞뒤로 노릇하게 <부쳐:CV_ACT>주세요.
+(Tip. <기름:CV_SEASONING>이 충분히 달궈졌을 때 반죽을 올려야 바삭하게 구울 수 있어요.)
+
+6. <초간장:CV_SEASONING>을 <곁들여:CV_ACT> 맛있게 즐겨주세요.

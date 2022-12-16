@@ -1,0 +1,4 @@
+1. 달군 팬에 <버터:CV_SEASONING>를 <두른:CV_ACT> 후 <달걀프라이:CV_INGREDIENT>를 겉면이 타듯이 노릇하게 <구워:CV_ACT>주세요.
+2. <쪽파:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요.
+3. 그릇에 따뜻한 <밥:CV_INGREDIENT>을 <담:CV_ACT>은 후 <달걀프라이:CV_INGREDIENT>를 <얹어:CV_ACT>주세요.
+4. <간장:CV_SEASONING>과 <참기름:CV_SEASONING>을 <둘러:CV_ACT>주고 <통깨:CV_SEASONING>와 <쪽파:CV_INGREDIENT>, <김가루:CV_SEASONING>를 <뿌려:CV_ACT> 완성해주세요.

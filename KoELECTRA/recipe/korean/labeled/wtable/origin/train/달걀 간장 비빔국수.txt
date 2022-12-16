@@ -1,0 +1,9 @@
+1. 냄비에 <달걀:CV_INGREDIENT>이 잠길 정도의 <물:CV_SEASONING>을 <부은:CV_ACT> 후 <소금:CV_SEASONING>과 <식초:CV_SEASONING>, <달걀:CV_INGREDIENT>을 <넣:CV_ACT>어 약 <8~9분:TI_DURATION> 반숙 상태로 <삶:CV_ACT>아주세요. 삶은 <달걀:CV_INGREDIENT>은 찬물에 <담가:CV_ACT> 껍질을 <벗겨:CV_ACT>주세요.
+(실온 상태의 <달걀:CV_INGREDIENT>을 사용해야 터지지 않게 삶을 수 있어요)
+
+2. <쪽파:CV_INGREDIENT>는 얇게 송송 <썰:CV_ACT>어주세요. 볼에 국수 양념 재료를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+3. 끓는 물에 <소면:CV_INGREDIENT>을 <펼쳐:CV_ACT> <넣:CV_ACT>고 젓가락으로 <저어:CV_ACT> 면끼리 달라붙지 않도록 <저어:CV_ACT>주고 <물:CV_SEASONING>이 끓어오르면 <찬:CV_STATE><물:CV_SEASONING> <반 컵:QT_VOLUME>을 2~3회 반복해서 <부어:CV_ACT> <국수:CV_INGREDIENT>를 <삶:CV_ACT>아주세요. 흐르는 찬물에 <소면:CV_INGREDIENT>을 여러 번 <씻:CV_ACT>어 전분기를 없애고 체에 <받쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+4. 큰 볼에 <삶은:CV_STATE> <국수:CV_INGREDIENT>와 <국수 양념장:CV_SEASONING>, <송송 썬:CV_STATE> <파:CV_INGREDIENT>를 <넣:CV_ACT>어 골고루 <섞:CV_ACT>어주세요. 
+(기호에 따라 <청양고추:CV_INGREDIENT>를 송송 <썰:CV_ACT>어 <넣:CV_ACT>으면 매콤한 맛으로 즐기실 수 있어요)
+
+5. 그릇에 <간장 비빔국수:CV_INGREDIENT>를 <담:CV_ACT>은 후 <달걀:CV_INGREDIENT>을 반으로 <잘라:CV_ACT> <얹:CV_ACT>어주세요. <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 맛있게 즐겨주세요.

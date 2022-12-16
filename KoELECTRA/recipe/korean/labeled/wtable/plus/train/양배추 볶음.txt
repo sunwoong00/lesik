@@ -1,0 +1,7 @@
+1. 깨끗이 <씻은:CV_STATE> <양배추:CV_INGREDIENT>는 심지를 자른 후 먹기 좋은 크기로
+찢어 주세요. 두꺼운 심지도 먹기 좋은 크기로 잘라주세요.
+2. 달궈진 팬에 <기름:CV_SEASONING>을 두르고 <다진:CV_STATE>
+<마늘:CV_INGREDIENT>을 넣어 향을 낸 후 <양배추:CV_INGREDIENT>를 넣어 <중불:QT_TE
+MPERATURE>에서 볶아주세요.
+3.<양배추:CV_INGREDIENT>가 투명해지면 <간장:CV_SEASONING>과 <후춧가루:CV_SEASONING>를 넣고 향이 나도록 잘 볶아주세요.
+4. 그릇에 담아 맛있게 즐겨주세요.

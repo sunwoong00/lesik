@@ -1,0 +1,4 @@
+1. <제주 생고사리:CV_INGREDIENT>는 4~6cm 길이로 <잘라:CV_ACT>주세요.
+2. <감자:CV_INGREDIENT>는 1cm 두께로 <썰:CV_ACT>고 <새송이버섯:CV_INGREDIENT>은 편으로 얇게 <썰:CV_ACT>어주세요. <마늘:CV_INGREDIENT>은 편으로 <썰:CV_ACT>고 <양파:CV_INGREDIENT>는 굵게 <다져:CV_ACT>주세요. <청양고추:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요.
+3. 직화가 가능한 스텐 그릇에 멜젓 소스 재료를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+4. 달군 팬에 <삼겹살:CV_INGREDIENT>과 <생고사리:CV_INGREDIENT>, <새송이버섯:CV_INGREDIENT>, <감자:CV_INGREDIENT>, <마늘:CV_INGREDIENT>을 노릇하게 <구워:CV_ACT>주세요. 팬에 <멜젓 소스:CV_SEASONING>를 <끓여:CV_ACT>가며  맛있게 즐겨주세요.

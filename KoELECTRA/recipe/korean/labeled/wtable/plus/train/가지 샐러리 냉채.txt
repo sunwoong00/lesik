@@ -1,0 +1,5 @@
+1. 1. <가지:CV_INGREDIENT>는 렌지에 <2분 30초:TI_DURATION> 돌린 후 껍질을 벗겨서 가늘게 썰고, <샐러리:CV_INGREDIENT>는 채칼로 가늘게 밀어 찬물에 담가놔주세요. <배:CV_INGREDIENT>와 <홀스레디시:CV_INGREDIENT>는 가늘게 채 썰어주세요.
+2. 2. 분량의 재료들을 모두 골고루 섞어 겨자 드레싱을 만들어주세요.
+3. 3. 그릇에 <샐러리:CV_INGREDIENT>, <홀스레디시:CV_INGREDIENT>, <레몬:CV_INGREDIENT> <웨지:CV_INGREDIENT>, <배:CV_INGREDIENT>를 골고루 담고 <가지:CV_INGREDIENT>를 얹은 후 <드레싱:CV_SEASONING>을 곁들여 완성해 주세요.
+*Tip. <생레몬즙:CV_SEASONING>을 짜서 <겨자:CV_SEASONING>와 <드레싱:CV_SEASONING>을 만들면, <겨자:CV_SEASONING>의 매콤함이 중화되고 상큼함이 배가 됩니다.
+<샐러리:CV_INGREDIENT>와 <홀스레디시:CV_INGREDIENT>는 가늘게 채 썰어 물에 담가두면 강한 향과 맛이 중화돼요.

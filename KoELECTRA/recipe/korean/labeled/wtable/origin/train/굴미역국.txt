@@ -1,0 +1,7 @@
+1. <불린:CV_STATE> <미역:CV_INGREDIENT>은 먹기 좋은 크기로 <잘라:CV_ACT>주세요.
+(찬물에 <건미역:CV_INGREDIENT>을 <넣:CV_ACT>고 <20분:TI_DURATION> 정도 <불리:CV_ACT>고 깨끗하게 <헹군:CV_ACT> 후 사용해주세요.)
+2. <굴:CV_INGREDIENT>은 소금물에 <넣:CV_ACT>고, 이물질을 <제거하:CV_ACT>며 살살 <흔들:CV_ACT>어 <씻:CV_ACT>은 후 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+3. <무:CV_INGREDIENT>는 사방 3센치로 나박 <썰:CV_ACT>기 해주세요.
+4. 달군 냄비에 <들기름:CV_SEASONING>을 <두르:CV_ACT>고 <미역:CV_INGREDIENT>을 <중약불:QT_TEMPERATURE>에서 <3분:TI_DURATION> 정도 <볶:CV_ACT>다가 <다시마 멸치육수:CV_SEASONING>와 <무:CV_INGREDIENT>를 <넣:CV_ACT>고 <끓여:CV_ACT>주세요.
+5. <무:CV_INGREDIENT>가 익으면 국물 양념 재료와 <굴:CV_INGREDIENT>을 <넣:CV_ACT>고 <1~2분:TI_DURATION> 정도 <끓:CV_ACT>여주세요.
+6. 기호에 따라 <소금:CV_SEASONING>으로 <가감해:CV_ACT> 간을 <맞춰:CV_ACT> 맛있게 즐겨주세요.

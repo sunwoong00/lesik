@@ -1,0 +1,10 @@
+1. <깻잎:CV_INGREDIENT>은 4cm 크기로 <썰:CV_ACT>고 <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>고 <양파:CV_INGREDIENT>는 <채썰:CV_ACT>어주세요.
+2. <돼지고기:CV_INGREDIENT>는 5cm 크기로 <자르:CV_ACT>고 <콩나물:CV_INGREDIENT>은 <손질해:CV_ACT>주세요.
+
+*Tip. <돼지고기:CV_INGREDIENT> 부위는 <삼겹:CV_INGREDIENT>, <목살:CV_INGREDIENT>, <앞다리살:CV_INGREDIENT>, <뒷다리살:CV_INGREDIENT> 모두 괜찮지만 목살이 담백하고 맛있어요!
+3. 달군 팬에 <식용유:CV_SEASONING>를 <두르:CV_ACT>고 <대파:CV_INGREDIENT>를 <넣:CV_ACT>어 <파기름:CV_SEASONING>을 <내:CV_ACT>주세요.
+4. 파 향이 올라오면 <돼지고기:CV_INGREDIENT>를 <넣:CV_ACT>고 <1분:TI_DURATION> 정도 <볶:CV_ACT>아주세요.
+5. <설탕:CV_SEASONING>, <맛술:CV_SEASONING>, <후추:CV_SEASONING>를 <넣:CV_ACT>고 <2분:TI_DURATION> 정도 더 <볶:CV_ACT>아주세요.
+6. <돼지고기:CV_INGREDIENT>가 다 익으면 <고추장:CV_SEASONING>, <고춧가루:CV_SEASONING>, <진간장:CV_SEASONING>, <마늘:CV_INGREDIENT>을 <넣:CV_ACT>고 <1분:TI_DURATION> 정도 <볶:CV_ACT>아주세요.
+7. <콩나물:CV_INGREDIENT>, <깻잎:CV_INGREDIENT>, <양파:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>를 <넣:CV_ACT>고 <콩나물:CV_INGREDIENT>의 숨이 죽을 때까지 <2분:TI_DURATION> 정도 더 <볶:CV_ACT>아주세요.
+8. 맛있게 <볶음 콩나물제육볶음:CV_INGREDIENT>을 그릇에 <덜:CV_ACT>어 맛있게 즐기세요. 기호에 따라 <상추:CV_INGREDIENT>나 <깻잎:CV_INGREDIENT> 등 <쌈채소:CV_INGREDIENT>를 <곁들여:CV_ACT>도 좋아요!

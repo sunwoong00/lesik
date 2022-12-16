@@ -1,0 +1,5 @@
+1. <연근:CV_INGREDIENT>은 껍질을 벗기고 난 후 동그란 모양으로 얇게 썰어주세요. <우엉:CV_INGREDIENT>, <당근:CV_INGREDIENT>은 필러로 껍질을 벗기고 4~5cm 길이로 채 썰어주세요. <홍고추:CV_INGREDIENT>도 비슷한 크기로 채 썰어주세요.
+2. 찬물에 <식초:CV_SEASONING>를 넣고 <연근:CV_INGREDIENT>, <우엉:CV_INGREDIENT>을 담갔다가 키친타월로 수분을 제거해주세요.
+TIP. <연근:CV_INGREDIENT>이나 <우엉:CV_INGREDIENT>을 식촛물에 <10분간:TI_DURATION> 담갔다가 조리하면 색이 검게 변하는 것을 막아주고 아린 맛을 제거할 수 있어요.
+3. 팬에 <식용유:CV_SEASONING>를 두르고 <연근:CV_INGREDIENT>과 <우엉:CV_INGREDIENT>을 볶아주세요. 반쯤 익었을 때 <당근:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>, 양념 재료를 넣어서 볶다가 <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 뿌려 마무리해주세요.
+4. 완성된 요리를 그릇에 담아 내어주세요.

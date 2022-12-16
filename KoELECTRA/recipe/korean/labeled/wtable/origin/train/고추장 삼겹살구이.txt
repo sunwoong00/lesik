@@ -1,0 +1,5 @@
+1. <삼겹살:CV_INGREDIENT>은 반<자른:CV_ACT> 후 <소스:CV_SEASONING>에 <20분:TI_DURATION> 정도 <재워:CV_ACT>주세요.
+2. <대파:CV_INGREDIENT>와 <양파:CV_INGREDIENT>는 가늘게 채를 <썰:CV_ACT>어 찬물에 <10분:TI_DURATION> 정도 <담갔:CV_ACT>다가 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+3. 팬에 약간의 <식용유:CV_SEASONING>를 <두르:CV_ACT>고 <양념한:CV_STATE> <삼겹살:CV_INGREDIENT>을 <넣:CV_ACT>어 앞,뒤로 <익힌:CV_ACT> 후 먹기 좋은 크기로 <자르:CV_ACT>고 불을 <약불:QT_TEMPERATURE>로 <줄여:CV_ACT> 뒤집어가며 속까지 <익혀:CV_ACT>주세요. 
+4. <파채:CV_INGREDIENT>와 <양파채:CV_INGREDIENT>는 <양념소스:CV_SEASONING>를 <넣:CV_ACT>어 살짝 <무쳐:CV_ACT>주세요.
+5. 접시에 고추장삼겹살을 <담:CV_ACT>고 <파채무침:CV_INGREDIENT>과 <쌈채소:CV_INGREDIENT>를 <곁들여:CV_ACT>주세요.

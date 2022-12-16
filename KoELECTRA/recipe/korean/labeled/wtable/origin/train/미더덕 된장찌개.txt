@@ -1,0 +1,4 @@
+1. 깨끗이 씻은 <애호박:CV_INGREDIENT>과 <양파:CV_INGREDIENT>는 깍뚝 <썰:CV_ACT>어주세요. <무:CV_INGREDIENT>는 나박 <썰:CV_ACT>어주세요. <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요. <두부:CV_INGREDIENT>는 한입 크기로 <썰:CV_ACT>어주세요.
+2. 냄비에 <멸치 다시마 육수:CV_SEASONING>를 <붓:CV_ACT>고 <된장:CV_SEASONING>을 <넣:CV_ACT>어 <풀:CV_ACT>어 주세요. 국물이 끓으면 <썰어둔:CV_STATE> <무:CV_INGREDIENT>와 <호박:CV_INGREDIENT>을 <넣:CV_ACT>어 <1분간:TI_DURATION> <끓여:CV_ACT>주세요.
+3. <양파:CV_INGREDIENT>, <대파:CV_INGREDIENT>, <두부:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>, <고춧가루:CV_SEASONING>를 <넣:CV_ACT>고 한소끔 <끓인:CV_ACT> 후 <소금물:CV_SEASONING>에 깨끗이 씻은 <미더덕:CV_INGREDIENT>을 <넣:CV_ACT>어  <2~3분간:TI_DURATION> <끓여:CV_ACT> 완성해 주세요.
+4. 맛있게 즐겨주세요. tip. <미더덕:CV_INGREDIENT> 안에 있는 수분에 입안을 델 수 있으니 아이들과 함께 먹는다면 <미더덕:CV_INGREDIENT>을 손질할 때 수분을 <터트린:CV_ACT> 후 사용해주세요. 미더덕의 톡톡 터지는 식감을 좋아하시는 분은 그냥 드셔도 무방하답니다.

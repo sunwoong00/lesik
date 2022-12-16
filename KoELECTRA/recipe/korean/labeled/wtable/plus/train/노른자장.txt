@@ -1,0 +1,6 @@
+1. <달걀:CV_INGREDIENT>의 <흰자:CV_INGREDIENT>와 <노른자:CV_INGREDIENT>를 분리해 <노른자:CV_INGREDIENT>만 밀폐용기에 담아주세요.
+(tip.<달걀:CV_INGREDIENT>이 서로 겹쳐서 터지지 않도록 면적이 넓은 용기를 사용하는 게 좋아요)
+2. 냄비에 <가쓰오부시:CV_SEASONING>를 제외한 간장양념 재료를 넣어 끓어오르면 <다시마:CV_SEASONING>는 건져내고, <가쓰오부시:CV_SEASONING>를 넣고 <1분:TI_DURATION> 정도 더 끓인 후 체에 내려 한 김 식혀주세요.
+3. <노른자:CV_INGREDIENT>를 담은 밀폐용기에 간장양념을 붓고 뚜껑을 닫은 후 <5~6시간:TI_DURATION> 정도 냉장고에 넣어 숙성시켜주세요.
+(tip. 냉장고에 오래 둘수록 짜지기 때문에 먹을 만큼만 만들어 먹는 것을 추천해드려요)
+4. <노른자장:CV_SEASONING>과 함께 기호에 따라 <김가루:CV_SEASONING>, <쪽파:CV_INGREDIENT>, <참기름:CV_SEASONING>을 넣어 비벼드셔도 좋고, <아보카도:CV_INGREDIENT>와 <낫또:CV_INGREDIENT>를 넣어 함께 드셔도 좋아요.

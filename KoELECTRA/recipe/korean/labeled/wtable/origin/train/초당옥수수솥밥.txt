@@ -1,0 +1,7 @@
+1. <쌀:CV_INGREDIENT>은 깨끗이 <씻:CV_ACT>어서 <30분:TI_DURATION> 정도 <불려:CV_ACT>주세요.
+2. <옥수수:CV_INGREDIENT>는 껍질을 <벗긴:CV_ACT> 후 깨끗이 <씻:CV_ACT>어 알맹이 부분만 칼로 <잘라:CV_ACT>주세요.
+3. 냄비에 <쌀:CV_INGREDIENT>과 <옥수수:CV_INGREDIENT> <심지:CV_INGREDIENT>, <옥수수:CV_INGREDIENT> <알맹이:CV_INGREDIENT>, <다시마:CV_SEASONING>,<소금:CV_SEASONING>을 <넣:CV_ACT>고 <물:CV_SEASONING>을 <넣:CV_ACT>어주세요.
+(tip. 옥수수 심지에서 옥수수 과 단맛이 많이 나오기 때문에 같이 <넣:CV_ACT>고 <밥:CV_INGREDIENT>을 <짓:CV_ACT>는 게 좋아요.)
+4. <강불:QT_TEMPERATURE>에서 끓으면 <약불:QT_TEMPERATURE>로 <줄여:CV_ACT> <15분:TI_DURATION> 정도 <익혀:CV_ACT>주세요. 불을 <끈:CV_ACT> 후 <5분:TI_DURATION> 정도 뜸을 <들여:CV_ACT> 완성해주세요.
+5. <다시마:CV_SEASONING>와 <옥수수 심지:CV_INGREDIENT>를 <뺀:CV_ACT> 후 골고루 <섞:CV_ACT>어 뜨거울 때 <버터:CV_SEASONING>를 <얹:CV_ACT>어 맛있게 즐겨주세요.
+(tip. 기호에 따라 <장조림:CV_INGREDIENT>과 <달걀 후라이:CV_INGREDIENT> 등을 함께 먹어도 맛있게 드실 수 있답니다.)

@@ -1,0 +1,5 @@
+1. 1. <가지:CV_INGREDIENT>는 어슷하게 썰고, <양파:CV_INGREDIENT>는 얇게 채 썰어주세요. <홍고추:CV_INGREDIENT>는 씨를 제거한 뒤 얇게 채 썰어 준비해 주세요.
+2. 2. 끓는 물에 <가지:CV_INGREDIENT>를 데친 후 물기를 제거하고 식혀주세요.
+3. 3. 분량의 재료들을 섞어 냉국 육수를 만들어 주세요.
+4. 4. 유리 볼에 <가지:CV_INGREDIENT>, <양파:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>와 준비한 <냉국 육수:CV_SEASONING>를 넣고 잘 섞어주시면 완성이랍니다.
+*Tip. <가지:CV_INGREDIENT>는 랩핑한 후 전자레인지에 <2분 30초:TI_DURATION>간 찌고 껍질째 사용하거나 껍질을 제거하고 과육만 사용할 수 있어요.

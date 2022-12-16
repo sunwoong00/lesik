@@ -1,0 +1,6 @@
+1. <찹쌀:CV_INGREDIENT>과 <멥쌀:CV_INGREDIENT>은 깨끗하게 <씻:CV_ACT>어 <1시간:TI_DURATION>정도 물에 <불리:CV_ACT>고 체에 <밭쳐:CV_ACT>주세요. <검은콩:CV_INGREDIENT>은 반나절 물에 <불리:CV_ACT>고 <찰수수:CV_INGREDIENT>는 <붉은 물:CV_SEASONING>을 <우려내:CV_ACT>며 치대어 <씻:CV_ACT>어 <1시간:TI_DURATION>정도 물에 <불리:CV_ACT>고 체에 <밭쳐:CV_ACT>주세요. <찰기장:CV_INGREDIENT>은 깨끗이 <씻:CV_ACT>어 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+2. <밤:CV_INGREDIENT>은 속껍질까지 <벗겨:CV_ACT> 4등분으로 <잘라:CV_ACT>주세요.
+3. <팥:CV_INGREDIENT>은 <씻:CV_ACT>어서 <팥이 잠길정도의 물:CV_SEASONING>을 <부어:CV_ACT> 끓어오르면 <물:CV_SEASONING>을 <따라내:CV_ACT>고 <물:CV_SEASONING> <5컵:QT_VOLUME>을 다시 <부어:CV_ACT> 팥이 익을 때까지 <30분:TI_DURATION>정도 <삶:CV_ACT>아 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>고 <팥 삶은 물:CV_SEASONING>은 따로 <받:CV_ACT>아 밥물재료로 <사용해:CV_ACT>주세요.
+4. 냄비에 <찹쌀:CV_INGREDIENT>과 <멥쌀:CV_INGREDIENT>, <검은콩:CV_INGREDIENT>, <찰수수:CV_INGREDIENT>, <팥:CV_INGREDIENT>, <찰기장:CV_INGREDIENT>을 <섞:CV_ACT>어 <넣:CV_ACT>고 <밤:CV_INGREDIENT>을 <올리:CV_ACT>고 밥물재료를 잘 <섞:CV_ACT>은 후 <붓:CV_ACT>고 뚜껑을 닫고 <센불:QT_TEMPERATURE>에서 <끓여:CV_ACT>주세요.(전기밥솥을 사용하실 때는 모든 <곡식:CV_INGREDIENT>을 섞어 <넣:CV_ACT>은 후 <밤:CV_INGREDIENT>을 <올리:CV_ACT>고 밥물재료를 잘 <섞:CV_ACT>은 후 <부어:CV_ACT> 만들어주세요.)
+5. 밥물이 끓으면 <중간불:QT_TEMPERATURE>로 <줄여:CV_ACT> <10분:TI_DURATION>정도 <끓이:CV_ACT>고 밥물이 잦아들면 불을 약하게 <줄이:CV_ACT>고 <8분:TI_DURATION>정도 뜸을 <들여:CV_ACT>주세요.
+6. <오곡밥:CV_INGREDIENT>은 주걱으로 위 아래 잘 <섞:CV_ACT>어 그릇에 <담:CV_ACT>아주세요.

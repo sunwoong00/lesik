@@ -1,0 +1,1348 @@
+1. <어묵:CV_INGREDIENT>과 <양파:CV_INGREDIENT>, <청피망:CV_INGREDIENT>은 얇게 <채 썰:CV_ACT>고 <대파:CV_INGREDIENT>는 3등분해 길게 <채 썰:CV_ACT>어주세요.
+2. <오징어:CV_INGREDIENT>는 깨끗이 <씻:CV_ACT>어 얇게 <썬:CV_ACT> 다음 끓는 물에 살짝 <데쳐내:CV_ACT>주세요.
+4. <어묵:CV_INGREDIENT>과 <오징어:CV_INGREDIENT>, 분량의 양념을 <넣:CV_ACT>고 빠르게 <볶:CV_ACT>아낸 후 <대파:CV_INGREDIENT>와 <올리고당:CV_SEASONING>, <참기름:CV_SEASONING>을 <둘러:CV_ACT> 마무리해주세요.
+5. 갓 지어낸 <솥밥:CV_INGREDIENT>을 접시에 <퍼담:CV_ACT>고 오징어 어묵 볶음을 옆에 예쁘게 <담:CV_ACT>아 완성해주세요.
+2. <만가닥버섯:CV_INGREDIENT>은 밑동 부분을 <잘라:CV_ACT> 먹기 좋게 <나누:CV_ACT>고 <양파:CV_INGREDIENT>는 <채 썰:CV_ACT>어주세요.
+3. <두부:CV_INGREDIENT>는 사방 3cm 크기로 <자르:CV_ACT>고 <전분:CV_SEASONING>을 고르게 <묻혀:CV_ACT>주세요.
+7. 완성된 요리를 그릇에 담아 마무리해주세요.
+1. <알배추:CV_INGREDIENT>는 밑동을 <자른:CV_ACT> 후 먹기 좋은 크기로 <자른:CV_ACT> 후 깨끗이 <씻:CV_ACT>어 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+2. 깨끗이 <씻은:CV_STATE> <쪽파:CV_INGREDIENT>는 5cm 길이로 <잘라:CV_ACT>주세요. 볼에 양념재료를 분량대로 모두 <섞:CV_ACT>어주세요.
+3. 만든 <양념:CV_SEASONING>에 <알배추:CV_INGREDIENT>를 먼저 <넣:CV_ACT>고 양념이 골고루 <묻:CV_ACT>도록 <무친:CV_ACT> 후 <쪽파:CV_INGREDIENT>를 <넣:CV_ACT>어 가볍게 <버무려:CV_ACT> 주세요
+4. 접시에 <알배추 겉절이:CV_INGREDIENT>를 <담:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.
+1. <오이고추:CV_INGREDIENT>는 2~3cm  길이로 <자르:CV_ACT>고 <올리브:CV_INGREDIENT>는 삼등분 <해:CV_ACT>주세요. 양념 재료를 볼에 <넣:CV_ACT>고 <섞:CV_ACT>어주세요
+2. <양념:CV_SEASONING>에 <고추:CV_INGREDIENT>와 <올리브:CV_INGREDIENT>를 <넣:CV_ACT>어 <버무린:CV_ACT> 후 <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+3. 그릇에 <담:CV_ACT>아 맛있게 즐겨주세요.
+2. <당근:CV_INGREDIENT>, <애호박:CV_INGREDIENT>, <양파:CV_INGREDIENT>, <표고버섯:CV_INGREDIENT>은 채를 <썰:CV_ACT>고 <어린잎 채소:CV_INGREDIENT>는 물에 <담가:CV_ACT> <씻:CV_ACT>은 후 물기를 <제거해:CV_ACT>주세요.
+3. 달군 팬에 <기름:CV_SEASONING>을 <두르:CV_ACT>고 <양파:CV_INGREDIENT>-<애호박:CV_INGREDIENT>-<당근:CV_INGREDIENT>-<표고버섯:CV_INGREDIENT> 순으로 약간의 <소금:CV_SEASONING>으로 <밑간해:CV_ACT>서 각각 <볶:CV_ACT>고 <양념한:CV_STATE> <쇠고기:CV_INGREDIENT>를 <볶:CV_ACT>아주세요.
+4. 팬에 <기름:CV_SEASONING>을 <두르:CV_ACT>고 <달걀:CV_INGREDIENT>을 <넣:CV_ACT>어 반숙으로 <달걀프라이:CV_INGREDIENT>를 <만들:CV_ACT>어주세요.
+5. 볼에 <밥:CV_INGREDIENT>과 <볶은:CV_STATE><야채:CV_INGREDIENT>를 돌려 <담:CV_ACT>고, 가운데 <불고기:CV_INGREDIENT>와 <새싹:CV_INGREDIENT>을 <담:CV_ACT>은 후 <달걀프라이:CV_INGREDIENT>를 <올려:CV_ACT>주세요.
+6. 마지막에 약간의 <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 <뿌리:CV_ACT>고, <비빔고추장:CV_SEASONING>과 비빔간장재료를 <곁들여:CV_ACT>주세요.
+1. <오징어:CV_INGREDIENT>는 내장과 껍질을 <제거하:CV_ACT>고 깨끗이 <씻:CV_ACT>어 칼집을 <넣:CV_ACT>고 한입 크기로 <잘라:CV_ACT>주세요.
+2. 볼에 양념장 재료를 <넣:CV_ACT>고 고루 <섞:CV_ACT>어주세요.
+3. <양파:CV_INGREDIENT>와 <양배추:CV_INGREDIENT>는 채를 <썰:CV_ACT>고 <당근:CV_INGREDIENT>과 <애호박:CV_INGREDIENT>은 먹기 좋게 편으로 <썰:CV_ACT>어주세요. <풋고추:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>, <대파:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+5. 오징어가 익으면 마지막에 <대파:CV_INGREDIENT>와 <풋고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>어 <볶:CV_ACT>은 후 <참기름:CV_SEASONING>을 <넣:CV_ACT>고 마무리해주세요.
+6. 그릇에 <오징어 볶음:CV_INGREDIENT>을 <담:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 맛있게 즐겨주세요.
+(기호에 따라 밥과 함께 덮밥으로 즐기시거나 <소면:CV_INGREDIENT>을 <삶:CV_ACT>아 함께 즐겨 드셔도 좋아요)
+1. <명엽채:CV_INGREDIENT>는 먹기 좋은 길이로 <잘라:CV_ACT>주세요.
+볼에 양념재료를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요.
+4. 불을 <끄:CV_ACT>고 <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.
+5. 밑반찬으로 맛있게 즐겨주세요.
+1. <무:CV_INGREDIENT>와 <애호박:CV_INGREDIENT>은 1cm 두께로 <슬라이스한:CV_ACT> 뒤 <무:CV_INGREDIENT>는 4등분하고 <애호박:CV_INGREDIENT>은 2등분 해주세요.
+2. <청양고추:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>, <대파:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+3. <두부:CV_INGREDIENT>는 5cm 정도 크기로 네모나게 <자르:CV_ACT>고 <양파:CV_INGREDIENT>, <표고버섯:CV_INGREDIENT>은 1cm 크기로 <채썰:CV_ACT>어주세요.
+6. 팔팔 끓으면 <국간장:CV_SEASONING>, <마늘:CV_INGREDIENT>, <고추장:CV_SEASONING>, <된장:CV_SEASONING>, <고춧가루:CV_SEASONING>를 <넣:CV_ACT>고 한소끔 <끓여:CV_ACT>주세요. 거품이 생기면 <걷어내:CV_ACT>주세요.
+8. 그릇에 덜어 맛있게 즐겨보세요!
+4. 따끈할 때 맛있게 드세요!
+1. <무:CV_INGREDIENT>는 나박하게 <썰:CV_ACT>고 <양파:CV_INGREDIENT>는 굵게 <채 썰:CV_ACT>어주세요. <대파:CV_INGREDIENT>는 길이로 <가르:CV_ACT>고 6센치 길이로 <썰:CV_ACT>고 <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>는 어슷 <썰:CV_ACT>어주세요. 볼에 양념 재료를 <섞:CV_ACT>어 준비해 주세요.
+2. 냄비에 <무:CV_INGREDIENT>와 <양파:CV_INGREDIENT>를 <깔:CV_ACT>은 후 <모듬전:CV_INGREDIENT>을 보기 좋게 돌려 <담:CV_ACT>고 <다시마 멸치육수:CV_SEASONING>를 <넣:CV_ACT>어 <끓여:CV_ACT>주세요.
+4. <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>어 한소끔 <끓인:CV_ACT> 후 마지막에 <쑥갓:CV_INGREDIENT>을 <얹:CV_ACT>어 완성해 주세요.
+2. <고사리:CV_INGREDIENT>는 깨끗하게 <씻:CV_ACT>은 뒤 믹서에 <갈:CV_ACT>아주세요.
+4. <찹쌀가루:CV_SEASONING>와 <물:CV_SEASONING>을 그릇에 <넣:CV_ACT>고 숟가락으로 잘 <개:CV_ACT>어 <찹쌀물:CV_SEASONING>을 <만들:CV_ACT>어주세요.
+5. 순서 3의 <닭 삶았던:CV_STATE> <물:CV_SEASONING>에 믹서에 <간:CV_STATE> <고사리:CV_INGREDIENT>와 <잘게 바른:CV_STATE> <닭:CV_INGREDIENT>을 <넣:CV_ACT>고 <끓여:CV_ACT>주세요.
+6. 김이 나고 끓어오르면 <마늘:CV_INGREDIENT>, <고춧가루:CV_SEASONING>, <소금:CV_SEASONING>, <후추:CV_SEASONING>를 <넣:CV_ACT>어 간을 맞춰주세요.
+8. 그릇에 덜어 깊고 진한 닭육수의 <고사리육개장:CV_INGREDIENT>을 음미해보세요.  제주도에서 먹었던 고사리육개장의 추억이 떠오르실거예요. 매콤한 걸 즐기신다면 취향껏 <고춧가루:CV_SEASONING>를 더 <넣:CV_ACT>어 드셔도 좋답니다!
+2. <당면:CV_INGREDIENT>에 양념재료를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요.
+3. <대파:CV_INGREDIENT>와 <당근:CV_INGREDIENT>은 잘게 <다져:CV_ACT>주세요.
+4. 당면이 담긴 볼에 <대파:CV_INGREDIENT>와 <당근:CV_INGREDIENT>을 <넣:CV_ACT>고 <섞:CV_ACT>어주세요.
+5. <달걀:CV_INGREDIENT>을 <넣:CV_ACT>어 <섞:CV_ACT>어주세요. 볼에 양념장 재료를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+6. 달군 팬에 <오일:CV_SEASONING>을 <두른:CV_ACT> 후 한 국자씩 <떠:CV_ACT>서 팬에 <올려:CV_ACT>주세요.
+7. 다 익기 전에 반으로 접어 앞뒤로 노릇하게 <구워:CV_ACT>주세요. 
+8. <양념장:CV_SEASONING>과 <곁들여:CV_ACT> 맛있게 즐겨주세요.
+(기호에 따라 <케찹:CV_SEASONING>에 <찍:CV_ACT>어 드셔도 맛있게 드실 수 있어요) 
+1. <쇠고기:CV_INGREDIENT>는 키친타월로 핏물을 <제거한:CV_ACT> 후 두께 2cm, 길이 7cm로 <잘라:CV_ACT>주세요.
+(<고기:CV_INGREDIENT>는 구우면서 크기가 줄어들기 때문에 다른 재료들보다 좀 더 길게 <잘라:CV_ACT>주세요)
+2. <자른:CV_STATE> <쇠고기:CV_INGREDIENT>에 쇠고기 양념재료를 <넣:CV_ACT>어 <밑간을 해:CV_ACT>주세요.
+3. <파:CV_INGREDIENT>는 두꺼운 파만 길게 반으로 <가른:CV_ACT> 후 6cm길이로 <자르:CV_ACT>고, <새송이:CV_INGREDIENT>는 밑동을 <잘라:CV_ACT> 이등분 한 후 <파:CV_INGREDIENT>와 같은 두께로 <잘라:CV_ACT>주세요.
+4. 달군 팬에 <기름:CV_SEASONING>을 <두른:CV_ACT> 후, <밑간한:CV_STATE> <쇠고기:CV_INGREDIENT>를 <볶:CV_ACT>아주세요.
+(고기를 미리 익히지 않고 꼬치에 끼워 굽게되면 다른 재료들이 타버릴 수 있어서, <고기:CV_INGREDIENT>를 먼저 <볶:CV_ACT>아주는 게 좋아요)
+5. 나무꼬치에 <새송이:CV_INGREDIENT>-<쇠고기:CV_INGREDIENT>-<파:CV_INGREDIENT>-<새송이:CV_INGREDIENT>-<쇠고기:CV_INGREDIENT>-<파:CV_INGREDIENT>-<쇠고기:CV_INGREDIENT> 순으로 <꽂:CV_ACT>아주세요.
+7. 알맞은 그릇에 <담:CV_ACT>고, <잣가루:CV_SEASONING>를 <뿌려:CV_ACT> 완성해주세요.
+1. <연근:CV_INGREDIENT>은 조리용 솔로 문질러 <씻:CV_ACT>어주세요. 0.5cm 두께로 <잘라:CV_ACT>주세요.
+5. 접시에 <연근조림:CV_INGREDIENT>을 <담:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.
+4. <잘게 썬:CV_STATE> <당근:CV_INGREDIENT>, <부추:CV_INGREDIENT>, <노른자:CV_INGREDIENT>, <김가루:CV_SEASONING>, <통깨:CV_SEASONING> 등을 <곁들:CV_ACT>여 맛있게 즐겨주세요.
+4. 달군 팬에 <쇠고기:CV_INGREDIENT>와 <표고버섯:CV_INGREDIENT>을 <넣:CV_ACT>어 <볶:CV_ACT>다가 쇠고기가 익으면 <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>어 살짝 <볶:CV_ACT>아주세요.
+5. 볼에 <볶은:CV_STATE> <오이:CV_INGREDIENT>와 <쇠고기:CV_INGREDIENT>, <표고버섯:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>고 <참기름:CV_SEASONING>, <깨소금:CV_SEASONING>을 <넣:CV_ACT>어 고루 <버무려:CV_ACT>주세요.
+6. 그릇에 <오이갑장과:CV_INGREDIENT>를 <담:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 마무리해주세요.
+4. 전기밥솥에 <찹쌀:CV_INGREDIENT>, <대추:CV_INGREDIENT>, <반으로 자른:CV_STATE> <밤:CV_INGREDIENT>을 <넣:CV_ACT>고 STEP2의 <밥물:CV_SEASONING>을 <부어:CV_ACT>주세요.
+5. 밥물 재료를 <넣:CV_ACT>고 고루 <섞:CV_ACT>은 후 전기밥솥에 잡곡밥 또는 영양밥 모드로 <밥:CV_INGREDIENT>을 <지어:CV_ACT>주세요.
+6. 약밥이 완성되면 재빨리 <잣:CV_INGREDIENT>과 <참기름:CV_SEASONING>을 <넣:CV_ACT>어 버무려주세요.
+7. 식으면 동그랗게 모양을 내거나 적당한 틀로 모양을 만들고 대추 고명으로 <장식해:CV_ACT>주세요.
+4. <무말랭이:CV_INGREDIENT>와 <고춧잎:CV_INGREDIENT>, 양념장 재료를 <넣:CV_ACT>고 조물조물 <무치:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 완성해주세요.
+2. <기름을 뺀:CV_STATE> <참치:CV_INGREDIENT>에 <마요네즈:CV_SEASONING>와 <후춧가루:CV_SEASONING> 를 <넣:CV_ACT>고 <버무려:CV_ACT> 주세요. 
+3. <밥:CV_INGREDIENT>에 <참기름:CV_SEASONING>과 <소금:CV_SEASONING> 약간을 <넣:CV_ACT>어 간을 해주세요.
+5. 가위로 <김:CV_INGREDIENT> 중앙까지 <잘라:CV_ACT> 주세요. 4면에 <치즈:CV_INGREDIENT>, <밥:CV_INGREDIENT>과 <볶음김치:CV_INGREDIENT>, <스팸:CV_INGREDIENT>, <상추:CV_INGREDIENT>를 시계방향으로 <놓:CV_ACT>고 <접:CV_ACT>어주세요.
+6. <참치마요:CV_INGREDIENT>도 동일한 방법으로 재료를 <넣:CV_ACT>고 <접:CV_ACT>어주세요.
+7. 랩으로 <감싼:CV_ACT> 후 반으로 <잘라:CV_ACT> 맛있게 즐겨주세요.
+1. <두릅:CV_INGREDIENT>은 밑동을 <잘라내:CV_ACT>고 겉껍질을 <제거해:CV_ACT>주세요. 줄기의 잔가시를 <제거한:CV_ACT> 후 물에 <씻:CV_ACT>어 주세요.
+2. <소고기:CV_INGREDIENT>는 키친타월에 <올려:CV_ACT> 핏물을 <제거한:CV_ACT> 후 밑간 재료를 골고루 <발라:CV_ACT>주세요. 양념재료는 잘 <섞:CV_ACT>어주세요.
+4. <소고기:CV_INGREDIENT>에 <전분:CV_SEASONING>을 약간 <뿌린:CV_ACT> 후 <데친:CV_STATE> <두릅:CV_INGREDIENT>을 <넣:CV_ACT>어 돌돌 <말:CV_ACT>아주세요.
+5. 달군 팬에 <기름:CV_SEASONING>을 약간 <두른:CV_ACT> 후 <소고기:CV_INGREDIENT>의 이음새 부분이 아래로 가도록 <올려:CV_ACT> 노릇하게 <구워:CV_ACT>주세요.
+6. 두릅을 구운 팬에 양념 재료를 <넣:CV_ACT>고 끓어오르면 <구워둔:CV_STATE> <두릅 소고기 말이:CV_INGREDIENT>를 <넣:CV_ACT>어 <졸여:CV_ACT>주세요.
+7. 완성된 <두릅 소고기 말이:CV_INGREDIENT>를 접시에 <담:CV_ACT>고 <고명:CV_SEASONING>을 <올려:CV_ACT> 장식한 후 맛있게 즐겨주세요.
+2. 볼에 양념 재료를 <넣:CV_ACT>고 골고루 <섞:CV_ACT>어주세요.
+3. <미나리:CV_INGREDIENT>는 4센치 길이로 <썰:CV_ACT>고, <양파:CV_INGREDIENT>는 채를 <썰:CV_ACT>어주세요. <배:CV_INGREDIENT>와 <대파:CV_INGREDIENT>도 <양파:CV_INGREDIENT>와 비슷한 길이로 채를 <썰:CV_ACT>어주세요. <오이:CV_INGREDIENT>와 <당근:CV_INGREDIENT>은 어슷하게 편으로 <썰:CV_ACT>고, <고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+4. 볼에 <손질한:CV_STATE> <야채:CV_INGREDIENT>와 <양념 소스:CV_SEASONING>를 <넣:CV_ACT>고 고루 <섞:CV_ACT>은 후 <바지락 살:CV_INGREDIENT>을 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+5. 마지막에 <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 <넣:CV_ACT>고 가볍게 <버무려:CV_ACT> 맛있게 즐겨주세요.
+2. <홍고추:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요. <절인:CV_STATE> <오이:CV_INGREDIENT>는 면보에 <감싸:CV_ACT> 물기를 <짜:CV_ACT>주세요.
+(절인 오이를 먹어봤을 때 짜다면 <물:CV_SEASONING>에 가볍게 <헹궈:CV_ACT> <사용해:CV_ACT>주세요)
+3. 달군 팬에 <들기름:CV_SEASONING>을 <두른:CV_ACT> 후 <오이:CV_INGREDIENT>를 <넣:CV_ACT>고 <볶:CV_ACT>아주세요.
+4. <홍고추:CV_INGREDIENT>와 <다진:CV_STATE> <파:CV_INGREDIENT>를 <넣:CV_ACT>고 한번 더 <볶:CV_ACT>은 후 불을 <끄:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 완성해 주세요.
+2. <두릅:CV_INGREDIENT>은 깔끔히 <다듬:CV_ACT>어 소금을 약간 넣은 물에 살짝 <데친:CV_ACT> 후 한 김 <식혀:CV_ACT>주세요.
+3. <식힌:CV_STATE> <두릅:CV_INGREDIENT>은 물기를 꼭 <짜내:CV_ACT>고 송송 <썰:CV_ACT>어주세요.
+맛있는 <두릅 바지락 솥밥:CV_INGREDIENT>이 완성됩니다.
+1. 깨끗이 <씻은:CV_STATE> <마늘종:CV_INGREDIENT>은 5cm길이로 <잘라:CV_ACT>주세요.
+3. 양념 재료를 모두 <섞:CV_ACT>어주세요.
+4. <데친:CV_STATE> <마늘종:CV_INGREDIENT>을 <양념:CV_SEASONING>에 <넣:CV_ACT>고 <무친:CV_ACT> 후, <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.
+5. 알맞은 그릇에 <담:CV_ACT>아 맛있게 즐겨주세요.
+1. <차돌박이:CV_INGREDIENT>는 2등분으로 <자르:CV_ACT>고 키친 타올에 <올려:CV_ACT> 핏물을 <빼:CV_ACT>주세요.
+2. <무:CV_INGREDIENT>, <표고:CV_INGREDIENT>, <양파:CV_INGREDIENT>, <두부:CV_INGREDIENT>는 한 입 크기로 썰고 <애호박:CV_INGREDIENT>은 반달 모양으로 <썰:CV_ACT>어주세요. <대파:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>, <청고추:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요. 
+4. 냄비에 <다시마 멸치육수:CV_SEASONING>와 <된장:CV_SEASONING>을 <넣:CV_ACT>고 <끓여:CV_ACT>주세요.
+6. 마지막에 <대파:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>, <청고추:CV_INGREDIENT>를 <넣:CV_ACT>고 한소끔 더 <끓여:CV_ACT>주세요.
+(간이 약하면 기호에 따라 <된장:CV_SEASONING>으로 간을 <맞춰:CV_ACT>주세요.)
+1. <깻잎:CV_INGREDIENT>은 흐르는 물에 깨끗이 <씻:CV_ACT>어 체반에 <밭쳐:CV_ACT> 물기를 <뺀:CV_ACT> 후 꼭지를 적당한 길이로 <잘라:CV_ACT>주세요.
+2. <대파:CV_INGREDIENT>는 잘게 <다지:CV_ACT>고, <쪽파:CV_INGREDIENT>는 4cm 길이로 <썰:CV_ACT>고, <양파:CV_INGREDIENT>, <당근:CV_INGREDIENT>은 채 <썰:CV_ACT>어주세요.
+3. 볼에 양념을 <섞:CV_ACT>고, <썰어 둔:CV_STATE> <야채:CV_INGREDIENT>를 <섞:CV_ACT>어주세요.
+5. 적당한 크기의 통에 <담:CV_ACT>아 맨 위에는 <양념장:CV_SEASONING>을 넉넉하게 <올려:CV_ACT>주세요.
+6. 맛있게 즐겨주세요.
+1. <애호박:CV_INGREDIENT>은 반으로 <갈라:CV_ACT> 도톰하게 반달모양으로 <썰:CV_ACT>어주세요. <양파:CV_INGREDIENT>는 <채썰:CV_ACT>고, <대파:CV_INGREDIENT>와 <청홍고추:CV_INGREDIENT>는 어슷 <썰:CV_ACT>어주세요.
+4. 국물양념 재료를 <넣:CV_ACT>고 한소끔 더 <끓여:CV_ACT>주세요.
+5. <밥:CV_INGREDIENT>과 함께 <곁들여:CV_ACT> 즐겨주세요.
+1. <손질한:CV_STATE> <취나물:CV_INGREDIENT>은 끓는 물에 <소금:CV_SEASONING>을 <넣:CV_ACT>고 <데치:CV_ACT>고, 찬물에 <헹궈:CV_ACT> 물기를 <제거한:CV_ACT> 후 잘게 <잘라:CV_ACT> 나물 양념에 <무쳐:CV_ACT>주세요.
+2. <베이컨:CV_INGREDIENT>을 잘게 <자른:CV_ACT> 후 달군 팬에 <볶:CV_ACT>아주세요.
+3. 볼에 고슬고슬하게 지은 <밥:CV_INGREDIENT>과 밥양념 재료, <취나물:CV_INGREDIENT>, <베이컨:CV_INGREDIENT>을 <넣:CV_ACT>고 고루 <섞:CV_ACT>어주세요.
+4. 한 입 크기로 동그랗게 모양을 잡아 <주먹밥:CV_INGREDIENT>을 <만들:CV_ACT>고, <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.
+5. 도시락으로 즐기기 좋은 메뉴랍니다.
+1. <두부:CV_INGREDIENT>는 6등분으로 <자르:CV_ACT>고 약간의 <소금:CV_SEASONING>을 <뿌려:CV_ACT> <밑간 한:CV_ACT> 후, 키친타월에 <올려:CV_ACT> 물기를 <제거해:CV_ACT>주세요.
+<돼지고기:CV_INGREDIENT>에 고기 양념 재료를 <넣:CV_ACT>어 <밑간 해:CV_ACT>주세요.
+2. <배추:CV_INGREDIENT>와 <버섯:CV_INGREDIENT>, <대파:CV_INGREDIENT>는 먹기 좋게 <자르:CV_ACT>고 <청경채:CV_INGREDIENT>는 2등분으로 잘라주세요. 
+3. 달군 팬에 약간의 <기름:CV_SEASONING>을 <두르:CV_ACT>고, <두부:CV_INGREDIENT>를 돌려가며 노릇하게 <구워:CV_ACT>주세요.
+(칼집을 넣을 한 면을 빼고 돌려가며 노릇하게 구워주세요)
+4. <두부:CV_INGREDIENT>의 가운데에 가로로 칼집을 <넣:CV_ACT>은 후, <양념한:CV_STATE> <고기소:CV_INGREDIENT>를 <넣:CV_ACT>어주세요.
+5. 전골냄비 바닥에 <배추:CV_INGREDIENT>를 <깔:CV_ACT>고 <두부:CV_INGREDIENT>, <표고버섯:CV_INGREDIENT>, <느타리버섯:CV_INGREDIENT>을 <담:CV_ACT>은 후 따뜻한 <다시마멸치육수:CV_SEASONING>와 국물양념재료를 <부어:CV_ACT> <끓여:CV_ACT>주세요.
+부족한 간은 <소금:CV_SEASONING>을 <넣:CV_ACT>어 <가감해:CV_ACT> 즐겨주세요.
+1. <오이:CV_INGREDIENT>와 <당근:CV_INGREDIENT>은 6cm길이로 <자른:CV_ACT> 후 얇게 채를 <썰:CV_ACT>고, <양파:CV_INGREDIENT>와 <파프리카:CV_INGREDIENT>도 얇게 <채썰:CV_ACT>어주세요. <크래미:CV_INGREDIENT>는 길이대로 3등분 해주세요.
+취향에 따라 <크래미:CV_INGREDIENT> 대신 <닭가슴살:CV_INGREDIENT>이나 <훈제오리:CV_INGREDIENT>를 <넣:CV_ACT>어 드셔도 좋아요.
+2. 끓는 물에 <소금:CV_SEASONING>을 <넣:CV_ACT>고 <부추:CV_INGREDIENT>를 <데친:CV_ACT> 후, 찬물에 <헹궈:CV_ACT> 물기를 <제거해:CV_ACT>주세요.
+(<데친:CV_STATE> <부추:CV_INGREDIENT>는 <무쌈말이:CV_INGREDIENT>를 묶는 끈으로 사용할 거예요)
+3. 볼에 소스재료를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+4. <무쌈:CV_INGREDIENT>의 물기를 살짝 <제거하:CV_ACT>고, 준비한 재료를 적당량 <넣:CV_ACT>은 후 돌돌 <말:CV_ACT>아 부추 끈으로 <묶:CV_ACT>어 모양을 <만들어:CV_ACT>주세요.
+(<무쌈:CV_INGREDIENT>의 물기를 너무 많이 <짜:CV_ACT>게 되면 새콤달콤한 간이 다 빠지게 되어 맛이 덜할 수 있으니 유의해주세요)
+5. 소스를 <곁들여:CV_ACT> 즐겨주세요.
+1. <애호박:CV_INGREDIENT>은 0.5cm 두께로 어슷하게 <썬:CV_ACT> 후 채를 <썰:CV_ACT>어 주세요.
+4. 완성된 <애호박 볶음:CV_INGREDIENT>에 <참기름:CV_SEASONING>을 <두르:CV_ACT>고, <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 맛있게 즐겨주세요.
+1. <감자:CV_INGREDIENT>와 <양파:CV_INGREDIENT>, <애호박:CV_INGREDIENT>은 채를 <썰:CV_ACT>고, <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요. 볼에 <달걀:CV_INGREDIENT>을 <넣:CV_ACT>어 <풀:CV_ACT>고, 다른 볼에 국물 양념 재료를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+4. <애호박:CV_INGREDIENT>과 <대파:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>를 <넣:CV_ACT>고 <끓이:CV_ACT>다가 풀어 놓은 <달걀물:CV_SEASONING>을 냄비 가장자리에 둘러 <붓:CV_ACT>고 마지막에 <구운:CV_STATE> <소금:CV_SEASONING>으로 간을 맞춘 후 불을 <꺼:CV_ACT>주세요.
+5. <장칼국수:CV_INGREDIENT>를 <담:CV_ACT>고 기호에 따라 <김가루:CV_SEASONING>와 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.
+2. <당근:CV_INGREDIENT>과 <양파:CV_INGREDIENT>는 곱게 <채썰:CV_ACT>고, <양파:CV_INGREDIENT>는 찬물에 <담갔:CV_ACT>다가 물기를 <빼:CV_ACT>고 <영양부추:CV_INGREDIENT>는 5센치 길이로 <잘라:CV_ACT>주세요.
+3. 부추무침소스재료에 <영양부추:CV_INGREDIENT>와 <채썬:CV_STATE> <당근:CV_INGREDIENT>, <양파:CV_INGREDIENT>를 살살 <버무려:CV_ACT> 주세요.
+5. 접시에 <맥적구이:CV_INGREDIENT>를 <담:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 완성해주세요. <부추무침:CV_INGREDIENT>과 <곁들어:CV_ACT> 맛있게 즐겨주세요.
+3. <양파:CV_INGREDIENT>는 잘게 <다지:CV_ACT>고, <부추:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요.
+(<느타리버섯:CV_INGREDIENT>을 <데쳐:CV_ACT>서 사용하면 쫄깃한 식감을 줄 수 있어요. 만두소를 만들 때는 재료들의 수분을 최대한 <제거해:CV_ACT>주는 것이 좋아요.)
+5. <돼지고기:CV_INGREDIENT>는 키친타월에 <올려:CV_ACT> 핏물을 <제거한:CV_ACT> 후, 볼에 <담:CV_ACT>고 밑간 양념 재료를 <넣:CV_ACT>어 <밑간해:CV_ACT> 주세요. <다진:CV_STATE> <양파:CV_INGREDIENT>, <송송 썬:CV_STATE> <느타리버섯:CV_INGREDIENT>, <채 썬:CV_STATE> <애호박:CV_INGREDIENT>, 만두소 양념을 <넣:CV_ACT>어 <버무린:CV_ACT> 후, <부추:CV_INGREDIENT>를 <넣:CV_ACT>고 한 번 더 가볍게 <섞:CV_ACT>어주세요.
+(바닥에 <밀가루:CV_INGREDIENT>를 <뿌리:CV_ACT>고 얇게 <밀:CV_ACT>어주세요.)
+7. <만두피:CV_INGREDIENT>를 반으로 <잘라:CV_ACT> 다른 색의 반죽과 겹친 후 밀대로 <밀어:CV_ACT> <붙여:CV_ACT>주세요.
+(<만두피:CV_INGREDIENT>는 0.5cm 이상으로 겹쳐야 만두가 터지지 않아요.)
+9. 완성된 요리를 접시에 <담:CV_ACT>아 <양념장:CV_SEASONING>과 <곁들여:CV_ACT> 마무리해주세요.
+(기호에 따라 <초간장:CV_SEASONING>과 <곁들여:CV_ACT> 드시거나 <만둣국:CV_INGREDIENT> 등을 만들어 드셔도 좋아요.)
+1. <멸치:CV_INGREDIENT>, <다시마:CV_INGREDIENT>는 다시백에 <넣:CV_ACT>어주세요.
+2. <대파:CV_INGREDIENT>는 잘 <씻:CV_ACT>어서 1cm 두께로 송송 <썰:CV_ACT>어주세요.
+3. <감자:CV_INGREDIENT>는 껍질을 <벗기:CV_ACT>고 3cm 크기로 <깍둑 썰:CV_ACT>어주세요.
+7. 그릇에 덜어 따뜻할 때 맛있게 드셔보세요!
+2. <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>는 5cm길이로 채를 <썰:CV_ACT>고, 달걀은 <흰자:CV_INGREDIENT>와 <노른자:CV_INGREDIENT>를 <분리하:CV_ACT>여 지단을 <부친:CV_ACT> 뒤 얇게 <채 썰:CV_ACT>어주세요.
+4. 접시에 <도미찜:CV_INGREDIENT>을 <담:CV_ACT>고, <달걀 지단:CV_INGREDIENT>과 <실고추:CV_INGREDIENT>를 보기 좋게 <올려:CV_ACT>주세요. <양념:CV_SEASONING>을 <끼얹:CV_ACT>어 내주세요. (양념을 뿌리지 않고 따로 그릇에 담아 찍어 드셔도 좋아요)
+5. 쫄깃한 식감과 담백한 맛이 일품인 도미를 즐겨보세요.
+2. <우엉:CV_INGREDIENT>은 깨끗이 <씻:CV_ACT>은 후 필러로 껍질을 <벗기:CV_ACT>고 먹기 좋은 길이로 <잘라:CV_ACT> 채를 <썰:CV_ACT>어주세요. <아스파라거스:CV_INGREDIENT>는 필러로 껍질을 <벗기:CV_ACT>고 먹기 좋은 길이로 어슷하게 <자르:CV_ACT>고 <양파:CV_INGREDIENT>는 채를 <썰:CV_ACT>어주세요.
+3. 식초를 넣은 <식초물:CV_SEASONING>에 <우엉 채:CV_INGREDIENT>를 살짝 <데친:CV_ACT> 후 찬물에 <헹궈:CV_ACT> 물기를 <빼:CV_ACT>주세요. 
+5. 마지막에 <참기름:CV_SEASONING>을 <넣:CV_ACT>고 불을 <끈:CV_ACT> 후 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 맛있게 즐겨주세요.
+1. <대파:CV_INGREDIENT>는 얇게 송송 <썰:CV_ACT>어주세요. <스팸:CV_INGREDIENT>은 작은 큐브모양으로 먹기 좋게 <잘라:CV_ACT>주세요.
+2. 볼에 <달걀:CV_INGREDIENT>을 <풀:CV_ACT>어 <달걀물:CV_SEASONING>을 <만들:CV_ACT>어주세요.
+4. 팬 한쪽에 <달걀물:CV_SEASONING>을 <넣:CV_ACT>어 부드럽게 <스크램블드에그:CV_INGREDIENT>를 <만들:CV_ACT>어주세요.
+5. <밥:CV_INGREDIENT>과 양념재료를 <넣:CV_ACT>어 고루 <섞어가:CV_ACT>며 <볶:CV_ACT>아주세요.
+6. 그릇에 담고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 맛있게 즐겨주세요.
+1. <묵은지:CV_INGREDIENT>는 물에 <씻:CV_ACT>은 후 굵게 <다져:CV_ACT>주세요. <육전:CV_INGREDIENT>은 먹기 좋은 크기로 <잘라:CV_ACT>주세요.
+2. <오이:CV_INGREDIENT>와 <당근:CV_INGREDIENT>은 채를 <썰:CV_ACT>어주세요. <쪽파:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요. 볼에 비빔면 양념 재료를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+4. 흐르는 찬물에 <중면:CV_INGREDIENT>을 여러 번 <씻:CV_ACT>어 전분기를 <없애:CV_ACT>고, 채반에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+5. 볼에 <중면:CV_INGREDIENT>과 <묵은지:CV_INGREDIENT>, <썰어 둔:CV_STATE> <야채:CV_INGREDIENT>와 <양념:CV_SEASONING>을 <넣:CV_ACT>어 고루 <버무려:CV_ACT>주세요.
+6. 그릇에 <비빔국수:CV_INGREDIENT>를 <담:CV_ACT>고 <오이채:CV_SEASONING>와 <깨:CV_SEASONING>를 <올려:CV_ACT> 완성해주세요.
+(기호에 따라 <삶은 달걀:CV_INGREDIENT>과 <부추:CV_INGREDIENT>, <양배추:CV_INGREDIENT> 등의 <채소:CV_INGREDIENT>를 추가로 <넣:CV_ACT>어 드셔도 좋아요)
+1. <두부:CV_INGREDIENT>를 기다란 모양으로 두툼하게 <썰:CV_ACT>고 키친 타올에 <올려:CV_ACT> <두부:CV_INGREDIENT>의 물기를 <제거해:CV_ACT> 주세요.
+2. <홍고추:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>는 반 <갈라:CV_ACT> 씨를 <털어낸:CV_ACT> 후 어슷하게 <썰:CV_ACT>고 <마늘:CV_INGREDIENT>은 편으로 <썰:CV_ACT>어주세요. <미니 새송이버섯:CV_INGREDIENT>은 반으로 <가르:CV_ACT>고 <표고버섯:CV_INGREDIENT>은 한입 크기로 <썰:CV_ACT>어주세요.
+4. 냄비에 간장소스 재료와 <마늘:CV_INGREDIENT>, <미니 새송이 버섯:CV_INGREDIENT>, <표고버섯:CV_INGREDIENT>을 <넣:CV_ACT>고 끓어오르면 <다시마:CV_INGREDIENT>를 <건져낸:CV_ACT> 후 한소끔 <끓여:CV_ACT> 불을 <끄:CV_ACT>고 뜨거울 때 <구운:CV_STATE> <두부:CV_INGREDIENT>에 <부어:CV_ACT>주세요.
+1. <생닭:CV_INGREDIENT>을 흐르는 물에 <씻:CV_ACT>고 지방과 꽁지, 날개 끝 부분을 가위로 <잘라:CV_ACT>주세요. <전복:CV_INGREDIENT>은 솔로 <문질러:CV_ACT> 깨끗하게 <씻:CV_ACT>고 전복의 이빨을 <제거해:CV_ACT>주세요.
+2. <당근:CV_INGREDIENT>과 <쥬키니 호박:CV_INGREDIENT>은 잘게 <다져:CV_ACT>주세요. 곁들임 양념장 재료는 모두 <섞:CV_ACT>어주세요.
+3. 닭 속에 <불린:CV_STATE> <찹쌀:CV_INGREDIENT>과 <불린:CV_STATE> <녹두:CV_INGREDIENT>를 <넣:CV_ACT>고 한방팩 재료를 <넣:CV_ACT>어주세요.
+4. <닭의 한쪽 다리:CV_INGREDIENT>에 칼집을 <내:CV_ACT>어 칼집 낸 곳에 <반대쪽 다리:CV_INGREDIENT>를 <넣:CV_ACT>어주세요.
+7. 곁들임 양념장과 <김치:CV_INGREDIENT>를 <삼계탕:CV_INGREDIENT>과 함께 먹으면 맛이 더욱 풍부해진답니다.
+1. 볼에 양념 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어 <양념장:CV_SEASONING>을 <만들:CV_ACT>어주세요.
+2. <돌나물:CV_INGREDIENT>은 <손질한:CV_ACT> 후 깨끗하게 <씻:CV_ACT>어 물기를 <빼:CV_ACT>고 <깻잎:CV_INGREDIENT>, <양파:CV_INGREDIENT>, <대파:CV_INGREDIENT>는 채를 <썰:CV_ACT>어주세요. (<대파 채:CV_INGREDIENT>는 찬물에 <담갔:CV_ACT>다가 물기를 <빼:CV_ACT>주세요) <오이:CV_INGREDIENT>와 <당근:CV_INGREDIENT>은 길이로 반 <갈라:CV_ACT> 어슷하게 <슬라이스 해:CV_ACT> 주세요.
+3. <골뱅이:CV_INGREDIENT>는 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>고 길이로 이등분해주세요.
+4. 볼에 <골뱅이:CV_INGREDIENT>와 <돌나물:CV_INGREDIENT>, <손질한:CV_STATE> <야채:CV_SEASONING>, <양념장:CV_SEASONING>을 <넣:CV_ACT>고 <섞:CV_ACT>어주세요.
+5. 접시에 <돌나물:CV_INGREDIENT> <골뱅이무침:CV_INGREDIENT>을 <올린:CV_ACT> 후 <통깨:CV_SEASONING>를 <뿌리:CV_ACT>고 기호에 따라 <삶은:CV_STATE> <소면:CV_INGREDIENT>을 <곁들여:CV_ACT> 맛있게 즐겨주세요.
+2. 볼에 양념 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요. <오이:CV_INGREDIENT>는 얇게 채를 <썰:CV_ACT>어주세요. 
+(<김치:CV_INGREDIENT>의 숙성 정도에 따라 <식초:CV_SEASONING>양을 가감해 주세요.)
+3. <열무김치:CV_INGREDIENT>에 <양념장:CV_SEASONING> <붓:CV_ACT>고 <버무려:CV_ACT> 주세요.
+5. <삶은:CV_STATE> <중면:CV_INGREDIENT>을 <양념:CV_SEASONING>과 <버무린:CV_ACT> 후 그릇에 <담:CV_ACT>고 얼려둔 <살얼음 육수:CV_SEASONING>를 자작하게 <부어:CV_ACT>주세요.
+6. <채썬:CV_STATE> <오이:CV_INGREDIENT>와 <달걀:CV_INGREDIENT>을 <올린:CV_ACT> 후 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 맛있게 즐겨주세요. 
+1. <마늘종:CV_INGREDIENT>은 4cm 길이로 <잘라:CV_ACT>주세요. 볼에 양념 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요.
+4. 불을 끈 후 <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 마무리해 주세요.
+2. <더덕:CV_INGREDIENT>은 껍질을 <벗기:CV_ACT>고 어슷하게 길게 <잘라:CV_ACT>서 준비해주세요.
+4. 새로 달군 냄비에 소스 재료를 <넣:CV_ACT>고 소스가 바글바글 <끓어오르:CV_ACT>면 <닭고기:CV_INGREDIENT>와 <더덕:CV_INGREDIENT>을 <넣:CV_ACT>고 <버무려:CV_ACT>주세요.
+5. 마지막으로 <깨소금:CV_SEASONING>과 송송 썬 <실파:CV_INGREDIENT>를 <뿌려:CV_ACT> 마무리해주세요.
+1. <배추김치:CV_INGREDIENT>는 사방 1센치 크기로 <자르:CV_ACT>고, <양파:CV_INGREDIENT>는 굵게 <다져:CV_ACT>주세요. <실파:CV_INGREDIENT>는 송송 <썰:CV_ACT>고, <베이컨:CV_INGREDIENT>은 한입 크기로 <잘라:CV_ACT>주세요. 볼에 양념 재료를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+3. <밥:CV_INGREDIENT>을 <넣:CV_ACT>고, 주걱으로 <밥:CV_INGREDIENT>을 가르듯이 고루 <섞:CV_ACT>어가며 <볶:CV_ACT>은 후 마지막에 <참기름:CV_SEASONING>을 <넣:CV_ACT>어주세요.
+4. 그릇에 <김치볶음밥:CV_INGREDIENT>을 <담:CV_ACT>고, <통깨:CV_SEASONING>와 <실파:CV_INGREDIENT>를 <뿌려:CV_ACT>주세요. <달걀프라이:CV_INGREDIENT>를 <곁들이:CV_ACT>면 더욱 맛이 좋아요.
+1. <더덕:CV_INGREDIENT>은 칼로 돌려 <깎:CV_ACT>아 껍질을 <벗긴:CV_ACT> 후 물에 깨끗이 <씻:CV_ACT>고 반 <갈라:CV_ACT> 밀대로 살살 <두드려:CV_ACT> <펴:CV_ACT> 주세요.
+2. <더덕:CV_INGREDIENT>은 결대로 굵게 <찢:CV_ACT>어주세요.
+3. 볼에 고추장 양념 재료를 모두 <넣:CV_ACT>고 골고루 <섞:CV_ACT>어 <양념장:CV_SEASONING>을 <만들:CV_ACT>어 주세요.
+4. <양념장:CV_SEASONING>에 <손질한:CV_STATE> <더덕:CV_INGREDIENT>을 <넣:CV_ACT>고 조물조물 <무쳐:CV_ACT> 접시에 <담:CV_ACT>은 후 <통깨:CV_SEASONING>와 <쪽파:CV_INGREDIENT>를 <뿌려:CV_ACT> 맛있게 즐겨주세요.
+1. 냄비에 <멸치  다시마육수:CV_SEASONING>를 <붓:CV_ACT>고 <해감한:CV_STATE> <모시조개:CV_INGREDIENT>를 <넣:CV_ACT>어 <끓이:CV_ACT>다가 조개가 <익:CV_ACT>어 입을 벌리면 <건져내:CV_ACT>고, <육수:CV_SEASONING>는 <가라앉힌:CV_ACT> 후 위 <육수:CV_SEASONING>만 <따라내:CV_ACT>어 준비해 주세요.
+3. <얼갈이:CV_INGREDIENT>는 먹기 좋은 크기로 <잘라:CV_ACT> 얼갈이 양념재료에 조물조물 <버무려:CV_ACT> <밑간하:CV_ACT>고 <고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>고 <대파:CV_INGREDIENT>는 길이로 반 <가른:CV_ACT> 후 6cm 길이로 <썰:CV_ACT>어주세요.
+1. 1. 깨끗이 <씻은:CV_STATE> <애호박:CV_INGREDIENT>은 0.5cm두께로 <썰:CV_ACT>고, 작은 틀이나 뚜껑 등으로 <애호박:CV_INGREDIENT> 속을 찍어 <파내:CV_ACT>어주세요.
+2. <파내어진:CV_STATE> <애호박 속부분:CV_INGREDIENT>과 <양파:CV_INGREDIENT>, <당근:CV_INGREDIENT>은 잘게 <다져:CV_ACT>주세요. <두부:CV_INGREDIENT>는 면보자기에 <넣:CV_ACT>어 물기를 <짜:CV_ACT>주세요.
+3. 볼에 <돼지고기 갈은 것:CV_INGREDIENT>과 <잘게 다진:CV_STATE> <야채:CV_INGREDIENT>와 <두부:CV_INGREDIENT>, <다진:CV_STATE><마늘:CV_INGREDIENT>, <다진:CV_STATE><파:CV_INGREDIENT>, <소금:CV_SEASONING>, <후춧가루:CV_SEASONING>를 <넣:CV_ACT>어 골고루 <섞:CV_ACT>어주세요.
+4. <동그랗게 파내어진:CV_STATE> <애호박 속:CV_INGREDIENT>을 동그랑땡소로 <채워:CV_ACT>주세요.
+5. <애호박동그랑땡:CV_INGREDIENT>에 <부침가루:CV_SEASONING>를 <묻히:CV_ACT>고, 풀어놓은 <달걀물:CV_SEASONING>에 <담갔:CV_ACT>다가 <건져:CV_ACT>주세요.
+6. 달군팬에 약간의 <기름:CV_SEASONING>을 <두르:CV_ACT>고, <애호박동그랑땡:CV_INGREDIENT>을 <올려:CV_ACT> 노릇하게 <익혀:CV_ACT>주세요.
+2. 1. 깨끗이 <씻은:CV_STATE> <애호박:CV_INGREDIENT>, <당근:CV_INGREDIENT>, <양파:CV_INGREDIENT>를 <채썰:CV_ACT>어주세요.
+2. 볼에 <채썬:CV_STATE> <야채:CV_INGREDIENT>들과 <부침가루:CV_SEASONING>, <물:CV_SEASONING>, <달걀:CV_INGREDIENT>, <소금:CV_SEASONING>을 <넣:CV_ACT>어 골고루 <섞:CV_ACT>어주세요.
+3. 달군 팬에 넉넉하게 <기름:CV_SEASONING>을 <두르:CV_ACT>고, 수저로 반죽을 <올린:CV_ACT> 후 동그랗게 모양을 잡아 노릇하게 <부쳐:CV_ACT>주세요.
+4. 접시에 <애호박채전:CV_INGREDIENT>을 <담:CV_ACT>고 <초간장:CV_SEASONING>을 <곁들여:CV_ACT>주세요.
+3. 1. <애호박:CV_INGREDIENT>은 깨끗이 <씻:CV_ACT>어서 0.5cm두께로 <썰:CV_ACT>어주세요. <홍고추:CV_INGREDIENT>는 <어슷썰:CV_ACT>기 해주세요.
+2. <썰어놓은:CV_STATE> <애호박:CV_INGREDIENT>에 <소금:CV_SEASONING>을 골고루 <뿌리:CV_ACT>고, 약 5분 후 애호박에 생긴 물기를 <닦:CV_ACT>아주세요.
+3. <애호박:CV_INGREDIENT>에 <부침가루:CV_SEASONING>를 <묻히:CV_ACT>고 풀어놓은 <달걀물:CV_SEASONING>에 <담갔:CV_ACT>다가 <건져:CV_ACT>주세요.
+4. 다양한 맛과 매력이 있는 <애호박전:CV_INGREDIENT>을 맛있게 즐겨주세요.
+1. <양파:CV_INGREDIENT>는 채를 <썰:CV_ACT>고 <미나리:CV_INGREDIENT>와 <당근:CV_INGREDIENT>은 5cm 길이로 먹기 좋게 <썰:CV_ACT>어주세요. <청홍고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+2. 볼에 양념 재료를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+3. 끓는 물에 <소금:CV_SEASONING>을 <넣:CV_ACT>고 <낙지:CV_INGREDIENT>를 살짝 <데친:CV_ACT> 후 얼음물에 <넣:CV_ACT>어 <식힌:CV_ACT> 후 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+4. 큰 볼에 <손질한:CV_STATE> <야채:CV_INGREDIENT>와 <낙지:CV_INGREDIENT>, <양념장:CV_SEASONING>을 <넣:CV_ACT>어 가볍게 <버무려:CV_ACT>주세요.
+5. 접시에 담은 후 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 맛있게 즐겨주세요.
+2. <홍고추:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>고 <양파:CV_INGREDIENT>는 채를 <썰:CV_ACT>어주세요. <쪽파:CV_INGREDIENT>는 4센치 길이로 <썰:CV_ACT>어주세요.
+3. <꽃게:CV_INGREDIENT>는 조리용 솔로 <비벼:CV_ACT> 깨끗이 <씻:CV_ACT>고 등딱지를 <벗긴:CV_ACT> 후 배 쪽에 붙어 있는 아가미와 눈, 집게의 발 끝부분을 <제거해:CV_ACT>주세요. <꽃게:CV_INGREDIENT>는 먹기 좋게 4등분으로 <잘라:CV_ACT> 손질한 후 <청주:CV_SEASONING>를 <뿌려:CV_ACT> <섞:CV_ACT>고 채반에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>서 <준비해:CV_ACT>주세요.
+4. 볼에 <꽃게:CV_INGREDIENT>와 <양념장:CV_SEASONING>을 <넣:CV_ACT>어 먼저 <버무리:CV_ACT>고 <양파:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>, <쪽파:CV_INGREDIENT>를 <넣:CV_ACT>어 골고루 <섞:CV_ACT>어주세요.
+5. 맛있게 즐겨주세요.
+2. 믹서기에 <검은콩:CV_INGREDIENT>과 <현미:CV_INGREDIENT>를 모두 <넣:CV_ACT>고 곱게 <갈:CV_ACT>아 주세요.
+3. 2의 <갈아놓은:CV_STATE> <검은콩:CV_INGREDIENT>과 <현미:CV_INGREDIENT>, <항암육수:CV_SEASONING>를 냄비에 <붓:CV_ACT>고 <끓여:CV_ACT>줍니다. 
+5. 그릇에 <덜:CV_ACT>어 구수하고 담백한 맛을 즐기세요.
+2. <짠기를 뺀:CV_STATE> <오이지:CV_INGREDIENT>는 찬물에 <헹군:CV_ACT> 후 <건져:CV_ACT> 면포에 <싸서:CV_ACT> 물기를 꼭 <짜:CV_ACT>주세요.
+3. 볼에 양념 재료를 <넣:CV_ACT>고 골고루 <섞:CV_ACT>은 후 <오이지:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>, <쪽파:CV_INGREDIENT>를 <넣:CV_ACT>어 조물조물 <무쳐:CV_ACT>주세요. <통깨:CV_SEASONING>를 <뿌려:CV_ACT> <완성해:CV_ACT>주세요.
+2. <양파:CV_INGREDIENT>는 <채썰:CV_ACT>어주세요.
+3. 볼에 양념재료를 모두 <섞:CV_ACT>어주세요.
+4. <오이:CV_INGREDIENT>와 <양파:CV_INGREDIENT>를 <넣:CV_ACT>어 <버무려:CV_ACT>주세요.
+5. 마지막에 <통깨:CV_SEASONING>와 <참기름:CV_SEASONING>을 <넣:CV_ACT>어 마무리해주세요.
+1. 깨끗이 <씻은:CV_STATE> <당근:CV_INGREDIENT>은 채칼로 채를 <썰:CV_ACT>어주세요. 
+2. 볼에 <당근:CV_INGREDIENT>을 <담:CV_ACT>아 <소금:CV_SEASONING>을 <넣:CV_ACT>고 잘 <섞:CV_ACT>어준 후 <전분가루:CV_SEASONING>를 <넣:CV_ACT>어 골고루 <섞:CV_ACT>어주세요. 
+3. 달군 팬에 <식용유:CV_SEASONING>를 <두르:CV_ACT>고 <당근:CV_INGREDIENT>을 <올려:CV_ACT> 둥글게 모양을 <만들:CV_ACT>어 주세요. 한쪽 면이 잘 익으면 <뒤집:CV_ACT>어 다른 면도 <익혀:CV_ACT> 주세요.
+4. 노릇하게 익은 <당근전:CV_INGREDIENT>을 그릇에 <담:CV_ACT>아 맛있게 즐겨주세요.
+1. <돼지고기:CV_INGREDIENT>를 한 입 크기로 <썰:CV_ACT>고, 밑간 재료에 <버무려:CV_ACT>주세요.
+2. <애호박:CV_INGREDIENT>과 <양파:CV_INGREDIENT>는 한 입 크기로 <썰:CV_ACT>고, <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>는 어슷 <썰:CV_ACT>어주세요.
+4. <손질한:CV_STATE> <애호박:CV_INGREDIENT>과 <양파:CV_INGREDIENT>를 <넣:CV_ACT>고 한소끔 더 <끓여:CV_ACT>주세요.
+5. 마지막에 <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>어주세요. 
+1. <부추:CV_INGREDIENT>는 3cm 길이로 <잘라:CV_ACT>주세요.
+2. <새우:CV_INGREDIENT>는 흐르는 물에 <씻:CV_ACT>고 꼬리를 <제거한:CV_ACT> 뒤 키친타월에 <올려:CV_ACT> 물기를 <제거해:CV_ACT>주세요.
+3. <밀가루:CV_INGREDIENT>, <부침가루:CV_SEASONING>, <찬:CV_STATE><물:CV_SEASONING>, <소금:CV_SEASONING>, <후추:CV_SEASONING>를 <섞:CV_ACT>어서 반죽을 <만들:CV_ACT>어주세요.
+4. 순서 3의 반죽에 <부추:CV_INGREDIENT>를 <넣:CV_ACT>어 골고루 <섞:CV_ACT>어주세요.
+6. 접시에 <담:CV_ACT>아 맛있게 드세요!
+1. 양념재료의 <양파:CV_INGREDIENT>는 <채썰:CV_ACT>고, <청홍고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+나머지 양념재료와 <썰어 둔:CV_STATE> <채소:CV_INGREDIENT>를 <섞:CV_ACT>어주세요.
+(취향에 따라 깻잎의 향을 살리려면 살짝만 <익히:CV_ACT>고 깻잎의 향을 좋아하지 않는다면 조금 더 <익혀:CV_ACT>주세요.)
+4. 어울리는 그릇에 올려 <밥:CV_INGREDIENT> 반찬으로 활용해보세요.
+2. <손질한:CV_STATE> <도라지:CV_INGREDIENT>는 약간의 <물:CV_SEASONING>과 <소금:CV_SEASONING>을 <넣:CV_ACT>고 바락바락 <주무른:CV_ACT> 후 물에 깨끗이 헹궈 쓴맛을 <빼:CV_ACT>주세요.
+4. <도라지:CV_INGREDIENT>가 국물없이 볶아지면 마지막에 <들기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요. (기호에 따라 <참기름:CV_SEASONING>을 사용하셔도 되구요. 부족한 간은 <소금:CV_SEASONING>을 <가감해:CV_ACT>서 조절해주세요.)
+1. <봄동:CV_INGREDIENT>의 밑동을 <자른:CV_ACT> 후 흐르는 물에 <담가:CV_ACT> 여러 번 <흔들:CV_ACT>어 <씻:CV_ACT>고, <홍고추:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요.
+3. 물기를 적당히 <짠:CV_ACT> 후 먹기 좋은 길이로 <잘라:CV_ACT>주세요.
+4. 볼에 <데친:CV_STATE> <봄동:CV_INGREDIENT>과 <홍고추:CV_INGREDIENT>, 양념을 <넣:CV_ACT>고 조물조물 <무쳐:CV_ACT>주세요.
+5. 접시에 <봄동된장무침:CV_INGREDIENT>을 <담:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 마무리해주세요.
+2. <당근:CV_INGREDIENT>, <표고:CV_INGREDIENT>, <양파:CV_INGREDIENT>는 채를 <썰:CV_ACT>고, <느타리:CV_INGREDIENT>는 결대로 <찢:CV_ACT>어 주세요. <부추:CV_INGREDIENT>는 5cm 길이로 <썰:CV_ACT>어 주세요.
+3. 볼에 양념 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요. 달군 팬에 <기름:CV_SEASONING>을 <두르:CV_ACT>고 <양파:CV_INGREDIENT>, <당근:CV_INGREDIENT>, <버섯:CV_INGREDIENT>, <소금:CV_SEASONING> 약간을 <넣:CV_ACT>고 <볶:CV_ACT>아주세요. 
+4. <불린:CV_STATE> <당면:CV_ACT>과 <물:CV_SEASONING>을 <넣:CV_ACT>고 <볶:CV_ACT>다가 <양념:CV_SEASONING>을 <넣:CV_ACT>어 당면에 양념이 잘 배도록 <볶:CV_ACT>아주세요.
+5. 불을 <끄:CV_ACT>고 <부추:CV_INGREDIENT>를 <넣:CV_ACT>어 잘 <섞:CV_ACT>어 주세요. <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 맛있게 즐겨주세요.
+2. <대파:CV_INGREDIENT>는 잘게 <썰:CV_ACT>고 <양파:CV_INGREDIENT>는 채를 <썰:CV_ACT>어주세요. <쪽파:CV_INGREDIENT>는 4cm 길이로 <썰:CV_ACT>고 <청양고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요. 볼에 양념장 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어 양념장을 <만들:CV_ACT>고, 전분물 재료를 <섞:CV_ACT>어 전분물을 <만들:CV_ACT>어주세요.
+4. 양파가 반쯤 익으면 <다시마 멸치 육수:CV_SEASONING>와 <양념장:CV_SEASONING>을 <넣:CV_ACT>고 바글바글 끓으면 <콩나물:CV_INGREDIENT>을 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+5. <전분물:CV_SEASONING>을 <넣:CV_ACT>고 농도를 <맞춘:CV_ACT> 후 마지막에 <쪽파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>를 <넣:CV_ACT>고 <섞:CV_ACT>고  <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 맛있게 즐겨주세요.
+1. <오징어채:CV_INGREDIENT>는 찬물에 살짝 <담갔:CV_ACT>다가 체에 <받쳐:CV_ACT> 물기를 <빼:CV_ACT>고 먹기 좋게 <잘라:CV_ACT>주세요.
+2. 볼에 양념재료를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요. 
+5. 완성된 <오징어채볶음:CV_INGREDIENT>을 그릇에 <담:CV_ACT>아 내어주세요.
+*참고 : 오징어채를 물에 담그지 않고 바로 조리 하실 때는 <양념:CV_SEASONING>을 <끓인:CV_ACT> 후 불을 <끄:CV_ACT>고 <오징어채:CV_INGREDIENT>를 <넣:CV_ACT>어 남은 잔열로 <버무려:CV_ACT>주세요.
+1. <오징어:CV_INGREDIENT>는 껍질과 내장을 <제거하:CV_ACT>고, 다리와 함께 먹기 좋은 크기로 <잘라:CV_ACT>주세요.
+2. <무:CV_INGREDIENT>는 사방 3센치로 <나박썰기하:CV_ACT>고, <대파:CV_INGREDIENT>는 반으로 <잘라:CV_ACT> 4센치 길이로 <썰:CV_ACT>어주세요. <청고추:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+4. 적당한 그릇에 <담:CV_ACT>아 <밥:CV_INGREDIENT>과 함께 즐겨주세요.
+1. <꽈리고추:CV_INGREDIENT>는 꼭지를 <떼:CV_ACT>고 <씻:CV_ACT>은 후 이등분해주세요. <마늘:CV_INGREDIENT>은 편으로 <썰:CV_ACT>고 <홍고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+2. 달군 팬에 <멸치:CV_INGREDIENT>를 바삭하게 <볶:CV_ACT>은 후 체에 <넣:CV_ACT>고 <흔들:CV_ACT>어 부스러기를 <털:CV_ACT>어주세요.
+3. 달군 팬에 <식용유:CV_SEASONING>를 <두르:CV_ACT>고 <마늘:CV_INGREDIENT>을 <볶:CV_ACT>아주세요.
+5. 완성된 요리를 그릇에 <담:CV_ACT>아 마무리해주세요.
+1. <양파:CV_INGREDIENT>와 <당근:CV_INGREDIENT>, <표고버섯:CV_INGREDIENT>, <애호박:CV_INGREDIENT>은 잘게 <다지:CV_ACT>고, <두부:CV_INGREDIENT>는 칼등으로 <으깬:CV_ACT> 후 면포에 <감싸:CV_ACT> 물기를 <짜:CV_ACT>주세요. 
+2. 볼에 <다진:CV_STATE> <야채:CV_INGREDIENT>와 <두부:CV_INGREDIENT>, 양념 재료를 <넣:CV_ACT>고 고루 <섞:CV_ACT>어주세요. 
+3. 볼에 부침 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어 <강황물:CV_SEASONING>을 <만들:CV_ACT>어주세요.
+4. 적당한 크기로 반죽을 <떼:CV_ACT>어 동그랗게 <빚:CV_ACT>은 후 1cm두께로 납작하게 <만들:CV_ACT>어 <부침가루:CV_SEASONING>를 <묻히:CV_ACT>고 <강황물:CV_SEASONING>을 고루 <입혀:CV_ACT>주세요.
+6. 맛있게 즐겨주세요.
+1. <멍게:CV_INGREDIENT>는 가위로 껍질을 반으로 <자르:CV_ACT>고, <살:CV_INGREDIENT>을 꺼내어 내장을 <제거해:CV_ACT>주세요. 
+2. 깨끗이 <씻은:CV_STATE> <멍게살:CV_INGREDIENT>은 먹기 좋은 크기로 <썰:CV_ACT>어주세요.
+3. <영양부추:CV_INGREDIENT>는 2cm길이로 <썰:CV_ACT>고, <상추:CV_INGREDIENT>는 <채썰:CV_ACT>어주세요.
+4. 분량의 소스 재료를 볼에 <넣:CV_ACT>어 모두 <섞:CV_ACT>은 후, <멍게살:CV_INGREDIENT>도 함께 <섞:CV_ACT>어주세요.
+5. 그릇에 <밥:CV_INGREDIENT>을 <담:CV_ACT>고, <썰어 둔:CV_STATE> <야채:CV_INGREDIENT>을 <올린:CV_ACT> 후 <양념:CV_SEASONING>과 섞은 <멍게:CV_INGREDIENT>를 <얹:CV_ACT>고, <김가루:CV_SEASONING>와 <참기름:CV_SEASONING>을 <뿌려:CV_ACT> <비벼:CV_ACT>드세요.
+1. <두릅:CV_INGREDIENT> 밑동의 겉껍질을 <떼어내:CV_ACT>어 <두릅:CV_INGREDIENT>을 <손질해:CV_ACT> 주세요.
+3. <대파:CV_INGREDIENT>와 <청홍고추:CV_INGREDIENT>는 얇게 송송 <썰:CV_ACT>어주세요. <두꺼운:CV_STATE> <두릅:CV_INGREDIENT>은 반으로 <가르:CV_ACT>고 6cm 길이로 <잘라:CV_ACT>주세요.
+4. 볼에 양념 재료를 <섞:CV_ACT>어주세요.
+5. <데친:CV_STATE> <두릅:CV_INGREDIENT>과 <대파:CV_INGREDIENT>, <청홍고추:CV_INGREDIENT>를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요. 마지막에 <참기름:CV_SEASONING>을 <넣:CV_ACT>어 가볍게 <섞:CV_ACT>어주세요.
+6. 접시에 <담:CV_ACT>은 후 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 완성해 주세요.
+2. 그릇에 <달걀:CV_INGREDIENT>을 잘 <풀:CV_ACT>어주세요.
+3. <두부:CV_INGREDIENT>를 면포에 <담:CV_ACT>고 양손으로 꽉 <짜:CV_ACT>서 물기를 <제거한:CV_ACT> 뒤 <으깨:CV_ACT>주세요.
+4. <당근:CV_INGREDIENT>, <양파:CV_INGREDIENT>, <파:CV_INGREDIENT>, <두부:CV_INGREDIENT>와 <오징어:CV_INGREDIENT>를 볼에 <담:CV_ACT>고 <소금:CV_SEASONING>과 <후추:CV_SEASONING>로 <간한:CV_ACT> 뒤 골고루 <섞:CV_ACT>어주세요.
+5. 순서 4의 동그랑땡 반죽을 지름 4cm 크기로 동그랗게 <빚:CV_ACT>고 앞뒤로 <밀가루:CV_INGREDIENT>를 <묻힌:CV_ACT> 뒤 <달걀물:CV_SEASONING>을 <입혀:CV_ACT>주세요.
+7. 노릇노릇 맛있게 부쳐진 <오징어동그랑땡:CV_INGREDIENT>을 접시에 <담:CV_ACT>아 맛있게 드세요.
+1. <마늘종:CV_INGREDIENT>은 4cm길이로 먹기 좋게 <잘라:CV_ACT>주세요. 양념재료는 모두 <섞:CV_ACT>어주세요.
+5. <볶아둔:CV_STATE> <건새우:CV_INGREDIENT>를 <넣:CV_ACT>은 후 조금 더 <볶:CV_ACT>다가 불을 <끄:CV_ACT>고, <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 마무리해주세요.
+6. 알맞은 그릇에 <담:CV_ACT>아 맛있게 즐겨주세요.
+1. <대파:CV_INGREDIENT>는 1cm 크기로 송송 <썰:CV_ACT>고 <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+2. <양파:CV_INGREDIENT>는 <채 썰:CV_ACT>고 <감자:CV_INGREDIENT>는 껍질을 <벗기:CV_ACT>고 2cm 두께로 <슬라이스한:CV_ACT> 뒤 2등분 해주세요.
+3. <느타리버섯:CV_INGREDIENT>은 흐르는 물에 잘 <씻:CV_ACT>고 밑동을 <잘라:CV_ACT>주세요.
+2. <밤:CV_INGREDIENT>은 속껍질까지 <벗겨:CV_ACT> 4등분으로 <잘라:CV_ACT>주세요.
+6. <오곡밥:CV_INGREDIENT>은 주걱으로 위 아래 잘 <섞:CV_ACT>어 그릇에 <담:CV_ACT>아주세요.
+1. <두릅:CV_INGREDIENT>의 밑동의 겉껍질을 <떼어내:CV_ACT>어 <두릅:CV_INGREDIENT>을 <손질해:CV_ACT>주세요.
+3. <손질한:CV_STATE> <두릅:CV_INGREDIENT>을 소독한 용기에 <담:CV_ACT>아주세요.
+4. 장아찌 양념 재료와 <베트남 고추:CV_INGREDIENT>를 냄비에 팔팔 <끓인:CV_ACT> 후, 뜨거울 때 용기에 <붓:CV_ACT>고 한 김 <식혀:CV_ACT> 냉장고에 <넣:CV_ACT>어주세요.
+1. <제주 생고사리:CV_INGREDIENT>는 4~6cm 길이로 <잘라:CV_ACT>주세요.
+2. <감자:CV_INGREDIENT>는 1cm 두께로 <썰:CV_ACT>고 <새송이버섯:CV_INGREDIENT>은 편으로 얇게 <썰:CV_ACT>어주세요. <마늘:CV_INGREDIENT>은 편으로 <썰:CV_ACT>고 <양파:CV_INGREDIENT>는 굵게 <다져:CV_ACT>주세요. <청양고추:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요.
+3. 직화가 가능한 스텐 그릇에 멜젓 소스 재료를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+4. 달군 팬에 <삼겹살:CV_INGREDIENT>과 <생고사리:CV_INGREDIENT>, <새송이버섯:CV_INGREDIENT>, <감자:CV_INGREDIENT>, <마늘:CV_INGREDIENT>을 노릇하게 <구워:CV_ACT>주세요. 팬에 <멜젓 소스:CV_SEASONING>를 <끓여:CV_ACT>가며  맛있게 즐겨주세요.
+1. <다진:CV_STATE> <돼지고기:CV_INGREDIENT>는 종이타월에 <감싸:CV_ACT> 핏물을 <제거:CV_ACT>하세요.
+2. <양배추 잎:CV_INGREDIENT>은 잘게 <다져:CV_ACT>주세요.
+3. <오징어:CV_INGREDIENT>는 끓는 물에 살짝 <데친:CV_ACT> 후 잘게 <다져:CV_ACT>주세요.
+4. 양념 재료를 볼에 모두 <넣:CV_ACT>어 고루 <섞:CV_ACT>어주세요.
+6. 팬에 <포도씨유:CV_SEASONING> 또는 <물:CV_SEASONING>을 살짝 <두르:CV_ACT>고 STEP5를 넣어 <볶:CV_ACT>아주세요.
+7. 돼지고기오징어 볶음에 <율무밥:CV_INGREDIENT>을 <넣:CV_ACT>어 고루 <섞:CV_ACT>어주세요.
+8. 랩 위에 <깻잎:CV_INGREDIENT>을 <올리:CV_ACT>고 <볶음밥:CV_INGREDIENT>을 <올린:CV_ACT> 후 동그랗게 <뭉쳐:CV_ACT>주세요.
+(흩어지기 쉬운 재료이므로 랩을 이용해 모양을 잡고, 그대로 도시락에 싸 먹기 직전에 풀러 한입에 드세요.)
+3. 팬에 <고추기름:CV_SEASONING> <2큰술:QT_VOLUME>을 <넣:CV_ACT>고 <양파:CV_INGREDIENT>와 <청피망:CV_INGREDIENT>을 <넣:CV_ACT>어 <볶:CV_ACT>아주세요.
+<우린:CV_STATE> <물:CV_SEASONING> <2컵:QT_VOLUME>에 <참기름을 뺀:CV_STATE> 밥물 재료를 <넣:CV_ACT>고 <저어:CV_ACT> <흑설탕:CV_SEASONING>을 <녹인:CV_ACT> 후 <참기름:CV_SEASONING>을 <섞:CV_ACT>어주세요.
+3. <대추 과육:CV_INGREDIENT> <일부:QT_VOLUME>는 반으로 <자르:CV_ACT>고 <일부:QT_VOLUME>는 돌돌 <말:CV_ACT>아 얇게 <잘라:CV_ACT> <고명:CV_SEASONING>을 <만들:CV_ACT>어주세요. <밤:CV_INGREDIENT>은 껍질을 <까:CV_ACT>고 모서리 부분을 돌려 <깎:CV_ACT>아 주세요.
+1. <해감한:CV_STATE> <바지락:CV_INGREDIENT>은 바락바락 <비벼:CV_ACT> <씻:CV_ACT>어주세요. 물이 끓어오르면 <청주:CV_SEASONING> <2큰술:QT_VOLUME>을 <넣:CV_ACT>어 <데친:CV_ACT> 후 <바지락살:CV_INGREDIENT>과 껍질을 <분리해:CV_ACT>주세요. 
+4. <깻잎:CV_INGREDIENT>은 <두 장:QT_VOLUME>씩 <깔:CV_ACT>고 그 위에 <야채 양념장:CV_SEASONING>을 적당량씩 <올린:CV_ACT> 후, <깻잎:CV_INGREDIENT>을 <깔:CV_ACT>고 같은 과정을 반복해주세요.
+(남은 <고기소:CV_INGREDIENT>는 <전분가루:CV_SEASONING> <1작은술:QT_VOLUME>을 <넣:CV_ACT>고 <섞:CV_ACT>어 <고기완자:CV_INGREDIENT>를 <빚:CV_ACT>어주세요.)
+6. .만두피 반죽을 길게 <밀어준:CV_ACT> 후, 적당한 크기(<12g:QT_VOLUME> 정도)로 잘라 밀대로 동그랗게 밀어주세요.
+3. 끓는 물에 <중면:CV_INGREDIENT>을 <펼쳐:CV_ACT> <넣:CV_ACT>고, 면끼리 달라붙지 않도록 젓가락으로 <저어:CV_ACT>주세요. 물이 끓어오르면 <찬:CV_STATE><물:CV_SEASONING> <반 컵:QT_VOLUME>을 3~4회 반복해서 <부어:CV_ACT> <국수:CV_INGREDIENT>를 <삶:CV_ACT>아주세요.
+4. 끓는 물에 <중면:CV_INGREDIENT>을 <펼쳐:CV_ACT> <넣:CV_ACT>고 젓가락으로 <저어:CV_ACT> 면끼리 달라붙지 않도록 <저어주:CV_ACT>고 물이 끓어오르면 <찬:CV_STATE><물:CV_SEASONING> <반 컵:QT_VOLUME>을 3~4회 반복해서 <부어:CV_ACT> <국수:CV_INGREDIENT>를 <삶:CV_ACT>아주세요. 흐르는 찬물에 <중면:CV_INGREDIENT>을 여러 번 <씻:CV_ACT>어 전분기를 <없애:CV_ACT>주세요.
+(<초간장 재료:CV_SEASONING>- <간장:CV_SEASONING> <1큰술:QT_VOLUME>, <식초:CV_SEASONING><1/2큰술:QT_VOLUME>, <물:CV_SEASONING> <2큰술:QT_VOLUME>, <청양고추:CV_INGREDIENT> <1개:QT_VOLUME>)
+2.  <깻잎:CV_INGREDIENT> <2장:QT_VOLUME>마다 <양념:CV_SEASONING>을 켜켜이 <발라:CV_ACT>주세요.
+2. 볼에 양념장 재료를 넣어 섞어주세요.
+3. <무:CV_INGREDIENT>는 한입 크기로 자른 후 모서리를 둥글게 다듬어 주세요.
+4. <양파:CV_INGREDIENT>와 <대파:CV_INGREDIENT>는 먹기 좋은 크기로 잘라주세요. <홍고추:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>는 꼭지를 뗀 후 길게 썰고 <새송이버섯:CV_INGREDIENT>은 밑동을 자른 후 모양을 살려 슬라이스해주세요.
+2. <물기를 제거한:CV_STATE> <깻잎:CV_INGREDIENT>은 꼭지 부분을 가위로 정리해 주세요. 
+4. <고추:CV_INGREDIENT>는 꼭지를 떼고 길게 반으로 갈라 씨를 제거하고 어슷하게 썰어주세요. 
+5. 냄비에 간장 물 재료를 넣고 끓여주세요. <간장물:CV_SEASONING>이 끓어오르기 시작하면 바로 불을 끄고 <다시마:CV_INGREDIENT>는 건져내고 <식초:CV_SEASONING>를 넣고 잘 저어주세요. 
+7. 완성된 깻잎 장아찌를 밥과 함께 맛있게 즐겨주세요. 
+1. <쇠고기:CV_INGREDIENT>는 키친타월에 올려 핏물을 제거하고 <맛술:CV_SEASONING>과 <후춧가루:CV_SEASONING> 뿌려 준비해주세요.
+2. <배추김치:CV_INGREDIENT>는 <양념:CV_SEASONING>을 물에 씻고 물기를 제거한 후 잘게 자르고, <애호박:CV_INGREDIENT>과 <당근:CV_INGREDIENT>도 잘게 잘라주세요.
+3. 달군 팬에 <식용유:CV_SEASONING>를 두르고 <다진:CV_STATE> <당근:CV_INGREDIENT>, <애호박:CV_INGREDIENT>, <김치:CV_INGREDIENT>를 넣어 볶다가 약간의 <소금:CV_SEASONING>과 <후춧가루:CV_SEASONING>로 밑간해서 볶아주세요.
+4. <따뜻한:CV_STATE> <밥:CV_INGREDIENT>에 <볶은:CV_STATE> <야채:CV_INGREDIENT>와 <참기름:CV_SEASONING>, <통깨:CV_SEASONING>를 넣고 골고루 섞은 후 한 입 크기로 동그랗게 모양을 잡아 <주먹밥:CV_INGREDIENT>을 만들어주세요.
+5. <쇠고기:CV_INGREDIENT>에 <주먹밥:CV_INGREDIENT>을 올려 감싼 후 법랑 접시 위에 가지런히 올려주세요.
+7. 접시에 <주먹밥:CV_INGREDIENT>을 담고 먹기 직전에 <소스:CV_SEASONING>를 한 번 더 바른 후 <통깨:CV_SEASONING>를 뿌려주세요.
+1. <시판 냉면 육수:CV_SEASONING>는 미리 냉장고에 넣어 차갑게 준비하고 <미역 국수:CV_INGREDIENT>는 찬물에 가볍게 헹군 후 체에 밭쳐 물기를 빼주세요.
+5. 그릇에 <미역 국수:CV_INGREDIENT>를 담고 <닭살:CV_INGREDIENT>과 <새우:CV_INGREDIENT>, <오이:CV_INGREDIENT>, <파프리카:CV_INGREDIENT>, <토마토:CV_INGREDIENT>, <무순:CV_INGREDIENT>을 먹기 좋게 돌려 담고 차갑게 준비한 <육수:CV_SEASONING>를 부어 맛있게 즐겨주세요.
+4. <단호박:CV_INGREDIENT>은 반으로 잘라 속을 파내고 웨지 모양으로 썰어 껍질을 벗겨 깍뚝 썰어주세요.
+8. 내열 용기에 <밥:CV_INGREDIENT>을 넣고 <앙금을 가라앉힌 맑은:CV_STATE> <윗물:CV_SEASONING>을 부은 후 포일로 덮어주세요.
+9. 광파오븐 자동 요리 발효에서 식혜를 선택한 후 발효시켜주세요.
+1. <오이:CV_INGREDIENT>는 <굵은:CV_STATE> <소금:CV_SEASONING>으로  문질러 씻어 4토막으로 자른 후, 다시 6등분해서 썰어주세요. <쪽파:CV_INGREDIENT>는 4센치 길이로 썰고, <홍고추:CV_INGREDIENT>는 3센치 길이로 채를 썰어주세요
+4. 냄비에 찹쌀가루풀 재료를 넣고 바닥에 눌러 붙거나 멍울지지 않게 주걱으로 저으며 걸쭉해질때까지 끓여서 풀을 만들어주세요. 완성된 풀은 체에 걸러 STEP3과 섞어주세요.
+5. 양념재료를 믹서에 간 후 면포에 싸서 국물을 걸러주세요. 걸러낸 국물은 STEP4와 섞어주세요.
+6. 김치통에 <오이:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>, <쪽파:CV_INGREDIENT>를 담고 STEP5의 국물을 부어주세요.
+2. 달걀말이 재료를 모두 섞어 달군 팬에 <기름:CV_SEASONING>을 살짝 두른 후 두툼하게 부쳐내고 1cm두께로 썰어주세요. <크래미:CV_INGREDIENT>는 반으로  잘라주세요.
+5. 먹기 좋은 크기로 잘라 <와사비:CV_SEASONING>와 <쯔유:CV_SEASONING>를 곁들여 즐겨주세요.
+2. <양파:CV_INGREDIENT>는 굵게 채썰고, <홍고추:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>는 송송 썰어주세요. <레몬:CV_INGREDIENT>은 반달링으로 썰어주세요.
+4. 밀폐용기에 <연어:CV_INGREDIENT>를 담은 후 <손질한:CV_STATE> <야채:CV_INGREDIENT>를 올리고, 식혀 놓은 <간장물:CV_SEASONING>을 부어주세요.
+7. 그릇에 <밥:CV_INGREDIENT>을 봉긋하게 담고 <연어장:CV_INGREDIENT>을 돌려 담은 후 <무순:CV_INGREDIENT>과 <양파채:CV_INGREDIENT>, <와사비:CV_SEASONING>를 올려주세요.
+<흰자:CV_INGREDIENT>도 젓가락으로 잘 푼 후, 체에 내려 알끈을 제거해주세요.
+2. <명란알:CV_INGREDIENT>은 껍질을 벗겨 약간의 <참기름:CV_SEASONING>과 <후추:CV_SEASONING>를 뿌려주세요.
+4. <말아진:CV_STATE> <달걀:CV_INGREDIENT>을 팬 위쪽으로 밀어 놓고, <노른자:CV_INGREDIENT>를 다시 부어 2회 정도 같은 방법을 반복해서 말아주세요. 마지막에는 <흰자:CV_INGREDIENT>를 붓고 같은 방법으로 말아주세요
+5. <달걀말이:CV_INGREDIENT>를 따뜻할 때 김발에 싸서 모양을 잡아주세요.
+6. <달걀말이:CV_INGREDIENT>를 먹기 좋은 두께로 썬 후, 대각선으로 잘라 한쪽을 뒤집어 하트모양을 만들어 다양한 곳에 활용해주세요.
+1. <쇠고기:CV_INGREDIENT>에 <맛술:CV_SEASONING>과 <후춧가루:CV_SEASONING>를 뿌려 버무려주세요.
+3. 볼에 양념 재료를 넣고 섞어주세요.
+4. 깨끗이 <씻은:CV_STATE> <꽈리고추:CV_INGREDIENT>는 꼭지를 떼어내고 이쑤시개로 듬성듬성 구멍을 내고 밀가루 옷을 얇게 입혀주세요. 너무 긴 것은 어슷하게 반으로 잘라주세요.
+비닐봉지에 <꽈리고추:CV_INGREDIENT>와 <밀가루:CV_SEASONING>를 넣고 흔들어주면 간편하게 <밀가루:CV_SEASONING>를 묻힐 수 있어요")
+6. 넓은 볼에 <쇠고기:CV_INGREDIENT>를 넣고 손으로 잘게 부수고 <꽈리고추:CV_INGREDIENT>와 <양념:CV_SEASONING>을 넣어 가볍게 버무려주세요.
+7. 완성된 <쇠고기 꽈리고추찜찜:CV_INGREDIENT>을 접시에 담아 <밥:CV_INGREDIENT>과 함께 맛있게 즐겨주세요.
+1. <연근:CV_INGREDIENT>은 강판에 곱게 갈아 놓고, <두부:CV_INGREDIENT>는 면보에 감싸 손으로 물기를 최대한 짜주세요.
+2. <부추:CV_INGREDIENT>는 0.5cm 길이로 송송 썰고, <깨:CV_SEASONING>는 갈아주세요.
+STEP1의 속재료를 넣고 <소금:CV_SEASONING> 약간과 함께 고루 섞어 주세요.
+3. <만두피:CV_INGREDIENT>를 얇게 밀어주세요. 
+(너무 얇게 밀면 만두 속이 터지므로 적당한 두께로 밀어 주세요.)
+<얇게 민:CV_STATE> <만두피:CV_INGREDIENT> 위에 컵이나 밥공기 같은 단단한 원 모양 그릇을 이용해 꾹 눌러주어 만두피 모양을 만들어 주세요.
+5. 팔팔 끓는 물에 <만두:CV_INGREDIENT>를 넣고 <만두:CV_INGREDIENT>가 다 익어 떠오를 때까지 익혀 주세요.
+6. 촉촉하게 <익은:CV_STATE> <물만두:CV_INGREDIENT>를 그릇에 담아 완성해주세요.
+1. <전복:CV_INGREDIENT>은 깨끗이 손질하고 껍질에서 분리한 다음 쓸개 부분을 제거하고 내장과 살을 분리해 주세요. <손질된:CV_STATE> <전복:CV_INGREDIENT>에 시소를 붙이고 박력분을 바르고 말아 이쑤시개로 꽂아 줍니다. 내장은 그대로 박력분만 묻혀주세요.
+2. <달걀물:CV_SEASONING>에 <박력분:CV_INGREDIENT>을 넣어 <튀김 반죽:CV_INGREDIENT>을 만들고 순서 1에 묻혀주세요.
+4. 분량의 재료를 섞어 만든 <튀김:CV_SEASONING> <소스:CV_SEASONING>를 곁들여 맛있게 드세요.
+3. <다시마:CV_INGREDIENT>를 건지고 <가쓰오부시:CV_SEASONING>를 넣어주세요.
+1. 1. <미나리:CV_INGREDIENT>와 <실파:CV_INGREDIENT>는 4cm로 썰고 <잣:CV_INGREDIENT>과 <깻가루:CV_SEASONING>, <다진:CV_STATE><마늘:CV_INGREDIENT>, <석이버섯:CV_INGREDIENT>은 손질하여 준비하고 <청·홍고추:CV_INGREDIENT>는 편으로 썰고 <대추:CV_INGREDIENT>와 <밤:CV_INGREDIENT>은 채 썰어주세요. <무:CV_INGREDIENT>는 깨끗이 씻어 4cm 길이로 토막 내어 밑 부분을 1cm 정도 남기고 가로, 세로 1cm 간격으로 칼집을 넣어주세요.
+3. 3. <실고추:CV_INGREDIENT>는 3㎝ 길이로 잘라놓고, 그릇에 채썰어놓은 <무:CV_INGREDIENT>와 준비한 재료를 함께 넣어 버무린 뒤, <고운:CV_STATE> <소금:CV_SEASONING>과 <설탕:CV_SEASONING>으로 간을 맞추어 <소:CV_INGREDIENT>를 만들어주세요.
+4. 4. <배춧잎:CV_INGREDIENT>과 <무:CV_INGREDIENT>는 물기를 뺀 후, 만들어 놓은 <소:CV_INGREDIENT>를 <무:CV_INGREDIENT>의 칼집 사이 사이에 채워 넣고, <배춧잎:CV_INGREDIENT>으로 싸서 항아리에 차곡차곡 담아주세요.
+5. 5. 김치국물을 만들어서 항아리에 붓고 숙성시켜주세요.
+1. <우엉:CV_INGREDIENT>은 길게 어슷 썰어 일렬로 정리한 뒤 얇게 채 썰어주세요. <불린:CV_STATE> <목이버섯:CV_INGREDIENT>은 1cm 두께로 굵게 채 썰어주세요. 
+<통마늘:CV_INGREDIENT>은 편으로 썰고, <홍고추:CV_INGREDIENT>는 반으로 가른 뒤 씨를 제거하고 5cm 길이로 채 썰어주세요.
+(<데친:CV_STATE> <쑥갓:CV_INGREDIENT>은 <간장:CV_SEASONING> 적량을 넣고 버무려 놓으세요.)
+3. 달군 팬에 <식용유:CV_SEASONING>를 두르고 <마늘:CV_INGREDIENT>-<우엉:CV_INGREDIENT>-<목이:CV_INGREDIENT>-<홍고추:CV_INGREDIENT> 순으로 넣어 볶다가 <간장:CV_SEASONING> 적량을 넣어주세요.
+5. <채소:CV_INGREDIENT>를 볶았던 팬에 <당면:CV_INGREDIENT>을 올리고 수분기를 날려 주며 달달 볶으면서 <간장:CV_SEASONING>과 <조청:CV_SEASONING>으로 간을 해주세요.
+6. <잡채:CV_INGREDIENT> 위에 STEP3의 <볶은:CV_STATE> <채소:CV_INGREDIENT>들을 올려 골고루 섞어주세요.
+7. <잡채:CV_INGREDIENT> 위에 <통깨:CV_SEASONING>를 뿌리고 그릇에 담아 마무리하세요.
+1. <연근:CV_INGREDIENT>과 <단호박:CV_INGREDIENT>은 적당한 두께로 슬라이스, <감자:CV_INGREDIENT>와 <당근:CV_INGREDIENT>, <고구마:CV_INGREDIENT>는 껍질째 웨지 모양으로 썰고, <가지:CV_INGREDIENT>는 반으로 썰어 3~4등분 해주세요. 
+4. <양파:CV_INGREDIENT>는 채를 썰고 <토마토:CV_INGREDIENT>는 6등분으로 잘라주세요. <마늘:CV_INGREDIENT>은 편으로 썰어주세요. 
+5. 달군 냄비에 <기름:CV_SEASONING>을 두르고 <채를 썬:CV_STATE> <양파:CV_INGREDIENT>와 <마늘:CV_INGREDIENT>를 넣어 볶다가 <양파:CV_INGREDIENT>가 노릇해지면 <토마토:CV_INGREDIENT>를 넣고 볶아주세요.
+7. <카레:CV_INGREDIENT>에 <불린:CV_STATE> <캐슈너트:CV_INGREDIENT>과 <통깨:CV_SEASONING>, <참기름:CV_SEASONING>, <파프리카 가루:CV_SEASONING>를 넣어 핸드믹서로 곱게 갈아주세요. 
+8. 그릇에 <밥:CV_INGREDIENT>과 <카레:CV_INGREDIENT>를 담고 <구운:CV_STATE> <채소:CV_INGREDIENT>를 올려 맛있게 즐겨주세요. 
+1. <두부:CV_INGREDIENT>는 1cm 두께로 썰어 키친타월에 올려 물기를 뺀 후 <소금:CV_SEASONING>, <후추:CV_SEASONING>를 뿌려 간을 해주세요. <버섯:CV_INGREDIENT>은 적당한 두께로 썰어주세요.
+2. <세척한:CV_STATE> <파프리카:CV_INGREDIENT>는 적당한 두께로 채를 썰어 주세요. 볼에 양념장 재료를 넣고 섞어주세요.
+4. <두부:CV_INGREDIENT>의 겉면에 <전분:CV_SEASONING>을 입혀주세요. 달군 팬에 <기름:CV_SEASONING>을 약간 두른 후 <두부:CV_INGREDIENT>와 <버섯:CV_INGREDIENT>을 넣고 노릇하게 구워주세요. <구운:CV_STATE> <두부:CV_INGREDIENT>와 <버섯:CV_INGREDIENT>에 만들어둔 <양념장:CV_SEASONING>을 넣어 졸여주세요.
+5. <현미밥:CV_INGREDIENT>에 <소금:CV_SEASONING> ½작은술, 식초½ <큰술:CV_SEASONING>을 넣어 골고루 섞어주세요.
+6. 가위로 <김:CV_INGREDIENT> 중앙까지 잘라 주세요. 4면에 <상추:CV_INGREDIENT>와 <두부:CV_INGREDIENT>, <상추:CV_INGREDIENT>와 <당근:CV_INGREDIENT>, <밥:CV_INGREDIENT>을 얇게 펼쳐 넣고 <버섯:CV_INGREDIENT>을 올린 후 시계방향으로 접어주세요.
+7. 김에 <상추:CV_INGREDIENT>와 <적양배추:CV_INGREDIENT> <피클:CV_INGREDIENT>, <상추:CV_INGREDIENT>와 <파프리카:CV_INGREDIENT>, <현미밥:CV_INGREDIENT>을 얇게 펼쳐 넣고 <묵은지 마요:CV_SEASONING>를 올린 후 시계방향으로 접어주세요.
+8. 랩으로 감싸 반으로 자른 후 맛있게 즐겨주세요.
+4. 팬에 <양파:CV_INGREDIENT>, <당근:CV_INGREDIENT>, <목이버섯:CV_INGREDIENT>의 순으로 <소금:CV_SEASONING>을 약간 넣고 볶은 후 마지막에 <쇠고기:CV_INGREDIENT>와 <표고:CV_INGREDIENT>를 함께 볶아주세요.
+6. 볼에 한 김 <식힌:CV_STATE> <당면:CV_INGREDIENT>과 <볶은:CV_STATE> <야채:CV_INGREDIENT>, <참기름:CV_SEASONING>을 넣어 섞고, 마지막에 <지단:CV_INGREDIENT>을 넣어 살짝 버무려주세요. (기호에 따라 <간장:CV_SEASONING>을 가감해서 간을 조절해주세요.)
+7. 접시에 <잡채:CV_INGREDIENT>를 담고 <통깨:CV_SEASONING>를 뿌려주세요.
+1. 5cm 두께의 <삼겹살:CV_INGREDIENT> 덩어리를 약 10cm 길이로 등분해 주세요.
+2. "법랑 접시에 석쇠를 놓고 <삼겹살:CV_INGREDIENT>을 올린 후 1단에 넣어주세요. 광파오븐 자동 요리 스팀에서 전통 수육 1.0kg을 선택한 후 가열해 주세요. 
+3. <오이:CV_INGREDIENT>는 4센치 길이로 잘라 돌려 깎은 후 채 썰고, <파프리카:CV_INGREDIENT>는 4센치 길이로 채 썰어주세요. <홍고추:CV_INGREDIENT>와 <양파:CV_INGREDIENT>는 얇게 채 썰고 찬물에 담갔다가 매운맛을 빼고 물기를 제거해 주세요.
+4. 볼에 간장소스, 겨자소스 재료를 각각 섞어 준비해 주세요.
+5. 완성된 <수육:CV_INGREDIENT>을 구이 전용 팬에 올린 후 <간장소스:CV_SEASONING>를 발라주세요.
+7. <구워낸:CV_STATE> <삼겹살:CV_INGREDIENT>을 0.5센치 두께로 가운데 칼집을 넣은 모양으로 잘라주세요.
+8. <채 썰어둔:CV_STATE> <채소:CV_INGREDIENT>는 <겨자소스:CV_SEASONING>에 가볍게 버무려 <돼지고기:CV_INGREDIENT>의 칼집을 넣은 사이에 먹기 좋게 채워주세요.
+9. 접시에 <겨자채:CV_INGREDIENT> <보쌈:CV_INGREDIENT>을 담고, <통깨:CV_SEASONING>를 뿌리고 <겨자소스:CV_SEASONING>를 곁들여주세요.
+3. 볼에 <달걀:CV_INGREDIENT>을 풀어 곱게 체에 내린 후 <소금:CV_SEASONING>으로 간을 맞추고, <가쓰오부시:CV_SEASONING> <육수:CV_SEASONING>를 넣어 잘 섞어주세요.
+4. <연어:CV_INGREDIENT>는 한입 크기 (1~2cm 두께) 로 잘라 찜용 그릇에 담고 <달걀 물:CV_SEASONING>을 그릇의 5~60% 정도만  채워 랩을 씌워주세요.
+6. 작은 냄비에 소스 재료를 넣고 한번 끓어 오르면 불을 꺼 주세요.
+2. <대파:CV_INGREDIENT>는 얇게 동글동글 썰고, <새송이버섯:CV_INGREDIENT>은 1cm 두께로 두껍게 채 썰어주세요.
+3. <마:CV_INGREDIENT>는 칼로 껍질을 벗기고 강판에서 곱게 갈아주세요.
+4. <우엉:CV_INGREDIENT>은 얇게 어슷 썬 다음 <통밀가루:CV_SEASONING>에 버무린 후 프라이팬에 <기름:CV_SEASONING>을 넉넉히 두르고 튀기듯이 구워주세요.
+5. 다시마 표고물을 만들 때 넣었던 <다시마:CV_INGREDIENT>와 <표고:CV_INGREDIENT>를 꺼내어 <표고:CV_INGREDIENT>는 1/4등분 하고 <다시마:CV_INGREDIENT>는 얇게 채 썰어주세요.
+6. 냄비에 <물:CV_SEASONING>을 넣고 팔팔 끓으면 <메밀 국수:CV_INGREDIENT>를 넣고 제품에 제시된 시간 내로 삶아주세요. 채반에 <메밀 국수:CV_INGREDIENT>를 건지고 미지근한 물로 씻어내어 전분기를 제거해 주세요.
+7. 그릇에 <메밀 국수:CV_INGREDIENT>를 담고 <간:CV_STATE> <마:CV_INGREDIENT>, <튀긴:CV_STATE> <우엉:CV_INGREDIENT>, <표고:CV_SEASONING> <다시마:CV_INGREDIENT> <새송이:CV_INGREDIENT> 졸인 것을 올리고 마지막으로 <다시마 표고 국물:CV_SEASONING>을 부어 완성해주세요.
+2. <대파:CV_INGREDIENT>와 <양파:CV_INGREDIENT>는 얇게 채를 썰고 <부추:CV_INGREDIENT>는 4센치 길이로 썰어주세요. <묵은지:CV_INGREDIENT>는 물에 헹군 후 물기를 빼고 먹기 좋게 썰어주세요.
+3. <파무침 소스:CV_SEASONING>와 양념 재료를 각각 섞어주세요. 볼에 <파채:CV_INGREDIENT>와 <영양 부추:CV_INGREDIENT>, <양파:CV_INGREDIENT>를 넣고 <파무침 소스:CV_SEASONING>를 넣어 가볍게 버무려주세요.
+5. 먹기 좋게 <썬:CV_STATE> <삼겹살:CV_INGREDIENT>과 <묵은지:CV_INGREDIENT>, <부추:CV_INGREDIENT> <파무침:CV_INGREDIENT>을 곁들여 맛있게 즐겨주세요.
+3. <당근:CV_INGREDIENT>은 얇게 썰고 <양파:CV_INGREDIENT>는 굵게 채를 썰어주세요. <대파:CV_INGREDIENT>는 어슷하게 썰고 <쪽파:CV_INGREDIENT>는 송송 썰어주세요.
+4. 볼에 <삶은:CV_STATE> <등갈비:CV_INGREDIENT>와 <양념장:CV_SEASONING>을 넣어 버무려주세요.
+5. 내열 용기에 <손질한:CV_STATE> <채소:CV_INGREDIENT>와 <떡:CV_INGREDIENT>을 담고 <양념한:CV_STATE> <등갈비:CV_INGREDIENT>를 넣고 포일로 감싸주세요.
+8. 오목한 그릇에 <등갈비:CV_INGREDIENT>와 <양념한:CV_STATE> <콩나물:CV_INGREDIENT>을 담고 <통깨:CV_SEASONING>와 <쪽파:CV_INGREDIENT>를 뿌려 완성해 주세요.
+2. 볼에 소스 재료를 넣어 섞어주세요. 전분물 재료를 섞어 전분 물을 만들어주세요.
+3. 가지의 겉 부분과 칼집 사이에 <전분:CV_SEASONING>을 묻히고, 칼집 사이에 <밑간한:CV_STATE> <돼지고기:CV_INGREDIENT>를 넣어주세요.
+4. 볼에 반죽 재료를 넣어 섞은 후 <가지:CV_INGREDIENT>에 <전분가루:CV_SEASONING> - 반죽 순으로 묻혀 구이전용팬에 올려주세요.
+6. 프라이팬에 약간의 <기름:CV_SEASONING>을 두르고 <잘게 썬:CV_STATE> <마늘:CV_INGREDIENT>과 <대파:CV_INGREDIENT>, <건고추:CV_INGREDIENT>를 넣어 볶다가 <당근:CV_INGREDIENT>과 <청양고추:CV_INGREDIENT>를 넣어 함께 볶고 소스 재료를 넣어 한소끔 끓인 후 <전분 물:CV_SEASONING>을 넣어 걸쭉해지면 불을 꺼주세요.
+7. <소스:CV_SEASONING>에 <가지:CV_INGREDIENT>를 넣고 가볍게 버무린 후 접시에 담아 맛있게 즐겨주세요.
+2. <양파:CV_INGREDIENT>는 채썰고, <대파:CV_INGREDIENT>는 어슷 썰어주세요.
+(<면수:CV_SEASONING>는 따로 준비해주세요.)
+6. 그릇에 담은 후 맛있게 즐겨주세요
+(취향에 따라 <채 썬:CV_STATE> <오이:CV_INGREDIENT>와 <쪽파:CV_INGREDIENT>, <달걀:CV_INGREDIENT> 등을 곁들여 드셔도 좋아요.)
+5. <육수:CV_SEASONING>에 <물:CV_SEASONING>, <옥도미:CV_INGREDIENT>, <대파:CV_INGREDIENT>를 넣고 끓인 후, 그릇에 담고 <무:CV_INGREDIENT>, <유자 껍질:CV_SEASONING>을 첨가해 주시면 완성이예요.
+1. 비리면 <정종:CV_SEASONING>을 더 넣어 주세요.
+2. 오븐이 없으면 머리와 뼈는 굽지 말고 그냥 <육수:CV_SEASONING>를 만들어 주세요.
+3. <옥도미 살:CV_INGREDIENT>은 프라이팬에 약간의 <물:CV_SEASONING>을 넣고 구워주어도 좋아요.
+1. 깨끗이 <씻은:CV_STATE> <우엉:CV_INGREDIENT>과 <당근:CV_INGREDIENT>은 껍질을 얇게 벗긴 후 채칼이나 칼로 가늘게 채를 썰어주세요. 
+(채칼을 사용하여 채를 썰게 되면 더욱 간단하답니다)
+2. 달군 팬에 <오일:CV_SEASONING>을 약간 두른 후 <당근:CV_INGREDIENT>에 <소금:CV_SEASONING>을 살짝 뿌려 간을 해 볶아주세요.
+3. 달군 팬에 <오일:CV_SEASONING>을 약간 두른 후 <우엉:CV_INGREDIENT>의 숨이 죽을 때까지 볶다가, 우엉 조림 재료를 넣어 물기가 없을 때까지 졸여주세요. 마지막에 <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 살짝 뿌려주세요. 
+4. 볼에 <밥:CV_INGREDIENT>과 밥 양념 재료를 넣어 골고루 섞어주세요.
+5. 김발에 <김:CV_INGREDIENT>을 올리고 <현미밥:CV_INGREDIENT>을 고르게 편 후 <우엉:CV_INGREDIENT>, <당근:CV_INGREDIENT>, <새싹:CV_INGREDIENT> <채소:CV_INGREDIENT>를 올려 <김밥:CV_INGREDIENT>을 말아주세요.
+6. 적당한 크기로 잘라 맛있게 즐겨주세요.
+1. <표고버섯:CV_INGREDIENT>은 젖은 키친타월로 가볍게 닦아주세요. <표고버섯:CV_INGREDIENT>의 윗부분을 칼로 조각을 내어 주고 <느타리버섯:CV_INGREDIENT>과 <팽이버섯:CV_INGREDIENT>은 밑동을 잘라 먹기 좋게 찢어주세요.
+2. <연근:CV_INGREDIENT>과 <단호박:CV_INGREDIENT>은 먹기 좋게 슬라이스 해주세요. <당근:CV_INGREDIENT>은 감자칼로 얇게 슬라이스 해주세요. 소스 재료의 <양파:CV_INGREDIENT>는 얇게 채 썰어 찬물에 담가 매운기를 제거해 주세요. 
+3. 깨끗이 <씻은:CV_STATE> <청경채:CV_INGREDIENT>는 잎을 떼어내 주세요. 
+4. <물기를 제거한:CV_STATE> <두부:CV_INGREDIENT>는 큐브로 썰고 <소금:CV_SEASONING>, <후추:CV_SEASONING>로 밑간을 해주세요. 달군 팬에 <기름:CV_SEASONING>을 두른 후 <두부:CV_INGREDIENT>를 앞뒤로 노릇하게 구워주세요. <간장:CV_SEASONING>과 <맛술:CV_SEASONING>을 둘러 향을 입혀준 후 접시에 덜어주세요. 
+5. 깨끗이 <씻은:CV_STATE> <배춧잎:CV_INGREDIENT>과 <깻잎:CV_INGREDIENT>을 겹친 후 얇게 슬라이스한 <당근:CV_INGREDIENT>을 올려주세요. 
+4~5회 반복해서 쌓은 후 4등분 해주세요. 
+6. 전골 냄비에 <청경채:CV_INGREDIENT>를 깔고 겹친 <채소:CV_INGREDIENT>를 가지런히 둘러 담아주세요. 
+1. <당근:CV_INGREDIENT>은 얇게 슬라이스한 후 꽃 모양 틀로 모양을 내고 나머지는 잘게 다져주세요. <쪽파:CV_INGREDIENT>는 송송 썰어주세요.
+3. 달군 팬에 <식용유:CV_SEASONING>를 살짝 두른 후 <노른자:CV_INGREDIENT>를 부어주세요.
+4. <말아진:CV_STATE> <달걀:CV_INGREDIENT>을 팬 아래쪽으로 밀어 놓고, 윗쪽에 <달걀물:CV_SEASONING>을 다시 부어 같은 방법으로 반복해서 <달걀:CV_INGREDIENT>을 말아주세요.
+5. <말아진:CV_STATE> <달걀:CV_INGREDIENT>을 팬 아래쪽으로 밀어 놓고, 팬에 꽃 모양 <당근:CV_INGREDIENT>과 <쪽파:CV_INGREDIENT>를 얹고 <흰자:CV_INGREDIENT>를 부어 돌돌 말아주세요. 
+6. 먹기 좋은 크기로 잘라 맛있게 즐겨주세요.
+4. 볼에 고슬고슬하게 지은 <밥:CV_INGREDIENT>을 넣고 밥양념 재료를 넣어 밑간한 후, 밥을 한입크기로 나눠 <볶아 놓은:CV_STATE> <멸치:CV_INGREDIENT>를 넣고 동그랗게 만들어주세요.
+5. 랩 위에 <지단:CV_INGREDIENT>을 깔고 <주먹밥:CV_INGREDIENT>을 올린 후 랩으로 동그랗게 감싸 모양을 잡아주세요. 랩을 벗겨내고 <데친:CV_STATE> <미나리:CV_INGREDIENT>를 둘러 묶어주세요. (<쌈무:CV_INGREDIENT>도 동일한 과정으로 동그랗게 모양을 잡아주세요)
+6. 알맞은 그릇에 담아 맛있게 즐겨주세요.
+1. <모시조개:CV_INGREDIENT>는 <소금물:CV_SEASONING>에 담가 해감해 주세요.
+2. <느타리버섯:CV_INGREDIENT>은 밑동을 떼어내고 손으로 찢어 주세요. 볼에 소스 재료를 넣고 섞어주세요.
+3. 내열 용기에 <모시조개:CV_INGREDIENT>, <버섯:CV_INGREDIENT>, <쪽파:CV_INGREDIENT>를 담고 <화이트와인:CV_SEASONING>을 뿌려주세요.
+5. 완성된 <매운:CV_STATE> <버섯 조개찜:CV_INGREDIENT>을 가볍게 위아래 섞은 후 맛있게 즐겨주세요.
+1. <반으로 가른:CV_STATE> <새송이버섯:CV_INGREDIENT>과 <마늘:CV_INGREDIENT>은 편으로 썰고 <양파:CV_INGREDIENT>는 얇게 채 썰어주세요.
+<양상추 잎:CV_INGREDIENT>은 2cm 폭으로 썰어주세요.
+2. 덮밥 양념 재료를 한데 고루 섞어주세요.
+3. <쇠고기:CV_INGREDIENT>는 지방 부위를 제거하고 편으로 썰어주세요.
+4. 팬에 <올리브유:CV_SEASONING>를 두르고 <양파채:CV_INGREDIENT>와 <버섯:CV_INGREDIENT>을 넣어 볶아주세요.
+5. <버섯:CV_INGREDIENT>의 숨이 살짝 죽으면 <양상추 잎:CV_INGREDIENT>을 넣고 <소금:CV_SEASONING>을 뿌려 후루룩 볶아주세요.
+<양상추 잎:CV_INGREDIENT>의 숨이 죽으면 바로 넓은 접시에 펼쳐 담아 식혀주세요.
+6. 팬에 <올리브유:CV_SEASONING>를 두르고 <마늘:CV_INGREDIENT>을 볶아주세요. 
+7. <쇠고기:CV_INGREDIENT>를 구운 팬을 기울여 STEP2의 <덮밥 양념:CV_SEASONING>을 넣고 끓여주세요.
+소스가 끓어오르면 <쇠고기:CV_INGREDIENT>를 넣어 <소스:CV_SEASONING>가 고루 어우러지도록 살짝 끓여주세요.
+8. <버터:CV_SEASONING>와 <후룻가루:CV_SEASONING>를 넣고 가볍게 섞어주세요.
+<밥:CV_INGREDIENT> 위에 <볶은:CV_STATE> <채소:CV_INGREDIENT>와 <쇠고기:CV_INGREDIENT>를 얹고 남은 <소스:CV_SEASONING>를 살짝 뿌린 후 마무리하세요.
+6. 달군 팬에 <장어:CV_INGREDIENT>를 올리고 <데리야키 소스:CV_SEASONING>를 발라가며 구워주세요. 윤기나게 조려지면 2cm 폭으로 먹기 좋게 썰어주세요.
+8. <지단:CV_INGREDIENT>, <생강:CV_INGREDIENT>, <오이:CV_INGREDIENT>, <장어:CV_INGREDIENT>, <무순:CV_INGREDIENT>을 골고루 올려 마무리해주세요.
+1. <소고기:CV_INGREDIENT>는 먹기 좋게 썰어 키친타월에 올린 후 핏물을 빼고, <양파:CV_INGREDIENT>는 굵게 채썰고, <쪽파:CV_INGREDIENT>는 송송 썰어주세요. <느타리버섯:CV_INGREDIENT>은 밑동을 자른 후 가닥가닥 떼어주세요.
+그릇에 <밥:CV_INGREDIENT>을 골고루 담고, <볶은:CV_STATE> <쇠고기:CV_INGREDIENT>를 올려주세요. <양파:CV_INGREDIENT>와 <버섯:CV_INGREDIENT>이 골고루 보이도록 해야 더 먹음직스럽게 보일 수 있어요~ 가운데 부분에 <달걀노른자:CV_INGREDIENT>가 들어갈 수 있는 공간을 만든 후 숟가락으로 조심스럽게 <달걀 노른자:CV_INGREDIENT>를 올려주세요. <초생강:CV_INGREDIENT>은 한쪽에 담고, <쪽파:CV_INGREDIENT>와 <통깨:CV_SEASONING>를 <노른자:CV_INGREDIENT> 주변으로 동그랗게 뿌려내 주세요.
+5. 그릇에 <밥:CV_INGREDIENT>을 담고 <볶은:CV_STATE> <쇠고기:CV_INGREDIENT>와 <달걀노른자:CV_INGREDIENT>, <초생강:CV_INGREDIENT>, <쪽파:CV_INGREDIENT>를 보기 좋게 얹어주세요. <통깨:CV_SEASONING>를 뿌려 마무리해주세요.
+1. <찹쌀:CV_INGREDIENT>은 깨끗이 씻어 밥솥에 넣고 <물:CV_SEASONING>을 부어 고슬한 <찹쌀밥:CV_INGREDIENT>을 만들어 주세요.
+2. 법랑 접시에 종이 포일을 깔고 완성된 <찹쌀밥:CV_INGREDIENT>을 얇게 펼친 후 한 김 식혀주세요.
+3. 법랑 접시를 3단에 넣고 광파오븐 자동 요리 오븐에서 누룽지 0.2kg를 선택해 조리해 주세요. 조리가 끝나면 뒤집어서 한 번 더 누룽지 0.2kg를 선택해 조리해 주세요.
+4. <오징어:CV_INGREDIENT>는 칼집을 넣어 먹기 좋게 썰고 <새우:CV_INGREDIENT>는 껍질을 까고 등 부분에 칼집을 넣어 내장을 제거해 주세요.
+5. <새송이:CV_INGREDIENT>, <표고버섯:CV_INGREDIENT>은 도톰한 두께로 슬라이스하고 <청경채:CV_INGREDIENT>는 밑동을 제거해 흐르는 물에 헹궈주세요. <대파:CV_INGREDIENT>는 먹기 좋게 썰고 <마늘:CV_INGREDIENT>과 <생강:CV_INGREDIENT>은 편 썰어 준비해 주세요.
+9. <튀겨 둔:CV_STATE> <누룽지:CV_INGREDIENT>에 <소스:CV_SEASONING>를 부어 맛있게 즐겨주세요.
+1. <목이버섯:CV_INGREDIENT>은 찬물에 담가 불린 후 물기를 짜고 곱게 채를 썰어주세요.
+2. <오이:CV_INGREDIENT>는 <굵은:CV_STATE> <소금:CV_SEASONING>으로 닦은 후 4등분 하여 껍질을 얇게 돌려 깎고 채를 썰어주세요. 
+3. <표고:CV_INGREDIENT>는 기둥을 떼고 가로로 편을 썬 다음 얇게 채를 썰어주세요.  
+4. <우엉:CV_INGREDIENT>, <애호박:CV_INGREDIENT>, <당근:CV_INGREDIENT>을 얇게 편을 썰고 곱게 채를 썰어주세요. 
+5. 볼에 <간장소스:CV_SEASONING>를 넣고 섞어 준비해주세요. 
+6. 달군 팬에 <기름:CV_SEASONING>을 약간 두른 후 <표고:CV_INGREDIENT>-<오이:CV_INGREDIENT>-<애호박:CV_INGREDIENT>-<당근:CV_INGREDIENT> 순으로 볶아주세요. 
+8. <우엉:CV_INGREDIENT>을 볶은 팬에 <목이버섯:CV_INGREDIENT>을 넣고 나머지 <간장소스:CV_SEASONING>를 넣은 후 볶아주세요. 
+9. 볼에 밀전병 재료를 넣고 섞은 후 잘 섞어주세요. 
+11. 접시에 준비한 재료를 둥글게 돌려 담고 가운데 <전병:CV_INGREDIENT>을 올려 완성해주세요. 
+2. <감자:CV_INGREDIENT>와 <당근:CV_INGREDIENT>은 0.2-3cm 두께로 얄팍하게 썰고 <양파:CV_INGREDIENT>는 사방 2-3cm 길이로 깍둑 썰어주세요. <대파:CV_INGREDIENT>는 어슷 썰어주세요.
+5. 내열 용기에 <불려둔:CV_STATE> <당면:CV_INGREDIENT>과 <떡:CV_INGREDIENT>을 깔고 <물:CV_SEASONING>을 붓고 <재워둔:CV_STATE> <재료:CV_SEASONING>를 올려 펼쳐주세요.
+7. 완성된 <찜닭:CV_INGREDIENT>에 <올리고당:CV_SEASONING>과 <통깨:CV_SEASONING>, <참기름:CV_SEASONING>을 넣고 골고루 섞은 후 맛있게 즐겨주세요.
+1. <감자:CV_INGREDIENT>는 껍질째 깨끗이 씻어 4등분해 주세요. <닭:CV_INGREDIENT>은 반으로 쪼갠 후 흐르는 물에 씻어주세요. <감자:CV_INGREDIENT>와 <닭:CV_INGREDIENT>에 밑간 재료를 섞어 발라주세요. 
+4. 달군 팬에 <버터:CV_SEASONING>와 <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣고 볶은 후 <밥:CV_INGREDIENT>을 넣고 볶다가 <소금:CV_SEASONING> 한꼬집과 <후춧가루:CV_SEASONING>로 간을 해주세요. <볶은:CV_STATE> <밥:CV_INGREDIENT>을 꾹꾹 눌러 아래 면을 노릇하게 구워주세요. 
+5. 넓은 접시에 눌린 <밥:CV_INGREDIENT>을 깔고 <볶은:CV_STATE> <시금치:CV_INGREDIENT>, <구운:CV_STATE> <닭:CV_INGREDIENT>과 <감자:CV_INGREDIENT>를 올린 후 맛있게 즐겨주세요. 
+1. <쇠고기:CV_INGREDIENT>는 키친타월로 핏물을 제거 후 약간의 <참기름:CV_SEASONING>과 <소금:CV_SEASONING>, <후춧가루:CV_SEASONING>로 밑간을 해주세요.
+2. <깻잎:CV_INGREDIENT>은 흐르는 물에 깨끗이 씻어 꼭지 부분을 자르고 2등분 해주세요. <팽이버섯:CV_INGREDIENT>은 밑동을 자른 후 5cm 길이로 자르고, <쪽파:CV_INGREDIENT>도 같은 길이로 잘라주세요. 깨끗이 <씻은:CV_STATE> <연근:CV_INGREDIENT>과 <가지:CV_INGREDIENT>는 얇게 슬라이스 해주세요.
+3. 소스 재료는 각각 섞어 소스를 만들어주세요.
+4. <밑간한:CV_STATE> <쇠고기:CV_INGREDIENT>에 <깻잎:CV_INGREDIENT>을 깔고 <팽이버섯:CV_INGREDIENT>과 <쪽파:CV_INGREDIENT>를 올려 돌돌 말아주세요.
+ *광파오븐 스팀 물통에 물을 채우고 시작해주세요.
+6. <연근:CV_INGREDIENT>에 <가지:CV_INGREDIENT>와 <팽이버섯:CV_INGREDIENT>, <쪽파:CV_INGREDIENT>, 깨끗이 <씻은:CV_STATE> <숙주:CV_INGREDIENT>를 올린 후 <쇠고기:CV_INGREDIENT> 깻잎말이를 가지런히 올려 <소금:CV_SEASONING>, <후춧가루:CV_SEASONING>를 뿌려주세요.
+8. 접시에 <쇠고기 깻잎 말이 찜:CV_INGREDIENT>과 <찐:CV_STATE> <야채:CV_INGREDIENT>를 담고 <소스:CV_SEASONING>를 곁들여 맛있게 즐겨주세요.
+1. <양파:CV_INGREDIENT>는 깍둑썰고, <대파:CV_INGREDIENT>는 송송 썰어주세요. <오이:CV_INGREDIENT>는 채를 썰어 준비해주세요.
+4. <양파:CV_INGREDIENT>에 <볶은:CV_STATE> <춘장:CV_SEASONING>과 <후춧가루:CV_SEASONING>, <생강가루:CV_SEASONING>, <설탕:CV_SEASONING>을 넣고 <표고 불린:CV_STATE> <물:CV_SEASONING>을 조금씩 추가하며 볶아주세요. 
+5. <전분 물:CV_SEASONING>을 넣고 저어 <짜장 소스:CV_SEASONING>를 완성해주세요. 
+7. 그릇에 <삶은:CV_STATE> <면:CV_INGREDIENT>과 <짜장 소스:CV_SEASONING>를 담고 <채를 썬:CV_STATE> <오이:CV_INGREDIENT>를 올려 맛있게 즐겨주세요. 
+(<적채:CV_INGREDIENT>는 <김밥:CV_INGREDIENT>을 쌀 때에는 물기를 꽉 짜서 사용해주세요.)
+3. 달군 팬에 <기름:CV_SEASONING>을 두르고 <당근채:CV_INGREDIENT>를 넣은 후 약간의 <소금:CV_SEASONING>으로 밑간 해 볶아주세요. 팬을 한 번 닦고 <쇠고기:CV_INGREDIENT>를 넣은 후 물기가 없어질 때까지 볶아주세요. 
+4. 고슬고슬한 <밥:CV_INGREDIENT>에 밥양념 재료를 넣고 밥에 밑간을 해주세요.
+5. 김발 위에 <김:CV_INGREDIENT>을 올리고, <밥:CV_INGREDIENT>을 고르게 편 후 <상추:CV_INGREDIENT>-<불고기:CV_INGREDIENT>-<오이채:CV_INGREDIENT>-<당근채:CV_INGREDIENT>-<적채절임:CV_INGREDIENT>을 올리고 김발을 이용해서 돌돌 말아주세요.
+6. 먹기 좋은 크기로 잘라 <불고기 김밥:CV_INGREDIENT>을 즐겨주세요.
+1. <가지:CV_INGREDIENT>는 꼭지를 자른 후 길게 열십자 모양으로 칼집을 내고 먹기 좋은 크기로 등분해주세요. 볼에 <전분물:CV_SEASONING>과 <고추기름:CV_SEASONING>을 제외한 소스 재료를 넣어 섞어주세요.
+2. <청고추:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>는 반으로 갈라 씨를 뺀 후 잘게 다져주세요. <마늘:CV_INGREDIENT>은 편 썰고 <대파:CV_INGREDIENT>는 굵게 다져주세요. <건고추:CV_INGREDIENT>는 가위로 잘라주세요. 
+3. 볼에 튀김 반죽 재료를 섞은 후 <가지:CV_INGREDIENT>를 넣어 버무려주세요. 
+4. <170도:QT_TEMPERATURE>로 예열된 기름에 <가지:CV_INGREDIENT>를 넣어 바삭하게 튀겨낸 후 채반에 펼쳐 한 김 식혀주세요. 
+(<전분물:CV_SEASONING>은 조금씩 부어가며 농도를 맞춰주세요)
+6. 완성된 <소스:CV_SEASONING>에 <튀겨 둔:CV_STATE> <가지:CV_INGREDIENT>를 넣어 재빠르게 버무려주세요.
+7. 접시에 담아 맛있게 즐겨주세요. 
+(기호에 따라 <땅콩가루:CV_SEASONING>를 뿌려 드셔도 좋아요)3. 팬에 <식물성유:CV_SEASONING>를 두르고 <마늘:CV_INGREDIENT>을 볶다가, <파프리카:CV_INGREDIENT>와 밥톳을 넣고 약간의 <소금:CV_SEASONING>과 <후춧가루:CV_SEASONING>를 넣어 밑간 해 살짝 볶아주세요.
+5. 볼에 <찰현미밥:CV_INGREDIENT>을 넣고 <볶은:CV_STATE> 밥톳과 <파프리카:CV_INGREDIENT>와 <데친:CV_STATE> <브로콜리:CV_INGREDIENT>를 넣고 <소금:CV_SEASONING>으로 간을 하고 섞어준 후 <주먹밥:CV_INGREDIENT>을 만들어주세요
+6. 볼에 <찰현미밥:CV_INGREDIENT>을 넣고 <볶은:CV_STATE> <당근:CV_INGREDIENT>과 <연근:CV_INGREDIENT>, <표고버섯:CV_INGREDIENT>, 약간의 <깨:CV_SEASONING>를 넣고 <소금:CV_SEASONING>으로 간을 한 후 <주먹밥:CV_INGREDIENT>을 만들어주세요.
+7. 알맞은 그릇에 담아 맛있게 즐겨주세요.
+2. <쇠고기:CV_INGREDIENT>는 먹기 좋은 크기로 잘라주세요.
+3. <양파:CV_INGREDIENT>는 얇게 채 썰고 <실파:CV_INGREDIENT>는 송송 썰어주세요. 
+<김:CV_INGREDIENT>은 2cm 길이로 얇게 자르거나 잘게 부숴주세요.
+6. <밥:CV_INGREDIENT> 위에  STEP5의 <쇠고기:CV_INGREDIENT>와 <국물:CV_SEASONING>, <양파:CV_INGREDIENT>, <수란:CV_INGREDIENT>을 올린 후<실파:CV_INGREDIENT>와 <김:CV_SEASONING>을 뿌려주세요.
+2. 볼에 <밥:CV_INGREDIENT>과 <참치:CV_INGREDIENT>, <다진:CV_STATE> <양파:CV_INGREDIENT>, <다진:CV_STATE> <단무지:CV_INGREDIENT>, 양념 재료를 넣어 섞어주세요.
+3. <김밥용김:CV_INGREDIENT>은 2등분으로 잘라주세요. <밥:CV_INGREDIENT>을 적당한 크기로 동그랗게 뭉친 후 <김밥용 김:CV_INGREDIENT>으로 감싸고 랩으로 한번 더 감싸서 단단하게 고정시켜주세요.
+4. <치즈:CV_INGREDIENT>를 펭수 얼굴 모양 처럼  동그랗게 잘라 김에 붙인 후 랩으로 감싸주세요.
+5. <슬라이스 치즈:CV_INGREDIENT>로 눈을 만든 후, <김:CV_INGREDIENT>을 적당한 크기로 잘라 눈동자와 코 모양대로 잘라주세요. 지단으로 펭수의 입과 헤드폰을 만들고, 도시락 주변에 놓을 물고기도 만들어주세요.
+<슬라이스 햄:CV_INGREDIENT>으로 펭수의 볼터치와 헤드폰을 만들어 장식해주세요. <맛살:CV_INGREDIENT>을 얇게 저며 꽃모양 틀로 찍어 펭수 머리부분에 장식해주세요.
+6. 취향에 따라 <샐러드:CV_INGREDIENT>나 <감자 매쉬:CV_INGREDIENT>, <새우튀김:CV_INGREDIENT> 등을 곁들여 도시락에 담아 완성해주세요.
+3. <양파:CV_INGREDIENT>와 <파프리카:CV_INGREDIENT>는 한 입 크기로 썰고, <청경채:CV_INGREDIENT>와 <팽이버섯:CV_INGREDIENT>은 밑동을 제거한 후 적당한 크기로 잘라주세요. <대파:CV_INGREDIENT>는 어슷하게 썰고 <마늘:CV_INGREDIENT>은 편으로 썰어주세요.
+4. <새우:CV_INGREDIENT>는 껍질과 내장을 제거해 주세요. <오징어:CV_INGREDIENT>는 먹기 좋은 크기로 잘라주세요. 볼에 양념 재료를 넣어 섞어주세요.
+7. 떡이 말랑말랑해지면 <대파:CV_INGREDIENT>, <청경채:CV_INGREDIENT>, <팽이버섯:CV_INGREDIENT>, <파프리카:CV_INGREDIENT>를 넣은 후 <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 뿌려주세요.
+8. <단호박:CV_INGREDIENT> 속에 볶은 재료를 80% 정도 채운 후 빈 공간에 <피자치즈:CV_INGREDIENT>를 넣어주세요.
+10. 완성된 단호박 해물 떡 찜을 접시에 담고 먹기 좋게 잘라 맛있게 즐겨주세요.
+2. <오이:CV_INGREDIENT>는 4센치 길이로 잘라 돌려 깎아 속 씨를 제거한 후 채를 썰고, <파프리카:CV_INGREDIENT>와 <영양 부추:CV_INGREDIENT>는 4센치 길이로 채를 썰어주세요. <양파:CV_INGREDIENT>는 얇게 채를 썰고 찬물에 담갔다가 매운맛을 빼고 물기를 제거해주세요.
+3. 볼에 겨자소스 재료를 넣고 섞어 겨자소스를 만들어주세요.
+5. <조린:CV_STATE> <돼지고기:CV_INGREDIENT>는 먹기 좋은 크기로 잘라주세요.
+6. <채 썰어둔:CV_STATE> <채소:CV_INGREDIENT>는 <겨자소스:CV_SEASONING>에 가볍게 버무려주세요.
+7. 접시에 <돼지고기:CV_INGREDIENT>를 담은 후 <채소:CV_INGREDIENT>를 적당량 올려주세요. 남은 <겨자소스:CV_SEASONING>와 <통깨:CV_SEASONING>를 뿌려 완성해주세요.
+2. <불린:CV_STATE> <엿기름:CV_SEASONING>을 바락바락 주물러 체에 거른 후 <엿기름:CV_SEASONING>에 다시 <물:CV_SEASONING> <5컵:QT_VOLUME>을 부어 주물러서 남은 <엿기름물:CV_SEASONING>을 체에 걸러 빼주세요.
+5. 내열 용기에 <호박:CV_INGREDIENT>을 담고 <물:CV_SEASONING> <1/2컵:QT_VOLUME>을 넣은 후 랩을 씌워주세요.
+7. 푹 <익은:CV_STATE> <호박:CV_INGREDIENT>은 <물:CV_SEASONING> <1컵:QT_VOLUME>을 붓고 믹서에 곱게 갈아서 준비해주세요.
+3. 냄비에 <물:CV_SEASONING> <8컵:QT_VOLUME>과 <다시마:CV_INGREDIENT> <2장:QT_VOLUME>을 넣고, 물이 끓어오르면 <다시마:CV_INGREDIENT>를 건져내고 불을 꺼주세요. <굵은:CV_STATE><소금:CV_SEASONING> <3큰술:QT_VOLUME>, <매실청:CV_SEASONING> <3큰술:QT_VOLUME>을 넣고 잘 섞어 김치국물 재료를 만들어주세요.
+4. 김발에 <김밥용 김:CV_INGREDIENT>을 깔고 <메밀면:CV_INGREDIENT>을 <2/3:QT_VOLUME> 정도 얇게 깔아주세요. <오이:CV_INGREDIENT>, <아보카도:CV_INGREDIENT>, <크래미:CV_INGREDIENT>, <달걀말이:CV_INGREDIENT>를 올려 돌돌 말아주세요.
+3. <연어:CV_INGREDIENT>는 <맛술:CV_SEASONING> <1큰술:QT_VOLUME>을 뿌린 후 키친타월로 물기를 닦고, 먹기 좋은 두께로 썰어주세요.
+1. <달걀:CV_INGREDIENT> <4개:QT_VOLUME>의 <흰자:CV_INGREDIENT>와 <노른자:CV_INGREDIENT>를 볼에 분리한 후, <노른자:CV_INGREDIENT>만 있는 볼에 <달걀:CV_INGREDIENT> <2개:QT_VOLUME>를 따로 더 푼 후 체에 내리고 <송송 썬:CV_STATE> <실파:CV_INGREDIENT>와 달걀물 재료를 함께 섞어주세요.
+5. "법랑 접시에 꽈리고추를 올린 후 1단에 넣고 광파오븐 자동 요리 스팀에서 <꽈리고추:CV_INGREDIENT> <0.2kg:QT_VOLUME>를 선택한 후 가열해 주세요. 
+4. <만두 속:CV_INGREDIENT>을 만두피 중앙에 <한 숟갈:QT_VOLUME> 넣고 반으로 접어 엄지와 검지를 이용해 맞주름을 만들어 주세요. <만두:CV_INGREDIENT> 양 끝을 손끝으로 꼼꼼하게 잡아 반달 모양을 만들어 주세요.
+(<초간장:CV_SEASONING>은 <간장:CV_SEASONING><1T:QT_VOLUME>, <식초:CV_SEASONING> <0.5T:QT_VOLUME>, <고춧가루:CV_SEASONING> 약간을 한 볼에 넣고 섞어 주세요.)
+재료 : <물:CV_SEASONING> <5컵:QT_VOLUME>(<900ml:QT_VOLUME>), <달걀:CV_INGREDIENT> <1개:QT_VOLUME>, <탄산수:CV_SEASONING> <1큰술:QT_VOLUME>(<15ml:QT_VOLUME>)
+5. 재료 : <물:CV_SEASONING> <10컵:QT_VOLUME>(<1800ml:QT_VOLUME>), <가쓰오부시:CV_SEASONING> <200g:QT_VOLUME>, <다시마:CV_INGREDIENT>(5cmX5cm) <1장:QT_VOLUME>
+2. 2. <배춧잎:CV_INGREDIENT>은 깨끗이 씻어서 칼집을 넣은 <무:CV_INGREDIENT>와 함께 굵은 <소금물:CV_SEASONING>에 절이고, <무:CV_INGREDIENT> <1개:QT_VOLUME>는 3㎝ 길이로 곱게 채썰어주세요.
+2. <쑥갓:CV_INGREDIENT>은 끓는 물에 <소금:CV_SEASONING> <한 꼬집:QT_VOLUME>을 넣어 데쳐 손으로 물기를 꽉 짠 뒤 5cm 길이로 썰어주세요.
+2. 오븐 팬 2개에 <단단한:CV_STATE> <채소:CV_INGREDIENT>와 <무른:CV_STATE> <채소:CV_INGREDIENT>를 나눠 담은 후 <소금:CV_SEASONING>, <후춧가루:CV_SEASONING>, <오일:CV_SEASONING>을 뿌려 가볍게 버무려주세요.
+3. 볼에 <묵은지:CV_INGREDIENT>와 <비건 마요네즈:CV_SEASONING>, <통깨:CV_SEASONING> <1큰술:QT_VOLUME>, <올리고당:CV_SEASONING> <1작은술:QT_VOLUME>을 넣어 섞어주세요.
+2. <시금치:CV_INGREDIENT>는 <뿌리:CV_INGREDIENT>를 자르고 깨끗이 씻은 후, 끓는 물에 약간의 <소금:CV_SEASONING>을 넣어 살짝 데치고 찬물에 헹궈 물기를 제거해주세요. <데친:CV_STATE> <시금치:CV_INGREDIENT>에 <소금:CV_SEASONING> <한꼬집:QT_VOLUME>과 <참기름:CV_SEASONING>을 넣고 밑간을 해주세요.
+7. 완성된 <달걀찜:CV_INGREDIENT> 표면에 <소스:CV_SEASONING>를 <1~2큰술:QT_VOLUME> 두르고 기호에 따라 <레몬 슬라이스:CV_INGREDIENT>, <파슬리:CV_SEASONING> 등을 이용해 장식해 맛있게 즐겨주세요.
+(<다시마 표고 국물:CV_SEASONING> <800ml:QT_VOLUME>에 <국간장:CV_SEASONING> <2T:QT_VOLUME>를 넣고 간을 맞추세요.)
+냄비에 <새송이:CV_INGREDIENT>, <표고:CV_INGREDIENT>, <다시마:CV_INGREDIENT>를 담고 <졸임장:CV_SEASONING>(<다시마 표고물:CV_SEASONING> <50ml:QT_VOLUME>, <간장:CV_SEASONING> <2T:QT_VOLUME>, <조청:CV_SEASONING><1T:QT_VOLUME>)을 넣어 수분기 없이 바특해 질 때까지 졸여주세요.
+5. <고기:CV_INGREDIENT>를 구웠던 달군 팬에 <올리브유:CV_SEASONING>를 두른 후 <대파:CV_INGREDIENT>와 <양파:CV_INGREDIENT>를 볶다가 <면:CV_INGREDIENT>과 <짜파게티 수프:CV_SEASONING>  <1봉:QT_VOLUME>, <너구리 수프:CV_SEASONING> <2/3봉:QT_VOLUME>을 넣고 <면수:CV_SEASONING> <1/2컵:QT_VOLUME>을 넣고 볶아주세요. <구운:CV_STATE> <고기:CV_INGREDIENT>를 넣어 가볍게 섞어주세요.
+1. <옥도미:CV_INGREDIENT>는 비늘과 내장을 제거하고 머리를 자른 후 세 장 뜨기 해주세요. 머리와 뼈는 손질해서 물에 담가 피를 빼줍니다. <옥도미:CV_INGREDIENT>는 <30g:QT_VOLUME>(1인분) 정도로 자르고 <소금:CV_SEASONING>을 뿌려 놓아 주세요.
+2. 볼에 <달걀:CV_INGREDIENT>을 <흰자:CV_INGREDIENT>와 <노른자:CV_INGREDIENT>로 분리해 <소금:CV_SEASONING>을 적당량 넣어 부드럽게 풀어주세요. <달걀노른자:CV_INGREDIENT>에는 <다진:CV_STATE> <당근:CV_INGREDIENT>을 넣고, <달걀흰자:CV_INGREDIENT>에는 <쪽파:CV_INGREDIENT>의 <2/3:QT_VOLUME>분량을 넣어 섞어주세요.
+7. 달군 팬에 <숙주:CV_INGREDIENT> <한 줌:QT_VOLUME>과 <물:CV_SEASONING> <1컵:QT_VOLUME>을 넣고 <숙주:CV_INGREDIENT>를 데친 후 접시에 덜고, <물:CV_SEASONING>이 자작한 상태에서 <채를 썬:CV_STATE> <우엉:CV_INGREDIENT>과 <간장소스:CV_SEASONING> <1/2:QT_VOLUME>분량을 넣고 졸인 후 접시에 덜어주세요.
+6. 법랑 접시에 내열 용기를 올려 1단에 넣고 광파오븐 자동요리 스팀에서 <찐닭:CV_INGREDIENT> <0.8kg:QT_VOLUME>을 선택해 조리해주세요. * 광파오븐 스팀 물통에 물을 채우고 시작해주세요.
+3. 달군 팬에 <기름:CV_SEASONING>을 두르고 <다진:CV_STATE> <마늘:CV_INGREDIENT> <1큰술:QT_VOLUME>을 넣어 볶다가 <시금치:CV_INGREDIENT>, <페페론치노:CV_SEASONING>를 넣고 볶아주세요. <시금치:CV_INGREDIENT>가 반쯤 볶아졌을 때 <간장:CV_SEASONING>과 <설탕:CV_SEASONING>, <후춧가루:CV_SEASONING>로 간을 해주세요. 
+2. <브로콜리:CV_INGREDIENT>를 데쳐 건진 후, 엄지 손톱 크기 정도로 <봉오리:CV_INGREDIENT>를 작게 잘라주세요. <연근:CV_INGREDIENT>은 얇은 은행잎꼴로 썰고, <당근:CV_INGREDIENT>은 곱게 채썰어주세요. <파프리카:CV_INGREDIENT>는 1cm 정방형으로 썰고, <마늘:CV_INGREDIENT>은 굵게 다져주세요. <불린:CV_STATE> <표고버섯:CV_INGREDIENT>은 얇게 채썰고, <표고버섯:CV_INGREDIENT> <불린:CV_STATE> <물:CV_SEASONING> <1/2컵:QT_VOLUME>은 그대로 남겨주세요.
+5. 냄비에 <가쓰오부시국물:CV_SEASONING>  <2/3컵:QT_VOLUME>과 국물 양념 재료를 넣고 끓여주세요. 바르르 끓어오르면 <양파:CV_INGREDIENT>, <쇠고기:CV_INGREDIENT>를 넣고 <쇠고기:CV_INGREDIENT>가 살짝 익을 정도로만 끓인 후 불을 꺼주세요.
+1. <돼지고기:CV_INGREDIENT>는 밑간 재료를 <넣:CV_ACT>고 골고루 <버무려:CV_ACT> <10분:TI_DURATION> 이상 <재워:CV_ACT>주세요.
+5. 달군 팬에 <고추기름:CV_SEASONING>을 <두르:CV_ACT>고 <양파:CV_INGREDIENT>, <돼지고기:CV_INGREDIENT>, 양념 재료를 <넣:CV_ACT>어 <3분:TI_DURATION> 정도 <볶:CV_ACT>아주세요.
+6. <만가닥버섯:CV_INGREDIENT>과 <참기름:CV_SEASONING>을 약간 <넣:CV_ACT>어서 <1분:TI_DURATION>간 <볶:CV_ACT>아주세요. 완성되면 <밥:CV_INGREDIENT> 위에 <얹:CV_ACT>은 후 <튀김두부:CV_INGREDIENT>와 <무순:CV_INGREDIENT>을 <올려:CV_ACT>주세요.
+1. <쇠고기:CV_INGREDIENT>는 먹기 좋게 <썬:CV_ACT> 후 키친타월에 <올려:CV_ACT> 핏물을 <빼:CV_ACT>고, 고기양념 재료에 <10분:TI_DURATION> 정도 <재워:CV_ACT>주세요.
+7. <애호박:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>, <대파:CV_INGREDIENT>, <두부:CV_INGREDIENT>, <양파:CV_INGREDIENT>, <표고버섯:CV_INGREDIENT>을 <넣:CV_ACT>고 <2분:TI_DURATION> 정도 더 <끓여:CV_ACT>주세요.
+3. 국물이 끓으면 양념 재료를 <넣:CV_ACT>고 <3분:TI_DURATION> 정도 <끓여:CV_ACT>주세요. 
+1. <닭:CV_INGREDIENT>은 흐르는 물에 잘 <씻:CV_ACT>어 비계 부분을 <손질하:CV_ACT>고 <우유:CV_SEASONING>에 <30분:TI_DURATION> 정도 <담가둔:CV_ACT> 뒤 <씻:CV_ACT>어주세요.
+3. 냄비에 <닭:CV_INGREDIENT>, <물:CV_SEASONING>을 <넣:CV_ACT>어 <30분:TI_DURATION> 정도 <삶:CV_ACT>은 뒤 <닭:CV_INGREDIENT>을 <꺼내:CV_ACT> 살을 잘게 <발라:CV_ACT>주세요. 이 때 닭을 삶은 물은 버리지 않아요.
+7. 순서 4의 <찹쌀물:CV_SEASONING>을 <넣:CV_ACT>고 고사리가 익을 때까지 <5분:TI_DURATION> 정도 더 <끓여:CV_ACT>주세요.
+1. <당면:CV_INGREDIENT>은 끓는 물에 <5분:TI_DURATION> 정도 <삶:CV_ACT>아 찬물에 <헹궈:CV_ACT>주세요. 체에 <밭쳐:CV_ACT> 물기를 <뺀:CV_ACT> 후 먹기 좋은 크기로 <잘라:CV_ACT>주세요.
+2. 냄비에 연근이 잠길 정도의 <물:CV_SEASONING>과 <연근:CV_INGREDIENT>, <식초:CV_SEASONING>, <소금:CV_SEASONING>을 <넣:CV_ACT>고 <20분:TI_DURATION> 정도 <데친:CV_ACT> 후 찬물에 <헹궈:CV_ACT>주세요. 체에 <받쳐:CV_ACT> 물기를 <제거해:CV_ACT> 주세요.
+1. <황태포:CV_INGREDIENT>는 물에 <담가:CV_ACT> <5분:TI_DURATION> 정도 <불린:CV_ACT> 후 먹기 좋은 크기로 <썰:CV_ACT>어주세요.
+2. 달군 냄비에 <참기름:CV_SEASONING>을 <두르:CV_ACT>고 <황태포:CV_INGREDIENT>와 <대파:CV_INGREDIENT>를 <넣:CV_ACT>어 <2분:TI_DURATION> 정도 <볶:CV_ACT>다가 <육수:CV_SEASONING>를 <넣:CV_ACT>고 <끓여:CV_ACT>주세요.
+3. <누룽지:CV_INGREDIENT>를 <넣:CV_ACT>고 <10분:TI_DURATION> 정도 뭉근히 <끓여:CV_ACT>주세요. <소금:CV_SEASONING>과 <간장:CV_SEASONING>, <참치액:CV_SEASONING>으로 간을 <해주:CV_ACT>세요.
+1. <채썬:CV_STATE> <쇠고기:CV_INGREDIENT>는 키친타월에 <올려:CV_ACT> 핏물을 <빼:CV_ACT>고 고기양념에 <10분:TI_DURATION> 정도 <재워:CV_ACT>주세요.
+2. <오이:CV_INGREDIENT>는 깨끗이 <씻:CV_ACT>어 길이로 4등분하고, 길게 <12등분하:CV_ACT>여 씨 부분을 <도려 내:CV_ACT>고 <소금:CV_SEASONING>을 <뿌려:CV_ACT> <10분:TI_DURATION> 정도 <절인:CV_ACT> 후 면포에 <넣:CV_ACT>어 물기를 <짜:CV_ACT>주세요. <표고버섯:CV_INGREDIENT>은 기둥을 <떼:CV_ACT>고 채를 <썰:CV_ACT>고, <홍고추:CV_INGREDIENT>는 반으로 <갈라:CV_ACT> 씨를 <빼:CV_ACT>고 가늘게 <채썰:CV_ACT>어주세요. 
+1. <불린:CV_STATE> <찹쌀:CV_INGREDIENT>을 체에 <밭쳐:CV_ACT>서 물기를 <제거해:CV_ACT>주세요.(<찹쌀:CV_INGREDIENT>은 <4시간:TI_DURATION> 이상 충분히 <불려:CV_ACT>주시는 게 좋아요.)
+1. <말린:CV_STATE> <고춧잎:CV_INGREDIENT>은 깨끗이 <씻:CV_ACT>어 미지근한 물에 <1시간:TI_DURATION>정도 <불린:CV_ACT> 후 물기를 꼭 <짜:CV_ACT>서 준비해주세요.
+2. <무말랭이:CV_INGREDIENT>는 흐르는 물에 바락바락 <주물러:CV_ACT> <씻:CV_ACT>고 <10분:TI_DURATION>정도 물에 <불린:CV_ACT> 후 물기를 <짜:CV_ACT>서 준비해주세요.
+3. <무말랭이:CV_INGREDIENT>에 밑간 양념 재료를 <넣:CV_ACT>고 간이 배도록 <20분:TI_DURATION>정도 <재워:CV_ACT>주세요.
+1. <오이:CV_INGREDIENT>는 얇게 <슬라이스해:CV_ACT> <절임물:CV_SEASONING>에 <10분:TI_DURATION>정도 <절여:CV_ACT>주세요. <절인:CV_STATE> <오이:CV_INGREDIENT>는 키친 타올에 <올려:CV_ACT> 물기를 <제거해:CV_ACT>주세요.
+6. 뚜껑을 닫고 다시 <5분:TI_DURATION> 더 <익혀:CV_ACT>준 뒤 불을 <끄:CV_ACT>고 <5분:TI_DURATION>간 뜸을 <들여:CV_ACT>주세요.
+2. 끓는 물에 <소금:CV_SEASONING>을 약간 <넣:CV_ACT>고, <마늘종:CV_INGREDIENT>을 <1분:TI_DURATION> 정도 <데쳐:CV_ACT> 찬물에 <헹궈:CV_ACT>주세요.
+5. 무가 익으면 <표고버섯:CV_INGREDIENT>과 <양파:CV_INGREDIENT>, <애호박:CV_INGREDIENT>을 <넣:CV_ACT>어 <3분:TI_DURATION> 정도 <끓이:CV_ACT>고 <두부:CV_INGREDIENT>와 <다진:CV_STATE><마늘:CV_INGREDIENT>, <고춧가루:CV_SEASONING>를 <넣:CV_ACT>고 <끓여:CV_ACT>주세요.
+2. 냄비에 <다시마멸치 육수:CV_SEASONING>와 <애호박:CV_INGREDIENT>, <양파:CV_INGREDIENT>를 <넣:CV_ACT>어 <5분:TI_DURATION> 정도 <끓여:CV_ACT>주세요.
+3. 양파가 투명해지면 <대파:CV_INGREDIENT>, <청홍고추:CV_INGREDIENT>를 <넣:CV_ACT>고 <2분:TI_DURATION> 정도 더 <끓여:CV_ACT>주세요.
+6. 국물이 끓으면 <고기완자:CV_INGREDIENT>를 <넣:CV_ACT>고 완자가 익으면 <대파:CV_INGREDIENT>, <청경채:CV_INGREDIENT>를 <넣:CV_ACT>고 <1분:TI_DURATION>정도 더 <끓여:CV_ACT>주세요.
+2. 프라이팬에 <기름:CV_SEASONING>을 약간 <두르:CV_ACT>고 <다진:CV_STATE> <마늘:CV_INGREDIENT>을 <볶:CV_ACT>다가 향이 올라오면 <채썬:CV_STATE> <호박:CV_INGREDIENT>과 <다진:CV_STATE> <파:CV_INGREDIENT>를 <넣:CV_ACT>고 <후추:CV_SEASONING>를 <뿌려:CV_ACT> <1~2분:TI_DURATION>간 <볶:CV_ACT>아주세요.
+3. 호박이 반 정도 익으면  <채수:CV_SEASONING>와 <소금:CV_SEASONING>을 <섞:CV_ACT>어 <부어:CV_ACT>주세요. 뚜껑을 닫아 <1~2분:TI_DURATION> 정도 <익혀:CV_ACT>주세요.
+2. 냄비에 <멸치새우다시육수:CV_SEASONING>를 <넣:CV_ACT>고 끓어오르면 <감자:CV_INGREDIENT>와 <양파:CV_INGREDIENT>를 <넣:CV_ACT>어 <2분:TI_DURATION> 정도 <끓여:CV_ACT>주세요.
+3. <육수:CV_SEASONING>에 국물 양념 재료를 <넣:CV_ACT>어 <푼:CV_ACT> 후 칼국수 면의 <밀가루:CV_INGREDIENT>를 <털어 넣:CV_ACT>고 <5분:TI_DURATION> 정도 <끓여:CV_ACT>주세요. 
+1. <돼지고기 목살:CV_INGREDIENT>은 키친타올에 <올려:CV_ACT> 핏물을 <제거하:CV_ACT>고 칼등으로 <두드린:CV_ACT> 후 <고기:CV_INGREDIENT>에 된장소스를 골고루 <버무려:CV_ACT> <20분:TI_DURATION> 정도 <재워:CV_ACT>주세요.
+1. 세 가지의 만두피 반죽 재료를 각각 볼에 <담:CV_ACT>고, 고루 <섞:CV_ACT>어 밀가루가 보이지 않도록 잘 <치댄:CV_ACT> 후 각각 비닐봉지에 <넣:CV_ACT>어 냉장고에서 <1-2시간:TI_DURATION> 정도 <휴지시켜:CV_ACT>주세요.
+2. <당면:CV_INGREDIENT>은 찬물에 <20분:TI_DURATION> 정도 <불린:CV_ACT> 후 끓는 물에 <2분:TI_DURATION> 정도 <데쳐:CV_ACT>주세요. 찬물에 <헹군:CV_ACT> 후 체에 <밭쳐:CV_ACT> 물기를 <제거하:CV_ACT>고 잘게 <다져:CV_ACT>주세요. 만두를 묶을 때 사용할 <부추:CV_INGREDIENT>는 <데쳐:CV_ACT>서 물기를 <짜:CV_ACT>주세요.
+4. <느타리버섯:CV_INGREDIENT>은 끓는 물에 <1분:TI_DURATION> 내외로 살짝 <데친:CV_ACT> 후 물기를 꽉 <짜:CV_ACT>고 송송 <썰:CV_ACT>어주세요. <애호박:CV_INGREDIENT>은 채를 <썰:CV_ACT>어 <소금:CV_SEASONING>에 <10분:TI_DURATION> 정도 <절인:CV_ACT> 후 물기를 꽉 <짜:CV_ACT>주세요.
+8. <만두피:CV_INGREDIENT>에 <만두소:CV_INGREDIENT>를 <넣:CV_ACT>고 복주머니 모양으로 <오므려:CV_ACT> 윗부분에 주름을 <잡:CV_ACT>은 후 <데친:CV_STATE> <부추:CV_INGREDIENT>로 <묶:CV_ACT>어주세요. 김이 오른 찜통에 <8~10분:TI_DURATION> 정도 <쪄:CV_ACT>주세요. 볼에 양념장 재료를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+4. 냄비에 <물:CV_SEASONING>과 순서 1의 <다시백:CV_SEASONING>을 <넣:CV_ACT>고 <5분:TI_DURATION> 정도 <끓여:CV_ACT> 국물을 <낸:CV_ACT> 뒤 <건져:CV_ACT>주세요.
+5. <감자:CV_INGREDIENT>를 <넣:CV_ACT>고 <3분:TI_DURATION> 정도 <끓이:CV_ACT>다가 <들깨가루:CV_SEASONING>, <들기름:CV_SEASONING>, <마늘:CV_INGREDIENT>, <국간장:CV_SEASONING>, <소금:CV_SEASONING>을 <넣:CV_ACT>고 <2분:TI_DURATION> 정도 <끓여:CV_ACT>주세요.
+6. 감자가 다 익으면 <대파:CV_INGREDIENT>를 <넣:CV_ACT>고 <2분:TI_DURATION> 정도 더 <끓여:CV_ACT>주세요.
+1. <도미:CV_INGREDIENT>의 비늘과 내장을 <제거하:CV_ACT>고 깨끗이 <씻:CV_ACT>어 등에 칼집을 <내:CV_ACT>주세요. <도미:CV_INGREDIENT>에 밑간 재료를 <뿌린:CV_ACT> 후 <10분:TI_DURATION> 정도 <밑간을 해:CV_ACT>주세요.
+3. 찜기에 <물:CV_SEASONING>과 <생강:CV_INGREDIENT>을 <넣:CV_ACT>고, 찜기 위에 <파:CV_INGREDIENT>를 <깔:CV_ACT>아준 후 <도미:CV_INGREDIENT>와 <고추:CV_INGREDIENT>를 <올려:CV_ACT> <15~20분:TI_DURATION> 정도 <쪄:CV_ACT>주세요. 달군 팬에 양념재료를 <넣:CV_ACT>어 <3~5분:TI_DURATION>간 <끓여:CV_ACT>주세요.
+1. <쇠고기:CV_INGREDIENT>는 먹기 좋은 크기로 <썰:CV_ACT>고 키친타월 에 <올려:CV_ACT> 핏물을 <제거한:CV_ACT> 후 간장 양념 재료를 <넣:CV_ACT>고 골고루 <섞:CV_ACT>어 <20분:TI_DURATION> 정도 <재워:CV_ACT>주세요.
+3. 달군 팬에 <기름:CV_SEASONING>을 <두르:CV_ACT>고 <대파:CV_INGREDIENT>를 <1분:TI_DURATION> 정도 <볶:CV_ACT>다가 <스팸:CV_INGREDIENT>을 <넣:CV_ACT>어 <볶:CV_ACT>아주세요.
+5. 간장소스가 식으면 <청양고추:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>고 냉장고에 <넣:CV_ACT>어 <하루:TI_DURATION> 정도 <숙성 시켜:CV_ACT>주세요. 드실 때 약간의 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 맛있게 즐겨주세요.
+1. <열무김치 국물:CV_SEASONING>과 <생수:CV_SEASONING>를 <섞:CV_ACT>은 후 지퍼백에 <담:CV_ACT>아 살얼음이 생기도록 <3시간:TI_DURATION> 정도 미리 <얼려:CV_ACT>주세요.
+2. 끓는 물에 <소금:CV_SEASONING>을 <넣:CV_ACT>고 <마늘종:CV_INGREDIENT>을 <10초:TI_DURATION> 정도 <데친:CV_ACT> 후 찬물에 <헹구:CV_ACT>어 물기를 <빼:CV_ACT>주세요.
+3. 팬에 양념 재료를 <넣:CV_ACT>고 바글바글 <끓:CV_ACT>이다가 <데친:CV_STATE> <마늘종:CV_INGREDIENT>을 <넣:CV_ACT>고 골고루 <섞:CV_ACT>어가며 <2분간:TI_DURATION> <볶:CV_ACT>아주세요.
+1. <닭다리살:CV_INGREDIENT>을 흐르는 물에 <씻:CV_ACT>은 후 한입 크기로 <자르:CV_ACT>고 키친타월로 <눌러:CV_ACT> 물기를 <제거해:CV_ACT> 주세요. <닭고기:CV_INGREDIENT>를 밑간 재료에 <버무려:CV_ACT> <20분:TI_DURATION>간 <재웠:CV_ACT>다가 <전분가루:CV_SEASONING>에 <섞:CV_ACT>어주세요.
+2. <얼갈이배추:CV_INGREDIENT>는 밑둥을 <자른:CV_ACT> 후 물에 <씻:CV_ACT>고 끓는 물에 약간의 <소금:CV_SEASONING>을 <넣:CV_ACT>고 <얼갈이배추:CV_INGREDIENT>의 흰부분부터 <넣:CV_ACT>어 <1~2분:TI_DURATION>간 <데친:CV_ACT> 후 찬물에 <헹궈:CV_ACT> 물기를 살짝 <제거해:CV_ACT>주세요.
+1. 볼에 양념장 재료를 <넣:CV_ACT>어 <섞:CV_ACT>고 냉장고에 <넣:CV_ACT>어 <30분:TI_DURATION> 정도 <숙성시켜:CV_ACT>주세요.
+1. <오이지:CV_INGREDIENT>는 동그랗게 <썰:CV_ACT>고 <20분:TI_DURATION> 정도 찬물에 <담가:CV_ACT> 짠맛을 <빼:CV_ACT>주세요. <홍고추:CV_INGREDIENT>와 <쪽파:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요. (오이지의 염도에 따라 물에 담구는 시간을 <조절해:CV_ACT>주세요.)
+1. <오이:CV_INGREDIENT>는 0.5센치 두께로 <썰:CV_ACT>고, 약간의 <소금:CV_SEASONING>을 <넣:CV_ACT>어 <5~10분:TI_DURATION>정도 <절여:CV_ACT>주세요.
+3. 냄비에 약간의 <기름:CV_SEASONING>을 <두르:CV_ACT>고 <밑간 한:CV_STATE> <돼지고기:CV_INGREDIENT>를 <넣:CV_ACT>어 <2분:TI_DURATION> 정도 <볶:CV_ACT>아 표면이 살짝 익으면 분량의 <물:CV_SEASONING>과 양념재료를 <넣:CV_ACT>어 <10분:TI_DURATION> 정도 <끓여:CV_ACT>주세요. 
+5. 달군 팬에 <식용유:CV_SEASONING>를 <두르:CV_ACT>고 순서 4의 반죽을 7cm 크기로 <올린:CV_ACT> 뒤 <새우:CV_INGREDIENT>를 하나씩 <올리:CV_ACT>고 <2~3분:TI_DURATION> 정도 <부쳐:CV_ACT>내주세요.
+1. <도라지:CV_INGREDIENT>는 굵은부분은 십자로 <가른:CV_ACT> 후 5~6센치 길이로 <자르:CV_ACT>고 찬물에 <20분:TI_DURATION>정도 <담가:CV_ACT>주세요. 
+2. 끓는 물에 약간의 <소금:CV_SEASONING>을 <넣:CV_ACT>고, <손질한:CV_STATE> <봄동:CV_INGREDIENT>을 <넣:CV_ACT>어 <2분:TI_DURATION> 정도 <데쳐:CV_ACT> 찬물에 <헹궈:CV_ACT>주세요.
+1. <당면:CV_INGREDIENT>은 미지근한 물에 <담가:CV_ACT> <30분:TI_DURATION> 정도 <불려:CV_ACT>주세요.
+1. <콩나물:CV_INGREDIENT>은 <다듬:CV_ACT>어 <씻:CV_ACT>은 후 끓는 물에 약간의 <소금:CV_SEASONING>을 <넣:CV_ACT>고 <2분:TI_DURATION> 정도 <데치:CV_ACT>고 찬물에 살짝 <헹군:CV_ACT> 후 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요. <어묵:CV_INGREDIENT>은 길게 채를 <썰:CV_ACT>어주세요.
+4. 양념이 고루 섞이도록 <2분:TI_DURATION> 정도 <버무리:CV_ACT>고 불을 <끈:CV_ACT> 후 <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요. 
+3. 냄비에 <다시마멸치육수:CV_SEASONING>와 <무:CV_INGREDIENT>를 <넣:CV_ACT>어 <끓이:CV_ACT>다가, 무가 투명해지면 <오징어:CV_INGREDIENT>와 양념 재료를 <넣:CV_ACT>어 약 <5분:TI_DURATION>간 <끓인:CV_ACT> 후 썰어 둔 <채소:CV_INGREDIENT>를 <넣:CV_ACT>어 한소끔 더 <끓여:CV_ACT>주세요.
+2. 끓는 물에 <소금:CV_SEASONING>을 <넣:CV_ACT>고 <두릅:CV_INGREDIENT>을 <15~30초:TI_DURATION> 정도 <데친:CV_ACT> 후 찬물에 <헹구:CV_ACT>어 물기를 꽉 <짜:CV_ACT>주세요.
+1. <오징어:CV_INGREDIENT>는 끝부분에 칼집을 <내:CV_ACT>고 껍질을 <벗긴:CV_ACT> 후 냄비에 <물:CV_SEASONING>을 <끓이:CV_ACT>고 <오징어:CV_INGREDIENT>를 <넣:CV_ACT>어 <1분 30초:TI_DURATION> 정도 <데친:CV_ACT> 뒤 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주고 잘게 <다져:CV_ACT> 주세요. <당근:CV_INGREDIENT>, <양파:CV_INGREDIENT>, <파:CV_INGREDIENT>도 함께 잘게 <다져:CV_ACT>주세요.
+2. 끓는 물에 <소금:CV_SEASONING>을 <넣:CV_ACT>어 <마늘종:CV_INGREDIENT>을 <20초:TI_DURATION> 정도 <데친:CV_ACT> 후, 찬물에 <헹구:CV_ACT>어 물기를 <빼:CV_ACT>주세요.
+4. 별도의 달군 팬에 <오일:CV_SEASONING>을 <두르:CV_ACT>고 <마늘종:CV_INGREDIENT>을 <넣:CV_ACT>어 <1분:TI_DURATION>간 <볶:CV_ACT>다가 양념재료를 <넣:CV_ACT>어 약 <2~3분:TI_DURATION>간 더 <볶:CV_ACT>아주세요.
+4. 달군 냄비에 <식용유:CV_SEASONING>를 <두르:CV_ACT>고 <대파:CV_INGREDIENT>를 <넣:CV_ACT>어 파기름을 <낸:CV_ACT> 뒤 <대패삼겹살:CV_INGREDIENT>을 <넣:CV_ACT>어 <2~3분:TI_DURATION> 정도 <볶:CV_ACT>아주세요.
+5. 대패삼겹살이 노릇하게 <익:CV_ACT>으면 <고춧가루:CV_SEASONING>를 <넣:CV_ACT>고 <30초:TI_DURATION> 정도 <볶:CV_ACT>아주세요.
+6. <물:CV_SEASONING>을 <넣:CV_ACT>고 보글보글 끓어오르면 <감자:CV_INGREDIENT>를 <넣:CV_ACT>어 <1분:TI_DURATION> 정도 <끓여:CV_ACT>주세요.
+7. <설탕:CV_SEASONING>, <국간장:CV_SEASONING>, <고추장:CV_SEASONING>, <마늘:CV_INGREDIENT>, <참기름:CV_SEASONING>을 <넣:CV_ACT>고 <1분:TI_DURATION> 정도 <끓여:CV_ACT>주세요.
+8. <느타리버섯:CV_INGREDIENT>, <양파:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>고 감자가 익을 때까지 <4분:TI_DURATION> 정도 더 <끓이:CV_ACT>면 완성이예요.
+1. <찹쌀:CV_INGREDIENT>과 <멥쌀:CV_INGREDIENT>은 깨끗하게 <씻:CV_ACT>어 <1시간:TI_DURATION>정도 물에 <불리:CV_ACT>고 체에 <밭쳐:CV_ACT>주세요. <검은콩:CV_INGREDIENT>은 반나절 물에 <불리:CV_ACT>고 <찰수수:CV_INGREDIENT>는 <붉은:CV_STATE> <물:CV_SEASONING>을 <우려내:CV_ACT>며 치대어 <씻:CV_ACT>어 <1시간:TI_DURATION>정도 물에 <불리:CV_ACT>고 체에 <밭쳐:CV_ACT>주세요. <찰기장:CV_INGREDIENT>은 깨끗이 <씻:CV_ACT>어 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+2. 끓는 물에 <소금:CV_SEASONING>을 <넣:CV_ACT>고 <두릅:CV_INGREDIENT>을 <10~15초:TI_DURATION> 정도 <데친:CV_ACT> 후 찬물에 <헹구:CV_ACT>어 물기를 꽉 <짜:CV_ACT>주세요.
+5. <2일:TI_DURATION> 이상 <숙성:CV_ACT> 후 즐겨주세요.
+5. <다진:CV_STATE> <돼지고기:CV_INGREDIENT>와 <오징어:CV_INGREDIENT>, <양배추 잎:CV_INGREDIENT>을 한데 <넣:CV_ACT>고 STEP4의 <양념:CV_SEASONING>을 <넣:CV_ACT>어 고루 <섞:CV_ACT>은 후 <20분:TI_DURATION> 정도 <재워:CV_ACT>두세요.
+3. 끓는 물에 <소금:CV_SEASONING> <1작은술:QT_VOLUME>을 <넣:CV_ACT>고 <두릅:CV_INGREDIENT>을 줄기 부터 <넣:CV_ACT>어 <30초:TI_DURATION> 정도 <데쳐:CV_ACT>세요. <데친:CV_STATE> <두릅:CV_INGREDIENT>은 찬물에 <헹궈:CV_ACT> 채반에서 물기를 <빼:CV_ACT>주세요.
+1. <오이:CV_INGREDIENT>는 0.5cm 두께로 <썰:CV_ACT>어주세요. 볼에 <오이:CV_INGREDIENT>를 <담:CV_ACT>고 <소금:CV_SEASONING> <2큰술:QT_VOLUME>을 <넣:CV_ACT>어 <섞:CV_ACT>은 후 <10분:TI_DURATION>간 <절여:CV_ACT>주세요.
+1. 요리 시작 전, <검은콩:CV_INGREDIENT>은 <8시간:TI_DURATION>, <현미:CV_INGREDIENT>는 <2시간:TI_DURATION> 정도 <불려:CV_ACT>서 <검은콩:CV_INGREDIENT> <1/2컵:QT_VOLUME>, <현미:CV_INGREDIENT> <1컵:QT_VOLUME>을 <준비해:CV_ACT> 주세요.
+3. <팥:CV_INGREDIENT>은 <씻:CV_ACT>어서 팥이 잠길정도의 <물:CV_SEASONING>을 <부어:CV_ACT> 끓어오르면 <물:CV_SEASONING>을 <따라내:CV_ACT>고 <물:CV_SEASONING> <5컵:QT_VOLUME>을 다시 <부어:CV_ACT> 팥이 익을 때까지 <30분:TI_DURATION>정도 <삶:CV_ACT>아 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>고 <팥 삶은:CV_STATE> <물:CV_SEASONING>은 따로 <받:CV_ACT>아 밥물재료로 <사용해:CV_ACT>주세요.
+1. <갈비:CV_INGREDIENT>는 <1시간:TI_DURATION> 정도 찬물에 담가 핏물을 빼주세요. 끓는 물에 <6분:TI_DURATION> 정도 데친 후 찬물에 헹궈 불순물과 지방을 제거해 주세요.
+6. 나머지 <야채:CV_INGREDIENT>를 넣고 <20분:TI_DURATION> 정도 끓인 후 <참기름:CV_SEASONING>을 뿌려 마무리해주세요.
+6. 밀폐 용기에 <데친:CV_STATE> <깻잎:CV_INGREDIENT>과 <고추:CV_INGREDIENT>를 담고 <식힌:CV_STATE> <양념장:CV_SEASONING>을 부어주세요. 깻잎이 양념에 잠기도록 무거운 접시나 돌로 누른 후 뚜껑을 덮어 <반나절:TI_DURATION> 정도 숙성 시켜주세요. 
+2. <오이:CV_INGREDIENT>는 반달썰기로 어슷하게 썰어 오이 절임 재료를 뿌려 <10분:TI_DURATION>간 절였다가 물기를 꼭 짜 주세요. <파프리카:CV_INGREDIENT>는 얇게 채를 썰고 <토마토:CV_INGREDIENT>는 먹기 좋게 썰어주세요. <무순:CV_INGREDIENT>은 깨끗이 씻어주세요.
+3. <새우:CV_INGREDIENT>는 끓는 물에 약간의 <청주:CV_SEASONING> 또는 <맛술:CV_SEASONING>을 넣어 <2분:TI_DURATION> 정도 데치고 껍질을 벗겨 길이로 포를 떠 주세요.
+4. 냄비에 <대파:CV_INGREDIENT>와 <양파:CV_INGREDIENT>, <통후추:CV_SEASONING>를 넣고 물이 끓으면 <닭가슴살:CV_INGREDIENT>을 넣어 <8분:TI_DURATION> 정도 삶아 결대로 찢은 후 닭무침 재료를 넣어 밑간해 주세요.
+3. 엿기름물이 모두 모아지면 <물:CV_SEASONING>을 고운 체에 한 번 더 거르고 <30분:TI_DURATION> 정도 가만히 두어 앙금을 가라앉혀 주세요.
+6. 법랑 접시 위에 석쇠를 놓고 내열 용기를 올려 1단에 넣고 광파오븐 수동 요리 레인지에서 <5분:TI_DURATION>간 익혀주세요.
+10. 완성된 <식혜:CV_SEASONING>를 냄비에 붓고 <갈아둔:CV_STATE> <호박:CV_INGREDIENT>과 <설탕:CV_SEASONING>을 넣어 저어가며 <5분:TI_DURATION>간 끓여 완성해주세요.
+2. <오이절임물:CV_SEASONING>을 끓여 뜨거울 때 <오이:CV_INGREDIENT>에 붓고, <10분:TI_DURATION> 정도 담갔다가 체에 밭쳐 물기를 빼주세요.
+(실온에 <하루:TI_DURATION>정도 두었다가 냉장고에 넣어 드세요.)
+1. 깨끗이 <씻은:CV_STATE> <오이:CV_INGREDIENT>는 곱게 채썰어 <소금:CV_SEASONING>을 약간 뿌리고, <5분:TI_DURATION>정도 절인 후 물기를 짜주세요. <아보카도:CV_INGREDIENT>는 씨앗에 칼날이 닿도록 칼집을 넣어 양쪽을 잡고 서로 반대방향으로 비틀어 자른 후, 씨앗과 <과육:CV_INGREDIENT>을 분리해주세요. 껍질을 벗겨 1cm두께로 잘라주세요.
+3. 냄비에 <물:CV_SEASONING>을 넣고 팔팔 끓으면 <메밀국수:CV_INGREDIENT>를 넣고 <5~6분:TI_DURATION> 삶아주세요. 채반에 <메밀국수:CV_INGREDIENT>를 건진 후 찬물에 깨끗하게 헹구고 물기를 빼주세요. <삶은:CV_STATE> <면:CV_INGREDIENT>에 국수 밑간 재료를 넣어 밑간을 해주세요.
+5. <연어장:CV_INGREDIENT>을 냉장고에 넣어 <5시간:TI_DURATION> 정도 숙성시켜주세요.
+(냉장보관해서 <이틀:TI_DURATION> 정도 안에 드시는 것이 맛있답니다)
+6. <연어 덮밥:CV_INGREDIENT>으로 드실 경우, <무순:CV_INGREDIENT>은 끝 부분을 자른 후 깨끗이 씻어 준비하고 <양파:CV_INGREDIENT>는 곱게 채썰어 찬물에 <5분:TI_DURATION> 정도 담갔다가 물기를 제거해주세요.
+2. 구이 전용 팬에 <쇠고기:CV_INGREDIENT>를 얇게 펼친 후 4단에 넣고 광파오븐 수동 요리 구이에서 <10분:TI_DURATION>간 익혀주세요.
+2. 물이 끓으려고 하면 불을 줄이고 <20분:TI_DURATION>간 놔두세요.
+4. 약한 불에 <10분:TI_DURATION>간 끓이고 거품을 제거한 뒤, 불을 끄고 <가쓰오부시:CV_INGREDIENT>가 가라않으면 체에 걸러주세요. 
+1. <건당면:CV_INGREDIENT>은 찬물에 담가 <30분:TI_DURATION>정도 불려주세요.
+<당근:CV_INGREDIENT>, <표고:CV_INGREDIENT>, <양파:CV_INGREDIENT>는 채를 썰고, <목이버섯:CV_INGREDIENT>은 불려서 먹기 좋은 크기로 4등분 해주세요. <쇠고기:CV_INGREDIENT>는 <간장양념:CV_SEASONING>에 넣어 <10분:TI_DURATION>정도 밑간해주세요. 
+6. 구이 전용 팬을 4단에 넣고 광파오븐 수동 요리 구이에서 <12분:TI_DURATION>간 구워주세요. <8분:TI_DURATION>이 지났을 때 <삼겹살:CV_INGREDIENT>을 뒤집어 <간장소스:CV_SEASONING>를 바르고 계속 조리해 주세요.
+1. <연어:CV_INGREDIENT>에 <소금:CV_SEASONING>, <후춧가루:CV_SEASONING>, <맛술:CV_SEASONING>을 뿌려 <5~10분:TI_DURATION> 정도 재워주세요.
+2. 냄비에 <물:CV_SEASONING>을 넣고 끓으면 <가쓰오부시:CV_SEASONING>를 넣어 불을 꺼주세요. <5분:TI_DURATION> 정도 우러나면 체에 밭쳐 <육수:CV_SEASONING>를 걸러 차갑게 식혀주세요.
+1. <생강:CV_INGREDIENT>과 <마늘:CV_INGREDIENT>은 편 썰어주세요. 내열 용기에 통 <삼겹살:CV_INGREDIENT>을 올리고 <생강:CV_INGREDIENT>, <마늘:CV_INGREDIENT>, <월계수 잎:CV_SEASONING>, <청주:CV_SEASONING>를 넣어 <20분:TI_DURATION>간 재워주세요.
+4. "법랑 접시 위에 석쇠를 놓고 내열 용기를 올려 1단에 넣고 광파오븐 수동 요리 스팀 레인지에서 <8분:TI_DURATION>으로 설정 후 시작해 주세요. 스팀레인지 종료 후 <삼겹살:CV_INGREDIENT>에 <양념:CV_SEASONING>을 바르고 법랑접시를 3단에 넣고 광파오븐 수동 요리 구이에서 <10분:TI_DURATION>간 구워주세요.
+1. <등갈비:CV_INGREDIENT>는 찬물에 <30분:TI_DURATION> 정도 담가 핏물을 빼주세요.
+2. 냄비에 <고기:CV_INGREDIENT> 삶는 물 재료를 넣고 끓어오르면 <등갈비:CV_INGREDIENT>를 넣고 <1시간:TI_DURATION> 정도 삶아주세요.
+1. <돼지고기:CV_INGREDIENT>는 밑간 재료에 <10분:TI_DURATION> 정도 재워주세요. <가지:CV_INGREDIENT>는 어슷하게 2센치 두께로 썰고 가운데 칼집을 넣어 약간의 <소금:CV_SEASONING>을 뿌려 밑간을 해주세요. <청양고추:CV_INGREDIENT>와 <대파:CV_INGREDIENT>, <당근:CV_INGREDIENT>과 <건고추:CV_INGREDIENT>, <마늘:CV_INGREDIENT>은 잘게 썰어 준비해주세요.
+1. <채끝살:CV_INGREDIENT>은 키친타올에 올려 핏물을 제거하고, 한 입 크기로 자른 후 밑간 재료를 넣어 <5분:TI_DURATION> 정도 재워주세요.
+4. 끓는 물에 <후레이크:CV_INGREDIENT>와 <라면 면:CV_INGREDIENT>을 넣고 <3~4분:TI_DURATION> 정도 삶아 체에 밭쳐 물기를 빼주세요. 
+3. <물:CV_SEASONING>에 <다시마:CV_INGREDIENT>, <머리:CV_INGREDIENT>와 <뼈:CV_INGREDIENT>, <토막낸:CV_STATE> <무:CV_INGREDIENT>를 넣고, <1시간:TI_DURATION> 동안 끓여 <육수:CV_SEASONING>를 만들어 주세요. 무가 다 익으면 2cm x 2cm로 잘라 주세요.
+7. <버섯:CV_INGREDIENT>과 <연근:CV_INGREDIENT>, <단호박:CV_INGREDIENT>을 올리고 <육수:CV_SEASONING>를 부어주세요. 국물 양념 재료를 넣고 <5분:TI_DURATION>간 끓여주세요. <소스:CV_SEASONING>에 찍어 맛있게 즐겨주세요.
+2. 끓는물에 약간의 <소금:CV_SEASONING>을 넣어 <미나리:CV_INGREDIENT>를 살짝 데친 후 찬물에 담갔다가 물기를 제거해주세요. <쌈무 슬라이스:CV_INGREDIENT>는 꽃모양틀로 찍어 <비트즙:CV_SEASONING> <물:CV_SEASONING>에 <30분:TI_DURATION> 정도 담가 분홍물을 들여주세요.
+ 쇠숟가락 등을 담가 검은 천이나 신문지를 덮어 <3~4시간:TI_DURATION> 정도 어둡고 서늘한 곳 또는 냉장고에 넣어 해감해 주세요")
+4. "석쇠를 조리실 바닥에 놓고 내열 용기를 올린 후 광파오븐 수동 요리 스팀 레인지 로 <8분:TI_DURATION>으로 설정 후 시작해 주세요. 6분이 지났을 때 <소스:CV_SEASONING>를 골고루 뿌리고 계속 조리해 주세요.
+1. <장어:CV_INGREDIENT>는 키친타월로 물기를 제거하고 밑간에 <30분:TI_DURATION>간 재워주세요.
+4. 냄비에 데리야키 소스 재료를 넣고 <8분:TI_DURATION>간 끓인 후 체에 걸러주세요.
+5. <밑간한:CV_STATE> <장어:CV_INGREDIENT>를 김 오른 찜통에서 <7~10분:TI_DURATION>간 쪄주세요.
+7. 단촛물 재료를 모두 볼에 넣고 전자레인지에 <1분:TI_DURATION>간 돌려 <설탕:CV_SEASONING>을 완전히 녹인 후 따뜻한 <밥:CV_INGREDIENT>과 섞어주세요. 그릇에 <밥:CV_INGREDIENT>을 담고 <깻잎:CV_INGREDIENT>을 고루 올려주세요.
+2. 냄비에 <물:CV_SEASONING>과 <다시마:CV_INGREDIENT>를 넣고 <3분:TI_DURATION>간 끓이고 불을 끈 후, <가쓰오부시:CV_SEASONING>를 넣고 약 <3분:TI_DURATION> 정도 담궈 뒀다가 체에 걸러주세요.
+3. <끓인:CV_STATE> <다시물:CV_SEASONING>과 나머지 양념 재료를 냄비에 넣어 약 <3분:TI_DURATION>간 한소끔 끓인 후, <채썬:CV_STATE> <양파:CV_INGREDIENT>를 넣어 <양파:CV_INGREDIENT>가 투명해질 때까지 익혀주세요. <쇠고기:CV_INGREDIENT>와 <느타리버섯:CV_INGREDIENT>을 넣어 약 <2분:TI_DURATION>간 더 익혀주세요.
+6. <버섯:CV_INGREDIENT>과 <청경채:CV_INGREDIENT>를 끓는 물에 <2~3분:TI_DURATION>간 데쳐주세요.
+8. <180도:QT_TEMPERATURE>의 기름에서 <누룽지:CV_INGREDIENT>를 <1~2분:TI_DURATION>간 튀겨주세요.
+1. <닭다리살:CV_INGREDIENT>은 칼집을 넣고 4등분으로 자른 후 밑간 재료에 <10분:TI_DURATION>간 재워주세요.
+3. 볼에 양념 재료를 넣고 섞은 후 <재워둔:CV_STATE> <닭고기:CV_INGREDIENT>와 <손질한:CV_STATE> <채소:CV_INGREDIENT>를 모두 넣어 버무려 <1시간:TI_DURATION> 이상 재워주세요.
+4. <당면:CV_INGREDIENT>과 <떡볶이 떡:CV_INGREDIENT>은 <20분:TI_DURATION>간 물에 담가 불려주세요.
+5. 내열 용기에 <연근:CV_INGREDIENT>을 넣은 후 법랑접시+석쇠 위에 올려 1단에 넣고 광파오븐 수동 요리 스팀 찜에서 <10분:TI_DURATION>간 익혀주세요. 
+7. 법랑 접시를 1단에 넣고 석쇠를 놓고 내열 용기를 올린 후 광파오븐 수동 요리 스팀 찜에서 <50분:TI_DURATION>간 익혀주세요.
+2. 웍 팬에 <식용유:CV_SEASONING>와 <춘장:CV_SEASONING>을 넣고 <3분:TI_DURATION>간 볶아주세요. <볶은:CV_STATE> <춘장:CV_SEASONING>은 따로 덜어주세요. 
+3. <춘장을 볶은:CV_STATE> <기름:CV_SEASONING>에 <다진:CV_STATE> <마늘:CV_INGREDIENT>과 <대파:CV_INGREDIENT>를 넣고 볶아 향을 낸 후 <양파:CV_INGREDIENT>를 넣고 <2분:TI_DURATION>간 볶아주세요. 
+6. 끓는 물에 <면:CV_INGREDIENT>을 넣고 <8분:TI_DURATION>간 삶은 후 흐르는 물에 헹궈 전분기를 빼주세요. 
+1. <적채:CV_INGREDIENT>는 얇게 채를 썰고 식초물 재료를 전자레인지에 <1분:TI_DURATION> 정도 돌려 <설탕:CV_SEASONING> 입자가 녹으면 채썬 <적채:CV_INGREDIENT>를 담가 <20분:TI_DURATION>정도 절여주세요. <당근:CV_INGREDIENT>과 <오이:CV_INGREDIENT>는 곱게 채를 썰어주세요.
+2. <쇠고기:CV_INGREDIENT>는 키친타월에 올려 핏물을 제거하고, 먹기 좋은 크기로 썰어 <불고기 양념:CV_SEASONING>에 <10분:TI_DURATION>정도 재워주세요. 
+5. 달군 팬에 <고추기름:CV_SEASONING>을 두르고 <마늘:CV_INGREDIENT>과 <대파:CV_INGREDIENT>, <건고추:CV_INGREDIENT>를 넣어 볶다가 <다진:CV_STATE> <청홍고추:CV_INGREDIENT>와 <소스:CV_SEASONING>를 넣어 <1~2분:TI_DURATION> 정도 끓여주세요. 마지막에 <전분물:CV_SEASONING>을 넣고 골고루 섞어주세요.
+4. <달걀:CV_INGREDIENT>은 <노른자:CV_INGREDIENT>가 터지지 않게 조심해서 볼에 <깨:CV_SEASONING> 놓아요. 끓는 <물:CV_SEASONING>에 약간의 <식초:CV_SEASONING>와 <소금:CV_SEASONING>, <달걀:CV_INGREDIENT>을 넣어 <2~3분:TI_DURATION> 익혀 <수란:CV_INGREDIENT>을 만들어주세요.
+1. <참치:CV_INGREDIENT>는 체에 밭쳐 기름기를 빼주세요. <양파:CV_INGREDIENT>는 잘게 다진 후 찬물에 <5분:TI_DURATION> 정도 담갔다가 물기를 빼주세요. <달걀:CV_INGREDIENT>은 <흰자:CV_INGREDIENT>와 <노른자:CV_INGREDIENT>를 분리한 후 <노른자:CV_INGREDIENT>만 지단을 부쳐주세요.
+1. 깨끗이 <씻은:CV_STATE> <단호박:CV_INGREDIENT>을 광파오븐 수동요리 레인지에서 <5분:TI_DURATION>간 익혀준 후 칼로 윗부분을 도려내 주세요. 숟가락으로 <단호박:CV_INGREDIENT> 속을 파내어 내열 용기에 담아주세요.
+2. 법랑 접시에 석쇠를 놓고 내열 용기를 올려 1단에 넣고 광파오븐 수동 요리 스팀 레인지에서 <10분:TI_DURATION>간 익혀주세요. * 광파오븐 스팀 물통에 물을 채우고 시작해주세요.
+6. <볶은:CV_STATE> <해물:CV_INGREDIENT>에 <양파:CV_INGREDIENT>를 넣고 볶다가, <양념:CV_SEASONING>, <떡:CV_INGREDIENT>, <물:CV_SEASONING>을 넣어 <3분:TI_DURATION> 정도 끓여주세요.
+5. 냄비에 <갈비:CV_INGREDIENT>와 <양념장:CV_SEASONING>, <물:CV_SEASONING> <800ml:QT_VOLUME>, <양파:CV_INGREDIENT>, <무:CV_INGREDIENT>를 넣어 <40분:TI_DURATION> 정도 삶아주세요.
+1. <소금:CV_SEASONING> <1작은술:QT_VOLUME>을 <물:CV_SEASONING>에 녹인 후 <깻잎:CV_INGREDIENT>을 넣고 <2~3분:TI_DURATION> 두었다가 흐르는 물에 깨끗이 씻어주세요.  
+3. 끓는 물에 <소금:CV_SEASONING> <1꼬집:QT_VOLUME>을 넣고 <깻잎:CV_INGREDIENT>을 <3~40초:TI_DURATION> 정도 데쳐주세요. <데친:CV_STATE> <깻잎:CV_INGREDIENT>은 채반에서 열기를 식혀주세요. 
+1. <엿기름:CV_SEASONING>에 <미지근한:CV_STATE> <물:CV_SEASONING> <10컵:QT_VOLUME>을 붓고 <1시간:TI_DURATION> 정도 불려주세요.
+4. <당면:CV_INGREDIENT>은 <물:CV_SEASONING> <2L:QT_VOLUME>에 <간장:CV_SEASONING> <2T:QT_VOLUME>, <포도씨유:CV_SEASONING> <1T:QT_VOLUME>을 넣고 <7분:TI_DURATION>간 삶은 후 먹기 좋은 길이로 잘라주세요.
+7. 냄비에 <물:CV_SEASONING> <2컵:QT_VOLUME>을 넣고 끓어오르면 약간의 <소금:CV_SEASONING>을 넣고 <콩나물:CV_INGREDIENT>을 넣어 <1분:TI_DURATION> 정도 뚜껑을 열고 데쳐 체에 받쳐 물기를 뺀 후 <콩나물 양념:CV_SEASONING>에 무쳐주세요.
+5. <가지:CV_INGREDIENT>에 <식용유:CV_SEASONING>를 골고루 뿌린 후 4단에 넣고 <광파:CV_INGREDIENT>오븐 자동 요리 에어프라이에서 <두부 강정:CV_INGREDIENT> <1모:QT_VOLUME>를 선택하고 시작해주세요. <10분:TI_DURATION>이 지났을 때 윗면이 노릇해지면 <가지:CV_INGREDIENT>를 뒤집어 익혀주세요.
+7. 달군 팬에 <기름:CV_SEASONING>을 두르고 <파:CV_INGREDIENT>와 <마늘:CV_INGREDIENT>, <생강:CV_INGREDIENT>을 넣고 볶다가 <데친:CV_STATE> <채소:CV_INGREDIENT>와 <간장:CV_SEASONING>, <청주:CV_SEASONING>, <굴소스:CV_SEASONING>와 <백 후춧가루:CV_SEASONING>를 넣고 간을 해주세요. <해물:CV_INGREDIENT>을 넣고 <2분:TI_DURATION>간 볶다가 <육수:CV_SEASONING>를 붓고 끓어오르면 불을 줄인 후 전분물 재료를 섞어 <1큰술:QT_VOLUME>씩 넣어가며 섞어주세요. 농도가 나면 <참기름:CV_SEASONING>을 넣어 <소스:CV_SEASONING>를 완성해 주세요.
+1. <건표고버섯:CV_INGREDIENT>은 미지근한 <물:CV_SEASONING>에 <3시간:TI_DURATION> 정도 불려 준비해주세요. 밥톳을 <물:CV_SEASONING> <2큰술:QT_VOLUME>에 <3분:TI_DURATION> 정도 불려주세요. 
+4. 달군 팬에 약간의 <식용유:CV_SEASONING>를 <두르:CV_ACT>고 <양파:CV_INGREDIENT>와 <양배추:CV_INGREDIENT>, <당근:CV_INGREDIENT>을 <넣:CV_ACT>어 <볶:CV_ACT>다가 <오징어:CV_INGREDIENT>와 <애호박:CV_INGREDIENT>, <양념장:CV_SEASONING>을 <넣:CV_ACT>은 후 <센 불:QT_TEMPERATURE>에서 빠르게 <볶:CV_ACT>아주세요.
+3. 팬에 <양념:CV_SEASONING>을 <넣:CV_ACT>고 끓어오르면, <약한불:QT_TEMPERATURE>에서 <볶은:CV_STATE> <명엽채:CV_INGREDIENT>를 <넣:CV_ACT>어 양념이 고루 섞이도록 빠르게 <볶:CV_ACT>아주세요.
+6. 달군팬에 <기름:CV_SEASONING>을 <두르:CV_ACT>고, <쇠고기 산적 꼬치:CV_INGREDIENT>를 <중약불:QT_TEMPERATURE>에서 앞뒤로 <익혀:CV_ACT>주세요.
+3. 달군 팬에 <오이:CV_INGREDIENT>를 <넣:CV_ACT>고 선명한 녹색이 될 때까지 <센불:QT_TEMPERATURE>에서 살짝 <볶:CV_ACT>아주세요.
+1. <바지락:CV_INGREDIENT>은 <해감해:CV_ACT>서 <소금:CV_SEASONING> <1큰술:QT_VOLUME>을 <넣:CV_ACT>고 잘 <문질러:CV_ACT> <씻:CV_ACT>은 뒤 청주 1큰술을 넣은 물에 <데쳐내:CV_ACT>주세요.
+4. 달군 팬에 약간의 <기름:CV_SEASONING>을 <두르:CV_ACT>고 <돼지고기 목살:CV_INGREDIENT>을 <올리:CV_ACT>고 앞 뒤 겉면만 <익히:CV_ACT>고 불을 <중약불:QT_TEMPERATURE>로 <줄여:CV_ACT> 은근히 속까지 <익혀:CV_ACT>주세요.
+4. 달군 팬에 <쇠고기:CV_INGREDIENT>를 <넣:CV_ACT>어 <볶:CV_ACT>다가 쇠고기가 익으면 데친 <우엉:CV_INGREDIENT>과 <양파:CV_INGREDIENT>를 <넣:CV_ACT>어 <볶:CV_ACT>고 마지막에 <아스파라거스:CV_INGREDIENT>를 <넣:CV_ACT>은 후 <센불:QT_TEMPERATURE>에서 <볶:CV_ACT>아주세요.
+3. 달군 팬에 <들기름:CV_SEASONING>을 <두르:CV_ACT>고 <두부:CV_INGREDIENT>를 앞뒤로 돌려가며 <중약불:QT_TEMPERATURE>에서 노릇하게 <구운:CV_ACT> 후 키친타월에 <올려:CV_ACT> 기름을 <빼:CV_ACT>고 밀폐 용기에 <담:CV_ACT>아주세요.
+3. 냄비에 <식용유:CV_SEASONING>를 <붓:CV_ACT>고 <170도:QT_TEMPERATURE>로 <달군:CV_ACT> 후 <더덕:CV_INGREDIENT>을 먼저 <튀기:CV_ACT>고 <닭고기:CV_INGREDIENT>를 <튀겨:CV_ACT>주세요. 2번 <튀겨내:CV_ACT>면 바삭한 맛을 더욱 살릴 수 있답니다.
+4. 달군팬에 약간의 <기름:CV_SEASONING>을 <두르:CV_ACT>고 <애호박:CV_INGREDIENT>을 <올린:CV_ACT> 후, <썰어 둔:CV_STATE> <홍고추:CV_INGREDIENT>와 <쑥갓:CV_INGREDIENT>을 <얹:CV_ACT>어 앞뒤로 <약불:QT_TEMPERATURE>에서 노릇하게 <익혀:CV_ACT>주세요.
+3. 달군 팬에 약간의 <식용유:CV_SEASONING>를 <두르:CV_ACT>고 <잘게 썬:CV_STATE> <대파:CV_INGREDIENT>를 <넣:CV_ACT>고 <볶:CV_ACT>다가 불을 <중약불:QT_TEMPERATURE>로 <줄이:CV_ACT>고 <양파:CV_INGREDIENT>와 <어묵:CV_INGREDIENT>을 <넣:CV_ACT>어 <볶:CV_ACT>아주세요.
+3. 달군 팬에 <식용유:CV_SEASONING>를 <두르:CV_ACT>고 <중약불:QT_TEMPERATURE>에서 양념재료를 <넣:CV_ACT>은 후, 끓어오르면 <약한불:QT_TEMPERATURE>로 <줄여:CV_ACT> <오징어채:CV_INGREDIENT>를 <넣:CV_ACT>어주세요. 
+(오징어채는 오래 볶으면 질겨질 수 있으니 <약한불:QT_TEMPERATURE>에서 짧은 시간 동안 빠르게 <볶:CV_ACT>아주세요.)
+5. 달군 팬에 <기름:CV_SEASONING>을 넉넉히 <두르:CV_ACT>고 <두부 동그랑땡:CV_INGREDIENT>을 <올린:CV_ACT> 후 <중간불:QT_TEMPERATURE>에서 앞 뒤로 노릇하게 <부쳐:CV_ACT>주세요.
+4. 냄비에 <찹쌀:CV_INGREDIENT>과 <멥쌀:CV_INGREDIENT>, <검은콩:CV_INGREDIENT>, <찰수수:CV_INGREDIENT>, <팥:CV_INGREDIENT>, <찰기장:CV_INGREDIENT>을 <섞:CV_ACT>어 <넣:CV_ACT>고 <밤:CV_INGREDIENT>을 <올리:CV_ACT>고 밥물재료를 잘 <섞:CV_ACT>은 후 <붓:CV_ACT>고 뚜껑을 닫고 <센불:QT_TEMPERATURE>에서 <끓여:CV_ACT>주세요.(전기밥솥을 사용하실 때는 모든 <곡식:CV_INGREDIENT>을 섞어 <넣:CV_ACT>은 후 <밤:CV_INGREDIENT>을 <올리:CV_ACT>고 밥물재료를 잘 <섞:CV_ACT>은 후 <부어:CV_ACT> 만들어주세요.)
+3. 팬에 <들기름:CV_SEASONING> <1큰술:QT_VOLUME>을 <두르:CV_ACT>고 <도라지:CV_INGREDIENT>와 양념재료를 <넣:CV_ACT>고 <볶:CV_ACT>다가 <멸치다시마육수:CV_SEASONING>를 <넣:CV_ACT>고 <중약불:QT_TEMPERATURE>에서 도라지가 부드러워질 때까지 <볶:CV_ACT>아주세요.
+6. <토마토:CV_INGREDIENT>가 익으면 <물:CV_SEASONING>을 붓고 끓이다가 <카레 가루:CV_SEASONING>를 넣고 <약불:QT_TEMPERATURE>에서 저어가며 끓여주세요.
+3. <달걀:CV_INGREDIENT>은 <흰자:CV_INGREDIENT>, <노른자:CV_INGREDIENT>를 분리하고 약간의 <소금:CV_SEASONING>을 넣어 푼 후 <약한불:QT_TEMPERATURE>에서 <지단:CV_INGREDIENT>을 만들어 채썰어주세요.
+3. 달군 팬에 <올리브유:CV_SEASONING>를 두른 후 <쇠고기:CV_INGREDIENT>를 올려 <센 불:QT_TEMPERATURE>에서 앞 뒤로 노릇하게 구워주세요.
+3. <달걀:CV_INGREDIENT>은 약간의 <소금:CV_SEASONING>을 넣어 잘 섞은 후 체에 내리고, <약한불:QT_TEMPERATURE>에서 <지단:CV_INGREDIENT>을 부쳐주세요.
+마늘 향이 나면 STEP3의 <쇠고기:CV_INGREDIENT>를 넣고 <후춧가루:CV_SEASONING>를 뿌린 뒤 <센 불:QT_TEMPERATURE>에서 색이 나도록 굽고 그릇에 옮겨 놓으세요.
+2. <달걀:CV_INGREDIENT>은 잘 풀어 식용유를 두른 팬에 붓고 <약한 불:QT_TEMPERATURE>에서 <지단:CV_INGREDIENT>을 부친 후 얇게 썰어주세요. <깻잎:CV_INGREDIENT>, <생강:CV_INGREDIENT>은 얇게 채 썰어주세요.
+10. <약한 불:QT_TEMPERATURE>에서 팬에 <기름:CV_SEASONING>을 두른 후 닦아내고 숟가락으로 밀전병 반죽을 한술 떠 팬에 붓고 둥글고 얇게 펼쳐 부쳐주세요.
+3. <중약불:QT_TEMPERATURE>로 달군 팬에 약간의 <식용유:CV_SEASONING>를 두르고 <노른자:CV_INGREDIENT>를 국자로 떠 넣은 후, <피자치즈:CV_INGREDIENT>와 <명란알:CV_INGREDIENT> <1큰술:QT_VOLUME>을 일자로 올려 윗면이 반쯤 익으면 돌돌 말아주세요.
+1. 분량의 <물:CV_SEASONING>을 냄비에 넣고 <다시마:CV_INGREDIENT>와 <표고:CV_INGREDIENT>를 넣은 뒤 뚜껑을 닫고 <중불:QT_TEMPERATURE>에서 푹 끓여 <800ml:QT_VOLUME>의 <다시마 표고 국물:CV_SEASONING>을 우려내주세요.
+4. 새로 달군 팬에 식물성기름을 두르고 <당근:CV_INGREDIENT>을 볶다가 기름이 돌면 <연근:CV_INGREDIENT>과 <표고버섯:CV_INGREDIENT>을 넣어 볶아주세요. <표고버섯 불린:CV_STATE> <물:CV_SEASONING> <1/2컵:QT_VOLUME>을 넣어 <중불:QT_TEMPERATURE>에서 <연근:CV_INGREDIENT>이 부드러워질 때까지 끓인 후, <올리고당:CV_SEASONING>과 <간장:CV_SEASONING>을 넣고 물기없이 졸여주세요.
+4. 팬에 <식용유:CV_SEASONING>를 넉넉히 <두르:CV_ACT>고 <170도:QT_TEMPERATURE>로 <달군:CV_ACT> 후 <두부:CV_INGREDIENT>를 <넣:CV_ACT>어 <3분:TI_DURATION> 정도 <튀겨:CV_ACT>주세요.
+2. 마른 팬에 <명엽채:CV_INGREDIENT>를 <넣:CV_ACT>고, <약한불:QT_TEMPERATURE>에서 <2분:TI_DURATION> 정도 보슬보슬하게 <볶:CV_ACT>아주세요
+4. 냄비에 <대패삼겹살:CV_INGREDIENT>을 <넣:CV_ACT>고 <약중불:QT_TEMPERATURE>에서 <2분:TI_DURATION> 정도 <볶:CV_ACT>아주세요.
+5. <무:CV_INGREDIENT>를 <넣:CV_ACT>어 <볶:CV_ACT>다가 무가 투명해지면 <쌀뜨물:CV_SEASONING>을 <넣:CV_ACT>고 <센불:QT_TEMPERATURE>에서 <3분:TI_DURATION> 정도 <끓여:CV_ACT>주세요.
+1. 냄비에 <들기름:CV_SEASONING>을 <두른:CV_ACT> 뒤 <채 썬:CV_STATE> <무:CV_INGREDIENT>와 <다진:CV_STATE> <마늘:CV_INGREDIENT>을 <넣:CV_ACT>고 <약불:QT_TEMPERATURE>에서 <5분:TI_DURATION> <볶:CV_ACT>아주세요.
+2. <멸치다시마 육수:CV_SEASONING>를 <넣:CV_ACT>고 <강불:QT_TEMPERATURE>에서 <4분:TI_DURATION> <끓인:CV_ACT> 뒤 <들깨가루:CV_SEASONING>, <국간장:CV_SEASONING>, <소금:CV_SEASONING>을 <넣:CV_ACT>고 <중약불:QT_TEMPERATURE>에서 <6분:TI_DURATION> 더 <끓여:CV_ACT>주세요.
+3. <어슷하게 썬:CV_STATE> <대파:CV_INGREDIENT>를 <넣:CV_ACT>고 <중약불:QT_TEMPERATURE>에서 <2분:TI_DURATION> 더 <끓여:CV_ACT>주세요.
+4. 국물이 자작하게 졸아들면 <올리고당:CV_SEASONING>과 <참기름:CV_SEASONING>을 <넣:CV_ACT>어 <5분:TI_DURATION> 정도 <센 불:QT_TEMPERATURE>에서 윤기 나게 <조려:CV_ACT> 주세요.
+5. 끓어오르면 <약한 불:QT_TEMPERATURE>로 <줄여:CV_ACT> <5분:TI_DURATION>간 <가열하:CV_ACT>다가 뚜겅을 열어 미리 <썰어둔:CV_STATE> <두릅:CV_INGREDIENT>과 <껍질을 제거한:CV_STATE> <바지락 살:CV_INGREDIENT>을 <올려:CV_ACT>주세요.
+3. 냄비에 <차돌박이:CV_INGREDIENT>와 고기양념을 <넣:CV_ACT>고 <중약불:QT_TEMPERATURE>에서 <볶:CV_ACT>다가 기름이 나오면 <무:CV_INGREDIENT>를 <넣:CV_ACT>고 <1분:TI_DURATION> 정도 <볶:CV_ACT>아주세요.
+5. 달군 냄비에 <참기름:CV_SEASONING>을 <두르:CV_ACT>고 <황태:CV_INGREDIENT>를 <넣:CV_ACT>어 <중불:QT_TEMPERATURE>에 <2분:TI_DURATION> 정도 <볶:CV_ACT>아주세요.
+6. <볶은:CV_STATE> <황태:CV_INGREDIENT>에 <물:CV_SEASONING>, <삼계닭:CV_INGREDIENT>과 <전복:CV_INGREDIENT>을 <넣:CV_ACT>고 뚜껑을 <덮:CV_ACT>어 <중불:QT_TEMPERATURE>에 <60분:TI_DURATION>간 <끓여:CV_ACT>주세요.
+8. 먹고 남은 국물에 죽야채 재료를 <넣:CV_ACT>고 <중불:QT_TEMPERATURE>에 <3~4분:TI_DURATION>간 <끓여:CV_ACT> <삼계죽:CV_INGREDIENT>도 <만들:CV_ACT>어 드셔도 좋아요.
+2. 달군 팬에 약간의 <기름:CV_SEASONING>을 <두르:CV_ACT>고 <베이컨:CV_INGREDIENT>을 <볶:CV_ACT>다가, <양파:CV_INGREDIENT>와 <김치:CV_INGREDIENT>를 <넣:CV_ACT>어 <중간불:QT_TEMPERATURE>에서 <2분:TI_DURATION> 정도 <볶:CV_ACT>은 후 <양념:CV_SEASONING>을 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+4. 냄비에 <육수:CV_SEASONING>를 <붓:CV_ACT>고 끓어오르면 <양념한:CV_STATE> <얼갈이배추:CV_INGREDIENT>를 <넣:CV_ACT>고 <중간불:QT_TEMPERATURE>에서 <3분:TI_DURATION> 정도 <끓여:CV_ACT>세요.
+4. <센 불:QT_TEMPERATURE>에서 <5분:TI_DURATION> 정도 <끓이:CV_ACT>다가 <약불:QT_TEMPERATURE>에서 <15~20분:TI_DURATION> 정도 더 <끓인:CV_ACT> 후 <죽염:CV_SEASONING>으로 간을 <맞춰:CV_ACT>주세요. 
+3. 냄비에 <양념한:CV_STATE> <깻잎:CV_INGREDIENT>을 <넣:CV_ACT>고 <중불:QT_TEMPERATURE> 이상에서 <1분:TI_DURATION> <끓:CV_ACT>이고 <약불:QT_TEMPERATURE>로 <줄여:CV_ACT>서 <3~5분:TI_DURATION>간 더 <끓:CV_ACT>여주세요. 
+4. 양념 재료와 <꽈리고추:CV_INGREDIENT>, <멸치:CV_INGREDIENT>를 <넣:CV_ACT>은 후 <센불:QT_TEMPERATURE>에서 <2~3분:TI_DURATION>간 더 <볶:CV_ACT>아주세요. <홍고추:CV_INGREDIENT>, <참기름:CV_SEASONING>, <통깨:CV_SEASONING>를 <넣:CV_ACT>고 고루 <섞:CV_ACT>어 마무리해주세요.
+6. 달군 팬에 <식용유:CV_SEASONING>를 <두르:CV_ACT>고 순서 5를 <넣:CV_ACT>어 <약중불:QT_TEMPERATURE>에서 <2분:TI_DURATION> 정도 앞뒤로 <부쳐:CV_ACT>주세요.
+3. 마른 달군팬에 <약불:QT_TEMPERATURE>로 <건새우:CV_INGREDIENT>를 <3~4분:TI_DURATION> <볶:CV_INGREDIENT>아 준비해주세요.
+5. 밥물이 끓으면 <중간불:QT_TEMPERATURE>로 <줄여:CV_ACT> <10분:TI_DURATION>정도 <끓이:CV_ACT>고 밥물이 잦아들면 불을 약하게 <줄이:CV_ACT>고 <8분:TI_DURATION>정도 뜸을 <들여:CV_ACT>주세요.
+3. 냄비에 <물:CV_SEASONING> <4컵:QT_VOLUME>과 양념 재료를 <넣:CV_ACT>고 <끓여:CV_ACT> 양념이 끓어오르면 데친 <연근:CV_INGREDIENT>을 <넣:CV_ACT>어 <1시간:TI_DURATION> 정도 <중간 불:QT_TEMPERATURE>에서 <졸여:CV_ACT>주세요.
+2. 냄비에 <물:CV_SEASONING> <3컵:QT_VOLUME>과 <대추 씨:CV_SEASONING>를 <넣:CV_ACT>고 <중불:QT_TEMPERATURE> 이하에서 <20~25분:TI_DURATION>간 <우려내:CV_ACT>고 씨를 <건져냅:CV_ACT>니다.
+4. 달군 솥에 <참기름:CV_SEASONING> <1큰술:QT_VOLUME>을 <두르:CV_ACT>고 <불린:CV_STATE> <쌀:CV_INGREDIENT>과 <양조간장:CV_SEASONING> <1큰술:QT_VOLUME>을 <넣:CV_ACT>어 <볶:CV_ACT>다가, <바지락 삶은 물:CV_SEASONING> <300ml:QT_VOLUME>를 <넣:CV_ACT>고 <중간 불:QT_TEMPERATURE>에서 <5분:TI_DURATION> 가량 <가열해:CV_ACT>주세요.
+6. 법랑 접시를 1단에 넣고 광파오븐 수동요리 오븐에서 <180도:QT_TEMPERATURE>로 <15분:TI_DURATION>으로 설정 후 시작해주세요. <12분:TI_DURATION>이 지났을 때 <주먹밥:CV_INGREDIENT>을 꺼내어 <양념 소스:CV_SEASONING>를 덧바르고 계속 조리해주세요.
+1. 간장물 재료의 <야채:CV_INGREDIENT>들을 큼직하게 썰어 <가츠오부시:CV_SEASONING>를 제외한 간장물 재료들과 냄비에 넣고, 끓으면 <약한불:QT_TEMPERATURE>로 줄여 <15분:TI_DURATION> 정도 더 끓인 후 <가츠오부시:CV_SEASONING>를 넣고 불을 꺼주세요. <2분:TI_DURATION> 후에 체로 건더기를 걸러내고 식혀주세요.
+3. <160도:QT_TEMPERATURE>에서 <10초:TI_DURATION>간 튀긴 후 <180도:QT_TEMPERATURE>에서 한 번 더 튀겨주세요.
+1. <물:CV_SEASONING>에 <다시마:CV_INGREDIENT>를 넣고 <1시간:TI_DURATION> 후 불에 올려주세요.
+3. <180도:QT_TEMPERATURE>로 예열한 오븐에서 <단단한:CV_STATE> <채소:CV_INGREDIENT>는 <25분:TI_DURATION>, <무른:CV_STATE> <채소:CV_INGREDIENT>는 <15분:TI_DURATION> 정도 구워주세요. 
+5. 끓는 물에 <당면:CV_INGREDIENT>을 넣어 <3분:TI_DURATION> 정도 삶고, 물에 한 번 헹군 후 체에 밭쳐 물기를 빼주세요. 팬에 당면 양념 재료와 삶은 당면을 넣고, 양념이 골고루 섞이도록 <2분:TI_DURATION> 정도 <중약불:QT_TEMPERATURE>에서 볶은 후 먹기 좋은 길이로 잘라주세요.
+5. 찜기에 그릇을 넣고 뚜껑을 닫은 후 <중약불:QT_TEMPERATURE>로 <8~10분:TI_DURATION> 정도 익혀주세요. 나머지 <달걀 물:CV_SEASONING>을 그릇의 8~90% 채워 찜기에 <8~10분:TI_DURATION> 정도 더 익혀 주세요.
+6. "법랑 접시 위에 내열 용기를 올려 1단에 넣고 광파오븐 수동요리 스팀오븐에서 <200도:QT_TEMPERATURE>로 <30분:TI_DURATION>으로 설정 후 시작해주세요. <20분:TI_DURATION>이 지났을 때 포일을 벗기고 계속 조리해주세요.
+2. 머리와 뼈는 <170도:QT_TEMPERATURE> 오븐에서 <15분:TI_DURATION>간 구워주세요.
+4. 순서 1의 <옥도미 살:CV_INGREDIENT>은 <160도:QT_TEMPERATURE> 오븐에서 <5분:TI_DURATION>간 구워 주고, <대파:CV_INGREDIENT>는 0.5cm로 어슷 썰어 프라이팬에 볶아 주세요.
+1. <잔멸치:CV_INGREDIENT>는 굵은 체에 흔들어 <잔가루:CV_SEASONING>를 제거한 후, 마른팬에 <잔멸치:CV_INGREDIENT>를 넣고 <중약불:QT_TEMPERATURE>에서 <3분:TI_DURATION> 정도 볶아주세요. 새로 달군 팬에 양념재료를 넣고, 양념이 바글바글 끓으면 <잔멸치:CV_INGREDIENT>를 넣고 <양념:CV_SEASONING>이 배도록 고루 섞어주세요.
+3. <오이:CV_INGREDIENT>는 돌려깎기한 뒤 채 썰어 <소금:CV_SEASONING>을 뿌려두었다가 키친타월로 물기를 제거한 후 <센불:QT_TEMPERATURE>에서 <1분:TI_DURATION>간 볶아주세요.
+2. <밑간한:CV_STATE> <닭:CV_INGREDIENT>, <마늘:CV_INGREDIENT>, <감자:CV_INGREDIENT>를 에어프라이어에 넣고 <200도:QT_TEMPERATURE>에서 <30분:TI_DURATION> 정도 익혀주세요. 
+5. 넓은 팬에 <기름:CV_SEASONING>을 두르고 <마늘 편:CV_INGREDIENT>을 넣어 볶다가 향이 올라오면 <손질한:CV_STATE> <해물:CV_INGREDIENT>과 <청주:CV_SEASONING>를 넣어서 <센 불:QT_TEMPERATURE>에서 <2분:TI_DURATION> 정도 볶아주세요.
+9. 법랑 접시 위에 내열 용기를 올려 1단에 넣고 광파오븐 수동 요리 오븐에서 <200도:QT_TEMPERATURE>로 <5분:TI_DURATION>간 조리해 주세요.
+1. 냄비에 고기 삶는 재료를 넣고 국물이 끓어오르면 <통삼겹살:CV_INGREDIENT>을 덩어리째 넣고 한소끔 끓이다가 불을 <중약불:QT_TEMPERATURE>로 줄여 <1시간:TI_DURATION> 정도 삶아주세요.
+4. 팬에 간장 소스 재료를 넣고 소스가 보글보글 끓으면 <삶은:CV_STATE> <돼지고기:CV_INGREDIENT>를 얹고 <약한불:QT_TEMPERATURE>에서 앞뒤로 뒤집어가며 윤기 나게 <2분:TI_DURATION> 정도 졸여주세요.
+1. 냄비에 <물:CV_SEASONING> <2컵:QT_VOLUME>과 <다시마:CV_INGREDIENT>를 넣고 <중간불:QT_TEMPERATURE>에 올려주세요. 끓어오르면 <다시마:CV_INGREDIENT>는 건져내고 불을 끈 다음 <가쓰오부시:CV_SEASONING>를 넣고 <5분:TI_DURATION>간 우린 후에 체로 걸러주세요.
+2. <씻은:CV_STATE> <우람버섯:CV_INGREDIENT>은 물기를 제거하고, 포크를 이용하여 찢어 준다.
+3. 포크로 <찢은:CV_STATE> <우람버섯:CV_INGREDIENT>은 뜨거운 물에 <소금:CV_SEASONING>을 넣고 <30초:TI_DURATION> 정도 데친 후, 찬물에 씻어 준다.
+4. 찬물에 <씻은:CV_STATE> <우람버섯:CV_INGREDIENT>은 물기를 제거하고, 그릇에 담는다.
+5. 냄비에 <참기름:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣고 <센 불:QT_TEMPERATURE>로 볶는다.
+1. <늙은 호박:CV_INGREDIENT>은 채 썰어 준비한다
+2. <채썬:CV_STATE> <늙은 호박:CV_INGREDIENT>에 <소금:CV_SEASONING>, <설탕:CV_SEASONING>을 넣고 버무린다.
+3. 팬에 <버터:CV_SEASONING>, <늙은 호박:CV_INGREDIENT>을 넣고 <센불:QT_TEMPERATURE>로 <5분:TI_DURATION> 정도 볶는다.
+4. 늙은 호박에서 수분이 나오면 <슬라이스 치즈:CV_INGREDIENT>를 넣는다.
+2. <자른:CV_STATE> <무:CV_INGREDIENT>는 <전분가루:CV_SEASONING>를 묻혀준다.
+4. <전분을 묻힌:CV_STATE> <무:CV_INGREDIENT>는 튀김옷을 입혀준다.
+4. <채썬:CV_STATE> <무:CV_INGREDIENT>는 그릇에 담고, <고춧가루:CV_SEASONING>를 넣고 버무린다.
+6. 팬에 <들기름:CV_SEASONING>, <무:CV_INGREDIENT>, <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣고 <약불:QT_TEMPERATURE>로 볶는다.
+8. 팬에 <식용유:CV_SEASONING>, <대파:CV_INGREDIENT>, <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣고 <센 불:QT_TEMPERATURE>로 볶는다.
+1. <쌀:CV_INGREDIENT>은 1~2회 씻어 준다.
+2. 씻은 쌀이 잠길 정도의 <물:CV_SEASONING>을 넣고 <30분:TI_DURATION> 불려 준다.
+5. <불린:CV_STATE> <쌀:CV_INGREDIENT>은 물기를 제거한다.
+2. <반으로 자른:CV_STATE> <단호박:CV_INGREDIENT>은 씨를 제거한다.
+3. <씨를 제거한:CV_STATE> <단호박:CV_INGREDIENT>은 크기에 따라 3~4등 분으로 자른다.
+4. <자른:CV_STATE> <단호박:CV_INGREDIENT>은 찜기에 쪄 준다.
+6. <긁어낸:CV_STATE> <단호박 속:CV_INGREDIENT>에 <설탕:CV_SEASONING>을 넣고 으깨어 준다.
+4. <대파:CV_INGREDIENT>는 송송 썬다.
+6. <자른:CV_STATE> <통조림햄:CV_INGREDIENT>은 팬에 기름 없이 노릇하게 굽는다.
+7. <삶은:CV_STATE> <계란:CV_INGREDIENT>은 반으로 자른다.
+10. <끓인:CV_STATE> <라면:CV_INGREDIENT>은 그릇에 담는다.
+2. <매실액:CV_SEASONING>, <식초:CV_SEASONING>, <고춧가루:CV_SEASONING>, <된장:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <참기름:CV_SEASONING>을 넣고 양념을 만든다.
+3. <간장:CV_SEASONING>, <고춧가루:CV_SEASONING>, <매실액:CV_SEASONING>, <설탕:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <굴소스:CV_SEASONING>, <참기름:CV_SEASONING>을 넣고 양념을 만든다.
+3. <멸치 액젓:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <고춧가루:CV_SEASONING>, <참기름:CV_SEASONING>, <설탕:CV_SEASONING>을 넣고 양념을 만든다.
+3. <핏물을 제거한:CV_STATE> <고기:CV_INGREDIENT>는 냄비에 담는다.
+6. <고춧가루:CV_SEASONING>, <간장:CV_SEASONING>, <참치액:CV_SEASONING>, <맛술:CV_SEASONING>, <설탕:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_SEASONING>, <올리고당:CV_SEASONING>, <굴소스:CV_SEASONING>, <고추장:CV_SEASONING>, <된장:CV_SEASONING>을 넣고 양념을 만든다.
+7. <청양고추:CV_INGREDIENT>는 송송 썬다.
+9. <삶은:CV_STATE> <고기:CV_INGREDIENT>는 건져준다.
+10. 냄비에 <삶은:CV_STATE> <고기:CV_INGREDIENT>, <양념:CV_SEASONING>을 넣고 버무린다.
+1. <배추:CV_INGREDIENT> <반통:QT_VOLUME>을 준비한다.
+5. <대파:CV_INGREDIENT>는 송송 썬다.
+7. 그릇에 <무:CV_INGREDIENT>, <대파:CV_INGREDIENT>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <된장:CV_SEASONING>, <고춧가루:CV_SEASONING>를 넣고 버무린다.
+3. <청양고추:CV_INGREDIENT>는 송송 썬다.
+4. <대파:CV_INGREDIENT>는 송송 썬다.
+4. <삶은:CV_STATE> <계란:CV_INGREDIENT>은 껍질을 제거한다.
+5. <껍질을 제거한:CV_STATE> <계란:CV_INGREDIENT>은 반으로 자른다.
+5. <설탕:CV_SEASONING>, <고춧가루:CV_SEASONING>, <맛술:CV_SEASONING>, <고추장:CV_SEASONING>, <굴소스:CV_SEASONING>, <올리고당:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣고 양념을 만든다.
+8. 끓어오르면 <참치:CV_INGREDIENT>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <고추장:CV_SEASONING>, <간장:CV_SEASONING>, <잡채:CV_INGREDIENT>를 넣고 <5분:TI_DURATION> 정도 끓인다.
+2. <물기를 제거한:CV_STATE> <콩나물:CV_INGREDIENT>은 냄비에 담고 <소금:CV_SEASONING>을 넣는다.
+4. <콩나물:CV_INGREDIENT>을 그릇에 담고, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <간장:CV_SEASONING>, <참기름:CV_SEASONING>을 넣고 무쳐준다.
+3. <채썬:CV_STATE> <무:CV_INGREDIENT>는 그릇에 담고 <올리고당:CV_SEASONING>을 넣고 버무린 후 <20분:TI_DURATION> 정도 재워 둔다.
+3. <섞은:CV_STATE> <찹쌀가루:CV_SEASONING>는 체에 한번 걸러 준다.
+1. <찹쌀:CV_INGREDIENT>은 2~3회 씻는다.
+2. <씻은:CV_STATE> <찹쌀:CV_INGREDIENT>은 체에 밭쳐 물기를 제거한다.
+9. <물:CV_SEASONING>, <간장:CV_SEASONING>, <흑설탕:CV_SEASONING>을 넣고 <섞은:CV_STATE> <찹쌀:CV_INGREDIENT>에 준비한 재료를 모두 넣고 섞는다.
+14. <식은:CV_STATE> <약밥:CV_INGREDIENT>은 원하는 크기와 모양으로 자른다.
+1. <튀긴:CV_STATE> <돈까스:CV_INGREDIENT>는 적당한 크기로 자른다.
+3. <채썬:CV_STATE> <양파:CV_INGREDIENT>는 찬물에 <10분:TI_DURATION> 정도 담가 아린맛을 제거한다.
+5. <물에 담근:CV_STATE> <양파:CV_INGREDIENT>는 물기를 제거한다.
+1. <튀긴:CV_STATE> <돈까스:CV_INGREDIENT>는 적당한 크기로 자른다.
+4. <대파:CV_INGREDIENT>는 송송 썬다.
+7. 냄비에 <식용유:CV_SEASONING>, <양파:CV_INGREDIENT>, <대파:CV_INGREDIENT>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <양배추:CV_INGREDIENT>를 넣고 <센불:QT_TEMPERATURE>에서 볶는다.
+3. <튀긴:CV_STATE> <돈까스:CV_INGREDIENT>는 적당한 크기로 자른다.
+5. <대파:CV_INGREDIENT>는 송송 썬다.
+2. <찢은:CV_STATE> <버섯:CV_INGREDIENT>은 그릇에 담는다.
+5. <소금에 절인:CV_STATE> <버섯:CV_INGREDIENT>은 물기를 손으로 짜준다.갓이 약해서 살살 짜주세요.
+7. <고춧가루:CV_SEASONING>, <액젓:CV_SEASONING>, <설탕:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <식초:CV_SEASONING>를 넣고 버무린다. 갓이 부서지지 않게 살살 버무려 주세요.
+6. <볶은:CV_STATE> <햄:CV_INGREDIENT>은 그릇에 담아 식혀 준다.
+10. <참기름에 버무린:CV_STATE> <밥:CV_INGREDIENT>은 손을 이용하여 타원형으로 만든다.
+11. <자른:CV_STATE> <김:CV_INGREDIENT> 가운데 타원형으로 만든 밥을 넣어 준다.
+5. <물기를 제거한:CV_STATE> <두부:CV_INGREDIENT>는 칼로 으깨어 준다.
+10. <익힌:CV_STATE> <광어:CV_INGREDIENT>는 그릇에 담아 식혀 준 뒤, <마요네즈:CV_SEASONING>를 넣고 버무린다.
+5. <청양고추:CV_INGREDIENT>는 송송 썬다.
+6. 냄비에 <간장:CV_SEASONING>, <물:CV_SEASONING>, <맛술:CV_SEASONING>, <설탕:CV_SEASONING>, <채썬:CV_STATE> <양파:CV_INGREDIENT> <절반:QT_VOLUME>만 넣고 <센 불:QT_TEMPERATURE>로 끓인다.
+8. <끓인:CV_STATE> <양념:CV_SEASONING>은 식혀서 준비하고, 양념장이 식으면 <레몬즙:CV_SEASONING>을 넣고 섞는다.
+2. <계란:CV_INGREDIENT>은 <2개:QT_VOLUME>씩 그릇에 넣고 풀어 준다.
+2. <부추:CV_INGREDIENT>는 송송 썬다.
+6. <물기를 제거한:CV_STATE> <두부:CV_INGREDIENT>는 으깨어 준다.
+8. <물에 불린:CV_STATE> <당면:CV_INGREDIENT>은 끓는 물에 살짝 데친다.
+9. <데친:CV_STATE> <당면:CV_INGREDIENT>은 찬물에 씻어 물기를 제거한다.
+10. <물기를 제거한:CV_STATE> <당면:CV_INGREDIENT>은 가위나 칼을 이용하여 잘게 자른다.
+14. <속을 채운:CV_STATE> <오징어:CV_INGREDIENT> 끝에 이쑤시개를 꼽아 준다.
+2. <버터:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <꿀:CV_SEASONING>을 넣고 마늘소스를 만든다.
+4. <기름을 제거한:CV_STATE> <참치:CV_INGREDIENT>에 <설탕:CV_SEASONING>, <마요네즈:CV_SEASONING>를 넣고 섞는다.
+2. <삶은:CV_STATE> <계란:CV_INGREDIENT>은 껍질을 제거한다.
+6. <매실액:CV_SEASONING>, <간장:CV_SEASONING>, <고춧가루:CV_SEASONING>, <식초:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <참기름:CV_SEASONING>을 넣고 양념을 만든다.
+2. <기름을 제거한:CV_STATE> <참치:CV_INGREDIENT>는 그릇에 담는다.
+3. <다진:CV_STATE> <마늘:CV_INGREDIENT>, <고추장:CV_SEASONING>, <간장:CV_SEASONING>, <설탕:CV_SEASONING>을 넣는다.
+3. <삶은:CV_STATE> <소면:CV_INGREDIENT>은 찬물에 씻어 물기를 제거한다.
+4. <돼지고기:CV_INGREDIENT>에 <콜라:CV_SEASONING>, <간장:CV_SEASONING>, <설탕:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <후춧가루:CV_SEASONING>를 넣고 섞는다.
+4. <졸인:CV_STATE> <고기:CV_INGREDIENT>는 먹기 좋은 크기로 자른다.
+6. <다진:CV_STATE> <야채:CV_INGREDIENT>에 <다진:CV_STATE> <마늘:CV_INGREDIENT>, <올리고당:CV_SEASONING>, <간장:CV_SEASONING>, <매실액:CV_SEASONING>, <고춧가루:CV_SEASONING>, <물:CV_SEASONING>을 넣고 양념장을 만든다.
+2. <씻은:CV_STATE> <얼갈이:CV_INGREDIENT>는 적당한 크기로 자른다.
+7. <액젓:CV_SEASONING>, <설탕:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <매실액:CV_SEASONING>, <참기름:CV_SEASONING>을 넣고 버무린다.
+2. <꼭지를 제거한:CV_STATE> <가지:CV_INGREDIENT>는 작은 주사위 모양으로 자른다.
+3. 팬에 <식용유:CV_SEASONING>, <가지:CV_INGREDIENT>, <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣고 <중불:QT_TEMPERATURE>로 볶는다.
+2. <꼭지를 제거한:CV_STATE> <가지:CV_INGREDIENT>는 4등분으로 자른다.
+7. 가지가 절반 정도 익으면 <양파:CV_INGREDIENT>, <간장:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <올리고당:CV_SEASONING>을 넣고 <센 불:QT_TEMPERATURE>로 볶는다.
+2. <자른:CV_STATE> <닭가슴살:CV_INGREDIENT>은 그릇에 담고 <소금:CV_SEASONING>, <후춧가루:CV_SEASONING>로 밑간한다.
+7. <밑간 한:CV_STATE> <닭가슴살:CV_INGREDIENT>에 <전분:CV_SEASONING>을 넣고 버무린다.
+3. <간장:CV_SEASONING>, <설탕:CV_SEASONING>, <식초:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣고 양념을 만든다.
+6. <양념을 바른:CV_STATE> <가지:CV_STATE>는 <약불:QT_TEMPERATURE>에서 앞뒤로 굽는다.
+1. <오이:CV_INGREDIENT>는 양끝을 자르고 <양 끝을 자른:CV_STATE> <오이:CV_INGREDIENT>는 5~6cm 크기로 토막 낸다.
+3. <4등분으로 자른:CV_STATE> <오이:CV_INGREDIENT>는 씨를 제거한다.
+4. <씨를 제거한:CV_STATE> <오이:CV_INGREDIENT>는 0.5cm 두께로 자른다.
+5. <자른:CV_STATE> <오이:CV_INGREDIENT>는 그릇에 담고 <소금:CV_SEASONING>을 넣어 <20분:TI_DURATION> 정도 절인다.
+6. <소고기:CV_INGREDIENT>에 <간장:CV_SEASONING>, <설탕:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <참기름:CV_SEASONING>을 넣고 <10분:TI_DURATION> 정도 절인다.
+7. <절인:CV_STATE> <오이:CV_INGREDIENT>는 씻어 물기를 제거한다.
+8. 팬에 <식용유:CV_SEASONING>, <절인:CV_STATE> <오이:CV_INGREDIENT>를 넣고 <센 불:QT_TEMPERATURE>로 오이의 수분이 없어질 때까지 볶는다.
+4. <자른:CV_STATE> <오이지:CV_INGREDIENT>는 찬물에 <10분:TI_DURATION> 정도 담가 짠맛을 제거한다.
+5. <짠맛을 제거한:CV_STATE> <오이지:CV_INGREDIENT>는 물기를 제거한다.
+2. <자른:CV_STATE> <오이지:CV_INGREDIENT>는 찬물에 <10분:TI_DURATION> 정도 담가 짠맛을 제거한다.
+3. <짠맛을 제거한:CV_STATE> <오이지:CV_INGREDIENT>는 물기를 제거한다.
+4. <물기를 제거한:CV_STATE> <오이지:CV_INGREDIENT>는 그릇에 담는다.
+5. <고춧가루:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <참기름:CV_SEASONING>, <설탕:CV_SEASONING>을 넣고 버무린다.
+2. <자른:CV_STATE> <오이지:CV_INGREDIENT>는 찬물에 <10분:TI_DURATION> 정도 담가 짠맛을 제거한다.
+4. <청양고추:CV_INGREDIENT>는 송송 썬다.
+5. <짠맛을 제거한:CV_STATE> <오이지:CV_INGREDIENT>는 물기를 제거한다.
+6. 팬에 <참기름:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣고 <약불:QT_TEMPERATURE>로 볶는다.
+5. 팬에 <식용유:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <파:CV_INGREDIENT>를 넣고 <중불:QT_TEMPERATURE>로 볶는다.
+2. 뜨거운물에 <후춧가루:CV_SEASONING>, <월계수잎:CV_SEASONING>을 넣고 <닭:CV_INGREDIENT>을 한번 데친다.
+3. <데친:CV_STATE> <닭:CV_INGREDIENT>은 찬물에 씻어 물기를 제거한다.
+6. <간장:CV_SEASONING>, <설탕:CV_SEASONING>, <올리고당:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <맛술:CV_SEASONING>을 넣고 양념장을 만든다.
+4. <자른:CV_STATE> <두부:CV_INGREDIENT>에 앞뒤로 <소금:CV_SEASONING>, <후춧가루:CV_SEASONING> 밑간한다.
+6. <물:CV_SEASONING>, <간장:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <설탕:CV_SEASONING>, <고춧가루:CV_SEASONING>를 넣고 양념을 만든다.
+4. 프라이팬에 <식용유:CV_SEASONING>, <양파:CV_INGREDIENT>, <파프리카:CV_INGREDIENT>, <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣고 <중불:QT_TEMPERATURE>로 볶는다.
+2. <채썬:CV_STATE> <감자:CV_INGREDIENT>는 찬물에 <10분:TI_DURATION> 정도 담가 전분기를 제거한다.
+5. <전분기를 제거한:CV_STATE> <감자:CV_INGREDIENT>는 채반에 받쳐 물기를 제거한다.
+7. <소금:CV_SEASONING>을 조금 넣고 <센 불:QT_TEMPERATURE>로 <감자:CV_INGREDIENT>를 80% 정도 익힌다.
+3. <고추:CV_INGREDIENT>는 송송 썬다.
+3. 버터가 녹으면 <고기:CV_INGREDIENT>, <맛술:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>. <설탕:CV_SEASONING>, <후춧가루:CV_SEASONING>를 넣고 <센 불:QT_TEMPERATURE>로 볶는다.
+2. <씨를 제거한:CV_STATE> <자두:CV_INGREDIENT>는 크기에 따라 6~8등분으로 자른다.
+3. <자른:CV_STATE> <자두:CV_INGREDIENT>는 그릇에 담는다.
+2. <씨를 제거한:CV_STATE> <자두:CV_SEASONING>는 적당한 크기로 자른다.
+1. <씻은:CV_STATE> <비름나물:CV_INGREDIENT>을 준비한다.
+3. <데친:CV_STATE> <비름나물:CV_INGREDIENT>은 찬물에 씻어 물기를 제거한다.
+4. <된장:CV_SEASONING>, <고추장:CV_SEASONING>, <고춧가루:CV_SEASONING>, <마요네즈:CV_SEASONING>, <참기름:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣고 양념을 만든다.
+1. <씻은:CV_STATE> <비름나물:CV_INGREDIENT>을 준비한다.
+1. <씻은:CV_STATE> <비름나물:CV_INGREDIENT>을 준비한다.
+5. <삶은:CV_STATE> <면:CV_INGREDIENT>은 찬물에 씻어 물기를 제거한다.
+7. 양파가 투명해지면 <비름나물:CV_INGREDIENT>, <소면:CV_INGREDIENT>, <간장:CV_SEASONING>, <설탕:CV_SEASONING>을 넣고 <센불:QT_TEMPERATURE>로 볶는다.
+1. <당근잎:CV_INGREDIENT>은 깨끗한 물에 2~3회 씻어 준다.
+2. <씻은:CV_STATE> <당근잎:CV_INGREDIENT>은 채반에 받쳐 물기를 제거한다.
+6. <고춧가루:CV_SEASONING>, <설탕:CV_SEASONING>, <간장:CV_SEASONING>, <식초:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <참기름:CV_SEASONING>을 넣고 양념을 만든다.
+1. <당근잎:CV_INGREDIENT>은 깨끗한 물에 2~3회 씻어 준다.
+2. <씻은:CV_STATE> <당근잎:CV_INGREDIENT>은 채반에 받쳐 물기를 제거한다.
+6. <간장:CV_SEASONING>, <올리브오일:CV_SEASONING>, <식초:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣고 드레싱을 만든다.
+3. 깨끗한 물에 1~2회 씻는다.
+9. <데친:CV_STATE> <토마토:CV_INGREDIENT>는 얼음물에 담가 둔다.
+6. 물에 <식초:CV_SEASONING>를 넣어 식초물을 만들어 <브로콜리:CV_INGREDIENT>를 살짝 흔들어 씻고 깨끗한 물에 2~3회 정도 씻어 준다.
+7. <씻은:CV_STATE> <브로콜리:CV_INGREDIENT>는 물기를 제거한다.
+4. <식초물에 담근:CV_STATE> <미역:CV_INGREDIENT>은 깨끗한 물에 한번 씻는다.
+5. <씻은:CV_STATE> <미역:CV_INGREDIENT>은 깨끗한 물에 <10분:TI_DURATION> 정도 불려준다.
+9. <볶은:CV_STATE> <미역:CV_INGREDIENT>에 <된장:CV_SEASONING>을 넣고 <센 불:QT_TEMPERATURE>로 <2분:TI_DURATION> 정도 볶는다.
+3. 깨끗한 물에 2~3회 씻어 준다.
+4. <씻은:CV_STATE> <살구:CV_INGREDIENT>는 물기를 제거한다.
+7. <고추장:CV_SEASONING>, <고춧가루:CV_SEASONING>, <설탕:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣고 양념을 만든다.
+3. 깨끗한 물에 2~3회 씻어 준다.
+4. <씻은:CV_STATE> <살구:CV_INGREDIENT>는 물기를 제거한다.
+10. 끓어오르면 <약불:QT_TEMPERATURE>로 줄이고 <설탕에 버무린:CV_STATE> <살:CV_INGREDIENT>를 넣고 <5분:TI_DURATION> 정도 끓인다.
+4. <대파:CV_INGREDIENT>는 <송송:CV_STATE> 썬다.
+6. 도마에 <마른:CV_STATE> <라이스페이퍼:CV_INGREDIENT>를 <1장:QT_VOLUME>을 깔아준다.
+7. <라이스페이퍼:CV_INGREDIENT> <한장:QT_VOLUME>을 물을 묻혀 준다.
+2. <껍질을 벗긴:CV_STATE> <감자:CV_INGREDIENT>는 삶아준다.
+7. <삶은:CV_STATE> <감자:CV_INGREDIENT>는 으깨어 준다.
+8. <으깨어 놓은:CV_STATE> <감자:CV_INGREDIENT>에 <후춧가루:CV_SEASONING>, <소금:CV_SEASONING>을 넣고 섞는다.
+11. <크림치즈를 넣은:CV_STATE> <감자:CV_INGREDIENT>는 동그랗게 만든다.
+12. <동그랗게 만든:CV_STATE> <감자:CV_INGREDIENT>는 <밀가루:CV_INGREDIENT>, <계란물:CV_SEASONING>, <빵가루:CV_SEASONING> 순서대로 묻혀준다.
+14. <튀긴:CV_STATE> <고로케:CV_INGREDIENT>는 체반에 올려 <기름:CV_SEASONING>을 충분히 제거한다.
+4. <계란:CV_INGREDIENT><2개:QT_VOLUME>를 넣어서 잘 섞어주세요.
+5. <송송 썰어준:CV_STATE> <대파:CV_INGREDIENT>를 넣어서 한번더 볶아주세요.
+4. 버터를 두른후 <스테이크:CV_INGREDIENT>를 구워주세요.
+3. 유리볼에 <썰어둔:CV_STATE> <청포묵:CV_INGREDIENT>을 넣어주세요.
+6. <조미김:CV_INGREDIENT> <2장:QT_VOLUME>을 길게 채썰어서 넣어주세요.
+5. <대파:CV_INGREDIENT>,<다진:CV_STATE><마늘:CV_INGREDIENT>,<통깨:CV_SEASONING>,<참기름:CV_SEASONING>,<후춧가루:CV_SEASONING>를 넣어주세요.
+6. <밑간을 해둔:CV_STATE> <당면:CV_INGREDIENT>과 <야채:CV_INGREDIENT>들을 모두 잘 섞어주세요.
+7. <버무려둔:CV_STATE> <시금치:CV_INGREDIENT>를 넣어서 잘 섞어가면서 간을 맞춰주세요.
+3. 고슬고슬한 <밥:CV_INGREDIENT>에 <소금:CV_SEASONING>과 <참기름:CV_SEASONING>, <통깨:CV_SEASONING>를 넣어서 밑간을 해둡니다.
+2. <콩나물:CV_INGREDIENT> <1팩:QT_VOLUME>을 깨끗하게 씻어준후 물기를 빼주세요.
+5. <다진:CV_STATE><마늘:CV_INGREDIENT> <1스푼:QT_VOLUME>을 넣어주세요.
+2. <시금치:CV_INGREDIENT> <한단:QT_VOLUME>을 준비합니다.
+끓는물에 <소금:CV_SEASONING>을 약간 넣어서 <시금치:CV_INGREDIENT>를 <2분:TI_DURATION>간 삶아주세요.
+4. <통깨:CV_SEASONING>,<참기름:CV_SEASONING>,<다진:CV_STATE><마늘:CV_INGREDIENT>,<대파:CV_INGREDIENT>,<집간장:CV_SEASONING>을 넣어서 조물조물 버무려 주세요.
+4. <계란:CV_INGREDIENT> <1개:QT_VOLUME>를 넣어서 풀어가면서 함께 섞어주세요.
+5. <고춧가루:CV_SEASONING>,<다진:CV_STATE><마늘:CV_INGREDIENT>, <액젓:CV_SEASONING>, <통깨:CV_SEASONING>를 넣어주세요
+4. 후라이팬에 <기름:CV_SEASONING>을 두른후 <도토리묵:CV_INGREDIENT>을 올려주세요.
+4. <다진:CV_STATE><마늘:CV_INGREDIENT>과 <양파:CV_INGREDIENT>, <당근:CV_INGREDIENT>을 채썰어서 준비합니다.
+3. <계란:CV_INGREDIENT><2개:QT_VOLUME>를 풀어서 지단처럼 사각으로 붇쳐주세요.
+<다시마쌈:CV_INGREDIENT>-<계란:CV_INGREDIENT>-<양념해둔:CV_STATE><밥:CV_INGREDIENT>-<야채:CV_INGREDIENT> 순으로 올려주세요.
+7. 배추전이 완성이 되면 미리 만들어둔 <무채볶음:CV_INGREDIENT>을 올려서 돌돌돌 말아주세요.
+9. 미리 만들어둔 <양념장:CV_SEASONING>을 곁들여서 맛있게 드세요.
+그위에 <참치마요를 넣은:CV_STATE> <밥:CV_INGREDIENT>위에 올려서 돌돌돌 말아주세요.
+3. 준비한 <야채:CV_INGREDIENT>들을 모두 손질하여 먹기좋은 크기로 손으로 잘라서 볼에 담아주세요.
+3. <대파:CV_INGREDIENT>는 채썰어서 함께 볶아준후 <순대:CV_INGREDIENT>를 함께 넣어서 한소큼 더 볶아주세요.
+5. 미리만들어 놓은 <양념장:CV_SEASONING>을 함께 넣어주고 <물:CV_SEASONING> <50ml:QT_VOLUME>를 부어주세요.
+4. <들기름:CV_SEASONING> <2스푼:QT_VOLUME>을 넣어서 함께 볶아주세요.
+무가 어느정도 숨이 죽을때까지 저어가면서 볶아주세요.
+5. <밀가루:CV_SEASONING> <3스푼:QT_VOLUME>을 넣어주세요.
+재료들을 모두 잘 섞어주세요.
+후라이팬에 <기름:CV_SEASONING>을 두른후 <가지:CV_INGREDIENT>를 올려주세요.
+7. <썰어놓은:CV_STATE> <두부:CV_INGREDIENT>를 넣어주세요.
+4. <채썰어준:CV_STATE> <양파:CV_INGREDIENT>를 함께 넣어서 볶아주세요.
+3. <들기름:CV_SEASONING>을 두른후 <대파:CV_INGREDIENT>를 함께 볶아주세요.
+7. 후라이팬에 <기름:CV_SEASONING>을 약간 두른후 <계란:CV_INGREDIENT><2개:QT_VOLUME>를 풀어서 나머지 빈 공간에 둘러준후 <모짜렐라치즈:CV_INGREDIENT>를 솔솔 뿌려주세요.
+3. 양배추가 숨이 죽으면 <떡갈비:CV_INGREDIENT> <1팩:QT_VOLUME>을 넣어준후 으깨가면서 함께 볶아주세요.
+6. <계란:CV_INGREDIENT><2개:QT_VOLUME>를 풀어가면서 잘 섞어서 저어준후 <밥:CV_INGREDIENT>과 함께 볶아주세요.
+8. <구운:CV_STATE><두부:CV_INGREDIENT>가 식혀지는 동안에 양념장을 미리 만들어 둡니다.
+10. <다진:CV_STATE><마늘:CV_INGREDIENT>을 넣어서 함께 <양념장:CV_SEASONING>을 잘 섞이도록 저어주세요.
+12. <양념장:CV_SEASONING>에 <구운:CV_STATE><두부:CV_INGREDIENT>와 함께 넣어주세요.
+13. <구운:CV_STATE><두부:CV_INGREDIENT>와 <양념장:CV_SEASONING>을 넣어주세요.
+2. <양파:CV_INGREDIENT>와 <다진:CV_STATE><마늘:CV_INGREDIENT>을 넣어주고 함께 볶아주세요.
+3. <소고기다짐육:CV_INGREDIENT>을 넣어서 볶아준후 <고춧가루:CV_SEASONING>를 넣고,<팽이버섯:CV_INGREDIENT>,<느타리버섯:CV_INGREDIENT>을 함께 넣어서 잘 섞이도록 볶아줍니다.
+8. <매콤한:CV_STATE> <마파두부:CV_INGREDIENT>가 완성이 되었습니다.
+5. 후라이팬에 <기름:CV_SEASONING>을 넉넉하게 두른후 <대파:CV_INGREDIENT>를 넣어서 먼저 볶아준후 <썰어놓은:CV_STATE> <양파:CV_INGREDIENT>를 함께 볶아주세요.
+분쇄기에 <갈아놓은:CV_STATE> <감자:CV_INGREDIENT>와 <양배추:CV_INGREDIENT>를 넣어서 함께 잘 볶아주세요.
+7. <물:CV_SEASONING>을 자작하게 부어준후 끊여가면서 <썰어놓은:CV_STATE> <호박:CV_INGREDIENT>과 <두부:CV_INGREDIENT>는 으깨서 함께 넣어주세요.
+12. <호박잎:CV_INGREDIENT>은 바닥에 <하나:QT_VOLUME>씩 펼쳐주세요.
+14. <호박잎:CV_INGREDIENT>-<고기쌈장:CV_SEASONING>-<양념해놓은:CV_STATE><밥:CV_INGREDIENT>-돌돌 야무지게 말아주세요.
+16. <묵은지:CV_INGREDIENT>-<고기쌈장:CV_SEASONING>-<양념해놓은:CV_STATE><밥:CV_INGREDIENT>-돌돌 야무지게 여미듯 말아주세요.
+6. <깻잎:CV_INGREDIENT>을 <2장:QT_VOLUME>씩 올리고 미리 만들어둔 <양념장:CV_SEASONING>을 올려가면서 완성 시켜주세요.
+4. 후라이팬에 <기름:CV_SEASONING>을 두른후 <대파:CV_INGREDIENT>로 기름을 낸후 <밑간을 해둔:CV_STATE> <돼지고기:CV_INGREDIENT>를 넣어서 함께 볶아주세요.
+5. <얼갈이배추:CV_INGREDIENT>는 <된장:CV_SEASONING>과 <다진:CV_STATE><마늘:CV_INGREDIENT>을 넣어서 미리 조물조물 버무려 주세요.
+6. <쌀뜨물:CV_SEASONING>을 넣어준후 미리 양념해 놓은 재료들을 넣어서 보글보글 끊여주세요.
+4. 예쁜볼에 <토마토:CV_INGREDIENT>를 넣고 미리 만들어둔 <양념장:CV_SEASONING>을 넣어주세요.
+5. 볶아가면서 <채썰어놓은:CV_STATE> <당근:CV_INGREDIENT>을 넣어주세요.
+6. <채썬:CV_STATE> <양파:CV_INGREDIENT>를 넣어주세요.
+4. 후라이팬에 <들기름:CV_SEASONING> <2스푼:QT_VOLUME>을 두른후 <썰어놓은:CV_STATE> <김치:CV_INGREDIENT>를 넣어주세요.
+6. <깻잎:CV_INGREDIENT> <5장:QT_VOLUME>을 송송 썰어서 넣어주세요.
+7. <청양고추:CV_INGREDIENT> <3개:QT_VOLUME>를 송송 썰어서 준비합니다.
+4. <양파:CV_INGREDIENT> <2개:QT_VOLUME>를 채썰어서 <구운:CV_STATE><계란:CV_INGREDIENT>에 함께 노릇하게 볶아주세요.
+풍미를 위해 <고춧가루:CV_SEASONING> <1스푼:QT_VOLUME>을 넣어준후 <양파:CV_INGREDIENT>와 함께 잘 볶아주세요.
+5. <계란:CV_INGREDIENT>은 <2개:QT_VOLUME>를 스크램블해서 따로 준비합니다.
+6. <볶아놓은:CV_STATE> <야채:CV_INGREDIENT>들과 <부추:CV_INGREDIENT>를 함께 넣어서 섞어주세요.
+2. 냉장고에 숨어있는 <파프리카:CV_INGREDIENT>와 <대파:CV_INGREDIENT>를 다지기에 갈아서 준비합니다.
+3. <계란:CV_INGREDIENT><6개:QT_VOLUME>를 <3개:QT_VOLUME>만 <노른자:CV_INGREDIENT>를 분리해주고 나머지는 다지기에 <갈아둔:CV_STATE> <야채:CV_INGREDIENT>들과 함께 잘 섞어주세요.
+<소금:CV_SEASONING>으로 간을 해주세요.
+6. 볼에 <구운:CV_STATE><호박:CV_INGREDIENT>을 넣은후에 미리 만들어둔 <양념장:CV_SEASONING>을 넣어주세요.
+3. <들기름:CV_SEASONING> <2스푼:QT_VOLUME>을 넣어서 함께 볶아주세요.
+4. <당근:CV_INGREDIENT>,<양파:CV_INGREDIENT>를 넣어서 볶아주세요.
+6. <밀가루를 묻힌:CV_STATE> <호박:CV_INGREDIENT>을 넣어서 잘 반죽을 묻혀주세요.
+<다진:CV_STATE><마늘:CV_INGREDIENT>을 함께 넣어주세요.
+4. <다진:CV_STATE><마늘:CV_INGREDIENT>을 넣어서 함께 볶아주세요.
+5. <무:CV_INGREDIENT>와 <다진:CV_STATE><마늘:CV_INGREDIENT>이 어느정도 함께 볶아지면 <쌀뜨물:CV_SEASONING>을 넉넉하게 부어주세요.
+8. 수저를 이용해서 국물위에 떠있는것을 깔금하게 제거해주세요.
+4. <오이지:CV_INGREDIENT>의 짠맛은 <30분:TI_DURATION>간 담궈둔후 배보자기에 물기를 꽉 짜주세요.
+5. <고춧가루:CV_SEASONING>,<다진:CV_STATE><마늘:CV_INGREDIENT>,<매실액:CV_SEASONING>,<통깨:CV_SEASONING>,<대파:CV_INGREDIENT>,<참기름:CV_SEASONING>을 넣어주세요.
+6. <삶아놓은:CV_STATE> <국수:CV_INGREDIENT>를 넣어서 함께 버무려 주세요.
+2. <감자:CV_INGREDIENT><3개:QT_VOLUME>를 먹기좋은 크기로 썰어서 준비합니다.
+5. 미리 만들어둔 <양념장:CV_SEASONING>을 넣어서 함께 끓여주세요.
+2. <계란:CV_INGREDIENT>은 <5개:QT_VOLUME>를 풀어서 <소금:CV_SEASONING>으로 밑간을 한후 잘 풀어준후 앞뒤로 노릇하게 구워낸후 채썰어서 준비합니다.
+3. 당근을 채을 썰어준후 후라이팬에 <기름:CV_SEASONING>을 약간 두른후 <소금:CV_SEASONING>과 <후추:CV_SEASONING>를 넣어서 볶아주세요.
+6. <썰어놓은:CV_STATE> <베이컨:CV_INGREDIENT>을 넣어주세요.
+3. 끓는물에 <소금:CV_SEASONING>을 약간 넣어준후 <썰어놓은:CV_STATE> <오이:CV_INGREDIENT>에 부어준후 물기를 빼주세요.
+4. <끓는:CV_STATE><물:CV_SEASONING>을 부어준후 바로 물기를 뺀후 <소금:CV_SEASONING>을 조금만 넣어서 버무려주세요.
+6. <다진:CV_STATE><마늘:CV_INGREDIENT>,<고춧가루:CV_SEASONING>를 넣어주세요.
+8. 밑간을 <소금:CV_SEASONING>으로 해주세요.
+3. 후라이팬에 <참기름:CV_SEASONING>,<올리브오일:CV_SEASONING>을 넣어서 섞어준후 <다진:CV_STATE><마늘:CV_INGREDIENT>을 넣어서 잠시 볶아주세요.
+4. <채썰어놓은:CV_STATE> <양파:CV_INGREDIENT>를 넣어서 볶아주세요.
+5. <삶아놓은:CV_STATE> <브로콜리:CV_INGREDIENT>를 넣어서 볶아주세요.
+5. <밑간을 해둔:CV_STATE> <고구마줄기:CV_INGREDIENT>를 넣어주세요.
+5. <삶은:CV_STATE> <쪽파:CV_INGREDIENT>는 찬물에 헹구어 줍니다.
+7. <쪽파:CV_INGREDIENT>는 <2뿌리:QT_VOLUME>씩 돌돌 말아주세요.
+8. 재료들이 자작해지도록 <물:CV_SEASONING><2컵:QT_VOLUME> 불량을 넣어서 보글보글 끓여주세요.
+5. <데친:CV_STATE> <냉이:CV_INGREDIENT>를 찬물에 씻어줍니다.
+7. <냉이:CV_INGREDIENT>에 만들어준 <양념장:CV_SEASONING>을 넣어줍니다.
+6. <삶은:CV_STATE> <달걀:CV_INGREDIENT>을 넣어주어 완성.
+3. 고기 위에 <간장:CV_SEASONING>,<설탕:CV_SEASONING>,<맛술:CV_SEASONING>,<다진:CV_STATE><마늘:CV_INGREDIENT>,<매실청:CV_SEASONING>,<후추:CV_SEASONING>를 넣어줍니다.
+6. <양념된:CV_STATE> <고기:CV_SEASONING>에 <물:CV_SEASONING> <2.5컵:QT_VOLUME>(<500cc:QT_VOLUME>)을 넣어 고기가 다 익을때까지 끓여줍니다.
+8. <불려둔:CV_STATE> <당면:CV_INGREDIENT>을 넣어 당면이 익을때까지 끓여주어 완성. 
+이때 <소금:CV_SEASONING> <1티스푼:QT_VOLUME> 넣습니다.
+1. 팬에 <돼지고기:CV_INGREDIENT>,<대파흰부분:CV_INGREDIENT>,<다진:CV_STATE><마늘:CV_INGREDIENT>,<식용유:CV_SEASONING>,<맛소금:CV_SEASONING>,<후추:CV_SEASONING>를 넣어줍니다.
+3. <물:CV_SEASONING> <2컵:QT_VOLUME>을 넣어 고기가 다 익을때까지 끓여줍니다.
+2. <간장:CV_SEASONING>,<꿀:CV_SEASONING>,<설탕:CV_SEASONING>,<맛술:CV_SEASONING>,<다진:CV_STATE><마늘:CV_SEASONING>,<후추:CV_SEASONING>,<홍삼진액:CV_SEASONING>을 넣어 양념장을 만들어줍니다.
+4. <물:CV_SEASONING> <3컵:QT_VOLUME>을 넣어 <센불:QT_TEMPERATURE>에서 <40분:TI_DURATION>정도 끓여주어 완성.
+1. <고추가루:CV_SEASONING>,<까나리액젓:CV_SEASONING>,<올리고당:CV_SEASONING>,<다진:CV_STATE><마늘:CV_INGREDIENT>을 섞어 양념장을 만들어줍니다.
+4. 식용유 두른 팬에 <양파:CV_INGREDIENT>,<파프리카:CV_INGREDIENT>,<당근:CV_INGREDIENT>,<목이버섯:CV_INGREDIENT>,<햄:CV_INGREDIENT>을 넣고 <후추:CV_SEASONING>톡톡 <5번:QT_VOLUME>, <맛소금:CV_SEASONING> <0.5티스푼:QT_VOLUME>을 넣어줍니다.
+8. 팬에 <양념된:CV_STATE> <삼겹살:CV_INGREDIENT>을 올려줍니다.
+5. <불순물 제거한:CV_STATE> <닭:CV_INGREDIENT>에 <양념장:CV_SEASONING>을 부어 <3분:TI_DURATION>정도 <중불:QT_TEMPERATURE>에서 볶아줍니다.
+4. <갈은:CV_STATE> <감자:CV_INGREDIENT>를 채에 걸러줍니다.
+7. <전분:CV_SEASONING>과 <채에거른:CV_STATE> <감자:CV_INGREDIENT>를 섞어줍니다.
+6. <손질해둔:CV_STATE> <양파:CV_INGREDIENT>,<대파:CV_INGREDIENT>,<애호박:CV_INGREDIENT>,<새송이버섯:CV_INGREDIENT>을 넣어줍니다.
+1. <바나나:CV_INGREDIENT> <한개:QT_VOLUME>를 잘라 준비합니다.
+3. 우유에 <자른:CV_STATE> <바나나:CV_INGREDIENT>와 <블루베리:CV_INGREDIENT>를 넣어줍니다.
+2. 끓는물에 <소금:CV_SEASONING><1티스푼:QT_VOLUME>을 넣고 <콩나물:CV_INGREDIENT>을 넣어 <5분:TI_DURATION>정도 익혀줍니다.
+3. <손질한:CV_STATE> <오징어:CV_INGREDIENT>를 적당한 크기로 잘라줍니다.
+5. <오징어:CV_INGREDIENT>와 <잘라둔:CV_STATE> <야채:CV_INGREDIENT>, <콩나물:CV_INGREDIENT>을 볼에 넣어줍니다.
+7. 팬에 <양념한:CV_STATE> <오징어:CV_INGREDIENT>를 넣고 <중불:QT_TEMPERATURE>로 모든재료가 잘 익을때까지 익혀줍니다.
+9. 마지막으로 <불려둔:CV_STATE> <당면:CV_INGREDIENT>을 넣고 <당면:CV_INGREDIENT>이 익을때까지 볶아주어 완성.
+4. <고추장:CV_SEASONING>,<간장:CV_SEASONING>,<다진:CV_STATE><마늘:CV_INGREDIENT>을 넣어줍니다.
+2. 뚝배기에 <닭고기:CV_INGREDIENT>,<들기름:CV_SEASONING>,<고추가루:CV_SEASONING>,<간장:CV_SEASONING>,<다진:CV_STATE><마늘:CV_INGREDIENT>을 넣어 줍니다.
+4. <시판 곰탕육수:CV_SEASONING> <1팩:QT_VOLUME>과 <물:CV_SEASONING><1.5컵:QT_VOLUME>을 넣어줍니다.
+9. 이때 간을 보아 부족한 간을 맞추기 위해 <소금:CV_SEASONING><1티스푼:QT_VOLUME>을 넣습니다.
+1. <다진:CV_STATE><양배추:CV_INGREDIENT>,<다진:CV_STATE><당근:CV_INGREDIENT>,<으깬:CV_STATE> <스팸:CV_INGREDIENT>을 준비 해 줍니다.
+<스팸:CV_INGREDIENT>은 비닐에 넣어 손으로 눌러 으깨주시면 됩니다.
+5. <밥:CV_INGREDIENT> <2공기:QT_VOLUME>를 넣어줍니다.
+7. <치즈:CV_INGREDIENT> <한장:QT_VOLUME>을 넣고 치즈가 다 녹을때까지 볶아줍니다.
+8. 이때 부족한 간을 맞추기 위해 <간장:CV_SEASONING> <1T:QT_VOLUME> 넣습니다.
+6. <간장:CV_SEASONING>,<고추가루:CV_SEASONING>,<설탕:CV_SEASONING>,<맛술:CV_SEASONING>,<다진:CV_STATE><마늘:CV_INGREDIENT>,<후추:CV_SEASONING>를 넣어 양념장을 만들어줍니다.
+7. 뚝배기에 <물:CV_SEASONING><1.5종이컵:QT_VOLUME>(<300cc:QT_VOLUME>)를 넣은뒤 <양념장:CV_SEASONING>을 부어줍니다.
+1. <간장:CV_SEASONING>,<맛술:CV_SEASONING>,<설탕:CV_SEASONING>,<후추:CV_SEASONING>,<다진:CV_STATE><마늘:CV_INGREDIENT>을 넣어 양념장을 만들어 줍니다.
+2. <육우:CV_INGREDIENT>를 만들어둔 <양념장:CV_SEASONING>에 재워둡니다.
+4. <재워둔:CV_STATE> <육우:CV_INGREDIENT>를 후라이팬에 구워준 뒤 한김 식힙니다.
+5. <구운:CV_STATE> <육우:CV_INGREDIENT>를 잘게 잘라 준비합니다.
+6. <달걀:CV_INGREDIENT>에 <맛소금:CV_SEASONING><0.8티스푼:QT_VOLUME>을 넣어 잘 풀어줍니다.
+10. 밥에 <참기름:CV_SEASONING><1T:QT_VOLUME>, <맛소금:CV_SEASONING><0.8티스푼:QT_VOLUME>을 넣어 잘 섞어줍니다.
+11. <김:CV_INGREDIENT>에 <양념된:CV_STATE> <밥:CV_INGREDIENT>을 얇게 잘 펴준뒤, <달걀말이:CV_INGREDIENT>를 속에 넣어줍니다.
+4. <핏기 제거한:CV_STATE> <돼지갈비:CV_INGREDIENT>를 <5분:TI_DURATION>정도 끓여 불순물을 제거 해 줍니다.
+6. <물:CV_SEASONING> <5종이컵:QT_VOLUME>(<1000cc:QT_VOLUME>)과 <맛술:CV_SEASONING>을 넣어 <30분:TI_DURATION>정도 끓여줍니다.
+끓는 중간중간에 뒤적여 주고, 거품은 마지막에 거두어줍니다.
+3. <간장:CV_SEASONING>, <까나리액젓:CV_SEASONING>, <맛술:CV_SEASONING>, <고추가루:CV_SEASONING>, <설탕:CV_SEASONING>, <다진:CV_STATE><마늘:CV_INGREDIENT>을 넣어 양념장을 만들어줍니다.
+2. 믹서에 <잘라둔:CV_STATE> <복숭아:CV_INGREDIENT>를 넣어줍니다.
+6. <잡내 제거한:CV_STATE> <닭똥집:CV_INGREDIENT>은 칼집을 넣어가며 적당한 크기로 잘라줍니다.
+3. <닭:CV_INGREDIENT> 안에 <찹쌀:CV_INGREDIENT><3줌:QT_VOLUME>,<마늘:CV_INGREDIENT><10알:QT_VOLUME>을 넣어 채워 줍니다.
+1. <건:CV_STATE> <표고버섯:CV_INGREDIENT>은 물에 불려둡니다.
+4. 냄비에 <무:CV_INGREDIENT>를 깔고 <물:CV_SEASONING><2종이컵:QT_VOLUME>, <양파:CV_INGREDIENT>,<대파:CV_INGREDIENT>,<청양고추:CV_INGREDIENT>,<다진:CV_STATE><마늘:CV_INGREDIENT>을 넣어줍니다.
+2. <차가운:CV_STATE> <생수:CV_SEASONING> <3종이컵:QT_VOLUME>에 <소금:CV_SEASONING>,<설탕:CV_SEASONING>,<식초:CV_SEASONING>를 넣어 잘 저어줍니다.
+3. <썰어둔:CV_STATE> <오이:CV_INGREDIENT>,<청양고추:CV_INGREDIENT>를 넣어줍니다.
+1. <달걀:CV_INGREDIENT><2개:QT_VOLUME>를 준비합니다.
+2. <맛소금:CV_SEASONING><0.5티스푼:QT_VOLUME>, <후추:CV_SEASONING>를 넣어줍니다.
+3. <쌀뜨물:CV_SEASONING> <5종이컵:QT_VOLUME>을 준비합니다.
+4. <부추:CV_INGREDIENT> 풋내가 나지 않도록 숟가락 두개로 살살 버무려줍니다.
+2. <데친:CV_STATE> <원추리:CV_INGREDIENT>는 찬물에 씻어 물기를 꽉 짜줍니다.
+4. <물:CV_SEASONING>2.<5종이컵:QT_VOLUME>,<김치국물:CV_SEASONING>,<설탕:CV_SEASONING>,<고추가루:CV_SEASONING>,<간장:CV_SEASONING>을 넣어줍니다.
+5. 식용유 3T를 두른 팬에 <대파:CV_INGREDIENT>,<다진:CV_STATE><마늘:CV_INGREDIENT>을 넣고 파향이 올라올 때까지 볶아줍니다.
+6. <굴소스:CV_SEASONING>를 <3T:QT_VOLUME> 넣어줍니다.
+7. <고추가루:CV_SEASONING> <3T:QT_VOLUME> 넣어 <1분:TI_DURATION>여 볶아줍니다.
+9. <물:CV_SEASONING> <7종이컵:QT_VOLUME>을 부어주고 <간장:CV_SEASONING><2T:QT_VOLUME>,<맛술:CV_SEASONING><3T:QT_VOLUME>을 더해 줍니다.
+11. <콩나물:CV_INGREDIENT>,<청경채:CV_INGREDIENT>,<버섯:CV_INGREDIENT>,<청양고추:CV_INGREDIENT>,<후추:CV_SEASONING>를 넣어 콩나물이 익을때까지 끓여주어 완성.
+2. <식용유:CV_SEASONING>,<대파:CV_INGREDIENT>,<다진:CV_STATE><마늘:CV_INGREDIENT>을 넣고 파향이 올라올때까지 볶아줍니다.
+7. <물:CV_SEASONING><2종이컵:QT_VOLUME>, <까나리액젓:CV_SEASONING>을 넣어 한소끔 끓여줍니다.
+3. 볼에 <자른:CV_STATE> <달래:CV_INGREDIENT>와 <양념장:CV_SEASONING>을 넣어줍니다.
+2. <물:CV_SEASONING><6종이컵:QT_VOLUME>에 <다시마:CV_INGREDIENT>를 넣고 <5분:TI_DURATION>간 끓인뒤 <다시마:CV_INGREDIENT>는 꺼내줍니다.
+4. <고추가루:CV_SEASONING>,<맛술:CV_SEASONING>,<다진:CV_STATE><마늘:CV_INGREDIENT>,<간장:CV_SEASONING>,<아욱:CV_INGREDIENT>,<건새우:CV_INGREDIENT>를 넣어 <중불:QT_TEMPERATURE>로 끓여줍니다.
+2. 뚝배기에 <물:CV_SEASONING> 또는 <육수:CV_SEASONING><1.5종이컵:QT_VOLUME>을 넣고 <된장:CV_SEASONING>과 <고추장:CV_SEASONING>을 풀어줍니다.
+6. 팬에 <양념된:CV_STATE> <오징어:CV_INGREDIENT>와 <채소:CV_INGREDIENT>를 넣어 모든재료가 익을때까지 <중불:QT_TEMPERATURE>에서 익혀주어 완성.
+3. <물:CV_SEASONING><3종이컵:QT_VOLUME>, <닭:CV_INGREDIENT>,<설탕:CV_SEASONING>,<맛술:CV_SEASONING>,<간장:CV_SEASONING>,<고추가루:CV_SEASONING>,<다진:CV_STATE><마늘:CV_INGREDIENT>을 넣고 <중불:QT_TEMPERATURE>에서 <30분:TI_DURATION>여 끓여줍니다.
+5. <불린:CV_STATE> <당면:CV_INGREDIENT>을 넣고 당면이 익을 때까지 끓여줍니다.
+이때 간을보아 부족한 간을 맞추기 위해 <꽃소금:CV_SEASONING> <0.5티스푼:QT_VOLUME> 넣습니다.
+7. <소스를 바른:CV_STATE> <빵:CV_INGREDIENT> 사이에 <양상추:CV_INGREDIENT>,<토마토:CV_INGREDIENT>, <치즈:CV_INGREDIENT>, <계란후라이:CV_INGREDIENT>, <스팸:CV_INGREDIENT>을 올려주어 완성.
+3. <돼지고기:CV_INGREDIENT>를 넣고 <후추:CV_SEASONING>,<맛소금:CV_SEASONING>,<맛술:CV_SEASONING>을 더해 고기가 다 익을 때까지 볶아줍니다.
+2. <데친:CV_STATE><떡:CV_INGREDIENT>은 건져내어 한김 식힙니다.
+5. <고추장:CV_SEASONING>,<케찹:CV_SEASONING>,<설탕:CV_SEASONING>,<간장:CV_SEASONING>,<다진:CV_STATE><마늘:CV_INGREDIENT>,<후추:CV_SEASONING>를 넣어 양념장을 만들어줍니다.
+7. <구운:CV_STATE><떡:CV_INGREDIENT>에 <양념:CV_SEASONING>을 고루 입혀주어 완성.
+2. <간장:CV_SEASONING>,<설탕:CV_SEASONING>,<고추가루:CV_SEASONING>,<다진:CV_STATE><마늘:CV_INGREDIENT>,<다진:CV_SEASONING><대파:CV_INGREDIENT>,<들기름:CV_SEASONING>,<들깨가루:CV_SEASONING>를 넣어 양념장을 만들어줍니다.
+5. <양념장:CV_SEASONING>을 <0.5T:QT_VOLUME>정도씩 <두부:CV_INGREDIENT>위에 올려줍니다.
+8. 모든 재료가 익을때까지 끓여준뒤 간을보아 <꽃소금:CV_SEASONING>으로 부족한 간을 맞춥니다.
+3. <물:CV_SEASONING><4종이컵:QT_VOLUME>을 넣어 한소끔 끓여줍니다.
+5. <자른:CV_STATE> <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>를 넣어줍니다.
+2. <간장:CV_SEASONING>,<굴소스:CV_SEASONING>,<맛술:CV_SEASONING>,<설탕:CV_SEASONING>,<다진:CV_STATE><마늘:CV_INGREDIENT>을 넣어 잘 섞어줍니다.
+2. 팬에 <잘라둔:CV_STATE> <채소:CV_INGREDIENT>와 <물:CV_SEASONING>,<식초:CV_SEASONING>,<설탕:CV_SEASONING>,<꽃소금:CV_SEASONING>,<후추:CV_SEASONING>,<계피가루:CV_SEASONING>,<월계수잎:CV_SEASONING>을 넣어줍니다.
+1. 식용유 약간 두른 팬에 <잘게썬:CV_STATE> <대파:CV_INGREDIENT>,<다진:CV_STATE><마늘:CV_INGREDIENT>,<다짐육:CV_INGREDIENT>,<후추:CV_SEASONING>,<맛소금:CV_SEASONING><0.5티스푼:QT_VOLUME>을 넣어줍니다.
+3. <밥:CV_INGREDIENT><6공기:QT_VOLUME>에 <볶은:CV_STATE><고기:CV_INGREDIENT>를 넣고 <들기름:CV_SEASONING><3T:QT_VOLUME>,<간장:CV_SEASONING><2T:QT_VOLUME>을 넣어 섞어줍니다.
+1. <고추장아찌:CV_INGREDIENT>를 준비 해 줍니다.
+<큰:CV_STATE> <고추:CV_INGREDIENT>는 이등분 해 주었습니다.
+3. <칼집 낸:CV_STATE> <소세지:CV_INGREDIENT>를 준비 해 줍니다.
+8. <썰어 놓은:CV_STATE> <삼겹살:CV_INGREDIENT>을 접시에 담고 <부추겉절이:CV_INGREDIENT>를 곁들여냅니다
+3. <꼬막:CV_INGREDIENT>을 삶을 때에는.. 냄비에 <물:CV_SEASONING>을 부은 후 팔팔 끓으며 찬물을 <두.세컵:QT_VOLUME> 정도 부어줍니다.
+팔팔 끓는 물에 <꼬막:CV_INGREDIENT>을 넣으면 입이 다 벌어지고 살이 질겨진답니다.
+4. 불을 <약불:QT_TEMPERATURE>로 줄여서 <꼬막:CV_INGREDIENT>을 넣고 냄비 뚜껑을 덮어 준 다음 <2~3분:TI_DURATION> 정도 지나 거품이 하나, 둘 생기면 꼬막을 하나 까서 익은 상태를 확인해줍니다.
+9. <썰어놓은:CV_STATE> <미나리:CV_INGREDIENT>, <느타리버섯:CV_INGREDIENT>, <양파:CV_INGREDIENT>, <당근:CV_INGREDIENT>, <파프리카:CV_INGREDIENT>, <꼬막살:CV_INGREDIENT>을 넣고 반죽을 합니다.
+10. 달군 프라이팬에 <식용유:CV_SEASONING>를 두르고 반죽을 <한 수저:QT_VOLUME>씩 떠 넣으면서 앞뒤로 노릇노릇하게 부쳐줍니다.
+3. <씻어 놓은:CV_STATE> <곡물:CV_INGREDIENT>에 <검은콩:CV_INGREDIENT>, <붉은팥:CV_INGREDIENT>을 넣고 물에 헹구어서 밥솥에 담은 후 <소금:CV_SEASONING>을 약간 넣고 <밥:CV_INGREDIENT>을 지어요.
+2. 냄비에 <물:CV_SEASONING>을 적당량 붓고 <핏물을 제거한:CV_STATE> <한우국거리:CV_INGREDIENT>를 넣어 냄비 뚜껑을 덮고 푹 삶아줍니다. 
+4. <느타리버섯:CV_INGREDIENT>은 <조선간장:CV_SEASONING>, <고춧가루:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <참기름:CV_SEASONING>을 넣고 조물조물 무쳐줍니다. 
+<숙주나물:CV_INGREDIENT>은 삶아서 흐르는 물에 헹구어 물기를 제거하고 <조선간장:CV_SEASONING>, <고춧가루:CV_SEASONING>,<다진:CV_STATE> <마늘:CV_INGREDIENT>, <참기름:CV_SEASONING> 넣고 무쳐줍니다.
+6. 분량의 양념장 재료 <조선간장:CV_SEASONING>, <물:CV_SEASONING>, <고춧가루:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣어 고루 섞어줍니다.
+7. <고기:CV_INGREDIENT> <삶은:CV_STATE> <육수:CV_SEASONING>에 <양념:CV_SEASONING><한:CV_STATE> <고사리나물:CV_INGREDIENT>, <토란대나물:CV_INGREDIENT>, <숙주나물:CV_INGREDIENT>, <느타리버섯:CV_INGREDIENT>을 넣고 끓여줍니다.
+9. <썰어 놓은:CV_STATE> <대파:CV_INGREDIENT>를 넣고 끓인 후 <소금:CV_SEASONING>으로 간을 맞춰주고 불에서 내려요.
+1. <손질한:CV_STATE> <아귀:CV_INGREDIENT>는 엷은 소금물에 깨끗하게 씻은 후 토막 내어 냄비에 담고 <물:CV_SEASONING>을 부은 후 <된장:CV_SEASONING>, <대파:CV_INGREDIENT>, <통후추:CV_INGREDIENT>를 넣고 삶아줍니다. 
+5. 분량의 양념장 재료 <진간장:CV_SEASONING>, <조선간장:CV_SEASONING>, <고춧가루:CV_SEASONING>, <맛술:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <생강가루:CV_SEASONING>, <멸치다시마국물:CV_SEASONING>을 넣어 고루 섞어줍니다. 
+1. <냉동된:CV_STATE> <동태포:CV_INGREDIENT>는 해동시켜줍니다.
+2. <해동시킨:CV_STATE> <동태포:CV_INGREDIENT>는 <소금:CV_SEASONING>과 <후춧가루:CV_SEASONING>를 솔솔 뿌려 밑간을 해 줍니다.
+4. <다시마:CV_INGREDIENT>와 <다시 멸치:CV_INGREDIENT>를 건져 낸 <멸치다시마국물:CV_SEASONING>에 <된장:CV_SEASONING>을 풀어줍니다.
+6. <썰어 놓은:CV_STATE> <대파:CV_INGREDIENT>와 <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣고 끓인 후 불에서 내려요. 
+7. <봄동된장국:CV_INGREDIENT>을 대접에 담고 고명으로 <썰어 놓은:CV_STATE> <대파:CV_INGREDIENT>를 얹어냅니다.
+1. 한돈 돼지고기 등심은 잡채용으로 준비해서 <맛술:CV_SEASONING>과 <천일염:CV_SEASONING>, <후춧가루:CV_SEASONING>를 뿌려 조물조물 버무려서 밑간 해 둡니다.
+5. 갖은 <채소:CV_INGREDIENT>를 볶고 난 달군 프라이팬에 <밑간 해둔:CV_STATE> <돼지고기:CV_INGREDIENT>를 넣고 볶아줍니다.
+6. <볶은:CV_STATE> <대파:CV_INGREDIENT>, <느타리버섯:CV_INGREDIENT>, <표고버섯:CV_INGREDIENT>, <봄동:CV_INGREDIENT>, <당근:CV_INGREDIENT>, <돼지고기:CV_INGREDIENT>를 볼에 담아줍니다.
+8. 준비된 <당면:CV_INGREDIENT>, <채 썬:CV_STATE> <마늘:CV_INGREDIENT>, <양조간장:CV_SEASONING>, <설탕:CV_SEASONING>, <후춧가루:CV_SEASONING>, <통깨:CV_SEASONING>를 넣어 조물조물 버무려줍니다.
+5. 꼬치에 <썰어 놓은:CV_STATE> <새송이버섯:CV_INGREDIENT>, <대파:CV_INGREDIENT>, <크래미:CV_INGREDIENT>, <대파:CV_INGREDIENT>, <햄:CV_INGREDIENT> 순으로 끼워줍니다.
+4. 볼에 <양조간장:CV_SEASONING>, <고추장:CV_SEASONING>, <매실액:CV_SEASONING>, <맛술:CV_SEASONING>, <올리고당:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <후춧가루:CV_SEASONING>를 넣어 고루 섞어줍니다.
+5. <썰어 놓은:CV_STATE> <돼지고기:CV_INGREDIENT>와 <대파:CV_INGREDIENT>를 넣어 간이 고루 배도록 버무려서 냉장실에서 <30분:TI_DURATION> 정도 숙성시켜 줍니다.
+2. <애호박:CV_INGREDIENT>은 <천일염:CV_SEASONING>을 뿌려 절여 주고 간이 고루 배도록 중간에 한 두 번 정도 섞어줍니다. 
+<절여진:CV_STATE> <애호박:CV_INGREDIENT>은 체에 밭쳐 흐르는 물에 씻은 후 물기를 제거해줍니다.
+2. <돼지고기 다짐육:CV_INGREDIENT>은 볼에 담고 <당근:CV_INGREDIENT>, <깻잎:CV_INGREDIENT>, <다진:CV_STATE> <파:CV_INGREDIENT>, <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣어 줍니다.
+3. 분량의 양념 재료 <양조간장:CV_SEASONING>, <고춧가루:CV_SEASONING>, <올리고당:CV_SEASONING>, <맛술:CV_SEASONING>, <다진:CV_STATE> <파:CV_INGREDIENT>, <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣어 고루 섞어줍니다.
+4. 프라이팬에 <손질한:CV_STATE> <우럭:CV_STATE>을 담고 <양념:CV_SEASONING>을 끼 얹은 다음 양념 그릇에 <물:CV_SEASONING>을 붓고 흔들어서 프라이팬 바닥에 부은 후 프라이팬 뚜껑을 덮고 조리합니다.
+1. <굴:CV_INGREDIENT>은 <연한 소금물:CV_SEASONING>에 으깨어지지 않도록 살살 주물러서 껍질을 제거하고 찬물에 두 번 정도 헹구어 체에 밭쳐 물기를 빼줍니다.
+2. 맛있게 <익은:CV_STATE> <김장김치:CV_INGREDIENT>는 먹기 좋은 크기로 썰어줍니다.
+4. <김치:CV_INGREDIENT>와 <씻어 놓은:CV_STATE> <굴:CV_INGREDIENT>을 넣고 고루 섞어줍니다. 
+5. 달군 프라이팬에 <식용유:CV_SEASONING>를 넉넉하게 두르고 반죽을 <한 수저:QT_VOLUME>씩 떠 넣으면서 앞뒤로 노릇노릇하게 부쳐줍니다.
+5. <멸치다시다국물:CV_INGREDIENT>의 건더기를 건져내고 <썰어 놓은:CV_STATE> <무:CV_INGREDIENT>를 넣고 끓여줍니다.
+6. <무:CV_INGREDIENT>가 투명해지면 <씻어 놓은:CV_STATE> <굴:CV_INGREDIENT>을 넣고 끓여줍니다.
+7. <대파:CV_INGREDIENT>와 <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣고 한소끔 끓인 후 <천일염:CV_SEASONING>으로 간을 맞춰 주고 불에서 내려요.
+4. <채 썬:CV_STATE> <무:CV_INGREDIENT>, <봄동:CV_INGREDIENT>, <사과:CV_INGREDIENT>는 볼에 담아줍니다.
+6. <대파:CV_INGREDIENT>, <멸치액젓:CV_SEASONING>, <매실액:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <통깨:CV_SEASONING>를 넣고 간이 고루 배도록 살살 버무리듯 무쳐줍니다.
+6. <멸치를 건져 낸:CV_STATE> <멸치다시마국물:CV_SEASONING>에 <무:CV_INGREDIENT>를 넣고 끓여줍니다.
+5. 분량의 양념장 재료 <진간장:CV_SEASONING>, <매실액:CV_SEASONING>, <고춧가루:CV_SEASONING>, <다진:CV_STATE> <파:CV_INGREDIENT>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <설탕:CV_SEASONING>, <통깨:CV_SEASONING>, <참기름:CV_SEASONING>을 넣어 고루 섞어줍니다.
+3. 달군 프라이팬에 <식용유:CV_SEASONING>를 두르고 <채 썬:CV_STATE> <마늘:CV_INGREDIENT>을 넣고 볶은 후 <감자채:CV_INGREDIENT>를 넣고 볶아줍니다.
+5. <썰어 놓은:CV_STATE> <대파:CV_INGREDIENT>를 넣고 볶아줍니다.
+9. <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣고 <새우젓:CV_SEASONING>으로 간을 맞춰 한소끔 끓인 후 불에서 내려요.
+3. <홍합:CV_INGREDIENT>은 손질한 다음 냄비에 넣어 <물:CV_SEASONING>을 붓고 삶아서 <홍합살:CV_INGREDIENT>을 빼줍니다.
+6. 달군 냄비에 <참기름:CV_SEASONING>을 두르고 충분히 <불린:CV_STATE> <멥쌀:CV_INGREDIENT>과 <현미찹쌀:CV_INGREDIENT>을 넣어 볶아줍니다.
+7. <홍합살:CV_INGREDIENT>을 넣고 볶다가 <홍합 삶은 국물:CV_SEASONING>을 붓고 저으면서 끓여줍니다.
+9. <쌀:CV_INGREDIENT>이 부드럽게 퍼지면 <송송 썬:CV_STATE> <대파:CV_INGREDIENT>를 넣고 저으면서 끓여줍니다.
+3. 달군 프라이팬에 <식용유:CV_SEASONING>를 두르고 <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣고 볶아줍니다.
+4. <썰어 놓은:CV_STATE> <어묵:CV_INGREDIENT>을 넣고 볶아줍니다.
+6. <양조간장:CV_SEASONING>을 넣고 볶은 후 <맛술:CV_SEASONING>을 넣고 볶아줍니다.
+4. <삶은:CV_INGREDIENT> <홍합:CV_INGREDIENT>은 껍질에서 홍합살을 빼줍니다.
+6. 분량의 양념장 재료 <진간장:CV_SEASONING>, <고추장:CV_SEASONING>, <고춧가루:CV_SEASONING>, <매실액:CV_SEASONING>, <올리고당:CV_SEASONING>, <식초:CV_SEASONING>, <통깨:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣어 고루 섞어줍니다. <참기름:CV_SEASONING>은 마지막에 넣어 주려고 <양념장:CV_SEASONING>에 넣지 않았어요.
+5. <돼지고기:CV_INGREDIENT>가 먹기 좋게 익으면 <대파:CV_INGREDIENT>와 <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣고 한소끔 끓여줍니다.
+7. <돼지고기김치찌개:CV_INGREDIENT>를 그릇에 담고 고명으로 <어슷 썬:CV_STATE> <대파:CV_INGREDIENT>를 얹어냅니다.
+5. 달군 프라이팬에 <식용유:CV_SEASONING>를 두르고 <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣고 볶다가 <돼지고기:CV_INGREDIENT>를 넣어 볶아줍니다.
+7. <채 썬:CV_STATE> <파프리카:CV_INGREDIENT>를 넣고 볶다가 <대파:CV_INGREDIENT>를 넣고 볶아줍니다.
+8. <달걀 물:CV_SEASONING>을 붓고 끓인 후 <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣고 <새우젓:CV_SEASONING>으로 간을 맞춘 다음 한소끔 끓인 후 불에서 내려요.
+9. <황태국:CV_INGREDIENT>을 그릇에 담고 고명으로 <어슷 썬:CV_STATE> <대파:CV_INGREDIENT>를 얹어냅니다.
+2. <구운:CV_STATE> <김:CV_INGREDIENT>은 잘라서 위생봉지에 넣고 곱게 부수어줍니다.
+<삶은:CV_STATE> <콩나물:CV_INGREDIENT>을 볼에 담고 <대파:CV_INGREDIENT>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <고춧가루:CV_SEASONING>, <천일염:CV_SEASONING>, <깨소금:CV_SEASONING>을 넣어 간이 고루 배도록 조물조물 무쳐 주고 마지막으로 <참기름:CV_SEASONING>을 넣어 무쳐줍니다.
+5. 프라이팬을 달군 후 <약한 불:QT_TEMPERATURE>로 줄여서 <재래 돌김:CV_INGREDIENT>을 바삭바삭하게 구워줍니다. <김:CV_INGREDIENT>은 두 장씩 구웠습니다..
+6. <구운:CV_STATE> <김:CV_INGREDIENT>은 잘라서 위생봉지에 넣고 곱게 부수어줍니다.
+7. <썰어 놓은:CV_STATE> <달래:CV_INGREDIENT>는 볼에 담고 <양념장:CV_SEASONING>을 <1/2:QT_VOLUME>정도 넣어 살살 버무려줍니다.
+3. <썰어 놓은:CV_STATE> <단감:CV_INGREDIENT>은 볼에 담고 <고춧가루:CV_SEASONING>를 넣어 고루 버무려줍니다. <고춧가루:CV_SEASONING>를 먼저 넣고 버무리면 <고춧가루:CV_SEASONING>가 겉돌지 않아서 좋아요.
+4. <새우젓:CV_SEASONING>, <쪽파:CV_INGREDIENT>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <다진:CV_STATE> <생강:CV_SEASONING>, 소량의 <천일염:CV_SEASONING>을 넣고 간이 고루 배도록 버무려줍니다.
+4. 달군 프라이팬에 <식용유:CV_SEASONING>를 두르고 <다진:CV_STATE> <마늘:CV_INGREDIENT>과 <양파:CV_INGREDIENT>를 넣고 볶다가 <방울토마토:CV_INGREDIENT>를 넣어줍니다.
+2. <달걀:CV_INGREDIENT>은 그릇에 풀어서 달걀 물을 만들어 줍니다.
+<씻어 놓은:CV_STATE> <굴:CV_INGREDIENT>은 <밀가루:CV_INGREDIENT>와 <달걀 물:CV_SEASONING> 순으로 튀김 옷을 입혀줍니다.
+4. 오복한 프라이팬을 달구어 <식용유:CV_SEASONING>를 붓고 <170도:QT_TEMPERATURE>씨 온도에서 <밀가루:CV_INGREDIENT>, <달걀 물:CV_SEASONING>, <파슬리가루:CV_SEASONING>, <빵가루:CV_SEASONING>로 <튀김 옷을 입힌:CV_STATE> <굴:CV_INGREDIENT>을 넣고 바삭바삭하게 튀겨줍니다.
+4. 분량의 양념 재료 <고추장:CV_SEASONING>, <진간장:CV_SEASONING>, <케찹:CV_SEASONING>, <매실액:CV_SEASONING>, <올리고당:CV_SEASONING>, <맛술:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣고 보글보글 끓여줍니다.
+5. <튀겨 낸:CV_STATE> <자반고등어:CV_INGREDIENT>를 넣어 버무리듯 <양념:CV_SEASONING>을 고루 묻혀 주고 불에서 내려요.
+<게:CV_INGREDIENT>를 찔 때 물 속에 <맥주:CV_SEASONING>를 조금 붓고 쪄 주었어요.
+5. 그릇에 <따뜻한:CV_STATE> <밥:CV_INGREDIENT>을 담고 <새싹채소:CV_INGREDIENT>와 <어린잎채소:CV_INGREDIENT> 돌려 담은 후 <게살:CV_INGREDIENT>을 얹어냅니다.
+<밥:CV_INGREDIENT>은 <햅쌀:CV_INGREDIENT>과 <찹쌀현미:CV_INGREDIENT>, <흑미:CV_INGREDIENT>를 넣어서 지은 <밥:CV_INGREDIENT>입니다.
+3. <썰어 놓은:CV_STATE> <사과:CV_INGREDIENT>를 볼에 담고 <고춧가루:CV_SEASONING>를 넣어 고루 버무려줍니다.
+4. <쪽파:CV_INGREDIENT>, <새우젓:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <다진:CV_STATE> <생강:CV_SEASONING>, <천일염:CV_SEASONING>을 넣고 간이 고루 배도록 버무려줍니다.
+2. 달군 프라이팬에 <식용유:CV_SEASONING>를 두르고 <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣어 볶아줍니다.
+3. <썰어 놓은:CV_STATE> <표고버섯:CV_INGREDIENT>을 넣어 볶다가 <천일염:CV_SEASONING>으로 간을 맞춰 주고 불에서 내려요.
+5. <대파:CV_INGREDIENT>를 넣고 한소끔 끓인 후 <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣고 <조선간장:CV_SEASONING>과 <소금:CV_SEASONING>으로 간을 맞춰 주고 불에서 내려요.
+5. 달군 프라이팬에 <식용유:CV_SEASONING>를 두르고 <달걀옷을 입힌:CV_STATE> <밥:CV_INGREDIENT>을 넣어 앞뒤로 노릇노릇하게 부쳐줍니다.
+2. <채 썬:CV_STATE> <고구마:CV_INGREDIENT>는 찬물에 <10분:TI_DURATION>정도 담가줍니다.
+2. 달군 프라이팬에 <식용유:CV_SEASONING>를 적당량 붓고 <180도:QT_TEMPERATURE>씨로 가열한 다음 <썰어둔:CV_STATE> <고구마:CV_INGREDIENT>를 넣어 노릇노릇하게 튀겨줍니다.
+3. 접시에 키친타월을 깔고 <튀겨 낸:CV_STATE> <호박고구마:CV_INGREDIENT>를 건져냅니다.
+5. <튀겨 낸:CV_STATE> <호박고구마:CV_SEASONING>를 <시럽:CV_SEASONING>에 넣고 재빨리 버무려줍니다.
+3. <절인:CV_STATE> <무:CV_INGREDIENT>는 찬물에 헹구어 체에 밭쳐 물기를 제거하고 <고춧가루:CV_SEASONING> <1큰술:QT_VOLUME>을 넣어 고루 버무려줍니다. 먼저, <고춧가루:CV_SEASONING>로 <무:CV_INGREDIENT>를 버무려 주면 <고춧가루:CV_SEASONING>가 겉돌지 않아서 좋아요.
+4. 3의 <오징어:CV_INGREDIENT>, <대파:CV_INGREDIENT>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <멸치액젓:CV_SEASONING>, <매실액:CV_SEASONING>, <통깨:CV_SEASONING>, 나머지 <고춧가루:CV_SEASONING>를 넣고 간이 고루 배도록 조물조물 무쳐 주고 <참기름:CV_SEASONING>을 넣어 다시 한 번 무쳐줍니다.
+5. <구운:CV_STATE> <돌김:CV_INGREDIENT>에 <밥:CV_INGREDIENT>을 넣어 돌돌 말아줍니다.
+4. 달군 프라이팬에 <식용유:CV_SEASONING>를 붓고 <170도:QT_TEMPERATURE>씨 온도에서 <튀김 옷을 입힌:CV_STATE> <가지:CV_INGREDIENT>를 넣어 노릇노릇하게 튀겨줍니다.
+7. <튀겨 낸:CV_STATE> <가지:CV_INGREDIENT>를 접시에 담고 <소스:CV_SEASONING>를 끼얹어 냅니다.
+3. 팬에 <식용유:CV_SEASONING> <2T:QT_VOLUME> 두르고 <다진:CV_STATE><파:CV_INGREDIENT> 한웅큼 넣어 <약불:QT_TEMPERATURE>에서 파기름을 만들어 주세요.
+4. 그 다음 <센불:QT_TEMPERATURE>에서 <당면:CV_INGREDIENT>과 <물:CV_SEASONING> <1/3컵:QT_VOLUME>을 넣어주세요.
+5. 그 다음 <중불:QT_TEMPERATURE>에서 <양송이 버섯:CV_INGREDIENT> 넣어 약 <1분:TI_DURATION>간 볶아주세요.
+7. <물:CV_SEASONING> <1컵:QT_VOLUME> 넣어 <센불:QT_TEMPERATURE>에서 약 <2분:TI_DURATION>간 끓여주세요.
+3. <달걀물:CV_SEASONING>에 <다진:CV_STATE> <채소:CV_INGREDIENT>를 모두 넣어 잘 섞어주세요.
+2. 깨끗이 <씻은:CV_STATE> <상추:CV_INGREDIENT>는 물기를 털고 볼에 먹기 좋은 크기로 찢어 넣어주세요.
+2. 팬에 <식용유:CV_SEASONING> <1T:QT_VOLUME> 두르고 <다진:CV_SEASONING><파:CV_INGREDIENT>를 넣어 <약불:QT_TEMPERATURE>에서 파기름을 만들어주세요.
+5. <으깬:CV_STATE> <두부:CV_INGREDIENT>를 넣어서 약 <3-5분:TI_DURATION>간 달달 볶아주세요.
+7. 취향에 따라 <청양고추:CV_INGREDIENT>와 <후추:CV_SEASONING> 톡톡 해서 <센불:QT_TEMPERATURE>로 잘 섞어주세요.
+4. 달걀 볶은 팬에 그대로 <식용유:CV_SEASONING> <2T:QT_VOLUME>를 넣고 <다진:CV_SEASONING><파:CV_INGREDIENT>를 넣어 <약불:QT_TEMPERATURE>에서 파기름을 만들어주세요.
+2. 팬에 <기름:CV_SEASONING> <2T:QT_VOLUME> 두르고 <다진:CV_STATE> <파:CV_INGREDIENT>, <마늘:CV_INGREDIENT>을 넣어 <약불:QT_TEMPERATURE>에서 볶아 향을 내주세요.
+2. 팬에 <기름:CV_SEASONING> 두르고 <다진:CV_STATE><파:CV_INGREDIENT>를 넣어 <약불:QT_TEMPERATURE>에서 파기름을 만들어 주세요.
+1. <다진:CV_STATE> <소고기:CV_INGREDIENT>는 키친타올에 올려 핏물을 빼주세요.
+2. 팬에 <기름:CV_SEASONING> <1T:QT_VOLUME> 두르고 <다진:CV_STATE> <소고기:CV_INGREDIENT>를 넣어 <센불:QT_TEMPERATURE>에서 약 <1분:TI_DURATION>간 볶아주세요.
+4. <볶아진:CV_STATE> <소고기:CV_INGREDIENT>는 키친타올에 올려주세요.
+7. 그 다음 <볶은:CV_STATE> <소고기:CV_INGREDIENT> 넣어서 잘 섞어 주세요.
+6. 불 끄고 <송송 썬:CV_STATE> <파:CV_INGREDIENT> <1T:QT_VOLUME> 넣고 부족한 간은 <소금:CV_SEASONING>으로 하면 완성입니다.
+<파:CV_INGREDIENT>는 송송 썰고 <다진:CV_STATE><소고기:CV_INGREDIENT>는 키친타올에 올려 핏물을 빼주세요.
+3. 파향이 충분히 올라오면 <중불:QT_TEMPERATURE>로 올리고 <다진:CV_STATE><소고기:CV_INGREDIENT>를 넣어 약 <1분:TI_DURATION>간 볶아주세요.
+6. 그 다음 <센불:QT_TEMPERATURE>로 올려 <물:CV_SEASONING> <1/2컵:QT_VOLUME>과 <다진:CV_STATE><마늘:CV_INGREDIENT> <0.5T:QT_VOLUME>를 넣어주세요.
+4. 그 다음 <느타리버섯:CV_INGREDIENT> 넣어 약 <30초:TI_DURATION>간 <센불:QT_TEMPERATURE>로 볶아주세요.
+3. 잘 <구워진:CV_STATE> <베이컨:CV_INGREDIENT>은 키친타올에 올려 놓아 주세요.
+8. 아까 <구워 놓은:CV_STATE> <베이컨:CV_INGREDIENT>을 넣어 약 <2-3분:TI_DURATION>간 <센불:QT_TEMPERATURE>에서 계속 볶아주세요.
+4. <으깬:CV_STATE> <두부:CV_INGREDIENT>를 넣어 <10분:TI_DURATION>간 더 끓여주세요.
+5. 마늘향이 올라오면 <센불:QT_TEMPERATURE>로 올려 <당근:CV_INGREDIENT>과 <양파:CV_INGREDIENT>를 넣어 약 <1분:TI_DURATION>간 볶아주세요.
+6. 그 다음 <베이컨:CV_INGREDIENT>을 넣어 약 <2분:TI_DURATION>간 볶아주세요.
+4. <느타리 버섯:CV_INGREDIENT>도 <소금:CV_SEASONING> <한꼬집:QT_VOLUME> 넣어 살짝 볶아주세요.
+<삶아진:CV_STATE> <면:CV_INGREDIENT>은 찬물에 재빠르게 바락바락 씻어주세요.
+8. 잘 <삶아진:CV_STATE> <국수:CV_INGREDIENT>를 그릇에 담아주세요.
+4. 팬에 <식용유:CV_SEASONING> <1T:QT_VOLUME>를 두르고 <다진:CV_STATE> <파:CV_INGREDIENT>를 넣어 <약불:QT_TEMPERATURE>에서 볶아주세요.
+8. 그 다음 <물:CV_SEASONING> <2/3컵:QT_VOLUME>을 넣고 아까 데쳐놓은 <두부:CV_INGREDIENT>를 넣어 <센불:QT_TEMPERATURE>에서 끓여주세요.
+7. 그릇에 담고 <송송 썬:CV_STATE> <쪽파:CV_INGREDIENT>와 <다진:CV_STATE> <새우젓:CV_SEASONING>을 넣어 간을 맞춰서 드시면 됩니다.
+8. 어묵을 볶은 팬에 그대로 <채썬:CV_STATE> <당근:CV_INGREDIENT>과 <소금:CV_SEASONING> <한꼬집:QT_VOLUME>을 넣어 살짝 볶아주세요.
+2. 웍에 <고춧가루:CV_SEASONING>, <다진:CV_STATE><마늘:CV_INGREDIENT>, <기름:CV_SEASONING>, <다진:CV_STATE><파:CV_INGREDIENT>를 넣고 <약불:QT_TEMPERATURE>에서 볶아주세요.
+7. 그 다음 <송송 썬:CV_STATE> <청양고추:CV_INGREDIENT>와 <대파:CV_INGREDIENT>를 넣고 부족한 간은 <소금:CV_SEASONING>으로 맞춰주세요.
+7. 그 다음 <채 썬:CV_STATE> <깻잎:CV_INGREDIENT>을 넣어 한번 뒤적거리면 완성입니다.
+8. 그 다음 <다진:CV_STATE><마늘:CV_INGREDIENT> <1T:QT_VOLUME>, <송송 썬:CV_STATE> <파:CV_INGREDIENT>를 넣어주면 완성입니다.
+5. 그 다음 <센불:QT_TEMPERATURE>로 올려 <청경채:CV_INGREDIENT>를 넣고 잘 섞어주세요.
+6. 그 다음 <썰어놓은:CV_STATE> <고기:CV_INGREDIENT>를 넣어 한번 더 버무리면 완성입니다.
+8. 마지막으로 <청양고추:CV_INGREDIENT>, <다진:CV_STATE><마늘:CV_INGREDIENT> <1T:QT_VOLUME>, <송송 썬:CV_STATE> <파:CV_INGREDIENT>를 넣어 한소끔 더 끓이면 완성입니다.
+1. <봄동:CV_INGREDIENT>은 <한장:QT_VOLUME>씩 깨끗이 씻어 먹기 좋은 크기로 잘라주세요.
+7. 그다음 <후추:CV_SEASONING> 톡톡하고 취향에 따라 <송송 썬:CV_STATE> <청양고추:CV_INGREDIENT> 넣어주시면 완성입니다.
+1. <삶은:CV_STATE><달걀:CV_INGREDIENT>, <오이:CV_INGREDIENT>, <양파:CV_INGREDIENT>는 잘게 다져주세요.
+4. 잘 <삶아진:CV_STATE> <감자:CV_INGREDIENT>는 체에 밭쳐 꺼낸 후 볼에 넣어주세요.
+7. 그 다음 <다진:CV_STATE> <달걀흰자:CV_INGREDIENT>, <오이:CV_INGREDIENT>, <양파:CV_INGREDIENT>를 넣어 잘 섞어주세요.
+3. 파기름향이 올라오면 <센불:QT_TEMPERATURE>로 올려 <숙주:CV_INGREDIENT>를 넣고 약 <1분:TI_DURATION>간 <센불:QT_TEMPERATURE>로 볶아주세요.
+3. 팬에 <기름:CV_SEASONING> <1T:QT_VOLUME> 두르고 <다진:CV_STATE> <파:CV_INGREDIENT>를 넣어 <약불:QT_TEMPERATURE>에서 파기름을 만들어 주세요.
+3. 그 다음 <송송 썬:CV_STATE> <부추:CV_INGREDIENT>와 <당근:CV_INGREDIENT>을 넣어 잘 저어주세요.
+6. 그 다음 <청양고추:CV_INGREDIENT>, <다진:CV_STATE><마늘:CV_INGREDIENT>, <송송 썬:CV_STATE><파:CV_INGREDIENT>를 넣어주세요.
+1. <오이:CV_INGREDIENT> <2개:QT_VOLUME>는 <굵은:CV_STATE> <소금:CV_SEASONING>으로 껍질을 깨끗이 씻은 후, 얇게 썰어주세요.
+3. <오이:CV_INGREDIENT>가 절여지는 동안 <다진:CV_STATE><마늘:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>, <다진:CV_STATE> <파:CV_INGREDIENT>를 준비해주세요.
+4. <절인:CV_STATE> <오이:CV_INGREDIENT>는 면보에 물기를 짜서 준비해주세요.
+1. <삶은:CV_STATE> <메추리알:CV_INGREDIENT>을 준비해주세요.
+8. 접시에 <밥:CV_INGREDIENT>과 <볶은:CV_STATE> <가지:CV_INGREDIENT>, <새우:CV_INGREDIENT>를 올리고 위에 상큼하게 <파채:CV_INGREDIENT>를 올려서 드셔도 좋아요.
+9. 그 다음 <송송 썬:CV_STATE> <파:CV_INGREDIENT>를 넣고 한번 휘 저은 후 뚜껑을 잠시 닫아 주세요.
+3. <데친:CV_STATE> <팽이버섯:CV_INGREDIENT>과 <홍고추:CV_INGREDIENT>, <대파:CV_INGREDIENT>를 준비해주세요.
+4. <데친:CV_STATE> <팽이버섯:CV_INGREDIENT>은 볼에 넣은 후, 분량의 <양념장:CV_SEASONING>을 넣어 잘 버무려주세요.
+<송송 썬:CV_STATE> <파:CV_INGREDIENT> <1T:QT_VOLUME>, <다진:CV_STATE><마늘:CV_INGREDIENT> <1T:QT_VOLUME>, <소금:CV_SEASONING> <한꼬집:QT_VOLUME>, <간장:CV_SEASONING> <0.5T:QT_VOLUME> 취향에 따라 <설탕:CV_SEASONING>과 <식초:CV_SEASONING>를 조금 추가하셔도 좋아요.
+5. 접시에 잘 <버무린:CV_STATE> <팽이버섯:CV_INGREDIENT>을 올려주세요.
+6. 그 다음 웍에 <기름:CV_SEASONING> 넉넉히 두르고 기름에 열이 가해지면 <대파:CV_INGREDIENT>, <마른:CV_STATE> <홍고추:CV_INGREDIENT>를 넣어 빨리 볶아 향을 내주세요.
+1. <삶은:CV_STATE> <고구마순:CV_INGREDIENT>은 <소금:CV_SEASONING>을 넣어 살짝 절여주세요.
+3. 마무리로 <송송 썬:CV_STATE> <청양고추:CV_INGREDIENT>, <참기름:CV_SEASONING>, <통깨:CV_SEASONING> 넣어 한번 더 버무리면 완성입니다.
+5. 그릇에 <버섯:CV_INGREDIENT>을 담고 그 위에 <베이컨:CV_INGREDIENT>을 올려주세요.
+마지막으로 <삶은:CV_STATE> <달걀:CV_INGREDIENT>을 얹고 <파마산 치즈가루:CV_SEASONING>를 뿌리면 완성입니다.
+<썬:CV_STATE> <양파:CV_INGREDIENT>는 물에 담가 매운 맛을 빼 주세요.
+6. <녹인:CV_STATE> <버터:CV_SEASONING>와 재료를 잘 섞은 다음 <송송 썬:CV_STATE> <청양고추:CV_INGREDIENT>를 넣어 한번 더 섞은 후 불을 끄고 <카레가루:CV_SEASONING>를 넣어 주세요.
+6. 마무리로 <송송 썬:CV_STATE> <파:CV_INGREDIENT>를 올리면 완성입니다.
+6. <송송 썬:CV_STATE> <청양고추:CV_INGREDIENT>, <올리고당:CV_SEASONING> <0.5T:QT_VOLUME>를 넣어 한번 더 끓이면 완성입니다.
+3. 잘 <삶아진:CV_STATE> <닭:CV_INGREDIENT>은 건져 내서 살만 발라주세요.
+5. 그 다음 <팽이버섯:CV_INGREDIENT>과 <송송 썬:CV_STATE> <청양고추:CV_INGREDIENT>를 넣어 약 <1-2분:TI_DURATION>간 끓여주세요.
+6. 마지막으로 <송송 썬:CV_STATE> <파:CV_INGREDIENT>와 <유부:CV_INGREDIENT>를 올리고 <새우젓:CV_SEASONING> <1T:QT_VOLUME>를 넣어 간을 맞추시면 완성입니다.
+4. <데친:CV_STATE> <유부:CV_INGREDIENT>는 먹기 좋은 크기로 잘라주세요.
+3. <달걀:CV_INGREDIENT> <3개:QT_VOLUME>에 <소금:CV_SEASONING> <한꼬집:QT_VOLUME>을 넣어 잘 풀어주세요.
+<잘게 다진:CV_STATE> <채소:CV_INGREDIENT>도 함께 넣어 잘 섞어주세요.
+9. 마무리로 <송송 썬:CV_STATE> <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>를 넣어 한번 더 볶아주면 완성입니다.
+4. <씻은:CV_STATE> <김치:CV_INGREDIENT>를 넣어 약 <3-4분:TI_DURATION>간 달달 볶아주세요.
+9. 마무리로 <다진:CV_STATE><마늘:CV_INGREDIENT> <0.5T:QT_VOLUME>, <청양고추:CV_INGREDIENT>, <송송 썬:CV_STATE> <파:CV_INGREDIENT>를 넣어 한소끔 끓이면 완성입니다.
+3. 팬에 <기름:CV_SEASONING> <1T:QT_VOLUME>를 두르고 <송송 썬:CV_STATE> <파:CV_INGREDIENT>를 넣어 <약불:QT_TEMPERATURE>에서 파기름을 만들어주세요.
+4. <식힌:CV_STATE> <육수:CV_SEASONING>에 <간장:CV_SEASONING> <1T:QT_VOLUME>, <꿀:CV_SEASONING> <0.5T:QT_VOLUME>, <레몬즙:CV_SEASONING> <2T:QT_VOLUME>, <참깨:CV_SEASONING>, <쪽파:CV_INGREDIENT> <2T:QT_VOLUME>, <다진:CV_STATE><마늘:CV_INGREDIENT> <0.5T:QT_VOLUME>를 넣어 잘 섞어주세요.
+5. <육수:CV_SEASONING>에 <채 썬:CV_STATE> <오이:CV_INGREDIENT>를 넣고 먹기 직전에 <김:CV_INGREDIENT>을 넣으면 완성입니다.
+1. <삶은:CV_STATE> <고구마순:CV_INGREDIENT>을 준비해주세요.
+4. 그 다음 <다진:CV_STATE><마늘:CV_INGREDIENT> <0.5T:QT_VOLUME>, <다진:CV_STATE> <파:CV_INGREDIENT> <1T:QT_VOLUME> 넣어주세요.
+3. 그 다음 <잘게 썬:CV_STATE> <단무지:CV_INGREDIENT>, <통깨:CV_SEASONING> 넣어 잘 섞어주세요.
+4. <밥:CV_INGREDIENT> 적당량을 잘 편 후 <잘게 썬:CV_STATE> <마늘종:CV_INGREDIENT>, <고추장:CV_SEASONING>을 넣고 그 위에 다시 <밥:CV_INGREDIENT>을 덮어 동글동글 뭉쳐주시면 완성입니다.
+4. <양념한:CV_STATE> <고기:CV_INGREDIENT>를 넣어 고기가 익을때까지 볶아주세요.
+3. 잘 <구워진:CV_STATE> <베이컨:CV_INGREDIENT>은 잠시 꺼내두세요.
+6. 끓는 물에 <굵은:CV_STATE> <소금:CV_SEASONING> <1T:QT_VOLUME> 넣어주세요.
+3. <채 썬:CV_STATE> <무:CV_INGREDIENT>를 넣어 <약불:QT_TEMPERATURE>에서 약 <1-2분:TI_DURATION>간 볶아주세요.
+6. <청양고추:CV_INGREDIENT>와 <다진:CV_STATE><마늘:CV_INGREDIENT> <0.5T:QT_VOLUME>를 넣어 한소끔 끓이고 마무리로 <송송 썬:CV_STATE> <파:CV_INGREDIENT>를 넣으시면 완성입니다.
+5. 잘 <익은:CV_STATE> <베이컨:CV_INGREDIENT>과 <양파:CV_INGREDIENT>는 한쪽으로 치우고 <약불:QT_TEMPERATURE>로 줄여 <달걀물:CV_SEASONING>을 올려주세요.
+5. <다진:CV_STATE><마늘:CV_INGREDIENT> <0.5T:QT_VOLUME>, <청양고추:CV_INGREDIENT>, <송송 썬:CV_STATE> <파:CV_INGREDIENT>를 넣어 한소끔 끓여주면 완성입니다. 
+5. <썰어 놓은:CV_STATE> <채소:CV_INGREDIENT>를 모두 넣어 약 <10분:TI_DURATION>간 더 끓여주시면 완성입니다.
+6. <송송 썬:CV_STATE> <쪽파:CV_INGREDIENT>와 <참기름:CV_SEASONING>을 살짝 두르면 더 맛있어요.
+2. 팬에 <기름:CV_SEASONING> <1-2T:QT_VOLUME> 두르고 <송송 썬:CV_STATE> <파:CV_INGREDIENT>와 <양파:CV_INGREDIENT>를 넣어 <약불:QT_TEMPERATURE>에서 약 <1분:TI_DURATION>간 볶아주세요.
+2. <썬:CV_STATE> <오이지:CV_INGREDIENT>는 찬물에 약 <20-30분:TI_DURATION> 정도 담가 짠 맛을 빼주세요.
+3. <짠기를 뺀:CV_STATE> <오이지:CV_INGREDIENT>는 물기를 꼭 짜서 준비해주세요.
+4. 볼에 <오이지:CV_INGREDIENT>를 담고, <송송 썬:CV_STATE> <쪽파:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>, <다진:CV_STATE><마늘:CV_INGREDIENT> <0.5T:QT_VOLUME>를 넣어주세요.
+2. <채 썬:CV_STATE> <양파:CV_INGREDIENT>는 물에 담가 아린맛을 빼주세요.
+8. 잘 <구워진:CV_STATE> <주먹밥:CV_INGREDIENT>은 키친타올에 올려 <기름:CV_SEASONING>을 잠시 빼주세요.
+4. 잘 <익은:CV_STATE> <닭고기:CV_INGREDIENT>는 접시에 꺼내 한김 식혀주세요.
+<한장:QT_VOLUME>씩 떼서 <씻은:CV_STATE> <얼갈이:CV_INGREDIENT>는 <끓는:CV_STATE> <물:CV_SEASONING>에 <소금:CV_SEASONING> <한꼬집:QT_VOLUME> 넣고 약 <1분:TI_DURATION>간 데쳐주세요.
+<데친:CV_STATE> <얼갈이:CV_INGREDIENT>는 재빨리 찬물에 씻어 물기를 꼭 짜고 먹기 좋은 크기로 잘라주세요
+2. <데친:CV_STATE> <얼갈이:CV_INGREDIENT>, <간:CV_STATE> <돼지고기:CV_INGREDIENT>를 준비해주세요
+4. 냄비에 <들기름:CV_SEASONING> <1T:QT_VOLUME> 두르고 <데친:CV_STATE> <얼갈이:CV_INGREDIENT>와 <돼지고기:CV_INGREDIENT>를 넣어 <중불:QT_TEMPERATURE>에서 약 <2분:TI_DURATION>간 볶아주세요.
+8. <송송 썬:CV_STATE> <청양고추:CV_INGREDIENT>, <파:CV_INGREDIENT> <1T:QT_VOLUME>, <다진:CV_STATE><마늘:CV_INGREDIENT> <0.5T:QT_VOLUME> 넣어주세요.
+7. <송송 썬:CV_STATE> <대파:CV_INGREDIENT> <한줌:QT_VOLUME>, <다진:CV_STATE><마늘:CV_INGREDIENT> <0.5T:QT_VOLUME> 넣어 약 <3분:TI_DURATION>간 끓이면 완성입니다.
+4. <데친:CV_STATE> <당근:CV_INGREDIENT>과 <시금치:CV_INGREDIENT>를 준비하고 <달걀:CV_INGREDIENT>은 <소금:CV_SEASONING> <한꼬집:QT_VOLUME> 넣어 곱게 푼 후 체에 한번 걸러 준비해주세요.
+3. 끓어오르면 <채썬:CV_STATE> <양파:CV_INGREDIENT>와 <보쌈고기:CV_INGREDIENT>를 넣어 <중불:QT_TEMPERATURE>에서 약 <5-10분:TI_DURATION>간 끓여주면 완성입니다.
+3. <양념:CV_SEASONING>이 잘 섞이면 <잘게 다져놓은:CV_STATE> <채소:CV_INGREDIENT>를 모두 넣어 골고루 치대주세요.
+2. 냄비에 <참기름:CV_SEASONING> <1T:QT_VOLUME>를 두르고 <불린:CV_STATE> <미역:CV_INGREDIENT>을 넣어 <중불:QT_TEMPERATURE>에서 약 <1분:TI_DURATION>간 볶아주세요.
+6. 뚝배기에 <노릇하게 구운:CV_STATE> <두부:CV_INGREDIENT> 한층 깔아주세요.
+7. <얇게 썬:CV_STATE> <표고버섯:CV_INGREDIENT> 올려주세요.
+2. 볼에 <물:CV_SEASONING> <1.5컵:QT_VOLUME>과 <굵은:CV_STATE> <소금:CV_SEASONING> <1T:QT_VOLUME>를 넣어 잘 섞은 후 <애호박:CV_INGREDIENT>을 넣어 약 <15-20분:TI_DURATION>간 절여주세요.
+3. <데친:CV_STATE> <얼갈이배추:CV_INGREDIENT>는 물기를 꼭 짜서 먹기 좋은 크기로 자르고 예쁜 색감을 위해 <당근:CV_INGREDIENT>도 채썰어서 준비해 주세요.
+4. <채 썬:CV_STATE> <당근:CV_INGREDIENT>에 <소금:CV_SEASONING> <한꼬집:QT_VOLUME>을 넣어 조물조물 해주세요.
+5. <데친:CV_STATE> <얼갈이배추:CV_INGREDIENT>에 <간장:CV_SEASONING> <1T:QT_VOLUME>, <다진:CV_STATE> <마늘:CV_INGREDIENT> <0.5T:QT_VOLUME>, <다진:CV_STATE><파:CV_INGREDIENT> <1T:QT_VOLUME>, <참기름:CV_SEASONING> <1T:QT_VOLUME>, <통깨:CV_SEASONING> 솔솔 뿌려서 조물조물 무쳐주세요.
