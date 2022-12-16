@@ -1,2 +1,13 @@
-/__pycahce__/
+/__pycahce__
 
+Backend/.cache/*
+
+Backend/.ssh/*
+
+Backend/.bash*
+
+Backend/.profile
+
+Backend/.sudo_as_admin_successful
+
+Backend/.Xauthority
