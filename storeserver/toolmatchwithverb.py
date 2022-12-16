@@ -420,9 +420,9 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
 def matchresult(array, listofingre): #lesik.py에서 호출하는 함수
     #print(array["sentence"])
     cooking_act_dict, act_score_dict = parse_cooking_act_dict("./hajong/action_number.txt") #딕션너리 위치 불러오기
-    tool_match_main_dic, tool_match_sub_dic = divide_tool_num_text("./hajong/tool_number.txt") #딕션너리 위치 불러오기
+    tool_match_main_dic, tool_match_sub_dic = divide_tool_num_text("./labeling/tool.txt") #딕션너리 위치 불러오기
 
-    #print(listofingre)
+    print(tool_match_main_dic, tool_match_sub_dic)
     listofingre = list(listofingre) #lesik.py에서 koElectra를 활용하여 저장한 ingredient, seasoning 값
     matchtoolwithactionresult = matchtoolwithaction(array, cooking_act_dict, act_score_dict, tool_match_main_dic, tool_match_sub_dic, listofingre)
     #print(matchtoolwithactionresult)

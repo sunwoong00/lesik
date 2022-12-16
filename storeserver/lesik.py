@@ -59,6 +59,8 @@ def parse_tool_dict(file_path):
     tools = []
     tool_score_dict = {}
     for line in f.readlines():
+        if("[" in line):
+            continue
         line = line.replace("\n", "")
         if delim in line:
             sp_line = line.split(delim)
