@@ -695,7 +695,7 @@ def add_standard(node, seq_list):
 
         
 # remove, make 대상격 찾는 함수
-def find_NP_OBJ(node, seq_list): #지은 수정됨
+def find_NP_OBJ(node, seq_list):
     
     no_plus_NP_OBJ = ['정도', '크기로', '길이로', '등에', '재료를']
     for dep in node['dependency']:
@@ -736,7 +736,7 @@ def find_NP_OBJ(node, seq_list): #지은 수정됨
                                             break
                                 
                                 if is_objective:
-                                    if word['text'] not in no_plus_NP_OBJ:  # 선웅 수정
+                                    if word['text'] not in no_plus_NP_OBJ:
                                         sequence['act'] = word['text'] + " " + sequence['act']
                         
     return seq_list
@@ -1303,7 +1303,7 @@ def extract_ingredient_from_node(ingredient_type_list, volume_type_list, node):
         if 'word' in node:
             for word in node['word']:
                 for volume in volume_list:
-                    if volume in word['text'] and word['text'] not in ingredient_text_list and len(volume_node) == 0: # 선웅 추가 (용량 1가지만 나오게)
+                    if volume in word['text'] and word['text'] not in ingredient_text_list and len(volume_node) == 0: (용량 1가지만 나오게)
                         volume_node.append(word)
 
     sub_ingredient_dict = {}
