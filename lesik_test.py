@@ -182,6 +182,9 @@ def find_condition(node, seq_list):
                         word = node['word'][s_word_id]
                         begin = word['begin']
                         if seq['start_id'] <= begin <= seq['end_id']:
+                            print(srl)
+                            print(seq)
+                            print()
                             seq['act'] = "(" + act_plus_sentence + ")" + seq['act']
 
     return seq_list
@@ -979,8 +982,8 @@ def merge_sequence(sequence_list):
     '''
 
     len_of_list = len(sequence_list)
-    #print("수정 전")
-    #print(sequence_list)
+    print("수정 전")
+    print(sequence_list)
     for seq_idx in range(len_of_list - 1):
         # 동사가 똑같은 경우
         if sequence_list[seq_idx] and sequence_list[seq_idx + 1] and sequence_list[seq_idx]["act"] == sequence_list[seq_idx + 1]["act"]:
@@ -1045,8 +1048,8 @@ def merge_sequence(sequence_list):
             sequence_list.append([]) # list index out of range 방지 위해 마지막에 빈 시퀀스 삽입
     
     sequence_list = list(filter(None, sequence_list))
-    #print("수정 후")
-    #print(sequence_list)
+    print("수정 후")
+    print(sequence_list)
     return sequence_list
 
 def extract_ner_from_kobert(sentence):
