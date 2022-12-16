@@ -1,0 +1,7 @@
+1. <꽁치:CV_INGREDIENT>는 체에 <밭쳐:CV_ACT> <국물:CV_SEASONING>을 <빼:CV_ACT>서 준비하고 <배추김치:CV_INGREDIENT>는 한입 크기로 <썰:CV_ACT>고 <대파:CV_INGREDIENT>와 <청고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+(tip 기호에 따라 <꽁치통조림 국물:CV_SEASONING>을 <1/2컵:QT_VOLUME> 정도를 <꽁치:CV_INGREDIENT>와 함께 <넣:CV_ACT>어 주면 감칠맛을 더 할 수 있어요.)
+2. 달군 냄비에 <기름:CV_SEASONING>을 <두르:CV_ACT>고 <배추김치:CV_INGREDIENT>를 <넣:CV_ACT>어 <중간불:QT_TEMPERATURE>에서 <3분:TI_DURATION> 정도 <볶:CV_ACT>아주세요.
+3. <멸치다시마육수:CV_SEASONING>를 <넣:CV_ACT>어 <10분:TI_DURATION> 정도 <강불:QT_TEMPERATURE>에서 <끓:CV_ACT>여주세요.(<김치:CV_INGREDIENT>가 너무 익어 신맛이 강할때는 <설탕:CV_SEASONING> <1/2큰술:QT_VOLUME>을 <넣:CV_ACT>어주세요.)
+4. <꽁치:CV_INGREDIENT>와 (<꽁치통조림 국물:CV_SEASONING> <1/2컵:QT_VOLUME>), 양념재료를 <넣:CV_ACT>어 <중약불:QT_TEMPERATURE>에서 <7분:TI_DURATION> 정도 <끓:CV_ACT>여주세요.(<김치:CV_INGREDIENT>의 염도에 따라 약간의 <김칫국물:CV_SEASONING>을 <가감해:CV_ACT>서 간을 조절해주세요.)
+5. 마지막에 <대파:CV_INGREDIENT>와 <청고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>고 한소끔 <끓:CV_ACT>이고 불을 <꺼:CV_ACT>주세요.
+(tip. 기호에 따라 마지막에 <참기름:CV_SEASONING> 약간 <두른:CV_ACT> 후 먹어도 좋아요.)

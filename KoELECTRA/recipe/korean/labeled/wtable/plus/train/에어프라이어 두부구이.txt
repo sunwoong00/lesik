@@ -1,0 +1,5 @@
+1. <두부:CV_INGREDIENT>는 키친타월로 물기를 제거한 후 격자무늬로 칼집을 넣고 <소금:CV_SEASONING>, <후춧가루:CV_SEASONING>를 뿌려주세요.
+(아래 1cm 정도만 남기고 깊이 칼집을 넣어주세요)
+2. <올리브유:CV_SEASONING>와 <간장:CV_SEASONING>을 섞은 후 <두부:CV_INGREDIENT> 사이사이에 골고루 뿌려주세요. 
+3. 종이호일 위에 <두부:CV_INGREDIENT>를 올려 에어프라이기에서 <200도:QT_TEMPERATURE>로 <20분:TI_DURATION>간 구워주세요. 
+4. 접시에 <구워진:CV_STATE> <두부:CV_INGREDIENT>를 담아 맛있게 즐겨주세요.

@@ -1,0 +1,6 @@
+1. 1. <미나리:CV_INGREDIENT>와 <실파:CV_INGREDIENT>는 4cm로 썰고 <잣:CV_INGREDIENT>과 <깻가루:CV_SEASONING>, <다진:CV_STATE><마늘:CV_INGREDIENT>, <석이버섯:CV_INGREDIENT>은 손질하여 준비하고 <청·홍고추:CV_INGREDIENT>는 편으로 썰고 <대추:CV_INGREDIENT>와 <밤:CV_INGREDIENT>은 채 썰어주세요. <무:CV_INGREDIENT>는 깨끗이 씻어 4cm 길이로 토막 내어 밑 부분을 1cm 정도 남기고 가로, 세로 1cm 간격으로 칼집을 넣어주세요.
+2. 2. <배춧잎:CV_INGREDIENT>은 깨끗이 씻어서 칼집을 넣은 <무:CV_INGREDIENT>와 함께 굵은 <소금물:CV_SEASONING>에 절이고, <무:CV_INGREDIENT> <1개:QT_VOLUME>는 3㎝ 길이로 곱게 채썰어주세요.
+3. 3. <실고추:CV_INGREDIENT>는 3㎝ 길이로 잘라놓고, 그릇에 채썰어놓은 <무:CV_INGREDIENT>와 준비한 재료를 함께 넣어 버무린 뒤, <고운:CV_STATE> <소금:CV_SEASONING>과 <설탕:CV_SEASONING>으로 간을 맞추어 <소:CV_INGREDIENT>를 만들어주세요.
+4. 4. <배춧잎:CV_INGREDIENT>과 <무:CV_INGREDIENT>는 물기를 뺀 후, 만들어 놓은 <소:CV_INGREDIENT>를 <무:CV_INGREDIENT>의 칼집 사이 사이에 채워 넣고, <배춧잎:CV_INGREDIENT>으로 싸서 항아리에 차곡차곡 담아주세요.
+5. 5. <김치국물:CV_SEASONING>을 만들어서 항아리에 붓고 숙성시켜주세요.
+*Tip. <김치:CV_INGREDIENT>를 담아서 <1~2일:TI_DURATION> 동안 실온에서 숙성시키고 냉장보관 해주세요.

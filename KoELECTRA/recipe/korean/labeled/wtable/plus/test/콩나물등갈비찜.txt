@@ -1,0 +1,10 @@
+1. <등갈비:CV_INGREDIENT>는 찬물에 <30분:TI_DURATION> 정도 담가 핏물을 빼주세요.
+2. 냄비에 <고기:CV_INGREDIENT> 삶는 물 재료를 넣고 끓어오르면 <등갈비:CV_INGREDIENT>를 넣고 <1시간:TI_DURATION> 정도 삶아주세요.
+3. <당근:CV_INGREDIENT>은 얇게 썰고 <양파:CV_INGREDIENT>는 굵게 채를 썰어주세요. <대파:CV_INGREDIENT>는 어슷하게 썰고 <쪽파:CV_INGREDIENT>는 송송 썰어주세요.
+4. 볼에 <삶은:CV_STATE> <등갈비:CV_INGREDIENT>와 <양념장:CV_SEASONING>을 넣어 버무려주세요.
+5. 내열 용기에 <손질한:CV_STATE> <채소:CV_INGREDIENT>와 <떡:CV_INGREDIENT>을 담고 <양념한:CV_STATE> <등갈비:CV_INGREDIENT>를 넣고 포일로 감싸주세요.
+6. "법랑 접시 위에 내열 용기를 올려 1단에 넣고 광파오븐 수동요리 스팀오븐에서 <200도:QT_TEMPERATURE>로 <30분:TI_DURATION>으로 설정 후 시작해주세요. <20분:TI_DURATION>이 지났을 때 포일을 벗기고 계속 조리해주세요.
+ *광파오븐 스팀 물통에 물을 채우고 시작해주세요."
+(tip. "오븐에 전송" 버튼으로 조리하면 포일을 벗겨야 할 시간에 멜로디가 울려요. 멜로디가 울리면 오븐을 열어 <5분:TI_DURATION>내로 포일을 벗긴 후 시작버튼을 누르면 연속 조리됩니다.)
+7. 냄비에 <물:CV_SEASONING> <2컵:QT_VOLUME>을 넣고 끓어오르면 약간의 <소금:CV_SEASONING>을 넣고 <콩나물:CV_INGREDIENT>을 넣어 <1분:TI_DURATION> 정도 뚜껑을 열고 데쳐 체에 받쳐 물기를 뺀 후 <콩나물 양념:CV_SEASONING>에 무쳐주세요.
+8. 오목한 그릇에 <등갈비:CV_INGREDIENT>와 <양념한:CV_STATE> <콩나물:CV_INGREDIENT>을 담고 <통깨:CV_SEASONING>와 <쪽파:CV_SEASONING>를 뿌려 완성해 주세요.

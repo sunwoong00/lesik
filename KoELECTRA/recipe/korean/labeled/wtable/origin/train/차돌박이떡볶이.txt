@@ -1,0 +1,8 @@
+1. 볼에 <차돌박이:CV_INGREDIENT>와 <밑간 재료:CV_SEASONING>를 <넣:CV_ACT>어 <버무려:CV_ACT> 주세요.
+(tip. <차돌박이:CV_INGREDIENT>에 <밑간을 하:CV_ACT>면 잡내를 잡아줘서 좋아요.)
+
+2. <떡볶이 떡:CV_INGREDIENT>은 찬물에 <10분:TI_DURATION>정도 <담가두:CV_ACT>고, <어묵:CV_INGREDIENT>은 삼각형의 먹기 좋은 크기로, <대파:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요. <양배추:CV_INGREDIENT>는 한입크기로 <썰:CV_ACT>고, <깻잎:CV_INGREDIENT>은 돌돌 <말:CV_ACT>아서 <채 썰:CV_ACT>어 주세요.
+3. 달군 팬에 <밑간 한:CV_STATE> <차돌박이:CV_INGREDIENT>를 노릇하게 <구워:CV_ACT>주세요.
+4. 냄비에 <국물재료:CV_SEASONING>를 <넣:CV_ACT>고 <센 불:QT_TEMPERATURE>에 <올려:CV_ACT> 끓어오르면 <떡볶이 떡:CV_INGREDIENT>을 <넣:CV_ACT>고 <3분:TI_DURATION> 정도 <끓여:CV_ACT>줍니다.
+5. <떡볶이 떡:CV_INGREDIENT>이 익으면 <어묵:CV_INGREDIENT>과 <양배추:CV_INGREDIENT>를 <넣:CV_ACT>어 2~<3분:TI_DURATION>정도 <끓인:CV_ACT> 후 <삶은:CV_STATE> <달걀:CV_INGREDIENT>, <파:CV_INGREDIENT>를 <넣:CV_ACT>어주세요. <구워 둔:CV_STATE> <차돌박이:CV_INGREDIENT>를 <얹:CV_ACT>은 후 한 번 끓어오르면 국물의 농도를 맞춘 후 <깻잎채:CV_INGREDIENT>를 <얹:CV_ACT>고 불을 <꺼:CV_ACT>주세요.
+6. 그릇에 <담:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 맛있게 즐겨주세요.

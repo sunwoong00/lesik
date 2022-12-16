@@ -1,0 +1,6 @@
+1. <깻잎:CV_INGREDIENT>은 굵게 다지고, <양파:CV_INGREDIENT>는 작게 다진다. <상추:CV_INGREDIENT>는 씻어서 물기를 빼주세요.
+2. <참치:CV_INGREDIENT>는 체에 밭쳐 기름기를 빼주세요.
+*Tip. <뜨거운:CV_STATE> <물:CV_SEASONING>을 한 번 끼얹어 물기를 꼭 짜주면 기름과 염분을 줄일 수 있어요!
+3. 분량의 드레싱 재료를 잘 섞어주세요.
+Tip. <연겨자:CV_SEASONING> 대신 <와사비:CV_SEASONING>를 활용해도 좋아요.
+4. <잘 섞은:CV_STATE> <드레싱:CV_SEASONING>을 <깻잎:CV_INGREDIENT>, <양파:CV_INGREDIENT>, <참치:CV_INGREDIENT>와 골고루 섞은 후 <상추:CV_INGREDIENT>에 얹어 쌈을 싸서 맛있게 즐기세요!

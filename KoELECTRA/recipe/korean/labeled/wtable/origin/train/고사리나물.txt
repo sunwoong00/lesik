@@ -1,0 +1,9 @@
+1. <고사리:CV_INGREDIENT>는 찬물에 깨끗이 <헹궈:CV_ACT> 질긴 줄기부분을 <다듬:CV_ACT>고 먹기좋은 길이로 <잘라:CV_ACT>주세요.
+(tip <말린:CV_STATE> <고사리:CV_INGREDIENT>는 반나절이상 물에 <불린:CV_ACT> 후 불린 물에 부드러워질 때까지 푹 <삶:CV_ACT>고 찬물에 <3시간:TI_DURATION>정도 <담가:CV_ACT> 아린맛을 <제거해:CV_ACT>서 사용해주세요.)
+
+2. <고사리:CV_INGREDIENT>에 분량의 양념재료를 <넣:CV_ACT>고 <10분:TI_DURATION>정도 <재워:CV_ACT> <밑간해:CV_ACT> 주세요.
+
+3. 달군 팬에 <양념한:CV_STATE> <고사리:CV_INGREDIENT>를 <넣:CV_ACT>어 <볶:CV_ACT>다가 <멸치다시마육수:CV_SEASONING>를 <넣:CV_ACT>고 뚜껑을 덮어 <중약불:QT_TEMPERATURE>에서 <고사리:CV_INGREDIENT>가 부드러워질 때까지 <조려:CV_ACT>주세요.
+
+4. <고사리:CV_INGREDIENT>가 국물없이 조려지면 마지막에 <들기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 마무리해주세요.(기호에 따라 <참기름:CV_SEASONING>을 사용하셔도 되구요. 부족한 간은 <소금:CV_SEASONING>을 <가감해:CV_ACT>서 조절해주세요.)
+

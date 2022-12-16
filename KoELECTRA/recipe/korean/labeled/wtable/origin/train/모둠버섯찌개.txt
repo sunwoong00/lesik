@@ -1,0 +1,7 @@
+1. <소고기:CV_INGREDIENT>를 물에 <담가:CV_ACT> <30분:TI_DURATION> 정도 핏물을 <빼:CV_ACT>주세요.
+2. <양파:CV_INGREDIENT>는 <채 썰:CV_ACT>고 <대파:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+3. <느타리버섯:CV_INGREDIENT>과 <팽이버섯:CV_INGREDIENT>은 밑동을 <자르:CV_ACT>고 <느타리버섯:CV_INGREDIENT>은 하나씩 <떼:CV_ACT>주세요. <표고버섯:CV_INGREDIENT>은 1cm 두께로 <슬라이스해:CV_ACT>주세요.
+4. 달군 냄비에 <참기름:CV_SEASONING>을 <두르:CV_ACT>고 <소고기:CV_INGREDIENT>를 <넣:CV_ACT>어 <1분:TI_DURATION> 정도 <볶:CV_ACT>아주세요.
+5. <소고기:CV_INGREDIENT>가 익으면 <물:CV_SEASONING>을 <넣:CV_ACT>고 <국간장:CV_SEASONING>, <고추장:CV_SEASONING>, <고춧가루:CV_SEASONING>, <마늘:CV_INGREDIENT>, <설탕:CV_SEASONING>, <된장:CV_SEASONING>을 <넣:CV_ACT>어 <5분:TI_DURATION> 정도 <끓여:CV_ACT>주세요.
+6. 팔팔 끓어오르면 <느타리버섯:CV_INGREDIENT>, <팽이버섯:CV_INGREDIENT>, <표고버섯:CV_INGREDIENT>, <양파:CV_INGREDIENT>, <대파:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>고 <표고버섯:CV_INGREDIENT>이 익을 때까지 <5분:TI_DURATION> 정도 더 <끓여:CV_ACT>주세요.
+7. 완성된 <모둠버섯찌개:CV_INGREDIENT>를 그릇에 <담:CV_ACT>아, 쫄깃한 <버섯:CV_INGREDIENT>과 깊은 맛의 <소고기 국물:CV_SEASONING>을 함께 <떠:CV_ACT>서 맛있게 드셔보세요!

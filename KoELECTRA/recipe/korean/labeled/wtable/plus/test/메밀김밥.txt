@@ -1,0 +1,5 @@
+1. 깨끗이 <씻은:CV_STATE> <오이:CV_INGREDIENT>는 곱게 채썰어 <소금:CV_SEASONING>을 약간 뿌리고, <5분:TI_DURATION>정도 절인 후 물기를 짜주세요. <아보카도:CV_INGREDIENT>는 씨앗에 칼날이 닿도록 칼집을 넣어 양쪽을 잡고 서로 반대방향으로 비틀어 자른 후, 씨앗과 <과육:CV_INGREDIENT>을 분리해주세요. 껍질을 벗겨 1cm두께로 잘라주세요.
+2. 달걀말이 재료를 모두 섞어 달군 팬에 <기름:CV_SEASONING>을 살짝 두른 후 두툼하게 부쳐내고 1cm두께로 썰어주세요. <크래미:CV_INGREDIENT>는 반으로  잘라주세요.
+3. 냄비에 <물:CV_SEASONING>을 넣고 팔팔 끓으면 <메밀국수:CV_INGREDIENT>를 넣고 <5~6분:TI_DURATION> 삶아주세요. 채반에 <메밀국수:CV_INGREDIENT>를 건진 후 찬물에 깨끗하게 헹구고 물기를 빼주세요. <삶은:CV_STATE> <면:CV_INGREDIENT>에 국수 밑간 재료를 넣어 밑간을 해주세요.
+4. 김발에 <김밥용 김:CV_INGREDIENT>을 깔고 <메밀면:CV_INGREDIENT>을 <2/3:QT_VOLUME> 정도 얇게 깔아주세요. <오이:CV_INGREDIENT>, <아보카도:CV_INGREDIENT>, <크래미:CV_INGREDIENT>, <달걀말이:CV_INGREDIENT>를 올려 돌돌 말아주세요.
+5. 먹기 좋은 크기로 잘라 <와사비:CV_SEASONING>와 <쯔유:CV_SEASONING>를 곁들여 즐겨주세요.

@@ -1,0 +1,4 @@
+1. <두부:CV_INGREDIENT>는 면 보자기에 감싸 물기를 꽉 짜주세요. <유부:CV_INGREDIENT>는 속을 벌려 준비해주세요.
+2. <실파:CV_INGREDIENT>는 송송 썰어주세요. <토마토:CV_INGREDIENT>는 씨를 제거하고 큐브모양으로 썰어주세요. <양파:CV_INGREDIENT>는 다져주세요.
+3. <토마토:CV_INGREDIENT>와 <양파:CV_INGREDIENT>, <실파:CV_INGREDIENT>에 토마토 양념 재료를 넣어 버무려주세요.
+4. <으깬:CV_STATE> <두부:CV_INGREDIENT>에 <시판용 초밥 소스:CV_SEASONING>를 넣어 섞은 후 <유부:CV_INGREDIENT>에 넣고 <버무려둔:CV_STATE> <토마토:CV_INGREDIENT>를 올려주세요.

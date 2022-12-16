@@ -1,0 +1,4 @@
+1. <미나리:CV_INGREDIENT>는 깨끗이 <씻:CV_ACT>어 6cm 길이로 <잘라:CV_ACT>주세요.
+2. 볼에 반죽 재료와 <미나리:CV_INGREDIENT>를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요. 볼에 전 간장 재료를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요. 반죽에 <전분:CV_SEASONING>을 <넣:CV_ACT>어 만들면 반죽이 투명해져서 <미나리:CV_INGREDIENT>의 색감을 살릴 수 있어요
+3. 달군 팬에 약간의 <기름:CV_SEASONING>을 <두른:CV_ACT> 후 반죽을 <올려:CV_ACT> 얇게 <펼쳐:CV_ACT>주세요. 앞뒤로 노릇하게 <구워:CV_ACT>주세요.
+4. <미나리 전:CV_INGREDIENT>에 <전 간장:CV_SEASONING>을 <곁들여:CV_ACT> 맛있게 즐겨주세요.

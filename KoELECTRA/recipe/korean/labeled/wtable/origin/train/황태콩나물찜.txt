@@ -1,0 +1,9 @@
+1. <황태:CV_INGREDIENT>는 대가리, 꼬리, 지느러미를 <제거한:CV_ACT> 후 <쌀뜨물:CV_SEASONING>(또는 <물:CV_SEASONING>)에 <넣:CV_ACT>어 약 <20분:TI_DURATION> 동안 <불려:CV_ACT> 주세요. <불린:CV_STATE> <황태:CV_INGREDIENT>는 껍질 부분에 칼집을 <내:CV_ACT> 주세요.
+(tip. <쌀뜨물:CV_SEASONING>에 <불리:CV_ACT>게 되면 <황태:CV_INGREDIENT>의 비린내를 없앨 수 있어요. 껍질부분에 칼집을 <넣:CV_ACT>으면 조리 시 <황태:CV_INGREDIENT>가 오그라드는 것을 방지할 수 있답니다)
+2. <콩나물:CV_INGREDIENT>은 깨끗이 <씻:CV_ACT>어 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>고, <황태:CV_INGREDIENT>는 8등분으로 <잘라:CV_ACT>주세요. <양파:CV_INGREDIENT>는 굵게 <채썰:CV_ACT>고, <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+(tip. 아삭한 식감을 위해 <콩나물:CV_INGREDIENT>은 찜용을 사용하시는 게 좋아요)
+3. 양념 재료는 볼에 <넣:CV_ACT>어 모두 <섞:CV_ACT>어주세요.
+4. 깊이가 있는 프라이팬에 <콩나물:CV_INGREDIENT>을 <깔:CV_ACT>고 <황태:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>, <양파:CV_INGREDIENT>, <물:CV_SEASONING>을 <넣:CV_ACT>은 후 뚜껑을 덮고 <5분:TI_DURATION> 정도 <익혀:CV_ACT>주세요.
+5. 뚜껑을 열고, <섞어 둔:CV_STATE> <양념장:CV_SEASONING>을 <넣:CV_ACT>어 <황태:CV_INGREDIENT>와 <콩나물:CV_INGREDIENT>을 <섞:CV_ACT>어주세요.
+6. <어슷썬:CV_STATE> <대파:CV_INGREDIENT>와 <들기름:CV_SEASONING>을 <넣:CV_ACT>어 <약불:QT_TEMPERATURE>에서 <3분:TI_DURATION>간 <익힌:CV_ACT> 후 불을 <꺼:CV_ACT>주세요. 
+7. 접시에 보기 좋게 <담:CV_ACT>은 후 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 마무리해주세요.

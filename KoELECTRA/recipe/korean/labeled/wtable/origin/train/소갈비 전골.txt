@@ -1,0 +1,16 @@
+1. <갈비:CV_INGREDIENT>는 <3시간:TI_DURATION> 정도 찬물에 <담가:CV_ACT> 핏물을 <빼:CV_ACT>고 끓는 물에 <데쳐:CV_ACT>주세요. 물에 <헹궈:CV_ACT> 기름을 <떼:CV_ACT> 내어 손질해주세요.
+
+2. 냄비에 <갈비:CV_INGREDIENT>와 육수 재료, <물:CV_SEASONING>을 <부어:CV_ACT> <1시간:TI_DURATION> 이상 <갈비:CV_INGREDIENT>가 푹 익도록 <끓여:CV_ACT>주세요. 삶은 <갈비:CV_INGREDIENT>는 <건져:CV_ACT>내고 <고기:CV_INGREDIENT>는 <양념:CV_SEASONING>에 <재워:CV_ACT>주세요. <국물:CV_SEASONING>은 체에 걸러 <육수:CV_SEASONING>를 준비해주세요. 
+(tip <육수:CV_SEASONING>를 <20분:TI_DURATION> 정도 <끓이:CV_ACT>다가 <무:CV_INGREDIENT>는 <건져:CV_ACT>내 먹기 좋은 크기로 <잘라:CV_ACT>주세요.)
+
+3. <만가닥 버섯:CV_INGREDIENT>과 <청경채:CV_INGREDIENT>는 밑둥을 <자르:CV_ACT>고 <배추:CV_INGREDIENT>와 <단호박:CV_INGREDIENT>은 먹기 좋은 크기로 <썰:CV_ACT>어주세요. <숙주:CV_INGREDIENT>는 깨끗이 <씻:CV_ACT>고 <대파:CV_INGREDIENT>는 5cm 길이로 <썰:CV_ACT>어주세요.
+
+4. <미나리:CV_INGREDIENT>는 끓는물에 살짝 <데치:CV_ACT>고, <가래떡:CV_INGREDIENT>은 2cm 크기로 <잘라:CV_ACT> 유부 안에 채운 후 <데친:CV_STATE> <미나리:CV_INGREDIENT>로 가운데 부분을 돌려 <묶:CV_ACT>어주세요. 
+(tip <가래떡:CV_INGREDIENT>이 딱딱하면 끓는물에 살짝 <데쳐:CV_ACT> 사용해 주세요.)
+
+5. 전골냄비에 <소갈비:CV_INGREDIENT>를 가운데 <담:CV_ACT>고 <무:CV_INGREDIENT>와 <유부주머니:CV_INGREDIENT>, <배추:CV_INGREDIENT>, <만가닥 버섯:CV_INGREDIENT>, <단호박:CV_INGREDIENT>을 돌려 <담:CV_ACT>아주세요. <육수:CV_SEASONING>를 <붓:CV_ACT>고 국물 양념 재료를 <넣:CV_ACT>어 <끓여:CV_ACT>주세요. 
+(tip <소금:CV_SEASONING>을 <가감해:CV_ACT>서 간을 <맞춰:CV_ACT>주세요.)
+
+6. <육수:CV_SEASONING>가 끓으면 <숙주:CV_INGREDIENT>와 <청경채:CV_INGREDIENT>, <대파:CV_INGREDIENT>를 넣고 한소끔 <끓인:CV_ACT> 후 맛있게 즐겨주세요.
+(tip 기호에 따라 <와사비간장:CV_SEASONING>을 <곁들여:CV_ACT> 드셔도 맛있답니다.)
+

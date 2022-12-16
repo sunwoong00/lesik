@@ -1,0 +1,5 @@
+1. <두부:CV_INGREDIENT>를 기다란 모양으로 두툼하게 <썰:CV_ACT>고 키친 타올에 <올려:CV_ACT> <두부:CV_INGREDIENT>의 물기를 <제거해:CV_ACT> 주세요.
+2. <홍고추:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>는 반 <갈라:CV_ACT> 씨를 <털어낸:CV_ACT> 후 어슷하게 <썰:CV_ACT>고 <마늘:CV_INGREDIENT>은 편으로 <썰:CV_ACT>어주세요. <미니 새송이버섯:CV_INGREDIENT>은 반으로 <가르:CV_ACT>고 <표고버섯:CV_INGREDIENT>은 한입 크기로 <썰:CV_ACT>어주세요.
+3. 달군 팬에 <들기름:CV_SEASONING>을 <두르:CV_ACT>고 <두부:CV_INGREDIENT>를 앞뒤로 돌려가며 <중약불:QT_TEMPERATURE>에서 노릇하게 <구운:CV_ACT> 후 키친타월에 <올려:CV_ACT> <기름:CV_SEASONING>을 <빼:CV_ACT>고 밀폐 용기에 <담:CV_ACT>아주세요.
+4. 냄비에 간장소스 재료와 <마늘:CV_INGREDIENT>, <미니 새송이 버섯:CV_INGREDIENT>, <표고버섯:CV_INGREDIENT>을 <넣:CV_ACT>고 끓어오르면 <다시마:CV_INGREDIENT>를 <건져낸:CV_ACT> 후 한소끔 <끓여:CV_ACT> 불을 <끄:CV_ACT>고 뜨거울 때 <구운:CV_STATE> <두부:CV_INGREDIENT>에 <부어:CV_ACT>주세요.
+5. 간장소스가 식으면 <청양고추:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>고 냉장고에 <넣:CV_ACT>어 <하루:TI_DURATION> 정도 <숙성 시켜:CV_ACT>주세요. 드실 때 약간의 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 맛있게 즐겨주세요.

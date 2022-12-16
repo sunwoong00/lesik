@@ -1,0 +1,23 @@
+1. 1. <쇠고기:CV_INGREDIENT>는 먹기좋은 크기로 <썰:CV_ACT>고 키친타올에 <올려:CV_ACT> 핏물을 <제거한:CV_ACT> 후 고기연육재료를 <넣:CV_ACT>어 골고루 <섞:CV_ACT>은 후  <20분:TI_DURATION>정도 <재워:CV_ACT>주세요. 고기간장양념재료를 <넣:CV_ACT>고 조물조물 <버무려:CV_ACT> <양념해:CV_ACT>주세요.
+2.<양파:CV_INGREDIENT>는 <채 썰:CV_ACT>고 <당근:CV_INGREDIENT>과 <대파:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어 <양념한:CV_STATE> <고기:CV_INGREDIENT>와 <섞:CV_ACT>어주세요. 
+3.달군 팬에 <양념한:CV_STATE> <쇠고기:CV_INGREDIENT>와 <야채:CV_INGREDIENT>를 <넣:CV_ACT>어 <볶:CV_ACT>다가 마지막에 <참기름:CV_SEASONING>을 <뿌리:CV_ACT>고 불을 <꺼:CV_ACT>주세요. 
+4.접시에 <불고기:CV_INGREDIENT>를 <담:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.
+
+2. 1.<브로콜리:CV_INGREDIENT>는 줄기에서 한 송이 씩 <떼:CV_ACT>어 큰 것은 반으로 <갈라:CV_ACT>주세요.
+2.<소금:CV_SEASONING>을 약간 넣은 <끓는 물:CV_SEASONING>에 <브로콜리:CV_INGREDIENT>를 <20초:TI_DURATION> 정도 살짝 <데친:CV_ACT> 후 찬물에 <헹궈:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+3.<두부:CV_INGREDIENT>는 <끓는 물:CV_SEASONING>에 <1분:TI_DURATION> 정도 <데친:CV_ACT> 후 면보에 <넣:CV_ACT>어 물기를 꽉 <짜:CV_ACT> <으깨:CV_ACT>어주세요.
+4.볼에 <으깬:CV_STATE> <두부:CV_INGREDIENT>와 <브로콜리:CV_INGREDIENT>, 양념 재료를 <넣:CV_ACT>어 <무쳐:CV_ACT>주세요.
+5.접시에 보기 좋게 <담:CV_ACT>고, <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 마무리해주세요.
+
+3. 1.<잔멸치:CV_INGREDIENT>는 굵은 체에 <흔들:CV_ACT>어 잔가루를 <제거해:CV_ACT>주세요.
+2.마른팬에 <잔멸치:CV_INGREDIENT>와 <모듬견과류:CV_INGREDIENT>를 <넣:CV_ACT>고 <중약불:QT_TEMPERATURE>에서 <5~6분:TI_DURATION>정도 바삭하게 <볶:CV_ACT>아주세요.
+3.새로 달군 팬에 <간장양념:CV_SEASONING>을 <넣:CV_ACT>고 <양념:CV_SEASONING>이 바글바글 끓으면 <잔멸치:CV_INGREDIENT>와 <모듬견과류:CV_INGREDIENT>를 <넣:CV_ACT>고 양념이 배도록 고루 <섞:CV_ACT>어주세요.
+4.접시에 <견과류멸치볶음:CV_INGREDIENT>을 <담:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.
+
+4. 1.<호두:CV_INGREDIENT>는 끓는물에 <소금:CV_SEASONING>을 <넣:CV_ACT>고 <2분:TI_DURATION>정도 <데친:CV_ACT> 후 찬물에 <헹궈:CV_ACT> 물기를 <빼:CV_ACT>주세요. 
+(또는 미지근한 물에 <10분:TI_DURATION>정도 <담갔:CV_ACT>다가 사용해주세요.)
+2.냄비에 시럽 재료를 <넣:CV_ACT>고 수저로 젓지 않고 <중간 불:QT_TEMPERATURE>에서 <설탕:CV_SEASONING>이 녹을 때까지 <끓여:CV_ACT> <시럽:CV_SEASONING>을 <만들:CV_ACT>어주세요.
+3.<시럽:CV_SEASONING>에 <데친호두:CV_INGREDIENT>를 <넣:CV_ACT>고 <2분:TI_DURATION>정도 <섞:CV_ACT>으면서 <졸인:CV_ACT> 후 체에 <받쳐:CV_ACT> 주세요.
+4.<140도:QT_TEMPERATURE>로 달군 <기름:CV_SEASONING>에 <넣:CV_ACT>어 바삭하게 <튀겨:CV_ACT>주세요.
+(티친타올에 올리면 달라붙을 수 있어 종이호일에 <올려:CV_ACT> 기름을 빼주세요.)
+5.튀긴 <호두:CV_INGREDIENT>를 서로 달라 붙지 않게 펼쳐 <식혀:CV_ACT>주세요.

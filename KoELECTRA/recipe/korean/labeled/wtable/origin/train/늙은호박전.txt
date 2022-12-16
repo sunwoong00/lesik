@@ -1,0 +1,4 @@
+1. <늙은 호박:CV_INGREDIENT>은 껍질을 <제거하:CV_ACT>고 채칼로 채를 <썰:CV_ACT>어주세요.
+2. 볼에 <채썬:CV_STATE> <늙은 호박:CV_INGREDIENT>을 <넣:CV_ACT>고 <설탕:CV_SEASONING>과 <소금:CV_SEASONING>을 <뿌려:CV_ACT> <20분:TI_DURATION>정도 <두:CV_ACT>었다가 <늙은 호박:CV_INGREDIENT>에 수분이 자박자박하게 <생기:CV_ACT>면 <부침가루:CV_SEASONING>를 <섞:CV_ACT>어 되직하게 전 <반죽:CV_INGREDIENT>을 <만들:CV_ACT>어 주세요.
+3. 달군 팬에 넉넉하게 <기름:CV_SEASONING>을 <두르:CV_ACT>고 <반죽:CV_SEASONING>을 한 국자 <떠:CV_ACT>서 올려 동그랗게 모양을 <잡:CV_ACT>아 앞 뒤로 노릇하게 전을 <부쳐:CV_ACT>주세요.
+4. 접시에 <늙은 호박전:CV_INGREDIENT>을 <담:CV_ACT>고 초간장 재료를 <섞:CV_ACT>어 <초간장:CV_SEASONING>을 <곁들여:CV_ACT> 맛있게 즐겨주세요.

@@ -1,0 +1,9 @@
+1. <양파:CV_INGREDIENT>는 채를 <썰:CV_ACT>고, <스팸:CV_INGREDIENT>은 먹기 좋은 크기로 <잘라:CV_ACT>주세요.
+(첨가물 제거를 위해 스팸은 뜨거운 물을 한번 끼얹어 사용하면 좋아요)
+2. 볼에 <달걀:CV_INGREDIENT>을 <풀:CV_ACT>어주세요. 볼에 소스 재료를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+3. 달군 팬에 <식용유:CV_SEASONING>를 <두른:CV_ACT> 후 <달걀:CV_INGREDIENT>을 <넣:CV_ACT>어 스크램블을 <만들:CV_ACT>고 접시에 <덜:CV_ACT>어주세요.
+4. 달군 팬에 <스팸:CV_INGREDIENT>을 <넣:CV_ACT>어 노릇하게 <볶:CV_ACT>아주세요.
+5. 달군 팬에 <식용유:CV_SEASONING>를 <두른:CV_ACT> 후 <양파:CV_INGREDIENT>를 <볶:CV_ACT>다가 숨이 죽으면 <소스:CV_SEASONING>를 <넣:CV_ACT>어 가볍게 <섞:CV_ACT>은 후 불을 <꺼:CV_ACT>주세요.
+6. 그릇에 <밥:CV_INGREDIENT>을 <담:CV_ACT>고 밥 위에 <볶은:CV_STATE> <양파:CV_INGREDIENT>와 볶은 <스팸:CV_INGREDIENT>, 끝 쪽에는 <스크램블:CV_INGREDIENT>을 둘러 <담:CV_ACT>아주세요.
+7. <마요네즈:CV_SEASONING>를 지그재그로 <뿌린:CV_ACT> 후 <쪽파:CV_SEASONING>와 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 완성해주세요.
+(<쪽파:CV_SEASONING>가 없을 경우 기호에 따라 <대파:CV_SEASONING>나 <청양고추:CV_SEASONING>, <김가루:CV_SEASONING>, <파슬리:CV_SEASONING> 등을 <뿌려:CV_ACT> 만들어도 좋아요)

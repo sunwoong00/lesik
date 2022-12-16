@@ -1,0 +1,10 @@
+1. <양파:CV_INGREDIENT>는 깍둑썰고, <대파:CV_INGREDIENT>는 송송 썰어주세요. <오이:CV_INGREDIENT>는 채를 썰어 준비해주세요.
+2. 웍 팬에 <식용유:CV_SEASONING>와 <춘장:CV_SEASONING>을 넣고 <3분:TI_DURATION>간 볶아주세요. <볶은:CV_STATE> <춘장:CV_SEASONING>은 따로 덜어주세요. 
+(tip. <춘장:CV_SEASONING>을 볶으면 떫은맛을 제거할 수 있어요. <춘장:CV_SEASONING>에서 고소한 냄새가 나면 완성이에요)
+3. <춘장:CV_SEASONING>을 <볶은:CV_STATE> <기름:CV_SEASONING>에 <다진:CV_STATE> <마늘:CV_INGREDIENT>과 <대파:CV_INGREDIENT>를 넣고 볶아 향을 낸 후 <양파:CV_INGREDIENT>를 넣고 <2분:TI_DURATION>간 볶아주세요. 
+4. <양파:CV_INGREDIENT>에 <볶은:CV_STATE> <춘장:CV_SEASONING>과 <후춧가루:CV_SEASONING>, <생강가루:CV_SEASONING>, <설탕:CV_SEASONING>을 넣고 <표고 불린:CV_STATE> <물:CV_SEASONING>을 조금씩 추가하며 볶아주세요. 
+(tip. <건표고:CV_INGREDIENT> <4~5개:QT_VOLUME>에 <물:CV_SEASONING> <2컵:QT_VOLUME>을 넣고 <하루:TI_DURATION>정도 불려 준비해주세요)
+5. <전분 물:CV_SEASONING>을 넣고 저어 <짜장 소스:CV_SEASONING>를 완성해주세요. 
+6. 끓는 물에 <면:CV_INGREDIENT>을 넣고 <8분:TI_DURATION>간 삶은 후 흐르는 물에 헹궈 전분기를 빼주세요. 
+7. 그릇에 <삶은:CV_STATE> <면:CV_INGREDIENT>과 <짜장 소스:CV_SEASONING>를 담고 <채를 썬:CV_STATE> <오이:CV_INGREDIENT>를 올려 맛있게 즐겨주세요. 
+(tip. 면이 너무 차갑지 않도록 마지막에 뜨거운 물로 헹궈주세요)

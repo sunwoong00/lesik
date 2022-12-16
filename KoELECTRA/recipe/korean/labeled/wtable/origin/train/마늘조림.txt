@@ -1,0 +1,4 @@
+1. <마늘:CV_INGREDIENT>은 꼭지를 <도려내:CV_ACT>고 편으로 이등분한 후 <10분:TI_DURATION>정도 찬물에 <담갔:CV_ACT>다가 물기를 <제거해:CV_ACT>주세요. <건고추:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요.
+2. 달군 팬에 <올리브유:CV_SEASONING>를 <두르:CV_ACT>고 <마늘:CV_INGREDIENT>을 <넣:CV_ACT>어 <중간불:QT_TEMPERATURE>에서 노릇하게 튀기듯이 <볶:CV_ACT>아주세요.
+3. <볶은:CV_STATE> <마늘:CV_INGREDIENT>에 <양념재료:CV_SEASONING>와 <건고추:CV_INGREDIENT>를 <넣:CV_ACT>고 윤기나게 <졸여:CV_ACT>주세요.
+4. 마지막에 <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.

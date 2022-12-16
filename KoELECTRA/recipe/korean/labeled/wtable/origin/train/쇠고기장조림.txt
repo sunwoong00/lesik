@@ -1,0 +1,7 @@
+1. <쇠고기:CV_INGREDIENT>는 찬물에 <30분~1시간:TI_DURATION> 정도 <담가:CV_ACT> 핏물을 <빼:CV_ACT>주세요. <꽈리고추:CV_INGREDIENT>는 깨끗이 <씻:CV_ACT>어 꼭지를 <떼:CV_ACT>고 포크로 구멍을 내주세요.
+2. 냄비에 고기 삶는 물 재료를 <넣:CV_ACT>어 <끓이:CV_ACT>다가, <국물:CV_SEASONING>이 끓으면 <고기:CV_INGREDIENT>를 <넣:CV_ACT>고 <중불:QT_TEMPERATURE>에서 <30분:TI_DURATION> 정도 <삶:CV_ACT>아 <건져:CV_ACT>주세요. <고기 삶은:CV_STATE> <물:CV_SEASONING>은 버려주세요.
+3. 냄비에 조림양념 재료를 <넣:CV_ACT>고 끓으면 삶은 <고기:CV_INGREDIENT>를 <넣:CV_ACT>고 <15분:TI_DURATION> 정도 <중약불:QT_TEMPERATURE>에서 <끓:CV_ACT>여주세요.
+(tip. <익은:CV_STATE> <고기:CV_INGREDIENT>를 <양념:CV_SEASONING>에 <넣:CV_ACT>고 <끓여:CV_ACT>야 <고기:CV_INGREDIENT>가 질겨지지 않아요)
+4. <마늘:CV_INGREDIENT>을 <넣:CV_ACT>어 <10분:TI_DURATION> 정도 더 <끓이:CV_ACT>고, <꽈리고추:CV_INGREDIENT>를 <넣:CV_ACT>어 <3분:TI_DURATION> 정도 더 끓인 후 불을 <꺼:CV_ACT>주세요.
+5. <장조림:CV_INGREDIENT>은 한 김 <식힌:CV_ACT> 후 그릇에 <담:CV_ACT>아 보관해주세요. 
+6. <장조림 고기:CV_INGREDIENT>는 미리 <찢:CV_ACT>어 두지 않고, 먹을 때 마다 결대로 먹기 좋게 <찢:CV_ACT>어 내면 간이 세지지 않게 보관할 수 있답니다.

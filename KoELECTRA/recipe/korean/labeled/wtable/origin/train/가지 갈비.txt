@@ -1,0 +1,13 @@
+1. <가지:CV_INGREDIENT>는 도톰하게 <슬라이스한:CV_ACT> 후 한쪽 면에 격자로 칼집을 <넣:CV_ACT>어주세요. <새송이버섯:CV_INGREDIENT>은 세로로 4등분 해주세요.
+2. <가지:CV_INGREDIENT>를 전자레인지에 <넣:CV_ACT>고 <3분:TI_DURATION>간 <돌려주:CV_ACT>세요. 
+3. <불린:CV_STATE> <표고:CV_INGREDIENT>는 잘게 <썰:CV_ACT>어주세요. <쪽파:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요. 볼에 양념 재료와 <잘게 썬:CV_STATE> <표고:CV_INGREDIENT>를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요. 
+(tip. <표고버섯:CV_INGREDIENT> <4~5개:QT_VOLUME>에 <물:CV_SEASONING> <2컵:QT_VOLUME>을 <넣:CV_ACT>고 <하루:TI_DURATION> 정도 <불려:CV_ACT> 준비해주세요)
+
+4. <익힌:CV_STATE> <가지:CV_INGREDIENT>에 <새송이버섯:CV_INGREDIENT>을 <넣:CV_ACT>고 돌돌 <말:CV_ACT>아주세요. 
+5. 내열 용기에 차곡차곡 <담:CV_ACT>고 <양념:CV_SEASONING>을 <부어:CV_ACT> <30분간:TI_DURATION> <절여:CV_ACT>주세요. 
+(tip. <양념:CV_SEASONING>이 잘 <배:CV_ACT>도록 중간에 <양념:CV_SEASONING>을 <따라내:CV_ACT>고 윗면에 <끼얹:CV_ACT>어 주세요)
+
+6. <가지:CV_INGREDIENT>에 <포도 씨 오일:CV_SEASONING>을 <뿌리:CV_ACT>고 <200도:QT_TEMPERATURE>로 <예열한:CV_ACT> 오븐에서 <40분:TI_DURATION>간 <구워:CV_ACT>주세요. 
+(tip. 오븐마다 성능이 다를 수 있으니 시간을 <조절해:CV_ACT> 주세요)
+
+7. 완성된 <가지 갈비:CV_INGREDIENT>를 그릇에 <담:CV_ACT>아 <쪽파:CV_INGREDIENT>와 <통깨:CV_SEASONING>를 <뿌린:CV_ACT> 후 맛있게 즐겨주세요. 

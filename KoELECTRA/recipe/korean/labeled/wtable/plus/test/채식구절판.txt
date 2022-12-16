@@ -1,0 +1,15 @@
+1. <목이버섯:CV_INGREDIENT>은 찬물에 담가 불린 후 물기를 짜고 곱게 채를 썰어주세요.
+2. <오이:CV_INGREDIENT>는 <굵은:CV_STATE> <소금:CV_SEASONING>으로 닦은 후 4등분 하여 껍질을 얇게 돌려 깎고 채를 썰어주세요. 
+3. <표고:CV_INGREDIENT>는 기둥을 떼고 가로로 편을 썬 다음 얇게 채를 썰어주세요.  
+(tip. <표고:CV_INGREDIENT> 기둥도 손으로 찢어 함께 사용해도 좋아요)
+4. <우엉:CV_INGREDIENT>, <애호박:CV_INGREDIENT>, <당근:CV_INGREDIENT>을 얇게 편을 썰고 곱게 채를 썰어주세요. 
+5. 볼에 <간장소스:CV_SEASONING>를 넣고 섞어 준비해주세요. 
+6. 달군 팬에 <기름:CV_SEASONING>을 약간 두른 후 <표고:CV_INGREDIENT>-<오이:CV_INGREDIENT>-<애호박:CV_INGREDIENT>-<당근:CV_INGREDIENT> 순으로 볶아주세요. 
+(tip. 채소를 볶을 때 <고운:CV_STATE> <소금:CV_SEASONING>을 <한 꼬집:QT_VOLUME>씩 넣어 간을 해주세요)
+7. 달군 팬에 <숙주:CV_INGREDIENT> <한 줌:QT_VOLUME>과 <물:CV_SEASONING> <1컵:QT_VOLUME>을 넣고 <숙주:CV_INGREDIENT>를 데친 후 접시에 덜고, <물:CV_SEASONING>이 자작한 상태에서 <채를 썬:CV_STATE> <우엉:CV_INGREDIENT>과 <간장소스:CV_SEASONING> <½ 분량:QT_VOLUME>을 넣고 졸인 후 접시에 덜어주세요.
+8. <우엉:CV_INGREDIENT>을 볶은 팬에 <목이버섯:CV_INGREDIENT>을 넣고 나머지 <간장소스:CV_SEASONING>를 넣은 후 볶아주세요. 
+9. 볼에 밀전병 재료를 넣고 섞은 후 잘 섞어주세요. 
+(tip. <전병 반죽:CV_SEASONING>에 <치자가루:CV_SEASONING>나 <식용 색소:CV_SEASONING>를 조금 섞어주면 다양한 색을 낼 수 있어요)
+10. <약한 불:QT_TEMPERATURE>에서 팬에 <기름:CV_SEASONING>을 두른 후 닦아내고 숟가락으로 <밀전병 반죽:CV_SEASONING>을 한술 떠 팬에 붓고 둥글고 얇게 펼쳐 부쳐주세요.
+11. 접시에 준비한 재료를 둥글게 돌려 담고 가운데 <전병:CV_INGREDIENT>을 올려 완성해주세요. 
+(tip. 밀전병 위에 <허브:CV_SEASONING>나 <잣:CV_SEASONING> <대추:CV_INGREDIENT> 등을 올려 꾸며주면 더욱 예뻐요) 

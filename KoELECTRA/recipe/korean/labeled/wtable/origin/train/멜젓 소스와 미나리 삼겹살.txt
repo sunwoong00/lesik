@@ -1,0 +1,6 @@
+1. 깨끗이 씻은 <미나리:CV_INGREDIENT>는 5~7cm 길이로 먹기 좋게 <썰:CV_ACT>어주세요. <새송이버섯:CV_INGREDIENT>은 편으로 얇게 <썰:CV_ACT>어주세요.
+2. <양파:CV_INGREDIENT>는 굵게 <다지:CV_ACT>고 <청양고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요. <마늘:CV_INGREDIENT>은 편으로 <썰:CV_ACT>어주세요.
+3. 작은 스테인리스 소스볼에 소스 양념 재료를 <넣:CV_ACT>고 썰어 놓은 <양파:CV_INGREDIENT>와 <마늘:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>를 <넣:CV_ACT>어 주세요.
+4. 달군 팬에 <삼겹살:CV_INGREDIENT>과 <새송이버섯:CV_INGREDIENT>을 <구워:CV_ACT>주세요.
+5. <멜젓소스:CV_SEASONING>는 <삼겹살:CV_INGREDIENT>과 함께 팬에서 <끓여:CV_ACT>주세요. <구워진:CV_STATE> <삼겹살:CV_INGREDIENT>은 먹기 좋게 <썰:CV_ACT>어주세요.
+6. 그릇에 <미나리:CV_INGREDIENT>를 소복하게 <올리:CV_ACT>고 <멜젓소스:CV_SEASONING>와 <구운:CV_STATE> <삼겹살:CV_INGREDIENT>, <새송이버섯:CV_INGREDIENT>을 <담:CV_ACT>아 맛있게 즐겨주세요.

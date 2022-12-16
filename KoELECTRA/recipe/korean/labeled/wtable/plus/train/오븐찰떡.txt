@@ -1,0 +1,8 @@
+1. 볼에 <찹쌀가루:CV_SEASONING>, <설탕:CV_SEASONING>, <소금:CV_SEASONING>, <베이킹파우더:CV_SEASONING>를 넣고 <우유:CV_SEASONING>를 부어 섞어주세요.
+2. 반죽에 토핑 재료를 넣고 섞어주세요.
+3. <떡:CV_INGREDIENT>을 구울 오븐 틀에 종이 포일을 깔고 반죽을 넣은 후 <단호박:CV_INGREDIENT>을 올려주세요. 윗면에 종이 포일을 <한 장:QT_VOLUME> 덮어주세요.
+(tip. 높이 5cm의 17cm 정사각 떡틀을 사용했어요)
+4. "법랑 접시 위에 오븐 틀을 올려 1단에 넣고 광파오븐 수동 요리 스팀 오븐에서 <200도:QT_TEMPERATURE>로 <50분:TI_DURATION>간 구워준 후 오븐안에 <10분:TI_DURATION>간 두세요.
+ * 광파오븐 스팀 물통에 물을 채우고 시작해주세요."
+5. 완성된 영양 오븐 찰떡을 식힌 후 먹기 좋게 잘라주세요.
+(tip. 랩으로 감싸 냉동하면 <5~6개월:TI_DURATION> 정도 보관이 가능해요)

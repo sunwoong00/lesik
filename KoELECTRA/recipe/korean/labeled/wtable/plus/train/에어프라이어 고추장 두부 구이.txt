@@ -1,0 +1,6 @@
+1. <두부:CV_INGREDIENT>는 면포로 물기를 제거한 후 격자무늬로 칼집을 넣고 <소금:CV_SEASONING>, <후춧가루:CV_SEASONING>를 뿌려주세요.
+(tip. <두부:CV_INGREDIENT>의 물기를 최대한 제거하는 것이 중요해요. 체에 밭쳐 충분히 물기를 제거한 후 면포로 꾹 눌러주세요. <두부:CV_INGREDIENT>는 익으면서 점점 벌어지기 때문에 반 정도의 깊이로 칼집을 넣어주세요)
+2. <쪽파:CV_INGREDIENT>를 송송 썰어 주세요. 볼에 양념 재료를 잘 섞어주세요.
+3. 종이호일 위에 <두부:CV_INGREDIENT>를 올리고 양념 재료를 얹어주세요. 에어프라이어에서 <200도:QT_TEMPERATURE>로 <20분:TI_DURATION>간 구워주세요.
+(tip. 에어프라이어마다 성능에 차이가 있을 수 있으니 시간을 잘 체크해 주세요)
+4. 접시에 <구워진:CV_STATE> <두부:CV_INGREDIENT>를 담고 <쪽파:CV_INGREDIENT>와 <통깨:CV_SEASONING>를 뿌려 맛있게 즐겨주세요.

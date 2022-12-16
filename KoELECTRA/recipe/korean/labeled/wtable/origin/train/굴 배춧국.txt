@@ -1,0 +1,6 @@
+1. <무:CV_INGREDIENT>와 <배추:CV_INGREDIENT>는 먹기 좋게 나박 <썰:CV_ACT>어주세요. <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요. <당근:CV_INGREDIENT>은 채 <썰:CV_ACT>어주세요.
+2. 냄비에 <참기름:CV_SEASONING>을 <두르:CV_ACT>고 <무:CV_INGREDIENT>-<배추:CV_INGREDIENT> 순으로 <넣:CV_ACT>고 <볶:CV_ACT>아주세요. 
+3. <볶은:CV_STATE> <무:CV_INGREDIENT>와 <배추:CV_INGREDIENT>에 <육수:CV_SEASONING>를 <붓:CV_ACT>고 <5분:TI_DURATION> 정도 <끓:CV_ACT>여주세요. 
+4. 국물 양념 재료, <굴:CV_INGREDIENT>, <대파:CV_INGREDIENT>, <당근:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>를 <넣:CV_ACT>고 한소끔 <끓:CV_ACT>여주세요.
+(부족한 간은 <소금:CV_SEASONING>으로 <맞춰:CV_ACT>주세요.)
+

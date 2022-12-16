@@ -1,0 +1,7 @@
+1. <매생이:CV_INGREDIENT>는 고운 체에 <받쳐:CV_ACT> 물에 여러번 <헹궈:CV_ACT> 깨끗이 <씻:CV_ACT>고 가위로 먹기좋게 <자른:CV_ACT> 후 물기를 <빼:CV_ACT>주세요.
+2. <새우살:CV_INGREDIENT>은 반 <갈라:CV_ACT> 포를 <떠:CV_ACT>서 준비하고 <홍고추:CV_INGREDIENT>는 얇게 송송 <썰:CV_ACT>어주세요.
+3. 볼에 전 반죽 재료를 <넣:CV_ACT>고 <섞:CV_ACT>은 후 <매생이:CV_INGREDIENT>를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+4. <새우:CV_INGREDIENT> 한 면에 <부침가루:CV_SEASONING>를 <묻혀:CV_ACT> 주세요
+5. 달군 팬에 약간의 <기름:CV_SEASONING>을 <두르:CV_ACT>고 수저로 <반죽:CV_INGREDIENT>을 <올린:CV_ACT> 후 <새우:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>를 <올려:CV_ACT> <구워:CV_ACT> 주세요.
+(tip. <반죽:CV_INGREDIENT>이 익기 전에 <새우:CV_INGREDIENT>를 <반죽:CV_INGREDIENT>에 꾹 <눌러:CV_ACT> <붙여:CV_ACT>야 떨어지지 않아요.)
+6. <전 간장:CV_SEASONING>에 <찍:CV_ACT>어 맛있게 즐겨주세요.

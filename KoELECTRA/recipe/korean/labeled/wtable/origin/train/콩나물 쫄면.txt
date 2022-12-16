@@ -1,0 +1,8 @@
+1. <쫄면:CV_INGREDIENT>은 가닥가닥 <떼:CV_ACT>어 주세요. 볼에 양념 재료를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+(만든 <양념장:CV_SEASONING>은 냉장고에서 하루 정도 <숙성하:CV_ACT>면 맛이 더 깊어져요)
+2. <끓는:CV_STATE><물:CV_SEASONING>에 <콩나물:CV_INGREDIENT>을 <넣:CV_ACT>어 <1분:TI_DURATION> 정도 <데친:CV_ACT> 후 얼음물에 <담가:CV_ACT> <식히:CV_ACT>고 채반에 <받쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+3. <끓는:CV_STATE><물:CV_SEASONING>에 <쫄면:CV_INGREDIENT>을 <넣:CV_ACT>고 <저어가:CV_ACT>며 <3~4분:TI_DURATION>간 <삶:CV_ACT>아주세요. (물이 끓어오르면 <찬물:CV_SEASONING>을 <반 컵:QT_VOLUME> 정도 <넣:CV_ACT>어주세요)
+4. 찬물에 <쫄면:CV_INGREDIENT>을 여러 번 <씻:CV_ACT>어 전분기를 <없애:CV_ACT>고 채반에 <받쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+5. 볼에 <콩나물:CV_INGREDIENT>, <쫄면:CV_INGREDIENT>, <양념장:CV_SEASONING>을 <넣:CV_ACT>고 <버무려:CV_ACT> 주세요. <삶은 달걀:CV_INGREDIENT>은 반으로 <잘라:CV_ACT>주세요.
+6. 그릇에 <쫄면:CV_INGREDIENT>을 <담:CV_ACT>고 <삶은 달걀:CV_INGREDIENT>과 <통깨:CV_SEASONING>를 <올려:CV_ACT> 완성해주세요. 
+(기호에 따라 <채를 썬:CV_STATE> <오이:CV_INGREDIENT>, <양배추:CV_INGREDIENT> 등을 <곁들여:CV_ACT>도 좋아요)

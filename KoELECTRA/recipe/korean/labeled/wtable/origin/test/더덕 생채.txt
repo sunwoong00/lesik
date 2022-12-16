@@ -1,0 +1,5 @@
+1. <더덕:CV_INGREDIENT>은 칼로 돌려 <깎:CV_ACT>아 껍질을 <벗긴:CV_ACT> 후 물에 깨끗이 <씻:CV_ACT>고 반 <갈라:CV_ACT> 밀대로 살살 <두드려:CV_ACT> <펴:CV_ACT> 주세요.
+(tip. 껍질을 벗길 때 비닐장갑을 끼고 하시면 <더덕:CV_INGREDIENT>의 끈적한 진액이 손에 붙지 않게 껍질을 벗길 수 있어요.)
+2. <더덕:CV_INGREDIENT>은 결대로 굵게 <찢:CV_ACT>어주세요.
+3. 볼에 고추장 양념 재료를 모두 <넣:CV_ACT>고 골고루 <섞:CV_ACT>어 <양념장:CV_SEASONING>을 <만들:CV_ACT>어 주세요.
+4. <양념장:CV_SEASONING>에 <손질한:CV_STATE> <더덕:CV_INGREDIENT>을 <넣:CV_ACT>고 조물조물 <무쳐:CV_ACT> 접시에 <담:CV_ACT>은 후 <통깨:CV_SEASONING>와 <쪽파:CV_INGREDIENT>를 <뿌려:CV_ACT> 맛있게 즐겨주세요.

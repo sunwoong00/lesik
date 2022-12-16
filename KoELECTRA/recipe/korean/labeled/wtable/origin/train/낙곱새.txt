@@ -1,0 +1,8 @@
+1. <낙지:CV_INGREDIENT>는 <소금:CV_SEASONING>과 <밀가루:CV_SEASONING>를 <묻혀:CV_ACT> 깨끗하게 <닦은:CV_ACT> 후 먹기 좋은 크기로 <잘라:CV_ACT>주세요.(낙지 빨판의 불순물을 제거하기 위해 <밀가루:CV_SEASONING>를 사용한답니다) <곱창:CV_INGREDIENT>도 <밀가루:CV_SEASONING>로 여러 번 <씻:CV_ACT>고, 먹기 좋은 크기로 <잘라:CV_ACT>주세요.(손질 된 <소곱창:CV_INGREDIENT>은 그냥 <넣:CV_ACT>어 주시면 돼요) 
+
+2. <양파:CV_INGREDIENT>는 굵게 <채썰:CV_ACT>고, <양배추:CV_INGREDIENT>와 <깻잎:CV_INGREDIENT>은 한 입 크기로 <썰:CV_ACT>어주세요. <부추:CV_INGREDIENT>는 4cm길이로, <청양고추:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요
+3. <당면:CV_INGREDIENT>은 약 <30분:TI_DURATION>간 <불려:CV_ACT>두고, 볼에 낙곱새 양념장 재료를 모두 <섞:CV_ACT>어 <양념장:CV_SEASONING>을 <만들:CV_ACT>어주세요.
+4. 전골 냄비에 썰어 둔 <양배추:CV_INGREDIENT>를 <깔:CV_ACT>고, 나머지 <채소:CV_INGREDIENT>들과 <낙지:CV_INGREDIENT>, <소곱창:CV_INGREDIENT>, 양념장 재료를 모두 <넣:CV_ACT>은 후 <다시마육수:CV_SEASONING>를 <부어:CV_ACT> <중불:QT_TEMPERATURE>에서 약 <10~15분간:TI_DURATION> <끓여:CV_ACT>주세요.
+
+
+5. <김가루:CV_SEASONING>를 곁들에 <밥:CV_INGREDIENT>과 <낙곱새:CV_INGREDIENT>를 <비벼:CV_ACT>먹어도 맛있답니다.

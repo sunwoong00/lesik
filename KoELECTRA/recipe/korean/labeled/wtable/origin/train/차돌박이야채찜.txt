@@ -1,0 +1,7 @@
+1. <배춧잎:CV_INGREDIENT>은 먹기 좋은 크기로 <썰:CV_ACT>고, <청경채:CV_INGREDIENT>는 밑동을 <제거:CV_ACT> 후 길이로 반 <잘라:CV_ACT>주세요. <새송이 버섯:CV_INGREDIENT>은 밑동을 <제거:CV_ACT> 후 <슬라이스하:CV_ACT>고, <단호박:CV_INGREDIENT>은 껍질 째 얇게 <썰:CV_ACT>어주세요. <당근:CV_INGREDIENT>은 1cm두께로 <자른:CV_ACT> 후 꽃모양으로 <잘라:CV_ACT>주세요. <쪽파:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요.
+2. <부추:CV_INGREDIENT>와 <팽이버섯:CV_INGREDIENT>은 5cm 길이로 <썰:CV_ACT>어 야채 양념 재료를 <넣:CV_ACT>어 <밑간을 해:CV_ACT>주세요. 볼에 양념 재료를 모두 <섞:CV_ACT>어주세요.
+3. <차돌박이:CV_INGREDIENT>에 <밀가루:CV_SEASONING>를 살짝 <뿌린:CV_ACT> 후 <밑간한:CV_STATE> <야채:CV_INGREDIENT>를 <넣:CV_ACT>어 돌돌 <말:CV_ACT>아주세요.
+(tip. <밀가루:CV_SEASONING>를 뿌리면 고기가 풀어지지 않아서 좋아요.)
+4. 찜기에 <숙주:CV_INGREDIENT>를 <깔:CV_ACT>고 <차돌박이 말이:CV_INGREDIENT>를 보기 좋게 <올린:CV_ACT> 후 <쪽파:CV_SEASONING>를 <뿌려:CV_ACT>주세요. 다른 찜기에 <손질한:CV_STATE> <야채:CV_INGREDIENT>를 <올려:CV_ACT> <소금:CV_SEASONING>, <후춧가루:CV_SEASONING>를 <뿌린:CV_ACT> 후 찜기에 <15분:TI_DURATION> 정도 <쪄:CV_ACT>주세요.
+5. <차돌박이 야채찜:CV_INGREDIENT>과 <소스:CV_SEASONING>를 <곁들여:CV_ACT> 맛있게 즐겨주세요.
+

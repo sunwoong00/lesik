@@ -1,0 +1,6 @@
+1. <치즈:CV_INGREDIENT>는 베이컨의 폭에 맞춰 2~3등분 해주세요. <우엉:CV_INGREDIENT>은 잘게 썰어주세요. 
+2. 밥에 <잘게 썬:CV_STATE> <우엉:CV_INGREDIENT>과 <통깨:CV_SEASONING>, <소금:CV_SEASONING>, <참기름:CV_SEASONING>을 넣고 가볍게 섞어주세요. <밥:CV_INGREDIENT>을 한입 크기로 뭉쳐주세요. 
+3. <베이컨:CV_INGREDIENT>에 <체다치즈:CV_INGREDIENT>와 <밥:CV_INGREDIENT>을 넣고 돌돌 말아주세요. 
+4. 팬에 <베이컨치즈말이밥:CV_INGREDIENT>을 올린 후 <약불:QT_TEMPERATURE>에서 노릇하게 구워주세요. 
+(tip. 이음새 부분이 아래로 향하게 놓고 구워야 풀리지 않아요) 
+5. 완성된 <베이컨 치즈 말이 밥:CV_INGREDIENT>을 접시에 담고 <파슬리:CV_SEASONING>를 뿌려 맛있게 즐겨주세요. 

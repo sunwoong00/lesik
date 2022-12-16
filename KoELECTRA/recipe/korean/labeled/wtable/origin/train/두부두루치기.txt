@@ -1,0 +1,6 @@
+1. <김치:CV_INGREDIENT>와 <두부:CV_INGREDIENT>, <양파:CV_INGREDIENT>를 한 입 크기로 먹기 좋게 <썰:CV_ACT>고 <대파:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요. 볼에 양념 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어 <양념장:CV_SEASONING>을 <만들:CV_ACT>어주세요.
+2. <돼지고기:CV_INGREDIENT>는 먹기좋은 크기로 <자른:CV_ACT> 후 <양념장:CV_SEASONING> <1/2:QT_VOLUME>을 <넣:CV_ACT>어 <10분:TI_DURATION> 정도 <재워:CV_ACT>주세요.
+3. 달군 팬에 <기름:CV_SEASONING>을 <넣:CV_ACT>고 <물기를 제거한:CV_STATE> <두부:CV_INGREDIENT>를 <넣:CV_ACT>어 앞뒤로 <구워:CV_ACT> 준비해주세요.
+4. 달군 팬에 <기름:CV_ACT>을 <넣:CV_ACT>고 <김치:CV_INGREDIENT>를 <넣:CV_ACT>어 <중약불:QT_TEMPERATURE>에서 <볶:CV_ACT>다가 <양념한:CV_STATE> <돼지고기:CV_INGREDIENT>와 <양파:CV_INGREDIENT>를 <넣:CV_ACT>어 <볶:CV_ACT>아주세요.
+5. <돼지고기:CV_INGREDIENT>가 익으면 남은 <양념장:CV_SEASONING>과 <멸치 다시마 육수:CV_SEASONING>를 <넣:CV_ACT>어 <끓:CV_ACT>이고 국물이 자작해지면 구운 <두부:CV_INGREDIENT>와 <대파:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>를 <넣:CV_ACT>고 양념이 골고루 베이도록 <끓여:CV_ACT>주세요.
+6. 마지막에 <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 마무리해주세요.

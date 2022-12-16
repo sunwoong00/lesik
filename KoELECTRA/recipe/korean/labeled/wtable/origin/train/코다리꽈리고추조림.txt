@@ -1,0 +1,7 @@
+1. <코다리:CV_INGREDIENT>는 머리와 지느러미, 꼬리를 <자르:CV_ACT>고 <소금물:CV_SEASONING>에 <씻:CV_ACT>어 물기를 <제거한:CV_ACT> 후 3~4센치 정도로 토막을 <내:CV_ACT>주세요.
+2. <양파:CV_INGREDIENT>는 굵게 <채 썰:CV_ACT>고 <꽈리고추:CV_INGREDIENT>는 <씻:CV_ACT>어서 꼭지를 <제거한:CV_ACT> 후 어슷하게 반으로 <잘라:CV_ACT>주세요. <대파:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>고 <생강:CV_SEASONING>은 편으로 <썰:CV_ACT>어주세요.
+3. 냄비에 <물:CV_SEASONING> <2컵:QT_VOLUME>, <멸치:CV_SEASONING>와 <다시마 생강:CV_SEASONING> 편을 <넣:CV_ACT>고 <5분:TI_DURATION> 정도 <끓인:CV_ACT> 후 건더기를 <건져내:CV_ACT>어 <다시물:CV_SEASONING>을 <만들:CV_ACT>어주세요.
+<다시물:CV_SEASONING>에 <조림 양념:CV_SEASONING>을 <넣:CV_ACT>고 <끓이:CV_ACT>다가 <양파:CV_INGREDIENT>, <대파:CV_INGREDIENT>를 <넣:CV_ACT>고 <2분:TI_DURATION>간 더 <끓여:CV_ACT>주세요.
+4. <손질한:CV_STATE> <코다리:CV_INGREDIENT>를 <넣:CV_ACT>고 거품을 <제거한:CV_ACT> 후 중간 중간 <양념장:CV_SEASONING>을 수저로 <끼얹:CV_ACT>어 주면서 <센불:QT_TEMPERATURE>에서 약 1<5분:TI_DURATION> 정도 <조려:CV_ACT>주세요. <코다리:CV_INGREDIENT>를 수저로 너무 저으면 <생선 살:CV_INGREDIENT>이 부서질 수 있답니다.
+5. <코다리:CV_INGREDIENT>에 간이 스며들고 거의 조려지면 마지막에 <꽈리고추:CV_SEASONING>와 <올리고당:CV_SEASONING> <1/2큰술:QT_VOLUME>을 <넣:CV_ACT>고 <센 불:QT_TEMPERATURE>에서 <1~2분:TI_DURATION>간 더 윤기나게 <조려:CV_ACT>주세요.
+6. 마지막에 <깨소금:CV_SEASONING>과 <실고추:CV_SEASONING>를 <얹:CV_ACT>어주세요.

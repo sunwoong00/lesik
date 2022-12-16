@@ -1,0 +1,4 @@
+1. 볼에 <깍둑 썬:CV_STATE> <배:CV_INGREDIENT>, <고춧가루:CV_SEASONING>를 넣고 골고루 버무려 주세요.
+*Tip. <배:CV_INGREDIENT>는 껍질에도 영양이 많이 들어 있으므로 깨끗하게 세척한 후 껍질째 깍둑 썰어 사용해도 좋아요!
+2. 나머지 <양념:CV_SEASONING>과 <송송 썬:CV_STATE> <쪽파:CV_INGREDIENT>를 넣고 살살 버무려 주세요. 배가 당도가 높다면 <매실액:CV_SEASONING>은 생략해도 좋답니다.
+3. <밥:CV_INGREDIENT>과 함께 맛있게 즐겨보세요.

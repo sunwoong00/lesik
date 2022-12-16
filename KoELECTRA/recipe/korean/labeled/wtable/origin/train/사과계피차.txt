@@ -1,0 +1,5 @@
+1. <사과:CV_INGREDIENT>는 <식초:CV_SEASONING>를 약간 <넣:CV_ACT>은 물에 <담갔:CV_ACT>다가 깨끗하게 <씻:CV_ACT>어주세요.
+2. <사과:CV_INGREDIENT>를 4등분으로 <잘라:CV_ACT> 씨를 <제거하:CV_ACT>고 얇게 <썰:CV_ACT>어주세요.
+3. 큰 볼에 <사과:CV_INGREDIENT>, <계피:CV_INGREDIENT>, <꿀:CV_SEASONING>을 <넣:CV_ACT>고 <버무려:CV_ACT>주세요.
+4. 소독한 유리병에 <버무린:CV_STATE> <사과:CV_INGREDIENT>를 <넣:CV_ACT>고 실온에서 <하루:TI_DURATION> 정도 <숙성시킨:CV_ACT> 후 냉장고에서 <3일:TI_DURATION> 정도 <숙성시켜:CV_ACT>주세요. 
+5. 뜨거운 물에 타서 마시거나 <끓여:CV_ACT>서 드시면 더 진한맛을 느낄 수 있습니다.

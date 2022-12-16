@@ -1,0 +1,6 @@
+1. 냄비에 <달걀이 잠길 정도의:CV_STATE> <물:CV_SEASONING>을 <부어:CV_ACT>준 후 <소금:CV_SEASONING>과 <식초:CV_SEASONING>, <달걀:CV_INGREDIENT>을 <넣:CV_ACT>어 약 <8~9분:TI_DURATION> 삶아 반숙상태로 <삶:CV_ACT>아주세요. 
+(실온 상태의 <달걀:CV_INGREDIENT>을 사용해주셔야 터지지 않게 삶을 수 있어요)
+2. <삶아진:CV_STATE> <달걀:CV_INGREDIENT>은 <찬물:CV_SEASONING>에 <담궈:CV_ACT>서 껍질을 <벗:CV_ACT>겨 밀폐용기에 <넣:CV_ACT>어주세요.
+3. <양파:CV_INGREDIENT>와 <청,홍고추:CV_INGREDIENT>는 잘게 <다지:CV_ACT>고, <대파:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요. 간장양념 재료 용기에 <넣:CV_ACT>어 <섞:CV_ACT>은 후 <썰어둔:CV_STATE> <야채:CV_INGREDIENT>를 <넣:CV_ACT>어 잘 <저어:CV_ACT>주세요.
+4. 밀폐용기에 넣어두었던 <달걀:CV_INGREDIENT>에 <간장물:CV_SEASONING>을 <부어:CV_ACT>주고, 냉장고에서 <2~4시간:TI_DURATION> <숙성:CV_ACT> 후 즐겨주세요. 오래두면 <달걀:CV_INGREDIENT>이 짜질 수 있어 되도록 빨리 드시는 걸 추천해요.
+5. 취향에 따라 <참기름:CV_SEASONING>과 <김가루:CV_SEASONING>를 <얹:CV_ACT>어 드시면 더 맛있게 드실 수 있어요.

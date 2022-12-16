@@ -1,0 +1,6 @@
+1. <오이:CV_INGREDIENT>는 곱게 채를 썰고, <다진:CV_STATE><쇠고기:CV_INGREDIENT>는 <고기양념:CV_SEASONING>에 <10분:TI_DURATION>간 재워주세요.
+2. 단촛물 재료를 섞고, 전자레인지에서 <설탕:CV_SEASONING>이 녹을 때까지 <1분:TI_DURATION> 정도 돌려주세요. <고슬하게 지은:CV_STATE> <밥:CV_INGREDIENT>에 넣고 주걱으로 가르듯이 빠르게 섞은 후 젖은 키친타월로 덮어주세요.
+3. 달군 팬에 <양념한:CV_STATE> <고기:CV_INGREDIENT>를 넣고 볶아주세요.
+4. 볼에 <달걀:CV_INGREDIENT>과 달걀양념 재료를 섞은 후 체에 내려주세요. 달군 팬에 약간의 <기름:CV_SEASONING>을 넣고, <중약불:QT_TEMPERATURE>에서 <달걀:CV_INGREDIENT>을 젓가락으로 저어가면서 부드럽게 스크램블 에그를 만들어주세요.
+5. 도시락용기에 <밥:CV_INGREDIENT>을 담고 <잘게 자른:CV_STATE> <김:CV_INGREDIENT>을 올린 후, <볶은:CV_STATE><고기:CV_INGREDIENT>-<오이채:CV_INGREDIENT>-<스크램블:CV_INGREDIENT> <에그:CV_INGREDIENT>를 올려주세요.
+6. <얇게 자른:CV_STATE> <무:CV_INGREDIENT>를 꽃모양 틀로 찍은 후 비트물에 담가 장식해도 좋아요.

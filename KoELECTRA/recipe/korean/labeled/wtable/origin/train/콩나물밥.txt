@@ -1,0 +1,5 @@
+1. <쌀:CV_INGREDIENT>은 <씻:CV_ACT>어 <30분:TI_DURATION> 정도 찬물에 <불렸:CV_ACT>다가 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요. <콩나물:CV_INGREDIENT>은 꼬리를 <다듬:CV_ACT>어 <씻:CV_ACT>고, <부추:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요.
+2. <다진:CV_STATE> <쇠고기:CV_INGREDIENT>는 쇠고기양념 재료에 <10분:TI_DURATION> 정도 <재워:CV_ACT>주세요
+3. 냄비에 <불린:CV_STATE><쌀:CV_INGREDIENT>과 <쇠고기:CV_INGREDIENT>를 <담:CV_ACT>고 <물:CV_SEASONING>을 <넣:CV_ACT>어 <센불:QT_TEMPERATURE>에서 <끓이:CV_ACT>다가, 끓어오르면 <약불:QT_TEMPERATURE>로 <줄여:CV_ACT> <12분:TI_DURATION> 정도 뚜껑을 닫고 <끓여:CV_ACT>주세요.
+4. 밥물이 잦아들면 <콩나물:CV_INGREDIENT>을 <넣:CV_ACT>고 <약한불:QT_TEMPERATURE>에서 <5분:TI_DURATION> 정도 뚜껑을 닫아주세요. 이후 불을 <끄:CV_ACT>고 뚜껑을 닫은 채로 <10분:TI_DURATION> 정도 뜸을 <들여:CV_ACT>주세요.
+5. 볼에 양념간장 재료와 <부추:CV_INGREDIENT>를 <넣:CV_ACT>고 <섞:CV_ACT>어 <양념장:CV_SEASONING>을 <만든:CV_ACT> 후 <콩나물밥:CV_INGREDIENT>에 <곁들여:CV_ACT>주세요.

@@ -1,0 +1,5 @@
+1. <도라지:CV_INGREDIENT>는 흐르는 물에 깨끗이 <씻:CV_ACT>어 흙을 <제거한:CV_ACT> 후 껍질을 <벗겨:CV_ACT>주세요.
+(Tip. 물에 <1시간:TI_DURATION> 정도 담가두면 껍질 벗기기가 수월해요.)
+2. <껍질을 제거한:CV_STATE> <도라지:CV_INGREDIENT>는 0.5cm 두께로 송송 <썰:CV_ACT>고, <배:CV_INGREDIENT>는 껍질을 <벗기:CV_ACT>고 씨를 <제거한:CV_ACT> 후 한 입 크기로 <썰:CV_ACT>어주세요.
+3. 냄비에 <도라지:CV_INGREDIENT>와 <배:CV_INGREDIENT>, <설탕:CV_SEASONING>과 <꿀:CV_SEASONING>을 <넣:CV_ACT>은 후 <센 불:QT_TEMPERATURE>에서 끓어오르면 <중불:QT_TEMPERATURE>로 <줄여:CV_ACT> <저어:CV_ACT>가면서 수분감이 날아갈 때까지 약 <1시간 30분:TI_DURATION> 동안 <끓여:CV_ACT>주세요.
+4. 소독한 유리병에 <담:CV_ACT>고 뚜껑을 닫아주세요. <반나절:TI_DURATION> 실온에 <두:CV_ACT>었다가 냉장 보관 후 드시면 좋아요.

@@ -1,0 +1,7 @@
+1. 깨끗이 씻은 <고추:CV_INGREDIENT>는 꼭지를 <제거하:CV_ACT>고 잘게 <다져:CV_ACT>주세요. <양파:CV_INGREDIENT>도 <다져:CV_ACT>주세요.
+(tip. 많은 양을 손질할 때는 장갑을 착용해 주세요)
+2. 팬에 <기름:CV_SEASONING>을 약간 <두른:CV_ACT> 후 <다진:CV_STATE> <마늘:CV_INGREDIENT>과 <양파:CV_INGREDIENT>를 <넣:CV_ACT>어 <볶:CV_ACT>아주세요.
+3. 마늘향이 올라오면 <다진:CV_STATE> <고추:CV_INGREDIENT>를 <넣:CV_ACT>어 <볶:CV_ACT>다가 양념 재료를 <넣:CV_ACT>고 자작하게 <끓여:CV_ACT>주세요.
+4. 완성된 <땡초장:CV_INGREDIENT>은 <밥:CV_INGREDIENT>이나 <국수:CV_INGREDIENT> 등에 <곁들여:CV_ACT> 맛있게즐겨주세요. 
+(tip. <구운:CV_STATE> <김:CV_INGREDIENT>에 싸 먹거나 <호박잎:CV_INGREDIENT>, <양배추:CV_INGREDIENT> 등 <쌈 채소:CV_INGREDIENT>에 <곁들여:CV_ACT>도 맛있답니다.)
+(tip. 한 김 식혀 밀폐 용기에 담아 <보관해:CV_ACT> 주세요. 냉장고에서 <한 달:TI_DURATION> 정도 보관이 가능해요)

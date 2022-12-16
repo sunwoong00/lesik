@@ -1,0 +1,10 @@
+1. <묵은지:CV_INGREDIENT>는 김칫소를 잘 <털:CV_ACT>어내고 깨끗이 <씻:CV_ACT>어 물기를 <제거해:CV_ACT> 주세요. 
+(tip 길이가 긴 <배춧잎:CV_INGREDIENT>은 심지 부분을 <잘라:CV_ACT> 준비해 주세요.)  
+2. <냉동:CV_STATE> <유부:CV_INGREDIENT>를 먹기 좋은 크기로 채 <썰:CV_ACT>어 주세요. 체에 <밭쳐:CV_ACT> 끓는 물을 <끼얹:CV_ACT>은 후 찬물로 <헹구:CV_ACT>고 물기를 <짜:CV_ACT>주세요. 달군 팬에 <유부:CV_INGREDIENT>를 <넣:CV_ACT>어 <볶:CV_ACT>아주세요. <다시마 육수:CV_SEASONING>를 <넣:CV_ACT>어 <유부:CV_INGREDIENT>에 잘 <스며들:CV_ACT>게 한 후 <간장:CV_SEASONING>, <맛술:CV_SEASONING>, <설탕:CV_SEASONING>을 <넣:CV_ACT>어 졸이듯 <볶:CV_ACT>아주세요.
+(tip 물기가 없어질 때까지 <졸여:CV_ACT>주세요.) 
+3. <오이:CV_INGREDIENT>는 흐르는 물에 <씻:CV_ACT>어 6cm 길이로 <채 썰:CV_ACT>어주세요. 물에 약간의 <소금:CV_SEASONING>을 <넣:CV_ACT>고 <끓여:CV_ACT> <미나리:CV_INGREDIENT>를 살짝 <데친:CV_ACT> 후 물기를 <제거해:CV_ACT> 주세요.
+4. <달걀:CV_INGREDIENT>은 약간의 <소금:CV_SEASONING>을 <넣:CV_ACT>고 알끈을 <제거해:CV_ACT> 주세요. <지단:CV_INGREDIENT>을 도톰하게 <부쳐:CV_ACT>준 후, 적당한 크기로 <썰:CV_ACT>어주세요. 
+5. 볼에 쌈장 재료를 <넣:CV_ACT>고 고루 <섞:CV_ACT>어주세요.
+6. 따뜻한 <밥:CV_INGREDIENT>에 <소금:CV_SEASONING> <½작은술:QT_VOLUME>과 <참기름:CV_SEASONING> <1큰술:QT_VOLUME>을 <넣:CV_ACT>어 고루 <섞:CV_ACT>어주세요.
+7. <묵은지:CV_INGREDIENT>를 <깔:CV_ACT>고 <밥:CV_INGREDIENT>-<쌈장:CV_SEASONING>-<지단:CV_SEASONING>-<오이:CV_INGREDIENT>-<유부 조림:CV_INGREDIENT> 순으로 <얹:CV_ACT>고 돌돌 <말:CV_ACT>은 후 <미나리:CV_INGREDIENT>로 <묶:CV_ACT>어주세요.
+8. 맛있게 즐겨주세요.

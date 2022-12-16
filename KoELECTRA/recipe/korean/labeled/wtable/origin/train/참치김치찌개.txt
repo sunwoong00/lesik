@@ -1,0 +1,5 @@
+1. <묵은지:CV_INGREDIENT>와 <두부:CV_INGREDIENT>는 적당한 크기로 <썰:CV_ACT>어주세요. <양파:CV_INGREDIENT>는 <채썰:CV_ACT>고, <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>는 어슷 <썰:CV_ACT>어주세요.
+2. 달군냄비에 <들기름:CV_SEASONING>과 <참치캔 기름:CV_SEASONING>을 <넣:CV_ACT>고 <묵은지:CV_INGREDIENT>와 <양파:CV_INGREDIENT>, <설탕:CV_SEASONING>을 <넣:CV_ACT>어 <양파:CV_INGREDIENT>가 투명해질 때까지 <볶:CV_ACT>아주세요.
+3. <물:CV_SEASONING>, <다진:CV_STATE><마늘:CV_INGREDIENT>, <김치국물:CV_SEASONING>, <고춧가루:CV_SEASONING>, <참치캔:CV_INGREDIENT>을 <넣:CV_ACT>어 <중불:QT_TEMPERATURE>에서 약 5분간 <끓여:CV_ACT>주세요.
+4. <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>, <두부:CV_INGREDIENT>를 <넣:CV_ACT>고 한소끔 더 <끓여:CV_ACT>주세요.
+5. 따뜻할 때 <밥:CV_INGREDIENT>과 함께 즐겨주세요.

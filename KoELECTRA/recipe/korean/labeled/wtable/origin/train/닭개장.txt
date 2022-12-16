@@ -1,0 +1,13 @@
+1. <닭:CV_INGREDIENT>은 내장, 꽁지, 지방, 날개 끝을 <제거한:CV_ACT> 후 깨끗이 <씻:CV_ACT>어주세요. <손질한:CV_STATE> <닭:CV_INGREDIENT>은 반으로 <잘라:CV_ACT>주세요.
+2. 냄비에 육수 재료와 <손질한:CV_STATE> <닭:CV_INGREDIENT>을 <넣:CV_ACT>어 <센 불:QT_TEMPERATURE>에서 <10분:TI_DURATION>, <중불:QT_TEMPERATURE>에서 <15분:TI_DURATION> 정도 <끓여:CV_ACT>주세요.
+(tip. 찬물에서 <육수:CV_SEASONING>와 <닭:CV_INGREDIENT>을 <넣:CV_ACT>어 서서히 <끓이:CV_ACT>면 <육수:CV_SEASONING>가 잘 우러나 깊은 맛을 낼 수 있어요.)
+3. <닭:CV_INGREDIENT>을 <건지:CV_ACT>고 한 김 <식힌:CV_ACT> 후, 체에 <밭쳐:CV_ACT> 건더기를 <걸러:CV_ACT> <육수:CV_SEASONING>를 <만들:CV_ACT>어주세요.
+(tip. 체에 면포를 받쳐 걸러내면 더 깔끔한 <육수:CV_SEASONING>를 만들 수 있어요.)
+
+4. 건져낸 <삶은:CV_STATE> <닭고기:CV_INGREDIENT>는 한 입 크기의 결대로 살을 <발라:CV_ACT> <찢:CV_ACT>어주세요.
+5. 끓는 물에 <소금:CV_SEASONING> 약간을 <넣:CV_ACT>은 후 <숙주:CV_INGREDIENT>와 <고사리:CV_INGREDIENT>를 살짝 <데쳐:CV_ACT> 찬물에 <헹궈:CV_ACT>주세요.
+(tip. 숙주를 데쳐서 넣으면 비린 맛이 나지 않아요.)
+6. <대파:CV_INGREDIENT>, <고사리:CV_INGREDIENT>는 6cm 길이로 <썰:CV_ACT>고, <무:CV_INGREDIENT>는 나박하게, <양파:CV_INGREDIENT>는 채 <썰:CV_ACT>어주세요. <느타리버섯:CV_INGREDIENT>은 결대로 먹기 좋게 <찢:CV_ACT>어주세요.
+7. 큰 볼에 양념 재료와 <손질한:CV_STATE> <야채:CV_INGREDIENT>를 <넣:CV_ACT>어 골고루 <섞:CV_ACT>어주세요.
+8. 달군 냄비에 <고추기름:CV_SEASONING>을 살짝 <두른:CV_ACT> 뒤, 양념한 재료를 <3분:TI_DURATION> 정도 <볶:CV_ACT>다가 준비한 <육수:CV_SEASONING> <6컵:QT_VOLUME>과 <닭고기:CV_INGREDIENT>를 <넣:CV_ACT>어 <25분:TI_DURATION> 정도 <중불:QT_TEMPERATURE>에서 <끓:CV_ACT>여 완성해주세요.
+(부족한 간은 <국간장:CV_SEASONING>이나 <소금:CV_SEASONING>으로 <가감해:CV_ACT>서 <맞춰:CV_ACT>주면 좋아요.)

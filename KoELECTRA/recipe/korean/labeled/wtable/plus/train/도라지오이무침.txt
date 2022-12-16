@@ -1,0 +1,5 @@
+1. <도라지:CV_INGREDIENT>는 솔로 비벼 깨끗이 씻고, 머리 부분을 잘라주세요. <손질된:CV_STATE> <도라지:CV_INGREDIENT>에 일자로 칼집을 내어 결 방향대로 돌려가며 껍질을 벗기고, 편으로 썬 후 굵게 채썰거나 찢어 5센치 길이로 잘라주세요.
+2. <소금물:CV_SEASONING>(<물:CV_SEASONING> <1컵:QT_VOLUME>, <소금:CV_SEASONING> <1/2큰술:QT_VOLUME>)에 바락바락 주물러 <도라지:CV_INGREDIENT>의 쓴맛을 빼고 찬물에 헹군 후 물기를 빼주세요.
+3. <오이:CV_INGREDIENT>는 반으로 가른 후 어슷하게 썰고, 약간의 <소금:CV_SEASONING>을 뿌려 살짝 절였다가 물기를 짜주세요.
+4. 볼에 양념재료를 넣고 먼저 <도라지:CV_INGREDIENT>를 넣어 무친 뒤 <오이:CV_INGREDIENT>를 더해 가볍게 섞어주세요.
+5. 접시에 <도라지오이무침:CV_INGREDIENT>을 담고 <깨:CV_SEASONING>를 뿌려 마무리해주세요.

@@ -1,0 +1,11 @@
+1. 냄비에 <멸치  다시마육수:CV_SEASONING>를 <붓:CV_ACT>고 <해감한:CV_STATE> <모시조개:CV_INGREDIENT>를 <넣:CV_ACT>어 <끓이:CV_ACT>다가 조개가 <익:CV_ACT>어 입을 벌리면 <건져내:CV_ACT>고, <육수:CV_SEASONING>는 <가라앉힌:CV_ACT> 후 위 <육수:CV_SEASONING>만 <따라내:CV_ACT>어 준비해 주세요.
+(tip 건져 낸 <모시조개:CV_INGREDIENT>는 <육수:CV_SEASONING>에 <흔들:CV_ACT>어 남아 있는 모래를 제거해 주세요.)
+
+2. <얼갈이배추:CV_INGREDIENT>는 밑둥을 <자른:CV_ACT> 후 물에 <씻:CV_ACT>고 끓는 물에 약간의 <소금:CV_SEASONING>을 <넣:CV_ACT>고 <얼갈이배추:CV_INGREDIENT>의 흰부분부터 <넣:CV_ACT>어 <1~2분:TI_DURATION>간 <데친:CV_ACT> 후 찬물에 <헹궈:CV_ACT> 물기를 살짝 <제거해:CV_ACT>주세요.
+3. <얼갈이:CV_INGREDIENT>는 먹기 좋은 크기로 <잘라:CV_ACT> 얼갈이 양념재료에 조물조물 <버무려:CV_ACT> <밑간하:CV_ACT>고 <고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>고 <대파:CV_INGREDIENT>는 길이로 반 <가른:CV_ACT> 후 6cm 길이로 <썰:CV_ACT>어주세요.
+(tip <된장:CV_SEASONING>의 염도에 따라 <된장:CV_SEASONING> 양을 <가감해:CV_ACT>서 양념을 <조절해:CV_ACT> 주세요.)
+
+4. 냄비에 <육수:CV_SEASONING>를 <붓:CV_ACT>고 끓어오르면 <양념한:CV_STATE> <얼갈이배추:CV_INGREDIENT>를 <넣:CV_ACT>고 <중간불:QT_TEMPERATURE>에서 <3분:TI_DURATION> 정도 <끓여:CV_ACT>세요.
+5. . 마지막에 <모시조개:CV_INGREDIENT>와 <대파:CV_INGREDIENT>, <고추:CV_INGREDIENT>를 <넣:CV_ACT>어 한소끔 더 <끓:CV_ACT>여 맛있게 즐겨주세요.(tip 부족한 간은 <소금:CV_SEASONING>을 <가감해:CV_ACT> 조절해 주세요.)
+
+

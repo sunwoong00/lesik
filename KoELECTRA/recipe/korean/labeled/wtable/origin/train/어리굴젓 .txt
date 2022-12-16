@@ -1,0 +1,7 @@
+1. <무:CV_INGREDIENT>는 반은 강판에 <갈:CV_ACT>아 즙을 <내:CV_ACT>고 <굴:CV_INGREDIENT>을 <넣:CV_ACT>은 후 <무즙:CV_SEASONING>에 살살 <버무려:CV_ACT> 가며 불순물을 <씻어내:CV_ACT>고 <소금물:CV_SEASONING>에 한번 더 <흔들:CV_ACT>어 <씻:CV_ACT>어 <건져 내:CV_ACT> 체에 <받쳐:CV_ACT>주세요.
+2. <건져 낸:CV_STATE> <굴:CV_INGREDIENT>에 <맛술:CV_SEASONING>과 <소금:CV_SEASONING>을 <뿌리:CV_ACT>고 <3시간:TI_DURATION>정도 체에 <받쳐:CV_ACT> 물기를 <빼:CV_ACT> 주세요.
+3. 나머지 <무:CV_INGREDIENT>는 나박하게 <썰:CV_ACT>어 <소금:CV_SEASONING> <1작은술:QT_VOLUME>을 <뿌려:CV_ACT> <10분:TI_DURATION>정도 <절인:CV_ACT> 후 면보에 <싸:CV_ACT>서 물기를 <제거하:CV_ACT>고 <실파:CV_INGREDIENT>는 3센치 길이로 <썰:CV_ACT>어주세요.
+4. 냄비에 찹쌀풀 재료를 <넣:CV_ACT>고 잘 <섞:CV_ACT>어준 후 <중불:QT_TEMPERATURE>에서 <저어:CV_ACT>가며 <풀:CV_ACT>고 기포가 올라오면서 농도가 나면 불을 <끄:CV_ACT>고 <식혀:CV_ACT>주세요.
+5. 볼에 <식힌:CV_STATE> <찹쌀풀:CV_SEASONING>과 양념 재료, <무:CV_INGREDIENT>, <실파:CV_INGREDIENT>를 <넣:CV_ACT>고 고루 <섞:CV_ACT>어주세요.
+6. 양념재료에 <굴:CV_INGREDIENT>을 <넣:CV_ACT>고 살살 <버무리:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.
+(tip 기호에 따라 <소금:CV_SEASONING>을 <가감해:CV_ACT>서 간을 맞춰주세요.)

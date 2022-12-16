@@ -1,0 +1,7 @@
+1. 미리 <20분간:TI_DURATION> <불린:CV_STATE> <미역:CV_INGREDIENT>을 흐르는 물에 박박 <비벼:CV_ACT> 여러 번 <씻:CV_ACT>은 후 칼로 잘게 <다져:CV_ACT>주세요.
+
+*Tip. <미역:CV_INGREDIENT>은 매우 질기기 때문에 잘게 다지거나 아예 믹서로 갈면 좋아요.
+2. 냄비에 <불린:CV_STATE> <쌀:CV_INGREDIENT>과 잘게 <다진:CV_STATE> <미역:CV_INGREDIENT>, <물:CV_SEASONING>을 <붓:CV_ACT>고 <강한 불:QT_TEMPERATURE>로 <저어주:CV_ACT>며 <끓여:CV_ACT>요. 끓어오르면 <약한 불:QT_TEMPERATURE>로 <줄인:CV_ACT> 후, <들깨:CV_SEASONING>를 <뿌리:CV_ACT>고 농도가 적당해질 때까지 <끓여:CV_ACT>요.
+
+*Tip. <다시마 팩:CV_SEASONING>으로 맛을 내는 것도 괜찮은 방법이예요. 알레르기에 예민한 아이가 아니라면 <참기름:CV_SEASONING> 한 방울 톡 넣어주는 것도 괜찮아요. 
+3. 4회분으로 나눠 용기에 담아주세요.

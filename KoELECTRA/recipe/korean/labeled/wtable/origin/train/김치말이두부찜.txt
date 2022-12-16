@@ -1,0 +1,7 @@
+1. <양파:CV_INGREDIENT>는 굵게 <채 썰:CV_ACT>고, <대파:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요. <느타리버섯:CV_INGREDIENT>은 밑동을 <자르:CV_ACT>고 먹기 좋게 <찢:CV_ACT>고 <두부:CV_INGREDIENT>는 손가락 두께로 <잘라:CV_ACT>주세요. 볼에 양념 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요. 
+(tip. 김치의 염도에 따라 <김치 국물:CV_SEASONING>의 양을 <가감해:CV_ACT> 주세요.)
+2. 달군 팬에 <들기름:CV_SEASONING> <1큰술:QT_VOLUME>을 <두르:CV_ACT>고 <두부:CV_INGREDIENT>를 돌려가며 노릇하게 <구워:CV_ACT>주세요.
+3. <김치:CV_INGREDIENT>를 넓게 <깔:CV_ACT>고, <구운:CV_STATE> <두부:CV_INGREDIENT>를 <올려:CV_ACT> 돌돌 <말:CV_ACT>아주세요.
+4. 냄비에 <들기름:CV_SEASONING> <1큰술:QT_VOLUME>을 <두르:CV_ACT>고 <대파:CV_INGREDIENT>(<1/2분량:QT_VOLUME>)을 <넣:CV_ACT>어 <볶:CV_ACT>다가 파의 향이 올라오면 <느타리버섯:CV_INGREDIENT>과 <양파:CV_INGREDIENT>를 <넣:CV_ACT>어 <볶:CV_ACT>아주세요. <김치말이두부:CV_INGREDIENT>와 <양념:CV_SEASONING>, <채수:CV_SEASONING>를 <넣:CV_ACT>고 <중불:QT_TEMPERATURE>에서 <25분:TI_DURATION> 정도 <끓여:CV_ACT>주세요. 
+(tip. <김치말이두부:CV_INGREDIENT>의 이음새 부분이 냄비의 바닥이 가도록 놓아야 풀리지 않아요. <채수:CV_SEASONING>를 <넣:CV_ACT>을 때는 냄비의 가장자리부터 천천히 <부어:CV_ACT>주세요. 기호에 따라 끓이는 중간에 채수를 가감해서 국물의 양을 조절해 주세요.)
+5. <김치:CV_INGREDIENT>가 부드럽게 익으면 기호에 따라 부족한 간은 <소금:CV_SEASONING>을 <가감해:CV_ACT>서 조절한 후 나머지 <대파:CV_INGREDIENT> 반을 <올려:CV_ACT> 맛있게 즐겨주세요.

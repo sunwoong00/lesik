@@ -1,0 +1,7 @@
+1. <해감한:CV_STATE> <바지락:CV_INGREDIENT>은 바락바락 <비벼:CV_ACT> <씻:CV_ACT>어주세요. 물이 끓어오르면 <청주:CV_SEASONING> <2큰술:QT_VOLUME>을 <넣:CV_ACT>어 <데친:CV_ACT> 후 <바지락살:CV_INGREDIENT>과 껍질을 <분리해:CV_ACT>주세요. 
+(tip 냄비의 뚜껑을 덮어 <바지락:CV_INGREDIENT>의 입이 완전히 벌리면 불을 <끄:CV_ACT>고 <5분:TI_DURATION> 정도 <두:CV_ACT>었다가 살만 <발라:CV_ACT> 사용하고 바지락 삶은 물은 육수로 활용하세요.)
+2. 볼에 양념 재료를 <넣:CV_ACT>고 골고루 <섞:CV_ACT>어주세요.
+3. <미나리:CV_INGREDIENT>는 4센치 길이로 <썰:CV_ACT>고, <양파:CV_INGREDIENT>는 채를 <썰:CV_ACT>어주세요. <배:CV_INGREDIENT>와 <대파:CV_INGREDIENT>도 <양파:CV_INGREDIENT>와 비슷한 길이로 채를 <썰:CV_ACT>어주세요. <오이:CV_INGREDIENT>와 <당근:CV_INGREDIENT>은 어슷하게 편으로 <썰:CV_ACT>고, <고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+4. 볼에 <손질한:CV_STATE> <야채:CV_INGREDIENT>와 <양념 소스:CV_SEASONING>를 <넣:CV_ACT>고 고루 <섞:CV_ACT>은 후 <바지락 살:CV_INGREDIENT>을 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+5. 마지막에 <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 <넣:CV_ACT>고 가볍게 <버무려:CV_ACT> 맛있게 즐겨주세요.
+

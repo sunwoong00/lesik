@@ -1,0 +1,11 @@
+1. <갈비:CV_INGREDIENT>는 기름을 떼고 <1시간:TI_DURATION> 이상 찬물에 <담가:CV_ACT> 핏물을 <빼:CV_ACT>주세요.
+(Tip. <갈비:CV_INGREDIENT>를 포크나 칼끝으로 찔러주고 칼집을 내주면 맛이 잘 우러나며 질긴 것을 방지할 수 있어요.)
+2. <무:CV_INGREDIENT>는 나박하게 3*4cm 크기로 <썰:CV_ACT>고 <표고버섯:CV_INGREDIENT>은 1cm 두께로 <슬라이스해:CV_ACT>주세요.
+<대파:CV_INGREDIENT>는 4cm 길이로 <썰:CV_ACT>어주세요.
+<생강:CV_INGREDIENT>은 껍질을 <벗겨:CV_ACT>주세요.
+3. 냄비에 <갈비:CV_INGREDIENT>와 국물 재료를 <넣:CV_ACT>고 <물:CV_SEASONING>을 넉넉히 <부어:CV_ACT> <1시간:TI_DURATION> 이상 푹 <끓:CV_ACT>여주세요.
+4. 국물 재료와 <기름:CV_SEASONING>을 <건져:CV_ACT>낸 후 썰은 <무:CV_INGREDIENT>와 <표고버섯:CV_INGREDIENT>, <대파:CV_INGREDIENT>를 <넣:CV_ACT>어 <5분:TI_DURATION> 이상 <끓:CV_ACT>여주세요.
+(Tip. 체에 면보를 깔고 <육수:CV_SEASONING>를 <걸러:CV_ACT>내면 기름도 제거되고 깔끔한 국물을 맛보실 수 있어요.)
+5. 무가 <익:CV_ACT>으면 양념 재료를 <넣:CV_ACT>어 <5분:TI_DURATION> 정도 <끓:CV_ACT>여 완성해주세요.
+6. 맛있게 즐겨주세요.
+

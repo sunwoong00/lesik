@@ -1,0 +1,5 @@
+1. 준비한 <뱅어포:CV_INGREDIENT>의 절반은 길게 자르고 나머지 반은 4x4cm 크기로 먹기 좋게 잘라주세요.
+냄비에 <기름:CV_SEASONING>을 넉넉히 넣고 기름 온도를 <160도:QT_TEMPERATURE>까지 올려 준 후 <뱅어포:CV_INGREDIENT>를 넣고 살짝 튀겨주세요.
+2. <튀긴:CV_STATE> <뱅어포:CV_INGREDIENT>를 기름종이에 올려 <기름:CV_SEASONING>을 제거해주세요.
+3. 뱅어포가 식어서 바삭해지면 <설탕:CV_SEASONING>과 <고춧가루:CV_SEASONING>를 체로 뭉치지 않게 고루 뿌려주세요. 아이들 간식으로 만들 때는 <고춧가루:CV_SEASONING>를 생략해도 좋아요.
+4. 그릇에 담아 마무리해주세요.

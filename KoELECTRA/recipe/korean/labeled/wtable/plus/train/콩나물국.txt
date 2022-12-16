@@ -1,0 +1,7 @@
+1. <콩나물:CV_INGREDIENT>은 깨끗이 씻어 체에 밭쳐 물기를 빼주세요.
+2. <쪽파:CV_INGREDIENT>의 <흰뿌리:CV_INGREDIENT>는 반으로 갈라 3센치 길이로 자르고, <청양고추:CV_INGREDIENT>는 어슷하게 썰어주세요.
+3. 냄비에 <멸치 다시마 육수:CV_SEASONING>를 넣어 끓으면 <다진:CV_STATE> <마늘:CV_INGREDIENT>, <새우젓:CV_SEASONING>을 넣어 간을 맞춰주세요.
+4. <콩나물:CV_INGREDIENT>을 넣고 <3분:TI_DURATION> 정도 끓여주세요.
+(tip. 콩나물을 삶는 중간에 뚜껑을 닫으면 비린내가 날 수 있으니 주의해주세요.)
+5. <쪽파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>를 넣어 <2분:TI_DURATION> 정도 끓이고, 부족한 간은 <소금:CV_SEASONING>으로 맞춘 후 맛있게 즐겨주세요.
+(tip.얼큰하게 드시고 싶다면 <고춧가루:CV_SEASONING>를 가미해서 드셔도 좋답니다.)

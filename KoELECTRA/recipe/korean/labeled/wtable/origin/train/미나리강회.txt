@@ -1,0 +1,6 @@
+1. <연근:CV_INGREDIENT>은 껍질을 <벗기:CV_ACT>고 얇게 <슬라이스 한:CV_ACT> 후 끓는물에 살짝 <데치:CV_ACT>고 찬물에 <식혀:CV_ACT> 물기를 <빼:CV_ACT>주세요. <비트:CV_INGREDIENT>를 잘게 <썰:CV_ACT>어 <단촛물:CV_SEASONING>에 <넣:CV_ACT>어 <섞:CV_ACT>고 데친 <연근:CV_INGREDIENT>을 <15분:TI_DURATION> 정도 <담가:CV_ACT> 분홍색 물을 <들여:CV_ACT>주세요.
+2. <미나리:CV_INGREDIENT>는 <끓는 물:CV_ACT>에 <소금:CV_SEASONING>을 약간 <넣:CV_ACT>고 살짝 <데친:CV_ACT> 후 찬물에 식혀 물기를 꼭 <짜:CV_ACT>주세요. <파프리카:CV_INGREDIENT>는 6센치 길이로 채를 <썰:CV_ACT>어주세요.
+3. <오징어:CV_INGREDIENT>는 껍질을 <벗기:CV_ACT>고 <끓는 물:CV_SEASONING>에 약간의 <소금:CV_SEASONING>을 <넣:CV_ACT>어 <1분:TI_DURATION> 정도 <데친:CV_ACT> 후 먹기 좋은 크기로 <잘라:CV_ACT>주세요.
+4. <절인:CV_STATE> <연근:CV_INGREDIENT>으로 <오징어:CV_INGREDIENT>를 <감싼:CV_ACT> 후 <파프리카:CV_INGREDIENT>를 <올리:CV_ACT>고 데친 <미나리:CV_INGREDIENT>를 돌돌 <말:CV_ACT>아 <감:CV_ACT>아주세요.
+5. 접시에 <미나리강회:CV_INGREDIENT>를 <담:CV_ACT>고 <초고추장:CV_SEASONING>과 함께 <곁들여:CV_ACT> 주세요.
+

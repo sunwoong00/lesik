@@ -1,0 +1,11 @@
+1. 깨끗이 <씻은:CV_STATE> <단호박:CV_INGREDIENT>을 광파오븐 수동요리 레인지에서 <5분간:TI_DURATION> 익혀준 후 칼로 윗부분을 도려내 주세요. 숟가락으로 <단호박:CV_INGREDIENT> 속을 파내어 내열 용기에 담아주세요.
+2. 법랑 접시에 석쇠를 놓고 내열 용기를 올려 1단에 넣고 광파오븐 수동 요리 스팀 레인지에서 <10분:TI_DURATION>간 익혀주세요. * 광파오븐 스팀 물통에 물을 채우고 시작해주세요.
+(tip. “오븐에 전송” 버튼을 누르면 간단하게 설정할 수 있어요.)
+3. <양파:CV_INGREDIENT>와 <파프리카:CV_INGREDIENT>는 한 입 크기로 썰고, <청경채:CV_INGREDIENT>와 <팽이버섯:CV_INGREDIENT>은 밑동을 제거한 후 적당한 크기로 잘라주세요. <대파:CV_INGREDIENT>는 어슷하게 썰고 <마늘:CV_INGREDIENT>은 편으로 썰어주세요.
+4. <새우:CV_INGREDIENT>는 껍질과 내장을 제거해 주세요. <오징어:CV_INGREDIENT>는 먹기 좋은 크기로 잘라주세요. 볼에 양념 재료를 넣어 섞어주세요.
+5. 넓은 팬에 <기름:CV_SEASONING>을 두르고 <마늘 편:CV_INGREDIENT>을 넣어 볶다가 향이 올라오면 <손질한:CV_STATE> <해물:CV_INGREDIENT>과 <청주:CV_SEASONING>를 넣어서 <센 불:QT_TEMPERATURE>에서 <2분:TI_DURATION> 정도 볶아주세요.
+6. <볶은:CV_STATE> <해물:CV_INGREDIENT>에 <양파:CV_INGREDIENT>를 넣고 볶다가, <양념:CV_SEASONING>, <떡:CV_INGREDIENT>, <물:CV_SEASONING>을 넣어 <3분:TI_DURATION> 정도 끓여주세요.
+7. 떡이 말랑말랑해지면 <대파:CV_INGREDIENT>, <청경채:CV_INGREDIENT>, <팽이버섯:CV_INGREDIENT>, <파프리카:CV_INGREDIENT>를 넣은 후 <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 뿌려주세요.
+8. <단호박:CV_INGREDIENT> 속에 볶은 재료를 80% 정도 채운 후 빈 공간에 <피자치즈:CV_INGREDIENT>를 넣어주세요.
+9. 법랑 접시 위에 내열 용기를 올려 1단에 넣고 광파오븐 수동 요리 오븐에서 <200도로:QT_TEMPERATURE> <5분간:TI_DURATION> 조리해 주세요.
+10. 완성된 단호박 해물 떡 찜을 접시에 담고 먹기 좋게 잘라 맛있게 즐겨주세요.

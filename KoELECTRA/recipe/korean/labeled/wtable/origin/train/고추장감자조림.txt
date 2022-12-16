@@ -1,0 +1,5 @@
+1. <감자:CV_INGREDIENT>는 껍질을 <제거하:CV_ACT>고 동그랗게 2센치 두께로 <잘라:CV_ACT> 찬물에 <담가:CV_ACT> 전분기를 <빼:CV_ACT>주세요. <양파:CV_INGREDIENT>는 한 입 크기로 <썰:CV_ACT>고 <홍고추:CV_INGREDIENT>와 <대파:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요. 볼에 양념 재료를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+2. 달군 팬에 약간의 <기름:CV_SEASONING>을 <두르:CV_ACT>고 <감자:CV_INGREDIENT>와 <양파:CV_INGREDIENT>를 <넣:CV_ACT>고 <3분:TI_DURATION> 정도 골고루 <중간불:QT_TEMPERATURE>에서 <볶:CV_ACT>아주세요.
+3. <감자:CV_INGREDIENT>가 반쯤 투명하게 익으면 양념 재료와 <멸치다시육수:CV_SEASONING>를 <넣:CV_ACT>어 <중간불:QT_TEMPERATURE>에서 뚜껑을 닫고 <10분:TI_DURATION> 정도 <감자:CV_INGREDIENT>를 <익히:CV_ACT>며 <조려:CV_ACT>주세요.
+(<감자:CV_INGREDIENT>의 수분 상태에 따라 <멸치다시마육수:CV_SEASONING>를 <가감해:CV_ACT>주세요.)
+4. <감자:CV_INGREDIENT>가 익으면 <홍고추:CV_INGREDIENT>, <대파:CV_INGREDIENT>를 <넣:CV_ACT>어 <섞:CV_ACT>고 마지막에 <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 <뿌린:CV_ACT> 후 불을 <꺼:CV_ACT>주세요.

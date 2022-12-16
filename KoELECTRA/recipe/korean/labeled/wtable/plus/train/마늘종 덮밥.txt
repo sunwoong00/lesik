@@ -1,0 +1,6 @@
+1. <돼지고기:CV_INGREDIENT>는 키친타월에 올려 핏물을 제거한 후 고기 밑간 재료를 넣어 밑간해주세요.
+2. <마늘종:CV_INGREDIENT>은 1cm 길이로 자르고 <홍고추:CV_INGREDIENT>는 송송 썰어주세요. 볼에 소스 양념 재료를 넣어 섞어주세요.
+3. 달군 팬에 <고추기름:CV_SEASONING>과 <돼지고기:CV_INGREDIENT>를 넣어 볶아주세요.
+4. <마늘종:CV_INGREDIENT>과 <홍고추:CV_INGREDIENT>를 넣어 볶다가 <섞어둔:CV_STATE> <소스:CV_SEASONING>를 넣어 고루 볶아주세요.
+5. 그릇에 <밥:CV_INGREDIENT>을 담고 <돼지고기 마늘종 볶음:CV_INGREDIENT>을 얹어주세요. <참기름:CV_SEASONING>과 <깨:CV_SEASONING>를 뿌려 맛있게 즐겨주세요. 
+(기호에 따라 <고수:CV_INGREDIENT>와 <달걀 후라이:CV_INGREDIENT> 등을 곁들여 드셔도 맛있게 드실 수 있답니다)

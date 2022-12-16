@@ -1,0 +1,7 @@
+1. <무:CV_INGREDIENT>는 한입 크기로 나박하게 <썰:CV_ACT>고 <양배추:CV_INGREDIENT>는 겉잎을 <떼어내:CV_ACT>고 <무:CV_INGREDIENT>와 비슷한 크기로 <썰:CV_ACT>어주세요. <쪽파:CV_INGREDIENT>는 4cm 길이로 <잘라:CV_ACT>주세요.
+2. <무:CV_INGREDIENT>, <양배추:CV_INGREDIENT>를 볼에 <담:CV_ACT>고 <굵은:CV_SEASONING> <소금:CV_SEASONING>을 <뿌려:CV_ACT> <30분:TI_DURATION>간 <절여:CV_ACT>주세요.
+3. <홍고추:CV_INGREDIENT>는 반을 <갈라:CV_ACT> 씨를 <빼:CV_ACT>주세요. 나머지 양념 재료도 적당한 크기로 <잘라:CV_ACT> 함께 믹서에 <갈:CV_ACT>아주세요.
+4. <국물 재료:CV_SEASONING>를 잘 <섞:CV_ACT>은 후 STEP3를 망에 <넣:CV_ACT>고 즙만 <짜:CV_ACT>서 <넣:CV_ACT>어주세요.
+5. <절인:CV_STATE> <무:CV_INGREDIENT>와 <양배추:CV_INGREDIENT>는 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+6. 김치통에 <무:CV_INGREDIENT>, <양배추:CV_INGREDIENT>, <쪽파:CV_INGREDIENT>를 <넣:CV_ACT>고 <국물:CV_SEASONING>을 <부은:CV_ACT> 후 <하루:TI_DURATION> 동안 실온에 <두:CV_ACT>고 <숙성해:CV_ACT>주세요.
+7. TIP. 냉장 보관하고 먹기 직전에 <돌나물:CV_INGREDIENT>과 <사과:CV_INGREDIENT>를 <썰:CV_ACT>어 <곁들여:CV_ACT>주세요.

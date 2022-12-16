@@ -1,0 +1,5 @@
+1. <어묵:CV_INGREDIENT>과 <양파:CV_INGREDIENT>, <청피망:CV_INGREDIENT>은 얇게 <채 썰:CV_ACT>고 <대파:CV_INGREDIENT>는 3등분해 길게 <채 썰:CV_ACT>어주세요.
+2. <오징어:CV_INGREDIENT>는 깨끗이 <씻:CV_ACT>어 얇게 <썬:CV_ACT> 다음 끓는 물에 살짝 <데쳐내:CV_ACT>주세요.
+3. 팬에 <고추기름:CV_SEASONING> <2큰술:QT_VOLUME>을 <넣:CV_ACT>고 <양파:CV_INGREDIENT>와 <청피망:CV_INGREDIENT>을 <넣:CV_ACT>어 <볶:CV_ACT>아주세요.
+4. <어묵:CV_INGREDIENT>과 <오징어:CV_INGREDIENT>, 분량의 양념을 <넣:CV_ACT>고 빠르게 <볶:CV_ACT>아낸 후 <대파:CV_INGREDIENT>와 <올리고당:CV_SEASONING>, <참기름:CV_SEASONING>을 <둘러:CV_ACT> 마무리해주세요.
+5. 갓 지어낸 <솥밥:CV_INGREDIENT>을 접시에 <퍼담:CV_ACT>고 <오징어 어묵 볶음:CV_INGREDIENT>을 옆에 예쁘게 <담:CV_ACT>아 완성해주세요.

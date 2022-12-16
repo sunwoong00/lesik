@@ -1,0 +1,6 @@
+1. 깨끗이 <씻은:CV_STATE> <브로콜리:CV_INGREDIENT>와 <컬리플라워:CV_INGREDIENT>는 먹기 좋은 크기로 떼어낸 후 크기가 큰 것은 반으로 잘라주세요. <래디쉬:CV_INGREDIENT>와 <아스파라거스:CV_INGREDIENT>는 반으로 잘라주세요.
+2. <초당옥수수:CV_INGREDIENT>는 5cm 두께로 자르고, <당근:CV_INGREDIENT>과 <고구마:CV_INGREDIENT>는 먹기 좋은 크기로 잘라주세요. <단호박:CV_INGREDIENT>은 반으로 잘라 속의 씨 부분을 제거한 후 웨지 모양으로 잘라주세요.
+(tip. <단호박:CV_INGREDIENT>은 전자레인지에 <30초:TI_DURATION> 정도 돌리면 자르기가 수월해요)
+3. 찜기에 <채소:CV_INGREDIENT>를 올린 후 <10분:TI_DURATION> 정도 쪄주세요.
+4. 볼에 소스 재료를 넣어 섞어주세요.
+5. 그릇에 <채소찜:CV_INGREDIENT>을 담고 <소스:CV_SEASONING>를 곁들여 맛있게 즐겨주세요.

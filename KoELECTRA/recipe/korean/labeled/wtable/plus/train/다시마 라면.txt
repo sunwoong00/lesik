@@ -1,0 +1,6 @@
+1. <다시마 국수:CV_INGREDIENT>는 체에 밭쳐 흐르는 물에 헹궈 물기를 빼주세요.
+2. <대파:CV_INGREDIENT>는 어슷하게 썰어주세요.
+3. 냄비에 <물:CV_SEASONING>과 <라면 수프:CV_SEASONING>, <다시마 국수:CV_INGREDIENT>를 넣은 후 끓으면 <칵테일 새우:CV_INGREDIENT>를 넣어주세요.
+4. <다진:CV_STATE> <마늘:CV_INGREDIENT>, <고춧가루:CV_SEASONING>를 넣어 간을 맞춰주세요.
+5. <대파:CV_INGREDIENT>를 넣은 후 불을 끄고 그릇에 담아 맛있게 즐겨주세요.
+(기호에 따라 달걀 등의 재료를 추가하여 드셔도 좋아요)

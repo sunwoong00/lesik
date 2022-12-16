@@ -1,0 +1,7 @@
+1. <무:CV_INGREDIENT>는 잔뿌리를 <떼:CV_ACT>고 조리 솔로 <문질러:CV_ACT> 깨끗이 <씻:CV_ACT>고 먹기좋게 사방 2센치 크기로 깍뚝썰기로 <썰:CV_ACT>어 주세요. <대파:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>고 <실파:CV_INGREDIENT>는 3센치 길이로 <썰:CV_ACT>어주세요.
+2. <굵은:CV_STATE> <소금:CV_SEASONING>을 <뿌려:CV_ACT> <30분:TI_DURATION> 정도 <절이:CV_ACT>고 체에 <받쳐:CV_ACT> 물기를 <뺀:CV_ACT> 후 넓은 볼에 <고춧가루:CV_SEASONING>를 <넣:CV_ACT>고 색이나게 <버무려:CV_ACT>주세요.
+(tip <무:CV_INGREDIENT>는 겉면만 살짝 <절이:CV_ACT>고 물에 <씻:CV_ACT>지 말고 체에 <받쳐:CV_ACT> 물기를 <빼:CV_ACT>서 준비해 주세요.)
+3. 냄비에 찹쌀풀 재료를 <넣:CV_ACT>고 잘 <섞:CV_ACT>어준 후 <중불:QT_TEMPERATURE>에서 <저어:CV_ACT>가며 <풀:CV_ACT>고 기포가 올라오면서 농도가 나면 불을 <끄:CV_ACT>고 <식혀:CV_ACT>주세요.
+4. 볼에 식힌 <찹쌀풀:CV_SEASONING>과 양념 재료를 <넣:CV_ACT>고 고루 <섞:CV_ACT>어 <김치 양념:CV_SEASONING>을 <만들:CV_ACT>어주세요.
+5. <무:CV_INGREDIENT>에 양념 재료를 <넣:CV_ACT>어 <버무린:CV_ACT> 후 <실파:CV_INGREDIENT>와 <대파:CV_INGREDIENT>를 <넣:CV_ACT>어 <섞:CV_ACT>고 김치통에 차곡차곡 <담:CV_ACT>아주세요. <하루:TI_DURATION>정도 실온에서 숙성 시켰다가 냉장보관해 주세요.
+(tip <무:CV_INGREDIENT>가 절여진 염도에 따라 마지막에 <소금:CV_SEASONING>을 <가감해:CV_ACT>서 간을 맞춰주세요.)

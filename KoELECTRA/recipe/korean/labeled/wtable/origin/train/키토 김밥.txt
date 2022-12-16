@@ -1,0 +1,15 @@
+1. <오이:CV_INGREDIENT>와 <파프리카:CV_INGREDIENT>는 얇게 채를 <썰:CV_ACT>고 <등심:CV_INGREDIENT>은 길게 <썰:CV_ACT>어 주세요. 
+
+2. 달군 팬에 <기름:CV_SEASONING>을 <두른:CV_ACT> 후 <등심:CV_INGREDIENT>을 노릇하게 <구워:CV_ACT>주세요. <소금:CV_SEASONING> <후추:CV_SEASONING>로 간을 <해:CV_ACT>주세요. 
+
+3. <김:CV_INGREDIENT>에 <케일:CV_INGREDIENT>을 <깔:CV_ACT>고 <오이:CV_INGREDIENT>, <파프리카:CV_INGREDIENT>, <등심:CV_INGREDIENT>을 <넣:CV_ACT>은 후 <말:CV_ACT>아주세요.
+
+4. <달걀:CV_INGREDIENT>에 <소금:CV_SEASONING>을 약간 <넣:CV_ACT>고 <풀:CV_ACT>어준 후 채에 한 번 <걸러:CV_ACT>주세요.
+
+5. 달군 팬에 <달걀 물:CV_SEASONING>을 <붓:CV_ACT>고 가장자리가 익으면 <말아둔:CV_STATE> <김밥:CV_INGREDIENT>을 <넣:CV_ACT>고 <말:CV_ACT>아 <달걀옷:CV_SEASONING>을 <입혀:CV_ACT>주세요.
+
+6. 2회 정도 반복해 <달걀 물:CV_SEASONING>을 <입힌:CV_ACT> 후 먹기 좋게 <썰:CV_ACT>어주세요.
+
+7. 그릇에 <담:CV_ACT>아 <소스:CV_SEASONING>를 <곁들여:CV_ACT> 맛있게 즐겨주세요.
+(tip. 완전히 식은 후 썰어야 터지지 않아요)
+(tip. <소 등심:CV_INGREDIENT> 외에도 <닭가슴살:CV_INGREDIENT>, <크래미:CV_INGREDIENT>, <두부:CV_INGREDIENT> 등을 활용해 만들어도 좋아요)

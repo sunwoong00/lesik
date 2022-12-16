@@ -1,0 +1,5 @@
+1. 믹서에 <두부:CV_INGREDIENT>, <두유:CV_INGREDIENT>, <볶은:CV_STATE> <땅콩:CV_SEASONING>, <통깨:CV_SEASONING>, <소금:CV_SEASONING>을 넣어 곱게 갈아주세요. 냉장고에 넣어 차갑게 해주세요.
+2. <오이:CV_INGREDIENT>는 얇게 슬라이스해주세요.
+3. <미역 국수:CV_INGREDIENT>를 체에 밭쳐 흐르는 물에 씻은 후 물기를 빼주세요.
+4. 그릇에 <면:CV_INGREDIENT>을 담고 시원한 <콩국물:CV_SEASONING>을 부어 주세요. <얼음:CV_SEASONING>을 띄우고 <오이 고명:CV_SEASONING>과 <토마토:CV_INGREDIENT>를 올려 맛있게 즐겨주세요.
+(기호에 따라 간은 <소금:CV_SEASONING>으로 맞춰주세요)

@@ -1,0 +1,12 @@
+1. <건당면:CV_INGREDIENT>은 찬물에 <담가:CV_ACT> <30분:TI_DURATION> 정도 <불려:CV_ACT>주세요.
+2. <애호박:CV_INGREDIENT>, <양파:CV_INGREDIENT>, <당근:CV_INGREDIENT>은 채를 <썰:CV_ACT>고, <느타리버섯:CV_INGREDIENT>은 밑동을 <자른:CV_ACT> 후 가닥가닥 <찢:CV_ACT>어주세요.
+3. <콩나물:CV_INGREDIENT>은 <끓는:CV_STATE> <물:CV_SEASONING>에 <소금:CV_SEASONING>을 약간 <넣:CV_ACT>어 살짝 <데치:CV_ACT>고, 찬물에 한번 <헹군:CV_ACT> 후 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+(Tip. 살짝 데친 후 볶으면 콩나물 비린내가 나지 않아요.)
+
+4. <시금치:CV_INGREDIENT>는 뿌리를 <자르:CV_ACT>고 깨끗이 <씻:CV_ACT>은 후, <끓는:CV_STATE> <물:CV_SEASONING>에 <소금:CV_SEASONING>을 약간 <넣:CV_ACT>고, <시금치 뿌리부분:CV_INGREDIENT>을 먼저 <넣:CV_ACT>어가며 <데쳐:CV_ACT> 선명한 녹색이 되면 바로 건져 찬물에 <헹구:CV_ACT>어 물기를 <짜:CV_ACT>주세요. <데친:CV_STATE> <시금치:CV_INGREDIENT>에 <소금:CV_SEASONING> <한 꼬집:QT_VOLUME>과 <참기름:CV_SEASONING>을 <넣:CV_ACT>고 <밑간을 해:CV_ACT>주세요.
+
+5. <끓는:CV_STATE> <물:CV_SEASONING>에 <당면:CV_INGREDIENT>을 <넣:CV_ACT>어 <3분:TI_DURATION> 정도 <삶:CV_ACT>고, 물에 한 번 <헹군:CV_ACT> 후 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요. 볼에 양념재료를 모두 <섞:CV_ACT>어주세요.
+6. 달군 팬에 <식용유:CV_SEASONING>를 살짝 <두르:CV_ACT>고 <당근:CV_INGREDIENT>을 <볶:CV_ACT>다가 <양파:CV_INGREDIENT>, <느타리 버섯:CV_INGREDIENT>, <애호박:CV_INGREDIENT> 순서대로 <넣:CV_ACT>어 <볶:CV_ACT>아주세요.
+7. <당면:CV_INGREDIENT>과 <콩나물:CV_INGREDIENT>, <시금치:CV_INGREDIENT>를 <넣:CV_ACT>어 <볶:CV_ACT>은 후 <양념:CV_SEASONING>을 <넣:CV_ACT>어 <양념:CV_SEASONING>이 고루 잘 베이도록 <볶:CV_ACT>아주세요.
+(Tip. 기호에 따라 <간장:CV_SEASONING>을 <가감해:CV_ACT>서 간을 조절해주세요.)
+8. 접시에 <콩나물 잡채:CV_INGREDIENT>를 <담:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 맛있게 즐겨주세요.

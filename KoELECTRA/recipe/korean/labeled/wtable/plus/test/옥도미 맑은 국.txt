@@ -1,0 +1,9 @@
+1. <옥도미:CV_INGREDIENT>는 비늘과 내장을 제거하고 머리를 자른 후 세 장 뜨기 해주세요. 머리와 뼈는 손질해서 물에 담가 피를 빼줍니다. <옥도미:CV_INGREDIENT>는 <30g:QT_VOLUME>(1인분) 정도로 자르고 <소금:CV_SEASONING>을 뿌려 놓아 주세요.
+2. 머리와 뼈는 <170도:QT_TEMPERATURE> 오븐에서 <15분:TI_DURATION>간 구워주세요.
+3. 물에 <다시마:CV_SEASONING>, 머리와 뼈, <토막낸:CV_STATE> <무:CV_INGREDIENT>를 넣고, <1시간:TI_DURATION> 동안 끓여 <육수:CV_SEASONING>를 만들어 주세요. <무:CV_INGREDIENT>가 다 익으면 2cm x 2cm로 잘라 주세요.
+4. 순서 1의 <옥도미:CV_INGREDIENT> <살:CV_INGREDIENT>은 <160도:QT_TEMPERATURE> 오븐에서 <5분간:TI_DURATION> 구워 주고, <대파:CV_INGREDIENT>는 0.5cm로 어슷 썰어 프라이팬에 볶아 주세요.
+5. <육수:CV_SEASONING>에 <물:CV_SEASONING>, <옥도미:CV_INGREDIENT>, <대파:CV_INGREDIENT>를 넣고 끓인 후, 그릇에 담고 <무:CV_INGREDIENT>, <유자:CV_SEASONING> <껍질:CV_SEASONING>을 첨가해 주시면 완성이예요.
+*Tip. 
+1. <비리:CV_INGREDIENT>면 <정종:CV_INGREDIENT>을 더 넣어 주세요.
+2. 오븐이 없으면 머리와 뼈는 굽지 말고 그냥 <육수:CV_SEASONING>를 만들어 주세요.
+3. <옥도미:CV_INGREDIENT> <살:CV_INGREDIENT>은 프라이팬에 약간의 <물:CV_SEASONING>을 넣고 구워주어도 좋아요.

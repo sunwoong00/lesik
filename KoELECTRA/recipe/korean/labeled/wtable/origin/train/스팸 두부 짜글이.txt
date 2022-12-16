@@ -1,0 +1,8 @@
+1. <두부:CV_INGREDIENT>와 <스팸:CV_INGREDIENT>, <감자:CV_INGREDIENT>는 먹기 좋은 두께로 <잘라:CV_ACT>주세요. <양파:CV_INGREDIENT>는 굵게 채를 <썰:CV_ACT>고 <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요. 볼에 양념장 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요.
+(tip <스팸:CV_INGREDIENT>은 체에 <밭쳐:CV_ACT> 뜨거운 물을 한번 <끼얹:CV_ACT>은 후 사용해 주세요.)
+2. 냄비에 <양파:CV_INGREDIENT>를 <깔:CV_ACT>고 <감자:CV_INGREDIENT>를 <올린:CV_ACT> 후 <두부:CV_INGREDIENT>와 <스팸:CV_INGREDIENT>을 켜켜이 돌려가며 <담:CV_ACT>아주세요.
+3. 냄비에 <멸치 다시마 육수:CV_SEASONING> <1+½컵:QT_VOLUME>을 <붓:CV_ACT>고 <끓:CV_ACT>이다가 <양념장:CV_SEASONING>을 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+4. <두부:CV_INGREDIENT>와 <스팸:CV_INGREDIENT>에 <국물:CV_SEASONING>을 <끼얹:CV_ACT>어 주며 <중약불:QT_TEMPERATURE>로 <끓여:CV_ACT>주세요.
+(tip 끓이는 중간에 국물이 부족하면 남겨놓은 <멸치 다시마 육수:CV_SEASONING> <½컵:QT_VOLUME>을 <넣:CV_ACT>어주세요.)
+
+5. <감자:CV_INGREDIENT>가 익으면 <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>를 <넣:CV_ACT>고 한소끔 <끓여:CV_ACT> 맛있게 즐겨주세요.

@@ -1,0 +1,7 @@
+1. <차돌박이:CV_INGREDIENT>는 키친타월로 핏물을 제거해 주세요.
+2. <팽이버섯:CV_INGREDIENT>은 밑동을 자르고, <새송이버섯:CV_INGREDIENT>은 1cm 두께로 잘라주세요. <느타리버섯:CV_INGREDIENT>은 먹기 좋게 가닥가닥 찢고 <표고버섯:CV_INGREDIENT>은 채를 썰어주세요.
+3. <양파:CV_INGREDIENT>는 채를 썰고, <애호박:CV_INGREDIENT>과 <대파:CV_INGREDIENT>는 반을 자른 후 6cm 길이로 잘라주세요. <미나리:CV_INGREDIENT>도 6cm 길이로 자르고, <홍고추:CV_INGREDIENT>는 어슷하게 썰어주세요.
+4. 볼에 양념장 재료와 소스 재료를 넣어 각각 섞어주세요. 
+5. 전골냄비에 <버섯:CV_INGREDIENT>, <야채:CV_INGREDIENT>를 돌려 담고 가운데에 <차돌박이:CV_INGREDIENT>를 돌려 담아주세요. <양념장:CV_SEASONING>과 <다시마 육수:CV_SEASONING>를 넣어 끓여주세요.
+6. <소스:CV_SEASONING>에 찍어 맛있게 즐겨주세요.
+(기호에 따라 남은 국물에 칼국수면을 넣어 칼국수로 드셔도 맛있게 드실 수 있답니다)

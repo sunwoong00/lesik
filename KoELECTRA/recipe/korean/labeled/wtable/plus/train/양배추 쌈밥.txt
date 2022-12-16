@@ -1,0 +1,5 @@
+1. <양배추:CV_INGREDIENT>의 겉 부분을 4등분으로 자른 후 가운데 네모 모양으로 잘린 부분을 따로 준비해 주세요. 
+2. 찜기에 <양배추:CV_INGREDIENT>를 넣고 <5분:TI_DURATION> 정도 쪄주세요.
+3. <찐:CV_STATE> <양배추:CV_INGREDIENT> 가운데 <밥:CV_INGREDIENT>과 <참치 쌈장:CV_SEASONING>을 적당량 넣어주세요.
+(tip. <밥:CV_INGREDIENT>을 동그랗게 뭉쳐두면 모양도 쉽게 잡히고 더욱 깔끔하게 만들 수 있어요)
+4. 양옆을 접고 돌돌 말아 맛있게 즐겨주세요.

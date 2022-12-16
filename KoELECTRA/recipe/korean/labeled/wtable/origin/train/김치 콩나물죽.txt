@@ -1,0 +1,5 @@
+1. 냄비에 육수 재료를 <넣:CV_ACT>고 <10분:TI_DURATION> 정도 <끓:CV_ACT>여 <육수:CV_SEASONING>를 진하게 내주세요.
+2. <김치:CV_INGREDIENT>는 송송 <썰:CV_ACT>고, <대파:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요. <청양고추:CV_INGREDIENT>는 잘게 <다져:CV_ACT>주세요.
+3. 육수 재료를 <건진:CV_ACT> 후 <김치:CV_INGREDIENT>, <김치국물:CV_SEASONING>, <고춧가루:CV_SEASONING>를 <넣:CV_ACT>어 <5분:TI_DURATION> 정도 <끓:CV_ACT>여주세요.
+4. <국간장:CV_SEASONING>을 <넣:CV_ACT>어 간을 <맞춘:CV_ACT> 후 <밥:CV_INGREDIENT>과 <콩나물:CV_INGREDIENT>, <대파:CV_INGREDIENT>를 <넣:CV_ACT>어 <끓:CV_ACT>여주세요.
+5. 그릇에 <담:CV_ACT>은 후 <김가루:CV_SEASONING>와 <통깨:CV_SEASONING>, <참기름:CV_SEASONING>, <다진:CV_STATE> <청양고추:CV_INGREDIENT>를 <얹어:CV_ACT> 맛있게 즐겨주세요.

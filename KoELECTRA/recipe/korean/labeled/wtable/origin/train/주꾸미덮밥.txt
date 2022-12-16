@@ -1,0 +1,5 @@
+1. <주꾸미:CV_INGREDIENT>는 머리 부분을 뒤집어 먹통과 내장을 <떼:CV_ACT>어낸 후, <굵은:CV_STATE><소금:CV_SEASONING>과 <밀가루:CV_SEASONING>를 <넣:CV_ACT>고 <문질러:CV_ACT> <씻:CV_ACT>어주세요.
+2. <끓는:CV_STATE> <물:CV_SEASONING>에 <청주:CV_SEASONING>와 <소금:CV_SEASONING>을 <넣:CV_ACT>고, <손질한:CV_STATE> <주꾸미:CV_INGREDIENT>를 <넣:CV_ACT>어 <10초:TI_DURATION> 정도 살짝 <데쳐:CV_ACT>서 먹기 좋은 크기로 <자른:CV_ACT> 후 양념 재료에 <재워:CV_ACT>주세요.
+3. <양파:CV_INGREDIENT>는 굵게 채를 <썰:CV_ACT>고 <당근:CV_INGREDIENT>은 먹기 좋게 <썰:CV_ACT>어주세요. <대파:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>고 <세발나물:CV_INGREDIENT>은 먹기 좋게 <잘라:CV_ACT> 깨끗이 <씻:CV_ACT>고 <실파:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요.
+4. 달군 팬에 <식용유:CV_SEASONING>를 <두르:CV_ACT>고 <대파:CV_INGREDIENT>를 <볶:CV_ACT>고, 향이 올라오면 <양파:CV_INGREDIENT>와 <당근:CV_INGREDIENT>을 <넣:CV_ACT>어 <볶:CV_ACT>다가 <양념한:CV_STATE> <주꾸미:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>를 <넣:CV_ACT>고 고루 섞이도록 빠르게 <볶:CV_ACT>아주세요. 마지막에 <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.
+5. 볼에 <밥:CV_INGREDIENT>을 <담:CV_ACT>은 후 <세발나물:CV_INGREDIENT>과 <주꾸미볶음:CV_INGREDIENT>을 <얹:CV_ACT>고, <송송 썬:CV_STATE> <실파:CV_SEASONING>와 <통깨:CV_SEASONING>와 <뿌려:CV_ACT>주세요.

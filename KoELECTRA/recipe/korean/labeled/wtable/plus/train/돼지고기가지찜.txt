@@ -1,0 +1,9 @@
+1. <가지:CV_INGREDIENT>는 꼭지를 잘라내고 가운데 길게 칼집을 내고 내열 용기에 담아 <소금:CV_SEASONING>을 뿌려주세요.
+2. "법랑 접시 위에 석쇠를 놓고 내열 용기를 올려 1단에 넣은 후 광파오븐 수동요리 스팀 레인지에서 <4분:TI_DURATION>간 익혀주세요.
+ *광파오븐 스팀 물통에 물을 채우고 시작해주세요."
+3. <돼지고기:CV_INGREDIENT>는 밑간 재료에 <10분:TI_DURATION>간 재워주세요.
+4. 팬에 <기름:CV_SEASONING>을 약간 두르고 <밑간을 한:CV_STATE> <돼지고기:CV_INGREDIENT>와 <굴소스:CV_SEASONING>를 넣고 볶아 주세요.
+5. 가지의 칼집에 <볶은:CV_STATE> <돼지고기:CV_INGREDIENT>를 채운 후 구이 전용 팬에 올려 <소스:CV_SEASONING>를 발라주세요.
+6. 구이 전용 팬을 4단에 넣고 광파 오븐 수동 요리 구이에서 <7분:TI_DURATION>간 구워주세요.
+(tip. “오븐에 전송” 버튼을 누르면 간단하게 설정 할 수 있어요)
+7. 접시에 담아 <쪽파:CV_INGREDIENT>와 <통깨:CV_SEASONING>를 뿌려 맛있게 즐겨주세요.

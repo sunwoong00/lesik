@@ -1,0 +1,9 @@
+1. <모시조개:CV_INGREDIENT>는 <소금물:CV_SEASONING>에 담가 해감해 주세요.
+(tip. "소금물 농도 : <물:CV_SEASONING> <1L:QT_VOLUME> <소금:CV_SEASONING> <2큰술:QT_VOLUME>,
+ 쇠숟가락 등을 담가 검은 천이나 신문지를 덮어 <3~4시간:TI_DURATION> 정도 어둡고 서늘한 곳 또는 냉장고에 넣어 해감해 주세요")
+2. <느타리버섯:CV_INGREDIENT>은 밑동을 떼어내고 손으로 찢어 주세요. 볼에 소스 재료를 넣고 섞어주세요.
+3. 내열 용기에 <모시조개:CV_INGREDIENT>, <버섯:CV_INGREDIENT>, <쪽파:CV_INGREDIENT>를 담고 <화이트와인:CV_SEASONING>을 뿌려주세요.
+4. "석쇠를 조리실 바닥에 놓고 내열 용기를 올린 후 광파오븐 수동 요리 스팀 레인지 로 <8분:TI_DURATION>으로 설정 후 시작해 주세요. 6분이 지났을 때 <소스:CV_SEASONING>를 골고루 뿌리고 계속 조리해 주세요.
+ * 광파오븐 스팀 물통에 물을 채우고 시작해주세요."
+(tip. "오븐에 전송" 버튼으로 조리하면 소스를 뿌려야 할 시간에 멜로디가 울려요. 멜로디가 울리면 <5분:TI_DURATION> 내로 <소스:CV_SEASONING>를 골고루 뿌린 후 다시 시작버튼을 눌러주면 연속 조리됩니다)
+5. 완성된 <매운:CV_STATE> <버섯 조개찜:CV_INGREDIENT>을 가볍게 위아래 섞은 후 맛있게 즐겨주세요.

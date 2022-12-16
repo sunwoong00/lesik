@@ -1,0 +1,12 @@
+1. <연근:CV_INGREDIENT>과 <단호박:CV_INGREDIENT>은 적당한 두께로 슬라이스, <감자:CV_INGREDIENT>와 <당근:CV_INGREDIENT>, <고구마:CV_INGREDIENT>는 껍질째 웨지 모양으로 썰고, <가지:CV_INGREDIENT>는 반으로 썰어 3~4등분 해주세요. 
+(tip. <채소:CV_INGREDIENT>는 기호에 맞게 변경해도 좋아요)
+2. 오븐 팬 <2개:QT_VOLUME>에 <단단한:CV_STATE> <채소:CV_INGREDIENT>와 <무른:CV_STATE> <채소:CV_INGREDIENT>를 나눠 담은 후 <소금:CV_SEASONING>, <후춧가루:CV_SEASONING>, <오일:CV_SEASONING>을 뿌려 가볍게 버무려주세요.
+3. <180도:QT_TEMPERATURE>로 예열한 오븐에서 <단단한:CV_STATE> <채소:CV_INGREDIENT>는 <25분:TI_DURATION>, <무른:CV_STATE> <채소:CV_INGREDIENT>는 <15분:TI_DURATION> 정도 구워주세요. 
+(tip. 오븐의 성능에 따라 굽는 시간은 다를 수 있어요)
+4. <양파:CV_INGREDIENT>는 채를 썰고 <토마토:CV_INGREDIENT>는 6등분으로 잘라주세요. <마늘:CV_INGREDIENT>은 편으로 썰어주세요. 
+5. 달군 냄비에 <기름:CV_SEASONING>을 두르고 <채를 썬:CV_STATE> <양파:CV_INGREDIENT>와 <마늘:CV_INGREDIENT>를 넣어 볶다가 <양파:CV_INGREDIENT>가 노릇해지면 <토마토:CV_INGREDIENT>를 넣고 볶아주세요.
+6. <토마토:CV_INGREDIENT>가 익으면 <물:CV_SEASONING>을 붓고 끓이다가 <카레 가루:CV_SEASONING>를 넣고 <약불:QT_TEMPERATURE>에서 저어가며 끓여주세요.
+7. <카레:CV_INGREDIENT>에 <불린:CV_STATE> <캐슈너트:CV_INGREDIENT>과 <통깨:CV_SEASONING>, <참기름:CV_SEASONING>, <파프리카 가루:CV_SEASONING>를 넣어 핸드믹서로 곱게 갈아주세요. 
+(tip. <캐슈너트:CV_INGREDIENT>는 미지근한 물에 <15분:TI_DURATION> 정도 불려주세요)
+8. 그릇에 <밥:CV_INGREDIENT>과 <카레:CV_INGREDIENT>를 담고 <구운:CV_STATE> <채소:CV_INGREDIENT>를 올려 맛있게 즐겨주세요. 
+(tip. 기호에 따라 <치아시드:CV_SEASONING>, <햄프씨드:CV_SEASONING> 등을 뿌려도 좋아요)

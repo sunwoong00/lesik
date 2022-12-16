@@ -1,0 +1,8 @@
+1. <해삼:CV_INGREDIENT>은 앞뒤를 <자르:CV_ACT>고, 몸통을 길게 반으로 <잘라:CV_ACT> 내장을 <빼:CV_ACT>주세요. 내장은 흐르는 물에 <씻:CV_ACT>어 <제거한:CV_ACT> 후 따로 보관해주세요. <내장을 뺀:CV_STATE> <해삼:CV_INGREDIENT>은 <연한:CV_STATE> <소금물:CV_SEASONING>에 <흔들:CV_ACT>어 <씻:CV_ACT>고 먹기 좋은 크기로 <잘라:CV_ACT>주세요.
+(tip. <해삼:CV_INGREDIENT>은 시간이 지나면 딱딱해지기 때문에 먹기 직전에 손질해서 드시는 것이 좋아요.)
+
+2. <손질한:CV_STATE> <전복:CV_INGREDIENT>과 <멍게:CV_INGREDIENT>는 먹기 좋은 크기로 <자르:CV_ACT>고, <백골뱅이:CV_INGREDIENT>는 냄비에 <물:CV_SEASONING>을 자작하게 <넣:CV_ACT>고, <청주:CV_SEASONING>를 <넣:CV_ACT>어 <10분:TI_DURATION> 정도 <삶:CV_ACT>아 이쑤시개로 <골뱅이 살:CV_INGREDIENT>을 <꺼내:CV_ACT> 적당한 크기로 <잘라:CV_ACT>주세요.
+3. <오이:CV_INGREDIENT>와 <당근:CV_INGREDIENT>, <양파:CV_INGREDIENT>는 얇게 <채썰:CV_ACT>어주세요. <깻잎:CV_INGREDIENT>도 적당한 길이로 <채썰:CV_ACT>고, <청홍고추:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요. <배:CV_INGREDIENT>는 껍질을 <벗긴:CV_ACT> 후 <채썰:CV_ACT>어주세요. <어린잎채소:CV_INGREDIENT>와 <무순:CV_INGREDIENT>은 깨끗이 <씻:CV_ACT>어 체에 <밭쳐:CV_ACT>주세요. 
+4. 육수 재료는 모두 <섞:CV_ACT>어주세요.
+(tip. 육수 재료는 <섞:CV_ACT>은 후 냉동실에 <넣:CV_ACT>어 살얼음처럼 만들어 드시면 더욱 시원하게 즐기실 수 있어요)
+5. 그릇에 <손질한:CV_STATE> <해산물:CV_INGREDIENT>과 <채소:CV_INGREDIENT>를 <담:CV_ACT>고, <물회 육수:CV_SEASONING>를 <넣:CV_ACT>은 후 <통깨:CV_SEASONING>와 <참기름:CV_SEASONING>을 <뿌려:CV_ACT> 맛있게 즐겨주세요.

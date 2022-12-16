@@ -1,0 +1,7 @@
+1. 1. <실파:CV_INGREDIENT>는 송송 <썰:CV_ACT>어서 준비해 주시고, <느타리버섯:CV_INGREDIENT>은 가늘게 <찢:CV_ACT>어서, <표고버섯:CV_INGREDIENT>과 <깻잎:CV_INGREDIENT>은 얇게 <채 썰:CV_ACT>어서 준비해 주세요.
+2. 2. 분량의 <재료:CV_SEASONING>를 모두 <넣:CV_ACT>고 골고루 <섞:CV_ACT>어서 <비빔양념장:CV_SEASONING>을 <만들:CV_ACT>어 주세요.
+3. 3. 팬에 <포도씨유:CV_SEASONING>를 약간 <두르:CV_ACT>고 <우민찌:CV_INGREDIENT>를 <넣:CV_ACT>어 핏기가 없도록 <볶:CV_ACT>아 주세요.
+4. 4. 팬에 <포도씨유:CV_SEASONING>를 약간 <두르:CV_ACT>고 <느타리버섯:CV_INGREDIENT>, <표고 버섯:CV_INGREDIENT>을 먼저 <볶:CV_ACT>다가 <팽이버섯:CV_INGREDIENT>을 <넣:CV_ACT>어 같이 살짝 <볶:CV_ACT>아 주세요.
+5. 5. <현미밥:CV_INGREDIENT>에 준비한 <재료:CV_SEASONING>들을 <곁들여:CV_ACT> 완성해 주세요.
+
+*Tip. 대부분의 <버섯:CV_INGREDIENT>은 손질 시 겉에 묻은 먼지를 <털:CV_ACT>어내거나 마른 행주로 <닦:CV_ACT>아냅니다. 이물이 많이 묻은 경우에는 조리하기 직전에 씻어서 바로 사용하거나 물기를 제거한 후 사용하면 돼요. <버섯:CV_INGREDIENT>은 씻으면 풍미가 떨어지므로 가급적 씻지 않고 사용해주세요. <팽이버섯:CV_INGREDIENT>은 너무 오래 익히지 않는 것이 좋아요.

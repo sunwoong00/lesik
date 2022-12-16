@@ -1,0 +1,4 @@
+1. 깨끗이 씻은 <단감:CV_INGREDIENT>은 껍질을 얇게 <깎:CV_ACT>아내고 씨를 <제거한:CV_ACT> 후 먹기 좋게 깍둑 <썰:CV_ACT>어주세요.
+2. <대파:CV_INGREDIENT>는 반으로 <갈라:CV_ACT> 1cm 길이로 <썰:CV_ACT>고, <실파:CV_INGREDIENT>는 2cm 길이로 <썰:CV_ACT>어주세요.
+3. 볼에 <손질한:CV_STATE> <단감:CV_INGREDIENT>과 <대파:CV_INGREDIENT>, <쪽파:CV_INGREDIENT>를 <넣:CV_ACT>고 양념 재료를 <넣:CV_ACT>어 <버무려:CV_ACT>주세요. <통깨:CV_SEASONING>를 <넣:CV_ACT>고 한 번 더 <버무려:CV_ACT> 완성해 주세요.
+4. 그릇에 <담:CV_ACT>고 맛있게 즐겨주세요.

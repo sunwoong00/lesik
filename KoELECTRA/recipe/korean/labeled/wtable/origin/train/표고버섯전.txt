@@ -1,0 +1,7 @@
+1. <표고버섯:CV_INGREDIENT>은 기둥을 <떼:CV_ACT>고 겉표면 가운데 별모양으로 칼집을 <내:CV_ACT>어 준비해주세요. 
+(tip <표고버섯:CV_INGREDIENT> 기둥은 깨끗이 <씻:CV_ACT>어 <육수:CV_SEASONING>를 <낼:CV_ACT> 때 사용하시면 좋답니다.)
+2. <양파:CV_INGREDIENT>와 <당근:CV_INGREDIENT>은 곱게 <다지:CV_ACT>고, <두부:CV_INGREDIENT>는 칼등으로 <으깨:CV_ACT>어 면보에 감싸 물기를 <짜:CV_ACT>주세요. <달걀:CV_INGREDIENT>은 약간의 <소금:CV_SEASONING>을 <넣:CV_ACT>고 고루 <섞:CV_ACT>어 <달걀물:CV_SEASONING>을 <만들:CV_ACT>어주세요.
+3. <다진:CV_STATE> <쇠고기:CV_INGREDIENT>는 키친타올에 <올려:CV_ACT> 핏물을 <뺀:CV_ACT> 후 볼에 <넣:CV_ACT>고 <다진:CV_STATE> <양파:CV_INGREDIENT>와 <당근:CV_INGREDIENT>, <두부:CV_INGREDIENT>, 양념 재료를 <넣:CV_ACT>어 끈기있게 치대어 <소:CV_INGREDIENT>를 <만들:CV_ACT>어주세요.
+(tip. <다진:CV_STATE> <쇠고기:CV_INGREDIENT>와 <다진:CV_STATE> <돼지고기:CV_INGREDIENT>를 <섞:CV_ACT>어 만들면 좀 더 부드럽고 풍미 좋은 <전:CV_INGREDIENT>을 만들 수 있어요.)
+4. <기둥을 뗀:CV_STATE> <표고버섯:CV_INGREDIENT> 안쪽에 <밀가루:CV_SEASONING>를 <묻힌:CV_ACT> 후 소를 평평하게 <채우:CV_ACT>고 <밀가루:CV_SEASONING>를 <묻혀:CV_ACT> 가볍게 <털:CV_ACT>고 <달걀물:CV_SEASONING>을 <묻혀:CV_ACT>주세요.
+5. 달군 팬에 <기름:CV_SEASONING>을 <두르:CV_ACT>고 <소:CV_INGREDIENT>를 채운 <표고버섯:CV_INGREDIENT>을 <올리:CV_ACT>고 <소:CV_INGREDIENT>가 속까지 익도록 <약한불:QT_TEMPERATURE>에서 은근히 앞뒤로 <뒤집:CV_ACT>어 가며 <익혀:CV_ACT>주세요.

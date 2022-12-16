@@ -1,0 +1,4 @@
+1. <알타리무:CV_INGREDIENT>는 무청을 제거하고 깨끗이 씻어먹기 좋게 4등분해주세요. <홍고추:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>는 송송 썰어 씨를 털어주세요.
+2. <알타리무:CV_INGREDIENT>와 <고추:CV_INGREDIENT>를 용기에 골고루 담아주세요. 장아찌 양념 재료를 냄비에 팔팔 끓여 뜨거울 때 용기에 붓고 한김 식힌 후 냉장고에서 <2일:TI_DURATION> 이상 숙성해주세요.
+3. TIP. <알타리장아찌:CV_INGREDIENT>를 담고 남은 <무청:CV_SEASONING> 활용 방법을 알려주세요.
+<무청:CV_SEASONING>은 시든 잎을 떼고 깨끗이 씻어주세요. 냄비에 넉넉히 <물:CV_SEASONING>을 붓고 <소금:CV_SEASONING>을 약간 넣어 끓어오르면 <무청:CV_SEASONING>을 넣고 <15분:TI_DURATION> 이상 푹 삶아줍니다. 물에 깨끗이 헹궈 물기를 꼭 짜고 적당한 양으로 나눠 냉동실에 보관했다가 <된장찌개:CV_INGREDIENT>나 <생선조림:CV_INGREDIENT>에 넣어 활용해보세요.

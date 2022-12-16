@@ -1,0 +1,7 @@
+1. <무:CV_INGREDIENT>는 사방 3센치로 <나박 썰:CV_ACT>기하고 <대파:CV_INGREDIENT>는 반으로 <가르:CV_ACT>고 5센치 길이로 <썰:CV_ACT>어주세요. <콩나물:CV_INGREDIENT>은 <손질한:CV_ACT> 후 깨끗이 <씻:CV_ACT>어주세요.
+2. <쇠고기:CV_INGREDIENT>는 핏물을 <제거하:CV_ACT>고 먹기 좋은 크기로 <자르:CV_ACT>고 <밑간 재료:CV_SEASONING>를 <넣:CV_ACT>고 <10분:TI_DURATION> 정도 <밑간해:CV_ACT>주세요.
+3. 냄비에 <양념한:CV_STATE> <쇠고기:CV_INGREDIENT>를 <넣:CV_ACT>어 <1분:TI_DURATION> 정도 <볶:CV_ACT>다가 불을 <중불:QT_TEMPERATURE>로 <줄이:CV_ACT>고 <무:CV_INGREDIENT>와 <고춧가루:CV_SEASONING>를 <넣:CV_ACT>고 골고루 <저으:CV_ACT>면서 <2분:TI_DURATION> 정도 <볶:CV_ACT>아주세요.
+4. <다시마 육수:CV_SEASONING>를 <붓:CV_ACT>고 끓어오르면 국물 양념을 <넣:CV_ACT>고 <8분:TI_DURATION> 정도 <끓여:CV_ACT>주세요. <콩나물:CV_INGREDIENT>을 <넣:CV_ACT>고 <3분:TI_DURATION> 정도 뚜껑을 열고 <끓여:CV_ACT>주세요.
+ (중간에 떠오르는 거품은 걷어내 주세요.)
+5. 마지막에 <대파:CV_SEASONING>와 <홍고추:CV_SEASONING>를 <넣:CV_ACT>고 한소끔 더 <끓여:CV_ACT>주세요.
+(부족한 간은 <소금:CV_SEASONING>을 <가감해:CV_ACT>서 조절해주세요.)

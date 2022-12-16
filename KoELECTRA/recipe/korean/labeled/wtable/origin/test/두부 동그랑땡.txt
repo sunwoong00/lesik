@@ -1,0 +1,8 @@
+1. <양파:CV_INGREDIENT>와 <당근:CV_INGREDIENT>, <표고버섯:CV_INGREDIENT>, <애호박:CV_INGREDIENT>은 잘게 <다지:CV_ACT>고, <두부:CV_INGREDIENT>는 칼등으로 <으깬:CV_ACT> 후 면포에 <감싸:CV_ACT> 물기를 <짜:CV_ACT>주세요. 
+(tip. 야채는 잘게 다져야 뭉칠 때 쉽게 뭉칠 수 있어요)
+2. 볼에 <다진:CV_STATE> <야채:CV_INGREDIENT>와 <두부:CV_INGREDIENT>, 양념 재료를 <넣:CV_ACT>고 고루 <섞:CV_ACT>어주세요. 
+3. 볼에 부침 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어 <강황물:CV_SEASONING>을 <만들:CV_ACT>어주세요.
+4. 적당한 크기로 반죽을 <떼:CV_ACT>어 동그랗게 <빚:CV_ACT>은 후 1cm두께로 납작하게 <만들:CV_ACT>어 <부침가루:CV_SEASONING>를 <묻히:CV_ACT>고 <강황물:CV_SEASONING>을 고루 <입혀:CV_ACT>주세요.
+5. 달군 팬에 <기름:CV_SEASONING>을 넉넉히 <두르:CV_ACT>고 <두부 동그랑땡:CV_INGREDIENT>을 <올린:CV_ACT> 후 <중간불:QT_TEMPERATURE>에서 앞 뒤로 노릇하게 <부쳐:CV_ACT>주세요.
+(tip.전의 밑면을 충분히 익히고 한번만 뒤집어 주어야 기름도 많이 흡수하지 않으면서, 전의 색감도 더 노랗고 예쁘게 나오게 돼요.)
+6. 맛있게 즐겨주세요.

@@ -1,0 +1,7 @@
+1. <오이:CV_INGREDIENT>, <당근:CV_INGREDIENT>은 가늘게 채를 썰어주세요.
+2. <미역 국수:CV_INGREDIENT>는 체에 밭쳐 흐르는 물에 씻은 후 물기를 빼주세요.
+3. 그릇에 <미역 국수:CV_INGREDIENT>와 <썰어둔:CV_STATE> <야채:CV_INGREDIENT>를 담고 <비빔소스:CV_SEASONING>를 넣어 골고루 섞어주세요.
+(<비빔소스:CV_SEASONING>가 없을 경우 <고추장:CV_SEASONING> <2큰술:QT_VOLUME>, <간장:CV_SEASONING> <1큰술:QT_VOLUME>, <설탕:CV_SEASONING> <2큰술:QT_VOLUME>, <다진:CV_STATE> <마늘:CV_INGREDIENT> <1작은술:QT_VOLUME>, <식초:CV_SEASONING> <1큰술:QT_VOLUME>, <참기름:CV_SEASONING> 약간, <통깨:CV_SEASONING>, <후춧가루:CV_SEASONING> 약간을 넣어 섞어 <양념장:CV_SEASONING>을 만들어 사용해주세요)
+4. 그릇에 담은 후 <깨:CV_SEASONING>, <참기름:CV_SEASONING>을 뿌려 맛있게 즐겨주세요.
+
+(기호에 따라 <삶은:CV_STATE> <달걀:CV_INGREDIENT>, <깻잎:CV_INGREDIENT>, <열무김치:CV_INGREDIENT> 등과 함께 드셔도 좋아요)

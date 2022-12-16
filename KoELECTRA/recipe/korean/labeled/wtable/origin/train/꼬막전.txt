@@ -1,0 +1,6 @@
+1. <자숙 꼬막살:CV_INGREDIENT>은 약간의 <소금:CV_SEASONING>을 <넣:CV_ACT>은 물에 흔들어 <씻:CV_ACT>은 후 체에 <받쳐:CV_ACT> 물기를 <빼:CV_ACT>고 <맛술:CV_SEASONING>과 <참기름:CV_SEASONING>, <후춧가루:CV_SEASONING>를 <뿌려:CV_ACT> <10분:TI_DURATION>정도 <재워:CV_ACT>주세요.
+2. <부추:CV_INGREDIENT>는 먹기좋게 <자르:CV_ACT>고 <양파:CV_INGREDIENT>는 2센치 길이로 곱게 채를 <썰:CV_ACT>어주세요. <홍고추:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT> <1개:QT_VOLUME>는 잘게 <썰:CV_ACT>어주세요. (<청양고추:CV_INGREDIENT> <1개:QT_VOLUME>는 송송 <썰:CV_ACT>어 <전간장:CV_SEASONING>에 <넣:CV_ACT>어주세요.)
+3. 볼에 <꼬막살:CV_INGREDIENT>과 손질한 <야채:CV_INGREDIENT>, 반죽재료를 <넣:CV_ACT>고 잘 <섞:CV_ACT>어주세요.
+(tip 노릇한 <전:CV_INGREDIENT>을 만드시려면 <노른자:CV_INGREDIENT> <한개:QT_VOLUME>를 추가로 <넣:CV_ACT>어 만드셔도 돼요.)
+4. 달군 팬에 약간의 <기름:CV_SEASONING>을 <두르:CV_ACT>고 반죽을 수저로 <떠:CV_ACT>서 동그랗게 모양을 잡고 앞 뒤로 노릇하게 <익혀:CV_ACT>주세요.
+5. <꼬막전:CV_INGREDIENT>에 <전간장:CV_SEASONING>을 <곁들여:CV_SEASONING>주세요.

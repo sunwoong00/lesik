@@ -1,0 +1,8 @@
+1. <채끝살:CV_INGREDIENT>은 키친타올에 올려 핏물을 제거하고, 한 입 크기로 자른 후 밑간 재료를 넣어 <5분:TI_DURATION> 정도 재워주세요.
+2. <양파:CV_INGREDIENT>는 채썰고, <대파:CV_INGREDIENT>는 어슷 썰어주세요.
+3. 달군 팬에 <올리브유:CV_SEASONING>를 두른 후 <쇠고기:CV_INGREDIENT>를 올려 <센 불:QT_TEMPERATURE>에서 앞 뒤로 노릇하게 구워주세요.
+4. <끓는:CV_STATE> <물:CV_SEASONING>에 <후레이크:CV_INGREDIENT>와 <라면 면:CV_INGREDIENT>을 넣고 <3~4분:TI_DURATION> 정도 삶아 체에 밭쳐 물기를 빼주세요. 
+(<면수:CV_SEASONING>는 따로 준비해주세요.)
+5. <고기:CV_INGREDIENT>를 구웠던 달군 팬에 <올리브유:CV_SEASONING>를 두른 후 <대파:CV_INGREDIENT>와 <양파:CV_INGREDIENT>를 볶다가 <면:CV_INGREDIENT>과 <짜파게티 수프:CV_SEASONING>  <1봉:QT_VOLUME>, <너구리 수프:CV_SEASONING> <2/3봉:QT_VOLUME>을 넣고 <면수:CV_SEASONING> <1/2컵:QT_VOLUME>을 넣고 볶아주세요. <구운:CV_STATE> <고기:CV_INGREDIENT>를 넣어 가볍게 섞어주세요.
+6. 그릇에 담은 후 맛있게 즐겨주세요
+(취향에 따라 <채 썬:CV_STATE> <오이:CV_INGREDIENT>와 <쪽파:CV_INGREDIENT>, <달걀:CV_INGREDIENT> 등을 곁들여 드셔도 좋아요.)

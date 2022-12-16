@@ -1,0 +1,3 @@
+1. <무:CV_INGREDIENT>는 깨끗이 <씻:CV_ACT>고 껍질을 <벗긴:CV_ACT> 후 손가락 두께로 먹기 좋게 <잘라:CV_ACT>주세요. <양파:CV_INGREDIENT>는 한입 크기로 <자르:CV_ACT>고 <홍고추:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>는 반 <갈라:CV_ACT> 씨를 <털:CV_ACT>어 낸 후 어슷하게 <썰:CV_ACT>어 주세요.
+2. 냄비에 절임물 재료를 <넣:CV_ACT>고 팔팔 <끓여:CV_ACT>주세요.
+3. 보관 용기에 <썰어둔:CV_STATE> <무:CV_INGREDIENT>와 <양파:CV_INGREDIENT>, <고추:CV_INGREDIENT>를 <넣:CV_ACT>고 팔팔 끓인 절임물 재료를 뜨거울 때 <붓:CV_ACT>고 실온에 <반나절:TI_DURATION> <두:CV_ACT>었다가 냉장 보관해 맛있게 즐겨주세요.

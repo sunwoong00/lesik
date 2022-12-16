@@ -1,0 +1,6 @@
+1. <무:CV_INGREDIENT>는 나박하게 <썰:CV_ACT>고 <양파:CV_INGREDIENT>는 굵게 <채 썰:CV_ACT>어주세요. <대파:CV_INGREDIENT>는 길이로 <가르:CV_ACT>고 6센치 길이로 <썰:CV_ACT>고 <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>는 어슷 <썰:CV_ACT>어주세요. 볼에 양념 재료를 <섞:CV_ACT>어 준비해 주세요.
+2. 냄비에 <무:CV_INGREDIENT>와 <양파:CV_INGREDIENT>를 <깔:CV_ACT>은 후 <모듬전:CV_INGREDIENT>을 보기 좋게 돌려 <담:CV_ACT>고 <다시마 멸치육수:CV_SEASONING>를 <넣:CV_ACT>어 <끓여:CV_ACT>주세요.
+3. 국물이 끓으면 양념 재료를 <넣:CV_ACT>고 <3분:TI_DURATION> 정도 <끓여:CV_ACT>주세요. 
+(tip. <새우젓:CV_SEASONING>을 <넣:CV_ACT>으면 전의 느끼함도 <잡:CV_ACT>아주고 깊고 진한 감칠맛을 <낼:CV_ACT> 수 있답니다.)
+4. <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>어 한소끔 <끓인:CV_ACT> 후 마지막에 <쑥갓:CV_INGREDIENT>을 <얹:CV_ACT>어 완성해 주세요.
+(tip. 기호에 따라 국물이 적으면 <다시마 멸치 육수:CV_SEASONING>를 <추가하:CV_ACT>고 간은 <새우젓:CV_SEASONING>이나 <국간장:CV_SEASONING>으로 <가감해:CV_ACT>서 맞춰주세요.)

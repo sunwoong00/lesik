@@ -1,0 +1,6 @@
+1. 냄비에 <물:CV_SEASONING>과 <소금:CV_SEASONING>을 넣고 물이 끓으면 <숙주나물:CV_INGREDIENT>을 넣어 살짝 데쳐주세요.
+2. <데친:CV_STATE> <숙주나물:CV_INGREDIENT>을 찬물에 헹군 뒤 물기를 빼주세요.
+*Tip. <데친:CV_STATE> <숙주:CV_INGREDIENT>를 찬물에 헹구면 <숙주:CV_INGREDIENT>의 식감이 더욱 아삭해져요!
+3. 볼에 순서 2와 <잘게 찢은:CV_STATE> <맛살:CV_INGREDIENT>을 넣은 뒤 양념 재료를 넣고 조물조물 무친 다음 <송송 썬:CV_STATE> <쪽파:CV_INGREDIENT>와 <참깨:CV_SEASONING>를 넣어 섞어주세요.
+*Tip. <숙주나물:CV_INGREDIENT>을 오래 데치거나 손으로 많이 주므르면 아삭한 식감이 사라지므로 주의해야 해요!
+4. <맛살:CV_INGREDIENT>과 <숙주:CV_INGREDIENT>의 맛과 식감을 음미하며 맛있게 즐겨보세요!

@@ -1,0 +1,7 @@
+1. <배:CV_INGREDIENT>는 깨끗이 씻어 윗부분을 자르고 속을 파주세요. <속을 파낸:CV_STATE> <배:CV_INGREDIENT>의 <1/2분량:QT_VOLUME>을 챠퍼로 갈아 즙을 내주세요.
+2. <도라지:CV_INGREDIENT>는 얇게 편썰어주세요. 볼에 양념 재료를 섞어주세요.
+3. <핏물을 뺀:CV_STATE> <쇠고기:CV_INGREDIENT>에 <갈아둔:CV_STATE> <배:CV_INGREDIENT>와 양념 재료를 넣고 재워주세요. 
+(tip. <배즙:CV_SEASONING>을 넣으면 <고기:CV_INGREDIENT>가 더욱 부드러워져요) 
+4. 달군 팬에 <기름:CV_SEASONING>을 약간 두른 후 <재워둔:CV_STATE> <쇠고기:CV_INGREDIENT>를 볶아주세요. 
+5. <속을 판:CV_STATE> <배:CV_INGREDIENT> 속에 볶은 재료를 넣고 <도라지:CV_INGREDIENT>와 <대추:CV_INGREDIENT>를 넣은 후 뚜껑을 덮고 전자레인지에 <10분간:TI_DURATION> 돌려주세요. 
+6. 완성된 <불고기찜:CV_INGREDIENT>을 맛있게 즐겨주세요. 

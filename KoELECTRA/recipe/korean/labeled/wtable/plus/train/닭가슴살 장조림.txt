@@ -1,0 +1,10 @@
+1. 냄비에 <닭가슴살:CV_INGREDIENT>을 넣고 잠길 정도로 <물:CV_SEASONING>을 부어주세요. 물이 끓어오르면 <마늘:CV_INGREDIENT> <5쪽:QT_VOLUME>, <월계수잎:CV_SEASONING>, <통후추:CV_SEASONING>를 넣고 <20분:TI_DURATION>간 삶아주세요.
+2. <닭가슴살:CV_INGREDIENT>을 건져서 한 입 크기로 찢어주세요.
+3. 다시 냄비에 분량의 <물:CV_SEASONING>을 부어주세요. <닭가슴살:CV_INGREDIENT>과 나머지 재료를 모두 넣고 <중간 불:QT_TEMPERATURE>에서 자작해질 때 까지 <15~20분:TI_DURATION>간 조려주세요.
+4. 한김 식힌 뒤 소분하면 완성입니다.
+<닭가슴살 또띠아롤:CV_INGREDIENT>, <닭가슴살 김밥:CV_INGREDIENT> 등 여러 밀프렙 다이어트 레시피로 활용 가능하답니다.
+*Tip. <매운:CV_STATE> <고추:CV_INGREDIENT>를 함께 조려도 맛있어요.
+<삶은:CV_STATE> <달걀:CV_INGREDIENT>을 더 넣어서 밥반찬으로 먹어도 좋아요.
+함께 <조린:CV_STATE> <장조림달걀:CV_INGREDIENT>은 <닭가슴살양배추달걀덮밥:CV_INGREDIENT>으로 만들어보세요.
+<조리고 남은:CV_STATE> <간장:CV_SEASONING>은 <덮밥:CV_INGREDIENT>이나 <비빔밥:CV_INGREDIENT>에 곁들여요.
+응용 요리를 만들고 닭가슴살 장조림이 남으면 다른 레시피에 활용하거나 밥반찬으로 먹어요.

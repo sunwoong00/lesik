@@ -1,0 +1,6 @@
+1. 끓는물에 약간의 <소금:CV_SEASONING>과 <숙주:CV_INGREDIENT>를 <넣:CV_ACT>고 <2분:TI_DURATION>정도 <데친:CV_ACT> 후 물기를 <짜:CV_ACT>고 잘게 <다져:CV_ACT>주세요. <양파:CV_INGREDIENT>와 <부추:CV_INGREDIENT>, <대파:CV_INGREDIENT>는 잘게 <다져:CV_ACT>주세요.
+2. 볼에 <갈은:CV_STATE> <돼지고기:CV_INGREDIENT>와 만두소 양념재료, <달걀노른자:CV_INGREDIENT>를 <넣:CV_ACT>고 한 방향으로 돌려가며 <섞:CV_ACT>은 후 다진 <야채:CV_INGREDIENT>를 <넣:CV_ACT>어 고루 <섞:CV_ACT>어주세요.
+3. <만두소:CV_INGREDIENT>를 한입에 먹기좋게 30g정도로 <떼:CV_ACT>어 동그랗게 <빚:CV_ACT>은 후 접시에 <전분가루:CV_SEASONING>와 <밀가루:CV_SEASONING>를 <섞:CV_ACT>어 <만두소:CV_INGREDIENT>를 <굴려:CV_ACT>가며 표면에 <가루:CV_SEASONING>를 <묻혀:CV_ACT>주세요.
+4. <달걀흰자:CV_INGREDIENT>를 잘 <푼:CV_ACT> 후 <만두소:CV_INGREDIENT>에 살짝 <묻힌:CV_ACT> 후 한번 더 고루게  <가루:CV_SEASONING>를 <묻혀:CV_ACT>주세요.
+5. 김오른 찜통에 <굴림만두:CV_INGREDIENT>를 <넣:CV_ACT>고 <8~10분:TI_DURATION>정도 <쪄:CV_ACT>주세요.
+6. 기호에 따라 <초간장:CV_SEASONING>을 <곁들여:CV_ACT>주세요.

@@ -1,0 +1,5 @@
+1. <감자:CV_INGREDIENT>는 껍질째 깨끗이 씻어 4등분해 주세요. <닭:CV_INGREDIENT>은 반으로 쪼갠 후 흐르는 물에 씻어주세요. <감자:CV_INGREDIENT>와 <닭:CV_INGREDIENT>에 밑간 재료를 섞어 발라주세요. 
+2. <밑간한:CV_STATE> <닭:CV_INGREDIENT>, <마늘:CV_INGREDIENT>, <감자:CV_INGREDIENT>를 에어프라이어에 넣고 <200도:QT_TEMPERATURE>에서 <30분:TI_DURATION> 정도 익혀주세요. 
+3. 달군 팬에 <기름:CV_SEASONING>을 두르고 <다진:CV_STATE> <마늘:CV_INGREDIENT> <1큰술:QT_VOLUME>을 넣어 볶다가 <시금치:CV_INGREDIENT>, <페페론치노:CV_SEASONING>를 넣고 볶아주세요. <시금치:CV_INGREDIENT>가 반쯤 볶아졌을 때 <간장:CV_SEASONING>과 <설탕:CV_SEASONING>, <후춧가루:CV_SEASONING>로 간을 해주세요. 
+4. 달군 팬에 <버터:CV_SEASONING>와 <다진:CV_STATE> <마늘:CV_INGREDIENT>을 넣고 볶은 후 <밥:CV_INGREDIENT>을 넣고 볶다가 <소금:CV_SEASONING> 한꼬집과 <후춧가루:CV_SEASONING>로 간을 해주세요. <볶은:CV_STATE> <밥:CV_INGREDIENT>을 꾹꾹 눌러 아래 면을 노릇하게 구워주세요. 
+5. 넓은 접시에 <눌린:CV_STATE> <밥:CV_INGREDIENT>을 깔고 <볶은:CV_STATE> <시금치:CV_INGREDIENT>, <구운:CV_STATE> <닭:CV_INGREDIENT>과 <감자:CV_INGREDIENT>를 올린 후 맛있게 즐겨주세요. 

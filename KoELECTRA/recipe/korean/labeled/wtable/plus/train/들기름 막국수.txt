@@ -1,0 +1,6 @@
+1. 끓는물에 <메밀면:CV_INGREDIENT>을 펼쳐 넣고 젓가락으로 저어 면끼리 달라붙지 않도록 저어주세요. 물이 끓어오르면 <찬물:CV_SEASONING> <한컵:QT_VOLUME>을 2~3회 반복해서 부어 <국수:CV_INGREDIENT>를 삶아주세요. 흐르는 찬물에 <면:CV_INGREDIENT>을 여러 번 씻어 전분기를 없애고 체에 받쳐 물기를 빼주세요.
+2. 볼에 소스 재료를 넣고 섞어주세요. <쪽파:CV_INGREDIENT>는 송성 썰어주세요.
+3. 믹서에 <김:CV_INGREDIENT>과 <통깨:CV_SEASONING>를 넣어 <3초:TI_DURATION> 정도 갈아주세요. 
+(tip. 믹서가 없다면 <김:CV_INGREDIENT>을 비닐에 넣고 부숴서 사용해도 좋아요)
+4. 그릇에 <면:CV_INGREDIENT>을 담고 <소스:CV_SEASONING>와 <김가루:CV_SEASONING>와 <쪽파:CV_SEASONING>를 올린 후 <들기름:CV_SEASONING>을 취향껏 부어주세요.
+(tip. 냉장고 속 재료를 스타일링에 활용해 보세요)

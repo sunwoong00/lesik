@@ -1,0 +1,6 @@
+1. 건 <해초:CV_INGREDIENT>는 찬물에 <담가:CV_ACT> <3~4분:TI_DURATION>간 <불려:CV_ACT>주세요. <불린:CV_STATE> <해초:CV_INGREDIENT>는 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요. 
+(<물기를 뺀:CV_STATE> <해초:CV_INGREDIENT>를 냉장고에 <넣:CV_ACT>어 <10~15분:TI_DURATION> 정도 차갑게 해두면 식감이 더욱 살아나요)
+2. 볼에 소스 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요.
+3. <적양배추:CV_INGREDIENT>와 <오이:CV_INGREDIENT>는 가늘게 채를 <썰:CV_ACT>어주세요.
+4. 그릇에 <밥:CV_INGREDIENT>을 <담:CV_ACT>고 <해초:CV_INGREDIENT>, <적양배추:CV_INGREDIENT>, <오이:CV_INGREDIENT>를 둘러 <담:CV_ACT>아주세요.
+5. <날치알:CV_INGREDIENT>을 <올린:CV_ACT> 후 <소스:CV_SEASONING>와 <참기름:CV_SEASONING>을 <뿌려:CV_ACT> 맛있게 즐겨주세요.

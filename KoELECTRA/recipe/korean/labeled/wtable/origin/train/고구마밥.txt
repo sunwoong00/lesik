@@ -1,0 +1,7 @@
+1. 요리 전 <현미:CV_INGREDIENT>와 <멥쌀:CV_INGREDIENT>을 <2시간:TI_DURATION> 정도 <불려:CV_ACT>주세요. <고구마:CV_INGREDIENT>는 깨끗하게 <씻:CV_ACT>은 후 2~3cm로 <깍둑썰기:CV_ACT> 해주세요.
+2. 냄비에 <불린:CV_STATE> <현미:CV_INGREDIENT>와 <멥쌀:CV_INGREDIENT>을 <부어:CV_ACT>주세요.
+3. 2의 냄비에 <손질된:CV_STATE> <고구마:CV_INGREDIENT>를 <넣:CV_ACT>어 주세요.
+4. 냄비에 <물:CV_SEASONING> <1과 1/3컵:QT_VOLUME>을 <붓:CV_ACT>고 <센 불:QT_TEMPERATURE>에서 <5분:TI_DURATION>, <약불:QT_TEMPERATURE>에서 <10분간:TI_DURATION> <끓:CV_ACT>여 주세요.
+5. 다 <익은:CV_STATE> <밥:CV_INGREDIENT>을 그릇에 옮겨 <담:CV_ACT>아 드세요.
+
+*Tip. <고구마:CV_INGREDIENT>의 껍질에는 전분을 분해하는 효소가 들어있어 소화를 촉진합니다. 암과 노화를 억제하 는 플라보노이드 성분도 풍부하게 들어있어요.

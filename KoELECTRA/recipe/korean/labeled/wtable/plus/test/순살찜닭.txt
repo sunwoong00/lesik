@@ -1,0 +1,9 @@
+1. <닭다리살:CV_INGREDIENT>은 칼집을 넣고 4등분으로 자른 후 밑간 재료에 <10분:TI_DURATION>간 재워주세요.
+(tip. 칼집을 넣어주면 <양념:CV_SEASONING>이 잘 배어요)
+2. <감자:CV_INGREDIENT>와 <당근:CV_INGREDIENT>은 0.2-3cm 두께로 얄팍하게 썰고 <양파:CV_INGREDIENT>는 사방 2-3cm 길이로 깍둑 썰어주세요. <대파:CV_INGREDIENT>는 어슷 썰어주세요.
+3. 볼에 양념 재료를 넣고 섞은 후 <재워둔:CV_STATE> <닭고기:CV_INGREDIENT>와 <손질한:CV_STATE> <채소:CV_INGREDIENT>를 모두 넣어 버무려 <1시간:TI_DURATION> 이상 재워주세요.
+(tip. 전날 미리 재워 냉장고에 보관해두면 좋아요)
+4. <당면:CV_INGREDIENT>과 <떡볶이 떡:CV_INGREDIENT>은 <20분:TI_DURATION>간 물에 담가 불려주세요.
+5. 내열 용기에 <불려둔:CV_STATE> <당면:CV_INGREDIENT>과 <떡:CV_INGREDIENT>을 깔고 <물:CV_SEASONING>을 붓고 <재워둔:CV_STATE> <재료:CV_SEASONING>를 올려 펼쳐주세요.
+6. 법랑 접시에 내열 용기를 올려 1단에 넣고 광파오븐 자동요리 스팀에서 <찐닭:CV_INGREDIENT> <0.8kg:QT_VOLUME>을 선택해 조리해주세요. * 광파오븐 스팀 물통에 물을 채우고 시작해주세요.
+7. 완성된 <찜닭:CV_INGREDIENT>에 <올리고당:CV_SEASONING>과 <통깨:CV_SEASONING>, <참기름:CV_SEASONING>을 넣고 골고루 섞은 후 맛있게 즐겨주세요.

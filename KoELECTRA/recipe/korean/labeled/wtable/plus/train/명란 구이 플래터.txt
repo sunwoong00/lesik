@@ -1,0 +1,4 @@
+1. 달군 팬에 <오일:CV_SEASONING>을 두른 후 <명란젓:CV_SEASONING>을 올려 노릇하게 굽고 마지막에 <참기름:CV_SEASONING>을 둘러주세요. <명란젓:CV_INGREDIENT>은 먹기 좋은 크기로 잘라주세요.
+2. 깨끗이 <씻은:CV_STATE> <오이:CV_INGREDIENT>는 먹기 좋은 두께로 슬라이스하고 <아보카도:CV_INGREDIENT>는 껍질과 씨를 제거한 후 슬라이스해주세요.
+3. <김밥용 김:CV_INGREDIENT>은 6등분으로 잘라주세요. 볼에 소스 재료를 넣어 섞어주세요.
+4. 접시에 <명란:CV_INGREDIENT>, <오이:CV_INGREDIENT>, <아보카도:CV_INGREDIENT>, <어린:CV_STATE><잎:CV_INGREDIENT> <채소:CV_INGREDIENT>를 보기 좋게 담고 <소스:CV_SEASONING>와 <고추냉이:CV_SEASONING>를 <김:CV_INGREDIENT>에 싸서 맛있게 즐겨주세요.

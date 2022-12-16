@@ -1,0 +1,5 @@
+1. 가닥가닥 풀어서 준비한 <쫄면:CV_INGREDIENT>을 끓는 물에 넣고 잘 저어가며 <3분:TI_DURATION> 정도 삶아주세요.
+2. <삶은:CV_STATE> <쫄면:CV_INGREDIENT>은 찬물에 여러번 헹궈 전분기를 제거한 후 체에 밭쳐 물기를 빼주세요.
+3. <청양고추:CV_INGREDIENT>를 굵게 다진 후 <양념 소스:CV_SEASONING>에 넣어서 섞어주세요.
+4. <골뱅이:CV_INGREDIENT>는 체에 받쳐 물기를 빼고 4등분으로 잘라주세요. <깻잎:CV_INGREDIENT>과 <양파:CV_INGREDIENT>, <적채:CV_INGREDIENT>는 채를 썰고, <오이:CV_INGREDIENT>는 반으로 잘라 어슷하게 썰어주세요.
+5. <쫄면:CV_INGREDIENT>과 <손질한:CV_STATE> <야채:CV_INGREDIENT>, <골뱅이:CV_INGREDIENT>를 넣고 <양념 소스:CV_SEASONING>에 잘 비벼주세요. <새싹:CV_INGREDIENT>과 <삶은:CV_STATE> <달걀:CV_INGREDIENT>을 올려 맛있게 즐겨주세요.

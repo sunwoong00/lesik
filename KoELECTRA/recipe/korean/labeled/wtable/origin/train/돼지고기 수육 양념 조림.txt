@@ -1,0 +1,5 @@
+1. 냄비에 <물:CV_SEASONING>과 삶는 물 재료를 <넣:CV_ACT>고 끓어오르면 <삼겹살:CV_INGREDIENT>을 2등분해서 <넣:CV_ACT>은 후 <1시간:TI_DURATION> 정도 <삶:CV_ACT>아주세요.
+2. <대파:CV_INGREDIENT>와 <양파:CV_INGREDIENT>는 곱게 <채 썰:CV_ACT>고 <부추:CV_INGREDIENT>는 4cm 길이로 <썰:CV_ACT>어주세요. <묵은지:CV_INGREDIENT>는 물에 <헹군:CV_ACT> 후 물기를 <빼:CV_ACT>고 먹기 좋게 <썰:CV_ACT>고 볼에 <파무침 소스:CV_SEASONING>를 <넣:CV_ACT>고 고루 <섞:CV_ACT>어 <소스:CV_SEASONING>를 <만들:CV_ACT>어주세요.
+3. 팬에 조림장 재료를 <넣:CV_ACT>고 팔팔 끓으면 <삶은:CV_STATE> <삼겹살:CV_INGREDIENT>을 <넣은:CV_ACT> 후 앞뒤로 <뒤집:CV_ACT>어 가며 윤기나게 <조려:CV_ACT>주세요.
+4. <고기:CV_INGREDIENT>를 먹기 좋게 한 입 크기로 <썰:CV_ACT>어 접시에 <담:CV_ACT>아주세요.
+5. <파채:CV_INGREDIENT>와 <양파:CV_INGREDIENT>, <부추:CV_INGREDIENT>를 <무침 소스:CV_SEASONING>를 <넣:CV_ACT>어 가볍게 <섞:CV_ACT>고 <묵은지:CV_INGREDIENT> 또는 <명이나물:CV_INGREDIENT> 등을 <곁들여:CV_ACT> 맛있게 즐겨주세요.

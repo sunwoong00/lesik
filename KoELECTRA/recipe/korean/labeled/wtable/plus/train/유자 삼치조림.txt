@@ -1,0 +1,5 @@
+1. <삼치:CV_INGREDIENT>는 흐르는 물에 깨끗이 씻어 내장과 지느러미를 제거하고 가운데 뼈를 제거하고 세 장뜨기 한 후 <맛술:CV_SEASONING>과 <후춧가루:CV_SEASONING>를 뿌려 <10분:TI_DURATION> 정도 재워주세요.
+2. <마늘:CV_INGREDIENT>은 도톰하게 편으로 썰고 <페페론치노:CV_SEASONING>는 잘게 썰어주세요.볼에 간장 소스 재료를 넣고 섞어주세요.
+3. <삼치:CV_INGREDIENT>는 물기를 제거하고 <녹말가루:CV_SEASONING>를 앞,뒤로 고루 묻혀 달군 팬에 <기름:CV_SEASONING>을 넉넉히 넣은 후 <삼치:CV_INGREDIENT>를 앞 뒤로 노릇하게 구워주세요.
+4. 팬에 <간장소스:CV_SEASONING>와 <마늘:CV_INGREDIENT>, <페페론치노:CV_SEASONING>를 넣고 <소스:CV_SEASONING>가 바글바글 끓으면 <구워 놓은:CV_STATE> <삼치:CV_INGREDIENT>를 넣은 후 <소스:CV_SEASONING>를 끼얹어가며 <중약불:QT_TEMPERATURE>에서 졸여주세요.
+5. 접시에 <삼치조림:CV_INGREDIENT>을 담고 기호에 따라 <어린잎 채소:CV_INGREDIENT>를 함께 곁들여주세요. 남은 <소스:CV_SEASONING>를 뿌려 맛있게 즐겨주세요.

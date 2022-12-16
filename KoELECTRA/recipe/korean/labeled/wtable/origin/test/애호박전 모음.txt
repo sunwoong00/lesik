@@ -1,0 +1,17 @@
+1. 1. 깨끗이 씻은 <애호박:CV_INGREDIENT>은 0.5cm두께로 <썰:CV_ACT>고, 작은 틀이나 뚜껑 등으로 <애호박:CV_INGREDIENT> 속을 찍어 <파내:CV_ACT>어주세요.
+2. <파내어진:CV_STATE> <애호박 속부분:CV_INGREDIENT>과 <양파:CV_INGREDIENT>, <당근:CV_INGREDIENT>은 잘게 <다져:CV_ACT>주세요. <두부:CV_INGREDIENT>는 면보자기에 <넣:CV_ACT>어 물기를 <짜:CV_ACT>주세요.
+3. 볼에 <돼지고기 갈은 것:CV_INGREDIENT>과 <잘게 다진:CV_STATE> <야채:CV_INGREDIENT>와 <두부:CV_INGREDIENT>, <다진:CV_STATE><마늘:CV_INGREDIENT>, <다진:CV_STATE><파:CV_INGREDIENT>, <소금:CV_SEASONING>, <후춧가루:CV_SEASONING>를 <넣:CV_ACT>어 골고루 <섞:CV_ACT>어주세요.
+4. <동그랗게 파내어진:CV_STATE> <애호박 속:CV_INGREDIENT>을 동그랑땡소로 <채워:CV_ACT>주세요.
+5. <애호박동그랑땡:CV_INGREDIENT>에 <부침가루:CV_SEASONING>를 <묻히:CV_ACT>고, 풀어놓은 <달걀물:CV_SEASONING>에 <담갔:CV_ACT>다가 <건져:CV_ACT>주세요.
+6. 달군팬에 약간의 <기름:CV_SEASONING>을 <두르:CV_ACT>고, <애호박동그랑땡:CV_INGREDIENT>을 <올려:CV_ACT> 노릇하게 <익혀:CV_ACT>주세요.
+2. 1. 깨끗이 씻은 <애호박:CV_INGREDIENT>, <당근:CV_INGREDIENT>, <양파:CV_INGREDIENT>를 <채썰:CV_ACT>어주세요.
+2. 볼에 <채썬:CV_STATE> <야채:CV_INGREDIENT>들과 <부침가루:CV_SEASONING>, <물:CV_SEASONING>, <달걀:CV_INGREDIENT>, <소금:CV_SEASONING>을 <넣:CV_ACT>어 골고루 <섞:CV_ACT>어주세요.
+(Tip! 찬물로 반죽을 해야 더 바삭하게 드실 수 있어요)
+3. 달군 팬에 넉넉하게 <기름:CV_SEASONING>을 <두르:CV_ACT>고, 수저로 반죽을 <올린:CV_ACT> 후 동그랗게 모양을 잡아 노릇하게 <부쳐:CV_ACT>주세요.
+4. 접시에 <애호박채전:CV_INGREDIENT>을 <담:CV_ACT>고 <초간장:CV_SEASONING>을 <곁들여:CV_ACT>주세요.
+(<초간장 재료:CV_SEASONING>- <간장:CV_SEASONING> <1큰술:QT_VOLUME>, <식초:CV_SEASONING><1/2큰술:QT_VOLUME>, <물:CV_SEASONING> <2큰술:QT_VOLUME>, <청양고추:CV_INGREDIENT> <1개:QT_VOLUME>)
+3. 1. <애호박:CV_INGREDIENT>은 깨끗이 <씻:CV_ACT>어서 0.5cm두께로 <썰:CV_ACT>어주세요. <홍고추:CV_INGREDIENT>는 <어슷썰:CV_ACT>기 해주세요.
+2. <썰어놓은:CV_STATE> <애호박:CV_INGREDIENT>에 <소금:CV_SEASONING>을 골고루 <뿌리:CV_ACT>고, 약 5분 후 애호박에 생긴 물기를 <닦:CV_ACT>아주세요.
+3. <애호박:CV_INGREDIENT>에 <부침가루:CV_SEASONING>를 <묻히:CV_ACT>고 풀어놓은 <달걀물:CV_SEASONING>에 <담갔:CV_ACT>다가 <건져:CV_ACT>주세요.
+4. 달군팬에 약간의 <기름:CV_SEASONING>을 <두르:CV_ACT>고 <애호박:CV_INGREDIENT>을 <올린:CV_ACT> 후, <썰어 둔:CV_STATE> <홍고추:CV_INGREDIENT>와 <쑥갓:CV_INGREDIENT>을 <얹:CV_ACT>어 앞뒤로 <약불:QT_TEMPERATURE>에서 노릇하게 <익혀:CV_ACT>주세요.
+4. 다양한 맛과 매력이 있는 <애호박전:CV_INGREDIENT>을 맛있게 즐겨주세요.

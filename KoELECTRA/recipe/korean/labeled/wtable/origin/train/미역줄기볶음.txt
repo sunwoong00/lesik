@@ -1,0 +1,6 @@
+1. <미역줄기:CV_INGREDIENT>는 흐르는 물에 여러 번 <헹구:CV_ACT>고 찬물에 <30분:TI_DURATION> 정도 <담가:CV_ACT> 소금기를 <빼:CV_ACT>주세요. <미역줄기:CV_INGREDIENT>를 <끓는 물:CV_SEASONING>에 <넣:CV_ACT>고 <3분:TI_DURATION> 정도 <데친:CV_ACT> 후 찬물에 <헹궈:CV_ACT> 물기를 <빼:CV_ACT> 주세요. 
+(<미역줄기:CV_INGREDIENT>를 끓는 물에 데치면, 비린맛도 줄어들고 부드러운 <미역줄기볶음:CV_INGREDIENT>을 만들 수 있답니다)
+2. <미역줄기:CV_INGREDIENT>는 6센치 길이로 먹기좋게 <자르:CV_ACT>고, 굵은 줄기는 손으로 <찢:CV_ACT>어주세요. <당근:CV_INGREDIENT>과 <양파:CV_INGREDIENT>는 곱게 채를 <썰:CV_ACT>어주세요.
+3. 팬에 <식용유:CV_SEASONING>를 <두르:CV_ACT>고 <다진마늘:CV_INGREDIENT>을 <볶:CV_ACT>다가 <양파:CV_INGREDIENT>와 <당근:CV_INGREDIENT>, <미역줄기:CV_INGREDIENT>를 <넣:CV_ACT>어주세요. 재료들이 부드러워질 때까지 <볶:CV_ACT>다가 양념재료를 <넣:CV_ACT>어 <볶:CV_ACT>아주세요.
+(부족한 간은 <소금:CV_SEASONING>으로 <가감해:CV_ACT>주세요.)
+4. 접시에 <미역줄기볶음:CV_INGREDIENT>을 <담:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.

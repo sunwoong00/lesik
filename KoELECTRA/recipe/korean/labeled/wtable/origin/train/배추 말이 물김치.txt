@@ -1,0 +1,10 @@
+1. <배추:CV_INGREDIENT>는 한 잎씩 <떼어내:CV_ACT>어 물에 <씻:CV_ACT>고 줄기 부분에 <굵은:CV_STATE> <소금:CV_SEASONING>을 켜켜이 <뿌리:CV_ACT>고 <소금물:CV_SEASONING>에 <담가:CV_ACT> 줄기가 부드러워 질 때까지 위아래 <뒤집:CV_ACT>어가며 <3~4시간:TI_DURATION> 정도 <절인:CV_ACT> 후 물에 <헹구:CV_ACT>어 물기를 <빼:CV_ACT>서 준비해주세요.
+(tip 작은 배춧속은 겉절이 또는 <샐러드:CV_INGREDIENT>로 사용하셔도 돼요.)
+2. <찹쌀가루:CV_SEASONING>를 찬물에 <풀:CV_ACT>고 냄비에 <넣:CV_ACT>어 <풀:CV_ACT>을 쑨 후 차게 <식혀:CV_ACT> 준비해 주세요.
+3. <무:CV_INGREDIENT>와 <파프리카:CV_INGREDIENT>는 가늘게 채를 <썰:CV_ACT>고 <쪽파:CV_INGREDIENT>는 <다듬:CV_ACT>어 <씻:CV_ACT>은 후 4cm 길이로 <잘라:CV_ACT> <김칫소 양념:CV_SEASONING>을 <넣:CV_ACT>어 가볍게 <섞:CV_ACT>어주세요.
+﻿(tip <쪽파:CV_INGREDIENT>는 <배춧잎:CV_INGREDIENT>이 다 <절여:CV_ACT>지면 마지막에 <김치 양념:CV_SEASONING>에 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.)
+4. <절인:CV_STATE> <배춧잎:CV_INGREDIENT>에 <김칫소:CV_INGREDIENT>를 <넣:CV_ACT>고 돌돌 <말:CV_ACT>아 김치 통에 차곡차곡 <담:CV_ACT>은 후 맛이 배도록 실온에서 <6시간:TI_DURATION> 정도 <숙성시켜:CV_ACT>주세요.
+5. 갈아서 사용할 재료는 잘게 잘라 믹서기에 <넣:CV_ACT>어 곱게 <갈:CV_ACT>고 <찹쌀풀:CV_SEASONING>을 <섞:CV_ACT>은 후 고운 채 망에 <걸러:CV_ACT> 물김치 국물 재료에 <즙:CV_SEASONING>만 <넣:CV_ACT>어주세요.
+(tip 김칫국물재료에 <설탕:CV_SEASONING> 대신에 <감미료:CV_SEASONING> <¼작은술:QT_VOLUME>을 대체해서 사용하셔도 돼요. 기호에 따라 <설탕:CV_SEASONING>과 <소금:CV_SEASONING>을 <가감해:CV_ACT>서 간를 <맞춰:CV_ACT>주세요.)
+6. <배추말이:CV_INGREDIENT>에 <김칫국물:CV_SEASONING>을 <붓:CV_ACT>고 실온에서 <하루:TI_DURATION> 정도 더 <익힌:CV_ACT> 후 <냉장 보관해:CV_ACT> 주세요. 
+(tip 숙성된 <김치:CV_INGREDIENT>는 한입 크기로 <잘라:CV_ACT> 국물을 자작하게 <부어:CV_ACT> 맛있게 즐겨주세요.)

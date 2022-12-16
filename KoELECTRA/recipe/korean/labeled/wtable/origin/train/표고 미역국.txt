@@ -1,0 +1,9 @@
+1. <불린:CV_STATE> <미역:CV_INGREDIENT>은 먹기 좋은 크기로 <잘라:CV_ACT>주세요. <불린:CV_STATE> <표고버섯:CV_INGREDIENT>은 얇게 <슬라이스 해:CV_ACT>주세요. 
+(tip. 찬물에 건<미역:CV_INGREDIENT>을 <넣:CV_ACT>고 <20분:TI_DURATION> 정도 <불리:CV_ACT>고 깨끗하게 <헹군:CV_ACT> 후 사용해 주세요)
+(tip. 흐르는 물에 <건표고:CV_INGREDIENT>를 헹군 후 <20분:TI_DURATION> 정도 <불려:CV_ACT> 사용해 주세요)
+
+2. 달군 냄비에 <들기름:CV_SEASONING>을 <두르:CV_ACT>고 <미역:CV_INGREDIENT>과 <표고버섯:CV_INGREDIENT>을 <넣:CV_ACT>고 <중약불:QT_TEMPERATURE>에서 <3분:TI_DURATION> 정도 <볶:CV_ACT>다가 <다시마 물:CV_SEASONING>과 <표고버섯 불린:CV_STATE> <물:CV_SEASONING>을 <넣:CV_ACT>고 <끓여:CV_ACT>주세요. 
+3. 국물 양념 재료와 <들깨가루:CV_SEASONING>를 <넣:CV_ACT>고 <10분:TI_DURATION> 정도 <끓여:CV_ACT>주세요.
+4. 기호에 따라 <소금:CV_SEASONING>으로 간을 <맞춰:CV_ACT> 맛있게 즐겨주세요.
+(tip. <표고:CV_INGREDIENT>를 진하게 우릴수록 국물의 감칠맛이 올라가요)
+

@@ -1,0 +1,5 @@
+1. <오이:CV_INGREDIENT>는 가늘게 채 <썰:CV_ACT>고 <김치:CV_INGREDIENT>는 굵게 <다져:CV_ACT>주세요.
+2. 볼에 <다진:CV_STATE> <김치:CV_INGREDIENT>와 양념재료를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요.
+3. 끓는 물에 <중면:CV_INGREDIENT>을 <펼쳐:CV_ACT> <넣:CV_ACT>고 면끼리 달라붓지 않도록 <저어:CV_ACT>주세요. 물이 끓어오르면 <찬:CV_STATE><물:CV_SEASONING>을 2~3회 반복해서 <부어:CV_ACT> <국수:CV_INGREDIENT>를 <삶:CV_ACT>아주세요. 흐르는 찬물에 <중면:CV_INGREDIENT>을 여러 번 <씻:CV_ACT>어 전분기를 없애고 체반에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+4. <양념장:CV_SEASONING>에 삶은 <국수:CV_INGREDIENT>를 <넣:CV_ACT>고 <버무려:CV_ACT>주세요.
+5. 접시에 <비빔국수:CV_INGREDIENT>를 <담:CV_ACT>고 <삶은:CV_STATE> <달걀:CV_INGREDIENT>과 <오이채:CV_INGREDIENT> <깨:CV_SEASONING>를 <올려:CV_ACT>주세요.

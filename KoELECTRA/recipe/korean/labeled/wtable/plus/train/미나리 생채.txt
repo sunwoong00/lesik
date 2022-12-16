@@ -1,0 +1,13 @@
+1. 깨끗이 <씻은:CV_STATE> <미나리:CV_INGREDIENT>는 4~5cm 길이로 먹기 좋게 썰어주세요. <양파:CV_INGREDIENT>는 얇게 채를 썰어주세요.
+2. 볼에 양념 재료를 넣고 섞어주세요.
+3. 볼에 <미나리:CV_INGREDIENT>와 <양파:CV_INGREDIENT>, 양념장 재료를 넣고 가볍게 섞어주세요.
+4. 접시에 담고 <통깨:CV_SEASONING>를 뿌려 맛있게 즐겨주세요.
+[<곁들인:CV_STATE> <삼겹살 구이:CV_INGREDIENT>]
+(<3~4인분:QT_VOLUME>) - 하 - <100분:TI_DURATION> 
+- 재료 : <삼겹살:CV_INGREDIENT> <800g:QT_VOLUME>
+- 양념 재료 : <간장:CV_SEASONING> <4큰술:QT_VOLUME>, <설탕:CV_SEASONING> <1큰술:QT_VOLUME>, <미림:CV_INGREDIENT> <3큰술:QT_VOLUME>, <후춧가루:CV_SEASONING> 약간
+-만드는 방법-
+1. 볼에 양념 재료를 넣고 섞어주세요. <삼겹살:CV_INGREDIENT>을 넣어 양념에 버무려주세요.
+2. 에어프라이기에 <삼겹살:CV_INGREDIENT>을 넣고 <130도:QT_TEMPERATURE>에서 <100분:TI_DURATION> 정도 구워주세요.
+(tip. <20분:TI_DURATION> 마다 한번씩 뒤집어가며 구워주세요)
+(tip. <물:CV_SEASONING> <½ 컵:QT_VOLUME>을 에어프라이기에 부어주면 타지않고 촉촉하게 구울 수 있어요)

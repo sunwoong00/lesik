@@ -1,0 +1,5 @@
+1. 깨끗이 <씻은:CV_STATE> <미니 양배추:CV_INGREDIENT>는 끓는 물에 <소금:CV_SEASONING> <한 꼬집:QT_VOLUME>을 넣고 <2분:TI_DURATION> 정도 데쳐주세요. <데친:CV_STATE> <미니 양배추:CV_INGREDIENT>는 채반에서 물기를 빼주세요.
+2. 양배추의 꼭지를 얇게 자르고, 크기가 큰 <양배추:CV_INGREDIENT>는 반으로 잘라주세요.
+3. 내열 용기에 <데친:CV_STATE> <미니 양배추:CV_INGREDIENT>와 <마늘:CV_INGREDIENT>을 담고 <올리브오일:CV_SEASONING>과 <소금:CV_SEASONING>, <후춧가루:CV_SEASONING>를 뿌려 주세요.
+4. 법랑 접시에 <석쇠:CV_INGREDIENT>를 놓고 내열 용기를 올려 1단에 넣어 광파오븐 수동요리 구이에서 <20분간:TI_DURATION> 구워주세요.
+5. 그릇에 <구워진:CV_STATE> <미니 양배추:CV_INGREDIENT>를 담아 맛있게 즐겨주세요.

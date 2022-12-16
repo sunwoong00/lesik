@@ -1,0 +1,6 @@
+1. <양배추:CV_INGREDIENT>와 <양파:CV_INGREDIENT>, <청양고추:CV_INGREDIENT> <부추:CV_INGREDIENT>는 잘게 <다져:CV_ACT>주세요. <양파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>는 면포에 <감싸:CV_ACT> 물기를 <짜:CV_ACT>서 준비해 주세요.
+2. <명란젓:CV_INGREDIENT>은 껍질 가운데에 칼집을 <내:CV_ACT>어 수저로 <명란알:CV_INGREDIENT>만 따로 <발라내:CV_ACT>서 준비해 주세요.
+3. 볼에 <명란알:CV_INGREDIENT>과 <날치알:CV_INGREDIENT>, 갈은 <돼지고기:CV_INGREDIENT>, 만두소 양념 재료, <달걀 노른자:CV_INGREDIENT>를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요. 다진 <야채:CV_INGREDIENT>를 <넣:CV_ACT>고 <섞:CV_ACT>어 <만두소:CV_INGREDIENT>를 <만들:CV_ACT>어주세요.
+4. 만두피에 <만두소:CV_INGREDIENT>를 적당히 <넣:CV_ACT>고 <달걀 흰자:CV_INGREDIENT>를 <만두피:CV_INGREDIENT>의 둘레에 약간씩 <발라:CV_ACT>가며 <붙인:CV_ACT> 후 주름을 잡아 <만두:CV_INGREDIENT>를 <빚:CV_ACT>어주세요.
+5. 김 오른 찜통에 <만두:CV_INGREDIENT>를 <넣:CV_ACT>고 <8~10분:TI_DURATION> 정도 <쪄:CV_ACT>주세요.
+(기호에 따라 팬에 <기름:CV_SEASONING>을 자작하게 <붓:CV_ACT>고 <만두:CV_INGREDIENT>를 노릇하게 <구워:CV_ACT> 즐겨주세요.)

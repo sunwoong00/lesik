@@ -1,0 +1,8 @@
+1. <묵은지:CV_INGREDIENT>는 김칫소를 잘 털어내고 깨끗이 씻어 물기를 제거해주세요.
+<맛살:CV_INGREDIENT>은 2등분 하고 6센치 길이로 썰어주세요.
+2. <무순:CV_INGREDIENT>은 끝을 조금 잘라 흐르는 물에 씻고, <미나리:CV_INGREDIENT>는 <끓는:CV_STATE> <물:CV_SEASONING>에 약간의 <소금:CV_SEASONING>을 넣어 살짝 데친 후 물기를 제거해주세요.
+3. <달걀:CV_INGREDIENT>은 약간의 <소금:CV_SEASONING>을 넣고, 알끈을 제거한 후 지단을 도톰하게 부쳐주세요.
+4. 볼에 쌈장 재료를 넣고 골고루 섞어주세요.
+<따뜻한:CV_STATE> <밥:CV_INGREDIENT>에 <소금:CV_SEASONING> <1/2작은술:QT_VOLUME>과 <참기름:CV_SEASONING> <1큰술:QT_VOLUME>을 넣어 섞어주세요.
+5. <묵은지:CV_INGREDIENT>를 깔고 <밥:CV_INGREDIENT>-<쌈장:CV_SEASONING>-<맛살:CV_INGREDIENT>-<지단:CV_INGREDIENT>-<무순:CV_INGREDIENT> 순으로 얹어 돌돌 말은 후, <미나리:CV_INGREDIENT>로 <묵은지 쌈밥:CV_INGREDIENT>을 묶어주세요.
+6. 완성된 <묵은지 쌈밥:CV_INGREDIENT>을 맛있게 즐겨주세요.

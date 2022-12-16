@@ -1,0 +1,5 @@
+1. <비엔나소시지:CV_INGREDIENT>는 한쪽에만 칼집을 <낸:CV_ACT> 후, 끓는 물에 <넣:CV_ACT>어 <30초:TI_DURATION> 정도 <데쳐:CV_ACT>주세요
+2. <양파:CV_INGREDIENT>와 <파프리카:CV_INGREDIENT>는 한입크기로 크기로 <썰:CV_ACT>고, <파슬리:CV_SEASONING>는 잘게 <다져:CV_ACT>주세요. 
+3. 볼에 양념 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요.
+4. 달군 팬에 <식용유:CV_SEASONING>를 <두르:CV_ACT>고 <비엔나소시지:CV_INGREDIENT>와 <양파:CV_INGREDIENT>를 <1분:TI_DURATION> 정도 <볶:CV_ACT>다가, <파프리카:CV_INGREDIENT>를 <넣:CV_ACT>어 약간의 <소금:CV_SEASONING>과 <후추:CV_SEASONING>를 <뿌려:CV_ACT> <볶:CV_ACT>아주세요. <양념:CV_SEASONING>을 <넣:CV_ACT>고 고루 섞이도록 <볶:CV_ACT>아주세요.
+5. 접시에 <소시지야채볶음:CV_INGREDIENT>을 <담:CV_ACT>고, <통깨:CV_SEASONING>와 <다진:CV_STATE> <파슬리:CV_SEASONING>를 <뿌려:CV_ACT> 마무리해주세요.

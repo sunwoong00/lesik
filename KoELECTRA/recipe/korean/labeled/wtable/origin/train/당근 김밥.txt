@@ -1,0 +1,17 @@
+1. 깨끗이 씻은 <당근:CV_INGREDIENT>은 채칼로 채를 <썰:CV_ACT>어주세요. 
+2. 팬에 <기름:CV_SEASONING>을 <2큰술:QT_VOLUME> <두르:CV_ACT>고 채를 썬 <당근:CV_INGREDIENT>을 <넣:CV_ACT>어 <볶:CV_ACT>다가 <소금:CV_SEASONING>을 <넣:CV_ACT>어 간을 해주세요. 
+
+3. 반쯤 <볶아진:CV_STATE> <당근:CV_INGREDIENT>에 <다진:CV_STATE> <마늘:CV_INGREDIENT>과 <참기름:CV_SEASONING>을 <넣:CV_ACT>어 <1~2분:TI_DURATION>간 <볶:CV_ACT>은 후 불을 <끄:CV_ACT>고 <식혀:CV_ACT>주세요. 
+
+4. 볼에 <달걀:CV_INGREDIENT>을 <풀:CV_ACT>고 <소금:CV_SEASONING>을 <넣:CV_ACT>어 <섞:CV_ACT>은 후 체에 <걸러:CV_ACT>주세요. 
+
+5. 달군 팬에 <기름:CV_SEASONING>을 약간 <두르:CV_ACT>고 <달걀물:CV_SEASONING>을 <넣:CV_ACT>어 3~4번 <말:CV_ACT>아주세요. 
+
+6. <식힌:CV_STATE> <달걀말이:CV_INGREDIENT>는 길게 어슷하게 <썰:CV_ACT>어 하트모양이 되도록 <겹쳐:CV_ACT>주세요.
+
+7. <밥:CV_INGREDIENT>에 밥 양념 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요.
+
+8. <김밥 김:CV_INGREDIENT>에 <밥:CV_INGREDIENT>을 얇게 <펼치:CV_ACT>고 <볶은:CV_STATE> <당근:CV_INGREDIENT>과 <달걀:CV_INGREDIENT>을 <넣:CV_ACT>고 <말:CV_ACT>아주세요. 
+
+9. 먹기 좋게 <썰:CV_ACT>어 그릇에 <담:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요. 
+

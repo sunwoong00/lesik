@@ -1,0 +1,5 @@
+1. <깨끗이 씻은:CV_STATE> <양배추:CV_INGREDIENT>는 한 입 크기로 <썰:CV_ACT>어주세요. <부추:CV_INGREDIENT>는 4cm길이로 <썰:CV_ACT>고, <양파:CV_INGREDIENT>는 <채썰:CV_ACT>어주세요.
+2. 볼에 <양배추:CV_INGREDIENT>와 <물:CV_SEASONING>, <굵은:CV_STATE><소금:CV_SEASONING>을 켜켜이 <넣:CV_ACT>어 중간중간 <뒤집:CV_ACT>어 가며 <30분~1시간:TI_DURATION> 정도 <절여:CV_ACT> 주세요. <절여진:CV_STATE> <양배추:CV_INGREDIENT>는 물에 헹군 후 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+3. 양념재료를 볼에 <넣:CV_ACT>어 잘 <섞:CV_ACT>어주세요.
+4. <절인:CV_STATE> <양배추:CV_INGREDIENT>와 양념을 <섞:CV_ACT>은 후, <부추:CV_INGREDIENT>와 <양파:CV_INGREDIENT>를 <넣:CV_ACT>어 가볍게 <버무려:CV_ACT>주세요. 
+5. 적당한 그릇에 <담:CV_ACT>아 맛있게 즐겨주세요.

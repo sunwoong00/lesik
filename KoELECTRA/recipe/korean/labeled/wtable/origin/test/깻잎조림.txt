@@ -1,0 +1,6 @@
+1. 양념재료의 <양파:CV_INGREDIENT>는 <채썰:CV_ACT>고, <청홍고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+나머지 양념재료와 <썰어 둔:CV_STATE> <채소:CV_INGREDIENT>를 <섞:CV_ACT>어주세요.
+2.  <깻잎:CV_INGREDIENT> <2장:QT_VOLUME>마다 <양념:CV_SEASONING>을 켜켜이 <발라:CV_ACT>주세요.
+3. 냄비에 <양념한:CV_STATE> <깻잎:CV_INGREDIENT>을 <넣:CV_ACT>고 <중불:QT_TEMPERATURE> 이상에서 <1분:TI_DURATION> <끓:CV_ACT>이고 <약불:QT_TEMPERATURE>로 <줄여:CV_ACT>서 <3~5분:TI_DURATION>간 더 <끓:CV_ACT>여주세요. 
+(취향에 따라 깻잎의 향을 살리려면 살짝만 <익히:CV_ACT>고 깻잎의 향을 좋아하지 않는다면 조금 더 <익혀:CV_ACT>주세요.)
+4. 어울리는 그릇에 올려 <밥:CV_INGREDIENT> 반찬으로 활용해보세요.

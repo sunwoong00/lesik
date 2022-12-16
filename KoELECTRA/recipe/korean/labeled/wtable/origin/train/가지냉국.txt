@@ -1,0 +1,6 @@
+1. 깨끗하게 씻은 <가지:CV_INGREDIENT>는 꼭지부분을 <자르:CV_ACT>고 길이대로 4등분 한 후, 6cm길이로 먹기 좋게 <썰:CV_ACT>어주세요. <청,홍고추:CV_INGREDIENT>는 얇게 송송 <썰:CV_ACT>어 <물:CV_SEASONING>에 살짝 <담궈:CV_ACT> 씨를 <빼:CV_ACT>주세요. <양파:CV_INGREDIENT>는 얇게 <슬라이스해:CV_ACT>주세요.
+2. 찜통에 김이 오르면 <가지:CV_INGREDIENT>를 <5~6분:TI_DURATION>정도 <쪄:CV_ACT>주세요.
+3. 냉국물 재료는 모두 <섞:CV_ACT>어 냉동실에 <넣:CV_ACT>고 차갑게 <식혀:CV_ACT>주세요.
+4. <찐:CV_STATE><가지:CV_INGREDIENT>는 한 김 <식힌:CV_ACT> 후 가지양념 재료를 <넣:CV_ACT>어 <밑간:CV_ACT> 해주세요.
+5. 그릇에 <밑간한:CV_STATE> <가지:CV_INGREDIENT>와 <차게 식힌:CV_STATE> <냉국물:CV_SEASONING>, <얼음:CV_SEASONING>을 <넣:CV_ACT>고 마지막에 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.
+6. 취향에 따라 <참기름:CV_SEASONING>을 약간 <넣:CV_ACT>어 맛있게 즐겨주세요.

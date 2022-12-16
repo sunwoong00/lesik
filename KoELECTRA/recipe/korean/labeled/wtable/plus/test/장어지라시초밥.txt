@@ -1,0 +1,8 @@
+1. <장어:CV_INGREDIENT>는 키친타월로 물기를 제거하고 밑간에 <30분간:TI_DURATION> 재워주세요.
+2. <달걀:CV_INGREDIENT>은 잘 풀어 식용유를 두른 팬에 붓고 <약한 불:QT_TEMPERATURE>에서 <지단:CV_INGREDIENT>을 부친 후 얇게 썰어주세요. <깻잎:CV_INGREDIENT>, <생강:CV_INGREDIENT>은 얇게 채 썰어주세요.
+3. <오이:CV_INGREDIENT>는 돌려깎기한 뒤 채 썰어 <소금:CV_SEASONING>을 뿌려두었다가 키친타월로 물기를 제거한 후 <센불:QT_TEMPERATURE>에서 <1분간:TI_DURATION> 볶아주세요.
+4. 냄비에 데리야키 소스 재료를 넣고 <8분간:TI_DURATION> 끓인 후 체에 걸러주세요.
+5. <밑간한:CV_STATE> <장어:CV_INGREDIENT>를 김 오른 찜통에서 <7~10분:TI_DURATION>간 쪄주세요.
+6. 달군 팬에 <장어:CV_INGREDIENT>를 올리고 <데리야키 소스:CV_SEASONING>를 발라가며 구워주세요. 윤기나게 조려지면 2cm 폭으로 먹기 좋게 썰어주세요.
+7. 단촛물 재료를 모두 볼에 넣고 전자레인지에 <1분간:TI_DURATION> 돌려 <설탕:CV_SEASONING>을 완전히 녹인 후 따뜻한 <밥:CV_INGREDIENT>과 섞어주세요. 그릇에 <밥:CV_INGREDIENT>을 담고 깻잎을 고루 올려주세요.
+8. <지단:CV_INGREDIENT>, <생강:CV_INGREDIENT>, <오이:CV_INGREDIENT>, <장어:CV_INGREDIENT>, <무순:CV_INGREDIENT>을 골고루 올려 마무리해주세요.

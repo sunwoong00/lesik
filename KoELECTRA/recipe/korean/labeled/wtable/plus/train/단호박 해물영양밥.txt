@@ -1,0 +1,7 @@
+1. <찹쌀:CV_INGREDIENT>과 <쌀:CV_INGREDIENT>은 <1시간:TI_DURATION> 정도 불려 채반에서 물기를 빼주세요.
+2. <낙지:CV_INGREDIENT>는 2cm 길이로 썰고 <전복:CV_INGREDIENT>은 껍질과 살을 분리한 후 내장을 떼어내고 슬라이스 해주세요. <새우:CV_INGREDIENT>는 껍질을 제거하고 3등분 해주세요
+3. <단호박:CV_INGREDIENT>의 윗부분을 3cm 정도 잘라내고 속을 파낸 후 <불린:CV_STATE> <쌀:CV_INGREDIENT>과 <찹쌀:CV_INGREDIENT>을 넣고 <손질한:CV_STATE> <해물:CV_INGREDIENT>을 넣은 후 잘라낸 윗부분을 뚜껑으로 덮어 내열 용기에 올려주세요.
+4. "법랑 접시에 내열 용기를 올린 후 1단에 넣고 광파오븐 자동 요리 스팀에서 <단호박 영양밥:CV_INGREDIENT> <1개:QT_VOLUME> 분량을 선택해 주세요. 가열이 끝난 후 오븐 안에서 <10분간:TI_DURATION> 뜸을 들여주세요. 
+ * 광파오븐 스팀 물통에 물을 채우고 시작해주세요."
+5. 볼에 간장 양념 재료를 넣고 섞어주세요.
+6. <단호박 해물 영양밥:CV_INGREDIENT>을 먹기 좋게 자르고 <양념장:CV_SEASONING>을 곁들여 맛있게 즐겨주세요.

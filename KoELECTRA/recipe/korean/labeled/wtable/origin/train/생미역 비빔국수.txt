@@ -1,0 +1,12 @@
+1. <오이:CV_INGREDIENT>와 <당근:CV_INGREDIENT>, <대파:CV_INGREDIENT>는 5cm 길이로 채를 <썬:CV_ACT> 후 <대파:CV_INGREDIENT>는 찬물에 <담가:CV_ACT> 매운맛을 <빼:CV_ACT>주세요. <양파:CV_INGREDIENT>는 가늘게 채를 <썰:CV_ACT>어주세요.
+
+2. <미역:CV_INGREDIENT>은 체에 <밭쳐:CV_ACT> 흐르는 물에 <헹군:CV_ACT> 후 먹기 좋은 크기로 <잘라:CV_ACT>주세요.
+
+3. 볼에 <양념 소스:CV_SEASONING>를 <넣:CV_ACT>고 <섞:CV_ACT>어 <양념장:CV_SEASONING>을 <만들:CV_ACT>어주세요.
+
+4. <끓는:CV_STATE> <물:CV_SEASONING>에 <중면:CV_INGREDIENT>을 펼쳐 <넣:CV_ACT>고 젓가락으로 <저어:CV_ACT> 면끼리 달라붙지 않도록 <저어:CV_ACT>주고 물이 끓어오르면 <찬물:CV_SEASONING> <반 컵:QT_VOLUME>을 2~3번 정도 반복해서 <부어:CV_ACT> <국수:CV_INGREDIENT>를 <삶:CV_ACT>아주세요. 흐르는 찬물에 <중면:CV_INGREDIENT>을 여러 번 <씻:CV_ACT>어 전분기를 없애고 채반에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+
+5. 볼에 <소면:CV_INGREDIENT>과 <손질한:CV_STATE> <야채:CV_INGREDIENT>, <양념장:CV_SEASONING>, <데친:CV_STATE> <미역:CV_INGREDIENT>을 <넣:CV_ACT>어 골고루 <섞:CV_ACT>어주세요.
+
+6. 그릇에 <미역 비빔국수:CV_INGREDIENT>를 보기 좋게 <담:CV_ACT>고 <대파 채:CV_SEASONING>, <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 맛있게 즐겨주세요.
+

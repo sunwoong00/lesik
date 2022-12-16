@@ -1,0 +1,8 @@
+1. <식초:CV_SEASONING> <1방울:QT_VOLUME> 또는 <베이킹소다를 탄:CV_STATE> <물:CV_SEASONING>에 <비타민:CV_SEASONING>을 <담가:CV_ACT> <살균한:CV_ACT> 후 흐르는 물에 <씻:CV_ACT>겨주세요.
+2. <비타민:CV_SEASONING>은 물기를 꼭 <짜:CV_ACT>고 잎만 <자른:CV_ACT> 후, 잘게 <다져:CV_ACT>주세요.
+3. <달걀노른자:CV_INGREDIENT>만 <푼:CV_ACT> 다음, <손질한:CV_STATE> <비타민:CV_SEASONING>을 <담가:CV_ACT> 잘 <섞:CV_ACT>어주세요.
+4. 키친타월에 <올리브유:CV_SEASONING>를 <묻혀:CV_ACT> 프라이팬을 <닦:CV_ACT>은 후 동그랑땡 크기로 순서 3을 <부쳐:CV_ACT>주세요.
+5. <사과:CV_INGREDIENT>는 깨끗이 <씻:CV_ACT>은 후 껍질을 <벗기:CV_ACT>고 알맞은 크기로 <잘라:CV_ACT>주세요.
+6. 끓는 물에 <사과:CV_INGREDIENT>를 <넣:CV_ACT>고 <삶:CV_ACT>아주세요.
+7. 삶은 <사과:CV_INGREDIENT>는 숟가락 또는 절구로 <으깨:CV_ACT>주세요.
+8. <비타민지짐:CV_INGREDIENT>에 <사과소스:CV_SEASONING>를 <곁들여:CV_ACT>주세요.

@@ -1,0 +1,9 @@
+1. <배추:CV_INGREDIENT>와 <무:CV_INGREDIENT>, <오이:CV_INGREDIENT>, <배:CV_INGREDIENT>는 깨끗이 <씻:CV_ACT>어 한 입 크기로 나박하게 <썰:CV_ACT>고, <홍고추:CV_INGREDIENT> <2개:QT_VOLUME>는 반을 <가르:CV_ACT>고 씨를 <빼:CV_ACT>서 <채 썰:CV_ACT>어주세요. <쪽파:CV_INGREDIENT>와 <미나리:CV_INGREDIENT>는 <다듬:CV_ACT>어 <씻:CV_ACT>은 후 4센치 길이로 <잘라:CV_ACT>주세요
+2. 김치통에 <알배추:CV_INGREDIENT>와 <무:CV_INGREDIENT>를 <넣:CV_ACT>고 <굵은:CV_STATE> <소금:CV_SEASONING>을 <뿌려:CV_ACT> <20분:TI_DURATION> 정도 살짝 숨이 죽을 정도로 <절여:CV_ACT>주세요.
+3. <김칫국물 재료는:CV_SEASONING> 큼직하게 <썰:CV_ACT>어 <다시백:CV_SEASONING>에 <넣:CV_ACT>고 볼에 소금물 재료를 <섞:CV_ACT>어 <간:CV_SEASONING>을 <맞춰:CV_ACT> 준비해주세요. 
+(tip 기호에 따라 <설탕:CV_SEASONING> 대신에 <감미료:CV_SEASONING> <½작은술:QT_VOLUME>을 대체해서 사용하셔도 돼요.)
+4. 면포에 <고춧가루:CV_SEASONING>를 <넣:CV_ACT>고 <소금물 재료:CV_SEASONING>에 <담근:CV_ACT> 후 <주물러:CV_ACT> 색을 <우려내:CV_ACT> <김칫국물:CV_SEASONING>을 <만들:CV_ACT>어주세요.
+5. 김치통에 <절인:CV_STATE> <배추:CV_INGREDIENT>와 <무:CV_INGREDIENT>, <오이:CV_INGREDIENT>, <배:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>, <미나리:CV_INGREDIENT>, <쪽파:CV_INGREDIENT>, 김칫국물 재료를 <넣:CV_ACT>은 <다시백:CV_SEASONING>을 <넣:CV_ACT>은 후 <김칫국물:CV_SEASONING>을 <부어:CV_ACT>주세요.
+(tip 기호에 따라 <소금:CV_SEASONING>을 <가감해:CV_ACT>서 간를 <맞춰:CV_ACT>주세요.)
+6. 실온에서 <하루:TI_DURATION> 정도 <숙성 시킨:CV_ACT> 후 냉장고에 <넣:CV_ACT>어주세요.
+

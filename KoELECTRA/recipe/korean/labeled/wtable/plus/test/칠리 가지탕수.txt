@@ -1,0 +1,8 @@
+1. <돼지고기:CV_INGREDIENT>는 밑간 재료에 <10분:TI_DURATION> 정도 재워주세요. <가지:CV_INGREDIENT>는 어슷하게 2센치 두께로 썰고 가운데 칼집을 넣어 약간의 <소금:CV_SEASONING>을 뿌려 밑간을 해주세요. <청양고추:CV_INGREDIENT>와 <대파:CV_INGREDIENT>, <당근:CV_INGREDIENT>과 <건고추:CV_INGREDIENT>, <마늘:CV_INGREDIENT>은 잘게 썰어 준비해주세요.
+2. 볼에 소스 재료를 넣어 섞어주세요. 전분물 재료를 섞어 전분 물을 만들어주세요.
+3. 가지의 겉 부분과 칼집 사이에 <전분:CV_SEASONING>을 묻히고, 칼집 사이에 <밑간한:CV_STATE> <돼지고기:CV_INGREDIENT>를 넣어주세요.
+4. 볼에 반죽 재료를 넣어 섞은 후 가지에 <전분가루:CV_SEASONING> - 반죽 순으로 묻혀 구이전용팬에 올려주세요.
+5. 가지에 <식용유:CV_SEASONING>를 골고루 뿌린 후 4단에 넣고 <광파:CV_INGREDIENT>오븐 자동 요리 에어프라이에서 <두부 강정:CV_INGREDIENT> <1모:QT_VOLUME>를 선택하고 시작해주세요. <10분:TI_DURATION>이 지났을 때 윗면이 노릇해지면 <가지:CV_INGREDIENT>를 뒤집어 익혀주세요.
+(tip."오븐에 전송" 버튼으로 조리하면 가지를 뒤집어야 할 시간에 멜로디가 울려요. 멜로디가 울리면 오븐을 열어 <5분:TI_DURATION> 내로 <가지:CV_INGREDIENT>를 뒤집은 후 시작버튼을 누르면 연속 조리됩니다.)
+6. 프라이팬에 약간의 <기름:CV_SEASONING>을 두르고 <잘게 썬:CV_STATE> <마늘:CV_INGREDIENT>과 <대파:CV_INGREDIENT>, <건고추:CV_INGREDIENT>를 넣어 볶다가 <당근:CV_INGREDIENT>과 <청양고추:CV_INGREDIENT>를 넣어 함께 볶고 소스 재료를 넣어 한소끔 끓인 후 <전분 물:CV_SEASONING>을 넣어 걸쭉해지면 불을 꺼주세요.
+7. 소스에 <가지:CV_INGREDIENT>를 넣고 가볍게 버무린 후 접시에 담아 맛있게 즐겨주세요.

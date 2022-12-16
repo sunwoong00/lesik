@@ -1,0 +1,13 @@
+1. <반으로 가른:CV_STATE> <새송이버섯:CV_INGREDIENT>과 <마늘:CV_INGREDIENT>은 편으로 썰고 <양파:CV_INGREDIENT>는 얇게 채 썰어주세요.
+<양상추 잎:CV_INGREDIENT>은 2cm 폭으로 썰어주세요.
+2. 덮밥 양념 재료를 한데 고루 섞어주세요.
+3. <쇠고기:CV_INGREDIENT>는 지방 부위를 제거하고 편으로 썰어주세요.
+4. 팬에 <올리브유:CV_SEASONING>를 두르고 <양파채:CV_INGREDIENT>와 <버섯:CV_INGREDIENT>을 넣어 볶아주세요.
+5. <버섯:CV_INGREDIENT>의 숨이 살짝 죽으면 <양상추 잎:CV_INGREDIENT>을 넣고 <소금:CV_SEASONING>을 뿌려 후루룩 볶아주세요.
+<양상추 잎:CV_INGREDIENT>의 숨이 죽으면 바로 넓은 접시에 펼쳐 담아 식혀주세요.
+6. 팬에 <올리브유:CV_SEASONING>를 두르고 <마늘:CV_INGREDIENT>을 볶아주세요. 
+마늘 향이 나면 STEP3의 <쇠고기:CV_INGREDIENT>를 넣고 <후춧가루:CV_SEASONING>를 뿌린 뒤 <센 불:QT_TEMPERATURE>에서 색이 나도록 굽고 그릇에 옮겨 놓으세요.
+7. <쇠고기:CV_INGREDIENT>를 구운 팬을 기울여 STEP2의 <덮밥 양념:CV_SEASONING>을 넣고 끓여주세요.
+소스가 끓어오르면 <쇠고기:CV_INGREDIENT>를 넣어 <소스:CV_SEASONING>가 고루 어우러지도록 살짝 끓여주세요.
+8. <버터:CV_SEASONING>와 <후룻가루:CV_SEASONING>를 넣고 가볍게 섞어주세요.
+<밥:CV_INGREDIENT> 위에 <볶은:CV_STATE> <채소:CV_INGREDIENT>와 <쇠고기:CV_INGREDIENT>를 얹고 남은 <소스:CV_SEASONING>를 살짝 뿌린 후 마무리하세요.

@@ -1,0 +1,6 @@
+1. <콩나물:CV_INGREDIENT>은 <다듬:CV_ACT>어 <씻:CV_ACT>고, <실파:CV_INGREDIENT>는 2센치 길이로 <썰:CV_ACT>어주세요.
+2. 냄비에 <물:CV_SEASONING> <2컵:QT_VOLUME>과 약간의 <소금:CV_SEASONING>을 <넣:CV_ACT>고, 끓으면 <콩나물:CV_INGREDIENT>을 <넣:CV_ACT>은 후 뚜껑을 열고 <2분:TI_DURATION> 정도 <삶:CV_ACT>아주세요. <콩나물:CV_INGREDIENT>을 찬물에 <헹군:CV_ACT> 후 체에 <건져:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+(tip. 적은 양의 물에서 빠르게 조리하는 것이 비타민 손실을 막아주며 <콩나물:CV_INGREDIENT>의 아삭한 식감을 살릴 수 있어요)
+3. 볼에 <콩나물:CV_INGREDIENT>과 <실파:CV_INGREDIENT>, 양념 재료를 <넣:CV_ACT>어 조물조물 <섞:CV_ACT>어주세요. 
+(기호에 따라 <고춧가루:CV_SEASONING> <1/2큰술:QT_VOLUME>을 <넣:CV_ACT>어 만들면 매콤하게 드실 수 있답니다.)
+4. <콩나물:CV_INGREDIENT>을 접시에 <담:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.

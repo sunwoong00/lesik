@@ -1,0 +1,10 @@
+1. <쌀:CV_INGREDIENT>은 깨끗이 <씻:CV_ACT>어 <30분:TI_DURATION> 정도 <불린:CV_ACT> 후, 체에 <받쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+(<쌀:CV_INGREDIENT>을 <불려:CV_ACT> 사용하면 <밥:CV_INGREDIENT>이 더욱 부드러워요)
+2. <쇠고기:CV_INGREDIENT>는 먹기 좋은 크기로 <썰:CV_ACT>고 키친타월에 <올려:CV_ACT> 핏물을 <제거해:CV_ACT> 주세요. <밑간 재료:CV_SEASONING>를 <넣:CV_ACT>어 <15분:TI_DURATION> 정도 <재워:CV_ACT>주세요.
+3. <표고버섯:CV_INGREDIENT>은 채를 <썰:CV_ACT>고, <새송이버섯:CV_INGREDIENT>은 한입크기로 <잘라:CV_ACT>주세요. <만가닥버섯:CV_INGREDIENT>은 밑동을 <잘라:CV_ACT>주세요. 
+4. <쪽파:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요. 볼에 양념 간장 재료를 <넣:CV_ACT>어 <양념장:CV_SEASONING>을 <만들:CV_ACT>어주세요. 
+5. 달군 팬에 밑간한 <쇠고기:CV_INGREDIENT>와 <물:CV_SEASONING>을 <넣:CV_ACT>고 뚜껑을 닫아 <2~3분:TI_DURATION> 정도 <익혀:CV_ACT>주세요. 
+6. 냄비에 <쌀:CV_INGREDIENT>과 <다시마 육수:CV_SEASONING>를 <넣:CV_ACT>어주세요. <손질한:CV_STATE> <버섯:CV_INGREDIENT>을 가지런히 <얹:CV_ACT>은 후 뚜껑을 덮어 <강불:QT_TEMPERATURE>에서 <4~5분:TI_DURATION> 정도 <끓여:CV_ACT>주세요.
+7. <밥물:CV_SEASONING>이 끓기 시작하면 <약한 불:QT_TEMPERATURE>로 <줄여:CV_ACT> <15분:TI_DURATION> 정도 <익혀:CV_ACT>주세요.
+8. 불을 <끄:CV_ACT>고 <쇠고기:CV_INGREDIENT>와 송송 썬 <쪽파:CV_INGREDIENT>를 <얹:CV_ACT>어 <5분:TI_DURATION> 정도 뜸을 <들인:CV_ACT> 후 주걱으로 위 아래 가볍게 <섞:CV_ACT>어주세요.
+9. <양념 간장:CV_SEASONING>을 <곁들여:CV_ACT> 맛있게 즐겨주세요.

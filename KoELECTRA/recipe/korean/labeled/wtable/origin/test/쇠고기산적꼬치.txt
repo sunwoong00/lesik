@@ -1,0 +1,11 @@
+1. <쇠고기:CV_INGREDIENT>는 키친타월로 핏물을 <제거한:CV_ACT> 후 두께 2cm, 길이 7cm로 <잘라:CV_ACT>주세요.
+(<고기:CV_INGREDIENT>는 구우면서 크기가 줄어들기 때문에 다른 재료들보다 좀 더 길게 <잘라:CV_ACT>주세요)
+
+2. <자른:CV_STATE> <쇠고기:CV_INGREDIENT>에 쇠고기 양념재료를 <넣:CV_ACT>어 <밑간을 해:CV_ACT>주세요.
+3. <파:CV_INGREDIENT>는 두꺼운 파만 길게 반으로 <가른:CV_ACT> 후 6cm길이로 <자르:CV_ACT>고, <새송이:CV_INGREDIENT>는 밑동을 <잘라:CV_ACT> 이등분 한 후 <파:CV_INGREDIENT>와 같은 두께로 <잘라:CV_ACT>주세요.
+4. 달군 팬에 <기름:CV_SEASONING>을 <두른:CV_ACT> 후, <밑간한:CV_STATE> <쇠고기:CV_INGREDIENT>를 <볶:CV_ACT>아주세요.
+(고기를 미리 익히지 않고 꼬치에 끼워 굽게되면 다른 재료들이 타버릴 수 있어서, <고기:CV_INGREDIENT>를 먼저 <볶:CV_ACT>아주는 게 좋아요)
+
+5. 나무꼬치에 <새송이:CV_INGREDIENT>-<쇠고기:CV_INGREDIENT>-<파:CV_INGREDIENT>-<새송이:CV_INGREDIENT>-<쇠고기:CV_INGREDIENT>-<파:CV_INGREDIENT>-<쇠고기:CV_INGREDIENT> 순으로 <꽂:CV_ACT>아주세요.
+6. 달군팬에 <기름:CV_SEASONING>을 <두르:CV_ACT>고, <쇠고기 산적 꼬치:CV_INGREDIENT>를 <중약불:QT_TEMPERATURE>에서 앞뒤로 <익혀:CV_ACT>주세요.
+7. 알맞은 그릇에 <담:CV_ACT>고, <잣가루:CV_SEASONING>를 <뿌려:CV_ACT> 완성해주세요.

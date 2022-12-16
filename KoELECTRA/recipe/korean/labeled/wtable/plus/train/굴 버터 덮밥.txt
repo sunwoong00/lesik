@@ -1,0 +1,5 @@
+1. <세척한:CV_STATE> <굴:CV_INGREDIENT>에 <밀가루:CV_SEASONING>를 얇게 묻혀주세요. <쪽파:CV_INGREDIENT>는 송송 썰어주세요. 
+2. 달군 팬에 <버터:CV_SEASONING>를 두른 후 <다진:CV_STATE><마늘:CV_INGREDIENT>과 <굴:CV_INGREDIENT>을 넣고 볶아주세요.
+3. <볶은:CV_STATE> <굴:CV_INGREDIENT>에 양념 재료를 넣어 한번더 볶아주세요. 
+4. 그릇에 <밥:CV_INGREDIENT>을 담고 <양념:CV_SEASONING>을 끼얹어 주세요. <밥:CV_INGREDIENT> 위에 <굴:CV_INGREDIENT>을 얹고 가운데 <달걀노른자:CV_INGREDIENT>와 <버터:CV_SEASONING> <1작은술:QT_VOLUME>을 올려주세요. <송송 썬:CV_STATE> <쪽파:CV_INGREDIENT>와 <통깨:CV_SEASONING>, <레몬즙:CV_SEASONING>을 뿌려주세요. 
+5. 맛있게 즐겨주세요. 

@@ -1,0 +1,7 @@
+1. <대하:CV_INGREDIENT>는 머리와 꼬리를 남겨두고 껍질과 내장을 제거한 후 대하 밑간 재료를 뿌려 <10분:TI_DURATION>간 재워주세요. <청경채:CV_INGREDIENT>는 3~4등분으로 썰어주세요.
+2. <손질한:CV_STATE> <대하:CV_INGREDIENT>를 구이 전용 팬에 올린 후 <올리브 오일:CV_SEASONING>을 뿌려주세요.
+3. 구이 전용 팬을 4단에 넣고 광파오븐 자동 요리 구이에서 <새우구이:CV_INGREDIENT> <0.5 분량:QT_VOLUME>을 선택하여 구워주세요.
+4. 팬에 <식용유:CV_SEASONING>를 두르고 <다진:CV_STATE> <마늘:CV_INGREDIENT>과 <다진:CV_STATE> <홍고추:CV_INGREDIENT>, <다진:CV_STATE> <양파:CV_INGREDIENT>를 넣어 볶아주세요.
+5. 나머지 소스 재료를 넣고 끓이다가 <전분물:CV_SEASONING>로 농도를 맞춘 후 <청경채:CV_INGREDIENT>를 넣어 숨이 죽을 때까지 살짝 끓여주세요.
+(tip. 전분물은 전분과 물을 1:1 비율로 섞어 만들어 주세요)
+6. 접시에 <대하구이:CV_INGREDIENT>를 담고 <소스:CV_SEASONING>를 얹어 맛있게 즐겨주세요.

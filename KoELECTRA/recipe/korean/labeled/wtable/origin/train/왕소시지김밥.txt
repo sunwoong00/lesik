@@ -1,0 +1,13 @@
+1. 냄비에 물을 절반 정도 담고 끓인 뒤 <프랑크소시지:CV_INGREDIENT>를 <넣:CV_ACT>고 <1분:TI_DURATION> 정도 <데쳐:CV_ACT>주세요.
+
+*Tip. <소시지:CV_INGREDIENT>를 데치면 첨가물과 나트륨이 제거되어 맛이 더 깔끔해져요. 오래 데치면 터질 수 있으니 <1분:TI_DURATION>만 <데치:CV_ACT>고 칼집을 <내:CV_ACT>주세요.
+2. 달군 팬에 <식용유:CV_SEASONING>를 <두르:CV_ACT>고 <잘 푼:CV_STATE> <달걀:CV_INGREDIENT>을 <넣:CV_ACT>어 <약불:QT_TEMPERATURE>에서 <달걀지단:CV_SEASONING>을 <만들:CV_ACT>어주세요.
+3. <단무지:CV_INGREDIENT>와 <조림우엉:CV_INGREDIENT>은 적당한 크기로 길게 <자르:CV_ACT>고 <맛살:CV_INGREDIENT>은 반으로 <갈라:CV_ACT>주세요.
+4. <밥:CV_INGREDIENT>에 <소금:CV_SEASONING>, <설탕:CV_SEASONING>, <식초:CV_SEASONING>, <깨:CV_SEASONING>, <참기름:CV_SEASONING>을 <넣:CV_ACT>고 잘 <섞:CV_ACT>어주세요.
+5. <김밥 김:CV_INGREDIENT>을 <깔:CV_ACT>고 <밥:CV_INGREDIENT>을 주먹 크기만큼 <올린:CV_ACT> 뒤 얇게 <펴:CV_ACT>주세요.
+6. <얇게 편:CV_STATE> <밥:CV_INGREDIENT> 위에 <달걀지단:CV_SEASONING>을 <올리:CV_ACT>고 <조림우엉:CV_INGREDIENT>, <단무지:CV_INGREDIENT>, <맛살:CV_INGREDIENT>, <프랑크소시지:CV_INGREDIENT>를 <올린:CV_ACT> 뒤 <머스터드소스:CV_SEASONING>를 <뿌려:CV_ACT>주세요.
+7. <김:CV_INGREDIENT> 끝부분에 <물:CV_SEASONING>을 <바르:CV_ACT>고 재료가 흐트러지지 않게 돌돌 <말:CV_ACT>아주세요.
+
+*Tip. <밥알:CV_INGREDIENT>로 붙여도 되지만 물을 묻히면 <김:CV_INGREDIENT>이 더 잘 붙어요!
+8. <김밥:CV_INGREDIENT> 표면과 칼에 <참기름:CV_SEASONING>을 <바르:CV_ACT>고 먹기 좋은 크기로 <잘라:CV_ACT>주세요.
+9. 완성된 <왕소시지김밥:CV_INGREDIENT>은 <머스터드 소스:CV_SEASONING>를 추가로 <곁들여:CV_ACT> 찍어먹어도 맛이 좋답니다.

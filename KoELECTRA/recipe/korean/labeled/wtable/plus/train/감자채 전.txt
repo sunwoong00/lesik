@@ -1,0 +1,4 @@
+1. <감자:CV_INGREDIENT>를 얇게 채를 썰어 물에 담가 전분기를 제거한 후 채반에서 물기를 빼주세요.
+2. 볼에 <감자채:CV_INGREDIENT>를 담고 <소금:CV_SEASONING>과 <밀가루:CV_SEASONING>를 넣어 섞어주세요.
+3. 달군 팬에 <기름:CV_SEASONING>을 두르고 반죽을 올려 앞뒤로 노릇하게 구워주세요.
+(기호에 따라 <초간장:CV_SEASONING>을 곁들여 주세요.)

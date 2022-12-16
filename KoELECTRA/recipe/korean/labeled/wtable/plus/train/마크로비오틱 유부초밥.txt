@@ -1,0 +1,10 @@
+1. <당근:CV_INGREDIENT>은 채를 썰고, <연근:CV_INGREDIENT>은 얇게 슬라이스하세요.
+2. <슬라이스한:CV_STATE> <연근:CV_INGREDIENT>을 끓는 물에 살짝 데쳐주세요.
+<비트:CV_INGREDIENT>를 작게 썰어 <매실효소:CV_SEASONING>와 <소금:CV_SEASONING>에 섞고 <데친:CV_STATE> <연근:CV_INGREDIENT>을 담가두어 <물:CV_SEASONING>을 들여주세요.
+(비트가 없으면 그냥 <매실효소:CV_SEASONING>와 <소금:CV_SEASONING>으로만 맛을 내도 돼요.)
+3. 끓는 물에 <세발나물:CV_INGREDIENT>을 데친 후 <간장:CV_SEASONING>에 버무려주세요.
+4. <당근:CV_INGREDIENT>은 기름 두른 팬에 볶으면서 <소금:CV_SEASONING>으로 간을 해주세요.
+5. <생유부:CV_INGREDIENT>는 <조림장:CV_SEASONING>을 넣어 바짝 조리고 물기를 짜주세요.
+6. <뜨거운:CV_STATE> <현미밥:CV_INGREDIENT>에 <매실효소:CV_SEASONING>와 <소금:CV_SEASONING> 섞은 것을 넣어 버무려주세요.
+<조린:CV_STATE> <유부:CV_INGREDIENT>에 <현미 초밥:CV_INGREDIENT>을 채워 넣고 <세 가지:QT_VOLUME> <채소 고명:CV_INGREDIENT>을 올려주세요.
+7. 완성된 요리를 나무도마에 플레이팅해 올려주세요.

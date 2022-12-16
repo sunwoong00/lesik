@@ -1,0 +1,6 @@
+1. <청상추:CV_INGREDIENT>는 흐르는 물에 씻은 뒤 물기를 털어내고 <마늘:CV_INGREDIENT>은 얇게 채 썰고, <청고추:CV_INGREDIENT> <홍고추:CV_INGREDIENT>는 어슷 썰어주세요.
+2. 손에 <물:CV_SEASONING>이나 <참기름:CV_SEASONING>을 살짝 묻힌 뒤 <현미밥:CV_INGREDIENT>을 한 입 크기로 동그랗게 뭉쳐주세요.
+3. <뭉친:CV_STATE> <밥:CV_INGREDIENT>을 <상추:CV_INGREDIENT>로 감싸서 밀폐용기에 담은 후 밥 위에 <고추장:CV_SEASONING>을 조금씩 발라주세요.
+4. <소불고기:CV_INGREDIENT>와 <마늘:CV_INGREDIENT>, <고추:CV_INGREDIENT>를 올린 뒤 <검은깨:CV_SEASONING>를 뿌려주세요.
+5. 한 입에 쏙! 맛있게 즐겨주세요.
+*Tip. <고추장:CV_SEASONING> 대신 <쌈장:CV_SEASONING>이나 <다진:CV_STATE> <견과류:CV_INGREDIENT>를 곁들여도 맛있어요.

@@ -1,0 +1,7 @@
+1. 냄비에 <쌀뜨물:CV_SEASONING>을 <붓:CV_ACT>고 <국멸치:CV_SEASONING>와 <다시마:CV_SEASONING>를 <넣:CV_ACT>어 물이 끓으면 불을 <중불:QT_TEMPERATURE>로 <줄여:CV_ACT> <3분:TI_DURATION> 정도 <끓여:CV_ACT>주세요. <다시마:CV_SEASONING>를 <건져:CV_ACT>내고 <10분:TI_DURATION> <끓인:CV_ACT> 후 마지막에 <멸치:CV_INGREDIENT>를 <건져:CV_ACT>내 <육수:CV_SEASONING>를 준비해 주세요.
+2. <삶은:CV_STATE> <시래기나물:CV_INGREDIENT>은 물에 <헹군:CV_ACT> 후 줄기 부분에 겉 껍질을 <제거해:CV_ACT> 물기를 <짜:CV_ACT>고 먹기좋은 길이로 <썰:CV_ACT>어 양념재료에 <10분:TI_DURATION>정도 <밑간을 해:CV_ACT> 주세요. <대파:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+(tip <말린:CV_STATE> <시래기나물:CV_INGREDIENT>은  물에 <하루:TI_DURATION>정도 충분히 <불리:CV_ACT>고 중간 중간에 물을 갈아 이물질을 <제거한:CV_ACT> 후 물을 <붓:CV_ACT>고 <40분:TI_DURATION>정도 부드럽게 <삶:CV_ACT>아주세요.)
+3. 냄비에 <육수:CV_SEASONING>를 <붓:CV_ACT>고 <육수:CV_SEASONING>가 끓기 시작하면 <밑간한:CV_STATE> <시래기:CV_INGREDIENT>를 <넣:CV_ACT>어 <중불:QT_TEMPERATURE>에서 <10분:TI_DURATION>정도 <끓여:CV_ACT>주세요.
+4. <시래기:CV_INGREDIENT>가 부드럽게 익으면 <된장:CV_SEASONING>을 <풀:CV_ACT>어 간을 맞추고 <대파:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>고 <끓여:CV_ACT>주세요.
+(tip 기호에 따라 <된장:CV_SEASONING>을 <가감해:CV_ACT>서 간을 조절해 주세요.)
+5. 마지막에 불을 <줄인:CV_ACT> 후 <들깨가루:CV_SEASONING>를 뭉치지 않게 <풀:CV_ACT>어 <넣:CV_ACT>고 한소끔 더 <끓여:CV_ACT> 완성해 주세요.

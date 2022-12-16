@@ -1,0 +1,9 @@
+1. <낙지:CV_INGREDIENT>는 머리를 <뒤집:CV_ACT>어 내장과 먹통을 <제거하:CV_ACT>고 눈과 입을 <떼:CV_ACT>어낸 후 <밀가루:CV_SEASONING>와 <굵은:CV_STATE><소금:CV_SEASONING>을 <넣:CV_ACT>어 깨끗이 주물러 <씻:CV_ACT>은 후 <맛술:CV_SEASONING>을 <넣:CV_ACT>어 <밑간해:CV_ACT>주세요.
+2. <쇠고기:CV_INGREDIENT>는 고기 양념 재료를 <넣:CV_ACT>어 <10분:TI_DURATION> 정도 <밑간해:CV_ACT>주세요.
+3. <배추:CV_INGREDIENT>는 한 입 크기로 <자르:CV_ACT>고 <애호박:CV_INGREDIENT>과 <대파:CV_INGREDIENT>는 6센치 길이로 <자르:CV_ACT>고 반을 <잘라:CV_ACT> 길이로 <썰:CV_ACT>어주세요. <백만송이버섯:CV_INGREDIENT>은 밑동을 <자르:CV_ACT>고 한 가닥씩 <뜯:CV_ACT>고, <표고버섯:CV_INGREDIENT>은 밑동을 <제거한:CV_ACT> 후 <슬라이스해:CV_ACT>주세요. <양파:CV_INGREDIENT>는 굵게 채를 <썰:CV_ACT>고, <고추:CV_INGREDIENT>는 어슷하게 <잘라:CV_ACT>주세요.
+4. 전골냄비에 <야채:CV_INGREDIENT>를 보기 좋게 <돌려:CV_ACT> <담:CV_ACT>은 후 냄비 중앙에 <양념장:CV_SEASONING>과 <쇠고기:CV_INGREDIENT>를 <얹:CV_ACT>고 <다시마 멸치육수:CV_SEASONING> <4컵:QT_VOLUME>을 <부어:CV_ACT> <끓여:CV_ACT>주세요.
+(<쇠고기:CV_INGREDIENT>가 뭉치지 않게 <풀:CV_ACT>어주세요.)
+5. <국물:CV_SEASONING>이 끓으면 <낙지:CV_INGREDIENT>를 <넣:CV_ACT>고 <3분:TI_DURATION> 정도 <끓:CV_ACT>이다가 <고추:CV_INGREDIENT>를 <넣:CV_ACT>고 한소끔 더 <끓여:CV_ACT>주세요.
+(끓이는 과정에서 국물이 부족하면 남은 <다시마멸치육수:CV_SEASONING> <1컵:QT_VOLUME>을 <가감해:CV_ACT> 주세요. 부족한 간은 구운 <소금:CV_SEASONING>을 <가감해:CV_ACT>서 간을 <맞혀:CV_ACT>주세요.)
+6. 마지막에 <쑥갓:CV_INGREDIENT>을 <올리:CV_ACT>고 불을 <꺼:CV_ACT>주세요. 
+(기호에 따라 <고추냉이 간장:CV_SEASONING>에 찍어 드셔도 좋아요.)

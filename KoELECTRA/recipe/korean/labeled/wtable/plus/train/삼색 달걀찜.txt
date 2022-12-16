@@ -1,0 +1,6 @@
+1. 노란색 재료는 잘 섞고 초록색, 빨간색 재료는 믹서에 각각 넣고 간 뒤 각각 섞어 <소금:CV_SEASONING>으로 간을 맞춰주세요.
+*Tip. 색을 진하게 내고 싶다면 <당근즙:CV_SEASONING>, <시금치즙:CV_SEASONING>을 <우유:CV_SEASONING>와 섞어 사용하세요.
+2. 찜기에 김이 오르면 그릇에 <참기름:CV_SEASONING>을 바르고 노란색 재료를 그릇의 ⅓ 가량 넣은 뒤 <중약불:QT_TEMPERATURE>에서 <10분:TI_DURATION>간 쪄주세요.
+*Tip. 그릇에 키친타월, 면포를 씌우면 수증기가 표면에 떨어지지 않아 <계란찜:CV_INGREDIENT> 표면에 구멍이 생기지 않아요!
+3. 초록색 재료를 살살 부어 <중약불:QT_TEMPERATURE>에서 <10분:TI_DURATION>간 쪄낸 후, 빨간색 재료를 부어 <중약불:QT_TEMPERATURE>에서 <10분:TI_DURATION> 찐 뒤 <3분:TI_DURATION>간 뜸을 들여주세요.
+4. 찜그릇에서 꺼내 접시에 담은 후 맛있게 즐기세요!

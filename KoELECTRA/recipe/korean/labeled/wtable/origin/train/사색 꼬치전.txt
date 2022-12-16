@@ -1,0 +1,6 @@
+1. <단무지:CV_INGREDIENT>는 길이로 3등분하고 <파프리카:CV_INGREDIENT>와 <표고:CV_INGREDIENT>, <쪽파:CV_INGREDIENT>는 <단무지:CV_INGREDIENT> 크기로 <썰:CV_ACT>어주세요. 
+2. 볼에 부침 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어 <강황물:CV_SEASONING>을 <만들:CV_ACT>어주세요. 
+3. 나무꼬치에 <표고버섯:CV_INGREDIENT>-<쪽파:CV_INGREDIENT>-<파프리카:CV_INGREDIENT>-<단무지:CV_INGREDIENT>-<표고버섯:CV_INGREDIENT> 순으로 <꽂:CV_ACT>아주세요.
+4. 꼬치전에 <부침가루:CV_SEASONING>를 <묻혀:CV_ACT> 살짝 <털어낸:CV_ACT> 후 <강황물:CV_SEASONING>을 고루 <입혀:CV_ACT>주세요.﻿ 
+(tip.꼬치전에 <부침가루:CV_SEASONING>를 한쪽면에만 <묻히:CV_ACT>고 <강황물:CV_SEASONING>을 골고루 <묻혀:CV_ACT> <전:CV_INGREDIENT>을 <부치:CV_ACT>면, 꼬치의 색감이 더욱 노랗고 선명하게 나올 수 있답니다.)
+5. 달군팬에 <기름:CV_SEASONING>을 넉넉히 <두르:CV_ACT>고, <사색 꼬치전:CV_INGREDIENT>을 <올려:CV_ACT> <중간불:QT_TEMPERATURE>에서 앞 뒤로 <익혀:CV_ACT> 맛있게 즐겨주세요.

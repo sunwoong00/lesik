@@ -1,0 +1,7 @@
+1. <양배추:CV_INGREDIENT>는 한입 크기로 썰어주세요. <양파:CV_INGREDIENT>는 두껍게 채를 썰어 주세요. <쪽파:CV_INGREDIENT>는 종종 썰어주세요.
+2. 끓는 물에 <우동면:CV_INGREDIENT>을 넣고 <10초:TI_DURATION>간 데친 후 건져주세요. <면수:CV_SEASONING>는 따로 덜어 준비해주세요.
+3. 볼에 양념 재료를 넣고 섞어주세요. 달군 팬에 <식용유:CV_SEASONING>를 두른 후 <다진:CV_STATE> <마늘:CV_INGREDIENT>과 <양배추:CV_INGREDIENT>를 넣어 볶아주세요.
+4. <양배추:CV_INGREDIENT>가 투명해 지면 <양파:CV_INGREDIENT>를 넣고 볶은 후 <데친:CV_STATE> <우동면:CV_INGREDIENT>과 양념 재료를 넣은 후 볶아주세요.
+(tip. <면수:CV_SEASONING>를 조금씩 넣어가며 농도를 맞춰주세요)
+5. <완성:CV_STATE>된 <볶음:CV_INGREDIENT> <우동:CV_INGREDIENT>에 <쪽파:CV_INGREDIENT>를 뿌린 후 맛있게 즐겨주세요.
+(tip. 기호에 따라 <가쓰오부시:CV_SEASONING>를 뿌려 먹어도 좋아요)

@@ -1,0 +1,7 @@
+1. <돼지고기:CV_INGREDIENT>는 밑간 재료를 <넣:CV_ACT>고 골고루 <버무려:CV_ACT> <10분:TI_DURATION> 이상 <재워:CV_ACT>주세요.
+2. <만가닥버섯:CV_INGREDIENT>은 밑동 부분을 <잘라:CV_ACT> 먹기 좋게 <나누:CV_ACT>고 <양파:CV_INGREDIENT>는 <채 썰:CV_ACT>어주세요.
+3. <두부:CV_INGREDIENT>는 사방 3cm 크기로 <자르:CV_ACT>고 <전분:CV_SEASONING>을 고르게 <묻혀:CV_ACT>주세요.
+4. 팬에 <식용유:CV_SEASONING>를 넉넉히 <두르:CV_ACT>고 <170도:QT_TEMPERATURE>로 <달군:CV_ACT> 후 <두부:CV_INGREDIENT>를 <넣:CV_ACT>어 <3분:TI_DURATION> 정도 <튀겨:CV_ACT>주세요.
+5. 달군 팬에 <고추기름:CV_SEASONING>을 <두르:CV_ACT>고 <양파:CV_INGREDIENT>, <돼지고기:CV_INGREDIENT>, 양념 재료를 <넣:CV_ACT>어 <3분:TI_DURATION> 정도 <볶:CV_ACT>아주세요.
+6. <만가닥버섯:CV_INGREDIENT>과 <참기름:CV_SEASONING>을 약간 <넣:CV_ACT>어서 <1분:TI_DURATION>간 <볶:CV_ACT>아주세요. 완성되면 <밥:CV_INGREDIENT> 위에 <얹:CV_ACT>은 후 <튀김두부:CV_INGREDIENT>와 <무순:CV_INGREDIENT>을 <올려:CV_ACT>주세요.
+7. 완성된 요리를 그릇에 담아 마무리해주세요.

@@ -1,0 +1,7 @@
+1. <쌀:CV_INGREDIENT>은 깨끗이 <씻:CV_ACT>어 <30분:TI_DURATION> 정도 <불려:CV_ACT>주세요.
+2. <건:CV_STATE> <곤드레:CV_INGREDIENT>는 <찬물:CV_SEASONING>에 <담가:CV_ACT> <30분~1시간:TI_DURATION> 정도 <불려:CV_ACT>주세요. <불린:CV_STATE> <곤드레:CV_INGREDIENT>는 <끓는 물:CV_SEASONING>에 부드럽게 <데쳐:CV_ACT>주세요.
+3. <새송이버섯:CV_INGREDIENT>은 1cm 두께의 동그란 모양으로 <잘라:CV_ACT>주세요. 볼에 양념간장 재료를 <넣:CV_ACT>어 <양념장:CV_SEASONING>을 <만들어:CV_ACT>주세요.
+4. <데친:CV_STATE> <곤드레:CV_INGREDIENT>는 물기를 <짠:CV_ACT> 후 적당한 크기로 <잘라:CV_ACT> 볼에 <담:CV_ACT>아주세요. 밑간 재료를 <넣:CV_ACT>어 조물조물 <밑간해:CV_ACT> 주세요.
+5. 달군 냄비에 <들기름:CV_SEASONING>을 두르고 <불린:CV_STATE> <쌀:CV_INGREDIENT>을 <넣:CV_ACT>어 <볶:CV_ACT>다가 <다시마 육수:CV_SEASONING>를 <부어:CV_ACT>주세요. <밑간한:CV_STATE> <곤드레나물:CV_INGREDIENT>과 <새송이버섯:CV_INGREDIENT>을 얹고 뚜껑을 닫아 <센 불:QT_TEMPERATURE>에서 <끓:CV_ACT>여주세요.
+6. <밥물:CV_SEASONING>이 <끓:CV_ACT>기 시작하면 불을 <약한 불:QT_TEMPERATURE>로 줄여 <15분:TI_DURATION> 정도 <익혀:CV_ACT>주세요.
+7. <밥:CV_INGREDIENT>이 다 지어지면 <5분:TI_DURATION> 정도 뜸을 <들인:CV_ACT> 후 주걱으로 위아래 가볍게 <섞:CV_ACT>고 <양념간장:CV_SEASONING>을 <곁들여:CV_ACT> 맛있게 즐겨주세요.

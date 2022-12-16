@@ -1,0 +1,7 @@
+1. <마늘종:CV_INGREDIENT>은 4cm길이로 먹기 좋게 <잘라:CV_ACT>주세요. 양념재료는 모두 <섞:CV_ACT>어주세요.
+2. 끓는 물에 <소금:CV_SEASONING>을 <넣:CV_ACT>어 <마늘종:CV_INGREDIENT>을 <20초:TI_DURATION> 정도 <데친:CV_ACT> 후, 찬물에 <헹구:CV_ACT>어 물기를 <빼:CV_ACT>주세요.
+3. 마른 달군팬에 <약불:QT_TEMPERATURE>로 <건새우:CV_INGREDIENT>를 <3~4분:TI_DURATION> <볶:CV_INGREDIENT>아 준비해주세요.
+(tip. <건새우:CV_INGREDIENT>를 마른팬에 볶게 되면 비린내가 날라가며, 바삭한 식감을 살릴 수 있어요.)
+4. 별도의 달군 팬에 <오일:CV_SEASONING>을 <두르:CV_ACT>고 <마늘종:CV_INGREDIENT>을 <넣:CV_ACT>어 <1분간:TI_DURATION> <볶:CV_ACT>다가 양념재료를 <넣:CV_ACT>어 약 <2~3분:TI_DURATION>간 더 <볶:CV_ACT>아주세요.
+5. <볶아둔:CV_STATE> <건새우:CV_INGREDIENT>를 <넣:CV_ACT>은 후 조금 더 <볶:CV_ACT>다가 불을 <끄:CV_ACT>고, <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 마무리해주세요.
+6. 알맞은 그릇에 <담:CV_ACT>아 맛있게 즐겨주세요.

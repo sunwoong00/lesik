@@ -1,0 +1,8 @@
+1. <돼지갈비:CV_INGREDIENT>는 찬물에 <1시간:TI_DURATION> 정도 담가 핏물을 <빼:CV_ACT>주세요.
+2. 냄비에 고기 삶는 물 재료를 <넣:CV_ACT>고 끓으면 <돼지갈비:CV_INGREDIENT>를 <넣:CV_ACT>은 후 <10분:TI_DURATION> 정도 <삶:CV_ACT>아 찬물에 <씻:CV_ACT>어주세요.
+3. <무:CV_INGREDIENT>와 <당근:CV_INGREDIENT>, <양파:CV_INGREDIENT>는 큼직하게 <자르:CV_ACT>고, <표고버섯:CV_INGREDIENT>은 4등분으로 <잘라:CV_ACT>주세요. <대파:CV_INGREDIENT>와 <마른고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>고, <실파:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요.
+
+4. 냄비에 <돼지갈비:CV_INGREDIENT>와 <양념장:CV_SEASONING>, <물:CV_SEASONING>을 <넣:CV_ACT>고 <강불:QT_TEMPERATURE>에서 <20분:TI_DURATION> 정도 <끓이:CV_ACT>다가 <무:CV_INGREDIENT>와 <당근:CV_INGREDIENT>, <마른:CV_STATE><고추:CV_INGREDIENT>를
+ 넣고 뚜껑을 닫은 후 <중약불:QT_TEMPERATURE>에서 <20분:TI_DURATION> 정도 <끓여:CV_ACT>주세요.
+5. <무:CV_INGREDIENT>가 익으면 <양파:CV_INGREDIENT>와 <표고버섯:CV_INGREDIENT>, <대파:CV_INGREDIENT>를 <넣:CV_ACT>어 국물이 자작해 질 때까지 <5분:TI_DURATION> 정도 <졸여:CV_ACT>주세요.
+6. 오목한 그릇에 <돼지갈비찜:CV_INGREDIENT>을 <담:CV_ACT>고, <통깨:CV_SEASONING>와 송송 썬 <실파:CV_INGREDIENT>를 <뿌려:CV_ACT> 마무리해주세요.

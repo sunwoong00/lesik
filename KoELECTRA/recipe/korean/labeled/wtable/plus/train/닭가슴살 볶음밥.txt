@@ -1,0 +1,7 @@
+1. <닭가슴살:CV_INGREDIENT>은 한입 크기로 자른 후 밑간 재료를 넣어 밑간해 주세요.
+2. <시금치:CV_INGREDIENT>는 3cm 길이로 자르고 <마늘:CV_INGREDIENT>은 편으로 썰어주세요. <대파:CV_INGREDIENT>는 송송 썰고 <당근:CV_INGREDIENT>은 작게 깍둑썰기해주세요.
+3. 달군 팬에 <기름:CV_SEASONING>을 두른 후 <시금치:CV_INGREDIENT>에 <소금:CV_SEASONING>을 약간 뿌려 볶아주세요. 접시에 덜어주세요.
+4. 달군 팬에 <기름:CV_SEASONING>을 두른 후 <편 썬:CV_STATE> <마늘:CV_INGREDIENT>과 <대파:CV_INGREDIENT>를 넣어 볶다가 노릇해지면 <당근:CV_INGREDIENT>과 <닭가슴살:CV_INGREDIENT>을 넣어 볶아주세요. <소금:CV_SEASONING>, <후춧가루:CV_SEASONING>를 뿌려 볶아주세요.
+5. 양념 재료와 <현미밥:CV_INGREDIENT>을 넣어 볶아주세요. <볶아둔:CV_STATE> <시금치:CV_INGREDIENT>를 넣어 가볍게 볶아주세요.
+6. <통깨:CV_SEASONING>를 뿌려 맛있게 즐겨주세요.
+(기호에 따라 <크러쉬드 레드페퍼:CV_SEASONING>, <달걀 후라이:CV_INGREDIENT> 등을 곁들여 드셔도 좋아요)

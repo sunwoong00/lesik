@@ -1,0 +1,6 @@
+1. <양배추:CV_INGREDIENT>는 채를 <썰:CV_ACT>어 깨끗이 <씻:CV_ACT>은 후 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요. <당근:CV_INGREDIENT>도 <양배추:CV_INGREDIENT>와 비슷한 크기로 채를 <썰:CV_ACT>어주세요.
+2. <베이컨:CV_INGREDIENT>은 1cm 두께로 <자르:CV_ACT>고, <대파:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요.
+(<베이컨:CV_INGREDIENT>이 없을 경우 <햄:CV_INGREDIENT>으로 대체 가능해요)
+3. 볼에 양념 재료를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요. 
+4. 달군 팬에 <식용유:CV_SEASONING>를 살짝 <두른:CV_ACT> 후 <대파:CV_INGREDIENT>를 <볶:CV_ACT>아 향을 <낸:CV_ACT> 후 <베이컨:CV_INGREDIENT>을 <볶:CV_ACT>다가 <당근:CV_INGREDIENT>, <양배추:CV_INGREDIENT>를 <넣:CV_ACT>어 숨이 죽을 때까지 <볶:CV_ACT>다가 <섞어 둔:CV_SEASONING> 양념과 <후춧가루:CV_SEASONING>를 <넣:CV_ACT>어 <볶:CV_ACT>아주세요.
+5. 그릇에 <밥:CV_INGREDIENT>을 <담:CV_ACT>은 후 <양배추 볶음:CV_INGREDIENT>을 <얹:CV_ACT>은 후, 가운데 <달걀:CV_INGREDIENT>을 <올려:CV_ACT> <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 <뿌린:CV_ACT> 후 완성해 주세요.

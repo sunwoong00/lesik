@@ -1,0 +1,5 @@
+1. 볼에 <달걀:CV_INGREDIENT>을 잘 풀고 달걀물 재료를 넣어 골고루 섞어주세요.
+2. 달군 팬에 <식용유:CV_SEASONING>를 두르고 <달걀물:CV_SEASONING>을 <한 국:QT_VOLUME>자 넣은 후 팬 앞쪽에 <맛살:CV_INGREDIENT> <두 개:QT_VOLUME>를 겹쳐서 올려주세요.
+3. 달걀물이 반 정도 익으면 <맛살:CV_INGREDIENT>을 감싸듯이 돌돌 말아주세요.
+4. <달걀물:CV_SEASONING> <한 국자:QT_VOLUME>를 더 넣고 돌돌 3~4회 반복해서 말아주세요.
+5. 적당한 크기가 되면 김발에 싸서 모양을 동그랗게 잡은 후 잘라주세요. 그릇에 담고 <검은깨:CV_SEASONING>와 <무순:CV_INGREDIENT>을 이용해 사과 모양으로 장식해주세요.
