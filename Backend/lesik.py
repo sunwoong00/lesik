@@ -1557,7 +1557,7 @@ app = Flask(__name__, template_folder='../Frontend/templates', static_folder='..
 @app.route('/')
 @app.route('/index')
 def index():
-    recipe_dir = "../Frontend/static/recipe/ko"
+    recipe_dir = "../KoELECTRA/recipe/korean/original/wtable/origin/test"
     recipe_list = os.listdir(recipe_dir)
     recipe_idx = random.randrange(0, len(recipe_dir))
     recipe_text_list = get_list_from_file(recipe_dir + "/" + recipe_list[recipe_idx])
@@ -1574,7 +1574,7 @@ def prompt():
 
 @app.route('/refresh')
 def refresh():
-    recipe_dir = "../Frontend/static/recipe/korean/test"
+    recipe_dir = "../KoELECTRA/recipe/korean/original/wtable/origin/test"
     recipe_list = os.listdir(recipe_dir)
     recipe_title = random.choice(recipe_list)
     recipe_text_list = get_list_from_file(recipe_dir + "/" + recipe_title)
@@ -1634,7 +1634,7 @@ def version2():
 
 @app.route('/microrecipe/refresh')
 def version2refresh():
-    recipe_dir = "../Frontend/static/recipe/ko"
+    recipe_dir = "../KoELECTRA/recipe/korean/original/wtable/origin/test"
     recipe_list = os.listdir(recipe_dir)
     recipe_title = random.choice(recipe_list)
     recipe_text_list = get_list_from_file(recipe_dir + "/" + recipe_title)
