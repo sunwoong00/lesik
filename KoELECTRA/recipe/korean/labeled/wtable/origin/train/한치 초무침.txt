@@ -1,0 +1,6 @@
+1. <양파:CV_INGREDIENT>는 채를 <썰:CV_ACT>고 <오이:CV_INGREDIENT>와 <미나리:CV_INGREDIENT>도 비슷한 크기로 <잘라:CV_ACT>주세요. <청홍고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+2. 볼에 양념 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요.
+3. 한치는 흐르는 물에 <씻:CV_ACT>어주세요. 내장이 붙어있던 쪽에 칼집을 <넣:CV_ACT>은 후 먹기 좋은 크기로 <잘라:CV_ACT>주세요.
+4. 끓는 물에 <소금:CV_SEASONING>을 <넣:CV_ACT>고 <한치:CV_INGREDIENT>를 살짝 <데친:CV_ACT> 후 체에 <밭쳐:CV_ACT> <식혀:CV_ACT>주세요.
+(tip. 얼음물에 담가 빠르게 식히면 한치의 쫀득한 식감이 유지돼요)
+5. <데친:CV_STATE> <한치:CV_INGREDIENT>와 <썰어둔:CV_STATE> <야채:CV_INGREDIENT>, <양념장:CV_SEASONING>을 <넣:CV_ACT>어 골고루 <버무린:CV_ACT> 후 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 마무리해 주세요.

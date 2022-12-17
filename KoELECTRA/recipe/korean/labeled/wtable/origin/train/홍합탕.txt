@@ -1,0 +1,9 @@
+1. <홍합:CV_INGREDIENT> 수염을 <제거하:CV_ACT>고 깨끗하게 <세척해:CV_ACT>주세요.
+2. <양파:CV_INGREDIENT>는 반으로 <자르:CV_ACT>고 <대파:CV_INGREDIENT>는 6cm 크기로 <썰:CV_ACT>어주세요.
+
+3. <청양고추:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+4. 냄비에 <홍합:CV_INGREDIENT>, <양파:CV_INGREDIENT>, <대파:CV_INGREDIENT>, <물:CV_SEASONING>을 <넣:CV_ACT>고 <5분:TI_DURATION> 정도 <끓인:CV_ACT>다. 거품이 생기면 <걷:CV_ACT>어내주세요.
+5. <양파:CV_INGREDIENT>가 말랑말랑해질 때까지 <5분:TI_DURATION> 정도 더 <끓:CV_ACT>인 뒤 <양파:CV_INGREDIENT>와 <대파:CV_INGREDIENT>를 <건져:CV_ACT>내주세요.
+
+*Tip. 오래 끓여서 <물:CV_SEASONING>이 줄어들면 <250ml:QT_VOLUME> 정도 더 <넣:CV_ACT>어주세요.
+6. <마늘:CV_INGREDIENT>, <맛술:CV_SEASONING>, <후추:CV_SEASONING>를 <넣:CV_ACT>고 <1분:TI_DURATION> 정도 <끓인:CV_ACT> 뒤 불을 <끄:CV_ACT>고 <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>으면 완성이예요.

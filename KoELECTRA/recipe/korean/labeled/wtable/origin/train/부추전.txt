@@ -1,0 +1,6 @@
+1. 깨끗이 씻은 <부추:CV_INGREDIENT>는 4cm 길이로 <썰:CV_ACT>고, <당근:CV_INGREDIENT>은 얇게 채를 <썰:CV_ACT>어주세요. <청양고추:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>는 얇게 송송 <썰:CV_ACT>어주세요.
+2. <오징어:CV_INGREDIENT>는 내장을 <제거한:CV_ACT> 후 깨끗이 <씻:CV_ACT>어, <다리:CV_INGREDIENT>와 함께 먹기 좋은 크기로 <잘라:CV_ACT>주세요.
+3. 볼에 <반죽 양념:CV_SEASONING>을 <넣:CV_ACT>고 잘 <섞:CV_ACT>어주세요. 초간장 재료는 모두 <섞:CV_ACT>어주세요.
+4. <반죽 양념:CV_SEASONING>에 썰어 둔 <당근:CV_INGREDIENT>, <청홍고추:CV_INGREDIENT>, <오징어:CV_INGREDIENT>를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요. 마지막에 <부추:CV_INGREDIENT>를 <넣:CV_ACT>어 가볍게 <섞:CV_ACT>어주세요.
+5. 달군 팬에 <식용유:CV_SEASONING>를 넉넉히 <두른:CV_ACT> 후, <반죽:CV_INGREDIENT>을 한 국자씩 <떠:CV_ACT>서 동그랗게 <편:CV_ACT> 후 앞뒤로 노릇노릇하게 <부쳐:CV_ACT>주세요. (tip. <기름:CV_SEASONING>이 충분히 달궈졌을 때 반죽을 <올려:CV_ACT>야 바삭하게 <구울:CV_ACT> 수 있어요.)
+6. <초간장:CV_SEASONING>을 <곁들여:CV_ACT> 따뜻할 때 즐겨주세요.

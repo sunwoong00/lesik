@@ -1,0 +1,8 @@
+1. 냄비에 <멸치:CV_INGREDIENT>를 <넣:CV_ACT>고 <약불:QT_TEMPERATURE>에서 <볶:CV_ACT>은 후 <다시마:CV_SEASONING>와 <표고버섯:CV_INGREDIENT>, <물:CV_SEASONING>을 <넣:CV_ACT>고 팔팔 <끓여:CV_ACT>주세요.
+2. 물이 끓으면 <다시마:CV_SEASONING>와 <표고:CV_INGREDIENT>는 <건져:CV_ACT>내고 국물 양념 재료를 <넣:CV_ACT>고 한소끔 <끓여:CV_ACT>주세요.
+3. <국수호박:CV_INGREDIENT>은 깨끗이 <씻:CV_ACT>은 후 양 끝을 <자르:CV_ACT>고 반으로 <갈라:CV_ACT> 씨를 <제거해:CV_ACT> 주세요.
+4. 냄비에 <국수호박:CV_INGREDIENT>을 <넣:CV_ACT>고 <호박:CV_INGREDIENT>이 잠길 만큼 <물:CV_SEASONING>을 <부은:CV_ACT> 후 <20분:TI_DURATION>간 <삶:CV_ACT>아주세요.
+5. <삶은:CV_STATE> <국수호박:CV_INGREDIENT>은 찬물에 <담가:CV_ACT> <식힌:CV_ACT> 후 가볍게 <주물러:CV_ACT> 껍질을 <제거하:CV_ACT>고 속을 <풀:CV_ACT>어주세요.
+6. 볼에 <달걀:CV_INGREDIENT>과 <소금:CV_SEASONING> <한꼬집:QT_VOLUME>을 <넣:CV_ACT>고 <풀:CV_ACT>어주세요. 달군 팬에 <기름:CV_SEASONING>을 약간 <두른:CV_ACT> 후 <달걀 물:CV_SEASONING>을 <넣:CV_ACT>고 <지단:CV_SEASONING>을 <부쳐:CV_ACT>주세요. <식힌:CV_STATE> <지단:CV_SEASONING>은 돌돌 <말:CV_ACT>아 채를 <썰:CV_ACT>어주세요.
+7. 건져낸 <표고:CV_INGREDIENT>는 얇게 <슬라이스 해:CV_ACT>주세요. <청, 홍고추:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요. 볼에 <고추:CV_INGREDIENT>와 양념간장 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요.
+8. 그릇에 <국수호박 면:CV_INGREDIENT>을 담고 <지단:CV_SEASONING>과 <표고버섯:CV_INGREDIENT>을 <올린:CV_ACT> 후 <양념간장:CV_SEASONING>을 <곁들여:CV_ACT> 맛있게 즐겨주세요.

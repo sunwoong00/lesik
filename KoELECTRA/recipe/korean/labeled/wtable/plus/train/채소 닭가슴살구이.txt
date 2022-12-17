@@ -1,0 +1,9 @@
+1. <닭가슴살:CV_INGREDIENT> 양쪽 면에 밑간 재료를 골고루 뿌려 <10분:TI_DURATION>간 재워주세요.
+2. <닭가슴살:CV_INGREDIENT> 가운데를 포를 뜨듯이 갈라주세요.
+(tip. 속을 채워야 하므로 완전히 자르지 말고 끝을 남겨주세요)
+3. <데친:CV_STATE> <브로콜리:CV_INGREDIENT>와 <빨강 파프리카:CV_INGREDIENT>, <양파:CV_INGREDIENT>는 적당한 크기로 다지고, <체다치즈:CV_INGREDIENT>는 잘게 썰어주세요.
+(tip. <채소:CV_INGREDIENT>는 기호에 따라 변경해도 좋아요)
+4. 볼에 <다진:CV_STATE> <야채:CV_INGREDIENT>와 <마요네즈:CV_SEASONING>, <소금:CV_SEASONING>, <후춧가루:CV_SEASONING>, <슈레드 모짜렐라 치즈:CV_INGREDIENT>를 넣어 골고루 섞어주세요.
+5. <닭가슴살:CV_INGREDIENT> 속에 4를 채운 후 <체다치즈:CV_INGREDIENT>를 올려 내열 용기에 담아주세요.
+6. 법랑 접시에 내열 용기를 올려 <1단:QT_VOLUME>에 넣고 광파오븐 수동요리 오븐에서 <200도:QT_TEMPERATURE>로 <20분:TI_DURATION>간 익혀주세요.
+7. <구운:CV_STATE> <닭가슴살:CV_INGREDIENT>을 접시에 담아 먹기 좋게 잘라 맛있게 즐겨주세요.

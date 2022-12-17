@@ -1,0 +1,5 @@
+1. <표고:CV_INGREDIENT>와 <양파:CV_INGREDIENT>, <애호박:CV_INGREDIENT>, <대파:CV_INGREDIENT>는 굵게 다지고, <청고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>는 송송 썰어주세요. <두부:CV_INGREDIENT>는 물기를 제거하고 작은 큐브 모양으로 썰어주세요.
+2. 냄비에 <손질한:CV_STATE> <채소:CV_INGREDIENT>와 양념 재료를 넣고 섞은 후 <멸치 다시마 물:CV_SEASONING>을 붓고 뚜껑이나 포일을 덮어주세요.
+3. 법랑 접시에 냄비를 올려 1단에 넣고 광파오븐 수동요리 오븐에서 <220도로:QT_TEMPERATURE> <30분:TI_DURATION>으로 설정 후 시작해주세요. <20분:TI_DURATION>이 지났을 때 포일을 벗기고 계속 조리해주세요.
+(tip. "오븐에 전송" 버튼으로 조리하면 포일을 벗겨야 할 시간에 멜로디가 울려요. 멜로디가 울리면 오븐을 열어 <5분:TI_DURATION>내로 포일을 벗긴 후 시작버튼을 누르면 연속 조리됩니다.)
+4. 완성된 <강된장:CV_SEASONING>을 <밥:CV_INGREDIENT>과 함께 맛있게 즐겨주세요.

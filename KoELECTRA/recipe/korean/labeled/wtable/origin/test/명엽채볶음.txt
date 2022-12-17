@@ -1,0 +1,6 @@
+1. <명엽채:CV_INGREDIENT>는 먹기 좋은 길이로 <잘라:CV_ACT>주세요.
+볼에 양념재료를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요.
+2. 마른 팬에 <명엽채:CV_INGREDIENT>를 <넣:CV_ACT>고, <약한불:QT_TEMPERATURE>에서 <2분:TI_DURATION> 정도 보슬보슬하게 <볶:CV_ACT>아주세요
+3. 팬에 <양념:CV_SEASONING>을 <넣:CV_ACT>고 끓어오르면, <약한불:QT_TEMPERATURE>에서 <볶은:CV_STATE> <명엽채:CV_INGREDIENT>를 <넣:CV_ACT>어 양념이 고루 섞이도록 빠르게 <볶:CV_ACT>아주세요.
+4. 불을 <끄:CV_ACT>고 <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.
+5. 밑반찬으로 맛있게 즐겨주세요.

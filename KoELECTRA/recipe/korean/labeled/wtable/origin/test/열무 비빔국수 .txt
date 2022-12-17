@@ -1,0 +1,8 @@
+1. <열무김치 국물:CV_SEASONING>과 <생수:CV_SEASONING>를 <섞:CV_ACT>은 후 지퍼백에 <담:CV_ACT>아 살얼음이 생기도록 <3시간:TI_DURATION> 정도 미리 <얼려:CV_ACT>주세요.
+2. 볼에 양념 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요. <오이:CV_INGREDIENT>는 얇게 채를 <썰:CV_ACT>어주세요. 
+(<김치:CV_INGREDIENT>의 숙성 정도에 따라 <식초:CV_SEASONING>양을 가감해 주세요.)
+3. <열무김치:CV_INGREDIENT>에 <양념장:CV_SEASONING> <붓:CV_ACT>고 <버무려:CV_ACT> 주세요.
+4. 끓는 물에 <중면:CV_INGREDIENT>을 <펼쳐:CV_ACT> <넣:CV_ACT>고 젓가락으로 <저어:CV_ACT> 면끼리 달라붙지 않도록 <저어주:CV_ACT>고 물이 끓어오르면 <찬물:CV_SEASONING> <반 컵:QT_VOLUME>을 3~4회 반복해서 <부어:CV_ACT> <국수:CV_INGREDIENT>를 <삶:CV_ACT>아주세요. 흐르는 찬물에 <중면:CV_INGREDIENT>을 여러 번 <씻:CV_ACT>어 전분기를 <없애:CV_ACT>주세요.
+5. <삶은:CV_STATE> <중면:CV_INGREDIENT>을 <양념:CV_SEASONING>과 <버무린:CV_ACT> 후 그릇에 <담:CV_ACT>고 얼려둔 <살얼음 육수:CV_SEASONING>를 자작하게 <부어:CV_ACT>주세요.
+6. <채썬:CV_STATE> <오이:CV_INGREDIENT>와 <달걀:CV_INGREDIENT>을 <올린:CV_ACT> 후 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 맛있게 즐겨주세요. 
+

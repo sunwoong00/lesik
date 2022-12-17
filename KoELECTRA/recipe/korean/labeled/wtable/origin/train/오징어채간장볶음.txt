@@ -1,0 +1,7 @@
+1. <오징어채:CV_INGREDIENT>는 찬물에 <5분:TI_DURATION> 정도 <담갔:CV_ACT>다가 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요. 먹기 좋게 <자른:CV_ACT> 후 <마요네즈:CV_SEASONING>에 <버무려:CV_ACT>주세요.
+(<오징어:CV_INGREDIENT>를 물에 담가두면 <오징어채:CV_INGREDIENT>의 식감을 훨씬 부드럽고 촉촉하게 만들 수 있어요.)
+2. 달군 팬에 <식용유:CV_SEASONING>를 <두른:CV_ACT> 후 <약불:QT_TEMPERATURE>에서 <다진:CV_STATE> <마늘:CV_INGREDIENT>을 <볶:CV_ACT>아주세요.
+3. 마늘향이 올라오면 양념 재료를 <넣:CV_ACT>고 살짝 <끓인:CV_ACT> 후 <약한 불:QT_TEMPERATURE>로 <줄여:CV_ACT> <오징어채:CV_INGREDIENT>를 <넣:CV_ACT>어주세요.
+4. <양념:CV_SEASONING>이 고루 섞이도록 골고루 <버무리:CV_ACT>고 불을 <끈:CV_ACT>후 <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>, <송송 썬:CV_STATE> <쪽파:CV_SEASONING>를 <뿌려:CV_ACT>주세요.
+(<오징어채:CV_INGREDIENT>는 오래 볶으면 질겨질 수 있으니 <약한 불:QT_TEMPERATURE>에서 짧은 시간 동안 빠르게 <볶:CV_ACT>아주세요.)
+

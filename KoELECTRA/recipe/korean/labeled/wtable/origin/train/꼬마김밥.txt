@@ -1,0 +1,6 @@
+1. <당근:CV_INGREDIENT>은 채를 <썰:CV_ACT>고, <단무지:CV_INGREDIENT>는 이등분으로 <잘라:CV_ACT> 먹기 좋은 두께로 <썰:CV_ACT>어주세요.
+2. <시금치:CV_INGREDIENT>는 뿌리를 <자르:CV_ACT>고 깨끗이 <씻:CV_ACT>고, 끓는 물에 약간의 <소금:CV_SEASONING>을 <넣:CV_ACT>어 살짝 <데친:CV_ACT> 후 찬물에 <헹궈:CV_ACT>서 물기를 <제거해:CV_ACT>주세요. 데친 <시금치:CV_INGREDIENT>에 약간의 <소금:CV_SEASONING>과 <참기름:CV_SEASONING>을 <넣:CV_ACT>고 <밑간 해:CV_ACT>주세요.
+3. 달군 팬에 <기름:CV_SEASONING>을 <두르:CV_ACT>고 약간의 <소금:CV_SEASONING>을 <뿌려:CV_ACT> <당근:CV_INGREDIENT>을 <볶:CV_ACT>아주세요.
+4. 고슬하게 지은 <밥:CV_INGREDIENT>에 밥양념 재료를 <넣:CV_ACT>어 <밑간 해:CV_ACT>주세요.
+5. <구운:CV_STATE> <김:CV_INGREDIENT>은 4등분으로 <자르:CV_ACT>고, 그 위에 <밥:CV_INGREDIENT>을 1/4정도 고르게 <편:CV_ACT> 후 <볶은:CV_STATE> <당근채:CV_INGREDIENT>, <단무지:CV_INGREDIENT>, <시금치:CV_INGREDIENT>를 <올려:CV_ACT> 돌돌 <말:CV_ACT>아주세요.
+6. <꼬마김밥:CV_INGREDIENT> 표면에 <참기름:CV_SEASONING>을 <바르:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌린:CV_ACT> 후 <겨자소스:CV_SEASONING>를 <곁들여:CV_ACT>주세요.

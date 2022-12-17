@@ -1,0 +1,7 @@
+1. <돼지고기:CV_INGREDIENT>를 한 입 크기로 <썰:CV_ACT>고, 밑간 재료에 <버무려:CV_ACT>주세요.
+2. <애호박:CV_INGREDIENT>과 <양파:CV_INGREDIENT>는 한 입 크기로 <썰:CV_ACT>고, <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>는 어슷 <썰:CV_ACT>어주세요.
+3. 냄비에 약간의 <기름:CV_SEASONING>을 <두르:CV_ACT>고 <밑간 한:CV_STATE> <돼지고기:CV_INGREDIENT>를 <넣:CV_ACT>어 <2분:TI_DURATION> 정도 <볶:CV_ACT>아 표면이 살짝 익으면 분량의 <물:CV_SEASONING>과 양념재료를 <넣:CV_ACT>어 <10분:TI_DURATION> 정도 <끓여:CV_ACT>주세요. 
+(tip. 깔끔한 국물 맛을 위해 중간중간 거품은 걷어내주는 게 좋아요.)
+4. <손질한:CV_STATE> <애호박:CV_INGREDIENT>과 <양파:CV_INGREDIENT>를 <넣:CV_ACT>고 한소끔 더 <끓여:CV_ACT>주세요.
+5. 마지막에 <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>어주세요. 
+(tip. 부족한 간은 <새우젓:CV_SEASONING>이나 <국간장:CV_SEASONING>으로 <맞춰:CV_ACT>주세요.)

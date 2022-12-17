@@ -1,0 +1,6 @@
+1. 1. <단호박:CV_INGREDIENT>, <감자:CV_INGREDIENT>, <고구마:CV_INGREDIENT>, <장마:CV_INGREDIENT>, <연근:CV_INGREDIENT>을 1.5cm 크기로 깍둑썰기해주세요.
+2. 2. 끓는 물에 <소금:CV_SEASONING>을 넣고 <손질한:CV_STATE> <브로콜리:CV_INGREDIENT>를 <30초:TI_DURATION>간 데친 후 찬물에 헹궈주세요.
+3. 3. <단호박:CV_INGREDIENT>, <감자:CV_INGREDIENT>, <고구마:CV_INGREDIENT>, <장마:CV_INGREDIENT>, <연근:CV_INGREDIENT>을 김이 오른 찜솥에 <10여 분간:TI_DURATION> 쪄주세요.
+4. 4. <은행:CV_INGREDIENT>은 프라이팬에 노릇노릇하게 볶아서 키친 타월에 비빈 후 껍질을 제거해 주세요.
+5. 5. <10여 분:TI_DURATION>간 <찐:CV_STATE> <뿌리채소:CV_INGREDIENT>와 <은행:CV_INGREDIENT>, <브로콜리:CV_INGREDIENT>를 섞어서 그릇에 담아내면 완성이예요.
+*Tip. 입맛에 맞는 <뿌리채소:CV_INGREDIENT>를 사용해도 좋으며, <뿌리채소:CV_INGREDIENT>를 찔 때 약간의 <죽염:CV_SEASONING>을 넣으면 단맛도 살고 간도 알맞아요.

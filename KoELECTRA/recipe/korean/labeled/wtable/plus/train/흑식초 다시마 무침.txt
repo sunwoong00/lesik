@@ -1,0 +1,5 @@
+1. 끓는 물에 <다시마:CV_INGREDIENT>를 데쳐 주세요.
+2. <데친:CV_STATE> <다시마:CV_INGREDIENT>를 채 썬 후 <식초:CV_SEASONING>에 버무려 주세요.
+3. <고수:CV_INGREDIENT>는 뜯어서 준비하고, <홍고추:CV_INGREDIENT>와 <쪽파:CV_INGREDIENT>는 송송 썰어 준비해 주세요.
+4. 분량의 재료를 골고루 섞어서 <소스:CV_SEASONING>를 만들어 주세요.
+5. 볼에 순서 2,3,4를 넣고 버무려 접시에 담아주세요.

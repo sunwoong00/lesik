@@ -1,0 +1,5 @@
+1. <봄동:CV_INGREDIENT>의 밑동을 <자른:CV_ACT> 후 흐르는 물에 <담가:CV_ACT> 여러 번 <흔들:CV_ACT>어 <씻:CV_ACT>고, <홍고추:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요.
+2. 끓는 물에 약간의 <소금:CV_SEASONING>을 <넣:CV_ACT>고, <손질한:CV_STATE> <봄동:CV_INGREDIENT>을 <넣:CV_ACT>어 <2분:TI_DURATION> 정도 <데쳐:CV_ACT> 찬물에 <헹궈:CV_ACT>주세요.
+3. 물기를 적당히 <짠:CV_ACT> 후 먹기 좋은 길이로 <잘라:CV_ACT>주세요.
+4. 볼에 <데친:CV_STATE> <봄동:CV_INGREDIENT>과 <홍고추:CV_INGREDIENT>, 양념을 <넣:CV_ACT>고 조물조물 <무쳐:CV_ACT>주세요.
+5. 접시에 <봄동된장무침:CV_INGREDIENT>을 <담:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 마무리해주세요.

@@ -1,0 +1,9 @@
+1. <두부:CV_INGREDIENT>는 흐르는 물에 <씻:CV_ACT>어 물기를 <빼:CV_ACT>고, 칼등으로 <눌러:CV_ACT> <으깨:CV_ACT>주세요.
+2. <끓는 물:CV_SEASONING>에 <완두콩:CV_INGREDIENT>을 <삶:CV_ACT>아 껍질을 일일이 <벗겨낸:CV_ACT> 후 칼로 잘게 <다지:CV_ACT>거나 절구로 곱게 <으깨:CV_ACT>주세요.
+
+*Tip. <콩:CV_INGREDIENT>은 미리 <하루:TI_DURATION> 정도 <불려:CV_ACT>야하며 <냉동:CV_STATE> <콩:CV_INGREDIENT>이라면 불리지 않아도 됩니다. <콩:CV_INGREDIENT>은 손으로도 으깨질 정도로 푹 <삶:CV_ACT>아주세요.
+3. 그릇에 <달걀:CV_INGREDIENT>을 <풀:CV_ACT>고 부드러워지도록 <모유:CV_SEASONING> 또는 <분유:CV_SEASONING>를 <넣:CV_ACT>어 고르게 <섞:CV_ACT>은 후 체에 <걸러:CV_ACT>주세요.
+
+*Tip. <다시마 물:CV_SEASONING>을 살짝 <넣어주:CV_ACT>면 맛이 더 좋아져 아기가 잘 먹어요.
+4. 내열 용기에 모든 <재료:CV_SEASONING>를 <넣:CV_ACT>고 찜기에 <넣:CV_ACT>어 <10분:TI_DURATION> 정도 <쪄내:CV_ACT>요.
+5. 3회분으로 <나눠:CV_ACT> 용기에 <담:CV_ACT>아주세요.

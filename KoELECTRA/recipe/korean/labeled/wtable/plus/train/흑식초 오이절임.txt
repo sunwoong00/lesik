@@ -1,0 +1,3 @@
+1. <오이:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>는 씨를 제거한 후 4cm 길이로 자르고, <생강:CV_INGREDIENT>은 편으로 썰어두세요. <흑식초:CV_SEASONING>와 <설탕:CV_SEASONING>, <간장:CV_SEASONING>, <소금:CV_SEASONING>은 계량하여 준비해 주세요.
+2. 볼에 순서 1의 재료를 모두 넣고 절인 후 담아내면 완성이예요.
+*Tip. <오이:CV_INGREDIENT>는 <소금:CV_SEASONING>에 절인 뒤 수분을 빼면 아삭한 식감을 얻을 수 있답니다.

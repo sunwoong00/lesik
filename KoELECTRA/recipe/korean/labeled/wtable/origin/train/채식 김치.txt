@@ -1,0 +1,12 @@
+1. <배추:CV_INGREDIENT>의 밑동에 칼집을 <넣:CV_ACT>어 사 등분한 후 깨끗이 <씻:CV_ACT>어 한입 크기로 <썰:CV_ACT>어주세요. <무:CV_INGREDIENT>는 나박 <썰:CV_ACT>어주세요.
+(tip. <배추:CV_INGREDIENT>의 심지는 얇게 <저며:CV_ACT> 함께 <절여:CV_ACT>주세요)
+2. <배추:CV_INGREDIENT>와 <무:CV_INGREDIENT>에 <굵은:CV_STATE> <소금:CV_SEASONING> <2큰술:QT_VOLUME>을 <뿌려:CV_ACT> <20분:TI_DURATION> 정도 살짝 숨이 죽을 정도로 <절여:CV_ACT>주세요.
+3. 냄비에 찹쌀풀 재료를 <넣:CV_ACT>고 잘 <섞:CV_ACT>어준 후 <중약불:QT_TEMPERATURE>에서 <저어:CV_ACT>가며 <끓이:CV_ACT>다가 묽고 끈적한 농도가 나면 불을 <끄:CV_ACT>고 <식혀:CV_ACT>주세요.
+(tip. <다시마 물:CV_SEASONING>은 미지근한 물에 <다시마:CV_SEASONING>를 <넣:CV_ACT>어 만들어 주세요)
+4. <쪽파:CV_INGREDIENT>는 4cm 길이로 <잘라:CV_ACT>주세요. 갈아 줄 재료인 <사과:CV_INGREDIENT>, <배:CV_INGREDIENT>와 <양파:CV_INGREDIENT>는 큼직하게 <썰:CV_ACT>어주세요.
+5. <블렌더에 갈아 줄:CV_STATE> <재료:CV_SEASONING>를 <넣:CV_ACT>어 <갈:CV_ACT>아주세요. 볼에 식힌 <찹쌀풀:CV_SEASONING>과 양념 재료, <믹서에 간:CV_STATE> <재료:CV_SEASONING>를 <넣:CV_ACT>어 고루 <섞:CV_ACT>어 <김치 양념:CV_SEASONING>을 <만들:CV_ACT>어주세요.
+6. <김치 양념:CV_SEASONING>에 <절인:CV_STATE> <배추:CV_INGREDIENT>와 <쪽파:CV_INGREDIENT>를 <넣:CV_ACT>어 <버무려:CV_ACT>주세요.
+(tip. <절인:CV_STATE> <배추:CV_INGREDIENT>는 손으로 가볍게 물기를 <짜:CV_ACT>서 <넣:CV_ACT>어주세요)
+7. 완성된 <김치:CV_INGREDIENT>는 소독한 유리병에 <담:CV_ACT>아 하루 또는 이틀 정도 실온에서 <숙성시켰:CV_ACT>다가 <냉장 보관해:CV_ACT>주세요.
+(tip. <김치:CV_INGREDIENT>는 용기의 80% 정도만 담는 것이 좋아요. <김치:CV_INGREDIENT>가 발효되는 과정에서 가스가 생기기 때문에 유리병의 경우 밀폐하지 말고 뚜껑은 반만 <닫:CV_ACT>아 두었다가 냉장고에 <넣:CV_ACT>을 때 밀폐하여 <넣:CV_ACT>어주세요)
+(tip. <1~2달:TI_DURATION> 이내로 드시는 것이 좋아요)

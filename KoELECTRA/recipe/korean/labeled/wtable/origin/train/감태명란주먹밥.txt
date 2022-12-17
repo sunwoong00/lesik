@@ -1,0 +1,6 @@
+1. <명란:CV_INGREDIENT>은 칼집을 <내:CV_ACT>어 칼등으로 <알:CV_INGREDIENT>만 <발라내:CV_ACT>어 명란 양념을 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+2. 볼에 고슬고슬하게 지은 <밥:CV_INGREDIENT>과 밥 양념 재료를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+3. 적당한 크기로 모양을 잡아 <밥:CV_INGREDIENT> 속에 <명란 양념:CV_SEASONING> (<2큰술:QT_VOLUME>)을 <넣:CV_ACT>어 삼각형 모양으로 만들어주세요.
+4. 달군 팬에 <감태:CV_INGREDIENT>를 앞 뒤로 <구워:CV_ACT>주세요.
+5. 달군 팬에 <기름:CV_SEASONING>을 살짝 <두른:CV_ACT> 후 <삼각 김밥:CV_INGREDIENT>을 노릇하게 <구워:CV_ACT>주세요.
+6. 적당한 크기로 <감태:CV_INGREDIENT>를 <자른:CV_ACT> 후 <삼각 김밥:CV_INGREDIENT>에 <붙여:CV_ACT> 완성해 주세요.

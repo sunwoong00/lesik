@@ -1,0 +1,6 @@
+1. <취나물:CV_INGREDIENT>은 끓는 물에 <소금:CV_SEASONING>을 넣고 살짝 데쳐 찬물에 헹굽니다.
+2. <다진:CV_STATE> <쇠고기:CV_INGREDIENT>는 키친타월로 핏물을 제거하고 양념을 한 후 달군 팬에 볶아주세요. 
+<취나물:CV_INGREDIENT>과 <단무지:CV_INGREDIENT>는 물기를 꼭 짜서 다지고 <우메보시:CV_INGREDIENT>는 씨를 제거하여 잘게 다져주세요.
+3. 밥에 <참기름:CV_SEASONING>, <소금:CV_SEASONING>, <통깨:CV_SEASONING>를 넣어 골고루 버무린 후 반은 <취나물:CV_INGREDIENT>, <단무지:CV_INGREDIENT>를 넣어 섞고 반은 우메보시를 넣어 섞어주세요.
+4. <밥:CV_INGREDIENT>을 주먹 크기로 뭉친 후 <볶은:CV_STATE> <쇠고기:CV_INGREDIENT>를 넣고 삼각형 모양으로 만들어주세요.
+5. 그릇에 담아 마무리해주세요.

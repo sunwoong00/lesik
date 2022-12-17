@@ -1,0 +1,9 @@
+1. <두부:CV_INGREDIENT>는 사방 2cm 크기로 자른 후 키친 타올에 올려 물기를 제거해 주세요.
+2. <두부:CV_INGREDIENT>에 <전분:CV_SEASONING>을 묻혀주세요.
+(tip. <전분:CV_SEASONING>을 두껍게 묻혀야 더욱 바삭해요)
+3. 법랑 접시에 종이호일을 깔고 <두부:CV_INGREDIENT>를 올린 후 <식용유:CV_SEASONING>를 골고루 발라주세요.
+(tip. 오일 스프레이를 사용하면 더욱 간편해요)
+4. 법랑 접시를 3단에 넣고 광파오븐 자동 요리 에어프라이에서 <두부 강정:CV_INGREDIENT> <1모:QT_VOLUME>를 선택한 후 튀겨주세요.
+5. 양념 재료를 섞은 후 팬에 넣고 <2분:TI_DURATION> 정도 바글바글 끓이다가 <튀긴:CV_STATE> <두부:CV_INGREDIENT>와 <견과류:CV_INGREDIENT>를 넣고 섞어주세요.
+(tip. <견과류:CV_INGREDIENT>는 생략해도 좋아요.)
+6. 완성된 <두부 강정:CV_INGREDIENT>을 접시에 담아 맛있게 즐겨주세요.

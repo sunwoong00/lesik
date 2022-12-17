@@ -1,0 +1,13 @@
+1. <소고기:CV_INGREDIENT>는 물에 <30분:TI_DURATION> 정도 <담가:CV_ACT> 핏물을 <제거해:CV_ACT>주세요.
+
+*Tip. <불고기용 소고기:CV_INGREDIENT>는 얇아서 오랫동안 핏물을 <빼:CV_ACT>지 않아도 된답니다!
+2. <양파:CV_INGREDIENT>, <당근:CV_INGREDIENT>은 <채 썰:CV_ACT>고 <대파:CV_INGREDIENT>는 길이 7~8cm, 두께 0.5cm 크기로 <채 썰:CV_ACT>어주세요.
+3. <배:CV_INGREDIENT>는 껍질을 <벗기:CV_ACT>고 믹서에 곱게 <간:CV_ACT> 뒤 <소고기:CV_INGREDIENT>에 <넣:CV_ACT>어주세요.
+
+*Tip. 혹시 <배:CV_INGREDIENT>가 없다면 <배 음료:CV_INGREDIENT> <80g:QT_VOLUME>을 <넣:CV_ACT>어주세요.
+4. <진간장:CV_SEASONING>, <국간장:CV_SEASONING>을 <넣:CV_ACT>고 골고루 <섞:CV_ACT>어주세요.
+5. 순서 4에 <올리고당:CV_SEASONING>, <후추:CV_SEASONING>, <설탕:CV_SEASONING>, <마늘:CV_INGREDIENT>, <맛술:CV_SEASONING>을 <넣:CV_ACT>고 잘 <버무린:CV_ACT> 뒤 냉장고에서 <30분:TI_DURATION> 정도 <숙성시키:CV_ACT>고 <꺼내:CV_ACT> 기름을 두르지 않은 팬에 <넣:CV_ACT>고 <센불:QT_TEMPERATURE>로 <5분:TI_DURATION> 정도 <볶:CV_ACT>아주세요.
+
+*Tip. <센불:QT_TEMPERATURE>에서 빠르게 익히는 게 중요하고 너무 자주 뒤섞지 않는 게 좋아요!
+6. <양파:CV_INGREDIENT>, <당근:CV_INGREDIENT>을 <넣:CV_ACT>고 <당근:CV_INGREDIENT>이 익을 때까지 <2분:TI_DURATION> 정도 <볶:CV_ACT>아주세요.
+7. <볶은:CV_STATE> <불고기:CV_INGREDIENT> 위에 <채 썬:CV_STATE> <대파:CV_INGREDIENT>를 <올려:CV_ACT>서 맛있게 즐겨보세요!

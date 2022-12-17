@@ -1,0 +1,7 @@
+1. <갑오징어:CV_INGREDIENT>는 등쪽에 납작한 등뼈를 <빼낸:CV_ACT> 후, 배를 <가르:CV_ACT>고 내장과 눈, 입을 <제거해:CV_ACT> 주세요. <갑오징어:CV_INGREDIENT> 껍질을 <벗기:CV_ACT>고, 깨끗이 <씻:CV_ACT>어 한입크기로 <잘라:CV_ACT>주세요.
+2. <새송이버섯:CV_INGREDIENT>은 먹기 좋게 <썰:CV_ACT>고, <양파:CV_INGREDIENT>는 굵게 채<썰:CV_ACT>고, <청양고추:CV_INGREDIENT>와 <대파:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요. <청경채:CV_INGREDIENT>를 깨끗이 <씻:CV_ACT>은 후 밑동을 <잘라:CV_ACT>주세요. 
+
+양념 재료를 볼에 <넣:CV_ACT>고 잘 <섞:CV_ACT>어주세요.
+3. 팬에 약간의 <식용유:CV_SEASONING>를 <두르:CV_ACT>고 <양파:CV_INGREDIENT>, <새송이버섯:CV_INGREDIENT>를 <넣:CV_ACT>어 <볶:CV_ACT>다가 <양파:CV_INGREDIENT>가 반쯤 익으면 <갑오징어:CV_INGREDIENT>와 양념 재료를 <넣:CV_ACT>어주세요.
+4. <센불:QT_TEMPERATURE>에서 <갑오징어:CV_INGREDIENT>를 <볶:CV_ACT>다가 반쯤 익으면 <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>를 <넣:CV_ACT>고 한번 더 재빨리 <볶:CV_ACT>아주세요. 약간의 <소금:CV_SEASONING>을 <가감해:CV_ACT> 간을 맞춘 후, <청경채:CV_INGREDIENT>와 <참기름:CV_SEASONING>을 <넣:CV_ACT>고 불을 <꺼:CV_ACT>주세요.
+5. 갑오징어매콤불고기를 접시에 <담:CV_ACT>고 <깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.

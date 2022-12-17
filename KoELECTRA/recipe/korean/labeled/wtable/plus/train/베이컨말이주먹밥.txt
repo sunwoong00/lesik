@@ -1,0 +1,7 @@
+1. <양파:CV_INGREDIENT>와 <당근:CV_INGREDIENT>, <애호박:CV_INGREDIENT>, <파프리카:CV_INGREDIENT>는 잘게 다져주세요. 
+2. 달군 팬에 약간의 <식용유:CV_SEASONING>를 두르고, <다진:CV_STATE> <야채:CV_INGREDIENT>를 넣어 볶다가 약간의 <소금:CV_SEASONING>과 <후춧가루:CV_SEASONING>를 뿌려 밑간해주세요.
+3. 볼에 따뜻한 <밥:CV_INGREDIENT>과 <볶은:CV_STATE> <야채:CV_INGREDIENT>, 밥양념 재료를 넣고 섞어 한입 크기로 모양을 잡아주세요.
+(베이컨에 익으면서 줄어드는 것을 감안해서 밥크기를 크지않게 만들어주세요)
+4. 2등분한 베이컨에 <밥:CV_INGREDIENT>을 올려 돌돌 말아주세요
+5. 달군 팬에 <베이컨말이:CV_INGREDIENT>의 이음새 부분이 아래로 가도록 놓아 먼저 익힌 후, 팬에 굴려가며 앞뒤로 노릇하게 익혀주세요.(키친타월에 올려 기름기를 제거해주세요)
+6. 알맞은 그릇에 담아 마무리해주세요.

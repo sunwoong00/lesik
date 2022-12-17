@@ -1,0 +1,7 @@
+1. <오이:CV_INGREDIENT>는 <굵은:CV_STATE> <소금:CV_SEASONING>으로  문질러 씻어 4토막으로 자른 후, 다시 6등분해서 썰어주세요. <쪽파:CV_INGREDIENT>는 4센치 길이로 썰고, <홍고추:CV_INGREDIENT>는 3센치 길이로 채를 썰어주세요
+2. <오이절임물:CV_SEASONING>을 끓여 뜨거울 때 <오이:CV_INGREDIENT>에 붓고, <10분:TI_DURATION> 정도 담갔다가 체에 밭쳐 물기를 빼주세요.
+3. 냄비에 <물:CV_SEASONING> <8컵:QT_VOLUME>과 <다시마:CV_INGREDIENT> <2장:QT_VOLUME>을 넣고, 물이 끓어오르면 <다시마:CV_INGREDIENT>를 건져내고 불을 꺼주세요. <굵은:CV_SEASONING><소금:CV_SEASONING> <3큰술:QT_VOLUME>, <매실청:CV_SEASONING> <3큰술:QT_VOLUME>을 넣고 잘 섞어 김치국물 재료를 만들어주세요.
+4. 냄비에 찹쌀가루풀 재료를 넣고 바닥에 눌러 붙거나 멍울지지 않게 주걱으로 저으며 걸쭉해질때까지 끓여서 풀을 만들어주세요. 완성된 풀은 체에 걸러 STEP3과 섞어주세요.
+5. 양념재료를 믹서에 간 후 면포에 싸서 국물을 걸러주세요. 걸러낸 국물은 STEP4와 섞어주세요.
+6. 김치통에 <오이:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>, <쪽파:CV_INGREDIENT>를 담고 STEP5의 국물을 부어주세요.
+(실온에 <하루:TI_DURATION>정도 두었다가 냉장고에 넣어 드세요.)

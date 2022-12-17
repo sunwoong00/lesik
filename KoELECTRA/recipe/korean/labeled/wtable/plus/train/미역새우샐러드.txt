@@ -1,0 +1,5 @@
+1. <물미역:CV_INGREDIENT>을 찬물에 여러 번 헹군 후 한입 크기로 썰어주세요.
+2. 끓는 물에 <소금:CV_SEASONING>을 약간 넣고 <칵테일새우:CV_INGREDIENT>를 살짝 데쳐 물기를 빼주세요.
+*Tip. <물미역:CV_INGREDIENT>은 생으로 먹어도 좋지만 향이 강해서 부담스럽다면 끓는 물에 살짝 데칩니다. <미역:CV_INGREDIENT>은 선명한 녹색이 되면 바로 건져 찬물에 헹구어 물기를 빼고 <새우:CV_INGREDIENT>는 붉게 변하면 건져주세요!
+3. 분량의 드레싱 재료를 골고루 섞어주세요.
+4. 접시에 순서 1, 2의 <미역:CV_INGREDIENT>과 <새우:CV_INGREDIENT>를 보기좋게 담고 <초고추장 드레싱:CV_SEASONING>을 곁들여 맛있게 즐겨보세요~

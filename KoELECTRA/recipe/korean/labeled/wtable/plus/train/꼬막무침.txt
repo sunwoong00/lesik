@@ -1,0 +1,9 @@
+1. <꼬막:CV_INGREDIENT>, <물:CV_SEASONING>, <소금:CV_SEASONING>을 볼에 담고 비닐을 씌운 뒤 <1시간:TI_DURATION> 정도 해감시켜 주세요.
+*Tip. 해감할 때 숟가락을 넣으면 좀 더 빨리 해감된답니다!
+2. 냄비에 <꼬막:CV_INGREDIENT>, <물:CV_SEASONING>, <청주:CV_SEASONING>를 넣어 <센불:QT_TEMPERATURE>에서 끓이고 끓어오르면 <4분:TI_DURATION> 정도 더 삶아주세요. 거품이 생기면 걷어내주세요.
+*Tip. <꼬막:CV_INGREDIENT>은 오랫동안 삶으면 질겨지므로 주의해야 해요!
+3. 숟가락으로 꼬막 뒷부분을 눌러 껍질을 분리해 주세요.
+4. <부추:CV_INGREDIENT>는 4cm 길이로 썰고 <파:CV_INGREDIENT>는 1cm 크기로 어슷썰기, <양파:CV_INGREDIENT>는 채썰고 <당근:CV_INGREDIENT>은 0.5cm 크기로 가늘게 채 썰어주세요.
+5. 분량의 재료를 골고루 섞어 <양념장:CV_SEASONING>을 만들어주세요.
+6. <꼬막:CV_INGREDIENT>, <부추:CV_INGREDIENT>, <파:CV_INGREDIENT>, <양파:CV_INGREDIENT>, <당근:CV_INGREDIENT>과 순서 5의 <양념장:CV_SEASONING>을 잘 버무려주세요.
+7. 양념에 잘 버무려진 쫄깃 탱탱 꼬막살을 음미하며 맛있게 즐기세요!

@@ -1,0 +1,5 @@
+1. <모시조개:CV_INGREDIENT>는 <소금물:CV_SEASONING>에 <담가:CV_ACT> <3~4시간:TI_DURATION> 정도 <해감:CV_ACT> 후 깨끗이 <씻:CV_ACT>어주세요.
+2. <미나리:CV_INGREDIENT>는 5cm 길이로 <자르:CV_ACT>고 <홍고추:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+3. 냄비에 <물:CV_SEASONING>과 <다시마:CV_SEASONING>를 <넣:CV_ACT>어 <물:CV_SEASONING>이 <끓:CV_ACT>으면 <다시마:CV_SEASONING>를 <건져내:CV_ACT>고, <모시조개:CV_INGREDIENT>를 <넣:CV_ACT>어 <끓여:CV_ACT>주세요. <조개:CV_INGREDIENT>의 입이 벌리면 <소금:CV_SEASONING>을 <넣:CV_ACT>어 간을 <맞춰:CV_ACT>주세요.
+4. <홍고추:CV_INGREDIENT>와, <청고추:CV_INGREDIENT>, <미나리:CV_INGREDIENT>를 <넣:CV_ACT>어 한소끔 <끓:CV_ACT>여 완성해 주세요.
+5. 완성한 <조개탕:CV_INGREDIENT>을 그릇에 <담:CV_ACT>아 맛있게 즐겨주세요.

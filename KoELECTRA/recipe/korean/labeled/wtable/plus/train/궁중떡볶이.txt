@@ -1,0 +1,4 @@
+1. <떡볶이떡:CV_INGREDIENT>이 단단할 때는 <미지근한 물:CV_SEASONING>에 담가두거나, 살짝 데친 후 찬물에 담가 말랑말랑하게 준비해서 <떡:CV_SEASONING> <양념:CV_SEASONING>에 버무려주세요. <표고버섯:CV_INGREDIENT>은 기둥을 떼어 편으로 썰고, <파프리카:CV_INGREDIENT>와 <당근:CV_INGREDIENT>은 먹기 좋은 크기로 잘라주세요.
+2. <쇠고기:CV_INGREDIENT>와 <표고버섯:CV_INGREDIENT>은 볼에 담고 <양념:CV_SEASONING>에 버무려서 준비해주세요.
+3. 달군 팬에 <기름:CV_SEASONING>을 두르고 <쇠고기:CV_INGREDIENT>, <표고버섯:CV_INGREDIENT>, <당근:CV_INGREDIENT>을 넣어 <2분:TI_DURATION>간 볶다가 <떡볶이떡:CV_INGREDIENT>과 <파프리카:CV_INGREDIENT>를 넣고 <1분간:TI_DURATION> 더 볶아주세요.
+4. 그릇에 <궁중떡볶이:CV_INGREDIENT>를 담고 <깨:CV_SEASONING>를 뿌려주세요.

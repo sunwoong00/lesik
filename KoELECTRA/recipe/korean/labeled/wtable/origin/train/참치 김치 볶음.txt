@@ -1,0 +1,5 @@
+1. <통조림 참치:CV_INGREDIENT>는 체에 <밭쳐:CV_ACT> 기름을 <빼:CV_ACT>주세요.
+2. <양파:CV_INGREDIENT>는 <슬라이스하:CV_ACT>고 <대파:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요. 
+3. 달군 팬에 <기름:CV_SEASONING>을 <두른:CV_ACT> 후 <양파:CV_INGREDIENT>, <대파:CV_INGREDIENT>, <김치:CV_INGREDIENT>, <설탕:CV_SEASONING>을 <넣:CV_ACT>어 <3분:TI_DURATION> 정도 <볶:CV_ACT>다가 나머지 양념 재료를 <넣:CV_ACT>어 <볶:CV_ACT>아주세요.
+4. <참치:CV_INGREDIENT>를 <넣:CV_ACT>어 가볍게 <볶:CV_ACT>아주세요.
+5. 마지막에 <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 마무리해 주세요.

@@ -1,0 +1,8 @@
+1. <표고버섯:CV_INGREDIENT>은 끓는 물에 살짝 데쳐 건져주세요.
+2. <건져낸:CV_STATE> <표고버섯:CV_INGREDIENT>은 기둥까지 4등분으로 썰어주세요.
+3. <김:CV_INGREDIENT>은 <한 장:QT_VOLUME>을 3x4 사이즈로 잘라서 <표고버섯:CV_INGREDIENT>과 함께 용기에 담아두세요.
+4. <김:CV_INGREDIENT> 사이사이에 <실고추:CV_INGREDIENT>와 <통깨:CV_SEASONING>를 조금씩 뿌려주세요.
+5. 장아찌 소스 재료를 냄비에 넣고 <30분:TI_DURATION>간 <중불:QT_TEMPERATURE>에서 끓여주세요.
+6. STEP5의 <소스:CV_SEASONING>를 채에 밭치고 식힌 다음 준비된 <김:CV_INGREDIENT>과 <표고버섯:CV_INGREDIENT>에 부어주세요.
+7. <2~3일:TI_DURATION> 뒤에 <소스:CV_SEASONING>만 따라서 한 번 더 끓인 후 식혀서 다시 부어주세요.
+8. 완성된 요리를 그릇에 담아 마무리해주세요.

@@ -1,0 +1,6 @@
+1. <달걀:CV_INGREDIENT>은 <흰자:CV_INGREDIENT>, <노른자:CV_INGREDIENT>를 <분리하:CV_ACT>고 약간의 <소금:CV_SEASONING>을 <넣:CV_ACT>어 <풀:CV_ACT>고 <대파:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+2. 달군 팬에 약간의 <기름:CV_SEASONING>을 <두르:CV_ACT>고 키친타월로 <닦아 낸:CV_ACT> 후 <달걀:CV_INGREDIENT><노른자:CV_INGREDIENT>와 <흰자:CV_INGREDIENT> 순으로 <약한 불:QT_TEMPERATURE>에서 <지단:CV_SEASONING>을 <만들:CV_ACT>어 가늘게 채를 <썰:CV_ACT>어주세요.
+3. 냄비에 <육수:CV_SEASONING>를 <넣:CV_ACT>고 끓으면 <국물 양념 재료:CV_SEASONING>와 <만두:CV_INGREDIENT>를 <넣:CV_ACT>어주세요. <만두:CV_INGREDIENT>가 익어 떠오르면 <대파:CV_INGREDIENT>를 <넣:CV_ACT>고 한소끔 <끓이:CV_ACT>고 마지막에 약간의 <소금:CV_SEASONING>과 <후춧가루:CV_SEASONING>를 <넣:CV_ACT>어 간을 <맞춰:CV_ACT>주세요.
+4. 그릇에 <만두국:CV_INGREDIENT>을 <담:CV_ACT>고 채썬 <황백지단:CV_SEASONING>을 <올려:CV_ACT> 맛있게 즐겨주세요.
+(tip 기호에 따라 <고명:CV_SEASONING>으로 <김가루:CV_SEASONING> 또는 양념해서 <볶은:CV_STATE> <쇠고기:CV_INGREDIENT>, <송송 썬:CV_STATE> <실파:CV_SEASONING> 등을 <곁들여:CV_ACT>주세요.)
+

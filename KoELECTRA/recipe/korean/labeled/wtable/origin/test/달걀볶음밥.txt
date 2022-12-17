@@ -1,0 +1,6 @@
+1. <대파:CV_INGREDIENT>는 얇게 송송 <썰:CV_ACT>어주세요. <스팸:CV_INGREDIENT>은 작은 큐브모양으로 먹기 좋게 <잘라:CV_ACT>주세요.
+2. 볼에 <달걀:CV_INGREDIENT>을 <풀:CV_ACT>어 <달걀물:CV_SEASONING>을 <만들:CV_ACT>어주세요.
+3. 달군 팬에 <기름:CV_SEASONING>을 <두르:CV_ACT>고 <대파:CV_INGREDIENT>를 <1분:TI_DURATION> 정도 <볶:CV_ACT>다가 <스팸:CV_INGREDIENT>을 <넣:CV_ACT>어 <볶:CV_ACT>아주세요.
+4. 팬 한쪽에 <달걀물:CV_SEASONING>을 <넣:CV_ACT>어 부드럽게 <스크램블드에그:CV_INGREDIENT>를 <만들:CV_ACT>어주세요.
+5. <밥:CV_INGREDIENT>과 양념재료를 <넣:CV_ACT>어 고루 <섞어가:CV_ACT>며 <볶:CV_ACT>아주세요.
+6. 그릇에 담고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 맛있게 즐겨주세요.

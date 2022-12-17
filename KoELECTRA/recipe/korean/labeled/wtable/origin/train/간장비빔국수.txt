@@ -1,0 +1,7 @@
+1. <오이:CV_INGREDIENT>는 가늘게 채를 <썰:CV_ACT>어 약간의 <소금:CV_SEASONING>을 <뿌려:CV_ACT> <절인:CV_ACT> 후 물기를 <빼:CV_ACT>주세요. <청고추:CV_INGREDIENT>는 링으로 <썰:CV_ACT>고, <어린잎채소:CV_INGREDIENT>는 찬물에 <담갔:CV_ACT>다가 물기를 <빼:CV_ACT>주세요.
+2. <쇠고기:CV_INGREDIENT>는 키친타월에 올려 핏물을 <뺀:CV_ACT> 후 <고기양념:CV_SEASONING>에 <재워:CV_ACT>주세요. 볼에 국수 양념재료를 모두 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+3. 달군 팬에 약간의 <기름:CV_SEASONING>을 <두르:CV_ACT>고 <쇠고기:CV_INGREDIENT>를 <볶:CV_ACT>아주세요.
+4. 끓는물에 <소면:CV_INGREDIENT>을 펼쳐 <넣:CV_ACT>은 후 젓가락으로 면끼리 달라붙지 않도록 <저어:CV_ACT>주고, 물이 <끓:CV_ACT>어오르면 <찬물:CV_SEASONING> <반 컵:QT_VOLUME>을 2~3회 반복해서 <부어:CV_ACT> <국수:CV_INGREDIENT>를 <삶:CV_ACT>아주세요. 흐르는 찬물에 <소면:CV_INGREDIENT>을 여러 번 <씻:CV_ACT>어 전분기를 없애고 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요. 
+5. 볼에 <삶은:CV_STATE> <국수:CV_INGREDIENT>와 국수양념재료, <볶은:CV_STATE> <쇠고기:CV_INGREDIENT>를 <넣:CV_ACT>고 골고루 <섞:CV_ACT>어주세요.
+6. 그릇에 <간장비빔국수:CV_INGREDIENT>를 <담:CV_ACT>고 <오이채:CV_INGREDIENT>, <청고추:CV_INGREDIENT>, <어린잎새싹:CV_INGREDIENT>을 순서에 맞게 먹음직스럽게 <올려담:CV_ACT>아 주세요.
+7. <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 마무리하고, 맛있게 즐겨주세요.

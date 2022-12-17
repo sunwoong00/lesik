@@ -1,0 +1,7 @@
+1. <두릅:CV_INGREDIENT>은 짧고 통통한 것을 골라 밑동을 <잘라:CV_ACT> <손질해:CV_ACT>주세요. 너무 큰것은 반으로 <자르:CV_ACT>고 굵은 부분에 칼집을 <넣:CV_ACT>어주세요.
+2. 끓는 물에 <소금:CV_SEASONING>을 <넣:CV_ACT>어 <30초:TI_DURATION> 정도 <데친:CV_ACT> 후 찬물에 <담가:CV_ACT>주세요.
+(<두릅:CV_INGREDIENT>은 아린맛이 날 수 있기 때문에 한번 <데쳐:CV_ACT>서 먹는 것이 좋고, 데친 후 속까지 완전히 식혀야 색이 변하지 않아요.)
+3. <새송이버섯:CV_INGREDIENT>은 밑동을 <자르:CV_ACT>고 이등분 한 후 <두릅:CV_INGREDIENT>과 비슷한 두께로 <잘라:CV_ACT>주세요.
+4. 꼬치에 <두릅:CV_INGREDIENT>과 <새송이버섯:CV_INGREDIENT>을 번갈아 <끼우:CV_ACT>고 <부침가루:CV_SEASONING> - <달걀물:CV_SEASONING>을 <묻혀:CV_ACT>주세요.
+5. 달군팬에 <식용유:CV_SEASONING>를 넉넉히 <두른:CV_ACT> 후 <중약불:QT_TEMPERATURE>에서 앞뒤로 노릇하게 <부쳐:CV_ACT>주세요.
+6. <꼬치:CV_INGREDIENT>를 <뺀:CV_ACT> 후 적당한 크기로 <자르:CV_ACT>고, 초간장재료를 모두 <섞:CV_ACT>어 <초간장:CV_SEASONING>을 <곁들여:CV_ACT> 맛있게 즐겨주세요.

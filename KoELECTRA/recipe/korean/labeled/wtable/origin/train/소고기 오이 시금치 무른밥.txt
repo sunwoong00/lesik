@@ -1,0 +1,10 @@
+1. <소고기:CV_INGREDIENT>는 미리 찬물에 <담가:CV_ACT> <20분~1시간:TI_DURATION> 정도 핏물을 <빼:CV_ACT>주세요.
+2. <식초:CV_SEASONING>나 <베이킹소다 푼:CV_STATE> <물:CV_SEASONING>에 <시금치:CV_INGREDIENT>를 <담:CV_ACT>아 살균한 후 흐르는 물에 <씻:CV_ACT>어주세요.
+3. <오이:CV_INGREDIENT>는 <굵은:CV_STATE> <소금:CV_SEASONING>으로 문질러 <씻:CV_ACT>어 흐르는 물에 <씻:CV_ACT>고, 껍질을 <벗:CV_ACT>긴 다음 씨를 도려내고 잘게 <다져:CV_ACT>주세요.
+
+*Tip. <오이:CV_INGREDIENT>는 알레르기 유발 위험이 높은 채소라서, 처음 사용하기 시작할 때는 조심해서 사용해야 합니다. 알레르기를 일으킬 수 있는 껍질은 깎고 씨는 도려내서 먹이세요.
+4. 냄비에 <물:CV_SEASONING>을 <담:CV_ACT>고 <소고기:CV_INGREDIENT>를 <넣:CV_ACT>어 <강한 불:QT_TEMPERATURE>로 <끓여:CV_ACT>요. 끓어오르면 <약한 불:QT_TEMPERATURE>로 <줄여:CV_ACT> <시금치:CV_INGREDIENT>를 <넣:CV_ACT>어 <데친:CV_ACT>다. 
+
+*Tip. 기름은 걷어내면서 끓여요. <시금치:CV_INGREDIENT>는 <1분:TI_DURATION>이면 충분해요. <고기 삶은:CV_STATE> <물:CV_SEASONING>은 <육수:CV_SEASONING>로 쓰면 좋아요.
+5. 잘 <데친:CV_STATE> <시금치:CV_INGREDIENT>는 잎만 <잘라:CV_ACT> 잘게 <다지:CV_ACT>고, <삶은:CV_STATE> <소고기:CV_INGREDIENT>도 잘게 <다져:CV_ACT>요.
+6. 냄비에 <불린:CV_STATE> <쌀:CV_INGREDIENT>과 <채소:CV_INGREDIENT>, 그리고 <소고기 삶은:CV_STATE> <물:CV_INGREDIENT>을 <넣:CV_ACT>고 <강한 불:QT_TEMPERATURE>로 <끓여:CV_ACT>요. <저어:CV_ACT>주다 끓기 시작하면 <약한 불:QT_TEMPERATURE>로 <줄여:CV_ACT> 농도가 적당해질 때까지 <끓이:CV_ACT>고, 4회분으로 <나눠:CV_ACT> 용기에 <담:CV_ACT>아주세요.

@@ -1,0 +1,6 @@
+1. 1. <능이버섯:CV_INGREDIENT>은 <30분:TI_DURATION>간 물에 불린 후 채 썰고, <무:CV_INGREDIENT>는 1.5~ 2cm 크기로 깍둑썰기 해주세요.
+2. 2. 냄비에 <들기름:CV_SEASONING>을 두르고 <무:CV_INGREDIENT>를 넣어 볶아주세요.
+3. 3. <무:CV_INGREDIENT>를 볶다가 채 썰어놓은 <능이버섯:CV_INGREDIENT>도 함께 넣고 볶아주세요.
+4. 4. <능이버섯 불린:CV_STATE> <물:CV_SEASONING> <5컵:QT_VOLUME>을 붓고 끓이다가 <국간장:CV_SEASONING> <2큰술:QT_VOLUME>을 넣고 간을 맞춘 뒤 한번 더 끓여주세요.
+5. 5. <능이버섯:CV_INGREDIENT>의 향을 음미하며 즐겨주세요.
+*Tip. 능이버섯은 밑 부분에 흙이 많기 때문에 세척을 깨끗하게 한다.

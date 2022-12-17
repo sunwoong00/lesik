@@ -1,0 +1,7 @@
+1. <닭 다리 살:CV_INGREDIENT>은 한 입 크기로 썰어준 후 밑간 재료에 <10분:TI_DURATION>간 재워주세요.
+2. <양파:CV_INGREDIENT>는 굵게 채 썰고 <대파:CV_INGREDIENT>는 어슷하게 썰어주세요. <꽈리고추:CV_INGREDIENT>는 어슷하게 반으로 썰어주세요.
+3. 볼에 <밑간한:CV_STATE> <닭고기:CV_INGREDIENT>와 소스 재료를 넣고 섞어주세요.
+4. 내열 용기에 <손질한:CV_STATE> <채소:CV_INGREDIENT>와 <닭고기:CV_INGREDIENT>를 넣어주세요.
+5. 법랑 접시에 내열 용기를 올려 1단에 넣고 광파오븐 수동요리 오븐에서 <200도:QT_TEMPERATURE> <30분:TI_DURATION>으로 설정 후 시작해주세요. 20분이 지났을 때 <닭고기:CV_INGREDIENT>를 뒤집고 계속 조리해주세요.
+(tip. "오븐에 전송" 버튼으로 조리하면 닭고기를 뒤집어야 할 시간에 멜로디가 울려요. 멜로디가 울리면 오븐을 열어 <5분:TI_DURATION> 내로 <닭고기:CV_INGREDIENT>를 뒤집은 후 시작버튼을 누르면 연속 조리됩니다.)
+6. 그릇에 <밥:CV_INGREDIENT>을 담고 <닭고기:CV_INGREDIENT>와 <채소:CV_INGREDIENT>를 올린 후 <통깨:CV_SEASONING>를 뿌려 완성해 주세요.

@@ -1,0 +1,6 @@
+1. <돼지갈비:CV_INGREDIENT>는 뼈에 붙어있는 살을 저며 넓게 <펴:CV_ACT>고 살부분에 칼집을 <넣:CV_ACT>어주세요.
+2. 믹서기에 양념재료의 <양파:CV_INGREDIENT>, <배:CV_INGREDIENT>, <마늘:CV_INGREDIENT>, <대파:CV_INGREDIENT>(흰부분), <물:CV_SEASONING>을 <넣:CV_ACT>어 <갈:CV_ACT>고 볼에 나머지 양념 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어 <양념장:CV_SEASONING>을 <만들:CV_ACT>어주세요.
+3. <손질한:CV_STATE> <돼지갈비:CV_INGREDIENT>에 <양념장:CV_SEASONING>을 <넣:CV_ACT>고 냉장고에 <넣:CV_ACT>어 <2시간:TI_DURATION>이상 <재워:CV_ACT>주세요.
+(냉장고에 넣고 <하루:TI_DURATION> 정도 <숙성시키:CV_ACT>면 양념도 잘 배고 <고기:CV_INGREDIENT>도 더 연해진답니다.)
+4. 달군 팬에 <돼지갈비:CV_INGREDIENT>를 <얹:CV_ACT>고 앞뒤로 노릇하게 <구워:CV_ACT>주세요.
+5. 접시에 <구워낸:CV_STATE> <돼지갈비:CV_INGREDIENT>를 한입 크기로 <썰:CV_ACT>어 <담:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.

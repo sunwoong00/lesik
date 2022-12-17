@@ -1,0 +1,6 @@
+1. 1. <미나리 줄기:CV_INGREDIENT>는 깨끗이 손질하여 1cm 길이로 썰고, <두부:CV_INGREDIENT>는 으깨어 물기를 제거해 주세요. <새우살:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>, <풋고추:CV_INGREDIENT>는 잘게 다져서 준비해 주세요.
+2. 2. 순서1의 재료들을 모두 골고루 섞어, <소금:CV_SEASONING>간을 해주세요.
+3. 3. 분량의 재료들을 섞어 <초간장 소스:CV_SEASONING>를 만들어주세요.
+4. 4. 달군 팬에 <포도씨유:CV_SEASONING>를 두르고 순서2의 섞은 재료와 <초간장 소스:CV_SEASONING>를 넣어 노르스름하게 볶아주세요.
+5. 5. 그릇에 담아내면 완성입니다.
+*Tip. <두부:CV_INGREDIENT>를 너무 꽉 짜면 볶은 후 퍼석한 맛이 나기 쉬우므로 물기를 약간 남기고 짜주세요. <초간장 소스:CV_SEASONING>에 <밥:CV_INGREDIENT>과 <두부:CV_INGREDIENT> <미나리 볶음:CV_INGREDIENT>을 곁들이면 새콤하게 즐길수 있답니다.

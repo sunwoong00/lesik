@@ -1,0 +1,8 @@
+1. 냄비에 <참가자미:CV_INGREDIENT>, <생수:CV_SEASONING>, <맛술:CV_SEASONING>을 <넣:CV_ACT>고 <강불:QT_TEMPERATURE>에서 <끓이:CV_ACT>다가 <육수:CV_SEASONING>가 끓으면 <중약불:QT_TEMPERATURE>로 <줄여:CV_ACT> <30분:TI_DURATION> <끓여:CV_ACT>주세요.
+
+*Tip. <육수:CV_SEASONING>는 버리지 마세요!
+2. 오목한 팬에 <미역:CV_INGREDIENT>과 <다진:CV_STATE> <마늘:CV_INGREDIENT>, <다진:CV_STATE> <생강:CV_INGREDIENT>, <들깨가루:CV_SEASONING>, <들기름:CV_SEASONING>과 <국간장:CV_SEASONING>을 <넣:CV_ACT>고 <중불:QT_TEMPERATURE>에서 <4분:TI_DURATION>간 <볶:CV_ACT>아주세요.
+
+3. 순서 1에 살만 발라낸 <가자미:CV_INGREDIENT>와 순서 2를 <넣:CV_ACT>고 <중약불:QT_TEMPERATURE>에서 <10분:TI_DURATION> 더 <끓여:CV_ACT>주세요. 부족한 간은 <소금:CV_SEASONING>으로 <맞춰:CV_ACT>주세요.
+
+4. <따끈한:CV_STATE> <참가자미미역국:CV_INGREDIENT>을 <밥:CV_INGREDIENT>과 함께 맛있게 즐겨보세요.

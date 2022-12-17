@@ -1,0 +1,4 @@
+1. <단호박:CV_INGREDIENT>은 껍질을 벗기고 찜통에 찐 다음 체에 내리고 <잣:CV_INGREDIENT>과 <호두:CV_INGREDIENT>는 프라이팬에 볶아서 잘게 다져놔 주세요.
+2. 깊이가 있는 냄비에 <물:CV_SEASONING>과 <호박:CV_INGREDIENT>, <한천:CV_INGREDIENT>, <설탕:CV_SEASONING>을 넣고 <약한 불:QT_TEMPERATURE>에서 나무주걱으로 저어가며 잘 섞어주세요.
+3. <30분:TI_DURATION> 정도 지나 어느 정도 졸여지면 <꿀:CV_SEASONING>과 <잣:CV_INGREDIENT>, <호두:CV_INGREDIENT>를 넣어 마무리하고 넓은 틀에 넣어 굳히면 완성이예요.
+*Tip. 한천이 냄비에 붙으면 덩어리져 버릴 수 있으니 잘 섞은 다음 끓여 주세요!

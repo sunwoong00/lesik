@@ -1,0 +1,11 @@
+1. 5cm 두께의 <삼겹살:CV_INGREDIENT> 덩어리를 약 10cm 길이로 등분해 주세요.
+2. "법랑 접시에 석쇠를 놓고 <삼겹살:CV_INGREDIENT>을 올린 후 1단에 넣어주세요. 광파오븐 자동 요리 스팀에서 전통 수육 1.0kg을 선택한 후 가열해 주세요. 
+ * 광파오븐 스팀 물통에 물을 채우고 시작해주세요."
+(tip. "오븐에 전송"버튼을 누르면 간단하게 설정할 수 있어요)
+3. <오이:CV_INGREDIENT>는 4센치 길이로 잘라 돌려 깎은 후 채 썰고, <파프리카:CV_INGREDIENT>는 4센치 길이로 채 썰어주세요. <홍고추:CV_INGREDIENT>와 <양파:CV_INGREDIENT>는 얇게 채 썰고 찬물에 담갔다가 매운맛을 빼고 물기를 제거해 주세요.
+4. 볼에 간장소스, 겨자소스 재료를 각각 섞어 준비해 주세요.
+5. 완성된 <수육:CV_INGREDIENT>을 구이 전용 팬에 올린 후 <간장소스:CV_SEASONING>를 발라주세요.
+6. 구이 전용 팬을 4단에 넣고 광파오븐 수동 요리 구이에서 <12분:TI_DURATION>간 구워주세요. <8분:TI_DURATION>이 지났을 때 <삼겹살:CV_INGREDIENT>을 뒤집어 <간장소스:CV_SEASONING>를 바르고 계속 조리해 주세요.
+7. <구워낸:CV_STATE> <삼겹살:CV_INGREDIENT>을 0.5센치 두께로 가운데 칼집을 넣은 모양으로 잘라주세요.
+8. <채 썰어둔:CV_STATE> <채소:CV_INGREDIENT>는 <겨자소스:CV_SEASONING>에 가볍게 버무려 <돼지고기:CV_INGREDIENT>의 칼집을 넣은 사이에 먹기 좋게 채워주세요.
+9. 접시에 <겨자채:CV_INGREDIENT> <보쌈:CV_INGREDIENT>을 담고, <통깨:CV_SEASONING>를 뿌리고 <겨자소스:CV_SEASONING>를 곁들여주세요.

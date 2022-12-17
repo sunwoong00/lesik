@@ -1,0 +1,12 @@
+1. <무:CV_INGREDIENT>와 <애호박:CV_INGREDIENT>은 1cm 두께로 <슬라이스한:CV_ACT> 뒤 <무:CV_INGREDIENT>는 4등분하고 <애호박:CV_INGREDIENT>은 2등분 해주세요.
+2. <청양고추:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>, <대파:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+3. <두부:CV_INGREDIENT>는 5cm 정도 크기로 네모나게 <자르:CV_ACT>고 <양파:CV_INGREDIENT>, <표고버섯:CV_INGREDIENT>은 1cm 크기로 <채썰:CV_ACT>어주세요.
+
+*Tip. <표고버섯:CV_INGREDIENT>을 넣으면 국물 맛이 더 진하고 감칠맛이 난답니다!
+4. 냄비에 <대패삼겹살:CV_INGREDIENT>을 <넣:CV_ACT>고 <약중불:QT_TEMPERATURE>에서 <2분:TI_DURATION> 정도 <볶:CV_ACT>아주세요.
+5. <무:CV_INGREDIENT>를 <넣:CV_ACT>어 <볶:CV_ACT>다가 무가 투명해지면 <쌀뜨물:CV_SEASONING>을 <넣:CV_ACT>고 <센불:QT_TEMPERATURE>에서 <3분:TI_DURATION> 정도 <끓여:CV_ACT>주세요.
+
+*Tip. <멸치:CV_INGREDIENT>, <다시마:CV_SEASONING>를 <넣:CV_ACT>어 국물을 내도 좋지만 <쌀뜨물:CV_SEASONING>을 사용하면 더 구수하면서 담백해요.
+6. 팔팔 끓으면 <국간장:CV_SEASONING>, <마늘:CV_INGREDIENT>, <고추장:CV_SEASONING>, <된장:CV_SEASONING>, <고춧가루:CV_SEASONING>를 <넣:CV_ACT>고 한소끔 <끓여:CV_ACT>주세요. 거품이 생기면 <걷어내:CV_ACT>주세요.
+7. <애호박:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>, <대파:CV_INGREDIENT>, <두부:CV_INGREDIENT>, <양파:CV_INGREDIENT>, <표고버섯:CV_INGREDIENT>을 <넣:CV_ACT>고 <2분:TI_DURATION> 정도 더 <끓여:CV_ACT>주세요.
+8. 그릇에 덜어 맛있게 즐겨보세요!

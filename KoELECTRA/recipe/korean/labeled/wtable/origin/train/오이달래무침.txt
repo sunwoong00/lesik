@@ -1,0 +1,4 @@
+1. <달래:CV_INGREDIENT>는 뿌리 안쪽의 불순물과 지저분한 겉껍질을 <떼어내:CV_ACT>고, 깨끗이 <씻:CV_ACT>어 먹기 좋은 길이로 <잘라:CV_ACT>주세요.
+2. <오이:CV_INGREDIENT>는 <굵은:CV_STATE> <소금:CV_SEASONING>에 <비벼:CV_ACT> <씻:CV_ACT>은 후 길게 <4등분하:CV_ACT>고, 씨부분을 <제거해:CV_ACT> 어슷하게 일정한 두께로 <썰:CV_ACT>어주세요. 
+3. 볼에 <오이:CV_INGREDIENT>와 양념재료를 <넣:CV_ACT>고 <무친:CV_ACT> 후 <달래:CV_INGREDIENT>를 <넣:CV_ACT>어 가볍게 <섞:CV_ACT>어주세요.
+4. 접시에 <오이달래무침:CV_INGREDIENT>을 <담:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.

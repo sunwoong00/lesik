@@ -1,0 +1,13 @@
+1. 냄비에 <물:CV_SEASONING>과 깨끗이 <씻:CV_ACT>어 손질한  육수 재료를 <넣:CV_ACT>고 <끓:CV_ACT>이다가 물이 <끓:CV_ACT>어오르면 <다시마:CV_SEASONING>를 <건져:CV_ACT>내고 <15분:TI_DURATION> 정도 <끓:CV_ACT>이다가 불을 <끈:CV_ACT> 후 <가다랑어포:CV_SEASONING>를 <넣:CV_ACT>고 <5분:TI_DURATION> 정도 <우린:CV_ACT> 후 체에 <걸러:CV_ACT> <가다랑어 육수:CV_SEASONING>를 <만들:CV_ACT>어주세요.
+(tip. <사과:CV_INGREDIENT>는 씨를 <제거한:CV_ACT> 후 사용해주세요.)
+2. <홍고추:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>는 먹기 좋게 <썰:CV_ACT>고 <마늘:CV_INGREDIENT>은 편으로 <썰:CV_ACT>어주세요. <레몬:CV_INGREDIENT>은 깨끗이 씻어 링으로 <슬라이스 해:CV_ACT> 주세요.
+3. 냄비에 <가다랑어 육수:CV_SEASONING> <6컵:QT_VOLUME>과 간장양념 재료를 <넣:CV_ACT>고 <끓:CV_ACT>인 후 <식혀:CV_ACT>주세요.
+(tip. 국물이 팔팔 <끓:CV_ACT>으면 불을 <꺼:CV_ACT> 주세요.)
+4. <꽃게:CV_INGREDIENT>는 조리용 솔로 <비벼:CV_ACT> 깨끗이 <씻:CV_ACT>은 후 물기를 <제거하:CV_ACT>고 보관 용기에 <꽃게:CV_INGREDIENT>의 배가 위로 오도록 <담:CV_ACT>아주세요.
+(tip. 봄에는 알이 꽉 찬 <암게:CV_INGREDIENT>를 <사용하:CV_ACT>고 가을에는 살이 통통하게 오른 <수게:CV_INGREDIENT>를 사용해서 만드시는 것이 좋고 살아있는 <게:CV_INGREDIENT>는 냉동실에 <2시간:TI_DURATION> 정도 <넣:CV_ACT>었다가 <손질하:CV_ACT>시면 <게:CV_INGREDIENT>의 살이 물러지지 않아요.)
+5. 보관 용기에 <마늘:CV_INGREDIENT>과 <레몬:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>를 <넣:CV_ACT>은 후 <차게 식은:CV_STATE> <간장양념 물:CV_SEASONING>을 <부어:CV_ACT>주세요.
+(tip. <꽃게:CV_INGREDIENT>가 <간장 물:CV_SEASONING>에 잠기도록 <눌러:CV_ACT> 뚜껑을 <닫:CV_ACT>아주세요.)
+6. 냉장고에 <넣:CV_ACT>어 <하루:TI_DURATION> <숙성:CV_ACT> 후 <국물:CV_SEASONING>만 <따라내:CV_ACT>어 <끓:CV_ACT>이고 <식혀:CV_ACT> 다시 <꽃게:CV_INGREDIENT>에 <붓:CV_ACT>고 <하루에서 이틀:TI_DURATION> 정도 냉장고 <넣:CV_ACT>어 <숙성해:CV_ACT> 주세요.
+(tip. 간장게장을 오래 두고 먹으려면 <꽃게:CV_INGREDIENT>와 <간장 물:CV_SEASONING>을 따로 <나눠:CV_ACT> 냉동고에 <넣:CV_ACT>어 <보관해:CV_ACT> 주세요.)
+7. 맛있게 즐겨주세요.
+

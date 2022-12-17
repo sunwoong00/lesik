@@ -1,0 +1,10 @@
+1. <닭가슴살:CV_INGREDIENT>, <새우살:CV_INGREDIENT>은 한 입 크기로 <썰:CV_ACT>고, <부추:CV_INGREDIENT>, <대파:CV_INGREDIENT>, <청·홍고추:CV_INGREDIENT>는 작게 <썰:CV_ACT>어 준비해 주세요.
+2. <닭가슴살:CV_INGREDIENT>과 <새우살:CV_INGREDIENT>은 블렌더나 핸드믹서로 곱게 <갈:CV_ACT>아주세요.
+3. 2에 <부추:CV_INGREDIENT>, <대파:CV_INGREDIENT>, <마늘:CV_INGREDIENT>, <청·홍고추:CV_INGREDIENT>, <간장:CV_SEASONING>을 <넣:CV_ACT>고 골고루 <섞:CV_ACT>어 <반죽해:CV_ACT> 주세요.
+4. <깻잎:CV_INGREDIENT>의 양쪽 면에 <밀가루:CV_SEASONING>를 가볍게 <묻힌:CV_ACT> 뒤 <털:CV_ACT>어주시고, 3의 <반죽:CV_INGREDIENT>을 8개로 나누어서 <깻잎:CV_INGREDIENT> 사이에 <채워:CV_ACT> <넣:CV_ACT>어주세요. 
+5. <달걀:CV_INGREDIENT>에 <소금:CV_SEASONING>을 약간 <넣:CV_ACT>고 잘 <풀:CV_ACT>어준 뒤, <속을 채운:CV_STATE> <깻잎:CV_INGREDIENT>에 <달걀물:CV_SEASONING>을 골고루 <입혀:CV_ACT>주세요. 
+6. 달군 팬에 <포도씨유:CV_SEASONING>를 <두르:CV_ACT>고 <깻잎:CV_INGREDIENT>을 앞뒤로 <뒤집:CV_ACT>어가며 고르게 <익혀:CV_ACT>주세요. 속까지 잘 익혀야 하므로 <중불:QT_TEMPERATURE>로 <부쳐:CV_ACT>주세요.
+7. 완성된 <깻잎전:CV_INGREDIENT>을 접시에 예쁘게 <담:CV_ACT>아주세요.
+
+*Tip. <새우:CV_INGREDIENT>는 다져서 <넣:CV_ACT>기 전에 등쪽의 검은 실처럼 보이는 내장을 제거해주세요.
+전은 <기름:CV_SEASONING>을 넉넉히 <두르:CV_ACT>고 <부쳐:CV_ACT>야 풍미가 살아난답니다.

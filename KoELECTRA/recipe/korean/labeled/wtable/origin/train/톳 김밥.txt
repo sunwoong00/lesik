@@ -1,0 +1,5 @@
+1. <두부:CV_INGREDIENT>는 1cm 두께로 길게 <썰:CV_ACT>고 키친타월에 <올려:CV_ACT> 물기를 <제거해:CV_ACT> 주세요. 달군 팬에 <기름:CV_SEASONING>을 넉넉히 <둘러:CV_ACT> 노릇하게 <구워:CV_ACT>주세요.
+2. <오이:CV_INGREDIENT>는 채를 <썰:CV_ACT>어 <절임 물:CV_SEASONING>에 <10분:TI_DURATION>간 <절인:CV_ACT> 후 채반에서 물기를 <빼:CV_ACT>주세요. <당근:CV_INGREDIENT>은 채를 <썰:CV_ACT>어 주세요.
+3. 달군 팬에 <기름:CV_SEASONING>을 약간 <두르:CV_ACT>고 <당근:CV_INGREDIENT>을 <넣:CV_ACT>은 후 <소금:CV_SEASONING> 간을 해 <볶:CV_ACT>아주세요.
+4. <흑미밥:CV_INGREDIENT>에 <밥 양념:CV_SEASONING>을 <넣:CV_ACT>고 잘 <섞:CV_ACT>어주세요.
+5. <김:CV_INGREDIENT>에 <흑미밥:CV_INGREDIENT>을 얇게 <펼치:CV_ACT>고 <두부:CV_INGREDIENT>, <당근:CV_INGREDIENT>, <오이:CV_INGREDIENT>, <톳:CV_INGREDIENT>을 <넣:CV_ACT>어 <말:CV_ACT>아주세요. 완성된 <김밥:CV_INGREDIENT>에 <들기름:CV_SEASONING>을 <바른:CV_ACT> 후 먹기 좋게 <썰:CV_ACT>어 맛있게 즐겨주세요.

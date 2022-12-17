@@ -1,0 +1,6 @@
+1. <새송이버섯:CV_INGREDIENT>과 <적양파:CV_INGREDIENT>, <파프리카:CV_INGREDIENT> (빨간색, 노란색)는 한입 크기로 잘라주세요.
+2. <새송이버섯:CV_INGREDIENT>에 밑간 재료를 넣고 버무려주세요.
+3. 볼에 물반죽 재료를 넣고 섞어주세요. <밑간한:CV_STATE> <새송이버섯:CV_INGREDIENT>에 <전분:CV_SEASONING> <4큰술:QT_VOLUME>을 넣어 가볍게 섞어주세요.
+4. <물반죽:CV_SEASONING>에 담가 튀김옷을 입힌 후 <160도로:QT_TEMPERATURE> 달군 <기름:CV_SEASONING>에 바삭하게 튀겨주세요.
+5. 팬에 소스양념을 넣은 후 바글바글 끓어오르면 <적양파:CV_INGREDIENT>와 <파프리카:CV_INGREDIENT>를 넣어 <1분:TI_DURATION>정도 끓여주세요. <전분물:CV_SEASONING>을 넣고 골고루 저어 농도가 걸쭉해지면 불을 꺼주세요.
+6. 접시에 <튀긴:CV_STATE> <새송이버섯:CV_INGREDIENT>을 담고 <소스:CV_SEASONING>를 부어 맛있게 즐겨주세요.

@@ -1,0 +1,7 @@
+1. <양파:CV_INGREDIENT>와 <대파:CV_INGREDIENT>, <무:CV_INGREDIENT>를 큼직하게 <썰:CV_ACT>어 주세요.
+(tip. <양파:CV_INGREDIENT>와 <마늘:CV_INGREDIENT>은 흙이 묻은 겉껍질은 <벗기:CV_ACT>고, 속껍질은 사용해 주세요)
+2. 채소에 <물:CV_SEASONING> <2L:QT_VOLUME>를 <부어:CV_ACT> <강불:QT_TEMPERATURE>로 <끓:CV_ACT>이다가 <중불:QT_TEMPERATURE>로 <줄여:CV_ACT> <30분간:TI_DURATION> <끓여:CV_ACT> 주세요.
+(tip. 물양이 절반쯤 줄어들 때까지 푹 <끓여:CV_ACT> 주세요)
+3. 충분히 우러나온 <채소:CV_INGREDIENT>는 채반에 <걸러:CV_ACT>주세요. 
+(tip. 한 김 식힌 후 밀폐 용기에 <담:CV_ACT>아 냉장 또는 냉동 보관하여 사용하면 편리해요. 
+냉장은 <일주일:TI_DURATION> 내로 사용해 주세요. 냉동은 <3개월:TI_DURATION> 이내로 사용하는 것이 좋아요)

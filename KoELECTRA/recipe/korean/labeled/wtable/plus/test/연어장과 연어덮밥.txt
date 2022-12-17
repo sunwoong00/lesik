@@ -1,0 +1,8 @@
+1. 간장물 재료의 <야채:CV_INGREDIENT>들을 큼직하게 썰어 <가츠오부시:CV_SEASONING>를 제외한 간장물 재료들과 냄비에 넣고, 끓으면 <약한불:QT_TEMPERATURE>로 줄여 <15분:TI_DURATION> 정도 더 끓인 후 <가츠오부시:CV_SEASONING>를 넣고 불을 꺼주세요. <2분:TI_DURATION> 후에 체로 건더기를 걸러내고 식혀주세요.
+2. <양파:CV_INGREDIENT>는 굵게 채썰고, <홍고추:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>는 송송 썰어주세요. <레몬:CV_INGREDIENT>은 반달링으로 썰어주세요.
+3. <연어:CV_INGREDIENT>는 <맛술:CV_SEASONING> <1큰술:QT_VOLUME>을 뿌린 후 키친타월로 물기를 닦고, 먹기 좋은 두께로 썰어주세요.
+4. 밀폐용기에 <연어:CV_INGREDIENT>를 담은 후 <손질한:CV_STATE> <야채:CV_INGREDIENT>를 올리고, 식혀 놓은 <간장물:CV_SEASONING>을 부어주세요.
+5. <연어장:CV_INGREDIENT>을 냉장고에 넣어 <5시간:TI_DURATION> 정도 숙성시켜주세요.
+(냉장보관해서 <이틀:TI_DURATION> 정도 안에 드시는 것이 맛있답니다)
+6. <연어 덮밥:CV_INGREDIENT>으로 드실 경우, <무순:CV_INGREDIENT>은 끝 부분을 자른 후 깨끗이 씻어 준비하고 <양파:CV_INGREDIENT>는 곱게 채썰어 찬물에 <5분:TI_DURATION> 정도 담갔다가 물기를 제거해주세요.
+7. 그릇에 <밥:CV_INGREDIENT>을 봉긋하게 담고 <연어장:CV_INGREDIENT>을 돌려 담은 후 <무순:CV_INGREDIENT>과 <양파채:CV_INGREDIENT>, <와사비:CV_SEASONING>를 올려주세요.

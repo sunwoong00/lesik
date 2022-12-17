@@ -1,0 +1,6 @@
+1. <배:CV_INGREDIENT>는 껍질을 벗기고 0.5cm x 3cm로 잘라 주세요.
+2. <새우:CV_INGREDIENT>는 끓는 소금물에 가볍게 삶아 껍질을 벗기고 1cm 크기로 자르고, <완두콩:CV_INGREDIENT>은 삶아서 겉껍질과 속껍질을 벗겨 알맹이만 골라놔 주세요.
+3. <순두부:CV_INGREDIENT>는 무거운 그릇이나 돌을 얹어 <2시간:TI_DURATION> 정도 물기를 빼놓아 주세요.
+4. 순서 4에 분량의 소스 재료를 넣고 잘 섞어 소스를 완성한 뒤, 만들어진 <소스:CV_SEASONING> <1큰술:QT_VOLUME>로 <배:CV_INGREDIENT>와 <새우:CV_INGREDIENT>를 버무려 주세요.
+5. <완두콩:CV_INGREDIENT>을 올려 마무리하면 완성이예요.
+Tip. 두부의 물기는 더 이상 물이 나오지 않을 정도로 충분히 빼주어야 배합이 맞아요.

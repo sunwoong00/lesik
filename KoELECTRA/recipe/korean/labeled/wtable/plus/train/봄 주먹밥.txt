@@ -1,0 +1,6 @@
+1. 끓는 물에 <소금:CV_SEASONING> <1큰술:QT_VOLUME>을 넣고 <곰취:CV_INGREDIENT>, <케일:CV_INGREDIENT>, <배춧잎:CV_INGREDIENT>을 데친 후 찬물에 담가주세요. 손으로 물기를 꽉 짜주세요.
+(tip. <곰취:CV_INGREDIENT>, <케일:CV_INGREDIENT>은 <10~15초:TI_DURATION> <배추잎:CV_INGREDIENT>은 <30초:TI_DURATION> 정도 데쳐주세요)
+2. 깨끗이 <씻은:CV_STATE> <우엉:CV_INGREDIENT>은 잘게 다져주세요. 달군 팬에 <기름:CV_SEASONING>을 약간 두르고 <우엉:CV_INGREDIENT>을 넣어 볶다가 조림장 재료를 넣어 <중불:QT_TEMPERATURE>에서 <5분:TI_DURATION> 정도 졸여주세요. 
+3. <곰취:CV_INGREDIENT>, <케일:CV_INGREDIENT>은 줄기를 자르고 펼쳐주세요. 줄기는 잘게 썰어 주세요.
+4. 볼에 <밥:CV_INGREDIENT>과 밥 양념 재료, <조린:CV_STATE> <우엉:CV_INGREDIENT>, <잘게 썬:CV_STATE> <줄기:CV_INGREDIENT>를 넣어 섞은 후 동그랗게 한입 크기로 뭉쳐주세요.
+5. <데친:CV_STATE> <잎:CV_INGREDIENT>에 <밥:CV_INGREDIENT>을 넣어 말아주세요. 접시에 담아 맛있게 즐겨주세요.

@@ -1,0 +1,9 @@
+1. <깻잎:CV_INGREDIENT>은 흐르는 물에 깨끗이 <씻:CV_ACT>어 체반에 <밭쳐:CV_ACT> 물기를 <뺀:CV_ACT> 후 꼭지를 적당한 길이로 <잘라:CV_ACT>주세요.
+(Tip. <깻잎:CV_INGREDIENT>은 꼭지 부분이 검게 변하지 않고, 뒷면의 보라색이 진할수록 신선한 깻잎이에요.)
+2. <대파:CV_INGREDIENT>는 잘게 <다지:CV_ACT>고, <쪽파:CV_INGREDIENT>는 4cm 길이로 <썰:CV_ACT>고, <양파:CV_INGREDIENT>, <당근:CV_INGREDIENT>은 채 <썰:CV_ACT>어주세요.
+3. 볼에 양념을 <섞:CV_ACT>고, <썰어 둔:CV_STATE> <야채:CV_INGREDIENT>를 <섞:CV_ACT>어주세요.
+4. <깻잎:CV_INGREDIENT>은 <두 장:QT_VOLUME>씩 <깔:CV_ACT>고 그 위에 <야채 양념장:CV_SEASONING>을 적당량씩 <올린:CV_ACT> 후, <깻잎:CV_INGREDIENT>을 <깔:CV_ACT>고 같은 과정을 반복해주세요.
+5. 적당한 크기의 통에 <담:CV_ACT>아 맨 위에는 <양념장:CV_SEASONING>을 넉넉하게 <올려:CV_ACT>주세요.
+(Tip. <반나절:TI_DURATION> 숙성 후 드시면 더욱 맛있어요.)
+
+6. 맛있게 즐겨주세요.

@@ -1,0 +1,7 @@
+1. <손질한:CV_STATE> <시금치:CV_INGREDIENT>, <보리새우:CV_INGREDIENT>, <다진마늘:CV_INGREDIENT>을 <준비해:CV_ACT> 주세요.
+2. 냄비에 <보리새우:CV_INGREDIENT>를 먼저 <넣:CV_ACT>고 <볶:CV_ACT>다가, 분량의 <물:CV_SEASONING>과 <된장:CV_SEASONING>, <국간장:CV_SEASONING>, <다진:CV_STATE> <마늘:CV_INGREDIENT>을 <넣:CV_ACT>고 <끓여:CV_ACT>주세요.
+3. 2가 끓어오르면 불을 <낮추:CV_ACT>어 은근하게 <5분:TI_DURATION> 정도 더 <끓인:CV_ACT> 후, <손질한:CV_STATE> <시금치:CV_INGREDIENT>를 <넣:CV_ACT>고 한소끔 더 <끓여:CV_ACT>주세요.
+4. 된장국 맛이 잘 우러날 때까지 <끓여:CV_ACT>주세요.
+
+*Tip. <보리새우:CV_INGREDIENT>는 마른 팬이나 냄비에 <볶:CV_ACT>은 후 사용해야 잡내가 줄고, 비린 맛 없이 <육수:CV_SEASONING>를 <낼:CV_ACT> 수 있어요.
+또한, 볶음요리에 활용하면 고소하고 바삭하게 즐길 수 있어요.

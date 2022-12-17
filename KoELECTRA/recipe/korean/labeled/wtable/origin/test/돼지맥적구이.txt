@@ -1,0 +1,9 @@
+1. <돼지고기 목살:CV_INGREDIENT>은 키친타올에 <올려:CV_ACT> 핏물을 <제거하:CV_ACT>고 칼등으로 <두드린:CV_ACT> 후 <고기:CV_INGREDIENT>에 된장소스를 골고루 <버무려:CV_ACT> <20분:TI_DURATION> 정도 <재워:CV_ACT>주세요.
+
+2. <당근:CV_INGREDIENT>과 <양파:CV_INGREDIENT>는 곱게 <채썰:CV_ACT>고, <양파:CV_INGREDIENT>는 찬물에 <담갔:CV_ACT>다가 물기를 <빼:CV_ACT>고 <영양부추:CV_INGREDIENT>는 5센치 길이로 <잘라:CV_ACT>주세요.
+
+3. 부추무침소스재료에 <영양부추:CV_INGREDIENT>와 <채썬:CV_STATE> <당근:CV_INGREDIENT>, <양파:CV_INGREDIENT>를 살살 <버무려:CV_ACT> 주세요.
+
+4. 달군 팬에 약간의 <기름:CV_SEASONING>을 <두르:CV_ACT>고 <돼지고기 목살:CV_INGREDIENT>을 <올리:CV_ACT>고 앞 뒤 겉면만 <익히:CV_ACT>고 불을 <중약불:QT_TEMPERATURE>로 <줄여:CV_ACT> 은근히 속까지 <익혀:CV_ACT>주세요.
+5. 접시에 <맥적구이:CV_INGREDIENT>를 <담:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 완성해주세요. <부추무침:CV_INGREDIENT>과 <곁들어:CV_ACT> 맛있게 즐겨주세요.
+

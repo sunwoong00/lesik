@@ -1,0 +1,6 @@
+1. 살짝 <구운:CV_STATE> <김:CV_INGREDIENT>은 굵게 <부수:CV_ACT>고, <대파:CV_INGREDIENT>는 송송 <썰:CV_ACT>어서 준비해 주세요.
+2. 냄비에 <물:CV_SEASONING> <4컵:QT_VOLUME>과 <건새우:CV_INGREDIENT>를 <넣:CV_ACT>고 <물:CV_SEASONING>이 끓어오르면 <김:CV_INGREDIENT>, <대파:CV_INGREDIENT>, <다진:CV_STATE><마늘:CV_INGREDIENT>, <진간장:CV_SEASONING>을 <넣:CV_ACT>어 <김:CV_INGREDIENT>이 풀어질 때까지 <끓:CV_ACT>여주세요.
+3. <소금:CV_SEASONING>으로 간을 <맞춘:CV_ACT> 후 불을 <끄:CV_ACT>고 <참기름:CV_SEASONING>을 약간 <넣:CV_ACT>어 완성해 주세요.
+
+*Tip. <김:CV_INGREDIENT>을 <구워:CV_ACT>서 <끓:CV_ACT>여야 더 고소하고 비릿한 맛도 줄어든답니다. 취향에 따라 <달걀:CV_INGREDIENT>을 <넣:CV_ACT>어서 별미로 즐길 수도 있고, <김:CV_INGREDIENT>의 향을 더욱 살리고 싶다면 <김:CV_INGREDIENT>을 요리 마지막에 <넣:CV_ACT>고 <끓:CV_ACT>여주시면 좋아요!
+

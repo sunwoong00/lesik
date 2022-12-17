@@ -1,0 +1,6 @@
+1. 돈가스용 <돼지고기 등심:CV_INGREDIENT>은 <소금:CV_SEASONING>, <후춧가루:CV_SEASONING>로 밑간해 주세요.
+2. <돼지고기:CV_INGREDIENT>에 <밀가루:CV_SEASONING>를 입힌 후 <달걀물:CV_SEASONING>을 입혀주세요.
+3. <다진:CV_STATE> <파슬리:CV_SEASONING>와 <우유:CV_SEASONING>를 넣어 <빵가루:CV_SEASONING>를 촉촉하게 만들어 주세요. <달걀물 입힌:CV_STATE> <등심:CV_INGREDIENT>은 <빵가루:CV_SEASONING>를 골고루 묻혀주세요.
+4. 구이 전용 팬에 <돈가스:CV_INGREDIENT>를 올린 후 표면에 <식용유:CV_SEASONING>를 골고루 발라 주세요.
+5. 구이 전용 팬을 4단에 넣고 광파오븐 자동 요리 에어프라이에서 <수제돈가스:CV_INGREDIENT>를 선택한 후 <0.3kg:QT_VOLUME>으로 설정하고 시작해 주세요. 도중에 멜로디가 울리면 <돈가스:CV_INGREDIENT>를 한번 뒤집고 계속 조리해 주세요.
+6. <튀겨진:CV_STATE> <돈가스:CV_INGREDIENT>를 먹기 좋게 썰어 접시에 담고 <소스:CV_SEASONING>를 곁들여 맛있게 즐겨주세요.

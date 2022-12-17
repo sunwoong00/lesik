@@ -1,0 +1,4 @@
+1. 종이 포일에 <호박:CV_INGREDIENT>, <껍질 강낭콩:CV_INGREDIENT> 각각의 재료를 싸서 <10분:TI_DURATION> 정도 찐 뒤 채반에 펼쳐 잔 열을 식혀주세요.
+*Tip. 처음에는 <강불:QT_TEMPERATURE>, 끓어오르기 시작하면 <약불:QT_TEMPERATURE>에서 쪄주세요.
+2. 물기를 빼고 <으깬:CV_STATE> <두부:CV_INGREDIENT>를 볼에 넣고, <조미료:CV_SEASONING>를 순서대로 넣어가며 잘 섞은 뒤 앞서 익힌 재료를 넣고 버무려주세요.
+3. 완성이에요. 건강한 한 끼를 맛있게 즐겨주세요.

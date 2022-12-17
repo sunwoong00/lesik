@@ -1,0 +1,7 @@
+1. <비엔나 소시지:CV_INGREDIENT>는 어슷하게 칼집을 넣은 후, 끓는 물에 넣어 칼집이 벌어질 때까지 살짝 데쳐주세요.
+2. <떡볶이떡:CV_INGREDIENT>이 단단할 경우 미지근한 물에 담그거나 살짝 데친 후 찬물에 담가 말랑말랑하게 준비해주세요.
+(<말랑한:CV_STATE> <떡:CV_INGREDIENT>은 물에 담그지 말고 바로 사용해주세요)
+3. 꼬치에 <떡볶이떡:CV_INGREDIENT>과 <비엔나소시지:CV_INGREDIENT>를 번갈아 가며 끼워주세요.
+4. 달군 팬에 <기름:CV_SEASONING>을 넉넉히 두르고 <소시지떡꼬치:CV_INGREDIENT>를 넣어 앞뒤로 노릇하게 구워 주세요.
+5. 접시에 <소시지떡꼬치:CV_INGREDIENT>를 담고 <소스:CV_SEASONING>를 뿌려주세요.
+(기호에 따라 <머스터드 소스:CV_SEASONING>를 함께 뿌려 드셔도 맛있답니다)

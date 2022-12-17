@@ -1,0 +1,4 @@
+1. <오이:CV_INGREDIENT>는 0.3센치 두께로 얇게 썰고, <적양파:CV_INGREDIENT>는 채썰어주세요. <실파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>는 송송 썰어주세요.
+2. <오이:CV_INGREDIENT>에 양념 재료를 버무려 밑간을 해주세요. 큰 볼에 <냉국물:CV_SEASONING> 재료를 섞어주세요.
+3. <냉국물에 밑간해 둔:CV_STATE> <오이:CV_INGREDIENT>, <적양파:CV_INGREDIENT>, <실파:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>, <얼음:CV_SEASONING>을 넣어주세요.
+4. 마지막에 <통깨:CV_SEASONING>를 뿌리고 취향에 따라 <참기름:CV_SEASONING>을 약간 넣어주세요.

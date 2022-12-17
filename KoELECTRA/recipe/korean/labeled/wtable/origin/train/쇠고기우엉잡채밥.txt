@@ -1,0 +1,11 @@
+1. <쇠고기:CV_INGREDIENT>는 종이타월에 <감싸:CV_ACT> 핏물을 <빼:CV_ACT>주세요.
+2. <양파:CV_INGREDIENT>는 곱게 <채 썰:CV_ACT>고, <우엉:CV_INGREDIENT>은 껍질째 깨끗이 <씻:CV_ACT>어 곱게 <채 썬:CV_ACT> 뒤 찬물에 <담가:CV_ACT> 쓰기 바로 전에 물기를 <빼:CV_ACT>주세요.
+3. <대파:CV_INGREDIENT>는 얇게 <어슷썰기하:CV_ACT>고, <붉은:CV_STATE> <고추:CV_INGREDIENT>는 세로로 반을 <갈라:CV_ACT> 씨를 <훑:CV_ACT>은 뒤 가로로 2등분해 곱게 <채 썰:CV_ACT>어주세요.
+4. 분량의 잡채밥 양념 재료를 모두 <섞:CV_ACT>어주세요.
+5. 팬에 <포도씨유:CV_SEASONING>를 <두르:CV_ACT>고 <우엉채:CV_INGREDIENT>를 <넣:CV_ACT>어 <볶:CV_ACT>아주세요.
+(이때 <물:CV_SEASONING>을 약간 <넣:CV_ACT>으면 부드럽게 잘 익힐 수 있어요.)
+6. <우엉:CV_INGREDIENT>이 반 이상 익으면 <쇠고기:CV_INGREDIENT>를 <넣:CV_ACT>어 살짝 <볶:CV_ACT>아주세요.
+그리고 <양파채:CV_INGREDIENT>와 <고추채:CV_INGREDIENT>를 <넣:CV_ACT>어 한번 더 가볍게 <볶:CV_ACT>아주세요.
+7. <쇠고기:CV_INGREDIENT>가 익으면 STEP4의 <양념:CV_SEASONING>을 <넣:CV_ACT>어주세요.
+8. 고루 섞어가며 <볶:CV_ACT>아 <양념:CV_SEASONING>이 줄어들면 불을 <끄:CV_ACT>고 <대파:CV_INGREDIENT>를 <넣:CV_ACT>어 가볍게 <섞:CV_ACT>어주세요.
+9. <잡채:CV_INGREDIENT>를 <밥:CV_INGREDIENT> 위에 <얹:CV_ACT>고 기호에 따라 <깨소금:CV_SEASONING>을 <뿌려:CV_ACT>주세요.

@@ -1,0 +1,9 @@
+1. <양배추 잎:CV_INGREDIENT>은 두꺼운 부분을 저며내고, <쌈미역:CV_INGREDIENT>과 함께 찜기에 올려서 쪄주세요.
+2. <쌈미역:CV_INGREDIENT>은 색깔이 변하면 바로 찜기에서 꺼내 깻잎과 비슷한 크기로 썰어주세요.
+<찐:CV_STATE> <양배추 잎:CV_INGREDIENT>도 깻잎과 비슷한 크기로 잘라주세요.
+3. <깻잎:CV_INGREDIENT>과 <상추:CV_INGREDIENT>는 흐르는 물에 씻어 물기를 털고 준비해주세요.
+4. 닭가슴살 쌈장 재료를 섞어주세요. (닭가슴살 제외)
+5. 팬에 <물:CV_SEASONING>을 살짝 두르고 <다진:CV_STATE> <닭가슴살:CV_INGREDIENT>을 고슬고슬하게 볶다가 STEP4를 넣어 고루 섞어가며 조려주세요.
+6. <현미밥:CV_INGREDIENT>에 양념 재료를 모두 넣어 가볍게 섞어주세요.
+7. STEP3의 쌈재료에 각각 <양념한:CV_STATE> <밥:CV_INGREDIENT>을 반 숟가락 정도씩 얹고, STEP5의 <닭가슴살 쌈장:CV_SEASONING>을 얹어 먹기 좋게 싸주세요.
+8. 완성된 요리를 그릇에 담아 마무리하세요.

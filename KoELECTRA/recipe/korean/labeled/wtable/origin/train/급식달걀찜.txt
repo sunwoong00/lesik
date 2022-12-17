@@ -1,0 +1,5 @@
+1. <당근:CV_INGREDIENT>과 <양파:CV_INGREDIENT>는 잘게 <다지:CV_ACT>고, <실파:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요.
+2. 볼에 <달걀:CV_INGREDIENT>을 젓가락으로 <풀:CV_ACT>어준 후 체에 <내려:CV_ACT>주세요. 양념 재료와 <다시마 물:CV_SEASONING>을 잘 <섞:CV_ACT>어 <달걀물:CV_SEASONING>을 <만든:CV_ACT> 후 <야채:CV_INGREDIENT>와 <섞:CV_ACT>어주세요.
+3. 넓은 사각 용기 바닥에 <식용유:CV_SEASONING>를 살짝 <바른:CV_ACT> 후 <달걀물:CV_SEASONING>을 <붓:CV_ACT>고 표면의 거품을 <제거한:CV_ACT> 후 랩을 <씌워:CV_ACT>주세요.
+4. 냄비에 용기가 잠기지 않을 정도로 <물:CV_SEASONING>을 <붓:CV_ACT>고 뚜껑을 덮어 <물:CV_SEASONING>이 끓으면 용기를 <넣:CV_ACT>어주세요. <중약불:QT_TEMPERATURE>로 <20~25분:TI_DURATION> 정도 <쪄:CV_ACT>주세요.
+5. 도마에 뒤집어서 <꺼낸:CV_ACT> 후 적당한 크기로 <잘라:CV_ACT>서 맛있게 즐겨주세요.

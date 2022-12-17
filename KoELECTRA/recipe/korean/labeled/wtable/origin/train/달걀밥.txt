@@ -1,0 +1,10 @@
+1. <대파:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요. <청,홍고추:CV_INGREDIENT>는 <다져:CV_ACT>주세요.
+2. 볼에 <달걀:CV_INGREDIENT>을 <풀:CV_ACT>어준 후 <물:CV_SEASONING>을 <넣:CV_ACT>고 <저어:CV_ACT>주세요. 
+3. <달걀물:CV_SEASONING>에 <밥:CV_INGREDIENT>과 <참치:CV_INGREDIENT>, <대파:CV_SEASONING>, <간장:CV_SEASONING>을 <넣:CV_ACT>고 <섞:CV_ACT>어주세요. 
+(<참치:CV_INGREDIENT>는 기름을 빼고 사용해 주세요)
+
+4. 전자레인지에 <5분간:TI_DURATION> <돌려:CV_ACT>주세요. 
+(전자레인지 전용 뚜껑을 사용해 주세요)
+
+5. <피자치즈:CV_INGREDIENT>와 <청, 홍고추:CV_INGREDIENT>를 <올린:CV_ACT> 후 <후추:CV_SEASONING>를 <뿌려:CV_ACT> <2분 30초:TI_DURATION>간 <돌려:CV_ACT>주세요. 
+6. 완성된 <달걀밥:CV_INGREDIENT>을 맛있게 즐겨주세요. 

@@ -1,0 +1,6 @@
+1. <무:CV_INGREDIENT>와 <어묵:CV_INGREDIENT>, <곤약:CV_INGREDIENT>은 먹기 좋은 크기로 잘라주세요. <어묵:CV_INGREDIENT>은 <뜨거운:CV_STATE> <물:CV_SEASONING>을 끼얹어 겉의 <기름:CV_SEASONING>을 제거하고, <곤약:CV_INGREDIENT>은 끓는 물에 살짝 데쳐주세요. <데친:CV_STATE> <곤약:CV_INGREDIENT>은 가운데 칼집을 내어 꼬아 놓고, <어묵:CV_INGREDIENT>은 먹기 좋게 꼬치에 꽂아주세요. 
+2. <마늘:CV_INGREDIENT>은 편으로 썰고, <대파:CV_INGREDIENT>는 반으로 가른 후 4센티 길이로 썰어주세요.
+3. 냄비에 <다시마물:CV_SEASONING> <4컵:QT_VOLUME>과 <무:CV_INGREDIENT>를 넣고 <10~15분:TI_DURATION> 정도 끓여주세요. 
+(<무:CV_INGREDIENT>의 두께에 따라 시간을 조절해주세요.)
+4. <끓인:CV_STATE> <국물:CV_SEASONING>에 국물 재료와 <마늘편:CV_INGREDIENT>, <대파:CV_INGREDIENT>, <건고추:CV_INGREDIENT>를 넣고 <3분:TI_DURATION> 정도 끓이다가 <어묵:CV_INGREDIENT>과 <곤약:CV_INGREDIENT>, <삶은:CV_STATE> <달걀:CV_INGREDIENT>을 돌려 담고 <5분:TI_DURATION>간 더 끓여주세요. (부족한 간은 <소금:CV_SEASONING>으로 가감해주세요.)
+5. 종지에 <간장:CV_SEASONING> <1큰술:QT_VOLUME>과 약간의 <연겨자:CV_SEASONING>를 넣어 <어묵전골:CV_INGREDIENT>과 곁들여주세요.

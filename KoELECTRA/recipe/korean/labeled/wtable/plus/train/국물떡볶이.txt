@@ -1,0 +1,4 @@
+1. <떡볶이떡:CV_INGREDIENT>은 한 가닥씩 떼어낸 후 찬물에 <10분:TI_DURATION> 이상 담가둡니다. <어묵:CV_INGREDIENT>은 길게 썰고 <대파:CV_INGREDIENT>는 어슷하게 썰어주세요.
+2. 국물 재료를 <센 불:QT_TEMPERATURE>에 올려 끓어오르면 <떡볶이떡:CV_INGREDIENT>을 넣고 <3~4분:TI_DURATION>간 끓여줍니다.
+3. <떡볶이떡:CV_INGREDIENT>이 익으면 <어묵:CV_INGREDIENT>과 <대파:CV_INGREDIENT>를 넣고 한 번 끓어오르면 국물의 농도를 맞춘 후 불을 꺼주세요.
+4. 그릇에 담아 마무리해주세요.

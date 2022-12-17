@@ -1,0 +1,7 @@
+1. <참치:CV_INGREDIENT>는 체에 밭쳐 기름기를 빼주세요. <양파:CV_INGREDIENT>는 잘게 다진 후 찬물에 <5분:TI_DURATION> 정도 담갔다가 물기를 빼주세요. <달걀:CV_INGREDIENT>은 <흰자:CV_INGREDIENT>와 <노른자:CV_INGREDIENT>를 분리한 후 <노른자:CV_INGREDIENT>만 지단을 부쳐주세요.
+2. 볼에 <밥:CV_INGREDIENT>과 <참치:CV_INGREDIENT>, <다진:CV_STATE> <양파:CV_INGREDIENT>, <다진:CV_STATE> <단무지:CV_INGREDIENT>, 양념 재료를 넣어 섞어주세요.
+3. <김밥용김:CV_INGREDIENT>은 2등분으로 잘라주세요. <밥:CV_INGREDIENT>을 적당한 크기로 동그랗게 뭉친 후 <김밥용 김:CV_INGREDIENT>으로 감싸고 랩으로 한번 더 감싸서 단단하게 고정시켜주세요.
+4. <치즈:CV_INGREDIENT>를 펭수 얼굴 모양 처럼  동그랗게 잘라 김에 붙인 후 랩으로 감싸주세요.
+5. <슬라이스 치즈:CV_INGREDIENT>로 눈을 만든 후, <김:CV_INGREDIENT>을 적당한 크기로 잘라 눈동자와 코 모양대로 잘라주세요. 지단으로 펭수의 입과 헤드폰을 만들고, 도시락 주변에 놓을 물고기도 만들어주세요.
+<슬라이스 햄:CV_INGREDIENT>으로 펭수의 볼터치와 헤드폰을 만들어 장식해주세요. <맛살:CV_INGREDIENT>을 얇게 저며 꽃모양 틀로 찍어 펭수 머리부분에 장식해주세요.
+6. 취향에 따라 <샐러드:CV_INGREDIENT>나 <감자 매쉬:CV_INGREDIENT>, <새우튀김:CV_INGREDIENT> 등을 곁들여 도시락에 담아 완성해주세요.

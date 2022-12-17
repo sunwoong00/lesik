@@ -1,0 +1,8 @@
+1. <김:CV_INGREDIENT>은 먹기 좋은 적당한 크기로 썰어 주세요.
+*Tip. 김은 반드시 <파래김:CV_INGREDIENT>이 아닌 <조선김:CV_INGREDIENT>으로 준비해 주세요!
+2. <밤:CV_INGREDIENT>은 채썰어 주세요.
+3. 냄비에 <진간장:CV_SEASONING>, <조청:CV_SEASONING>, <생강청:CV_SEASONING>을 넣은 뒤 저으면서 한소끔 끓여주세요.
+4. 볼에 <밤:CV_INGREDIENT>을 넣고 순서 3을 부은 뒤, <고추장:CV_SEASONING>을 넣어 잘 섞어주세요.
+*Tip. 간을 봤을 때 싱거우면 <김:CV_INGREDIENT>이 다 풀어지니 짭쪼롬하게 간을 맞춰주세요!
+5. 보관할 통에 <김:CV_INGREDIENT>을 <3~4장:QT_VOLUME> 넣고 순서 4로 켜켜이 재워 완성해 주세요.
+6. <밥:CV_INGREDIENT>과 함께 맛있게 즐겨 보세요!

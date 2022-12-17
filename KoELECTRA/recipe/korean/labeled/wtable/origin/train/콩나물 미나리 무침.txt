@@ -1,0 +1,5 @@
+1. <깨끗이 씻은:CV_STATE> <미나리:CV_INGREDIENT>의 잎을 <잘라내:CV_ACT>고 줄기 부분은 5cm 길이로 <썰:CV_ACT>어주세요.
+2. <끓는:CV_STATE> <물:CV_SEASONING>에 <콩나물:CV_INGREDIENT>을 <넣:CV_ACT>어 <2분:TI_DURATION>간 <데친:CV_ACT> 후 찬물에 <담가:CV_ACT> 열기를 <식혀:CV_ACT> 채반에서 물기를 <빼:CV_ACT>주세요.
+3. <미나리:CV_INGREDIENT>를 <10초:TI_DURATION>간 <데친:CV_ACT> 후 찬물에 <담가:CV_ACT> <식히:CV_ACT>고 채반에서 물기를 <빼:CV_ACT>주세요.
+4. 볼에 양념 재료를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요. <미나리:CV_INGREDIENT>와 <콩나물:CV_INGREDIENT>에 남은 물기를 손으로 꽉 <짜:CV_ACT>고 볼에 <넣:CV_ACT>은 후 양념 재료를 <넣:CV_ACT>어 <버무려:CV_ACT>주세요.
+5. <완성된:CV_STATE> <콩나물 미나리 무침:CV_INGREDIENT>을 그릇에 <담:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 맛있게 즐겨주세요.

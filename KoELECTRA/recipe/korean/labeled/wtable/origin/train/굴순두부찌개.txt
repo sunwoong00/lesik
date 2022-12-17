@@ -1,0 +1,12 @@
+1. <대파:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>를 어슷하게 <썰:CV_ACT>어주세요.
+2. <양파:CV_INGREDIENT>는 채 <썰:CV_ACT>고 <애호박:CV_INGREDIENT>은 1cm 두께로 <슬라이:CV_ACT>스한 뒤 반으로 <잘라:CV_ACT>주세요.
+3. <순두부:CV_INGREDIENT>는 1.5cm 두께로 동그랗게 <자른:CV_ACT> 뒤 <30분:TI_DURATION> 정도 물기를 <빼:CV_ACT>주세요.
+
+*Tip. <순두부:CV_INGREDIENT>를 바로 사용하면 수분이 생겨 간을 맞추기 어렵고 맛이 없어지니 꼭 수분을 <빼:CV_ACT>고 <넣:CV_ACT>어주세요!
+4. <약불:QT_TEMPERATURE>로 달군 냄비에 <식용유:CV_SEASONING>를 <두르:CV_ACT>고 <대파:CV_INGREDIENT>와 <고춧가루:CV_SEASONING>를 <넣:CV_ACT>어 <1분:TI_DURATION> 정도 <볶:CV_ACT>아 <고추기름:CV_SEASONING>을 <내주:CV_ACT>세요.
+5. <물:CV_SEASONING>을 <넣:CV_ACT>고 <3분:TI_DURATION> 정도 <끓:CV_ACT>인 뒤 <국간장:CV_SEASONING>, <마늘:CV_INGREDIENT>, <설탕:CV_SEASONING>, <소금:CV_SEASONING>, <후추:CV_SEASONING>를 <넣:CV_ACT>고 <2분:TI_DURATION> 정도 더 <끓:CV_ACT>여주세요.
+
+6. <애호박:CV_INGREDIENT>, <양파:CV_INGREDIENT>, <대파:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>고 <1분:TI_DURATION> 정도 <끓:CV_ACT>여주세요.
+7. <순두부:CV_INGREDIENT>를 <넣:CV_ACT>고 <달걀:CV_INGREDIENT>을 <풀:CV_ACT>어서 <넣:CV_ACT>어주세요.
+8. 분량의 세척 재료로 잘 세척한 <굴:CV_INGREDIENT>을 넣고 <3분:TI_DURATION> 정도 더 <끓:CV_ACT>여주세요.
+9. 향긋한 굴내음과 부드러운 <순두부:CV_INGREDIENT>를 음미하며 맛있게 즐기세요!

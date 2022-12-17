@@ -1,0 +1,8 @@
+1. <쌀:CV_INGREDIENT>을 <씻:CV_ACT>어 <30분:TI_DURATION> 정도 <불린:CV_ACT> 후 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+(tip. 기호에 따라 <찹쌀:CV_INGREDIENT>을 <섞:CV_ACT>어 <만들:CV_ACT>어도 좋아요)
+2. <문어:CV_INGREDIENT>는 먹기 좋게 <썰:CV_ACT>어주세요. <무:CV_INGREDIENT>는 잘게 깍뚝 <썰:CV_ACT>어주세요. <깻잎:CV_INGREDIENT>은 채를 <썰:CV_ACT>어 주세요.
+(tip. <문어:CV_INGREDIENT>를 <1시간:TI_DURATION> 정도 얼려두면 <썰:CV_ACT>기 편해요)
+3. 냄비에 <불린:CV_STATE> <쌀:CV_INGREDIENT>과 <다시마:CV_INGREDIENT>, <문어:CV_INGREDIENT>, <무:CV_INGREDIENT>를 <넣:CV_ACT>고 <물:CV_SEASONING>을 <넣:CV_ACT>어주세요. 뚜껑을 닫아 <중불:QT_TEMPERATURE>에서 <끓:CV_ACT>이다가 밥물이 끓어오르면 <약불:QT_TEMPERATURE>로 <줄여:CV_ACT> <10~15분:TI_DURATION> 정도 <익혀:CV_ACT>주세요.
+4. <솥밥:CV_INGREDIENT>의 불을 <끄:CV_ACT>고 <5분:TI_DURATION> 정도 뜸을 <들여:CV_ACT>주세요. <달걀노른자:CV_INGREDIENT>를 채에 <내려:CV_ACT> 주세요. <양념 재료:CV_SEASONING>를 종지에 <넣:CV_ACT>고 <섞:CV_ACT>어주세요.
+5. 완성된 <솥밥:CV_INGREDIENT>에 <달걀노른자:CV_INGREDIENT>, <깻잎:CV_INGREDIENT>을 <얹:CV_ACT>고 <간장양념:CV_SEASONING>을 <곁들여:CV_ACT> 맛있게 즐겨주세요.
+(같은 레시피로 전기밥솥에 만드셔도 무관해요.)

@@ -1,0 +1,10 @@
+1. <닭:CV_INGREDIENT>은 흐르는 물에 잘 <씻:CV_ACT>어 비계 부분을 <손질하:CV_ACT>고 <우유:CV_SEASONING>에 <30분:TI_DURATION> 정도 <담가둔:CV_ACT> 뒤 <씻:CV_ACT>어주세요.
+
+*Tip. <닭:CV_INGREDIENT>을 <우유:CV_SEASONING>에 담가두면 육질이 부드러워질 뿐 아니라 잡내를 없애줘요.
+2. <고사리:CV_INGREDIENT>는 깨끗하게 <씻:CV_ACT>은 뒤 믹서에 <갈:CV_ACT>아주세요.
+3. 냄비에 <닭:CV_INGREDIENT>, <물:CV_SEASONING>을 <넣:CV_ACT>어 <30분:TI_DURATION> 정도 <삶:CV_ACT>은 뒤 <닭:CV_INGREDIENT>을 <꺼내:CV_ACT> 살을 잘게 <발라:CV_ACT>주세요. 이 때 닭을 삶은 물은 버리지 않아요.
+4. <찹쌀가루:CV_SEASONING>와 <물:CV_SEASONING>을 그릇에 <넣:CV_ACT>고 숟가락으로 잘 <개:CV_ACT>어 <찹쌀물:CV_SEASONING>을 <만들:CV_ACT>어주세요.
+5. 순서 3의 <닭 삶았던:CV_STATE> <물:CV_SEASONING>에 <믹서에 간:CV_STATE> <고사리:CV_INGREDIENT>와 <잘게 바른:CV_STATE> <닭:CV_INGREDIENT>을 <넣:CV_ACT>고 <끓여:CV_ACT>주세요.
+6. 김이 나고 끓어오르면 <마늘:CV_INGREDIENT>, <고춧가루:CV_SEASONING>, <소금:CV_SEASONING>, <후추:CV_SEASONING>를 <넣:CV_ACT>어 간을 맞춰주세요.
+7. 순서 4의 <찹쌀물:CV_SEASONING>을 <넣:CV_ACT>고 고사리가 익을 때까지 <5분:TI_DURATION> 정도 더 <끓여:CV_ACT>주세요.
+8. 그릇에 덜어 깊고 진한 닭육수의 <고사리육개장:CV_INGREDIENT>을 음미해보세요.  제주도에서 먹었던 고사리육개장의 추억이 떠오르실거예요. 매콤한 걸 즐기신다면 취향껏 <고춧가루:CV_SEASONING>를 더 <넣:CV_ACT>어 드셔도 좋답니다!

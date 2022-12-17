@@ -1,0 +1,8 @@
+1. 깨끗이 씻은 <가지:CV_INGREDIENT>를 길게 반으로 <자르:CV_ACT>고 칼집을 <넣:CV_ACT>은 후 이등분 해주세요. <대파:CV_INGREDIENT>는 6~8cm 길이로 <잘라:CV_ACT>주세요.
+2. <기름:CV_SEASONING>을 <달군:CV_ACT> 후 <대파:CV_INGREDIENT>를 <넣:CV_ACT>어 기름에 향이 <배:CV_ACT>도록 <튀겨:CV_ACT>주세요. <가지:CV_INGREDIENT>를 <넣:CV_ACT>어 <10~15초:TI_DURATION> 정도 <튀겨:CV_ACT>주세요. 
+(tip. <기름:CV_SEASONING>을 <입혀:CV_ACT>주는 과정이에요. 오래 <튀기:CV_ACT>면 눅눅해지니 재빨리 <튀겨:CV_ACT>내 주세요)
+3. <튀겨낸:CV_STATE> <가지:CV_INGREDIENT>는 채반에서 한 김 <식힌:CV_ACT> 후 키친타월에서 <기름:CV_SEASONING>을 <빼:CV_ACT>주세요. 볼에 절임 간장 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요.
+(tip. <채수:CV_SEASONING>가 없는경우 <쯔유:CV_SEASONING>나 <맛간장:CV_SEASONING>을 비율에 맞게 <물:CV_SEASONING>에 <희석해:CV_ACT> <사용해:CV_ACT> 주세요)
+4. 밀폐 용기에 <가지:CV_INGREDIENT>와 <대파:CV_INGREDIENT>를 <넣:CV_ACT>고 <절임 간장:CV_SEASONING>을 <부어:CV_ACT>주세요.
+5. 냉장고에서 <이틀:TI_DURATION>정도 <숙성:CV_ACT> 후 접시에 덜어 <송송 썬:CV_STATE> <쪽파:CV_INGREDIENT>와 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 맛있게 즐겨주세요.
+(tip. 냉장고에서 <2주:TI_DURATION> 정도 보관이 가능해요. 차갑게 드시면 더욱더 맛있어요)

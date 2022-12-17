@@ -1,0 +1,4 @@
+1. 냄비에 <멸치・다시마 육수:CV_SEASONING>를 <붓:CV_ACT>고 <청국장:CV_INGREDIENT>, <된장:CV_INGREDIENT>을 잘 <풀:CV_ACT>어 <넣:CV_ACT>은 뒤 <강불:QT_TEMPERATURE>에서 <4분 이상:TI_DURATION> <끓여:CV_ACT>주세요.
+2. 반달썰기 한 <애호박:CV_INGREDIENT>과 깍둑 썬 <두부:CV_INGREDIENT>를 <넣:CV_ACT>고 <강불:QT_TEMPERATURE>에서 <끓여:CV_ACT>주세요. 재료가 어느 정도 익으면 반달썰기 한 <양파:CV_INGREDIENT>와 어슷 썬 <청양고추:CV_INGREDIENT> 그리고 <다진 마늘:CV_INGREDIENT>을 <넣:CV_ACT>고 <3분:TI_DURATION> 더 <끓여:CV_ACT>주세요.
+3. 마지막으로 <어슷하게 썬:CV_STATE> <대파:CV_INGREDIENT>와 <고춧가루:CV_SEASONING>를 <넣:CV_ACT>고 <중불:QT_TEMPERATURE>에서 <3분:TI_DURATION> 더 <끓여:CV_ACT>주세요.
+4. 구수한 향을 음미하며 따뜻할 때 맛있게 드세요!

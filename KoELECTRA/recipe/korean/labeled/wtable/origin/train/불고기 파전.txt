@@ -1,0 +1,6 @@
+1. <쇠고기:CV_INGREDIENT>는 핏물을 <제거하:CV_ACT>고, 먹기 좋게 <썰:CV_ACT>어 <불고기 양념:CV_SEASONING>에 <10분:TI_DURATION> 정도 <재워:CV_ACT>주세요.
+2. <쪽파:CV_INGREDIENT>는 4cm 길이로 <썰:CV_ACT>고, <양파:CV_INGREDIENT>는 채를 <썰:CV_ACT>어주세요. <청양고추:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>는 얇게 링으로 <썰:CV_ACT>어주세요.
+3. 볼에 반죽 재료와 <쪽파:CV_INGREDIENT>, <양파:CV_INGREDIENT>를 <넣:CV_ACT>고 가볍게 <섞:CV_ACT>어주세요.
+4. 달군 팬에 <기름:CV_SEASONING>을 <두르:CV_ACT>고 <반죽:CV_INGREDIENT>을 <넣:CV_ACT>어 <펼치:CV_ACT>고 양념한 <쇠고기:CV_INGREDIENT>를 골고루 <나누:CV_ACT>어 <올려:CV_ACT>주세요. 남은 <반죽:CV_INGREDIENT>을 <2큰술:QT_VOLUME>을 <쇠고기:CV_INGREDIENT> 위에 <올려:CV_ACT> <구워:CV_ACT>주세요.
+5. 풀어 놓은 <달걀:CV_INGREDIENT>과 <청,홍고추:CV_INGREDIENT>를 <넣:CV_ACT>고 <뒤집:CV_ACT>어 <약불:QT_TEMPERATURE>에서 <2분간:TI_DURATION> <구워:CV_ACT>주세요.
+6. 적당한 크기로 <잘라:CV_ACT> 그릇에 <담:CV_ACT>아주세요. 기호에 따라 <초간장:CV_SEASONING>을 <곁들여:CV_ACT> 맛있게 즐겨주세요.

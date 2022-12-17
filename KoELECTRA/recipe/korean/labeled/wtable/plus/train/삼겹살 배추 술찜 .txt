@@ -1,0 +1,5 @@
+1 . <대패삼겹살:CV_INGREDIENT>을 먹기 좋은 길이로 자르고 <알배추:CV_INGREDIENT>는 깨끗이 씻은 후 한입 크기로 잘라주세요 . <숙주:CV_INGREDIENT>는 깨끗이 씻어 물기를 빼고 <실파:CV_INGREDIENT>를 송송 썰어주세요 .
+2 . 볼에 유자 간장소스 재료와 섞고 또 다른 볼에 깨소스 재료를 넣고 섞어 소스를 준비해 주세요 .
+3 . 냄비에 <알배추:CV_INGREDIENT> 두꺼운 줄기 부분을 깔고 <숙주:CV_INGREDIENT>와 <알배추잎:CV_INGREDIENT> , <삼겹살:CV_INGREDIENT> 순으로 담고 약간의 <소금:CV_SEASONING>과 <후춧가루:CV_SEASONING>를 뿌려주세요 . 켜켜이 2 ~ 3번 반복해서 먹기 좋게 돌려 담고 <화이트와인:CV_SEASONING>을 넣어주세요 .
+4 . 뚜껑을 덮고 <15분:TI_DURATION> 정도 <삼겹살:CV_INGREDIENT>이 익을 때까지 <중간불:QT_TEMPERATURE>에서 끓여주세요 .
+5 . <삼겹살 배추 술찜:CV_INGREDIENT>에 <송송 썬:CV_STATE> <실파:CV_INGREDIENT>를 뿌리고 기호에 따라 <유자 간장소스:CV_SEASONING> 또는 <깨소스:CV_SEASONING>를 곁들여 맛있게 즐겨주세요 .

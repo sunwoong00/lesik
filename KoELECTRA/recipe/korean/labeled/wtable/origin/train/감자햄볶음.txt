@@ -1,0 +1,6 @@
+1. <감자:CV_INGREDIENT>는 껍질을 <벗:CV_ACT>기고 4센치 길이로 채 <썬:CV_ACT> 후 찬물에 <헹궈:CV_ACT> 전분을 <빼:CV_ACT>고, <물:CV_SEASONING>에 <5분:TI_DURATION> 정도 <담갔:CV_SEASONING>다가 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT> 주세요.
+2. <양파:CV_INGREDIENT>와 <피망:CV_INGREDIENT>, <햄:CV_INGREDIENT>은 먹기 좋게 채 <썰:CV_ACT>어 주세요.
+3. 달군 팬에 <기름:CV_SEASONING>을 <두르:CV_ACT>고 <양파:CV_INGREDIENT>, <감자:CV_INGREDIENT>를 <넣:CV_ACT>어 <중간불:QT_TEMPERATURE>에서 <볶:CV_ACT>아주세요.
+4. 감자가 투명해지면 <햄:CV_INGREDIENT>과 <피망:CV_INGREDIENT>, 양념재료를 <넣:CV_ACT>어 간을 <맞춰:CV_ACT>주세요.
+5. 마지막에 <참기름:CV_SEASONING>과 <통깨:CV_SEASONING>를 <넣:CV_ACT>고 불을 <꺼:CV_ACT>주세요. 
+알맞은 그릇에 <담:CV_ACT>아 맛있는 반찬으로 활용해주세요.

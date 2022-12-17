@@ -1,0 +1,6 @@
+1. <감자:CV_INGREDIENT>와 <양파:CV_INGREDIENT>, <애호박:CV_INGREDIENT>은 채를 <썰:CV_ACT>고, <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요. 볼에 <달걀:CV_INGREDIENT>을 <넣:CV_ACT>어 <풀:CV_ACT>고, 다른 볼에 국물 양념 재료를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+2. 냄비에 <멸치새우다시육수:CV_SEASONING>를 <넣:CV_ACT>고 끓어오르면 <감자:CV_INGREDIENT>와 <양파:CV_INGREDIENT>를 <넣:CV_ACT>어 <2분:TI_DURATION> 정도 <끓여:CV_ACT>주세요.
+3. <육수:CV_SEASONING>에 국물 양념 재료를 <넣:CV_ACT>어 <푼:CV_ACT> 후 <칼국수 면의:CV_STATE> <밀가루:CV_INGREDIENT>를 <털어 넣:CV_ACT>고 <5분:TI_DURATION> 정도 <끓여:CV_ACT>주세요. 
+(tip <칼국수면의:CV_STATE> <밀가루:CV_INGREDIENT>를 물에 살짝 <씻:CV_ACT>어 체에 <밭쳐:CV_ACT> 만들거나 <면:CV_INGREDIENT>을 따로 <데친:CV_ACT> 후에 <국물:CV_SEASONING>을 <부어:CV_ACT> 만들면 국물이 탁해지지 않아요.)
+4. <애호박:CV_INGREDIENT>과 <대파:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>를 <넣:CV_ACT>고 <끓이:CV_ACT>다가 풀어 놓은 <달걀물:CV_SEASONING>을 냄비 가장자리에 둘러 <붓:CV_ACT>고 마지막에 <구운:CV_STATE> <소금:CV_SEASONING>으로 간을 맞춘 후 불을 <꺼:CV_ACT>주세요.
+5. <장칼국수:CV_INGREDIENT>를 <담:CV_ACT>고 기호에 따라 <김가루:CV_SEASONING>와 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.

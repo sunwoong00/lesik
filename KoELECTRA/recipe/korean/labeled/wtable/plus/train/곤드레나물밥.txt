@@ -1,0 +1,9 @@
+1. <냉동:CV_STATE> <곤드레나물:CV_INGREDIENT>은 해동한 뒤 씻고
+물기를 뺀 뒤 송송 썰고 밑간 재료를
+넣어 무쳐 주세요.
+*Tip. <말린:CV_STATE> <곤드레나물:CV_INGREDIENT>은 전날 물에 불린 뒤 데쳐서 밥솥에 넣고 조리하세요!
+2. 달군 팬에 순서 1을 넣고 <중약불:QT_TEMPERATURE>에서 <4분:TI_DURATION>간 볶아주세요.
+3. 달군 팬에 <카놀라유:CV_SEASONING>를 두르고, <밑간한:CV_STATE> <소고기 다짐육:CV_INGREDIENT>과 <잘게 다진:CV_STATE> <당근:CV_INGREDIENT>을
+넣고 <중약불:QT_TEMPERATURE>에서 <5분:TI_DURATION>간 볶아주세요.
+4. 팬에 <밥:CV_INGREDIENT>과 순서 2, 3을 넣고 <중약불:QT_TEMPERATURE>에서 <3분:TI_DURATION>간 볶아낸 뒤 그릇에 담고 <참깨:CV_SEASONING>를 뿌리면 완성이예요.
+5. 기호에 따라 <양념간장:CV_SEASONING> 등을 곁들여도 좋답니다. 

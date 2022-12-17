@@ -1,0 +1,5 @@
+1. <양파:CV_INGREDIENT>와 <새송이버섯:CV_INGREDIENT>, <애호박:CV_INGREDIENT>, <대파:CV_INGREDIENT>는 네모난 모양으로 잘게 <자르:CV_ACT>고 <홍고추:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요.
+2. 볼에 <양념 재료:CV_SEASONING>를 <넣:CV_ACT>고 고루 <섞:CV_ACT>어주세요.
+3. 달군 냄비에 <참기름:CV_SEASONING>을 <두르:CV_ACT>고 <양파:CV_INGREDIENT>와 <새송이버섯:CV_INGREDIENT>, <애호박:CV_INGREDIENT>을 <넣:CV_ACT>어 <볶:CV_ACT>다가 양념 재료를 <넣:CV_ACT>어 <볶:CV_ACT>아주세요.
+4. <멸치 다시마 육수:CV_INGREDIENT>를 <붓:CV_ACT>고 <2~3분:TI_DURATION> 정도 <끓:CV_ACT>이다가 <대파:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>를 <넣:CV_ACT>어 한소끔 <끓여:CV_ACT> 마무리해주세요.
+5. <쌈채소:CV_INGREDIENT>와 함께 맛있게 즐겨주세요.

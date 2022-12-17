@@ -1,0 +1,7 @@
+1. <명란젓:CV_INGREDIENT>은 <소금물:CV_SEASONING>에 살살 <씻:CV_ACT>은 후, 2cm 길이로 먹기 좋게 <잘라:CV_ACT>주세요.
+2. <두부:CV_INGREDIENT>와 <애호박:CV_INGREDIENT>, <양파:CV_INGREDIENT>는 한입 크기로 <자르:CV_ACT>고, <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>는 어슷 <썰:CV_ACT>어주세요. 
+3. 냄비에 <다시마 멸치 육수:CV_SEASONING>와 양념 재료를 <넣:CV_ACT>어 <3분:TI_DURATION> 정도 <끓여:CV_ACT>주세요.
+4. 끓어오르면 <양파:CV_INGREDIENT>, <애호박:CV_INGREDIENT>을 <넣:CV_ACT>고 한소끔 <끓:CV_ACT>여주세요.
+5. 마지막에 <대파:CV_INGREDIENT>와 <청홍고추:CV_INGREDIENT>, <명란:CV_INGREDIENT>, <두부:CV_INGREDIENT>를 <넣:CV_ACT>어 <끓여:CV_ACT>주세요.
+6. 완성된 <명란두부찌개:CV_INGREDIENT>를 맛있게 즐겨주세요.
+(부족한 간은 약간의 <소금:CV_SEASONING>이나 <새우젓:CV_SEASONING>으로 <가감해:CV_ACT>서 간을 <맞춰:CV_ACT>주세요.)

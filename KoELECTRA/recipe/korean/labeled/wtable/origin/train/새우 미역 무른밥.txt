@@ -1,0 +1,7 @@
+1. <미역:CV_INGREDIENT>은 미리 물에 <20분간:TI_DURATION> <불린:CV_ACT> 후 흐르는 물에 박박 <비벼:CV_ACT> 여러 번 <씻:CV_ACT>어 칼로 잘게 <다져:CV_ACT>주세요.
+*Tip. <미역:CV_INGREDIENT>의 염분을 빽 위해 박박 씻는 거예요. 또 워낙 질기기 때문에 칼로 최대한 잘게 <다지:CV_ACT>거나 아예 믹서로 <갈:CV_ACT>면 좋아요.
+2. <새우:CV_INGREDIENT>는 머리를 <자르:CV_ACT>고 껍질을 <벗긴:CV_ACT> 후, 내장을 <꺼내:CV_ACT> <손질한:CV_ACT> 다음 끓는 물에 <삶:CV_ACT>아요.
+*Tip. <새우:CV_INGREDIENT>는 자체적으로 짠맛이 있기 때문에 미리 삶는게 좋아요. 내장은 둘째 마디와 셋째 마디 사이에 있는데, 이쑤시개를 이용해서 빼면 아주 잘 빠져요.
+3. 삶은 <새우:CV_INGREDIENT>는 칼로 잘게 <다져:CV_ACT>요.
+4. 냄비에 <불린:CV_STATE> <쌀:CV_INGREDIENT>과 <다진:CV_STATE> <재료:CV_INGREDIENT>, 그리고 <물:CV_SEASONING>을 <붓:CV_ACT>고 <강한 불:QT_TEMPERATURE>로 <끓여:CV_ACT>주세요. <저어:CV_ACT>주다가 끓으면 <약한 불:QT_TEMPERATURE>로 <줄여:CV_ACT> <참기름:CV_SEASONING>을 <넣:CV_ACT>고 농도가 적당해질 때까지 <끓인:CV_ACT> 후, 3회분으로 <나눠:CV_ACT> 용기에 <담:CV_ACT>아요.
+*Tip. <육수:CV_SEASONING>가 아닌 물로 끓일 거라면 <다시마 팩:CV_SEASONING>으로 <넣:CV_ACT>어 우린 물을 쓰는 것도 좋아요. 아이가 알레르기 반응을 보이지 않는다면 <참기름:CV_SEASONING> <한 방울:QT_VOLUME> 톡 <넣:CV_ACT>어주는 것도 풍미를 살리는 아주 좋은 방법이예요.

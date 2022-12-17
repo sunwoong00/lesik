@@ -1,0 +1,7 @@
+1. 볼에 <달걀:CV_INGREDIENT>을 깨트려 넣어요. <소금:CV_SEASONING>을 넣고 섞어 달걀물을 만들어주세요.
+달군 팬에 <올리브유:CV_SEASONING>를 두르고 <달걀물:CV_SEASONING>을 붓습니다. <약한 불:QT_TEMPERATURE>에서 윗면이 마를 때까지 익힌 다음 뒤집어서 불을 끄고 한김 식혀주세요.
+2. <쪽파:CV_INGREDIENT>는 송송 썰고, <식힌:CV_STATE> <달걀물:CV_SEASONING>은 돌돌 만 뒤 채 썰어 지단을 만들어주세요.
+3. 밀폐용기에 <현미밥:CV_INGREDIENT>을 담아요.
+4. <지단:CV_INGREDIENT>과 <소불고기:CV_INGREDIENT>를 올린 뒤 <쪽파:CV_INGREDIENT>와 <검을깨:CV_SEASONING>를 뿌려주세요.
+5. 동그랗게 담아 이쁘게 즐겨보세요.
+*Tip. <지단:CV_INGREDIENT> 대신 장조림달걀을 넣어도 좋고, <샐러드채소:CV_INGREDIENT>나 <어린잎채소:CV_INGREDIENT>를 추가해도 든든해요.

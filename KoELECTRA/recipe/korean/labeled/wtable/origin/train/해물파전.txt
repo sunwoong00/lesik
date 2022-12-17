@@ -1,0 +1,9 @@
+1. <오징어:CV_INGREDIENT>는 껍질을 <벗겨:CV_ACT> 잘게 <자르:CV_ACT>고 <새우살:CV_INGREDIENT>과 <굴:CV_INGREDIENT>, <조갯살:CV_INGREDIENT>은 <소금물:CV_SEASONING>에 <흔들:CV_ACT>어 <씻:CV_ACT>어주세요.
+2. 냄비에 <물:CV_SEASONING> <2컵:QT_VOLUME>과 약간의 <소금:CV_SEASONING>을 <넣:CV_ACT>고, 끓어오르면 <손질한:CV_STATE> <해물:CV_INGREDIENT>을 <넣:CV_ACT>어 <30초:TI_DURATION> 정도 살짝 <데쳐:CV_ACT>주세요.
+(<해물:CV_INGREDIENT>을 데친 물은 버리지 말고, 따로 차게 식혀 준비해주세요. 반죽재료로 사용됩니다)
+3. <쪽파:CV_INGREDIENT>는 <다듬:CV_ACT>어 깨끗이 <씻:CV_ACT>은 후 <쪽파:CV_INGREDIENT>의 머리부분이 굵으면 반으로 <가르:CV_ACT>고, 프라이팬 길이에 맞게 <잘라:CV_ACT>주세요. <홍고추:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+4. 볼에 <반죽재료:CV_SEASONING>를 <넣:CV_ACT>어 <섞:CV_ACT>고, <달걀:CV_INGREDIENT>은 약간의 <소금:CV_SEASONING>을 <넣:CV_ACT>고 <풀:CV_ACT>어 <달걀물:CV_SEASONING>을 <만들:CV_ACT>어주세요
+5. 달군 팬에 <기름:CV_SEASONING>을 넉넉히 <두르:CV_ACT>고, <반죽:CV_INGREDIENT>을 한 국자 <올려:CV_ACT> 둥글게 <펴:CV_ACT>주세요. 그 위에 <쪽파:CV_INGREDIENT>를 가지런히 <펼쳐:CV_ACT> <얹:CV_ACT>고, <해물:CV_INGREDIENT>을 <올린:CV_ACT> 후 <반죽:CV_INGREDIENT>을 살짝 <뿌려:CV_ACT>주세요.
+6. 앞, 뒤를 노릇노릇하게 지져내고 한 면에 <청양고추:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>, <계란물:CV_SEASONING>을 <올리:CV_ACT>고 뒤집어 <익힌:CV_ACT> 후 불을 <꺼:CV_ACT>주세요.
+7. 접시에 <해물파전:CV_INGREDIENT>을 <담:CV_ACT>고 <전간장:CV_SEASONING>을 <곁들여:CV_ACT> 주세요.
+(<간장 재료:CV_SEASONING>에 <송송썰은:CV_STATE> <청양고추:CV_INGREDIENT>와 <잘게 썰은:CV_STATE> <양파:CV_INGREDIENT>를 <섞:CV_ACT>어주셔도 좋아요)

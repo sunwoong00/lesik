@@ -1,0 +1,5 @@
+1. <감자:CV_INGREDIENT>는 깨끗이 <씻:CV_ACT>어 껍질을 <벗긴:CV_ACT> 후 4등분으로 <자르:CV_ACT>고, <옥수수:CV_INGREDIENT>는 3등분으로 <잘라:CV_ACT>주세요. <미니단호박:CV_INGREDIENT>은 씨를 <빼:CV_ACT>고 웨지모양으로 <자르:CV_ACT>고, <레몬:CV_INGREDIENT>은 반으로 <잘라:CV_ACT>주세요.
+2. 찜기에 <물:CV_SEASONING>을 <올린:CV_ACT> 후 <흐르는 찬물에 씻은:CV_STATE> <딱새우:CV_INGREDIENT>와 손질한 <감자:CV_INGREDIENT>, <옥수수:CV_INGREDIENT>, <꽈리고추:CV_INGREDIENT>, <레몬:CV_INGREDIENT>, <월계수잎:CV_INGREDIENT>을 <넣:CV_ACT>어 뚜껑을 덮고 <20분간:TI_DURATION> 푹 <쪄:CV_ACT>주세요. 
+(tip. <꽈리고추:CV_INGREDIENT>는 <5분:TI_DURATION> 정도만 <찐:CV_ACT> 후 <건져내:CV_ACT>면 색감을 예쁘게 플레이팅 할 수 있어요)
+3. <와사마요 소스:CV_SEASONING>는 재료대로 모두 <섞:CV_ACT>고, <갈릭버터 소스:CV_SEASONING>는 팬에 <버터:CV_SEASONING>를 <녹인:CV_ACT> 후 <다진:CV_STATE><마늘:CV_INGREDIENT>을 <볶:CV_ACT>다가 <꿀:CV_SEASONING>과 <후춧가루:CV_SEASONING>를 <뿌려:CV_ACT> 두 가지 <소스:CV_SEASONING>를 <만들:CV_ACT>어주세요.
+4. 접시에 보기 좋게 <담:CV_ACT>아 <소스:CV_SEASONING>를 <곁들여:CV_ACT> 즐겨주세요.

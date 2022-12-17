@@ -1,0 +1,7 @@
+1. <가지:CV_INGREDIENT>는 깨끗이 씻어 꼭지를 자르고 1cm 두께로 길게 썰어주세요. 
+2. 가지에 <소금:CV_SEASONING>과 <설탕:CV_SEASONING>을 넣고 <20분간:TI_DURATION> 절여주세요. 
+3. <절인:CV_STATE> <가지:CV_INGREDIENT>의 물기를 제거하고 밀가루옷을 얇게 입혀주세요. 
+4. <마늘:CV_INGREDIENT>은 편을 썰어 구워주세요. 달군 팬에 <기름:CV_SEASONING>을 두르고 <중약불:QT_TEMPERATURE>에서 <가지:CV_INGREDIENT>를 앞뒤로 노릇하게 <3~4분:TI_DURATION>간 구워주세요.
+5. 소스재료를 섞은 후 <가지:CV_INGREDIENT>를 구운 팬에 붓고 팔팔 끓여준 불을 <약불:QT_TEMPERATURE>로 줄이고 <구워둔:CV_STATE> <가지:CV_INGREDIENT>를 넣고 <2~3분:TI_DURATION>간 졸여주세요. 
+6. <양파:CV_INGREDIENT>는 얇게 링으로 썰어 찬물에 담가 매운기를 제거하고 채반에서 물기를 제거해 주세요.
+7. 그릇에 <밥:CV_INGREDIENT>을 담고 <양파:CV_INGREDIENT>를 소복히 올린 후 <통깨:CV_SEASONING>를 뿌리고 <구운:CV_STATE> <가지:CV_INGREDIENT>를 가지런히 올려주세요. <쪽파:CV_SEASONING>와 <후춧가루:CV_SEASONING>를 뿌려 완성한 후 맛있게 즐겨주세요. 

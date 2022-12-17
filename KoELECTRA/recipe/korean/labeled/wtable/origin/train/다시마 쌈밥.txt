@@ -1,0 +1,7 @@
+1. 끓는 물에 <짠기를 뺀:CV_STATE> <다시마:CV_INGREDIENT>를 살짝 <데쳐:CV_ACT>주세요. 선명한 녹색으로 변하면 바로 <건져내:CV_ACT> 찬물에 <헹궈:CV_ACT> 손바닥 크기로 <잘라:CV_ACT> 키친타올로 물기를 <닦아:CV_ACT>주세요.
+(tip <다시마:CV_INGREDIENT>는 찬물에 <20분:TI_DURATION> 정도 <담가:CV_ACT> 소금기를 <빼:CV_ACT>주세요)
+2. <낙지 젓갈:CV_INGREDIENT>은 먹기 좋게 <다지:CV_ACT>고 <홍고추:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>는 잘게 <잘라:CV_ACT>주세요. <실파:CV_INGREDIENT>는 송송 <썰:CV_ACT>고 <부추:CV_INGREDIENT>는 살짝 <데:CV_ACT>쳐 물기를 <빼:CV_ACT>주세요.
+3. 볼에 <낙지 젓갈:CV_INGREDIENT>과 잘게 <자른:CV_ACT> <고추:CV_INGREDIENT>, <다진:CV_STATE> <마늘:CV_INGREDIENT>, <참기름:CV_SEASONING>, <통깨:CV_SEASONING>를 <넣:CV_ACT>어 <젓갈:CV_INGREDIENT>을 <양념하:CV_ACT>고 <밥:CV_INGREDIENT>은 밥 양념 재료를 <넣:CV_ACT>어 <밑간해:CV_ACT> 주세요.
+(tip. <낙지 젓갈:CV_INGREDIENT>의 염도에 따라 <소금:CV_SEASONING>양을 <가감해:CV_ACT>서 밥 간을 <조절해:CV_ACT>주세요.)
+4. <다시마:CV_INGREDIENT>를 <깔:CV_ACT>고 그 위에 <밥:CV_INGREDIENT>을 <펴:CV_ACT>서 <올려:CV_ACT> 돌돌 <말아:CV_ACT> 준 후 <데친:CV_STATE> <부추:CV_INGREDIENT>로 <묶:CV_ACT>어 고정해 한입 크기로 <잘라:CV_ACT>주세요.
+5. <다시마 쌈밥:CV_INGREDIENT> 위에 <낙지 젓갈:CV_INGREDIENT>을 먹기 좋게 <올리:CV_ACT>고 <송송 썬:CV_STATE> <실파:CV_SEASONING>와 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 맛있게 즐겨주세요.

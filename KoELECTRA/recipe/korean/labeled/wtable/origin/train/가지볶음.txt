@@ -1,0 +1,6 @@
+1. <가지:CV_INGREDIENT>는 길이로 3등분 한 후 세로로 6등분해서 <썰:CV_ACT>어주세요. <양파:CV_INGREDIENT>는 굵게 채를 <썰:CV_ACT>고, <대파:CV_INGREDIENT>는 잘게 <썰:CV_ACT>어주세요. <청양고추:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+2. 달군 팬에 <식용유:CV_SEASONING>를 <두르:CV_ACT>고 <대파:CV_INGREDIENT>를 <넣:CV_ACT>어 <볶:CV_ACT>다가 향이 올라오면 <가지:CV_INGREDIENT>와 <양파:CV_INGREDIENT>를 <넣:CV_ACT>고 <센불:QT_TEMPERATURE>에서 <볶:CV_ACT>아주세요.
+3. 가지의 숨이 죽으면 양념재료를 <넣:CV_ACT>고 <볶:CV_ACT>다가 <청양고추:CV_INGREDIENT>와 <홍고추:CV_INGREDIENT>를 <넣:CV_ACT>어 살짝 <볶:CV_ACT>아주세요.
+
+4. 불을 <끄:CV_ACT>고 <참기름:CV_SEASONING>을 <넣:CV_ACT>고 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.
+5. 알맞은 그릇에 <담:CV_ACT>아 맛있게 즐겨주세요.

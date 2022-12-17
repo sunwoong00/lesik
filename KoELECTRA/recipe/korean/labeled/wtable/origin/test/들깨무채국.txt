@@ -1,0 +1,5 @@
+1. 냄비에 <들기름:CV_SEASONING>을 <두른:CV_ACT> 뒤 <채 썬:CV_STATE> <무:CV_INGREDIENT>와 <다진:CV_STATE> <마늘:CV_INGREDIENT>을 <넣:CV_ACT>고 <약불:QT_TEMPERATURE>에서 <5분:TI_DURATION> <볶:CV_ACT>아주세요.
+
+2. <멸치다시마 육수:CV_SEASONING>를 <넣:CV_ACT>고 <강불:QT_TEMPERATURE>에서 <4분:TI_DURATION> <끓인:CV_ACT> 뒤 <들깨가루:CV_SEASONING>, <국간장:CV_SEASONING>, <소금:CV_SEASONING>을 <넣:CV_ACT>고 <중약불:QT_TEMPERATURE>에서 <6분:TI_DURATION> 더 <끓여:CV_ACT>주세요.
+3. <어슷하게 썬:CV_STATE> <대파:CV_INGREDIENT>를 <넣:CV_ACT>고 <중약불:QT_TEMPERATURE>에서 <2분:TI_DURATION> 더 <끓여:CV_ACT>주세요.
+4. 따끈할 때 맛있게 드세요!

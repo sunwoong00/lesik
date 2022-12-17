@@ -1,0 +1,8 @@
+1. 냄비에 고기 삶는 재료를 넣고 국물이 끓어오르면 <통삼겹살:CV_INGREDIENT>을 덩어리째 넣고 한소끔 끓이다가 불을 <중약불:QT_TEMPERATURE>로 줄여 <1시간:TI_DURATION> 정도 삶아주세요.
+2. <오이:CV_INGREDIENT>는 4센치 길이로 잘라 돌려 깎아 속 씨를 제거한 후 채를 썰고, <파프리카:CV_INGREDIENT>와 <영양 부추:CV_INGREDIENT>는 4센치 길이로 채를 썰어주세요. <양파:CV_INGREDIENT>는 얇게 채를 썰고 찬물에 담갔다가 매운맛을 빼고 물기를 제거해주세요.
+3. 볼에 겨자소스 재료를 넣고 섞어 겨자소스를 만들어주세요.
+4. 팬에 간장 소스 재료를 넣고 소스가 보글보글 끓으면 <삶은:CV_STATE> <돼지고기:CV_INGREDIENT>를 얹고 <약한불:QT_TEMPERATURE>에서 앞뒤로 뒤집어가며 윤기 나게 <2분:TI_DURATION> 정도 졸여주세요.
+5. <조린:CV_STATE> <돼지고기:CV_INGREDIENT>는 먹기 좋은 크기로 잘라주세요.
+6. <채 썰어둔:CV_STATE> <채소:CV_INGREDIENT>는 <겨자소스:CV_SEASONING>에 가볍게 버무려주세요.
+7. 접시에 <돼지고기:CV_INGREDIENT>를 담은 후 <채소:CV_INGREDIENT>를 적당량 올려주세요. 남은 <겨자소스:CV_SEASONING>와 <통깨:CV_SEASONING>를 뿌려 완성해주세요.
+(tip. 기호에 따라 <쌈무:CV_INGREDIENT>를 곁들이면 식감도 좋고 더욱 새콤하게 드실 수 있어요)

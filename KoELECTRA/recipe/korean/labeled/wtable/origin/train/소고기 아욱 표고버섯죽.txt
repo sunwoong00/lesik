@@ -1,0 +1,16 @@
+1. <소고기:CV_INGREDIENT>는 <20분~1시간:TI_DURATION> 정도 물에 <담가:CV_ACT> 핏물을 <빼:CV_ACT>주세요.
+2. <아욱:CV_INGREDIENT>은 잎만 <잘라:CV_ACT> 빨래하듯 치대 물에 여러 번 <씻:CV_ACT>어낸 후 믈기를 <짜:CV_ACT>주세요.
+
+*Tip. 푸른 물이 빠질 정도로 여러 번 치대야 풋내가 없어져요.
+3. 냄비에 <물:CV_SEASONING>을 <붓:CV_ACT>고 <소고기:CV_INGREDIENT>를 <넣:CV_ACT>어 <강한 불:QT_TEMPERATURE>로 <끓여:CV_ACT>요. 끓기 시작하면 <약한 불:QT_TEMPERATURE>로 <줄이:CV_ACT>고 <아욱:CV_INGREDIENT>을 <넣:CV_ACT>어 함께 <끓여:CV_ACT>주세요.
+
+*Tip. <아욱:CV_INGREDIENT>은 살짝만 데치면 되는데, 거품을 걷어내면서 <끓여:CV_ACT>주세요.
+4. <데친:CV_STATE> <아욱:CV_INGREDIENT>과 <소고기:CV_INGREDIENT>를 차례로 꺼내 칼로 잘게 <다져:CV_ACT>주세요.
+
+*Tip. <소고기:CV_INGREDIENT>와 <아욱 삶은 물:CV_SEASONING>은 죽 끓일 때 쓰면 아주 좋아요.
+5. <표고버섯:CV_INGREDIENT>은 기둥을 최대한 바짝 <잘라:CV_ACT>내고, 먼지와 이물질을 <털:CV_ACT>어내주세요.
+
+*Tip. <버섯:CV_INGREDIENT>끼리 착착 <부딪히:CV_ACT>며 <털:CV_ACT>어내면 먼지가 잘 털려요.
+6. 흐르는 물에 살짝 씻은 <표고버섯:CV_INGREDIENT>은 물기를 <털:CV_ACT>어내고 칼로 잘게 <다져:CV_ACT>주세요.
+7. 절구에 <불린:CV_STATE> <쌀:CV_INGREDIENT>과 <소고기:CV_INGREDIENT>를 각깍 <넣:CV_ACT>고 잘게 <으깨:CV_ACT>주세요.
+8. 저어주며 냄비에 모든 <재료:CV_INGREDIENT>를 <넣:CV_ACT>고 <강한 불:QT_TEMPERATURE>로 <끓여:CV_ACT>요. 끓어오르면 <약한 불:QT_TEMPERATURE>로 <줄여:CV_ACT> 계속 <끓인:CV_ACT> 후 용기에 <담:CV_ACT>아내주세요.

@@ -1,0 +1,13 @@
+1. <차돌박이:CV_INGREDIENT>는 2등분으로 <자르:CV_ACT>고 키친 타올에 <올려:CV_ACT> 핏물을 <빼:CV_ACT>주세요.
+
+2. <무:CV_INGREDIENT>, <표고:CV_INGREDIENT>, <양파:CV_INGREDIENT>, <두부:CV_INGREDIENT>는 한 입 크기로 썰고 <애호박:CV_INGREDIENT>은 반달 모양으로 <썰:CV_ACT>어주세요. <대파:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>, <청고추:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요. 
+
+3. 냄비에 <차돌박이:CV_INGREDIENT>와 고기양념을 <넣:CV_ACT>고 <중약불:QT_TEMPERATURE>에서 <볶:CV_ACT>다가 기름이 나오면 <무:CV_INGREDIENT>를 <넣:CV_ACT>고 <1분:TI_DURATION> 정도 <볶:CV_ACT>아주세요.
+
+4. 냄비에 <다시마 멸치육수:CV_SEASONING>와 <된장:CV_SEASONING>을 <넣:CV_ACT>고 <끓여:CV_ACT>주세요.
+
+5. 무가 익으면 <표고버섯:CV_INGREDIENT>과 <양파:CV_INGREDIENT>, <애호박:CV_INGREDIENT>을 <넣:CV_ACT>어 <3분:TI_DURATION> 정도 <끓이:CV_ACT>고 <두부:CV_INGREDIENT>와 <다진:CV_STATE><마늘:CV_INGREDIENT>, <고춧가루:CV_SEASONING>를 <넣:CV_ACT>고 <끓여:CV_ACT>주세요.
+
+6. 마지막에 <대파:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>, <청고추:CV_INGREDIENT>를 <넣:CV_ACT>고 한소끔 더 <끓여:CV_ACT>주세요.
+(간이 약하면 기호에 따라 <된장:CV_SEASONING>으로 간을 <맞춰:CV_ACT>주세요.)
+

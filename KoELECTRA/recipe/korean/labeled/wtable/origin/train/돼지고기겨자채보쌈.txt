@@ -1,0 +1,6 @@
+1. 냄비에 고기 삶는 재료를 <넣:CV_ACT>고 국물이 끓어오르면 <통삼겹살:CV_INGREDIENT>을 덩어리째 <넣:CV_ACT>고 한소끔 <끓이:CV_ACT>다가 불을 <중약불:QT_TEMPERATURE>로 <줄:CV_ACT>여 <1시간:TI_DURATION> 정도 <삶:CV_ACT>아주세요.
+2. <오이:CV_INGREDIENT>는 4센치 길이로 <잘라:CV_ACT> <돌려 깎:CV_ACT>아 속씨를 <제거한:CV_ACT> 후 채를 <썰:CV_ACT>고, <파프리카:CV_INGREDIENT>는 4센치 길이로 채를 <썰:CV_ACT>어주세요. <홍고추:CV_INGREDIENT>와 <양파:CV_INGREDIENT>는 얇게 채를 <썰:CV_ACT>고 찬물에 <담갔:CV_ACT>다가 매운맛을 <빼:CV_ACT>고 물기를 <제거해:CV_ACT>주세요. 볼에 겨자소스 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어 <겨자소스:CV_SEASONING>를 <만들:CV_ACT>어주세요
+3. 팬에 간장 소스 재료를 <넣:CV_ACT>고 <소스:CV_SEASONING>가 보글보글 끓으면 <삶은:CV_STATE> <돼지고기:CV_INGREDIENT>를 <얹:CV_ACT>고 <약한불:QT_TEMPERATURE>에서 앞 뒤로 <뒤집:CV_ACT>어가며 윤기나게 <2분:TI_DURATION> 정도 <졸여:CV_ACT>주세요.
+4. <조린:CV_STATE> <돼지고기:CV_INGREDIENT>는 0.5센치 두께로 가운데 칼집을 넣은 모양으로 <잘라:CV_ACT>주세요.
+5. <채 썰어둔:CV_STATE> <채소:CV_INGREDIENT>는 <겨자 소스:CV_SEASONING>에 가볍게 <버무려:CV_ACT> <돼지고기:CV_INGREDIENT>의 칼집을 넣은 사이에 먹기 좋게 <채워:CV_ACT>주세요.
+6. 접시에 <돼지고기 겨자채 보쌈:CV_INGREDIENT>을 <담:CV_ACT>고, <고기:CV_INGREDIENT> 위에 <통깨:CV_SEASONING>를 <뿌리:CV_ACT>고 <겨자소스:CV_SEASONING>를 <곁들여:CV_ACT>주세요.

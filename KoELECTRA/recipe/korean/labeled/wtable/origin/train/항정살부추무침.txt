@@ -1,0 +1,7 @@
+1. <부추:CV_INGREDIENT>는 깨끗하게 <씻:CV_ACT>어 4cm 길이로 <썰:CV_ACT>고, <오이:CV_INGREDIENT>는 <채 썰:CV_ACT>어주세요.
+2. <양파:CV_INGREDIENT>는 채 <썰:CV_ACT>고, 볼에 양념장 재료를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+(Tip. <양파:CV_INGREDIENT>는 찬물에 <담가:CV_ACT> 매운맛을 <빼:CV_ACT>주면 좋아요.)
+
+3. 달군 팬에 <항정살:CV_INGREDIENT>을 앞뒤로 <소금:CV_SEASONING>, <후춧가루:CV_SEASONING>를 <뿌려:CV_ACT> 노릇하게 <구워:CV_ACT>주세요.
+4. 양념장 재료에 준비한 <채소:CV_INGREDIENT>와 <구운:CV_STATE> <항정살:CV_INGREDIENT>을 <넣:CV_ACT>어 <버무려:CV_ACT>주세요.
+5. 마지막에 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 완성해주세요.

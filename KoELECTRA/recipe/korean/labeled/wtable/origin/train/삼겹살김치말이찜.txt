@@ -1,0 +1,7 @@
+1. <삼겹살:CV_INGREDIENT>에 칼집을 <낸:CV_ACT> 후 4등분(8cm 정도 길이)으로 <잘라:CV_ACT>주세요. 고기 밑간 재료에 <10분:TI_DURATION> 정도 <고기:CV_INGREDIENT>를 <재워:CV_ACT>주세요.
+2. <김치:CV_INGREDIENT>를 넓게 <깔:CV_ACT>고, <삼겹살:CV_INGREDIENT>을 <올려:CV_ACT> 돌돌 <말:CV_ACT>아주세요.
+3. <양파:CV_INGREDIENT>는 굵게 <채썰:CV_ACT>고, <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요. 양념재료는 모두 <섞:CV_ACT>어주세요.
+4. 냄비에 <삼겹살 김치말이:CV_INGREDIENT>와 <양념:CV_SEASONING>을 <넣:CV_ACT>고, <다시마멸치육수:CV_SEASONING>를 <부어:CV_ACT> 뚜껑을 닫고 <중불:QT_TEMPERATURE>에서 <20분:TI_DURATION> 정도 <끓여:CV_ACT>주세요.
+(tip. <김치말이:CV_INGREDIENT>의 이음새 부분이 냄비의 바닥에 가도록 <놓:CV_ACT>아야 말이가 풀리지 않아요)
+5. <김치:CV_INGREDIENT>가 부드럽게 익으면 <양파:CV_INGREDIENT>, <대파:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>를 <넣:CV_ACT>고 <5~10분:TI_DURATION> 정도 <중간불:QT_TEMPERATURE>에서 더 <끓여:CV_ACT>주세요.
+6. 기호에 따라 부족한 간은 <소금:CV_SEASONING>으로 <조절하:CV_ACT>시면 더욱 맛있게 즐기실 수 있어요. 

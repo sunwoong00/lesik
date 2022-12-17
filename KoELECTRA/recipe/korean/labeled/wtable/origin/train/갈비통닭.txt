@@ -1,0 +1,10 @@
+1. <닭볶음탕용 닭:CV_INGREDIENT>은 누린내 제거를 위해 <우유:CV_SEASONING>에 <30분:TI_DURATION>가량 <담갔:CV_ACT>다가 물에 <씻:CV_ACT>어 밑간 재료에 <10분:TI_DURATION> 정도 <재워:CV_ACT>주세요. 
+2. <파:CV_INGREDIENT>는 송송, <양파:CV_INGREDIENT>는 잘게 <다져:CV_ACT>주세요.
+3. <밑간한:CV_STATE> <닭고기:CV_INGREDIENT>에 <치킨튀김가루:CV_SEASONING>를 <묻혀:CV_ACT>주세요.
+4. <튀김옷을 입힌:CV_STATE> <닭:CV_INGREDIENT>에 <식용유:CV_SEASONING>를 <넣:CV_ACT>어 <버무려:CV_ACT>주세요.
+(에어프라이어를 활용해 만들기 위해 <식용유:CV_SEASONING>에 <버무리:CV_ACT>는 것으로, <기름:CV_SEASONING>에 <튀겨:CV_ACT> 만드실 경우 이 과정은 생략해주세요)
+5. 에어프라이어에 서로 달라붙지 않도록 <넣:CV_ACT>은 후 <180도:QT_TEMPERATURE>에서 <15분:TI_DURATION> <굽:CV_ACT>고, 뒤집어서 <10분:TI_DURATION> <구워:CV_ACT>주세요.
+
+(tip. <기름:CV_SEASONING>에 <튀길:CV_ACT> 때에는 <가루 반죽:CV_SEASONING>을 <묻힌:CV_ACT> 후, <치킨튀김가루:CV_SEASONING> <200g:QT_VOLUME>에 <찬:CV_STATE><물:CV_SEASONING> <340ml:QT_VOLUME>를 <넣:CV_ACT>고 묽은 반죽을 만들어 한 번 더 <묻혀:CV_ACT> 준비해주세요. 냄비에 <식용유:CV_SEASONING>를 <붓:CV_ACT>고 <170도:QT_TEMPERATURE>로 <예열한:CV_ACT> 후 <닭고기:CV_INGREDIENT>를 <10~12분간:TI_DURATION> 노릇하게 <튀겨:CV_ACT>주세요. <닭고기:CV_INGREDIENT>를 두 번 <튀겨:CV_ACT>내면 더욱 바삭한 맛을 살릴 수 있어요.)
+6. 달군 팬에 소스재료를 <넣:CV_ACT>고, 소스가 바글바글 <끓:CV_ACT>으면 <닭튀김:CV_SEASONING>을 <넣:CV_ACT>어 <버무린:CV_ACT> 후 <다진:CV_STATE> <파:CV_INGREDIENT>와 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.
+7. 알맞은 그릇에 <담:CV_ACT>아 맛있게 즐겨주세요.

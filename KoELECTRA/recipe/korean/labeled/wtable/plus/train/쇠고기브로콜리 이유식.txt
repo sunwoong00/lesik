@@ -1,0 +1,5 @@
+1. <핏물을 뺀:CV_STATE> <쇠고기:CV_INGREDIENT>는 푹 삶고, <브로콜리:CV_INGREDIENT>는 꽃송이만 따서 살짝 데쳐주세요.
+2. <쇠고기:CV_INGREDIENT>와 <브로콜리:CV_INGREDIENT>는 물기를 빼서 잘게 다지고, <양파:CV_INGREDIENT>와 <양배추:CV_INGREDIENT>도 잘게 다져주세요.
+(tip. <브로콜리:CV_INGREDIENT>는 왁스 코팅이 되어 있기 때문에 베이킹소다로 깨끗이 닦는 게 좋아요. <양배추:CV_INGREDIENT>는 가운데 심지 부분은 제거하고 사용해주세요.)
+3. 냄비에 <진밥:CV_INGREDIENT>과 <쇠고기:CV_INGREDIENT>, <다진:CV_STATE> <야채:CV_INGREDIENT>, <물:CV_SEASONING>을 넣고 끓여주세요. <센 불:QT_TEMPERATURE>에서 저어 가며 끓이다가 끓기 시작하면 <약한 불:QT_TEMPERATURE>로 줄여 농도를 맞춰주세요.
+4. 알맞게 식으면 한 끼 분량씩 담아 냉장보관 해주세요.

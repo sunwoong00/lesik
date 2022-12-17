@@ -1,0 +1,5 @@
+1. 깨끗이 씻은 <당근:CV_INGREDIENT>은 채칼로 채를 <썰:CV_ACT>어주세요. 
+(tip. <당근:CV_INGREDIENT>은 최대한 길게 채 썰어주어야 예쁜 모양으로 완성된답니다)
+2. 볼에 <당근:CV_INGREDIENT>을 <담:CV_ACT>아 <소금:CV_SEASONING>을 <넣:CV_ACT>고 잘 <섞:CV_ACT>어준 후 <전분가루:CV_SEASONING>를 <넣:CV_ACT>어 골고루 <섞:CV_ACT>어주세요. 
+3. 달군 팬에 <식용유:CV_SEASONING>를 <두르:CV_ACT>고 <당근:CV_INGREDIENT>을 <올려:CV_ACT> 둥글게 모양을 <만들:CV_ACT>어 주세요. 한쪽 면이 잘 익으면 <뒤집:CV_ACT>어 다른 면도 <익혀:CV_ACT> 주세요.
+4. 노릇하게 익은 <당근전:CV_INGREDIENT>을 그릇에 <담:CV_ACT>아 맛있게 즐겨주세요.

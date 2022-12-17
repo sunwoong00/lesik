@@ -1,0 +1,8 @@
+1. <건표고버섯:CV_INGREDIENT>은 미지근한 <물:CV_SEASONING>에 <3시:TI_DURATION>간 정도 불려 준비해주세요. 밥톳을 <물:CV_SEASONING> <2큰술:QT_VOLUME>에 <3분:TI_DURATION> 정도 불려주세요. 
+2. <브로콜리:CV_INGREDIENT>를 데쳐 건진 후, 엄지 손톱 크기 정도로 <봉오리:CV_INGREDIENT>를 작게 잘라주세요. <연근:CV_INGREDIENT>은 얇은 은행잎꼴로 썰고, <당근:CV_INGREDIENT>은 곱게 채썰어주세요. <파프리카:CV_INGREDIENT>는 1cm 정방형으로 썰고, <마늘:CV_INGREDIENT>은 굵게 다져주세요. <불린:CV_STATE> <표고버섯:CV_INGREDIENT>은 얇게 채썰고, <표고버섯:CV_INGREDIENT> <불린:CV_STATE> <물:CV_SEASONING> <1/2컵:QT_VOLUME>은 그대로 남겨주세요.
+3. 팬에 <식물성유:CV_SEASONING>를 두르고 <마늘:CV_INGREDIENT>을 볶다가, <파프리카:CV_INGREDIENT>와 밥톳을 넣고 약간의 <소금:CV_SEASONING>과 <후춧가루:CV_SEASONING>를 넣어 밑간 해 살짝 볶아주세요.
+4. 새로 달군 팬에 식물성기름을 두르고 <당근:CV_INGREDIENT>을 볶다가 <기름:CV_SEASONING>이 돌면 <연근:CV_INGREDIENT>과 <표고버섯:CV_INGREDIENT>을 넣어 볶아주세요. <표고버섯:CV_INGREDIENT> <불린:CV_STATE> <물:CV_SEASONING> <1/2컵:QT_VOLUME>을 넣어 <중불:QT_TEMPERATURE>에서 <연근:CV_INGREDIENT>이 부드러워질 때까지 끓인 후, <올리고당:CV_SEASONING>과 <간장:CV_SEASONING>을 넣고 물기없이 졸여주세요.
+5. 볼에 <찰현미밥:CV_INGREDIENT>을 넣고 <볶은:CV_STATE> 밥톳과 <파프리카:CV_INGREDIENT>와 <데친:CV_STATE> <브로콜리:CV_INGREDIENT>를 넣고 <소금:CV_SEASONING>으로 간을 하고 섞어준 후 <주먹밥:CV_INGREDIENT>을 만들어주세요
+6. 볼에 <찰현미밥:CV_INGREDIENT>을 넣고 <볶은:CV_STATE> <당근:CV_INGREDIENT>과 <연근:CV_INGREDIENT>, <표고버섯:CV_INGREDIENT>, 약간의 <깨:CV_SEASONING>를 넣고 <소금:CV_SEASONING>으로 간을 한 후 <주먹밥:CV_INGREDIENT>을 만들어주세요.
+7. 알맞은 그릇에 담아 맛있게 즐겨주세요.
+

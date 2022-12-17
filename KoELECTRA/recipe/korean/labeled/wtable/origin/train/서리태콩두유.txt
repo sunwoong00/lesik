@@ -1,0 +1,8 @@
+1. <콩:CV_INGREDIENT>은 깨끗이 <씻:CV_ACT>어 <5시간:TI_DURATION> 정도 <불려:CV_ACT>주세요.
+2. 냄비에 <서리태:CV_INGREDIENT>와 <물:CV_SEASONING> <5컵:QT_VOLUME>, <소금:CV_SEASONING>을 <넣:CV_ACT>고 <15~20분:TI_DURATION> 정도 <삶:CV_ACT>아 체에 <건져:CV_ACT>주세요. <콩물:CV_SEASONING>은 따로 받아주세요.
+(tip. 물이 끓기 전에 <콩:CV_INGREDIENT>을 넣으면 콩 특유의 비린향이 날 수 있기 때문에 물이 끓고 난 후 <콩:CV_INGREDIENT>을 <넣:CV_ACT>어 <끓이:CV_ACT>는 게 좋아요.)
+
+3. 믹서에 삶은 <서리태:CV_INGREDIENT>와 <콩물:CV_SEASONING>, 물 <3컵:QT_VOLUME>, <호두:CV_INGREDIENT>, <잣:CV_INGREDIENT>, <꿀:CV_SEASONING>을 <넣:CV_ACT>어 곱게 <갈:CV_ACT>아주세요.
+
+(tip. 부족한 간은 <소금:CV_SEASONING>으로 <맞추:CV_ACT>고, 더 묽게 드시고 싶으신 분은 물의 양을 늘려서 만드셔도 좋아요. 취향에 따라 다른 <견과류:CV_INGREDIENT>나 <검은깨:CV_SEASONING> 등을 추가로 <넣:CV_ACT>어 <갈:CV_ACT>아 드셔도 좋답니다.) 
+4. 냉장고에 보관해 시원하게 드시는 걸 추천드려요.

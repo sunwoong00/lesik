@@ -1,0 +1,7 @@
+1. <새우:CV_INGREDIENT>와 <양파:CV_INGREDIENT>, <애호박:CV_INGREDIENT>은 잘게 다지고, <달걀:CV_INGREDIENT>은 약간의 <소금:CV_SEASONING>을 넣고 고루 섞은 후 체에 내려 알끈을 제거해주세요. 
+2. 팬에 약간의 <기름:CV_SEASONING>을 두르고 <달걀물:CV_SEASONING>을 넣어 <약한불:QT_TEMPERATURE>에서 <지단:CV_SEASONING>을 부쳐주세요.
+3. 새로 달군 팬에 <기름:CV_SEASONING>을 두르고 <새우살:CV_INGREDIENT>과 <양파:CV_INGREDIENT>를 <1분:TI_DURATION>간 볶다가 <애호박:CV_INGREDIENT>을 넣고 <소금:CV_SEASONING>, <후추:CV_SEASONING>로 밑간 한 후 양념과 <밥:CV_INGREDIENT>을 넣어 볶다가 마지막에 <참기름:CV_SEASONING>과 <깨:CV_SEASONING>를 넣어주세요.
+4. <지단:CV_INGREDIENT>에 <새우볶음밥:CV_INGREDIENT>을 넣고 양쪽을 접어 돌돌 말아주세요.
+5. <치즈:CV_INGREDIENT>와 <김:CV_INGREDIENT>을 잘라 모양을 만들어 장식해주세요.
+6. 미니언즈를 도시락통이나 접시에 예쁘게 담아주세요.
+(<달걀말이 새우볶음밥:CV_INGREDIENT> <2개:QT_VOLUME> – <밥:CV_INGREDIENT> <1공기:QT_VOLUME> 분량)

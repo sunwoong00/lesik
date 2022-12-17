@@ -1,0 +1,6 @@
+1. <코다리:CV_INGREDIENT>는 대가리와 꼬리, 지느러미, 내장을 <제거하:CV_ACT>고 <씻:CV_ACT>은 후 3센치 길이로 <토막내:CV_ACT>어 밑간 재료에 <20분:TI_DURATION>간 <재워:CV_ACT>주세요.
+2. <페페론치노:CV_SEASONING>는 반으로 <자르:CV_ACT>고, <실파:CV_SEASONING>는 송송 <썰:CV_ACT>어주세요.
+3. <코다리:CV_INGREDIENT>에 <전분가루:CV_SEASONING>를 고루 <묻히:CV_ACT>고 <170도:QT_TEMPERATURE>의 <기름:CV_SEASONING>에 <튀겨:CV_ACT> <건져내:CV_ACT>고 <센 불:QT_TEMPERATURE>에서 한번 더 <튀겨:CV_ACT> 바삭하게 준비해 주세요.
+4. 팬에 <강정소스:CV_SEASONING>와 <페페론치노:CV_SEASONING>를 <넣:CV_ACT>고 바글바글 끓으면 <중약불:QT_TEMPERATURE>로 <줄인:CV_ACT> 후 튀긴 <코다리:CV_INGREDIENT>를 <넣:CV_ACT>어 <강정소스:CV_SEASONING>가 고루 베이도록 <섞:CV_ACT>어주세요.
+5. 접시에 <코다리강정:CV_INGREDIENT>을 <담:CV_ACT>고 <송송 썬:CV_STATE> <실파:CV_SEASONING>와 <통깨:CV_SEASONING>를 <뿌려:CV_ACT>주세요.
+

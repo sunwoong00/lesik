@@ -1,0 +1,6 @@
+1. <아보카도:CV_INGREDIENT>는 씨앗에 칼날이 닿도록 칼집을 넣은 후 양쪽을 잡고 서로 반대 방향으로 비틀어 자른 후, 씨앗과 과<육:CV_INGREDIENT>을 분리해주세요. 껍질을 벗겨 일정한 간격으로 슬라이스해 일렬로 돌돌 말아주세요. <연어:CV_INGREDIENT>는 사방 2cm 크기의 큐브 모양으로 잘라주세요.
+2. 볼에 <고추냉이:CV_SEASONING> 간장 소스 재료를 섞은 후 <연어:CV_INGREDIENT>를 넣어 골고루 섞어주세요.
+3. 그릇에 <밥:CV_INGREDIENT>과 밥 밑간 재료를 넣어 밑간을 한 후 <재워 둔:CV_STATE> <연어:CV_INGREDIENT>를 얹고 <아보카도:CV_INGREDIENT>를 가운데에 올려주세요.
+4. 가운데에 <달걀:CV_INGREDIENT> <노른자:CV_INGREDIENT>를 올린 후 <쪽파:CV_INGREDIENT>와 <통깨:CV_SEASONING>, <후춧가루:CV_SEASONING>를 뿌려주세요.
+5. <김 가루:CV_SEASONING>를 뿌린 후 골고루 섞어 맛있게 즐겨주세요.
+(기호에 따라 <어린잎채소:CV_INGREDIENT>, <오이:CV_INGREDIENT>, <양파:CV_INGREDIENT> 등을 추가로 넣어 만들어 드셔도 맛있게 드실 수 있답니다.)

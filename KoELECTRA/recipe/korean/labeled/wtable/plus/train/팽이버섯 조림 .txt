@@ -1,0 +1,5 @@
+1. <팽이버섯:CV_INGREDIENT>은 밑동을 자른 후 단면을 반으로 잘라주세요. <대파:CV_INGREDIENT>는 5cm 길이로 채를 썰고, <청홍고추:CV_INGREDIENT>는 반으로 갈라 씨를 뺀 후 <대파:CV_INGREDIENT>와 같은 길이로 채를 썰어주세요.
+2. 달군 팬에 <오일:CV_SEASONING>을 두른 후 <팽이버섯:CV_INGREDIENT>을 가지런히 올려 앞뒤로 숨이 죽을 때까지 구워주세요 .
+3. 볼에 양념 재료를 넣어 섞어주세요.
+4. <숨이 죽은:CV_STATE> <팽이버섯:CV_INGREDIENT>에 <양념:CV_SEASONING>을 넣어 졸인 후 <대파:CV_INGREDIENT>와 <청, 홍고추:CV_INGREDIENT>를 넣어주세요. 마지막에 <참기름:CV_SEASONING>을 둘러주세요.
+5. <통깨:CV_SEASONING>를 뿌려 완성해 주세요.

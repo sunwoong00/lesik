@@ -1,0 +1,10 @@
+1. <양파:CV_INGREDIENT>는 채를 <썰:CV_ACT>고 <미나리:CV_INGREDIENT>와 <당근:CV_INGREDIENT>은 5cm 길이로 먹기 좋게 <썰:CV_ACT>어주세요. <청홍고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요.
+
+2. 볼에 양념 재료를 <넣:CV_ACT>어 <섞:CV_ACT>어주세요.
+
+3. 끓는 물에 <소금:CV_SEASONING>을 <넣:CV_ACT>고 <낙지:CV_INGREDIENT>를 살짝 <데친:CV_ACT> 후 얼음물에 <넣:CV_ACT>어 <식힌:CV_ACT> 후 체에 <밭쳐:CV_ACT> 물기를 <빼:CV_ACT>주세요.
+(Tip.<얼음물:CV_SEASONING>에 <넣:CV_ACT>게 되면 쫄깃함과 탱글탱글함이 <더해:CV_ACT>져요)
+
+4. 큰 볼에 <손질한:CV_STATE> <야채:CV_INGREDIENT>와 <낙지:CV_INGREDIENT>, <양념장:CV_SEASONING>을 <넣:CV_ACT>어 가볍게 <버무려:CV_ACT>주세요.
+
+5. 접시에 담은 후 <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 맛있게 즐겨주세요.

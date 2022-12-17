@@ -1,0 +1,9 @@
+1. <청양고추:CV_INGREDIENT> <8개:QT_VOLUME>는 씨를 <뺀:CV_ACT> 후 길게 채를 <썰:CV_ACT>어주세요. <4개:QT_VOLUME>는 송송 <썰:CV_ACT>어주세요. <깻잎:CV_INGREDIENT>은 채를 <썰:CV_ACT>어주세요. <스팸:CV_INGREDIENT>은 1cm 두께로 길게 <썰:CV_ACT>어주세요. 
+2. 볼에 마요 소스 재료를 <넣:CV_ACT>고 <섞:CV_ACT>어주세요. 
+3. <밥:CV_INGREDIENT>에 <마요 소스:CV_SEASONING> <2큰술:QT_VOLUME>과 <통깨:CV_SEASONING>를 <넣:CV_ACT>고 골고루 <섞:CV_ACT>어주세요. 
+4. 팬에 <스팸:CV_INGREDIENT>을 노릇하게 <구워:CV_ACT>주세요
+5. <김:CV_INGREDIENT>에 <밥:CV_INGREDIENT>을 고르게 <펼친:CV_ACT> 후 <스팸:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>, <깻잎:CV_INGREDIENT>을 <올려:CV_ACT> 단단하게 <말:CV_ACT>아주세요.
+(tip.속 재료는 <크래미:CV_INGREDIENT>, <참치:CV_INGREDIENT> 등 집에 있는 재료를 응용 해도 좋아요)
+(tip.<밥:CV_INGREDIENT>의 끝과 <김:CV_INGREDIENT>이 맞닿게 말면 더욱 예쁘게 만들 수 있어요)
+
+6. <김밥:CV_INGREDIENT>을 먹기 좋은 크기로 <잘라:CV_ACT>주세요. <김밥:CV_INGREDIENT> 위에 나머지 <마요 소스:CV_SEASONING>와 <송송 썬:CV_STATE> <청양고추:CV_SEASONING>, <통깨:CV_SEASONING>를 <뿌려:CV_ACT> 완성해주세요. 

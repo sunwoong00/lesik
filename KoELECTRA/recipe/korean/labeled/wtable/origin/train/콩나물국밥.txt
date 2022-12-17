@@ -1,0 +1,6 @@
+1. <콩나물:CV_INGREDIENT>은 깨끗이 <씻:CV_ACT>어 <다듬:CV_ACT>고, <배추김치:CV_INGREDIENT>는 <속 양념:CV_SEASONING>을 <털어내:CV_ACT>고 잘게 <잘라:CV_ACT>주세요. <청양고추:CV_INGREDIENT>와 <대파:CV_INGREDIENT>는 송송 <잘라:CV_ACT>주세요. 
+2. <오징어:CV_INGREDIENT>는 내장을 <제거하:CV_ACT>고 깨끗이 <씻:CV_ACT>어 주세요.
+냄비에 <멸치다시마 육수:CV_SEASONING>를 <넣:CV_ACT>고, 끓어오르면 <오징어:CV_INGREDIENT>를 <넣:CV_ACT>어 <삶:CV_ACT>은 후 먹기 좋게 <잘라:CV_ACT>주세요.
+3. <오징어 삶은 육수:CV_SEASONING>에 <콩나물:CV_INGREDIENT>을 <넣:CV_ACT>어 <3~5분:TI_DURATION> 정도 <끓이:CV_ACT>다가 <건져내:CV_ACT>주세요. <콩나물 삶은 육수:CV_SEASONING>에 국물양념 재료를 <넣:CV_ACT>어 <밑간해:CV_ACT>주세요.
+4. 그릇에 <밥:CV_INGREDIENT>을 <담:CV_ACT>고 <삶은:CV_STATE> <콩나물:CV_INGREDIENT>을 <올린:CV_ACT> 후 <뜨거운:CV_STATE> <육수:CV_SEASONING>를 <붓:CV_ACT>고 <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>, <오징어:CV_INGREDIENT>, <김치:CV_INGREDIENT>, <고춧가루:CV_SEASONING>를 <올려:CV_ACT>주세요.
+5. 기호에 따라 <새우젓:CV_SEASONING>을 <가감해:CV_ACT>서 간을 <맞춰:CV_ACT>주세요. <콩나물국밥:CV_INGREDIENT>을 뚝배기에 <끓여:CV_ACT> 따뜻하게 드셔도 맛있답니다.

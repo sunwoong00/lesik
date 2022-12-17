@@ -1,0 +1,10 @@
+1. <모유:CV_SEASONING> 또는 <분유:CV_SEASONING>에 <20분간:TI_DURATION> 재워둔 <닭고기:CV_INGREDIENT>를 흐르는 물에 <씻:CV_ACT>고, 가운데 힘줄을 <제거해:CV_ACT>주세요.
+2. <식초:CV_SEASONING> 또는 <베이킹소다:CV_SEASONING>를 <넣:CV_ACT>은 <물:CV_SEASONING>로 살균한 <비타민:CV_INGREDIENT>은 흐르는 물에 <씻:CV_ACT>고, <초록 잎:CV_INGREDIENT>만 <잘라:CV_ACT> 준비해주세요.
+
+*Tip. 줄기는 아이가 소화하기 힘드니 잎만 넣어주세요.
+3. 끓는 물에 <닭고기:CV_INGREDIENT>와 <비타민:CV_INGREDIENT>을 <넣:CV_ACT>어요. <1분:TI_DURATION> 정도 후에는 <비타민:CV_INGREDIENT>을, <5~10분:TI_DURATION> 후에는 <달고기:CV_INGREDIENT>를 <꺼내:CV_ACT> 한 김 <식혀:CV_ACT>주세요.
+
+*Tip. <닭고기:CV_INGREDIENT>와 <비타민 삶은:CV_STATE> <물:CV_SEASONING>은 <육수:CV_SEASONING>로 <사용하:CV_ACT>면 좋아요. 
+4. 믹서기에 <닭고기:CV_INGREDIENT>와 <비타민:CV_INGREDIENT>, 불린 <쌀:CV_INGREDIENT>을 각각 <넣:CV_ACT>고 <물:CV_SEASONING>을 약간씩 <더해:CV_ACT> 곱게 <갈:CV_ACT>아주세요.
+5. 냄비에 곱게 간 재료를 <넣:CV_ACT>고 <닭고기 삶은:CV_STATE> <물:CV_SEASONING>을 <부어:CV_ACT> <강한 불:QT_TEMPERATURE>로 저어가며 <끓:CV_ACT>여요. 끓기 시작하면 <약한 불:QT_TEMPERATURE>로 <줄여:CV_ACT> 계속 <저어:CV_ACT>가며 <끓여:CV_ACT>주세요.
+6. 완성된 <미음:CV_INGREDIENT>은 3회분으로 <나눠:CV_ACT> 용기에 <담:CV_ACT>아주세요.

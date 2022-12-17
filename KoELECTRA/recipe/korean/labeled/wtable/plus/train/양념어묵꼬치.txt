@@ -1,0 +1,5 @@
+1. 팬에 분량의 양념 재료를 넣고 <중불:QT_TEMPERATURE>에서 저어가며 <6분:TI_DURATION> 동안 졸여주세요,
+*Tip. <청양고추:CV_INGREDIENT>는 잘게 다져 넣어주세요!
+2. <데친:CV_STATE> <꼬치어묵:CV_INGREDIENT>을 순서 1에 넣고 골고루 <양념:CV_SEASONING>을 묻혀주세요.
+*Tip. 나무 꼬치는 물에 한 번 삶은 뒤 헹구고 찬물에 <30분:TI_DURATION> 이상 담가서 불순물을 제거한 뒤 사용하는게 좋답니다.
+3. 그릇에 담고 <햄프씨드:CV_SEASONING>를 뿌린 뒤 맛있게 드세요.

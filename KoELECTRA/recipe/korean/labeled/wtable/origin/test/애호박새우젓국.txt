@@ -1,0 +1,5 @@
+1. <애호박:CV_INGREDIENT>은 반으로 <갈라:CV_ACT> 도톰하게 반달모양으로 <썰:CV_ACT>어주세요. <양파:CV_INGREDIENT>는 <채썰:CV_ACT>고, <대파:CV_INGREDIENT>와 <청홍고추:CV_INGREDIENT>는 어슷 <썰:CV_ACT>어주세요.
+2. 냄비에 <다시마멸치 육수:CV_SEASONING>와 <애호박:CV_INGREDIENT>, <양파:CV_INGREDIENT>를 <넣:CV_ACT>어 <5분:TI_DURATION> 정도 <끓여:CV_ACT>주세요.
+3. 양파가 투명해지면 <대파:CV_INGREDIENT>, <청홍고추:CV_INGREDIENT>를 <넣:CV_ACT>고 <2분:TI_DURATION> 정도 더 <끓여:CV_ACT>주세요.
+4. 국물양념 재료를 <넣:CV_ACT>고 한소끔 더 <끓여:CV_ACT>주세요.
+5. <밥:CV_INGREDIENT>과 함께 <곁들여:CV_ACT> 즐겨주세요.

@@ -1,0 +1,6 @@
+1. <낙지:CV_INGREDIENT>는 내장과 먹물을 <뺀:CV_ACT> 후 <굵은:CV_STATE><소금:CV_SEASONING>과 <밀가루:CV_SEASONING>로 바락바락 <문질러:CV_ACT> <씻:CV_ACT>은 다음, 끓는 물에 살짝 <데쳐:CV_ACT> 먹기 좋은 크기로 <잘라:CV_ACT>주세요.
+2. <양배추:CV_INGREDIENT>와 <양파:CV_INGREDIENT>는 굵게 채로 <썰:CV_ACT>고, <대파:CV_INGREDIENT>와 <청양고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요. <실파:CV_INGREDIENT>는 송송 <썰:CV_ACT>어주세요.
+3. 팬에 <고추기름:CV_SEASONING>을 <두르:CV_ACT>고, <약한불:QT_TEMPERATURE>에서 <양념장:CV_SEASONING>을 <넣:CV_ACT>어 <1분:TI_DURATION> 정도 <볶:CV_ACT>다가 <양파:CV_INGREDIENT>와 <양배추:CV_INGREDIENT>를 <넣:CV_ACT>어 <볶:CV_ACT>아주세요.
+4. <양파:CV_INGREDIENT>가 <익:CV_ACT>으면 <낙지:CV_INGREDIENT>와 <대파:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>를 <넣:CV_ACT>고 <양념:CV_SEASONING>과 재료가 고루 <섞이:CV_ACT>도록 빠르게 <볶:CV_ACT>다가 불을 <끄:CV_ACT>고 <참기름:CV_SEASONING>을 <뿌려:CV_ACT>주세요.
+5. 끓는 물에 <소면:CV_INGREDIENT>을 <넣:CV_ACT>고 <물:CV_SEASONING>이 끓어오르면 2~3번 <찬물:CV_SEASONING>을 <넣:CV_ACT>어 <국수:CV_INGREDIENT>를 <삶:CV_ACT>은 후 찬물에 <헹궈:CV_ACT> 동그랗게 사리를 지어주세요.
+6. 접시에 <낙지볶음:CV_INGREDIENT>을 <담:CV_ACT>고 <통깨:CV_SEASONING>와 <실파:CV_INGREDIENT>를 <뿌려:CV_ACT>준 후 <소면사리:CV_INGREDIENT>를 <곁들여:CV_ACT>주세요.

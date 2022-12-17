@@ -1,0 +1,8 @@
+1. <돼지등뼈:CV_INGREDIENT>는 찬물에 <2~3시간:TI_DURATION> 정도 <담가:CV_ACT> 핏물을 <뺀:CV_ACT> 후 끓는 물에 <3분:TI_DURATION> 정도 <데치:CV_ACT>고 데친 물은 <버리:CV_ACT>고 <돼지등뼈:CV_INGREDIENT>는 흐르는 물에 깨끗하게 <씻:CV_ACT>어주세요.
+2. 냄비에 <고기:CV_INGREDIENT> 삶는 물 재료와 <데친:CV_STATE> <돼지등뼈:CV_INGREDIENT>를 <넣:CV_ACT>고 <1시간 30분:TI_DURATION> 정도 고기가 푹 익을 때까지 <삶:CV_ACT>아주세요.
+3. <감자:CV_INGREDIENT>는 껍질을 <벗:CV_ACT>기고 반으로 <자르:CV_ACT>고 모서리를 <다듬:CV_ACT>어주세요. <대파:CV_INGREDIENT>는 반으로 <갈라:CV_ACT> 6센치 길이로 <자르:CV_ACT>고, <고추:CV_INGREDIENT>는 어슷하게 <썰:CV_ACT>어주세요. <깻잎:CV_INGREDIENT>은 굵게 채를 <썰:CV_ACT>어주세요.
+4. <삶은:CV_STATE> <시래기:CV_INGREDIENT>는 흐르는 물에 흔들어 <씻:CV_ACT>은 후 굵은 줄기 부분의 껍질을 <벗:CV_ACT>기고 3등분으로 <자르:CV_ACT>고 시래기 양념 재료를 <넣:CV_ACT>어 밑간을 해주세요.
+5. 고기가 부드럽게 <익:CV_ACT>으면 <돼지등뼈:CV_INGREDIENT>를 <건지:CV_ACT>고 <향신 야채:CV_INGREDIENT>는 체에 <밭쳐:CV_ACT> <육수:CV_SEASONING>를 준비해주세요.
+6. 냄비에 <육수:CV_SEASONING>와 <감자:CV_INGREDIENT>, <삶은:CV_STATE> <돼지등뼈:CV_INGREDIENT>를 <넣:CV_ACT>고 <10분:TI_DURATION> 정도 <끓:CV_ACT>이다가 <양념한:CV_STATE> <시래기:CV_INGREDIENT>를 <넣:CV_ACT>고 <20분:TI_DURATION> 정도 <중약불:QT_TEMPERATURE>에서 <끓:CV_ACT>여주세요.
+7. <대파:CV_INGREDIENT>, <홍고추:CV_INGREDIENT>, <청양고추:CV_INGREDIENT>를 <넣:CV_ACT>고 <중간불:QT_TEMPERATURE>에서 <5분:TI_DURATION> 정도 <끓:CV_ACT>이다가 <깻잎:CV_INGREDIENT>과 <들깻가루:CV_SEASONING>를 <올리:CV_ACT>고 한소끔 <끓:CV_ACT>여주세요.
+(부족한 간은 <소금:CV_SEASONING>을 가감해서 조절해주세요.)
