@@ -9,7 +9,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 def parse(token):  #데이터를 추출하는 함수
 
-    folder_name = "try/"  #폴더 이름 입력
+    folder_name = "try/"  #디렉토리 생성 후 디렉토리 입력
     
     recipe_div = token.find('div', attrs={'class': 'view2_summary st3'})
     recipe_name = recipe_div.find('h3')
