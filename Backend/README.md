@@ -1,6 +1,6 @@
 ## 전체 코드 로직 플로우차트
 
-<img src="https://drive.google.com/uc?export=view&id=1O1I09T-_JPuY6_SK-_oRUIDbyyE7lwlv" alt="drawing" style="width:900px;"/>
+<img src="https://drive.google.com/uc?export=view&id=1O1I09T-_JPuY6_SK-_oRUIDbyyE7lwlv" alt="drawing" style="width:800px;"/>
 
 ---
 
