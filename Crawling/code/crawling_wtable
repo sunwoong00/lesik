@@ -29,7 +29,7 @@ def parse(token):  #데이터를 추출하는 함수
             sub_ingredient_list.append(ingredient_info[0].text + " " + ingredient_info[1].text)
         ingredient_list.append(sub_ingredient_list)
 
-    f = open("toto/" + recipe_name.text + ".txt", "w", encoding='utf-8')  #폴더 생성 후 폴더 이름 입력
+    f = open("toto/" + recipe_name.text + ".txt", "w", encoding='utf-8')  #디렉토리 생성 후  입력
 
     if recipe_serving is not None:
         f.write(recipe_name.text + "(" + recipe_serving + ")" + "\n")
