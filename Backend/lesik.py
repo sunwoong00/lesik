@@ -7,7 +7,7 @@ from flask import Flask, render_template, request, make_response
 import pymysql
 
 import toolmatchwithverb as toolmatchwverb
-import version2 as v2
+import microRecipe as v2
 
 # version2 최적화를 위해 메인페이지의 결과값들을 저장해두고 한번에 v2에 전달
 class version2send:
