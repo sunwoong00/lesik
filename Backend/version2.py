@@ -109,6 +109,30 @@ def parse_cooking_act_dict(file_path):
     act_score_dict = {}
     for line in f.readlines():
         line = line.replace("\n", "")
+        if("[" in line): #sub부분과 기본 부분 조리도구를 나누기 위해서 [] 부분을 파일 안에서 찾는 함수
+            continue
+        if delim in line:
+            sp_line = line.split(delim)
+            act_dict[sp_line[0]] = sp_line[1]
+            act_score_dict[sp_line[1]] = sp_line[3]
+        else:
+            act_dict[line] = line
+    f.close()
+    return act_dict, act_score_dict
+
+#행동 관련된 내용을 딕셔너리로 가져오는 부분, action_number.txt
+def parse_cooking_act_dict2(file_path):
+    file_exists = os.path.exists(file_path) #파일이 존재하는지 확인
+    if not file_exists:
+        return None
+    f = open(file_path, 'r', encoding='utf-8') #존재한다면
+    delim = ">"
+    act_dict = {}
+    act_score_dict = {}
+    for line in f.readlines():
+        if("[" in line):
+            continue
+        line = line.replace("\n", "")
         if delim in line:
             sp_line = line.split(delim)
             act_dict[sp_line[0]] = sp_line[1]
@@ -440,9 +464,9 @@ def divide_tool_num_text(file_path):
 
 def finalresult(data, ingreCollectList):
     global cooking_act_dict, act_score_dict , tool_match_main_dic, tool_match_sub_dic, newcooking_act_dict, newact_score_dict
-    cooking_act_dict, act_score_dict = parse_cooking_act_dict("../Resource/labeling/cooking_act.txt")
-    newcooking_act_dict, newact_score_dict = parse_cooking_act_dict("../Resource/labeling/action_number.txt")    
-    tool_match_main_dic, tool_match_sub_dic = divide_tool_num_text("../Resource/labeling/tool.txt")
+    cooking_act_dict, act_score_dict = parse_cooking_act_dict("../Resource/dictionary/cooking_act.txt")
+    newcooking_act_dict, newact_score_dict = parse_cooking_act_dict2("../Resource/dictionary/cooking_act.txt")    
+    tool_match_main_dic, tool_match_sub_dic = divide_tool_num_text("../Resource/dictionary/tool.txt")
     # list = text.split(". ")
     data = str(data)
     #data.encode('utf-8')
