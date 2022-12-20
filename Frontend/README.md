@@ -1,75 +1,23 @@
-# Anomaly Detection Simulator - Frontend
+# Degital Recipe, Micro Recipe & Prompt - Frontend
 
-> 렌즈 데이터셋, Flex 데이터셋, SMT 데이터셋에 대한 CS-Flow 모델의 예측 결과를 실시간으로 확인할 수 있는 웹 어플리케이션입니다.  
-> 데이터 예측 결과, 실제 양/불량 여부, visualization 결과를 확인할 수 있으며 미검율, 과검율, score histogram 등의 분석 결과를 제공합니다.
+> 레시피 입력에 따라 디지털레시피를 생성 및 레시피 분해하고, prompt에서 실시간으로 조리설비별 진행과정을 확인할수 있는 서비스입니다.
 
-## Simulator 화면 이미지
+## 실행 화면 이미지
 
-<img src="https://user-images.githubusercontent.com/79344555/208611044-ac9082cc-fd9a-4ae9-adc0-d3017f7a5336.gif" />
-
-<br />
-
-## Prerequisite
-
-`node` (version: 16.15.1)
-<br />
-`npm`  (version: 8.12.2)
-<br />
-`react 18` (version: 18.2.0)
-<br />
-
-`axios (API 통신)` (version: 0.27.2)
-
-- 기본적으로 fetch가 존재하나 부족한 부분이나 안정성이 결여되어 있어서 채택함.
-
-<br />
-
-`Material-UI` (version: 5.10.0)
-
-- UI library는 mui를 활용하였음.
-- Styled-Components를 포함하고 있으며 emotion도 동시에 활용 가능함.
-- 더불어 css-in-js 기능도 탁월함.
-- 따로 설치가 필요 (아래 command 확인)
-
-<br />
-
-**Install Prerequisite**
-```shell script
-$ npm install
-$ npm install @mui/material
-```
+<img src="https://drive.google.com/file/d/1DrZqE8B0WagG3NR6_0r_yoR4w1J7mgUr/view?resourcekey" />
 
 <br />
 
 ## Getting Started
 
-### Clone Repository
-
-```shell script
-$ git clone https://github.com/skku-synapse/frontend.git
-$ cd frontend
-```
-
 ### How to Run
 
-**Installation:**
-
-```
-$ npm install
-```
-
-**To run in development mode:**
+**To run server:**
 
 ```shell script
-$ npm start
+go to http://ec2-13-209-70-137.ap-northeast-2.compute.amazonaws.com:5000/
 ```
 
-**To run in production mode:**
-
-```shell script
-$ npm run build
-$ sudo serve -l [포트번호] -s build
-```
 
 ## 파일 구조
 
