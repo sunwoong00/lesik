@@ -6,7 +6,15 @@
 
 ---
 
-### 기능
+### 성능평가
+
+- 타 레시피 앱과의 기능 지원 비교
+
+<img src="https://drive.google.com/uc?export=view&id=1X74ApKIk3eLDq1yXXdoVz2P2wbY0XbAW" alt="drawing" style="width:900px;"/>
+
+---
+
+### 주요 기능
 
 - 디지털 레시피 자동 생성
 - 프롬프트 간편화
