@@ -17,7 +17,7 @@
 
 ### 1) ETRI Open api
 
-#### Request, Response 예시
+#### api 사용 예시
 
     {
         request_json = {
@@ -37,4 +37,13 @@
 
 ### 2) KoELECTRA api
 
-
+#### api 사용 예시
+    {
+        KoELECTRA_api_url = "http://ec2-52-79-43-45.ap-northeast-2.compute.amazonaws.com:5000"
+        response = http.request(
+            "POST",
+            KoELECTRA_api_url,
+            headers={"Content-Type": "application/text; charset=UTF-8"},
+            body=sentence.encode('utf-8')
+        )
+    }
