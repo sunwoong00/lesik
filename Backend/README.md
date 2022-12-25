@@ -3,7 +3,7 @@
 
 ### Clone Repository
 
-$ git clone https://github.com/iiVSX/lesik.git
+    $ git clone https://github.com/iiVSX/lesik.git
 <br/><br/>
 
 ### Execute code
