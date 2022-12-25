@@ -1032,7 +1032,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
 
     # 개체명 추출을 이용한 시퀀스의 요소 보완
     if entity_mode == 'koelectra':
-        koelectra_node = extract_ner_from_kobert(node['text'])
+        koelectra_node = extract_ner_from_KoELECTRA(node['text'])
         for sequence in seq_list:
             seq_start_offset = len(" ".join(list(map(lambda word: word['text'],
                                                      filter(lambda word: word['begin'] < sequence['start_id'],
@@ -1283,14 +1283,14 @@ def merge_sequence(sequence_list):
     #print(sequence_list)
     return sequence_list
 
-def extract_ner_from_kobert(sentence):
+def extract_ner_from_KoELECTRA(sentence):
 
-    kobert_api_url = "http://ec2-52-79-43-45.ap-northeast-2.compute.amazonaws.com:5000"
+    KoELECTRA_api_url = "http://ec2-52-79-43-45.ap-northeast-2.compute.amazonaws.com:5000"
 
     http = urllib3.PoolManager()
     response = http.request(
         "POST",
-        kobert_api_url,
+        KoELECTRA_api_url,
         headers={"Content-Type": "application/text; charset=UTF-8"},
         body=sentence.encode('utf-8')
     )
@@ -1366,7 +1366,7 @@ def parse_node_section(entity_mode, is_srl, node_list):
             continue
         if is_ingredient:
             if entity_mode == 'koelectra':
-                koelectra_node = extract_ner_from_kobert(node['text'])
+                koelectra_node = extract_ner_from_KoELECTRA(node['text'])
                 if koelectra_node is not None:
                     sub_ingredient_dict = extract_ingredient_from_node(ingredient_type_list, volume_type_list, koelectra_node)
                 else:
