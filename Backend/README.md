@@ -17,7 +17,23 @@
 
 ### 1) ETRI Open api
 
+#### Request, Response
 
+    {
+        request_json = {
+            "argument": {
+                "analysis_code": analysis_code,
+                "text": original_recipe
+            }
+        }
+        http = urllib3.PoolManager()
+        response = http.request(
+            "POST",
+            open_api_url,
+            headers={"Content-Type": "application/json; charset=UTF-8", "Authorization" : access_key},
+            body=json.dumps(request_json)
+        )
+    }
 
 ### 2) KoELECTRA api
 
