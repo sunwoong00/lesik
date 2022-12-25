@@ -71,7 +71,7 @@ analysis_code, ETRI Open api 발급 키, api 반환 형태: (https://aiopen.etri
         ner_node = {
             "id": id,
             "text": 개체명 인식 text,
-            "type": 개체명,
+            "type": 개체명 type,
             "begin": 시작 위치,
             "end": 종료 위치
         }
