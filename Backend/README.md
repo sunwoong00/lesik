@@ -4,7 +4,7 @@
 ### Clone Repository
 
 $ git clone https://github.com/iiVSX/lesik.git
-
+<br/>
 
 ### Execute code
 
@@ -13,6 +13,7 @@ $ git clone https://github.com/iiVSX/lesik.git
     - cd Backend → venv/bin/activate을 통해 가상환경을 실행 시킨다
     
 2. cd Backend → python -u ./lesik.py 을 통해 코드를 실행, [http://localhost:5000/](http://localhost:5000/) 로 접속한다
+<br/>
 
 ## API 설명
 
