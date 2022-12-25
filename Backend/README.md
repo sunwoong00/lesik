@@ -38,6 +38,7 @@
     }
 
 analysis_code, ETRI Open api 발급 키, api 반환 형태: (https://aiopen.etri.re.kr/guide/WiseNLU) 참고 
+
 <br/>
 
 ### 2) KoELECTRA api
