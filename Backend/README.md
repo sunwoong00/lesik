@@ -17,29 +17,36 @@
 
 ### 1) ETRI Open api
 
+디지털 레시피 분석을 위해 사용: 형태소 분석 api, 의미역 인식 api
+
+analysis_code, ETRI Open api 발급 키: (https://aiopen.etri.re.kr/guide/WiseNLU)
+
 #### api 사용 예시
 
     {
         request_json = {
             "argument": {
-                "analysis_code": analysis_code,
-                "text": original_recipe
+                "analysis_code": [analysis_code],
+                "text": [원본 레시피]
             }
         }
         http = urllib3.PoolManager()
         response = http.request(
             "POST",
             open_api_url,
-            headers={"Content-Type": "application/json; charset=UTF-8", "Authorization" : access_key},
+            headers={"Content-Type": "application/json; charset=UTF-8", "Authorization" : [ETRI Open api 발급 키]},
             body=json.dumps(request_json)
         )
     }
 
 ### 2) KoELECTRA api
 
+디지털 레시피 분석을 위해 사용: 개체명 인식 api
+
 #### api 사용 예시
+
     {
-        KoELECTRA_api_url = "http://ec2-52-79-43-45.ap-northeast-2.compute.amazonaws.com:5000"
+        KoELECTRA_api_url = "[서버주소]"
         response = http.request(
             "POST",
             KoELECTRA_api_url,
