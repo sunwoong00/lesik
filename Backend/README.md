@@ -5,7 +5,6 @@
 
     $ git clone https://github.com/iiVSX/lesik.git
 <br/>
-
 ### Execute code
 
     1. 필요한 패키지 준비
@@ -14,6 +13,5 @@
 
     2. cd Backend → python -u ./lesik.py 을 통해 코드를 실행, [http://localhost:5000/](http://localhost:5000/) 로 접속한다
 <br/>
-
 ## API 설명
 
