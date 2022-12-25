@@ -45,14 +45,13 @@ analysis_code, ETRI Open api 발급 키, api 반환 형태: (https://aiopen.etri
 
 디지털 레시피 분석을 위해 사용: 개체명 인식 api
 
-개체명 인식 종류: 
-
-    - CV_INGREDIENT(재료)
-    - CV_SEASONING(첨가물)
-    - CV_STATE(상태정보)
-    - QT_TEMPERATURE(온도)
-    - QT_VOLUME(용량)
-    - TI_DURATION(시간)
+개체명 인식 type: 
+    * CV_INGREDIENT(재료)
+    * CV_SEASONING(첨가물)
+    * CV_STATE(상태정보)
+    * QT_TEMPERATURE(온도)
+    * QT_VOLUME(용량)
+    * TI_DURATION(시간)
 
 #### api 사용 예시
 
