@@ -17,7 +17,7 @@
 
 ### 1) ETRI Open api
 
-#### Request, Response
+#### Request, Response 예시
 
     {
         request_json = {
