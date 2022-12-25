@@ -19,8 +19,6 @@
 
 디지털 레시피 분석을 위해 사용: 형태소 분석 api, 의미역 인식 api
 
-analysis_code, ETRI Open api 발급 키: (https://aiopen.etri.re.kr/guide/WiseNLU)
-
 #### api 사용 예시
 
     {
@@ -38,6 +36,8 @@ analysis_code, ETRI Open api 발급 키: (https://aiopen.etri.re.kr/guide/WiseNL
             body=json.dumps(request_json)
         )
     }
+
+analysis_code, ETRI Open api 발급 키, api 반환 형태: (https://aiopen.etri.re.kr/guide/WiseNLU) 참고
 
 ### 2) KoELECTRA api
 
