@@ -15,3 +15,6 @@
     
 ## API 설명
 
+### 1) ETRI Open api
+
+### 2) KoELECTRA api
