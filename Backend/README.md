@@ -3,8 +3,8 @@
 
 ### Clone Repository
 
-    $ git clone https://github.com/iiVSX/lesik.git
-<br/>
+    $ git clone https://github.com/iiVSX/lesik.git<br/>
+    
 ### Execute code
 
     1. 필요한 패키지 준비
