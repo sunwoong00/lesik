@@ -13,6 +13,10 @@
 
     2. cd Backend → python -u ./lesik.py 을 통해 코드를 실행, (http://localhost:5000/) 로 접속한다
     
+## 파일 구조
+
+추가 예정
+    
 ## API 설명
 
 ### 1) ETRI Open api
