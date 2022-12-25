@@ -44,10 +44,12 @@ def parse_cooking_act_dict(file_path):
     act_score_dict = {}
     for line in f.readlines():
         line = line.replace("\n", "")
+        if("[" in line): #sub부분과 기본 부분 조리도구를 나누기 위해서 [] 부분을 파일 안에서 찾는 함수
+            continue
         if delim in line:
             sp_line = line.split(delim)
             act_dict[sp_line[0]] = sp_line[1]
-            act_score_dict[sp_line[1]] = sp_line[2]
+            act_score_dict[sp_line[1]] = sp_line[3]
         else:
             act_dict[line] = line
     f.close()
@@ -430,26 +432,19 @@ def verify_etn(node, seq_list):
 def classify(seq_list):
     
     for sequence in seq_list:
-        if sequence['act'] in slice_act:
-            #sequence['act'] = sequence['act']+"(대분류:slice)"
+        if sequence['act'] in slice_act:    # 조리동작이 slice_act안에 있는 동작일때
             sequence['top_class']="slice"
-        elif sequence['act'] in prepare_ingre:
-            #sequence['act'] = sequence['act']+"(대분류:pre_process)"
+        elif sequence['act'] in prepare_ingre:  # 조리동작이 prepare_ingre 안에 있는 동작일때
             sequence['top_class']="prepare_ingre"
-        elif sequence['act'] in use_fire:
-            #sequence['act'] = sequence['act']+"(대분류:use_fire)"
+        elif sequence['act'] in use_fire:   # 조리동작이 use_fire안에 있는 동작일때
             sequence['top_class']="use_fire"
-        elif sequence['act'] in put:
-            #sequence['act'] = sequence['act']+"(대분류:put)"
+        elif sequence['act'] in put:       # 조리동작이 put안에 있는 동작일때
             sequence['top_class']="put"
-        elif sequence['act'] in make:
-            #sequence['act'] = sequence['act']+"(대분류:make)"
+        elif sequence['act'] in make:    # 조리동작이 make안에 있는 동작일때
             sequence['top_class']="make"
-        elif sequence['act'] in remove:
-            #sequence['act'] = sequence['act']+"(대분류:remove)"
+        elif sequence['act'] in remove: # 조리동작이 remove안에 있는 동작일때
             sequence['top_class']="remove"
-        elif sequence['act'] in mix:
-            #sequence['act'] = sequence['act']+"(대분류:mix)"
+        elif sequence['act'] in mix:  # 조리동작이 mix안에 있는 동작일때
             sequence['top_class']="mix"
      
     return seq_list
@@ -460,26 +455,26 @@ def add_standard(node, seq_list):
     
     for sequence in seq_list:
         for ne in node['NE']:
-            if ne['type'] == "QT_LENGTH" or ne['type'] == "QT_OTHERS" or ne['type'] == "QT_SIZE":
+            if ne['type'] == "QT_LENGTH" or ne['type'] == "QT_OTHERS" or ne['type'] == "QT_SIZE":  # ne['type']이 다음 etri 태그에 해당하면 규격에 넣기
                 if ne['text'] in sequence['sentence'] and "도" not in ne['text']:
                     if sequence['standard']=="":
                         sequence['standard']=ne['text']
                     else:
                         sequence['standard']=sequence['standard']+","+ne['text']
                         
-            if ne['type'] == "QT_ORDER" and '등분' in ne['text']:
+            if ne['type'] == "QT_ORDER" and '등분' in ne['text']:  # ne['type']이 QT_ORDER이고 '등분'이 포함되어 있으면 규격에 넣기
                 if ne['text'] in sequence['sentence']:
                     if sequence['standard']=="":
                         sequence['standard']=ne['text']
                     else:
                         sequence['standard']=sequence['standard']+","+ne['text']
-                        
+        # 소분류 딕셔너리 돌기 - 식자재, 첨가물, 동작에 해당 소분류가 없을때, 조리동작에 소분류 붙이기
         standard_act = ""
-        if sequence['top_class'] == "slice":
-            for i in slice_low_class:
+        if sequence['top_class'] == "slice":    # slice에 해당하는 소분류 딕셔너리 확인
+            for i in slice_low_class:  
                 if i in sequence['sentence']:
-                    if sequence['ingre'] != [] and sequence['seasoning'] !=[]:
-                        for ing in sequence['ingre']:
+                    if sequence['ingre'] != [] and sequence['seasoning'] !=[]: # 첨가물과 식자재에 요소가 1개 이상 있을떄
+                        for ing in sequence['ingre']:                       
                             if i not in ing:
                                 for sea in sequence['seasoning']:
                                     if i not in sea:
@@ -490,7 +485,7 @@ def add_standard(node, seq_list):
                                                 else:
                                                     standard_act = standard_act+","+i
                                 
-                    elif sequence['ingre'] != [] and sequence['seasoning'] == []:
+                    elif sequence['ingre'] != [] and sequence['seasoning'] == []: # 식자재에만 요소가 1개이상 있을떄
                         for ing in sequence['ingre']:
                             if i not in ing:
                                 if i not in sequence['act']:
@@ -499,7 +494,7 @@ def add_standard(node, seq_list):
                                             standard_act=i
                                         else:
                                             standard_act=standard_act+","+i
-                    elif sequence['ingre'] == [] and sequence['seasoning'] != []:
+                    elif sequence['ingre'] == [] and sequence['seasoning'] != []: # 첨가물에만 요소가 1개이상 있을때
                         for sea in sequence['seasoning']:
                             if i not in sea:
                                 if i not in sequence['act']:
@@ -509,13 +504,13 @@ def add_standard(node, seq_list):
                                         else:
                                             standard_act=standard_act+","+i
                     else:
-                        if i not in sequence['act']:
+                        if i not in sequence['act']:   # 첨가물과 식자재가 모두 없을때 
                             if standard_act=="":
                                 standard_act=i
                             else:
                                 standard_act=standard_act+","+i
     
-        if sequence['top_class'] == "use_fire":
+        if sequence['top_class'] == "use_fire":   # use_fire에 해당하는 소분류 딕셔너리 확인
             for i in useFire_low_class:
                 if i in sequence['sentence']:
                     if sequence['ingre'] != [] and sequence['seasoning'] !=[]:
@@ -555,7 +550,7 @@ def add_standard(node, seq_list):
                             else:
                                 standard_act=standard_act+","+i
     
-        if sequence['top_class'] == "put":
+        if sequence['top_class'] == "put":  # put에 해당하는 소분류 딕셔너리 확인
             for i in put_low_class:
                 if i in sequence['sentence']:
                     if sequence['ingre'] != [] and sequence['seasoning'] !=[]:
@@ -595,7 +590,7 @@ def add_standard(node, seq_list):
                             else:
                                 standard_act=standard_act+","+i
     
-        if sequence['top_class'] == "mix":
+        if sequence['top_class'] == "mix":   # mix에 해당하는 소분류 딕셔너리 확인
             for i in mix_low_class:
                 if i in sequence['sentence']:
                     if sequence['ingre'] != [] and sequence['seasoning'] !=[]:
@@ -635,7 +630,7 @@ def add_standard(node, seq_list):
                             else:
                                 standard_act=standard_act+","+i
     
-        if sequence['top_class'] == "make":
+        if sequence['top_class'] == "make":  # make에 해당하는 소분류 딕셔너리 확인
             for i in make_low_class:
                 if i in sequence['sentence']:
                     if sequence['ingre'] != [] and sequence['seasoning'] !=[]:
@@ -675,7 +670,7 @@ def add_standard(node, seq_list):
                             else:
                                 standard_act=standard_act+","+i
                         
-        if sequence['top_class'] == "prepare_ingre":
+        if sequence['top_class'] == "prepare_ingre":  # prepare_ingre에 해당하는 소분류 딕셔너리 확인
             for i in prepare_low_class:
                 if i in sequence['sentence']:
                     if sequence['ingre'] != [] and sequence['seasoning'] !=[]:
@@ -714,11 +709,8 @@ def add_standard(node, seq_list):
                                 standard_act=i
                             else:
                                 standard_act=standard_act+","+i
-        '''
         if standard_act != "":
-            sequence['act'] = sequence['act'] + "(" + standard_act + ")"
-        '''
-        
+            sequence['act'] = standard_act + " " + sequence['act']
     return seq_list
         
 # remove, make 대상격 찾는 함수
@@ -1545,30 +1537,30 @@ def main():
     seasoning_list = []
     total_sequencelist = []
     if entity_mode != 'koelectra':
-        seasoning_list = get_list_from_file("../Resource/labeling/seasoning.txt")
-    volume_list = get_list_from_file("../Resource/labeling/volume.txt")
-    time_list = get_list_from_file("../Resource/labeling/time.txt")
-    temperature_list = get_list_from_file("../Resource/labeling/temperature.txt")
-    cooking_act_dict, act_to_zone_dict = parse_cooking_act_dict("../Resource/labeling/cooking_act.txt")
-    act_to_tool_dict = parse_act_to_tool_dict("../Resource/labeling/act_to_tool.txt")
-    tool_list, tool_to_zone_dict = parse_tool_dict("../Resource/labeling/tool.txt")
-    idiom_dict = parse_idiom_dict("../Resource/labeling/idiom.txt")
+        seasoning_list = get_list_from_file("../Resource/dictionary/seasoning.txt")
+    volume_list = get_list_from_file("../Resource/dictionary/volume.txt")
+    time_list = get_list_from_file("../Resource/dictionary/time.txt")
+    temperature_list = get_list_from_file("../Resource/dictionary/temperature.txt")
+    cooking_act_dict, act_to_zone_dict = parse_cooking_act_dict("../Resource/dictionary/cooking_act.txt")
+    act_to_tool_dict = parse_act_to_tool_dict("../Resource/dictionary/act_to_tool.txt")
+    tool_list, tool_to_zone_dict = parse_tool_dict("../Resource/dictionary/tool.txt")
+    idiom_dict = parse_idiom_dict("../Resource/dictionary/idiom.txt")
     
-    slice_act = get_list_from_file("../Resource/labeling/topclass_dict/slice_act.txt")
-    prepare_ingre = get_list_from_file("../Resource/labeling/topclass_dict/prepare_act.txt")
-    use_fire = get_list_from_file("../Resource/labeling/topclass_dict/useFire_act.txt")
-    put = get_list_from_file("../Resource/labeling/topclass_dict/put_act.txt")
-    mix = get_list_from_file("../Resource/labeling/topclass_dict/mix_act.txt")
-    make = get_list_from_file("../Resource/labeling/topclass_dict/make_act.txt")
-    remove = get_list_from_file("../Resource/labeling/topclass_dict/remove_act.txt")
+    slice_act = get_list_from_file("../Resource/dictionary/topclass_dict/slice_act.txt")
+    prepare_ingre = get_list_from_file("../Resource/dictionary/topclass_dict/prepare_act.txt")
+    use_fire = get_list_from_file("../Resource/dictionary/topclass_dict/useFire_act.txt")
+    put = get_list_from_file("../Resource/dictionary/topclass_dict/put_act.txt")
+    mix = get_list_from_file("../Resource/dictionary/topclass_dict/mix_act.txt")
+    make = get_list_from_file("../Resource/dictionary/topclass_dict/make_act.txt")
+    remove = get_list_from_file("../Resource/dictionary/topclass_dict/remove_act.txt")
     
-    slice_low_class = get_list_from_file("../Resource/labeling/lowclass_dict/slice_low.txt")
-    prepare_low_class = get_list_from_file("../Resource/labeling/lowclass_dict/prepare_low.txt")
-    useFire_low_class = get_list_from_file("../Resource/labeling/lowclass_dict/useFire_low.txt")
-    put_low_class = get_list_from_file("../Resource/labeling/lowclass_dict/put_low.txt")
-    mix_low_class = get_list_from_file("../Resource/labeling/lowclass_dict/mix_low.txt")
-    make_low_class = get_list_from_file("../Resource/labeling/lowclass_dict/make_low.txt")
-    remove_low_class = get_list_from_file("../Resource/labeling/lowclass_dict/remove_low.txt")
+    slice_low_class = get_list_from_file("../Resource/dictionary/lowclass_dict/slice_low.txt")
+    prepare_low_class = get_list_from_file("../Resource/dictionary/lowclass_dict/prepare_low.txt")
+    useFire_low_class = get_list_from_file("../Resource/dictionary/lowclass_dict/useFire_low.txt")
+    put_low_class = get_list_from_file("../Resource/dictionary/lowclass_dict/put_low.txt")
+    mix_low_class = get_list_from_file("../Resource/dictionary/lowclass_dict/mix_low.txt")
+    make_low_class = get_list_from_file("../Resource/dictionary/lowclass_dict/make_low.txt")
+    remove_low_class = get_list_from_file("../Resource/dictionary/lowclass_dict/remove_low.txt")
   
     
 

@@ -389,8 +389,8 @@ def matchtoolwithaction(sentences, cooking_act_dict, checkaction, checktoolmain,
 ############################################################################################################################################
 
 def matchresult(array, ingreCollectList):
-    cooking_act_dict, act_score_dict = parse_cooking_act_dict("../Resource/labeling/action_number.txt")
-    tool_match_main_dic, tool_match_sub_dic = divide_tool_num_text("../Resource/labeling/tool.txt")
+    cooking_act_dict, act_score_dict = parse_cooking_act_dict("../Resource/dictionary/cooking_act.txt")
+    tool_match_main_dic, tool_match_sub_dic = divide_tool_num_text("../Resource/dictionary/tool.txt")
 
     #print(cooking_act_dict)
     matchtoolwithactionresult = matchtoolwithaction(array, cooking_act_dict, act_score_dict, tool_match_main_dic, tool_match_sub_dic, ingreCollectList)
