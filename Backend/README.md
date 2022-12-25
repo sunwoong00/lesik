@@ -1,27 +1,12 @@
-## 전체 코드 로직 플로우차트
+## START
 
-<img src="https://drive.google.com/uc?export=view&id=1O1I09T-_JPuY6_SK-_oRUIDbyyE7lwlv" alt="drawing" style="width:800px;"/>
+### Clone Repository
 
----
+$ git clone https://github.com/iiVSX/lesik.git
 
-### 설비 로직 플로우차트
+### Execute code
 
-<img src="https://drive.google.com/uc?export=view&id=1B0CNL_n4HxkMtHlN2VPB1pRE8LybPMq2" alt="drawing" style="width:800px;"/>
-
----
-
-### 규격 로직 플로우차트
-
-<img src="https://drive.google.com/uc?export=view&id=1-TKaigKCEttLIyE_-mmzh-mKEgTFIYJS" alt="drawing" style="width:800px;"/>
-
----
-
-### Micro Recipe 로직 플로우차트
-
-<img src="https://drive.google.com/uc?export=view&id=1PrVqjgeAd4feS8IFOFOxiTOpLlCTyxQU" alt="drawing" style="width:800px;"/>
-
----
-
-### 조리도구 매칭 로직 플로우차트
-
-<img src="https://drive.google.com/uc?export=view&id=1m5XpffK9BhOcDPcf1HUVOrgaqUnjUj5l" alt="drawing" style="width:800px;"/>
+1. 필요한 패키지 준비
+    - pip install -r requirements.txt 을 통해 필요한 패키지를 다운 받는다
+    - cd Backend → venv/bin/activate을 통해 가상환경을 실행 시킨다
+2. cd Backend → python -u ./lesik.py 을 통해 코드를 실행, [http://localhost:5000/](http://localhost:5000/) 로 접속한다
