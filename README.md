@@ -1,30 +1,8 @@
-# 래식: AI 기반 디지털 레시피 자동 생성화
-
-<img src="https://drive.google.com/uc?export=view&id=12ogQey6rqwke_tgX9q2ydozusaihkGYa" alt="drawing" style="width:1280px;"/>
-
-음식 레시피들은 조리하는 데 있어 개인의 해석에 따라 다르게 조리하여 동일한 결과가 나오지 않을 수 있다. 이를 해결하기 위해 디지털 레시피 자동 생성 솔루션을 개발하였다.
-
----
-
-### 성능평가
-
-- 타 레시피 앱과의 기능 지원 비교
-
-<img src="https://drive.google.com/uc?export=view&id=1X74ApKIk3eLDq1yXXdoVz2P2wbY0XbAW" alt="drawing" style="width:900px;"/>
-
----
-
 ### 주요 기능
 
 - 디지털 레시피 자동 생성
 - 프롬프트 간편화
 - Micro Recipe (레시피 분해)
-
----
-
-### 소프트웨어 아키텍처 구조
-
-<img src="https://drive.google.com/uc?export=view&id=13CTT-zNg8VPJFbfhxuC4eXAENDyJYeMF" alt="drawing" style="width:900px;"/>
 
 ---
 
@@ -47,28 +25,19 @@
 
 ---
 
-### 코드 실행 방법
-
-1. 필요한 패키지 준비
-    - pip install -r requirements.txt 을 통해 필요한 패키지를 다운 받는다
-    - cd Backend → venv/bin/activate을 통해 가상환경을 실행 시킨다
-2. cd Backend → python -u ./lesik.py 을 통해 코드를 실행, [http://localhost:5000/](http://localhost:5000/) 로 접속한다
-
----
-
 ### 개발자들  (ㄱ-ㄴ-ㄷ)
 
-**김하종** - Rule-based, 조리도구/조리대 인식, 사이트 구축
+**김하종** -
 
-**박지연** - 레시피 정보 추출, 딥러닝 기반 개체명 인식기 성능 개선
+**박지연** -
 
-**방선웅** - 의미역 기반 관계 추출, 용량 인식, 사이트 관리
+**방선웅** -
 
-**서유정** - Rule-based, 조리동작인식사전 구축, 조리규격, 조리설비 인식
+**서유정** -
 
-**송지은** - Recipe Crawling, 개체명 인식, Prompt UI
+**송지은** -
 
-**이현민** - Rule-based, 일반 문장 분해, 동시처리 재료 분해
+**이현민** -
 
 ### 멘토
 
@@ -76,7 +45,7 @@
 
 ---
 
-### 관련 외부 링크
+### 관련 링크
 
 <a href="https://docs.google.com/presentation/d/1eMl0jOE0LA6ZvWR7yKkrVwtqXevlYt39/edit#slide=id.p1">
     <img src="https://img.shields.io/badge/발표자료 파워포인트-<COLOR>"
