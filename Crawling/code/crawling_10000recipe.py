@@ -8,8 +8,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 import os
 
-def parse(token, folder_name):  #데이터를 추출하는 함수
 
+def parse(token, folder_name):  #데이터를 추출하는 함수
     isExist = os.path.exists(folder_name) 
     if not isExist: #디렉토리가 존재하지 않으면 생성
         os.makedirs(folder_name)
@@ -34,8 +34,7 @@ def parse(token, folder_name):  #데이터를 추출하는 함수
         f.write(str(i) + ". " + step_list[i-1].text + '\n')
 
 
-def scroll(recipe_url):  #데이터 스크롤링 함수
-    
+def scroll(recipe_url):  #데이터 스크롤링 함수    
     options = webdriver.ChromeOptions()
     options.add_experimental_option("excludeSwitches", ["enable-logging"])
     driver = webdriver.Chrome(options=options)
@@ -83,7 +82,7 @@ def request(url, folder_name):
 
 
 def main():
-    recipe_url = input("크롤링을 진행할 쉐프/의 프로필 링크를 입력해주세요: ")
+    recipe_url = input("크롤링을 진행할 쉐프/의 프로필 url을 입력해주세요: ")
     folder_name = input("폴더명을 입력해주세요: ")
     recipe_url_list = scroll(recipe_url)
 
