@@ -7,10 +7,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-def parse(token):  #데이터를 추출하는 함수
-
-    folder_name = "try/"  #디렉토리 생성 후 디렉토리 입력
-    
+def parse(token, folder_name):  #데이터를 추출하는 함수
+ 
     recipe_div = token.find('div', attrs={'class': 'view2_summary st3'})
     recipe_name = recipe_div.find('h3')
     
@@ -18,11 +16,11 @@ def parse(token):  #데이터를 추출하는 함수
         return None
     
     if '?' in recipe_name.text:
-        f = open(folder_name + (recipe_name.text).replace('?','.') + ".txt", "w", encoding='utf-8')
+        f = open(folder_name + "/" + (recipe_name.text).replace('?','.') + ".txt", "w", encoding='utf-8')
     elif '/' in recipe_name.text:
-        f = open(folder_name + (recipe_name.text).replace('/',',') + ".txt", "w", encoding='utf-8')
+        f = open(folder_name + "/" + (recipe_name.text).replace('/',',') + ".txt", "w", encoding='utf-8')
     else:
-        f = open(folder_name + recipe_name.text + ".txt", "w", encoding='utf-8')
+        f = open(folder_name + "/"  + recipe_name.text + ".txt", "w", encoding='utf-8')
     
     step_ind = token.find_all('div', attrs={'class':'view_step_cont'})
     step_list = token.find_all('div', attrs={'class': 'media-body'})
@@ -31,21 +29,20 @@ def parse(token):  #데이터를 추출하는 함수
         f.write(str(i) + ". " + step_list[i-1].text + '\n')
 
 
-def scroll():  #데이터 스크롤링 함수
-    recipe_url = 'https://www.10000recipe.com/profile/recipe.html?uid=bboeonni12'  #쉐프/레시피 작성자의 프로필 링크 입력 
-
+def scroll(recipe_url):  #데이터 스크롤링 함수
+    
     options = webdriver.ChromeOptions()
     options.add_experimental_option("excludeSwitches", ["enable-logging"])
     driver = webdriver.Chrome(options=options)
     driver.get(url=recipe_url)
     try:
-        cnt=0  #페이지가 많아서 오류가 발생할 시, 작성자 프로필 링크의 총 페이지 수 입력 (아래 for loop 주석 처리)
+        cnt=0  #페이지가 많아서 오류가 발생할 경우, 작성자 프로필 링크의 총 페이지 수 입력 (아래 for loop 주석 처리)
         page=1
         page_ul = driver.find_element(By.CSS_SELECTOR, '#contents_area > div.brand_cont.mag_t_10 > nav > ul')
         recipe_page = []
         recipe_url_list = []
 
-        for p_u in page_ul.find_elements(By.TAG_NAME, 'li'): #페이지가 많아서 cnt를 직접 입력할 시, 현재 for loop 주석 처리
+        for p_u in page_ul.find_elements(By.TAG_NAME, 'li'): #페이지가 많아서 cnt를 직접 입력할 경우, 현재 for loop 주석 처리
             for rr in p_u.find_elements(By.TAG_NAME,'a'):
                 recipe_page.append(rr.get_attribute('href'))
                 cnt+=1
@@ -68,7 +65,7 @@ def scroll():  #데이터 스크롤링 함수
     return recipe_url_list
 
 
-def request(url):
+def request(url, folder_name):
     http = urllib3.PoolManager()
     response = http.request(
         "POST",
@@ -77,14 +74,17 @@ def request(url):
     )
     bs = BeautifulSoup(response.data, 'html.parser')
     token = bs.find('div', attrs={'id': 'contents_area'})
-    parse(token)
+    parse(token, folder_name)
 
 
 def main():
-    recipe_url_list = scroll()
+    recipe_url = input("크롤링을 진행할 쉐프의 프로필 링크를 입력해주세요: ")
+    folder_name = input("폴더명을 입력해주세요: ")
+    recipe_url_list = scroll(recipe_url)
 
     for recipe_url in recipe_url_list:
-        request(recipe_url)
+        request(recipe_url, folder_name)
+
 
 if __name__ == "__main__":
     main()
