@@ -4,8 +4,7 @@
 
 ## 실행 화면 이미지
 
-https://user-images.githubusercontent.com/63731797/209578925-b24147b5-e04a-4cc8-b0fe-fba648948225.mp4
-
+https://user-images.githubusercontent.com/63731797/209579025-ce8e7e30-f06e-4436-ad75-75c1df72d3d2.mp4
 
 <br />
 
