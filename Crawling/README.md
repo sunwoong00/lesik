@@ -34,7 +34,7 @@ folder_name = input("폴더명 입력: ")
 recipe_url = input("크롤링을 진행할 쉐프의 프로필 링크를 입력해주세요: ")
 folder_name = input("폴더명을 입력해주세요: ")
 ```
-<li>recipe_url: 크롤링을 진행할 만개의 레시피 쉐프/작성자의 프로필 링크입니다.</li>
+<li>recipe_url: 크롤링을 진행할 만개의 레시피 쉐프/작성자의 프로필 url입니다.</li>
 <li>folder_name: 크롤링 데이터를 저장할 폴더입니다.</li>
 
 #### 결과
