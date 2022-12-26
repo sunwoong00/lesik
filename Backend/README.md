@@ -13,9 +13,11 @@
 
     2. cd Backend → python -u ./lesik.py 을 통해 코드를 실행, (http://localhost:5000/) 로 접속한다
     
-## 파일 구조
+## 파일 설명
 
-추가 예정
+* koelectra.py: 
+* lesik.py: 
+* lesik_local.py: 
     
 ## API 설명
 
