@@ -4,7 +4,8 @@
 
 ## 실행 화면 이미지
 
-<img src="https://drive.google.com/file/d/1DrZqE8B0WagG3NR6_0r_yoR4w1J7mgUr/view?resourcekey" />
+https://user-images.githubusercontent.com/63731797/209578925-b24147b5-e04a-4cc8-b0fe-fba648948225.mp4
+
 
 <br />
 
