@@ -6,9 +6,14 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+import os
 
 def parse(token, folder_name):  #데이터를 추출하는 함수
- 
+
+    isExist = os.path.exists(folder_name) 
+    if not isExist: #디렉토리가 존재하지 않으면 생성
+        os.makedirs(folder_name)
+
     recipe_div = token.find('div', attrs={'class': 'view2_summary st3'})
     recipe_name = recipe_div.find('h3')
     
@@ -78,7 +83,7 @@ def request(url, folder_name):
 
 
 def main():
-    recipe_url = input("크롤링을 진행할 쉐프의 프로필 링크를 입력해주세요: ")
+    recipe_url = input("크롤링을 진행할 쉐프/의 프로필 링크를 입력해주세요: ")
     folder_name = input("폴더명을 입력해주세요: ")
     recipe_url_list = scroll(recipe_url)
 
