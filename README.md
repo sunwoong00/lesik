@@ -1,3 +1,11 @@
+# 래식: AI 기반 디지털 레시피 자동 생성화
+
+<img src="https://drive.google.com/uc?export=view&id=12ogQey6rqwke_tgX9q2ydozusaihkGYa" alt="drawing" style="width:1280px;"/>
+
+음식 레시피들은 조리하는 데 있어 개인의 해석에 따라 다르게 조리하여 동일한 결과가 나오지 않을 수 있다. 이를 해결하기 위해 디지털 레시피 자동 생성 솔루션을 개발하였다.
+
+---
+
 ### 주요 기능
 
 - 디지털 레시피 자동 생성
