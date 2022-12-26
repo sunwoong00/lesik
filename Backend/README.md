@@ -13,7 +13,7 @@
 
     2. cd Backend → python -u ./lesik.py 을 통해 코드를 실행, (http://localhost:5000/) 로 접속한다
     
-## 파일 설명
+## 주요 파일 설명
 
 * koelectra.py: 서버에서 모델이 인식한 레시피 속 개체명들을 json 형태로 뿌려주는 코드
 * lesik.py: 디지털 레세피 분석 메인 코드
