@@ -98,7 +98,7 @@ def request(url, folder_name):
 
 def main():
     recipe_category = input("카테고리를 입력해주세요: ")
-    folder_name = input("폴더명 입력: ")
+    folder_name = input("폴더명을 입력해주세요: ")
     recipe_url_list = scroll(recipe_category)
     for recipe_url in recipe_url_list:
         request(recipe_url, folder_name)
