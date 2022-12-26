@@ -20,7 +20,24 @@
 * lesik_local.py: 디지털 레시피 분석 결과를 로컬 터미널을 통해 확인할 수 있는 코드
 
 <br/>
-    
+
+## 파일 구조
+```
+Backend
+├─ .cache
+├─ .viminfo
+├─ koelectra.py
+├─ lesik.py
+├─ lesik_local.py
+├─ microRecipe.py
+├─ README.md
+├─ toolmatchwithver2.py
+├─ toolmatchwithverb.py
+└─ venv
+   ├─ bin
+   └─ lib
+```
+
 ## API 설명
 
 ### 1) ETRI Open api
