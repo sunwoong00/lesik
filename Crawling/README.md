@@ -1,10 +1,10 @@
 ## 레시피 크롤러
 
-<li>crawling_wtable: 우리의 식탁 크롤러</li>
-<li>crawling_10000recipe: 만개의 레시피 크롤러</li>
+- crawling_wtable: 우리의 식탁 크롤러
+- crawling_10000recipe: 만개의 레시피 크롤러
 
 ## 환경
-• Python(>=3.9)
+- Python(>=3.9)
 
 ```
 $ pip install selenium
