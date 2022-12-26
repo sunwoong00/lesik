@@ -6,9 +6,14 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-import sys
+import os
 
 def parse(token, folder_name):  #데이터를 추출하는 함수
+
+    isExist = os.path.exists(folder_name) 
+    if not isExist: #디렉토리가 존재하지 않으면 생성
+        os.makedirs(folder_name)
+
     recipe_name = token.find('h2', attrs={'class': 'RecipeDetailstyle__Title-q7sykd-4 kIVrZW'})
     if recipe_name is None:
         return None
@@ -106,4 +111,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
