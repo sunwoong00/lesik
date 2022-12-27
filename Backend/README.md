@@ -25,7 +25,7 @@ style="height : auto; margin-left : 8px; margin-right : 8px;"/></a>
 ## 주요 파일 설명
 
 * koelectra.py: 서버에서 모델이 인식한 레시피 속 개체명들을 json 형태로 뿌려주는 코드
-* lesik.py: 디지털 레세피 분석 메인 코드
+* lesik.py: 디지털 레시피 분석 메인 코드
 * lesik_local.py: 디지털 레시피 분석 결과를 로컬 터미널을 통해 확인할 수 있는 코드
 * microRecipe.py: 
 * toolmatchwithver2.py:
