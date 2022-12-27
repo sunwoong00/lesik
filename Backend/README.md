@@ -223,10 +223,31 @@ data = {
 ```
 
 ## 6) url + '/save' [POST]
-- 자동화된 레시피 정보를 저장한다
-#### Request 예시
+- 자동화된 레시피 정보의 JSON 형태를 사용자의 컴퓨터에 저장합니다.
+#### Response 예시
 ```
 {
-    [('data', '[]')]
+    "recipe_result": [
+        {
+            "duration": "",
+            "act": "해감하다",
+            "tool": [
+                ""
+            ],
+            "ingre": [
+                "바지락"
+            ],
+            "seasoning": [],
+            "volume": [
+                "300g"
+            ],
+            "temperature": [],
+            "zone": "",
+            "start_id": 0,
+            "end_id": 4,
+            "sentence": "1. 바지락은 해감해서",
+            "standard": "",
+            "top_class": ""
+        }
 }
 ```
