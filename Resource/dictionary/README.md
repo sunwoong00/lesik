@@ -28,8 +28,6 @@
 ├── cooking_act.txt
 ├── idiom.txt
 ├── seasoning.txt
-├── temperature.txt
-├── time.txt
 ├── tool.txt
 └── volume.txt
    
