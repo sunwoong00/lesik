@@ -15,8 +15,6 @@ go to http://ec2-13-209-70-137.ap-northeast-2.compute.amazonaws.com:5000/
 
 ## Prerequisite
 ```
-node
-npm
 Jinja2==3.0.3
 ```
 
