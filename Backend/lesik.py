@@ -1595,7 +1595,7 @@ def save():
         json.dump(returnJsonResult, file, indent = 4, ensure_ascii = False)
 
     path = f'./result.json'
-    return send_file(path, mimetype='application/json', attachment_filename='result.json', as_attachment=True)
+    return send_file(path, mimetype='application/json', download_name='result.json', as_attachment=True)
 
 @app.route('/microrecipe', methods=["GET"])
 def version2():
