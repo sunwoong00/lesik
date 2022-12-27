@@ -58,7 +58,7 @@ $ python crawling_wtable.py 한식 wtable_korean_recipe
 
 
 ## 만개의 레시피 크롤러
-#### [만개의 레시피 바로가기](https://www.10000recipe.com/chef/chef_list.html)
+##### [만개의 레시피 바로가기](https://www.10000recipe.com/chef/chef_list.html)
 만개의 레시피를 크롤링 해서 조리 순서만 txt 파일 형식으로 저장합니다.
 
 ### 주요 옵션
