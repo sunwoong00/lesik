@@ -61,17 +61,17 @@
 
 ### 개발자들  (ㄱ-ㄴ-ㄷ)
 
-**김하종** - whoami125@g.skku.edu
+**김하종** - 
 
-**박지연** - helmrping@gmail.com
+**박지연** - 
 
-**방선웅** - sunwoong89@g.skku.edu
+**방선웅** - 
 
-**서유정** - syj000229@naver.com
+**서유정** - 
 
-**송지은** - tiffany_song@naver.com
+**송지은** - 
 
-**이현민** - lhm6199@g.skku.edu
+**이현민** - 
 
 ### 멘토
 
