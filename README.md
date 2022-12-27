@@ -36,7 +36,7 @@
 
 2. 조리동작을 추출한다
     - EtriOpenAPI를 통해 동사(VV)를 분별, 이후 딕션너리를 통해 단순 동사인지 조리동작에 해당하는 동사인지 판단 → 조리동작을 기준으로 sequences 분리 <a href="https://github.com/iiVSX/lesik/tree/master/Backend#readme">
-    <img src="https://img.shields.io/badge/로직 방법 설명-<COLOR>"
+    <img src="https://img.shields.io/badge/백앤드 README-<COLOR>"
         style="height : auto; margin-left : 8px; margin-right : 8px;"/></a>
         
 3. 레시피 구성 요소들을 추출한다
@@ -47,7 +47,7 @@
         
 4. 레시피 부가 요소 추출한다
     - Rule-Based를 통해 해당 조리 문장에 알맞은 조리도구를 찾아낸다 <a href="https://github.com/iiVSX/lesik/tree/master/Backend#readme">
-    <img src="https://img.shields.io/badge/로직 방법 설명-<COLOR>"
+    <img src="https://img.shields.io/badge/백앤드 README-<COLOR>"
         style="height : auto; margin-left : 8px; margin-right : 8px;"/></a>
 
 ---
