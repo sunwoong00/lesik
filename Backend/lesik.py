@@ -7,7 +7,7 @@ from flask import Flask, render_template, request, make_response
 import pymysql
 
 import toolmatchwithverb as toolmatchwverb
-import version2 as v2
+import microRecipe as v2
 
 # version2 최적화를 위해 메인페이지의 결과값들을 저장해두고 한번에 v2에 전달
 class version2send:
@@ -82,10 +82,12 @@ def parse_cooking_act_dict(file_path):
     act_score_dict = {}
     for line in f.readlines():
         line = line.replace("\n", "")
+        if("[" in line): #sub부분과 기본 부분 조리도구를 나누기 위해서 [] 부분을 파일 안에서 찾는 함수
+            continue
         if delim in line:
             sp_line = line.split(delim)
             act_dict[sp_line[0]] = sp_line[1]
-            act_score_dict[sp_line[1]] = sp_line[2]
+            act_score_dict[sp_line[1]] = sp_line[3]
         else:
             act_dict[line] = line
     f.close()
@@ -1009,7 +1011,7 @@ def create_sequence(node, coref_dict, ingredient_dict, ingredient_type_list, mix
 
     # 개체명 추출을 이용한 시퀀스의 요소 보완
     if entity_mode == 'koelectra':
-        koelectra_node = extract_ner_from_kobert(node['text'])
+        koelectra_node = extract_ner_from_KoELECTRA(node['text'])
         for sequence in seq_list:
             seq_start_offset = len(" ".join(list(map(lambda word: word['text'],
                                                      filter(lambda word: word['begin'] < sequence['start_id'],
@@ -1256,13 +1258,13 @@ def merge_sequence(sequence_list):
     #print(sequence_list)
     return sequence_list
 
-def extract_ner_from_kobert(sentence):
-    kobert_api_url = "http://ec2-52-79-43-45.ap-northeast-2.compute.amazonaws.com:5000"
+def extract_ner_from_KoELECTRA(sentence):
+    KoELECTRA_api_url = "http://ec2-52-79-43-45.ap-northeast-2.compute.amazonaws.com:5000"
 
     http = urllib3.PoolManager()
     response = http.request(
         "POST",
-        kobert_api_url,
+        KoELECTRA_api_url,
         headers={"Content-Type": "application/text; charset=UTF-8"},
         body=sentence.encode('utf-8')
     )
@@ -1340,7 +1342,7 @@ def parse_node_section(entity_mode, is_srl, node_list):
             continue
         if is_ingredient:
             if entity_mode == 'koelectra':
-                koelectra_node = extract_ner_from_kobert(node['text'])
+                koelectra_node = extract_ner_from_KoELECTRA(node['text'])
                 if koelectra_node is not None:
                     sub_ingredient_dict = extract_ingredient_from_node(ingredient_type_list, volume_type_list, koelectra_node)
                 else:
@@ -1508,22 +1510,21 @@ def make_recipe(original_recipe, entity_mode, is_srl):
     act_to_tool_dict = parse_act_to_tool_dict("../Resource/labeling/act_to_tool.txt")
     tool_list, tool_to_zone_dict = parse_tool_dict("../Resource/labeling/tool.txt")
     idiom_dict = parse_idiom_dict("../Resource/labeling/idiom.txt")
+    slice_act = get_list_from_file("../Resource/dictionary/topclass_dict/slice_act.txt")
+    prepare_ingre = get_list_from_file("../Resource/dictionary/topclass_dict/prepare_act.txt")
+    use_fire = get_list_from_file("../Resource/dictionary/topclass_dict/useFire_act.txt")
+    put = get_list_from_file("../Resource/dictionary/topclass_dict/put_act.txt")
+    mix = get_list_from_file("../Resource/dictionary/topclass_dict/mix_act.txt")
+    make = get_list_from_file("../Resource/dictionary/topclass_dict/make_act.txt")
+    remove = get_list_from_file("../Resource/dictionary/topclass_dict/remove_act.txt")
     
-    slice_act = get_list_from_file("../Resource/labeling/topclass_dict/slice_act.txt")
-    prepare_ingre = get_list_from_file("../Resource/labeling/topclass_dict/prepare_act.txt")
-    use_fire = get_list_from_file("../Resource/labeling/topclass_dict/useFire_act.txt")
-    put = get_list_from_file("../Resource/labeling/topclass_dict/put_act.txt")
-    mix = get_list_from_file("../Resource/labeling/topclass_dict/mix_act.txt")
-    make = get_list_from_file("../Resource/labeling/topclass_dict/make_act.txt")
-    remove = get_list_from_file("../Resource/labeling/topclass_dict/remove_act.txt")
-    
-    slice_low_class = get_list_from_file("../Resource/labeling/lowclass_dict/slice_low.txt")
-    prepare_low_class = get_list_from_file("../Resource/labeling/lowclass_dict/prepare_low.txt")
-    useFire_low_class = get_list_from_file("../Resource/labeling/lowclass_dict/useFire_low.txt")
-    put_low_class = get_list_from_file("../Resource/labeling/lowclass_dict/put_low.txt")
-    mix_low_class = get_list_from_file("../Resource/labeling/lowclass_dict/mix_low.txt")
-    make_low_class = get_list_from_file("../Resource/labeling/lowclass_dict/make_low.txt")
-    remove_low_class = get_list_from_file("../Resource/labeling/lowclass_dict/remove_low.txt")
+    slice_low_class = get_list_from_file("../Resource/dictionary/lowclass_dict/slice_low.txt")
+    prepare_low_class = get_list_from_file("../Resource/dictionary/lowclass_dict/prepare_low.txt")
+    useFire_low_class = get_list_from_file("../Resource/dictionary/lowclass_dict/useFire_low.txt")
+    put_low_class = get_list_from_file("../Resource/dictionary/lowclass_dict/put_low.txt")
+    mix_low_class = get_list_from_file("../Resource/dictionary/lowclass_dict/mix_low.txt")
+    make_low_class = get_list_from_file("../Resource/dictionary/lowclass_dict/make_low.txt")
+    remove_low_class = get_list_from_file("../Resource/dictionary/lowclass_dict/remove_low.txt")
 
     zone_dict = {'act': act_to_zone_dict, 'tool': tool_to_zone_dict}
 
