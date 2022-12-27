@@ -2,7 +2,7 @@
 
 ## **모델 소개**
 
-![Untitled](%E1%84%85%E1%85%A6%E1%84%89%E1%85%B5%E1%84%91%E1%85%B5%20%E1%84%80%E1%85%A2%E1%84%8E%E1%85%A6%E1%84%86%E1%85%A7%E1%86%BC%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%89%E1%85%B5%E1%86%A8%20%E1%84%8B%E1%85%A5%E1%86%AB%E1%84%8B%E1%85%A5%20%E1%84%86%E1%85%A9%E1%84%83%E1%85%A6%E1%86%AF(recipe-ner-koele%20a471cbbe44d549dfb2457824af17d734/Untitled.png)
+<img width="100%" src="https://user-images.githubusercontent.com/100189169/209672916-c65b7c5b-d7fe-4cd4-895a-a2c374b2e39e.png"/>
 
 **recipe-ner-koelectra**는 KoELECTRA 모델을 기반으로 만들어진 레시피에 특화된 언어 모델입니다. pre-trained 모델로 [monologg/koelectra-base-v2-discriminator](https://huggingface.co/monologg/koelectra-small-v2-discriminator)를 사용했습니다.
 
