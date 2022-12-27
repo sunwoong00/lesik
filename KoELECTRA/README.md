@@ -205,7 +205,7 @@ Hugging Face를 사용하지 않고, 직접 모델을 사용하려면 아래 링
 
 | model | tokenizer |
 | --- | --- |
-| https://drive.google.com/drive/u/1/folders/1Ck-yA5bmUTEd_aV5lLhjYW270a5Yx8gS | https://drive.google.com/drive/u/1/folders/1CuLDhlUd47_WOjSV5qd7oagbCAj4X35j |
+| [download](https://drive.google.com/drive/u/1/folders/1Ck-yA5bmUTEd_aV5lLhjYW270a5Yx8gS) | [download](https://drive.google.com/drive/u/1/folders/1CuLDhlUd47_WOjSV5qd7oagbCAj4X35j) |
 
 model과 tokenizer를 저장한 폴더 경로를 아래 load 함수의 각각 model_directory, tokenizer_directory에 넣고, load 함수를 부르면, 해당 경로의 model과 tokenizer를 사용할 수 있습니다.
 
