@@ -1498,14 +1498,12 @@ def make_recipe(original_recipe, entity_mode, is_srl):
     analysis_code = "SRL"
 
     # get cooking component list & dictionary from files
-    global seasoning_list, volume_list, time_list, temperature_list, cooking_act_dict, act_to_tool_dict, tool_list, idiom_dict, zone_dict, total_sequencelist, slice_act, prepare_ingre, use_fire, put, mix, make, remove, make_low_class,mix_low_class,prepare_low_class,slice_low_class,useFire_low_class,put_low_class
+    global seasoning_list, volume_list, cooking_act_dict, act_to_tool_dict, tool_list, idiom_dict, zone_dict, total_sequencelist, slice_act, prepare_ingre, use_fire, put, mix, make, remove, make_low_class,mix_low_class,prepare_low_class,slice_low_class,useFire_low_class,put_low_class
     seasoning_list = []
     total_sequencelist = []
     if entity_mode != 'koelectra':
         seasoning_list = get_list_from_file("../Resource/labeling/seasoning.txt")
     volume_list = get_list_from_file("../Resource/labeling/volume.txt")
-    time_list = get_list_from_file("../Resource/labeling/time.txt")
-    temperature_list = get_list_from_file("../Resource/labeling/temperature.txt")
     cooking_act_dict, act_to_zone_dict = parse_cooking_act_dict("../Resource/labeling/cooking_act.txt")
     act_to_tool_dict = parse_act_to_tool_dict("../Resource/labeling/act_to_tool.txt")
     tool_list, tool_to_zone_dict = parse_tool_dict("../Resource/labeling/tool.txt")
