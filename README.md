@@ -51,7 +51,7 @@
 
 ### 개발자들  (ㄱ-ㄴ-ㄷ)
 
-**김하종** -
+**김하종** - hajongawe@gmail.com
 
 **박지연** - helmrping@gmail.com
 
@@ -61,7 +61,7 @@
 
 **송지은** - tiffany_song@naver.com
 
-**이현민** -
+**이현민** - lhm6199@g.skku.edu
 
 ### 멘토
 
