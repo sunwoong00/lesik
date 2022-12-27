@@ -84,11 +84,11 @@ Backend
 
 analysis_code:
 * morp - 형태소 분석
-* wsd 어휘의미 분석
-* wsd_poly 어휘의미 분석
-* ner 개체명 인식
-* dparse 의존 구문 분석
-* srl 의미역 인식
+* wsd - 어휘의미 분석
+* wsd_poly - 어휘의미 분석
+* ner - 개체명 인식
+* dparse - 의존 구문 분석
+* srl - 의미역 인식
 
 <br/>
 
