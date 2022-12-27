@@ -66,14 +66,14 @@ pre-trained 모델에 국어 국립원 모두의 말뭉치의 “개체명 분�
     5. **test_model**: 모델의 성능을 평가합니다.
     6. **train_per_epoch**: pre-trained 모델을 만듭니다.
 2. **data**
-    1. **labeling**: 최종적으로 학습한 train, test recipe dataset을 레이블링한 파일이 들어있습니다.
-    2. **train**: 최종 학습에 사용한 train, test dataset과 우리의 식탁 train, test dataset이 들어있습니다.
-3. **model**: 말뭉치를 학습한 model과 recipe-ner-koelectra의 model이 들어 있습니다.
-4. **recipe**: 중식, 한식, 양식 데이터가 들어있습니다.
+    1. **labeling**: 최종적으로 학습한 train, test recipe dataset을 레이블링한 파일이 있습니다.
+    2. **train**: 최종 학습에 사용한 train, test dataset과 우리의 식탁 train, test dataset이 있습니다.
+3. **model**: 말뭉치를 학습한 model과 recipe-ner-koelectra의 model이 있습니다.
+4. **recipe**: 중식, 한식, 양식 데이터가 있습니다.
     1. **korean**
-        1. **labeled**: 레이블링된 레시피 데이터입니다. 만개의 레시피와 우리의 식탁의 레시피가 들어있습니다. 우리의 식탁의 origin에는 2022.7월에 크롤링한 레시피가, plus에는 2022.11월에 크롤링한 레시피가 들어있습니다.
+        1. **labeled**: 레이블링된 레시피 데이터입니다. 만개의 레시피와 우리의 식탁의 레시피가 있습니다. 우리의 식탁의 origin에는 2022.7월에 크롤링한 레시피가, plus에는 2022.11월에 크롤링한 레시피가 있습니다.
         2. **original**: 순수한 레시피 데이터입니다. 이후 정보는 labeled와 동일합니다.
-5. **tokenizer**: 말뭉치를 학습한 tokenizer와 recipe-ner-koelectra의 tokenizer가 들어 있습니다.
+5. **tokenizer**: 말뭉치를 학습한 tokenizer와 recipe-ner-koelectra의 tokenizer가 있습니다.
 
 ```
 KoELECTRA
