@@ -6,6 +6,20 @@
 
 ---
 
+### Repository 설명
+
+##### Frontend
+* 디지털 레시피 분석 frontend 코드 (html, css, js)
+
+##### Backend
+* 디지털 레시피 분석 Backend 코드 (Flask)
+
+##### Crawling
+* 우리의 식탁, 만개의 레시피 크롤링 코드
+
+##### KoELECTRA
+* KoELECTRA 모델 학습 코드
+
 ### 주요 기능
 
 - 디지털 레시피 자동 생성
