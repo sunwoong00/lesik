@@ -181,12 +181,6 @@ transformers==4.25.1
 seqeval>=1.2.2
 ```
 
-아래 명령어를 사용하면, 모델 사용에 필요한 패키지를 다운 받을 수 있습니다.
-
-```
-pip3 install -r requirements.txt
-```
-
 ### 2. transformers 라이브러리
 
 recipe-ner-koelectra 모델은 [Hugging Face](https://huggingface.co/JIGOOOD/recipe-ner-koelectra-small)에 업로드 되어 있어 쉽게 사용할 수 있습니다.
