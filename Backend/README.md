@@ -112,7 +112,6 @@ analysis_code, ETRI Open api 발급 키, api 반환 형태: (https://aiopen.etri
     }
 
 ## API Call
-- url = http://13.124.105.187:5000/
 
 ## 1) url + '/index’ [GET]
 - Index 화면을 표시하기 위한 레시피 데이터를 디렉토리안에 존재하는 레시피를 랜덤하게 불러와 표시한다
