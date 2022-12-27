@@ -187,7 +187,15 @@ data = {
 #### Request 예시
 ```
 {
-    [{&#34;duration&#34;: &#34;&#34;, &#34;act&#34;: &#34;어슷 썰다&#34;, &#34;tool&#34;: [&#34;도마, 칼&#34;], &#34;ingre&#34;: [&#34;애호박&#34;], &#34;seasoning&#34;: [], &#34;volume&#34;: [&#34;1개&#34;], &#34;temperature&#34;: [], &#34;zone&#34;: &#34;전처리존&#34;, &#34;start_id&#34;: 0, &#34;end_id&#34;: 11, &#34;sentence&#34;: &#34;1. 애호박은 0.5cm 두께로 어슷하게 썬&#34;, &#34;standard&#34;: &#34;0.5cm&#34;, &#34;top_class&#34;: &#34;slice&#34;}, {&#34;duration&#34;: &#34;&#34;, &#34;act&#34;: &#34;채 썰다&#34;, &#34;tool&#34;: [&#34;도마, 칼&#34;], &#34;ingre&#34;: [], &#34;seasoning&#34;: [], &#34;volume&#34;: [], &#34;temperature&#34;: [], }]
+    [
+    {"duration": "", "act": "섞다", "tool": ["그릇"], "ingre": [], "seasoning": ["열무김치 국물", "생수"], "volume": ["1컵", ""], "temperature": [], "zone": "",
+    "start_id": 0, "end_id": 9, 
+    "sentence": "1. 열무김치 국물과 생수를 섞은", "standard": "", "top_class": "mix"}, {"duration": "", "act": "담다", "tool": ["지퍼백"], "ingre": [], "seasoning": [],
+    "volume": [], "temperature": [], "zone": "", "start_id": 10, "end_id": 15, "sentence": "후 지퍼백에 담아 살얼음이 생기도록 3시간 정도 미리 얼려주세요.", "standard": "",
+    "top_class": "put"}, {"duration": "", "act": "섞다", "tool": ["볼"], "ingre": [], "seasoning": ["식초", "설탕", "고추장", "고춧가루", "참기름", "통깨"], "volume": ["
+    큰술", "2큰술", "1큰술", "1큰술", "1큰술", "1큰술"], "temperature": [], "zone": "전처리존", "start_id": 0, "end_id": 9, "sentence": "2. 볼에 양념 재료를 넣고 섞어주
+    요.", "standard": "", "top_class": "mix"}
+    ]
 }
 ```
 #### Response 예시 
