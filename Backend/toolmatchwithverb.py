@@ -215,13 +215,16 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
         
         for k in valuelist: #129~번째열 함수 선언 부분 확인, 행동 길이만큼 loop
             if k in act and (isWordPresent(str(act), str(k)) == True): #만약에 행동 딕션너리에 해당하는 동사, 그리고 전달 받은 array에서 동사가 서로 일치한다면
-                #print("whynotwor", k, act)
-                if((act == "물기를 빼다" or "헹구다") and (check_if_tool_found == 0)): #만약에 물기를 빼다, 헹구다 같은 특별한 동작인 경우
+                print("whynotwor", k, act)
+                if((check_if_tool_found == 0) and (act == "물기를 빼다" or act == "헹구다")): #만약에 물기를 빼다, 헹구다 같은 특별한 동작인 경우
                     current_action_tool[0] = "싱크대" #싱크대가 해당하는 0번째 인덱스에 직접 배정
                     if current_action_tool[save_previous_used_sentence] != "싱크대":
                         check_if_used_tool[save_previous_used_sentence] -= 1 #인덱스를 일부로 증가 X, 직접 배정 같은 경우 트레킹 숫자가 꼬이지 않게 증가 없이 진행
                     check_knife = 1 #check_knife를 1로 설정, 이는 인덱스 1번 같은 경우 따로 언급 없는 경우 도마,칼로 기본조리도구를 유지하기 위해서 사용
                     #print(sentences)
+                elif("다지다" in act or "썰다" in act):
+                    current_action_tool[1] = "도마, 칼"
+                    check_knife == 1
                 elif("자르다" in act): #만약에 자르다가 행동인 경우
                     if check_if_tool_found == 1: #자르다 사용할때 특정 조리도구가 언급되었는지 확인, 만약에 언급되었다면 직접 배정을 하지 않음
                         pass
@@ -237,7 +240,7 @@ def matchtoolwithaction(array, cooking_act_dict, checkaction, checktoolmain, che
                         saveindex = 1 #이와 관련된 조리행동은 인덱스1에 해당하기 때문에 추후 사용을 위해서 인덱스 접근을 위해 1로 설정
                         maxvalue = 1 #위와 같음
                         check_if_used_tool[1] -= 1 #직접배정이라 따로 트래킹 숫자를 증가 X
-                    elif("슬라이스" in act): #위 밑동, 제거 예시와 같음. 조금더 코드 간편화를 위해 if-elif을 합쳐도 무관 X
+                    elif("슬라이스" in act or "다이스" in act): #위 밑동, 제거 예시와 같음. 조금더 코드 간편화를 위해 if-elif을 합쳐도 무관 X
                         #print("\n\nhi]n]n")
                         saveindex = 1 #이와 관련된 조리행동은 인덱스1에 해당하기 때문에 추후 사용을 위해서 인덱스 접근을 위해 1로 설정
                         maxvalue = 1 #위와 같음
