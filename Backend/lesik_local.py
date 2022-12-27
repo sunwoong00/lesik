@@ -1537,11 +1537,11 @@ def main():
     seasoning_list = []
     total_sequencelist = []
     if entity_mode != 'koelectra':
-        seasoning_list = get_list_from_file("../Resource/labeling/seasoning.txt")
-    volume_list = get_list_from_file("../Resource/labeling/volume.txt")
-    cooking_act_dict, act_to_zone_dict = parse_cooking_act_dict("../Resource/labeling/cooking_act.txt")
-    act_to_tool_dict = parse_act_to_tool_dict("../Resource/labeling/act_to_tool.txt")
-    tool_list, tool_to_zone_dict = parse_tool_dict("../Resource/labeling/tool.txt")
+        seasoning_list = get_list_from_file("../Resource/dictionary/seasoning.txt")
+    volume_list = get_list_from_file("../Resource/dictionary/volume.txt")
+    cooking_act_dict, act_to_zone_dict = parse_cooking_act_dict("../Resource/dictionary/cooking_act.txt")
+    act_to_tool_dict = parse_act_to_tool_dict("../Resource/dictionary/act_to_tool.txt")
+    tool_list, tool_to_zone_dict = parse_tool_dict("../Resource/dictionary/tool.txt")
     idiom_dict = parse_idiom_dict("../Resource/labeling/idiom.txt")
     slice_act = get_list_from_file("../Resource/dictionary/topclass_dict/slice_act.txt")
     prepare_ingre = get_list_from_file("../Resource/dictionary/topclass_dict/prepare_act.txt")
