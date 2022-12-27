@@ -51,6 +51,13 @@
         style="height : auto; margin-left : 8px; margin-right : 8px;"/></a>
 
 ---
+## Python 실행 필수 라이브러리 (requirements.txt)
+- PyMySQL: 데이터베이스 사용을 위해 사용한다
+- jamo: microrecipe에서 이루어지는 한글 분석을 위해 사용한다
+- Jinja2: Flask에서 프론트로 정보를 보낼때 사용한다
+- Flask: 백앤드 API 서버를 위해 사용한다
+- urllib3: 데이터 통신을 위해 사용한다
+---
 
 ### 개발자들  (ㄱ-ㄴ-ㄷ)
 

@@ -7,11 +7,20 @@
     
 ### Execute code
 
-    1. 필요한 패키지 준비
-        - pip install -r requirements.txt 을 통해 필요한 패키지를 다운 받는다
-        - cd Backend → venv/bin/activate을 통해 가상환경을 실행 시킨다
+    1. Python 설치 및 필요한 패키지 준비
+        - sudo apt-get update
+        - sudo apt-get install python3-venv
+        - python3 -m venv venv 을 통해 가상환경을 만든다
+        - pip install -r requirements.txt 을 통해 필요한 패키지를 다운 받는다.
+        해당 파일은 메인 폴더에 존재한다.
+        - cd Backend → venv/bin/activate을 통해 가상환경을 실행 시킨다.
 
-    2. cd Backend → python -u ./lesik.py 을 통해 코드를 실행, (http://localhost:5000/) 로 접속한다
+    2. cd Backend → python/python3 -u ./lesik.py 을 통해 코드를 실행, (http://localhost:5000/) 로 접속한다
+
+- EC2 설정에 대한 추가 설명은 해당 링크에 있다. 
+<a href="https://whoami125.notion.site/AWS-EC2-4fc2808f27664eddba10483ccaa127f6">
+<img src="https://img.shields.io/badge/EC2 생성 및 보안 설정-<COLOR>"
+style="height : auto; margin-left : 8px; margin-right : 8px;"/></a>
     
 ## 주요 파일 설명
 
