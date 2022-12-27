@@ -6,8 +6,15 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+import os
+import sys
 
-def parse(token):  #데이터를 추출하는 함수
+
+def parse(token, folder_name):  #데이터를 추출하는 함수
+    isExist = os.path.exists(folder_name) 
+    if not isExist: #디렉토리가 존재하지 않으면 생성
+        os.makedirs(folder_name)
+
     recipe_name = token.find('h2', attrs={'class': 'RecipeDetailstyle__Title-q7sykd-4 kIVrZW'})
     if recipe_name is None:
         return None
@@ -29,7 +36,7 @@ def parse(token):  #데이터를 추출하는 함수
             sub_ingredient_list.append(ingredient_info[0].text + " " + ingredient_info[1].text)
         ingredient_list.append(sub_ingredient_list)
 
-    f = open("toto/" + recipe_name.text + ".txt", "w", encoding='utf-8')  #디렉토리 생성 후  입력
+    f = open(folder_name + "/" + recipe_name.text + ".txt", "w", encoding='utf-8')  #디렉토리에 폴더 생성 후 폴더 이름 입력
 
     if recipe_serving is not None:
         f.write(recipe_name.text + "(" + recipe_serving + ")" + "\n")
@@ -46,7 +53,7 @@ def parse(token):  #데이터를 추출하는 함수
         f.write(str(i) + ". " + step_list[i-1].text + '\n')
 
 
-def scroll():  #데이터 스크롤링 함수
+def scroll(recipe_category):  #데이터 스크롤링 함수
     recipe_url = 'https://wtable.co.kr/recipes'
 
     options = webdriver.ChromeOptions()
@@ -58,7 +65,7 @@ def scroll():  #데이터 스크롤링 함수
             EC.presence_of_element_located((By.CLASS_NAME, 'RecipeListstyle__Categories-sc-1s9b4ly-16')))
         recipe_type_list = element.find_elements(By.CLASS_NAME, 'RecipeListstyle__Category-sc-1s9b4ly-17')
         for recipe_type in recipe_type_list:
-            if recipe_type.text == '양식':  #카테고리 변경
+            if recipe_type.text == recipe_category:
                 recipe_type.click()
 
         last_height = driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
@@ -82,7 +89,7 @@ def scroll():  #데이터 스크롤링 함수
     return recipe_url_list
 
 
-def request(url):
+def request(url, folder_name):
     http = urllib3.PoolManager()
     response = http.request(
         "POST",
@@ -92,15 +99,16 @@ def request(url):
 
     bs = BeautifulSoup(response.data, 'html.parser')
     token = bs.find('div', attrs={'class': 'token__Component-sc-1o2h3sm-0 jjTxDH'})
-    parse(token)
+    parse(token, folder_name)
 
 
-def main():
-    recipe_url_list = scroll()
+def main(recipe_category, folder_name):
+    recipe_url_list = scroll(recipe_category)
     for recipe_url in recipe_url_list:
-        request(recipe_url)
+        request(recipe_url, folder_name)
 
 
 if __name__ == "__main__":
-    main()
-
+    recipe_category = sys.argv[1] #크롤링을 진행할 레시피 카테고리
+    folder_name = sys.argv[2] #폴더명
+    main(recipe_category, folder_name)
