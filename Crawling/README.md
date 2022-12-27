@@ -25,7 +25,7 @@ $ python crawling_wtable.py [--recipe_category] [--folder_name]
 
 ### 실행 예시
 ```
-$ python crawling_wtable.py 한식 wtable_korean_recipe
+$ python crawling_wtable.py 한식 wtable_korean_recipe_sample
 ```
 
 ### 결과
@@ -70,7 +70,7 @@ $ python crawling_10000recipe.py [--recipe_url] [--folder_name]
 
 ### 실행 예시
 ```
-$ python crawling_10000recipe.py https://www.10000recipe.com/profile/recipe.html?uid=bboeonni12 10000_recipe
+$ python crawling_10000recipe.py https://www.10000recipe.com/profile/recipe.html?uid=bboeonni12 10000_recipe_sample
 ```
 
 ### 결과
