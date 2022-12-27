@@ -21,6 +21,8 @@
 <a href="https://whoami125.notion.site/AWS-EC2-4fc2808f27664eddba10483ccaa127f6">
 <img src="https://img.shields.io/badge/EC2 생성 및 보안 설정-<COLOR>"
 style="height : auto; margin-left : 8px; margin-right : 8px;"/></a>
+
+<br/>
     
 ## 주요 파일 설명
 
