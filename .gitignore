@@ -13,3 +13,5 @@ Backend/.profile
 Backend/.sudo_as_admin_successful
 
 Backend/.Xauthority
+
+Backend/result.json
