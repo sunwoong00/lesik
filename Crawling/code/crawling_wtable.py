@@ -7,6 +7,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 import os
+import sys
 
 
 def parse(token, folder_name):  #데이터를 추출하는 함수
@@ -64,7 +65,7 @@ def scroll(recipe_category):  #데이터 스크롤링 함수
             EC.presence_of_element_located((By.CLASS_NAME, 'RecipeListstyle__Categories-sc-1s9b4ly-16')))
         recipe_type_list = element.find_elements(By.CLASS_NAME, 'RecipeListstyle__Category-sc-1s9b4ly-17')
         for recipe_type in recipe_type_list:
-            if recipe_type.text == recipe_category:  #카테고리 변경
+            if recipe_type.text == recipe_category:
                 recipe_type.click()
 
         last_height = driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
@@ -101,13 +102,13 @@ def request(url, folder_name):
     parse(token, folder_name)
 
 
-def main():
-    recipe_category = input("카테고리를 입력해주세요: ")
-    folder_name = input("폴더명을 입력해주세요: ")
+def main(recipe_category, folder_name):
     recipe_url_list = scroll(recipe_category)
     for recipe_url in recipe_url_list:
         request(recipe_url, folder_name)
 
 
 if __name__ == "__main__":
-    main()
+    recipe_category = sys.argv[1] #크롤링을 진행할 레시피 카테고리
+    folder_name = sys.argv[2] #폴더명
+    main(recipe_category, folder_name)
