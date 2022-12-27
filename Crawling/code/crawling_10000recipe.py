@@ -7,6 +7,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 import os
+import sys
 
 
 def parse(token, folder_name):  #데이터를 추출하는 함수
@@ -81,9 +82,7 @@ def request(url, folder_name):
     parse(token, folder_name)
 
 
-def main():
-    recipe_url = input("크롤링을 진행할 쉐프/의 프로필 url을 입력해주세요: ")
-    folder_name = input("폴더명을 입력해주세요: ")
+def main(recipe_url, folder_name):
     recipe_url_list = scroll(recipe_url)
 
     for recipe_url in recipe_url_list:
@@ -91,4 +90,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    recipe_url = sys.argv[1] #크롤링을 진행할 쉐프/의 프로필 url
+    folder_name = sys.argv[2] #폴더명
+    main(recipe_url, folder_name)
