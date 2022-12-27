@@ -53,13 +53,13 @@
 
 **김하종** -
 
-**박지연** -
+**박지연** - helmrping@gmail.com
 
-**방선웅** -
+**방선웅** - sunwoong89@g.skku.edu
 
-**서유정** -
+**서유정** - syj000229@naver.com
 
-**송지은** -
+**송지은** - tiffany_song@naver.com
 
 **이현민** -
 
