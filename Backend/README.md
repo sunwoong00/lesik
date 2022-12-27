@@ -82,7 +82,15 @@ Backend
         )
     }
 
-analysis_code, ETRI Open api 발급 키, api 반환 형태: (https://aiopen.etri.re.kr/guide/WiseNLU) 참고 
+analysis_code:
+* morp - 형태소 분석
+* wsd 어휘의미 분석
+* wsd_poly 어휘의미 분석
+* ner 개체명 인식
+* dparse 의존 구문 분석
+* srl 의미역 인식
+
+ETRI Open api 발급 키, api 반환 형태: ETRI Open api 사이트 (https://aiopen.etri.re.kr/guide/WiseNLU) 참고 
 
 <br/>
 
