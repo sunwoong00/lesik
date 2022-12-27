@@ -179,12 +179,7 @@ KoELECTRA
 torch==1.10.2
 transformers==4.25.1
 seqeval>=1.2.2
-```
-
-아래 명령어를 사용하면, 모델 사용에 필요한 패키지를 다운 받을 수 있습니다.
-
-```
-pip3 install -r requirements.txt
+pandas
 ```
 
 ### 2. transformers 라이브러리
