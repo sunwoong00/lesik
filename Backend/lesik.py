@@ -3,7 +3,7 @@ import os.path
 import random
 
 import urllib3
-from flask import Flask, render_template, request, make_response
+from flask import Flask, render_template, request, make_response, send_file
 import pymysql
 
 import toolmatchwithverb as toolmatchwverb
@@ -17,26 +17,7 @@ class version2send:
     checkpoint = 0
     resultdataofv2 = {}
     checkifmainpost = 0
-
-# util
-def insert_recipe(recipe_name, sentence, json_obj):
-    sql_format = "INSERT INTO 0_sentences (recipe_name, sentence, json) VALUES('{recipe_name}', '{sentence}', '{json}')"
-    conn = pymysql.connect(
-        host='lesik-db.coqeactzlntd.ap-northeast-2.rds.amazonaws.com',
-        port=3306,
-        user='lesik',
-        password='2022_lesik!',
-        db='lesik_main',
-    )
-
-    with conn:
-        with conn.cursor() as cursor:
-            json_obj = conn.escape_string(str(json.dumps(json_obj)))
-            sentence = conn.escape_string(sentence)
-
-            query = sql_format.format(recipe_name=recipe_name, sentence=sentence, json=json_obj)
-            cursor.execute(query)
-            conn.commit()
+    savejsonfileData = {}
 
 
 def get_list_from_file(file_path):
@@ -1604,22 +1585,20 @@ def recipe():
 
     if not sequence_list:
         return make_response("레시피 분석에 실패했습니다", 406)
-    
+    convertListToData = {"recipe_result": sequence_list}
     response = json.dumps(sequence_list, ensure_ascii=False)
+    version2send.savejsonfileData = convertListToData
     return make_response(response)
 
 
-@app.route("/save", methods=['POST'])
+@app.route("/save", methods=['POST', "GET"])
 def save():
-    if request.method == 'POST':
-        data = request.form.get("data")
-        if data is not None:
-            json_object = json.loads(data)
-            for obj in json_object:
-                insert_recipe("", obj.get("sentence"), obj)
-            return make_response("Success", 200)
+    returnJsonResult = version2send.savejsonfileData
+    with open("./result.json", 'w', encoding='utf-8') as file:
+        json.dump(returnJsonResult, file, indent = 4, ensure_ascii = False)
 
-    return make_response("Error while storing recipe", 406)
+    path = f'./result.json'
+    return send_file(path, mimetype='application/json', attachment_filename='result.json', as_attachment=True)
 
 @app.route('/microrecipe', methods=["GET"])
 def version2():

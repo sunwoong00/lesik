@@ -1,0 +1,283 @@
+{
+    "recipe_result": [
+        {
+            "duration": "",
+            "act": "자르다",
+            "tool": [
+                "도마, 칼"
+            ],
+            "ingre": [
+                "마늘종"
+            ],
+            "seasoning": [],
+            "volume": [
+                "215g"
+            ],
+            "temperature": [],
+            "zone": "전처리존",
+            "start_id": 0,
+            "end_id": 13,
+            "sentence": "1. 마늘종은 4cm길이로 먹기 좋게 잘라주세요.",
+            "standard": "4cm",
+            "top_class": "slice"
+        },
+        {
+            "duration": "",
+            "act": "섞다",
+            "tool": [
+                "그릇"
+            ],
+            "ingre": [],
+            "seasoning": [],
+            "volume": [],
+            "temperature": [],
+            "zone": "",
+            "start_id": 0,
+            "end_id": 4,
+            "sentence": "양념재료는 모두 섞어주세요.",
+            "standard": "",
+            "top_class": "mix"
+        },
+        {
+            "duration": " 20초",
+            "act": "데치다",
+            "tool": [
+                "팬"
+            ],
+            "ingre": [
+                "마늘종"
+            ],
+            "seasoning": [
+                "소금"
+            ],
+            "volume": [
+                "215g",
+                ""
+            ],
+            "temperature": [],
+            "zone": "화구존",
+            "start_id": 0,
+            "end_id": 16,
+            "sentence": "2. 끓는 물에 소금을 넣어 마늘종을 20초 정도 데친",
+            "standard": "",
+            "top_class": "use_fire"
+        },
+        {
+            "duration": "",
+            "act": "헹구다",
+            "tool": [
+                "싱크대"
+            ],
+            "ingre": [],
+            "seasoning": [],
+            "volume": [],
+            "temperature": [],
+            "zone": "전처리존",
+            "start_id": 17,
+            "end_id": 22,
+            "sentence": "후, 찬물에 헹구어",
+            "standard": "",
+            "top_class": "prepare_ingre"
+        },
+        {
+            "duration": "",
+            "act": "물기를 빼다",
+            "tool": [
+                "싱크대"
+            ],
+            "ingre": [],
+            "seasoning": [],
+            "volume": [],
+            "temperature": [],
+            "zone": "전처리존",
+            "start_id": 23,
+            "end_id": 27,
+            "sentence": "물기를 빼주세요.",
+            "standard": "",
+            "top_class": "remove"
+        },
+        {
+            "duration": "3 ~ 4분",
+            "act": "볶다",
+            "tool": [
+                "팬"
+            ],
+            "ingre": [
+                "건새우"
+            ],
+            "seasoning": [],
+            "volume": [
+                "25g"
+            ],
+            "temperature": "약불",
+            "zone": "화구존",
+            "start_id": 0,
+            "end_id": 16,
+            "sentence": "3. 마른 달군팬에 약불로 건새우를 3~4분 볶아 준비해주세요.",
+            "standard": "",
+            "top_class": "use_fire"
+        },
+        {
+            "duration": "",
+            "act": "두르다",
+            "tool": [
+                "팬"
+            ],
+            "ingre": [],
+            "seasoning": [
+                "오일"
+            ],
+            "volume": [
+                ""
+            ],
+            "temperature": [],
+            "zone": "화구존",
+            "start_id": 0,
+            "end_id": 9,
+            "sentence": "4. 별도의 달군 팬에 오일을 두르고",
+            "standard": "",
+            "top_class": "put"
+        },
+        {
+            "duration": " 1분",
+            "act": "볶다",
+            "tool": [
+                "팬"
+            ],
+            "ingre": [
+                "마늘종"
+            ],
+            "seasoning": [],
+            "volume": [
+                "215g"
+            ],
+            "temperature": [],
+            "zone": "화구존",
+            "start_id": 10,
+            "end_id": 19,
+            "sentence": "마늘종을 넣어 1분간 볶다가",
+            "standard": "",
+            "top_class": "use_fire"
+        },
+        {
+            "duration": " 2 ~ 3분",
+            "act": "볶다",
+            "tool": [
+                "팬"
+            ],
+            "ingre": [],
+            "seasoning": [
+                "간장",
+                "맛술",
+                "물",
+                "올리고당",
+                "설탕"
+            ],
+            "volume": [
+                "1큰술",
+                "1큰술",
+                "1큰술",
+                "1큰술",
+                "1 / 2큰술"
+            ],
+            "temperature": [],
+            "zone": "화구존",
+            "start_id": 20,
+            "end_id": 33,
+            "sentence": "양념재료를 넣어 약 2~3분간 더 볶아주세요.",
+            "standard": "",
+            "top_class": "use_fire"
+        },
+        {
+            "duration": "",
+            "act": "볶다",
+            "tool": [
+                "팬"
+            ],
+            "ingre": [],
+            "seasoning": [],
+            "volume": [],
+            "temperature": [],
+            "zone": "화구존",
+            "start_id": 0,
+            "end_id": 2,
+            "sentence": "5. 볶아둔",
+            "standard": "",
+            "top_class": "use_fire"
+        },
+        {
+            "duration": "",
+            "act": "볶다",
+            "tool": [
+                "팬"
+            ],
+            "ingre": [],
+            "seasoning": [],
+            "volume": [],
+            "temperature": [],
+            "zone": "화구존",
+            "start_id": 3,
+            "end_id": 14,
+            "sentence": "건새우를 넣은 후 조금 더 볶다가",
+            "standard": "",
+            "top_class": "use_fire"
+        },
+        {
+            "duration": "",
+            "act": "불을 끄다",
+            "tool": [
+                "팬"
+            ],
+            "ingre": [],
+            "seasoning": [],
+            "volume": [],
+            "temperature": [],
+            "zone": "화구존",
+            "start_id": 15,
+            "end_id": 18,
+            "sentence": "불을 끄고,",
+            "standard": "",
+            "top_class": "use_fire"
+        },
+        {
+            "duration": "",
+            "act": "뿌리다",
+            "tool": [
+                "팬"
+            ],
+            "ingre": [],
+            "seasoning": [
+                "참기름",
+                "통깨"
+            ],
+            "volume": [
+                "1큰술",
+                ""
+            ],
+            "temperature": [],
+            "zone": "전처리존",
+            "start_id": 19,
+            "end_id": 27,
+            "sentence": "참기름과 통깨를 뿌려 마무리해주세요.6.",
+            "standard": "",
+            "top_class": "put"
+        },
+        {
+            "duration": "",
+            "act": "담다",
+            "tool": [
+                "그릇"
+            ],
+            "ingre": [],
+            "seasoning": [],
+            "volume": [],
+            "temperature": [],
+            "zone": "전처리존",
+            "start_id": 0,
+            "end_id": 4,
+            "sentence": "알맞은 그릇에 담아 맛있게 즐겨주세요.",
+            "standard": "",
+            "top_class": "put"
+        }
+    ]
+}

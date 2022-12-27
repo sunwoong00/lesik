@@ -84,8 +84,8 @@ $(document).on('submit', '#insert-recipe', function() {
 
       if(!$("#save-sentence").length){
           var formDOM = "";
-          formDOM += "<div class='empty-block'></div><form id='save-sentence' class='ajax-form' action='/save' method='POST' confirm-msg='해당 문장을 저장하시겠습니까?'>";
-          formDOM += "<input type='submit' value='저장'/>";
+          formDOM += "<div class='empty-block'></div><form id='save-sentence' class='ajax-form' action='/save' method='POST' confirm-msg='해당 자동화 레시피를 저장하시겠습니까?'>";
+          formDOM += "<input type='submit' value='저장' id='submit_buttom' />";
           formDOM += '</form>';
           $("#save_sentence-box").append(formDOM);
       }
@@ -123,8 +123,9 @@ $(document).on('submit', "#save-sentence", function() {
   dataDOM += "'/>";
 
   $this.append(dataDOM);
-  $.post($this.attr('action'), $this.serialize())
+  $.get($this.attr('action'), $this.serialize())
     .done(function(data) {
+      window.location.href = window.location.href + 'save';
       alert("저장에 성공했습니다");
       $("input[name=data]").remove();
     })
