@@ -17,11 +17,15 @@ $ pip install urllib3
 
 #### 주요 옵션
 ```
-recipe_category = input("카테고리를 입력해주세요: ")
-folder_name = input("폴더명 입력: ")
+$ python crawling_wtable.py [--recipe_category] [--folder_name]
 ```
-<li>recipe_category: 크롤링을 진행할 레시피 카테고리입니다. (한식, 중식, 분식 등)</li>
-<li>folder_name: 크롤링 데이터를 저장할 폴더입니다.</li>
+- recipe_category: 크롤링을 진행할 레시피 카테고리입니다. (한식, 중식, 분식 등)
+- folder_name: 크롤링 데이터를 저장할 폴더입니다.
+
+#### 실행 예시
+```
+$ python crawling_wtable.py 한식 korean_recipe
+```
 
 #### 결과
 ![crawling_wtable](https://user-images.githubusercontent.com/63731797/209580009-dc4ee1f5-6650-4452-98d3-569c1cd66185.png)
@@ -31,11 +35,15 @@ folder_name = input("폴더명 입력: ")
 
 #### 주요 옵션
 ```
-recipe_url = input("크롤링을 진행할 쉐프의 프로필 링크를 입력해주세요: ")
-folder_name = input("폴더명을 입력해주세요: ")
+$ python crawling_10000recipe.py [--recipe_url] [--folder_name]
 ```
 <li>recipe_url: 크롤링을 진행할 만개의 레시피 쉐프/작성자의 프로필 url입니다.</li>
 <li>folder_name: 크롤링 데이터를 저장할 폴더입니다.</li>
+
+#### 실행 예시
+```
+$ python crawling_10000recipe.py https://www.10000recipe.com/profile/recipe.html?uid=bboeonni12 10000_folder
+```
 
 #### 결과
 ![crawling_10000recipe](https://user-images.githubusercontent.com/63731797/209580161-2e5e67bb-b9f5-46d9-9b2f-35dc29d0e4e5.png)
