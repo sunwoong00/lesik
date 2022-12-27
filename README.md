@@ -18,7 +18,7 @@
 * 우리의 식탁, 만개의 레시피 크롤링 코드
 
 ##### KoELECTRA
-* KoELECTRA 모델 학습 코드
+* 레시피 개체명 인식 언어 모델: 코드(train, test), 데이터(레이블링, 학습), 모델, 레시피(한식, 중식, 양식), 토크나이저 
 
 ---
 
@@ -41,7 +41,7 @@
         
 3. 레시피 구성 요소들을 추출한다
     - 개체명 인식을 통해 식재료, 용량, 첨가물, 온도, 시간을 추출한다
-    - 학습시킨 KoELECTRA를 사용하여 개체명 인식을 진행하고 추가적으로 Rule-based을 통해 발견하지 못한 요소들을 딕션너리를 통해 찾아낸다 <a href="https://github.com/iiVSX/lesik/blob/master/KoELECTRA/model_README.md">
+    - 학습시킨 KoELECTRA를 사용하여 개체명 인식을 진행하고 추가적으로 Rule-based을 통해 발견하지 못한 요소들을 딕셔너리를 통해 찾아낸다 <a href="https://github.com/iiVSX/lesik/blob/master/KoELECTRA/README.md">
     <img src="https://img.shields.io/badge/KoELECTRA 학습 방법 설명-<COLOR>"
         style="height : auto; margin-left : 8px; margin-right : 8px;"/></a>
         
@@ -61,11 +61,11 @@
 
 ### 개발자들  (ㄱ-ㄴ-ㄷ)
 
-**김하종** - 
+**김하종** - https://github.com/WhoAmI125
 
-**박지연** - 
+**박지연** - https://github.com/JIGOOOD
 
-**방선웅** - 
+**방선웅** - https://github.com/sunwoongskku
 
 **서유정** - 
 
@@ -87,7 +87,7 @@
 </a>
 
 
-<a href="https://github.com/iiVSX/lesik/blob/master/KoELECTRA/model_README.md">
+<a href="https://github.com/iiVSX/lesik/blob/master/KoELECTRA/README.md">
     <img src="https://img.shields.io/badge/KoELECTRA Readme-<COLOR>"
         style="height : auto; margin-left : 8px; margin-right : 8px;"/>
 </a>

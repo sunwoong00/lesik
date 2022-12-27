@@ -1,23 +1,27 @@
-# Degital Recipe, Micro Recipe & Prompt - Frontend
+# Digital Recipe, Micro Recipe & Prompt - Frontend
 
-> 레시피 입력에 따라 디지털레시피를 생성 및 레시피 분해하고, prompt에서 실시간으로 조리설비별 진행과정을 확인할수 있는 서비스입니다.
+> 레시피를 입력 받으면 디지털 레시피를 생성 및 분해하고, prompt에서 실시간으로 조리설비별 진행과정을 확인할 수 있는 서비스입니다.
 
-## 실행 화면 이미지
-
-https://user-images.githubusercontent.com/63731797/209579025-ce8e7e30-f06e-4436-ad75-75c1df72d3d2.mp4
-
-<br />
+## Prerequisite
+```
+Jinja2==3.0.3
+```
 
 ## Getting Started
 
-### How to Run
+### Clone Repository
 
-**To run server:**
-
-```shell script
-go to http://ec2-13-209-70-137.ap-northeast-2.compute.amazonaws.com:5000/
-```
-
+    $ git clone https://github.com/iiVSX/lesik.git
+    
+### Execute code
+    1. Python 설치 및 필요한 패키지 준비
+        - sudo apt-get update
+        - sudo apt-get install python3-venv
+        - python3 -m venv venv 을 통해 가상환경을 만든다.
+        - pip3 install -r requirements.txt 을 통해 필요한 패키지를 다운 받는다.
+        해당 파일은 메인 폴더에 존재한다.
+        - cd Backend → venv/bin/activate을 통해 가상환경을 실행 시킨다.
+    2. cd Backend → python/python3 -u ./lesik.py 을 통해 코드를 실행, (http://localhost:5000/) 로 접속한다.
 
 ## 파일 구조
 
@@ -32,7 +36,7 @@ go to http://ec2-13-209-70-137.ap-northeast-2.compute.amazonaws.com:5000/
 └── static
     ├── css
     │   ├── microrecipe.css
-    │   ├── new_main.css
+    │   ├── main.css
     │   └── prompt.css
     ├── image
     │   ├── cooksup.png
@@ -40,16 +44,17 @@ go to http://ec2-13-209-70-137.ap-northeast-2.compute.amazonaws.com:5000/
     │   ├── manual.png
     │   ├── refresh_btn.png
     │   └── res.jpg
-    ├── js
-    │   ├── main.js
-    │   ├── main_backup.js
-    │   ├── microrecipe.js
-    │   └── prompt.js
-    └── templates
-        ├── index.html
-        ├── index_keep.html
-        ├── index_old.html
-        ├── manual.html
-        ├── prompt.html
-        └── prompt_backup.html
+    └── js
+        ├── main.js
+        ├── microrecipe.js
+        └── prompt.js
 ```
+
+## JS
+- main.js
+  - 레시피를 입력 받아서 디지털 레시피 생성
+- microrecipe.js
+  - 레시피를 입력 받아서 micro recipe 생성
+  - 관형어절로 이루어진 문장을 새로운 시퀀스로 생성 및 동시 동작 처리
+- prompt.js
+  - 입력 받은 레시피를 쿠킹 프롬프트로 변환

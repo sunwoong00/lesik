@@ -21,12 +21,17 @@
 <a href="https://whoami125.notion.site/AWS-EC2-4fc2808f27664eddba10483ccaa127f6">
 <img src="https://img.shields.io/badge/EC2 생성 및 보안 설정-<COLOR>"
 style="height : auto; margin-left : 8px; margin-right : 8px;"/></a>
+
+<br/>
     
 ## 주요 파일 설명
 
 * koelectra.py: 서버에서 모델이 인식한 레시피 속 개체명들을 json 형태로 뿌려주는 코드
-* lesik.py: 디지털 레세피 분석 메인 코드
+* lesik.py: 디지털 레시피 분석 메인 코드
 * lesik_local.py: 디지털 레시피 분석 결과를 로컬 터미널을 통해 확인할 수 있는 코드
+* microRecipe.py: 
+* toolmatchwithver2.py:
+* toolmatchwithverb.py
 
 <br/>
 
@@ -51,7 +56,13 @@ Backend
 
 ### 1) ETRI Open api
 
-디지털 레시피 분석을 위해 사용: 형태소 분석 api, 의미역 인식 api
+디지털 레시피 분석을 위해 사용: 형태소 분석 API, 의미역 인식 API
+
+* 형태소 분석 API: 형태소 분석 API는 자연어 문장에서 의미를 가진 최소 단위인 형태소(명사, 동사, 형용사, 부사, 조사, 어미 등)를 분석하는 기술이다.
+
+* 의미역 인식 API: 의미역 인식 API는 서술어(predicate)와 논항(argument)의 관계를 기반으로 문장의 의미를 분석하는 기술로, 문장 내에서 표현된 각 서술어에 대해서 필수 논항(core argument)와 부가 논항(adverbal argument)를 인식한다.
+
+<br/>
 
 #### api 사용 예시
 
@@ -184,7 +195,15 @@ data = {
 #### Request 예시
 ```
 {
-    [{&#34;duration&#34;: &#34;&#34;, &#34;act&#34;: &#34;어슷 썰다&#34;, &#34;tool&#34;: [&#34;도마, 칼&#34;], &#34;ingre&#34;: [&#34;애호박&#34;], &#34;seasoning&#34;: [], &#34;volume&#34;: [&#34;1개&#34;], &#34;temperature&#34;: [], &#34;zone&#34;: &#34;전처리존&#34;, &#34;start_id&#34;: 0, &#34;end_id&#34;: 11, &#34;sentence&#34;: &#34;1. 애호박은 0.5cm 두께로 어슷하게 썬&#34;, &#34;standard&#34;: &#34;0.5cm&#34;, &#34;top_class&#34;: &#34;slice&#34;}, {&#34;duration&#34;: &#34;&#34;, &#34;act&#34;: &#34;채 썰다&#34;, &#34;tool&#34;: [&#34;도마, 칼&#34;], &#34;ingre&#34;: [], &#34;seasoning&#34;: [], &#34;volume&#34;: [], &#34;temperature&#34;: [], }]
+    [
+    {"duration": "", "act": "섞다", "tool": ["그릇"], "ingre": [], "seasoning": ["열무김치 국물", "생수"], "volume": ["1컵", ""], "temperature": [], "zone": "",
+    "start_id": 0, "end_id": 9, 
+    "sentence": "1. 열무김치 국물과 생수를 섞은", "standard": "", "top_class": "mix"}, {"duration": "", "act": "담다", "tool": ["지퍼백"], "ingre": [], "seasoning": [],
+    "volume": [], "temperature": [], "zone": "", "start_id": 10, "end_id": 15, "sentence": "후 지퍼백에 담아 살얼음이 생기도록 3시간 정도 미리 얼려주세요.", "standard": "",
+    "top_class": "put"}, {"duration": "", "act": "섞다", "tool": ["볼"], "ingre": [], "seasoning": ["식초", "설탕", "고추장", "고춧가루", "참기름", "통깨"], "volume": ["
+    큰술", "2큰술", "1큰술", "1큰술", "1큰술", "1큰술"], "temperature": [], "zone": "전처리존", "start_id": 0, "end_id": 9, "sentence": "2. 볼에 양념 재료를 넣고 섞어주
+    요.", "standard": "", "top_class": "mix"}
+    ]
 }
 ```
 #### Response 예시 
