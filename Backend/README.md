@@ -11,7 +11,7 @@
         - sudo apt-get update
         - sudo apt-get install python3-venv
         - python3 -m venv venv 을 통해 가상환경을 만든다
-        - pip install -r requirements.txt 을 통해 필요한 패키지를 다운 받는다.
+        - pip3 install -r requirements.txt 을 통해 필요한 패키지를 다운 받는다.
         해당 파일은 메인 폴더에 존재한다.
         - cd Backend → venv/bin/activate을 통해 가상환경을 실행 시킨다.
 
