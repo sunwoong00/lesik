@@ -136,7 +136,8 @@ ETRI Open api 발급 키, api 반환 형태: ETRI Open api 사이트 (https://ai
 ## API Call
 
 ## 1) url + '/index’ [GET]
-- Index 화면을 표시하기 위한 레시피 데이터를 디렉토리안에 존재하는 레시피를 랜덤하게 불러와 표시한다
+- Index 화면을 표시하기 위한 레시피 데이터를 디렉토리 안에 존재하는 레시피를 랜덤하게 불러와 표시한다
+- 받은 데이터를 '' 기준으로 나누어 상단에 존재하는 텍스트 박스 안에 붙여 넣는다.
 #### Response 예시 
 ```
 {
@@ -153,7 +154,7 @@ ETRI Open api 발급 키, api 반환 형태: ETRI Open api 사이트 (https://ai
 }
 ```
 ## 2) url + '/microrecipe’ [GET]
-- MicroRecipe(세부분석)에 표시할 레시피를 가지고 온다. 이때 가지고 오는 레시피는 Index에서 사용하고 있는 레시피 정보를 가지고 온다
+- MicroRecipe(세부분석)에 표시할 레시피를 가지고 온다. 이때 가지고 오는 레시피는 Index에서 사용하고 있는 레시피 정보를 가지고 온다.
 #### Response 예시 
 ```
 1) url + '/index’ [GET] 과 비슷하다
@@ -161,6 +162,7 @@ ETRI Open api 발급 키, api 반환 형태: ETRI Open api 사이트 (https://ai
 ## 3) url + '/microrecipe/returnjson’ [GET/POST]
 - 만약에 요청이 GET인 경우 세부 분석의 결과를 바로 리턴하여 UI에 표시한다 (이미 레시피를 Index에서 전달 받은 경우)
 - 만약에 요청이 POST인 경우 JSON 형태를 받아와 분석한다
+- 세부 분석에 어떤 기능이 있는지는 해당 README 상단 "주요 기능"에 설명해두었다
 #### Request 예시
 ```
 data = {
@@ -186,7 +188,8 @@ data = {
 }
 ```
 ## 4) url + '/recipe' [POST]
-- Index에서 전달 받은 레시피와 세부 옵션을 백앤드에 전달하여 자동화 레시피를 생성하고 동시에 Index UI에 표시한다
+- Index에서 전달 받은 레시피와 세부 옵션을 백앤드에 전달하여 자동화 디지털 레시피를 생성하고 동시에 Index UI에 표시한다
+- 이때 생성하는 레시피에는 시간, 온도, 주재료, 첨가물, 설비, 도구, 조리 동작 등의 정보가 포함되어 있다
 #### Request 예시
 ```
 {
