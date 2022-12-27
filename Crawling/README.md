@@ -50,4 +50,5 @@ $ python crawling_10000recipe.py https://www.10000recipe.com/profile/recipe.html
 ```
 
 ### 결과
+#### [만개의 레시피 크롤러 예제](https://github.com/iiVSX/lesik/blob/master/Crawling/10000_recipe_sample/%EA%B0%88%EC%B9%98%EC%A1%B0%EB%A6%BC.txt)
 ![crawling_10000recipe](https://user-images.githubusercontent.com/63731797/209580161-2e5e67bb-b9f5-46d9-9b2f-35dc29d0e4e5.png)
