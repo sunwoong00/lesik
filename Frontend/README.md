@@ -32,7 +32,7 @@ go to http://ec2-13-209-70-137.ap-northeast-2.compute.amazonaws.com:5000/
 └── static
     ├── css
     │   ├── microrecipe.css
-    │   ├── new_main.css
+    │   ├── main.css
     │   └── prompt.css
     ├── image
     │   ├── cooksup.png
@@ -40,16 +40,9 @@ go to http://ec2-13-209-70-137.ap-northeast-2.compute.amazonaws.com:5000/
     │   ├── manual.png
     │   ├── refresh_btn.png
     │   └── res.jpg
-    ├── js
-    │   ├── main.js
-    │   ├── main_backup.js
-    │   ├── microrecipe.js
-    │   └── prompt.js
-    └── templates
-        ├── index.html
-        ├── index_keep.html
-        ├── index_old.html
-        ├── manual.html
-        ├── prompt.html
-        └── prompt_backup.html
+    └── js
+        ├── main.js
+        ├── microrecipe.js
+        └── prompt.js
+
 ```
