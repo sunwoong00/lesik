@@ -30,9 +30,9 @@ style="height : auto; margin-left : 8px; margin-right : 8px;"/></a>
 * lesik.py: 디지털 레시피 분석 메인 코드
   - 레시피 분석 요소: 시간, 온도, 주재료, 첨가물, 설비, 도구, 조리동작(규격)
 * lesik_local.py: 디지털 레시피 분석 결과를 로컬 터미널을 통해 확인할 수 있는 코드
-* microRecipe.py: 디지털 레시피를 세부 분석한 결과. 문장의 행동마다 자르고, 동시 조리동작 처리를 한 
+* microRecipe.py: 디지털 레시피를 세부 분석한 결과. 문장의 행동마다 자르고, 동시 조리동작 처리를 한다
 * toolmatchwithverb.py: 디지털 레시피 분석을 위해 문장마다 알맞은 도구를 찾기 위한 코드
-* toolmachwithverb_microrecipe_version.py: 디지털 레시피 세부 분석을 위해 알맞은 도구를 찾기 위한 코드.
+* toolmachwithverb_microrecipe_version.py: 디지털 레시피 세부 분석을 위해 알맞은 도구를 찾기 위한 코드
 
 <br/>
 
