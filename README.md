@@ -58,6 +58,7 @@ Backend 필요 라이브러리
 - Jinja2: Flask에서 프론트로 정보를 보낼때 사용한다
 - Flask: 백앤드 API 서버를 위해 사용한다
 - urllib3: 데이터 통신을 위해 사용한다
+
 koElectra 필요 라이브러리
 - torch==1.10.2
 - transformers==4.25.1
