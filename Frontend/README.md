@@ -11,7 +11,7 @@ Jinja2==3.0.3
 
 ### Clone Repository
 
-    $ git clone https://github.com/iiVSX/lesik.git
+    $ git clone https://github.com/sunwoongskku/lesik.git
     
 ### Execute code
     1. Python 설치 및 필요한 패키지 준비
