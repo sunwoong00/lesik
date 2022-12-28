@@ -6,9 +6,44 @@
 
 **recipe-ner-koelectra**는 KoELECTRA 모델을 기반으로 만들어진 레시피에 특화된 언어 모델입니다. pre-trained 모델로 [monologg/koelectra-base-v2-discriminator](https://huggingface.co/monologg/koelectra-small-v2-discriminator)를 사용했습니다.
 
-pre-trained 모델에 국어 국립원 모두의 말뭉치의 “개체명 분석 말뭉치 2021”(신문, 구어 약 600만 어절)를 학습 시켜 파인 튜닝의 기반이 될 모델을 만들었습니다. 말뭉치 학습 모델에 우리의 식탁과 만개의 레시피 사이트에서 각각 한식 레시피 482개, 2171개를 파인 튜닝 하여 **recipe-ner-koelectra**를 만들었습니다.
+pre-trained 모델에 국어 국립원 모두의 말뭉치의 “개체명 분석 말뭉치 2021”(신문, 구어 약 600만 어절)를 학습 시켜 파인 튜닝의 기반이 될 모델을 만들었습니다. 말뭉치 학습 모델에 우리의 식탁과 만개의 레시피 사이트에서 각각 한식 레시피 482개, 2171개를 파인 튜닝 하여 레시피와 관련된 6개의 개체명을 인식하는 **recipe-ner-koelectra**를 만들었습니다.
 
-### Model
+**인식 개체명 Tag**
+- CV_INGREDIENT: 주재료
+- CV_SEASONING: 첨가물
+- CV_STATE: 상태 정보
+- QT_VOLUME: 용량
+- QT_TEMPERATURE: 온도
+- TI_DURATION: 시간
+
+**개체명 인식 예시**
+- 원문: 기름을 뺀 참치와 볶은 김치에 마요네즈 한 큰술을 넣고 섞어주세요.
+- 출력
+```
+[[0, '기름', 'CV_STATE'],
+ [0, '##을', 'CV_STATE'],
+ [1, '뺀', 'CV_STATE'],
+ [2, '참치', 'CV_INGREDIENT'],
+ [2, '##와', 'O'],
+ [3, '볶', 'CV_STATE'],
+ [3, '##은', 'CV_STATE'],
+ [4, '김치', 'CV_INGREDIENT'],
+ [4, '##에', 'O'],
+ [5, '마요', 'CV_SEASONING'],
+ [5, '##네즈', 'CV_SEASONING'],
+ [6, '한', 'QT_VOLUME'],
+ [7, '큰술', 'QT_VOLUME'],
+ [7, '##을', 'O'],
+ [8, '넣', 'O'],
+ [8, '##고', 'O'],
+ [9, '섞', 'O'],
+ [9, '##어', 'O'],
+ [9, '##주', 'O'],
+ [9, '##세요', 'O'],
+ [10, '.', 'O']]
+```
+
+### **Model**
 
 | Model | Layers | Embedding Size | Hidden Size | # heads |
 | --- | --- | --- | --- | --- |
