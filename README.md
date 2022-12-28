@@ -67,11 +67,11 @@
 
 **방선웅** - https://github.com/sunwoongskku
 
-**서유정** - 
+**서유정** - https://github.com/hoongel1004
 
 **송지은** - https://github.com/thdwldmszz
 
-**이현민** - 
+**이현민** - https://github.com/lhm6199
 
 ### 멘토
 
