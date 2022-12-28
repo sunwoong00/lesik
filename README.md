@@ -69,7 +69,7 @@
 
 **서유정** - 
 
-**송지은** - 
+**송지은** - https://github.com/thdwldmszz
 
 **이현민** - 
 
