@@ -29,7 +29,7 @@ $ python crawling_wtable.py 한식 wtable_korean_recipe_sample
 ```
 
 ### 결과
-#### [우리의 식탁 크롤러 예제](https://github.com/iiVSX/lesik/blob/master/Crawling/sample_wtable_korean_recipe/%EA%B0%80%EB%A6%AC%EB%B9%84%EC%B9%BC%EA%B5%AD%EC%88%98.txt)
+#### [우리의 식탁 크롤러 예제](https://github.com/iiVSX/lesik/tree/master/Crawling/sample_wtable_korean_recipe)
 ```
 가리비칼국수(2~3인분)
 [기본재료]
@@ -74,7 +74,7 @@ $ python crawling_10000recipe.py https://www.10000recipe.com/profile/recipe.html
 ```
 
 ### 결과
-#### [만개의 레시피 크롤러 예제](https://github.com/iiVSX/lesik/blob/master/Crawling/sample_10000_recipe/%EA%B0%88%EC%B9%98%EB%AC%B4%EC%A1%B0%EB%A6%BC.txt)
+#### [만개의 레시피 크롤러 예제](https://github.com/iiVSX/lesik/blob/master/Crawling/sample_10000_recipe)
 ```
 1. 청양 고추는 꼭지를 제거하고 씻은 후 어슷 썰고 대파는 껍질을 벗겨 씻은 후 어슷 썰어 줍니다.
 2. 무는 흐르는 물에 씻은 후 적당한 크기로 썰어 줍니다.
